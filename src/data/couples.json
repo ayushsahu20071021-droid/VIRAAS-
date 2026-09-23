@@ -1249,280 +1249,329 @@
   {
     "id": "college-fest-09",
     "world": "college-fest",
-    "title": "Canteen Table Lean",
-    "ref": "REF-S2 panel 20",
-    "pose": "seated across a canteen table leaning in, laughing",
-    "framing": "vertical 3/4",
-    "setting": "college canteen",
-    "light": "window daylight",
+    "title": "Black and White Fest Lawn, Heads Together",
+    "ref": "REF-CF-BW-1",
+    "pose": "they stand close together side by side on the fest lawn, her head resting on his shoulder, his arm around her waist and her arm around his back, both relaxed and smiling, camera slightly to the side",
+    "framing": "vertical three-quarter, side angle",
+    "setting": "college fest lawn at dusk",
+    "light": "dusk with fest string lights",
     "her": {
-      "cat": "Sharara",
-      "colour": "Rani Pink",
-      "fabric": "Rayon",
-      "detail": "mirror work",
-      "desc": "rani pink mirror-work sharara set"
+      "cat": "Kurta Sets",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "black thread embroidery",
+      "desc": "ivory straight kurta with black thread embroidery, matching trousers and a black printed dupatta"
     },
     "him": {
-      "cat": "Printed Ethnic Shirt",
+      "cat": "Modern Kurta",
       "colour": "Black",
-      "fabric": "Rayon",
-      "detail": "block print",
-      "desc": "black block-print ethnic shirt"
+      "fabric": "Cotton",
+      "detail": "pintuck placket",
+      "desc": "black cotton kurta with a pintuck placket and relaxed straight trousers"
     },
-    "tone": "Oxidised Silver",
-    "colourStory": "Rani pink · Black",
+    "tone": "Silver",
+    "colourStory": "Ivory · Black",
     "tags": [
-      "seated"
+      "close-standing",
+      "black-white"
     ],
     "herProductIds": [
-      "w-sharara-rani-pink-mirror-work",
-      "w-jewellery-oxidised-silver-jhumka-earrings",
+      "w-kurta-sets-ivory-black-thread-embroidery",
+      "w-jewellery-silver-jhumka-earrings",
       "w-footwear-silver-embroidered-juttis"
     ],
     "hisProductIds": [
-      "m-printed-ethnic-shirt-black-block-print",
+      "m-modern-kurta-black-pintuck-placket",
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-S2 panel 20. HER: rani pink mirror-work sharara set. HIM: black block-print ethnic shirt. POSE: seated across a canteen table leaning in, laughing. FRAMING: vertical 3/4. SETTING: college canteen. LIGHT: window daylight."
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-CF-BW-1. HER: ivory straight kurta with black thread embroidery, matching trousers and a black printed dupatta. HIM: black cotton kurta with a pintuck placket and relaxed straight trousers. POSE: they stand close together side by side on the fest lawn, her head resting on his shoulder, his arm around her waist and her arm around his back, both relaxed and smiling, camera slightly to the side. FRAMING: vertical three-quarter, side angle. SETTING: college fest lawn at dusk. LIGHT: dusk with fest string lights."
   },
   {
     "id": "college-fest-10",
     "world": "college-fest",
-    "title": "Scooter Stop Outfit Check",
-    "ref": "REF-C1 side panel",
-    "pose": "standing beside a parked scooter holding hands, chest-down crop",
-    "framing": "vertical detail crop",
-    "setting": "campus parking",
-    "light": "midday",
+    "title": "Walkway Phone Selfie",
+    "ref": "REF-CF-BW-2",
+    "pose": "arm-length front-camera phone selfie outdoors on a campus walkway, both looking straight into the lens, shoulders pressed together, he holds the phone out",
+    "framing": "vertical close crop, waist up, casual phone photo",
+    "setting": "tree-lined campus walkway",
+    "light": "golden hour sun",
     "her": {
-      "cat": "Lehenga",
-      "colour": "Teal",
+      "cat": "Sharara",
+      "colour": "Black",
       "fabric": "Cotton",
-      "detail": "printed flared",
-      "desc": "teal printed flared lehenga"
+      "detail": "white gota trim",
+      "desc": "black flared sharara set with white gota trim and a short kurti"
     },
     "him": {
-      "cat": "Modern Kurta",
-      "colour": "Beige",
-      "fabric": "Linen",
-      "detail": "solid",
-      "desc": "beige linen kurta"
+      "cat": "Ethnic Shirt",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid mandarin collar",
+      "desc": "white cotton mandarin-collar shirt with relaxed trousers"
     },
-    "tone": "Oxidised Silver",
-    "colourStory": "Teal · Beige",
+    "tone": "Silver",
+    "colourStory": "Black · White",
     "tags": [
-      "hand-hold"
+      "selfie",
+      "black-white"
     ],
     "herProductIds": [
-      "w-lehenga-teal-printed-flared",
-      "w-jewellery-oxidised-silver-choker-necklace",
+      "w-sharara-black-white-gota-trim",
+      "w-jewellery-silver-choker-necklace",
       "w-footwear-silver-embroidered-juttis"
     ],
     "hisProductIds": [
-      "m-modern-kurta-beige-solid",
+      "m-ethnic-shirt-white-solid-mandarin-collar",
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-C1 side panel. HER: teal printed flared lehenga. HIM: beige linen kurta. POSE: standing beside a parked scooter holding hands, chest-down crop. FRAMING: vertical detail crop. SETTING: campus parking. LIGHT: midday."
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-CF-BW-2. HER: black flared sharara set with white gota trim and a short kurti. HIM: white cotton mandarin-collar shirt with relaxed trousers. POSE: arm-length front-camera phone selfie outdoors on a campus walkway, both looking straight into the lens, shoulders pressed together, he holds the phone out. FRAMING: vertical close crop, waist up, casual phone photo. SETTING: tree-lined campus walkway. LIGHT: golden hour sun."
   },
   {
     "id": "college-fest-11",
     "world": "college-fest",
-    "title": "Anarkali Group-Photo Break",
-    "ref": "REF-S1 panel 4",
-    "pose": "side hug facing camera",
-    "framing": "vertical 3/4",
-    "setting": "fest stalls",
-    "light": "evening",
+    "title": "Anarkali on the Low Wall",
+    "ref": "REF-CF-PRINT-1",
+    "pose": "sitting side by side on a low campus wall, she leans into his side with her shoulder against his, he sits upright with one hand behind her on the wall, both looking at each other and smiling",
+    "framing": "vertical full-body seated, side angle",
+    "setting": "low campus boundary wall with lawn behind",
+    "light": "late afternoon sun",
     "her": {
       "cat": "Anarkali",
-      "colour": "Maroon",
-      "fabric": "Georgette",
-      "detail": "gota",
-      "desc": "maroon georgette anarkali with gota trims"
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "block print",
+      "desc": "ivory block-print anarkali with a gathered flared skirt and a printed dupatta"
     },
     "him": {
-      "cat": "Festive Jacket",
-      "colour": "Beige",
-      "fabric": "Cotton Silk",
-      "detail": "solid nehru",
-      "desc": "beige nehru jacket over white kurta"
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "block print",
+      "desc": "navy block-print ethnic shirt with relaxed trousers"
     },
-    "tone": "Gold",
-    "colourStory": "Maroon · Beige",
+    "tone": "Silver",
+    "colourStory": "Ivory · Navy",
     "tags": [
-      "hug"
+      "seated",
+      "leaning"
     ],
     "herProductIds": [
-      "w-anarkali-maroon-gota",
-      "w-jewellery-gold-bangle-stack",
-      "w-footwear-gold-embroidered-juttis"
+      "w-anarkali-ivory-block-print",
+      "w-jewellery-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
     ],
     "hisProductIds": [
-      "m-festive-jacket-beige-solid-nehru",
+      "m-printed-ethnic-shirt-navy-block-print",
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-S1 panel 4. HER: maroon georgette anarkali with gota trims. HIM: beige nehru jacket over white kurta. POSE: side hug facing camera. FRAMING: vertical 3/4. SETTING: fest stalls. LIGHT: evening."
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-CF-PRINT-1. HER: ivory block-print anarkali with a gathered flared skirt and a printed dupatta. HIM: navy block-print ethnic shirt with relaxed trousers. POSE: sitting side by side on a low campus wall, she leans into his side with her shoulder against his, he sits upright with one hand behind her on the wall, both looking at each other and smiling. FRAMING: vertical full-body seated, side angle. SETTING: low campus boundary wall with lawn behind. LIGHT: late afternoon sun."
   },
   {
     "id": "college-fest-12",
     "world": "college-fest",
-    "title": "Black Saree Stairwell Selfie",
-    "ref": "REF-S2 panel 14",
-    "pose": "stairwell mirror selfie",
-    "framing": "vertical full body mirror",
-    "setting": "college stairwell mirror",
-    "light": "tube light",
+    "title": "Corridor Laugh, Holding His Arm",
+    "ref": "REF-CF-PRINT-2",
+    "pose": "standing close in a corridor, she holds his upper arm with both hands and laughs with her head tilted back, he looks down at her smiling, playful interaction",
+    "framing": "vertical close crop, waist up",
+    "setting": "college corridor with lockers",
+    "light": "soft indoor daylight",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Powder Blue",
+      "fabric": "Cotton",
+      "detail": "chikankari",
+      "desc": "powder blue chikankari kurta set with a straight cut and a sheer dupatta"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "cream cotton kurta with a band collar and relaxed trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Powder Blue · Cream",
+    "tags": [
+      "playful",
+      "close-standing"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-powder-blue-chikankari",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-CF-PRINT-2. HER: powder blue chikankari kurta set with a straight cut and a sheer dupatta. HIM: cream cotton kurta with a band collar and relaxed trousers. POSE: standing close in a corridor, she holds his upper arm with both hands and laughs with her head tilted back, he looks down at her smiling, playful interaction. FRAMING: vertical close crop, waist up. SETTING: college corridor with lockers. LIGHT: soft indoor daylight."
+  },
+  {
+    "id": "college-fest-13",
+    "world": "college-fest",
+    "title": "Hand in Hand Across the Lawn",
+    "ref": "REF-CF-PRINT-3",
+    "pose": "walking hand in hand across the campus lawn, swinging their joined hands, both laughing and looking at each other, camera walking alongside at their side",
+    "framing": "vertical full body, side angle",
+    "setting": "campus lawn at golden hour",
+    "light": "low golden sun",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Wine",
+      "fabric": "Cotton",
+      "detail": "printed crop top",
+      "desc": "wine flared cotton skirt with a white printed cropped top and a wine dupatta"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "white print",
+      "desc": "black cotton shirt with a white print and relaxed trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Wine · Black",
+    "tags": [
+      "walking",
+      "hand-in-hand"
+    ],
+    "herProductIds": [
+      "w-lehenga-wine-printed-crop-top",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-black-white-print",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-CF-PRINT-3. HER: wine flared cotton skirt with a white printed cropped top and a wine dupatta. HIM: black cotton shirt with a white print and relaxed trousers. POSE: walking hand in hand across the campus lawn, swinging their joined hands, both laughing and looking at each other, camera walking alongside at their side. FRAMING: vertical full body, side angle. SETTING: campus lawn at golden hour. LIGHT: low golden sun."
+  },
+  {
+    "id": "college-fest-14",
+    "world": "college-fest",
+    "title": "Wall Lean, Fest Night",
+    "ref": "REF-CF-BW-3",
+    "pose": "standing side by side against a plain campus wall after dark, shoulders and arms touching, both looking straight at the camera, relaxed and effortless",
+    "framing": "vertical three-quarter, straight-on camera at waist height",
+    "setting": "campus building wall at night",
+    "light": "warm fest lights",
     "her": {
       "cat": "Pre-Draped Saree",
       "colour": "Black",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "black sequin pre-draped saree"
+      "fabric": "Crepe",
+      "detail": "embroidered blouse",
+      "desc": "black pre-draped crepe saree with a sleeveless embroidered blouse"
+    },
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "solid open collar",
+      "desc": "ivory cotton shirt with an open collar and relaxed trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Black · Ivory",
+    "tags": [
+      "wall-lean",
+      "black-white"
+    ],
+    "herProductIds": [
+      "w-pre-draped-saree-black-embroidered-blouse",
+      "w-jewellery-silver-choker-necklace",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-ethnic-shirt-ivory-solid-open-collar",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-CF-BW-3. HER: black pre-draped crepe saree with a sleeveless embroidered blouse. HIM: ivory cotton shirt with an open collar and relaxed trousers. POSE: standing side by side against a plain campus wall after dark, shoulders and arms touching, both looking straight at the camera, relaxed and effortless. FRAMING: vertical three-quarter, straight-on camera at waist height. SETTING: campus building wall at night. LIGHT: warm fest lights."
+  },
+  {
+    "id": "college-fest-15",
+    "world": "college-fest",
+    "title": "Steps, Chin on Her Shoulder",
+    "ref": "REF-CF-PRINT-4",
+    "pose": "she sits on a step with him directly behind her, he rests his chin on her shoulder from behind and wraps his arms around her, she laughs and holds his forearm",
+    "framing": "vertical three-quarter, side angle",
+    "setting": "outdoor college steps",
+    "light": "soft afternoon light",
+    "her": {
+      "cat": "Gharara",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "gota patti",
+      "desc": "ivory gharara set with gota patti trim and a short kurti with a dupatta"
     },
     "him": {
       "cat": "Embroidered Ethnic Shirt",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "rust hem embroidery",
-      "desc": "black shirt with rust embroidered hem"
+      "detail": "tonal embroidery",
+      "desc": "black cotton shirt with tonal embroidery and relaxed trousers"
     },
     "tone": "Silver",
-    "colourStory": "Black · Rust",
+    "colourStory": "Ivory · Black",
     "tags": [
-      "mirror-selfie"
+      "seated",
+      "playful"
     ],
     "herProductIds": [
-      "w-pre-draped-saree-black-sequin",
-      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-gharara-ivory-gota-patti",
+      "w-jewellery-silver-bangle-stack",
       "w-footwear-silver-embroidered-juttis"
     ],
     "hisProductIds": [
-      "m-embroidered-ethnic-shirt-black-rust-hem-embroidery",
+      "m-embroidered-ethnic-shirt-black-tonal-embroidery",
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-S2 panel 14. HER: black sequin pre-draped saree. HIM: black shirt with rust embroidered hem. POSE: stairwell mirror selfie. FRAMING: vertical full body mirror. SETTING: college stairwell mirror. LIGHT: tube light."
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-CF-PRINT-4. HER: ivory gharara set with gota patti trim and a short kurti with a dupatta. HIM: black cotton shirt with tonal embroidery and relaxed trousers. POSE: she sits on a step with him directly behind her, he rests his chin on her shoulder from behind and wraps his arms around her, she laughs and holds his forearm. FRAMING: vertical three-quarter, side angle. SETTING: outdoor college steps. LIGHT: soft afternoon light."
   },
   {
-    "id": "college-fest-13",
+    "id": "college-fest-16",
     "world": "college-fest",
-    "title": "Kurta-Set Tree Shade Sit",
-    "ref": "REF-C3",
-    "pose": "seated under a tree on a low wall, she photographs, he leans",
-    "framing": "vertical full seated",
-    "setting": "campus tree shade",
-    "light": "dappled light",
-    "her": {
-      "cat": "Kurta Sets",
-      "colour": "Yellow",
-      "fabric": "Cotton",
-      "detail": "block print",
-      "desc": "yellow block-print kurta set"
-    },
-    "him": {
-      "cat": "Printed Ethnic Shirt",
-      "colour": "White",
-      "fabric": "Cotton",
-      "detail": "indigo block print",
-      "desc": "white indigo-print shirt"
-    },
-    "tone": "Oxidised Silver",
-    "colourStory": "Yellow · Indigo",
-    "tags": [
-      "seated"
-    ],
-    "herProductIds": [
-      "w-kurta-sets-yellow-block-print",
-      "w-jewellery-oxidised-silver-jhumka-earrings",
-      "w-footwear-silver-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-printed-ethnic-shirt-white-indigo-block-print",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-C3. HER: yellow block-print kurta set. HIM: white indigo-print shirt. POSE: seated under a tree on a low wall, she photographs, he leans. FRAMING: vertical full seated. SETTING: campus tree shade. LIGHT: dappled light."
-  },
-  {
-    "id": "college-fest-14",
-    "world": "college-fest",
-    "title": "Gharara Night Concert",
-    "ref": "REF-S2 panel 13",
-    "pose": "close embrace in concert crowd",
-    "framing": "vertical waist-up",
-    "setting": "fest concert crowd",
-    "light": "stage light purple",
-    "her": {
-      "cat": "Gharara",
-      "colour": "Emerald",
-      "fabric": "Silk Blend",
-      "detail": "zari",
-      "desc": "emerald zari gharara set"
-    },
-    "him": {
-      "cat": "Modern Kurta",
-      "colour": "Black",
-      "fabric": "Cotton",
-      "detail": "solid",
-      "desc": "black short kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Emerald · Black",
-    "tags": [
-      "night"
-    ],
-    "herProductIds": [
-      "w-gharara-emerald-zari",
-      "w-jewellery-gold-choker-necklace",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-modern-kurta-black-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-S2 panel 13. HER: emerald zari gharara set. HIM: black short kurta. POSE: close embrace in concert crowd. FRAMING: vertical waist-up. SETTING: fest concert crowd. LIGHT: stage light purple."
-  },
-  {
-    "id": "college-fest-15",
-    "world": "college-fest",
-    "title": "Printed Lehenga Hallway Walk",
-    "ref": "REF-S1 panel 2",
-    "pose": "walking away down a hallway, hand in hand",
-    "framing": "vertical back view",
-    "setting": "hostel hallway",
-    "light": "evening",
+    "title": "Fest Path, Arm Around Her",
+    "ref": "REF-CF-PRINT-5",
+    "pose": "walking toward the camera down a fest ground path, his arm around her shoulders and her arm around his waist, both laughing, full bodies",
+    "framing": "vertical full body, camera in front at chest height",
+    "setting": "college fest ground path with stalls behind",
+    "light": "late afternoon sun",
     "her": {
       "cat": "Lehenga",
-      "colour": "Coral",
+      "colour": "Teal",
       "fabric": "Cotton",
-      "detail": "floral print",
-      "desc": "coral floral printed lehenga"
+      "detail": "printed crop top",
+      "desc": "teal flared skirt with a printed cropped top and a printed dupatta"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Sage Green",
-      "fabric": "Linen",
+      "fabric": "Cotton",
       "detail": "solid",
-      "desc": "sage linen ethnic shirt"
+      "desc": "sage green cotton ethnic shirt with relaxed trousers"
     },
     "tone": "Silver",
-    "colourStory": "Coral · Sage",
+    "colourStory": "Teal · Sage",
     "tags": [
-      "walking"
+      "walking",
+      "arm-around"
     ],
     "herProductIds": [
-      "w-lehenga-coral-floral-print",
-      "w-jewellery-silver-bangle-stack",
+      "w-lehenga-teal-printed-crop-top",
+      "w-jewellery-silver-kamarbandh-waist-belt",
       "w-footwear-silver-embroidered-juttis"
     ],
     "hisProductIds": [
@@ -1530,49 +1579,8 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-S1 panel 2. HER: coral floral printed lehenga. HIM: sage linen ethnic shirt. POSE: walking away down a hallway, hand in hand. FRAMING: vertical back view. SETTING: hostel hallway. LIGHT: evening."
-  },
-  {
-    "id": "college-fest-16",
-    "world": "college-fest",
-    "title": "Sharara Rooftop Overhead",
-    "ref": "REF-C2",
-    "pose": "lying on rooftop mat, overhead",
-    "framing": "overhead",
-    "setting": "hostel rooftop",
-    "light": "golden hour",
-    "her": {
-      "cat": "Sharara",
-      "colour": "Ivory",
-      "fabric": "Cotton",
-      "detail": "chikankari",
-      "desc": "ivory chikankari sharara set"
-    },
-    "him": {
-      "cat": "Embroidered Ethnic Shirt",
-      "colour": "Ivory",
-      "fabric": "Silk Blend",
-      "detail": "tonal floral",
-      "desc": "ivory silk shirt with tonal floral embroidery"
-    },
-    "tone": "Silver",
-    "colourStory": "Ivory on ivory",
-    "tags": [
-      "overhead"
-    ],
-    "herProductIds": [
-      "w-sharara-ivory-chikankari",
-      "w-jewellery-silver-kamarbandh-waist-belt",
-      "w-footwear-silver-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-embroidered-ethnic-shirt-ivory-tonal-floral",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-C2. HER: ivory chikankari sharara set. HIM: ivory silk shirt with tonal floral embroidery. POSE: lying on rooftop mat, overhead. FRAMING: overhead. SETTING: hostel rooftop. LIGHT: golden hour."
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two youthful Indian adults approximately 18–25, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no text, no logos, no watermark. Reference: REF-CF-PRINT-5. HER: teal flared skirt with a printed cropped top and a printed dupatta. HIM: sage green cotton ethnic shirt with relaxed trousers. POSE: walking toward the camera down a fest ground path, his arm around her shoulders and her arm around his waist, both laughing, full bodies. FRAMING: vertical full body, camera in front at chest height. SETTING: college fest ground path with stalls behind. LIGHT: late afternoon sun."
   },
   {
     "id": "college-fest-17",

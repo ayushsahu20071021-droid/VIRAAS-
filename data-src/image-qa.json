@@ -212,10 +212,10 @@
   "couple:college-fest-03": {
     "generation": "GENERATED",
     "qa": "GENERATED",
-    "dimensions": "900x491",
-    "bytes": 94416,
-    "sha256": "5bfb7fee1b55f940bcda9ba62344f753b4e931d6532fb9280db587bbc0f403b6",
-    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+    "dimensions": "768x1376",
+    "bytes": 124292,
+    "sha256": "4034af75d4f2557272b626ae3a645f2c6b85115f80a72f9b3fb72c43fb8d32bd",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
   },
   "couple:college-fest-04": {
     "generation": "GENERATED",
@@ -228,10 +228,10 @@
   "couple:college-fest-05": {
     "generation": "GENERATED",
     "qa": "GENERATED",
-    "dimensions": "900x491",
-    "bytes": 88316,
-    "sha256": "552cd3a4976816a6b429b2d326bc16c2f9f9ac92927313d092c9bf15a37c5616",
-    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+    "dimensions": "768x1376",
+    "bytes": 111324,
+    "sha256": "f5de0abecc9155678102ed8378e7372980c6611bb5cb2cea3912fb88fe016988",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
   },
   "couple:college-fest-06": {
     "generation": "GENERATED",
@@ -256,5 +256,69 @@
     "bytes": 148548,
     "sha256": "4925f1704061741732dbc0aa00bfbb970063a16268ec0769d587a7136043d30c",
     "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+  },
+  "couple:college-fest-09": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 141176,
+    "sha256": "333d8754cd8adbe76a53f49e32d4892ef70934adb98eaddc40b1d41a987ca4b7",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+  },
+  "couple:college-fest-10": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 166674,
+    "sha256": "c71c993e62e0913e921b5bbb1ce93c354d756af6f3eabca1d5c9a0e738fb2ef0",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+  },
+  "couple:college-fest-11": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 200378,
+    "sha256": "808aad9feb604d1aae6b1a71b16f20f97ee1ab9f6411ed6e3e0c7e389423128a",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+  },
+  "couple:college-fest-12": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 94556,
+    "sha256": "8c83f9622208e482815b98c9fcef4f0a05f315fce935d6515e0074e1b4eb239f",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+  },
+  "couple:college-fest-13": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 177322,
+    "sha256": "9c99188387ae85d4d4fc1e5e7b54e3218a8b03a57f1fba22bdd52e2045ba5467",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+  },
+  "couple:college-fest-14": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 89116,
+    "sha256": "086b9f5c6c23c19921bc8dd1cc6139908d78a68974e7c64c874e20709255849f",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+  },
+  "couple:college-fest-15": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 183072,
+    "sha256": "d28bdcbfce23c2e34d21013332d50e7b6dcb396f5dfa5d9df74aeb067f955a6d",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+  },
+  "couple:college-fest-16": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 172584,
+    "sha256": "9dc53fdfee502de3c4d53e65afa6e2c7f993267fc9746ed5a12e02354effe218",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
   }
 }
