@@ -11,8 +11,8 @@
 | Worlds | 5 (Garba, College Fest, Diwali, Festive Party, Traditional), 20 couple looks each |
 | Images in queue | 961 (100 couple + 861 product) |
 | Real images (QA_PASS) | **18**: Garba couples 01–13, 15, 17–20 |
-| Generated, awaiting visual verification | **10**: Garba 14 and 16 (re-generated with corrected poses) + College Fest 01–08 |
-| Pending images | **931**: 72 couples (College Fest 09–20, Diwali, Festive Party, Traditional) + 861 product mannequin visuals |
+| Generated, awaiting visual verification | **18**: Garba 14 and 16 (re-takes with corrected poses) + College Fest 01–16 |
+| Pending images | **925**: 64 couples (College Fest 17–20, Diwali, Festive Party, Traditional) + 861 product mannequin visuals |
 | Failed QA | 0 |
 | Duplicates | 0 (sha256 + perceptual dHash) |
 | Affiliate audit | PASS: only MYNTRA/AJIO/FLIPKART/SHOPSY/MEESHO/NYKAA; forbidden marketplace absent; affiliateUrl empty on all 861 products; no tracking params |
@@ -34,7 +34,7 @@ Garba 01–20 all read as real young adults (about 18–25). None are mannequins
 01 fitting-room mirror selfie (REF-C1) · 02 true overhead black brocade (REF-C2) · 03 ivory mirror-work lehenga on diya steps (REF-C3) · 04 red backless-choli face-cup · 05 pink bandhani hand-hold crop · 06 red/ivory shoulder-line crop · 07 patchwork walk into the canopy · 08 black patola dandiya · 09 dupatta adjust · 10 red flare twirl · 11 cheek-to-cheek selfie (royal blue + red bandhani) · 12 mat-side laughs (mustard/olive) · 13 stage-glow embrace (black sequin kurta) · 14 steel-lift mirror selfie (emerald gamthi) · 15 black-on-black bench whisper · 16 two-hand spin (wine lehenga) · 17 entrance-arch side hug (navy bandhani) · 18 ivory twirl with partner watching · 19 walking hand-hold (maroon mirror) · 20 forehead touch with dandiya (hot pink). Minor deviations noted honestly in the QA file: 14 (hands on shoulders instead of chin-on-head), 16 (one hand-pair visible). The per-image notes are in `data-src/image-qa.json`.
 
 ## Honest limitations
-- The per-turn image limit (10) was reached. The queue in `public/image-queue-ordered.json` resumes at **couple:college-fest-03** and **college-fest-05** (framing re-shoot), then **college-fest-09**, **college-fest-10**, then college-fest-02…20, diwali, festive-party, traditional, and then products (priorities 6–11).
+- The per-turn image limit (10) was reached. The queue in `public/image-queue-ordered.json` resumes at **couple:college-fest-17**, then college-fest-02…20, diwali, festive-party, traditional, and then products (priorities 6–11).
 - Prices are research-guided **estimates** for each style (`priceType: "estimate"`), not live listings. `merchantUrl` is a marketplace **search** URL, not a product listing. `mrp` and `discount` are null because they are not fabricated.
 - Couples in College Fest, Diwali, Festive Party and Traditional are specified by outfit and pose from the sheet panels. Those sheet panels are low-resolution, so their detail is less exact than the three individual screenshots.
 - The headless browser can't reach Google Fonts, so audit screenshots use a fallback serif font.
