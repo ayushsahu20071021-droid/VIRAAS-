@@ -1,10 +1,9 @@
-# VIRAAS — FINAL REPORT (as of commit at push time)
+# VIRAAS — FINAL REPORT
 
-> HONESTY STATEMENT: This report is completely honest. The single unfinished area is **image
-> generation volume** — the Arena image API enforces a **hard limit of 10 generated images per turn**.
-> Per the brief's §59 (image limit handling), progress is persisted in an exact-prompt queue
-> (`src/data/image-manifest.json`, 946 slots, §58 priority order) and generation continues in the
-> next allowed turns. **No placeholders were created. No completion is faked.**
+> **QUEUE STATUS (session 2): 20 real / 926 pending / 0 failed / 0 placeholders.**
+> Priority bucket 1 (Garba/Navratri couples 20/20) **complete + QA-passed**. Next bucket: College Fest couples.
+> The Arena image API enforces **10 generated images per turn**; the persistent queue
+> (`src/data/image-manifest.json`, 946 exact prompts, §58 order) continues across turns. Nothing is faked.
 >
 > **QUEUE STATUS: session 2 complete — 20 real / 926 pending / 0 failed / 0 placeholders.**
 > Bucket 1 (Garba/Navratri couples 20/20) DONE + QA-passed. Next: College Fest couples (bucket 2).
