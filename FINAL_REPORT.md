@@ -114,6 +114,7 @@ The brief's 10 uploaded reference files (8 screenshots + 2 sheets / 28 panels) *
 - Commit SHA (main build): `43115cca5c9767dc6a8ecbb37854050de58363bf`
 - **PR URL: https://github.com/ayushsahu20071021-droid/VIRAAS-/pull/1**
 - PR opens into `main` and will **NOT** be merged.
+- Queue sessions push to the same PR continuously.
 
 ## 12. Exact remaining issues (only these)
 
