@@ -96,13 +96,15 @@ export default function CoupleDetailPage({ params }: { params: { id: string } })
             <div>
               <p className="mb-3 text-[11px] font-semibold uppercase tracking-editorial text-rani">For her ({formatINR(her.reduce((s, p) => s + p.price, 0))})</p>
               <div className="grid gap-4">
-                {her.map((p) => <ProductCard key={p.id} product={p} />)}
+                {her.filter((p) => p.status === "listed").map((p) => <ProductCard key={p.id} product={p} />)}
+                {!her.some((p) => p.status === "listed") ? <p className="text-xs text-ink-soft">Her pieces render as production frames land — {her.length} linked catalog items ready.</p> : null}
               </div>
             </div>
             <div>
               <p className="mb-3 text-[11px] font-semibold uppercase tracking-editorial text-rani">For him ({formatINR(his.reduce((s, p) => s + p.price, 0))})</p>
               <div className="grid gap-4">
-                {his.map((p) => <ProductCard key={p.id} product={p} />)}
+                {his.filter((p) => p.status === "listed").map((p) => <ProductCard key={p.id} product={p} />)}
+                {!his.some((p) => p.status === "listed") ? <p className="text-xs text-ink-soft">His pieces render as production frames land — {his.length} linked catalog items ready.</p> : null}
               </div>
             </div>
           </div>
