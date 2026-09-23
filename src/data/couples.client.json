@@ -515,8 +515,8 @@
       "m-printed-ethnic-shirt-navy-printed-with-stole",
       "m-footwear-tan-kolhapuri-sandals"
     ],
-    "imageUrl": "/images/couples/garba-11.webp",
-    "imageStatus": "QA_PASS"
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
   },
   {
     "id": "garba-12",
@@ -562,8 +562,8 @@
       "m-modern-kurta-purple-light-lavender-with-white-stole",
       "m-footwear-tan-kolhapuri-sandals"
     ],
-    "imageUrl": "/images/couples/garba-12.webp",
-    "imageStatus": "QA_PASS"
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
   },
   {
     "id": "garba-13",
@@ -609,8 +609,8 @@
       "m-printed-ethnic-shirt-black-printed-embroidery-detail",
       "m-footwear-tan-kolhapuri-sandals"
     ],
-    "imageUrl": "/images/couples/garba-13.webp",
-    "imageStatus": "QA_PASS"
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
   },
   {
     "id": "garba-14",
@@ -657,7 +657,7 @@
       "m-footwear-tan-kolhapuri-sandals"
     ],
     "imageUrl": "",
-    "imageStatus": "REGENERATE"
+    "imageStatus": "GENERATED"
   },
   {
     "id": "garba-15",
@@ -703,8 +703,8 @@
       "m-printed-ethnic-shirt-black-charcoal-print-with-ivory-stole",
       "m-footwear-tan-kolhapuri-sandals"
     ],
-    "imageUrl": "/images/couples/garba-15.webp",
-    "imageStatus": "QA_PASS"
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
   },
   {
     "id": "garba-16",
@@ -751,7 +751,7 @@
       "m-footwear-tan-kolhapuri-sandals"
     ],
     "imageUrl": "",
-    "imageStatus": "REGENERATE"
+    "imageStatus": "GENERATED"
   },
   {
     "id": "garba-17",
@@ -797,8 +797,8 @@
       "m-modern-kurta-black-with-ivory-lower",
       "m-footwear-tan-kolhapuri-sandals"
     ],
-    "imageUrl": "/images/couples/garba-17.webp",
-    "imageStatus": "QA_PASS"
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
   },
   {
     "id": "garba-18",
@@ -844,8 +844,8 @@
       "m-modern-kurta-white-embroidered-with-charcoal-lower",
       "m-footwear-tan-kolhapuri-sandals"
     ],
-    "imageUrl": "/images/couples/garba-18.webp",
-    "imageStatus": "QA_PASS"
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
   },
   {
     "id": "garba-19",
@@ -891,8 +891,8 @@
       "m-modern-kurta-black-charcoal-with-white-trousers",
       "m-footwear-tan-kolhapuri-sandals"
     ],
-    "imageUrl": "/images/couples/garba-19.webp",
-    "imageStatus": "QA_PASS"
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
   },
   {
     "id": "garba-20",
@@ -938,8 +938,8 @@
       "m-modern-kurta-powder-blue-light-blue-patterned",
       "m-footwear-tan-kolhapuri-sandals"
     ],
-    "imageUrl": "/images/couples/garba-20.webp",
-    "imageStatus": "QA_PASS"
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
   },
   {
     "id": "college-fest-01",
