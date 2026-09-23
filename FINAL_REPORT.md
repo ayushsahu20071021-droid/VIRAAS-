@@ -46,13 +46,15 @@ Researched Myntra, AJIO, Flipkart, Shopsy, Meesho, Nykaa (2026-09-23). Youth ban
 
 | Metric | Count |
 |---|---|
-| **Real production images generated** | **20** |
+| **Real production images generated** | **20** (all QA-passed) |
 | **Pending in persistent queue** | **926** |
 | **Failed image QA** | **0** |
-| Placeholder images | **0** (hard rule kept) |
+| Placeholder images | **0** |
 | SVG primary apparel visuals | 0 |
 | Exact-hash duplicates | 0 |
 | 1×1 / tiny JPEGs | 0 |
+
+**Bucket status:** Bucket 1 Garba/Navratri couples **20/20 DONE** · buckets 2–5 (80 couples) → 6–15 (823 products) → 16 (accessories 95) → 17 (heroes 11) → 18 (journal 12) queued in order.
 
 - Generated so far: **CL-G-01 … CL-G-20 — ALL 20 Garba / Navratri couple looks (priority bucket 1 complete)** — visually inspected against the reference language: real-human, 18–25, Indian, candid, colour-story-faithful outfits, correct poses (collar adjustment, dandiya twirl, mirror selfie, seated candid…), Garba-ground environments. **QA: PASS** on all 20.
 - Queue (`src/data/image-manifest.json`): every remaining slot holds the **exact prompt + negative + queue position + target path**. Priority order exactly per §58: 1–5 couples per world (Garba first) → 6–15 product shots per world/gender → 16 accessories → 17 heroes → 18 journal.
