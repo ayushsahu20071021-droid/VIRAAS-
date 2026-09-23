@@ -310,7 +310,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-01 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-01 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "ed3a17bf4dcfab6f05674153a08e9b5a78a6693407bb9e2856f701aa89e29076",
     "priority": 2
   },
@@ -325,7 +325,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-02 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-02 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "31f9afe3ea261374b0fcf35aeb983900fd54c8a532ab25a979e68f3da6ba0d1e",
     "priority": 2
   },
@@ -340,7 +340,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-03 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-03 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "e1b35a9637960f56ba0328399b20d360c834f6b7dddc5bfe07a12d4a0c682678",
     "priority": 2
   },
@@ -355,7 +355,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-04 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-04 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "9f2808a9fa40513db5f5b4da7b0d030d27bea9a04be741e26633a9234a9e2b5d",
     "priority": 2
   },
@@ -370,7 +370,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-05 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-05 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "e18a284fa076951c1d7f7d05ae01bd4c10e0b831d34c479029f38b71c8b36cb8",
     "priority": 2
   },
@@ -385,7 +385,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-06 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-06 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "39e38e0c1d00b8b26c8532f9b2cb244a0ef1a0371d9ef301cd097cd0409c4d0a",
     "priority": 2
   },
@@ -400,7 +400,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-07 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-07 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "f9a8550fd645e6c2d16fc97e64b1ccfb5da93c8a9086ebddfacf03441fc755de",
     "priority": 2
   },
@@ -415,7 +415,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-08 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-08 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "00839b36a52038600a39862909f876dfd75badb30edca795cc444db012c054ee",
     "priority": 2
   },
@@ -430,7 +430,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-09 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-09 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "2346c0156f4c23b191be27abf3ce23768bb5181827325bd4dc47a4aa9b1a0708",
     "priority": 2
   },
@@ -445,7 +445,7 @@
     "dimensions": "768x1376",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
-    "qaNotes": "LOOK-10 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "qaNotes": "LOOK-10 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "sha256": "e514f1000c5ab05058be6caedd97f0b34b8531031c921956664fc3b97cbcf3d5",
     "priority": 2
   },
@@ -461,7 +461,7 @@
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session.",
-    "sha256": "808aad9feb604d1aae6b1a71b16f20f97ee1ab9f6411ed6e3e0c7e389423128a",
+    "sha256": "7e38f7cfc592f594b4d836cd9c6cc016741ed834110c6e66fbcd8f0130d999f2",
     "priority": 2
   },
   {
@@ -476,7 +476,7 @@
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session.",
-    "sha256": "8c83f9622208e482815b98c9fcef4f0a05f315fce935d6515e0074e1b4eb239f",
+    "sha256": "871d2b8d9438ef110c330ada36265ce9611cffdadb3448844422aef6312c614c",
     "priority": 2
   },
   {
@@ -491,7 +491,7 @@
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session.",
-    "sha256": "9c99188387ae85d4d4fc1e5e7b54e3218a8b03a57f1fba22bdd52e2045ba5467",
+    "sha256": "2f4e80496c650733578d890f280027846341012c2af8014a3462536dc3fafb4e",
     "priority": 2
   },
   {
@@ -506,7 +506,7 @@
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session.",
-    "sha256": "086b9f5c6c23c19921bc8dd1cc6139908d78a68974e7c64c874e20709255849f",
+    "sha256": "b987f34590d23063064f5b971be57a890cd7ecdbcf6b72fb4b82f75ba2c56776",
     "priority": 2
   },
   {
@@ -521,7 +521,7 @@
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session.",
-    "sha256": "d28bdcbfce23c2e34d21013332d50e7b6dcb396f5dfa5d9df74aeb067f955a6d",
+    "sha256": "eff94ed6e773361563a985b912f42df49447110fecbfd57adf66cb24782e3873",
     "priority": 2
   },
   {
@@ -536,7 +536,7 @@
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session.",
-    "sha256": "9dc53fdfee502de3c4d53e65afa6e2c7f993267fc9746ed5a12e02354effe218",
+    "sha256": "cbf21c4cbcd1ff42f8543a62381a847f1e09d38b13be79bc3093574a2f302148",
     "priority": 2
   },
   {
@@ -551,7 +551,7 @@
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots.",
-    "sha256": "24f3f34e45c99431ada9ab145f43226dd8b7debbe22cf2615ec1fe88c198a314",
+    "sha256": "77f79e9f5b865ca2cfafa4c899dc488cf42ad028606477ce5e481ff1f33d97a6",
     "priority": 2
   },
   {
@@ -566,7 +566,7 @@
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots.",
-    "sha256": "19f0f6dd62538affe844062bb7c2988181f32ca3da9e8cc12b7f1145acd5120f",
+    "sha256": "eb8e99f0045df99f3c93c080c0f72f1cb4092cc95ec1f7cd1583422850bfd80d",
     "priority": 2
   },
   {
@@ -581,7 +581,7 @@
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots.",
-    "sha256": "aba955187d61e85e18fb5f597dd158eebdc4274e58dddf3c7c9bef1569232b9d",
+    "sha256": "6dea274fdea40ef3ced18a0c2356ea4e643866d08322b4b9137a4d33726ef738",
     "priority": 2
   },
   {
@@ -592,11 +592,11 @@
     "reference": "LOOK-20",
     "prompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: LOOK-20. HER: deep maroon ethnic kurta suit with subtle traditional embroidery and a long straight silhouette, minimal jewellery. HIM: white embroidered kurta with white pajama trousers, arms crossed. POSE: standing side by side, he on the right with both arms crossed, she on the left with one hand around her waist, bodies close together, casual relaxed upper-body pose. FRAMING: horizontal cropped composition from below the shoulders to the waist, not a full-body shot. SETTING: night balcony terrace with a railing behind. LIGHT: warm outdoor evening light.",
     "status": "GENERATED",
-    "dimensions": "768x1376",
+    "dimensions": "900x502",
     "generationState": "GENERATED",
     "qaState": "GENERATED",
     "qaNotes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots.",
-    "sha256": "404534f2af41ff08786760efbf44432fafc68c84f8c66e86522110d9d36a1453",
+    "sha256": "bb175d6b9f1da675abea087a4292f8e012677ef5f1946acd0fb0b6b54f51ad67",
     "priority": 2
   },
   {

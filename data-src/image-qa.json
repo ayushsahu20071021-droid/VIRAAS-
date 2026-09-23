@@ -277,80 +277,80 @@
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 200378,
-    "sha256": "808aad9feb604d1aae6b1a71b16f20f97ee1ab9f6411ed6e3e0c7e389423128a",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+    "bytes": 116348,
+    "sha256": "7e38f7cfc592f594b4d836cd9c6cc016741ed834110c6e66fbcd8f0130d999f2",
+    "notes": "LOOK-11 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-12": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 94556,
-    "sha256": "8c83f9622208e482815b98c9fcef4f0a05f315fce935d6515e0074e1b4eb239f",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+    "bytes": 176732,
+    "sha256": "871d2b8d9438ef110c330ada36265ce9611cffdadb3448844422aef6312c614c",
+    "notes": "LOOK-12 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-13": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 177322,
-    "sha256": "9c99188387ae85d4d4fc1e5e7b54e3218a8b03a57f1fba22bdd52e2045ba5467",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+    "bytes": 143050,
+    "sha256": "2f4e80496c650733578d890f280027846341012c2af8014a3462536dc3fafb4e",
+    "notes": "LOOK-13 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-14": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 89116,
-    "sha256": "086b9f5c6c23c19921bc8dd1cc6139908d78a68974e7c64c874e20709255849f",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+    "bytes": 214316,
+    "sha256": "b987f34590d23063064f5b971be57a890cd7ecdbcf6b72fb4b82f75ba2c56776",
+    "notes": "LOOK-14 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-15": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 183072,
-    "sha256": "d28bdcbfce23c2e34d21013332d50e7b6dcb396f5dfa5d9df74aeb067f955a6d",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+    "bytes": 277616,
+    "sha256": "eff94ed6e773361563a985b912f42df49447110fecbfd57adf66cb24782e3873",
+    "notes": "LOOK-15 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-16": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 172584,
-    "sha256": "9dc53fdfee502de3c4d53e65afa6e2c7f993267fc9746ed5a12e02354effe218",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+    "bytes": 162262,
+    "sha256": "cbf21c4cbcd1ff42f8543a62381a847f1e09d38b13be79bc3093574a2f302148",
+    "notes": "LOOK-16 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-17": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 108952,
-    "sha256": "24f3f34e45c99431ada9ab145f43226dd8b7debbe22cf2615ec1fe88c198a314",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots."
+    "bytes": 155890,
+    "sha256": "77f79e9f5b865ca2cfafa4c899dc488cf42ad028606477ce5e481ff1f33d97a6",
+    "notes": "LOOK-17 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-18": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 159236,
-    "sha256": "19f0f6dd62538affe844062bb7c2988181f32ca3da9e8cc12b7f1145acd5120f",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots."
+    "bytes": 92924,
+    "sha256": "eb8e99f0045df99f3c93c080c0f72f1cb4092cc95ec1f7cd1583422850bfd80d",
+    "notes": "LOOK-18 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-19": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 210004,
-    "sha256": "aba955187d61e85e18fb5f597dd158eebdc4274e58dddf3c7c9bef1569232b9d",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots."
+    "bytes": 213098,
+    "sha256": "6dea274fdea40ef3ced18a0c2356ea4e643866d08322b4b9137a4d33726ef738",
+    "notes": "LOOK-19 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-20": {
     "generation": "GENERATED",
     "qa": "GENERATED",
-    "dimensions": "768x1376",
-    "bytes": 183282,
-    "sha256": "404534f2af41ff08786760efbf44432fafc68c84f8c66e86522110d9d36a1453",
-    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots."
+    "dimensions": "900x502",
+    "bytes": 46538,
+    "sha256": "bb175d6b9f1da675abea087a4292f8e012677ef5f1946acd0fb0b6b54f51ad67",
+    "notes": "LOOK-20 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   }
 }
