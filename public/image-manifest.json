@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T17:35:48.514Z",
+  "generatedAt": "2026-09-23T17:50:55.535Z",
   "references": [
     {
       "id": "REF-C1",
@@ -221,7 +221,7 @@
   "totals": {
     "queued": 961,
     "qaPass": 18,
-    "pending": 925,
+    "pending": 921,
     "qaFail": 0
   }
 }

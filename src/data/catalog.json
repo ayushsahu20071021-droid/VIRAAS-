@@ -115,7 +115,6 @@
       "garba-09",
       "garba-13",
       "garba-17",
-      "college-fest-17",
       "traditional-17"
     ]
   },
@@ -772,6 +771,7 @@
       "college-fest-07",
       "college-fest-11",
       "college-fest-15",
+      "college-fest-19",
       "festive-party-19"
     ]
   },
@@ -1137,6 +1137,7 @@
       "college-fest-05",
       "college-fest-09",
       "college-fest-13",
+      "college-fest-17",
       "diwali-17",
       "festive-party-01",
       "festive-party-05",
@@ -1325,6 +1326,7 @@
       "college-fest-06",
       "college-fest-10",
       "college-fest-14",
+      "college-fest-18",
       "festive-party-10",
       "festive-party-14"
     ]
@@ -1501,7 +1503,6 @@
       "garba-11",
       "garba-15",
       "garba-19",
-      "college-fest-19",
       "traditional-07",
       "traditional-11",
       "traditional-15"
@@ -3446,6 +3447,7 @@
       "college-fest-15",
       "college-fest-16",
       "college-fest-17",
+      "college-fest-18",
       "college-fest-19",
       "college-fest-20",
       "diwali-17",
@@ -4971,6 +4973,7 @@
     "accessory": false,
     "coupleIds": [
       "college-fest-12",
+      "college-fest-20",
       "diwali-08",
       "festive-party-03",
       "traditional-02",
@@ -5463,28 +5466,29 @@
     ]
   },
   {
-    "id": "w-anarkali-rani-pink-mirror-yoke",
+    "id": "w-lehenga-black-white-printed-crop-top",
     "gender": "women",
-    "category": "Anarkali",
-    "subcategory": "Anarkali Set",
-    "title": "Rani Pink Mirror-Yoke Anarkali Set",
-    "merchant": "SHOPSY",
+    "category": "Lehenga",
+    "subcategory": "Lehenga Choli",
+    "title": "Black White Printed Crop Top Cotton Lehenga",
+    "merchant": "MEESHO",
     "brand": "Marketplace sellers (varies)",
-    "price": 2599,
+    "price": 2499,
     "priceType": "estimate",
     "mrp": null,
     "discount": null,
     "currency": "INR",
-    "colour": "Rani Pink",
+    "colour": "Black",
     "secondaryColours": [
-      "Gold"
+      "Gold",
+      "Multicolour"
     ],
-    "fabric": "Georgette",
-    "pattern": "Embroidered",
-    "embroidery": "mirror yoke",
-    "silhouette": "Flared Anarkali",
+    "fabric": "Cotton",
+    "pattern": "Printed",
+    "embroidery": "white printed crop top",
+    "silhouette": "A-line Flared",
     "occasion": [
-      "college-fest",
+      "garba",
       "diwali",
       "festive-party",
       "traditional"
@@ -5493,9 +5497,8 @@
       "16-30"
     ],
     "styleTags": [
-      "Mirror Work",
-      "Embroidered",
-      "Rani Pink"
+      "Printed",
+      "Black Festive"
     ],
     "sizes": [
       "XS",
@@ -5507,38 +5510,162 @@
     ],
     "imageUrl": "",
     "gallery": [],
-    "merchantUrl": "https://www.shopsy.in/search?q=women%20Rani%20Pink%20Mirror-Yoke%20Anarkali%20Set",
+    "merchantUrl": "https://www.meesho.com/search?q=women%20Black%20White%20Printed%20Crop%20Top%20Cotton%20Lehenga",
     "merchantUrlType": "marketplace-search",
     "affiliateUrl": "",
     "affiliateSource": "",
     "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's rani pink anarkali with mirror yoke, rani pink, georgette fabric appearance, mirror yoke details, flared anarkali silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's black flared cotton skirt with a white printed cropped top and a black dupatta over one shoulder, black, cotton fabric appearance, white printed crop top details, a-line flared silhouette, styled according to VIRAAS visual reference REF-CF-STALL, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
     "generatedImageUrl": "",
     "status": "image-pending",
     "lastChecked": null,
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A rani pink anarkali with mirror yoke in georgette, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": "REF-S2 panel 18",
+    "description": "A black flared cotton skirt with a white printed cropped top and a black dupatta over one shoulder in cotton, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": "REF-CF-STALL",
     "accessory": false,
     "coupleIds": [
       "college-fest-17"
     ]
   },
   {
-    "id": "m-modern-kurta-mint-embroidered-placket",
+    "id": "m-printed-ethnic-shirt-white-small-motif-print",
     "gender": "men",
-    "category": "Modern Kurta",
-    "subcategory": "Kurta",
-    "title": "Mint Short Kurta with Embroidered Placket",
-    "merchant": "NYKAA",
+    "category": "Printed Ethnic Shirt",
+    "subcategory": "Printed Shirt",
+    "title": "White Small Motif Print Cotton Printed Ethnic Shirt",
+    "merchant": "MEESHO",
     "brand": "Marketplace sellers (varies)",
-    "price": 1299,
+    "price": 699,
     "priceType": "estimate",
     "mrp": null,
     "discount": null,
     "currency": "INR",
-    "colour": "Mint",
-    "secondaryColours": [],
+    "colour": "White",
+    "secondaryColours": [
+      "Silver"
+    ],
+    "fabric": "Cotton",
+    "pattern": "Printed",
+    "embroidery": "small motif print",
+    "silhouette": "Relaxed Printed Shirt",
+    "occasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Printed",
+      "Ivory & White",
+      "Contemporary"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.meesho.com/search?q=men%20White%20Small%20Motif%20Print%20Cotton%20Printed%20Ethnic%20Shirt",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": true,
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's white cotton ethnic shirt with a small motif print and relaxed trousers, white, cotton fabric appearance, small motif print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-CF-STALL, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A white cotton ethnic shirt with a small motif print and relaxed trousers in cotton, cut as a relaxed printed shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": "REF-CF-STALL",
+    "accessory": false,
+    "coupleIds": [
+      "college-fest-17"
+    ]
+  },
+  {
+    "id": "w-sharara-ivory-printed-kurti",
+    "gender": "women",
+    "category": "Sharara",
+    "subcategory": "Sharara Set",
+    "title": "Ivory Printed Kurti Cotton Sharara",
+    "merchant": "AJIO",
+    "brand": "Marketplace sellers (varies)",
+    "price": 999,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Ivory",
+    "secondaryColours": [
+      "Silver"
+    ],
+    "fabric": "Cotton",
+    "pattern": "Printed",
+    "embroidery": "printed kurti",
+    "silhouette": "Wide-Leg Sharara",
+    "occasion": [
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Printed",
+      "Ivory & White"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.ajio.com/search/?text=women%20Ivory%20Printed%20Kurti%20Cotton%20Sharara",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": true,
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's ivory printed sharara set with a short kurti and a sheer dupatta, ivory, cotton fabric appearance, printed kurti details, wide-leg sharara silhouette, styled according to VIRAAS visual reference REF-CF-WINDOW, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A ivory printed sharara set with a short kurti and a sheer dupatta in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": "REF-CF-WINDOW",
+    "accessory": false,
+    "coupleIds": [
+      "college-fest-18"
+    ]
+  },
+  {
+    "id": "m-modern-kurta-black-embroidered-placket",
+    "gender": "men",
+    "category": "Modern Kurta",
+    "subcategory": "Kurta",
+    "title": "Black Short Kurta with Embroidered Placket",
+    "merchant": "FLIPKART",
+    "brand": "Marketplace sellers (varies)",
+    "price": 2899,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Black",
+    "secondaryColours": [
+      "Gold",
+      "Multicolour"
+    ],
     "fabric": "Cotton",
     "pattern": "Embroidered",
     "embroidery": "embroidered placket",
@@ -5555,6 +5682,7 @@
     ],
     "styleTags": [
       "Embroidered",
+      "Black Festive",
       "Contemporary"
     ],
     "sizes": [
@@ -5566,243 +5694,32 @@
     ],
     "imageUrl": "",
     "gallery": [],
-    "merchantUrl": "https://www.nykaafashion.com/search?q=men%20Mint%20Short%20Kurta%20with%20Embroidered%20Placket",
+    "merchantUrl": "https://www.flipkart.com/search?q=men%20Black%20Short%20Kurta%20with%20Embroidered%20Placket",
     "merchantUrlType": "marketplace-search",
     "affiliateUrl": "",
     "affiliateSource": "",
     "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mint short kurta, mint, cotton fabric appearance, embroidered placket details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black cotton kurta with an embroidered placket and relaxed trousers, black, cotton fabric appearance, embroidered placket details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
     "generatedImageUrl": "",
     "status": "image-pending",
     "lastChecked": null,
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A mint short kurta in cotton, cut as a contemporary straight / short kurta. Picked for Garba, College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "description": "A black cotton kurta with an embroidered placket and relaxed trousers in cotton, cut as a contemporary straight / short kurta. Picked for Garba, College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "reference": "REF-M2",
-    "accessory": false,
-    "coupleIds": [
-      "college-fest-17"
-    ]
-  },
-  {
-    "id": "w-saree-mustard-contrast-border",
-    "gender": "women",
-    "category": "Saree",
-    "subcategory": "Saree",
-    "title": "Mustard Contrast-Border Cotton Saree",
-    "merchant": "AJIO",
-    "brand": "Marketplace sellers (varies)",
-    "price": 3299,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Mustard",
-    "secondaryColours": [
-      "Red"
-    ],
-    "fabric": "Cotton",
-    "pattern": "Woven",
-    "embroidery": "contrast border",
-    "silhouette": "Classic Drape",
-    "occasion": [
-      "college-fest",
-      "diwali",
-      "festive-party",
-      "traditional"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Minimal"
-    ],
-    "sizes": [
-      "Free Size"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.ajio.com/search/?text=women%20Mustard%20Contrast-Border%20Cotton%20Saree",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's mustard cotton saree with maroon border, mustard, cotton fabric appearance, contrast border details, classic drape silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A mustard cotton saree with maroon border in cotton, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": "REF-C1 side panel",
     "accessory": false,
     "coupleIds": [
       "college-fest-18"
     ]
   },
   {
-    "id": "w-jewellery-gold-choker-necklace",
+    "id": "w-anarkali-maroon-block-print",
     "gender": "women",
-    "category": "Jewellery",
-    "subcategory": "Jewellery",
-    "title": "Gold Choker Necklace",
-    "merchant": "MEESHO",
+    "category": "Anarkali",
+    "subcategory": "Anarkali Set",
+    "title": "Maroon Block-Print Cotton Anarkali Set",
+    "merchant": "MYNTRA",
     "brand": "Marketplace sellers (varies)",
-    "price": 1199,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Gold",
-    "secondaryColours": [],
-    "fabric": "Alloy",
-    "pattern": "Handcrafted",
-    "embroidery": "choker necklace",
-    "silhouette": "Accessory",
-    "occasion": [
-      "garba",
-      "college-fest",
-      "diwali",
-      "festive-party",
-      "traditional"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Minimal"
-    ],
-    "sizes": [
-      "One Size"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.meesho.com/search?q=women%20Gold%20Choker%20Necklace",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": false,
-    "imagePrompt": "Luxury Indian fashion editorial still-life product photograph of gold choker necklace (choker necklace), realistic material texture, placed on a refined stone or fabric surface, soft editorial lighting, premium Indian fashion aesthetic, original VIRAAS composition, no text, no logos, no watermark.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A gold choker necklace to finish your festive look. Styled for Garba, College Fest, Diwali, Festive Party, Traditional.",
-    "reference": null,
-    "accessory": true,
-    "coupleIds": [
-      "college-fest-18",
-      "diwali-02",
-      "diwali-06",
-      "diwali-10",
-      "diwali-14",
-      "diwali-18",
-      "festive-party-02",
-      "festive-party-06",
-      "festive-party-18",
-      "traditional-02",
-      "traditional-10",
-      "traditional-14",
-      "traditional-18"
-    ]
-  },
-  {
-    "id": "w-footwear-gold-embroidered-juttis",
-    "gender": "women",
-    "category": "Footwear",
-    "subcategory": "Footwear",
-    "title": "Gold Embroidered Juttis",
-    "merchant": "SHOPSY",
-    "brand": "Marketplace sellers (varies)",
-    "price": 299,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Gold",
-    "secondaryColours": [],
-    "fabric": "Faux Leather",
-    "pattern": "Embroidered",
-    "embroidery": "embroidered juttis",
-    "silhouette": "Accessory",
-    "occasion": [
-      "garba",
-      "college-fest",
-      "diwali",
-      "festive-party",
-      "traditional"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Embroidered"
-    ],
-    "sizes": [
-      "UK 3",
-      "UK 4",
-      "UK 5",
-      "UK 6",
-      "UK 7",
-      "UK 8"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.shopsy.in/search?q=women%20Gold%20Embroidered%20Juttis",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": false,
-    "imagePrompt": "Luxury Indian fashion editorial still-life product photograph of gold embroidered juttis (embroidered juttis), realistic material texture, placed on a refined stone or fabric surface, soft editorial lighting, premium Indian fashion aesthetic, original VIRAAS composition, no text, no logos, no watermark.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A gold embroidered juttis to finish your festive look. Styled for Garba, College Fest, Diwali, Festive Party, Traditional.",
-    "reference": null,
-    "accessory": true,
-    "coupleIds": [
-      "college-fest-18",
-      "diwali-01",
-      "diwali-02",
-      "diwali-03",
-      "diwali-04",
-      "diwali-05",
-      "diwali-06",
-      "diwali-07",
-      "diwali-08",
-      "diwali-09",
-      "diwali-10",
-      "diwali-11",
-      "diwali-12",
-      "diwali-13",
-      "diwali-14",
-      "diwali-15",
-      "diwali-16",
-      "diwali-18",
-      "diwali-19",
-      "diwali-20",
-      "traditional-01",
-      "traditional-02",
-      "traditional-03",
-      "traditional-05",
-      "traditional-08",
-      "traditional-09",
-      "traditional-10",
-      "traditional-12",
-      "traditional-13",
-      "traditional-14",
-      "traditional-18",
-      "traditional-19"
-    ]
-  },
-  {
-    "id": "m-printed-ethnic-shirt-maroon-small-motif",
-    "gender": "men",
-    "category": "Printed Ethnic Shirt",
-    "subcategory": "Printed Shirt",
-    "title": "Maroon Small-Motif Printed Shirt",
-    "merchant": "MEESHO",
-    "brand": "Marketplace sellers (varies)",
-    "price": 1299,
+    "price": 1099,
     "priceType": "estimate",
     "mrp": null,
     "discount": null,
@@ -5811,81 +5728,21 @@
     "secondaryColours": [
       "Gold"
     ],
-    "fabric": "Rayon",
-    "pattern": "Motif Print",
-    "embroidery": "small motif",
-    "silhouette": "Relaxed Printed Shirt",
+    "fabric": "Cotton",
+    "pattern": "Block Print",
+    "embroidery": "block print",
+    "silhouette": "Flared Anarkali",
     "occasion": [
-      "garba",
       "college-fest",
       "diwali",
-      "festive-party"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Printed",
-      "Contemporary"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.meesho.com/search?q=men%20Maroon%20Small-Motif%20Printed%20Shirt",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon small-motif printed shirt, maroon, rayon fabric appearance, small motif details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A maroon small-motif printed shirt in rayon, cut as a relaxed printed shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": "REF-C1 side panel",
-    "accessory": false,
-    "coupleIds": [
-      "college-fest-18"
-    ]
-  },
-  {
-    "id": "w-chaniya-choli-navy-mirror-work",
-    "gender": "women",
-    "category": "Chaniya Choli",
-    "subcategory": "Garba Wear",
-    "title": "Navy Mirror-Work Cotton Chaniya Choli",
-    "merchant": "NYKAA",
-    "brand": "Marketplace sellers (varies)",
-    "price": 2499,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Navy",
-    "secondaryColours": [
-      "Silver"
-    ],
-    "fabric": "Cotton",
-    "pattern": "Embroidered",
-    "embroidery": "mirror work",
-    "silhouette": "Flared Chaniya",
-    "occasion": [
-      "garba",
-      "college-fest",
+      "festive-party",
       "traditional"
     ],
     "ageSegment": [
       "16-30"
     ],
     "styleTags": [
-      "Mirror Work",
-      "Embroidered"
+      "Printed"
     ],
     "sizes": [
       "XS",
@@ -5897,44 +5754,42 @@
     ],
     "imageUrl": "",
     "gallery": [],
-    "merchantUrl": "https://www.nykaafashion.com/search?q=women%20Navy%20Mirror-Work%20Cotton%20Chaniya%20Choli",
+    "merchantUrl": "https://www.myntra.com/women-maroon-block-print-cotton-anarkali-set",
     "merchantUrlType": "marketplace-search",
     "affiliateUrl": "",
     "affiliateSource": "",
     "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's navy mirror chaniya with multicolour dupatta, navy, cotton fabric appearance, mirror work details, flared chaniya silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's maroon block-print anarkali with a gathered flared skirt and a dupatta flying, maroon, cotton fabric appearance, block print details, flared anarkali silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
     "generatedImageUrl": "",
     "status": "image-pending",
     "lastChecked": null,
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A navy mirror chaniya with multicolour dupatta in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": "REF-W1",
+    "description": "A maroon block-print anarkali with a gathered flared skirt and a dupatta flying in cotton, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": "REF-CF-TWIRL",
     "accessory": false,
     "coupleIds": [
       "college-fest-19"
     ]
   },
   {
-    "id": "m-printed-ethnic-shirt-mustard-floral-print",
+    "id": "m-ethnic-shirt-cream-solid",
     "gender": "men",
-    "category": "Printed Ethnic Shirt",
-    "subcategory": "Printed Shirt",
-    "title": "Mustard Floral Printed Ethnic Shirt",
-    "merchant": "NYKAA",
+    "category": "Ethnic Shirt",
+    "subcategory": "Ethnic Shirt",
+    "title": "Cream Relaxed Cotton Ethnic Shirt",
+    "merchant": "AJIO",
     "brand": "Marketplace sellers (varies)",
-    "price": 1199,
+    "price": 1299,
     "priceType": "estimate",
     "mrp": null,
     "discount": null,
     "currency": "INR",
-    "colour": "Mustard",
-    "secondaryColours": [
-      "Red"
-    ],
-    "fabric": "Rayon",
-    "pattern": "Floral Print",
-    "embroidery": "floral print",
-    "silhouette": "Relaxed Printed Shirt",
+    "colour": "Cream",
+    "secondaryColours": [],
+    "fabric": "Cotton",
+    "pattern": "Solid",
+    "embroidery": "solid",
+    "silhouette": "Relaxed Mandarin Shirt",
     "occasion": [
       "garba",
       "college-fest",
@@ -5945,7 +5800,7 @@
       "16-30"
     ],
     "styleTags": [
-      "Printed",
+      "Ivory & White",
       "Contemporary"
     ],
     "sizes": [
@@ -5957,41 +5812,43 @@
     ],
     "imageUrl": "",
     "gallery": [],
-    "merchantUrl": "https://www.nykaafashion.com/search?q=men%20Mustard%20Floral%20Printed%20Ethnic%20Shirt",
+    "merchantUrl": "https://www.ajio.com/search/?text=men%20Cream%20Relaxed%20Cotton%20Ethnic%20Shirt",
     "merchantUrlType": "marketplace-search",
     "affiliateUrl": "",
     "affiliateSource": "",
     "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard printed ethnic shirt, mustard, rayon fabric appearance, floral print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's cream cotton ethnic shirt with a band collar and relaxed trousers, cream, cotton fabric appearance, solid details, relaxed mandarin shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
     "generatedImageUrl": "",
     "status": "image-pending",
     "lastChecked": null,
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A mustard printed ethnic shirt in rayon, cut as a relaxed printed shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": "REF-S1 panel 5",
+    "description": "A cream cotton ethnic shirt with a band collar and relaxed trousers in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": "REF-CF-TWIRL",
     "accessory": false,
     "coupleIds": [
       "college-fest-19"
     ]
   },
   {
-    "id": "w-lehenga-powder-blue-sequin",
+    "id": "w-lehenga-emerald-printed-crop-top",
     "gender": "women",
     "category": "Lehenga",
     "subcategory": "Lehenga Choli",
-    "title": "Powder Blue Lightweight Sequin Lehenga",
-    "merchant": "NYKAA",
+    "title": "Emerald Printed Crop Top Cotton Lehenga",
+    "merchant": "MEESHO",
     "brand": "Marketplace sellers (varies)",
-    "price": 4699,
+    "price": 2199,
     "priceType": "estimate",
     "mrp": null,
     "discount": null,
     "currency": "INR",
-    "colour": "Powder Blue",
-    "secondaryColours": [],
-    "fabric": "Georgette",
-    "pattern": "Sequinned",
-    "embroidery": "sequin",
+    "colour": "Emerald",
+    "secondaryColours": [
+      "Gold"
+    ],
+    "fabric": "Cotton",
+    "pattern": "Printed",
+    "embroidery": "printed crop top",
     "silhouette": "A-line Flared",
     "occasion": [
       "garba",
@@ -6003,7 +5860,7 @@
       "16-30"
     ],
     "styleTags": [
-      "Sequin"
+      "Printed"
     ],
     "sizes": [
       "XS",
@@ -6015,84 +5872,21 @@
     ],
     "imageUrl": "",
     "gallery": [],
-    "merchantUrl": "https://www.nykaafashion.com/search?q=women%20Powder%20Blue%20Lightweight%20Sequin%20Lehenga",
+    "merchantUrl": "https://www.meesho.com/search?q=women%20Emerald%20Printed%20Crop%20Top%20Cotton%20Lehenga",
     "merchantUrlType": "marketplace-search",
     "affiliateUrl": "",
     "affiliateSource": "",
     "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's powder blue lightweight sequin lehenga, powder blue, georgette fabric appearance, sequin details, a-line flared silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's emerald flared cotton skirt with a printed cropped top and an emerald dupatta, emerald, cotton fabric appearance, printed crop top details, a-line flared silhouette, styled according to VIRAAS visual reference REF-CF-BENCH, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
     "generatedImageUrl": "",
     "status": "image-pending",
     "lastChecked": null,
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A powder blue lightweight sequin lehenga in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": "REF-W1",
+    "description": "A emerald flared cotton skirt with a printed cropped top and an emerald dupatta in cotton, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": "REF-CF-BENCH",
     "accessory": false,
     "coupleIds": [
       "college-fest-20"
-    ]
-  },
-  {
-    "id": "m-modern-kurta-navy-solid",
-    "gender": "men",
-    "category": "Modern Kurta",
-    "subcategory": "Kurta",
-    "title": "Navy Linen-Blend Mandarin Kurta",
-    "merchant": "MYNTRA",
-    "brand": "Marketplace sellers (varies)",
-    "price": 2699,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Navy",
-    "secondaryColours": [
-      "Silver"
-    ],
-    "fabric": "Linen",
-    "pattern": "Solid",
-    "embroidery": "solid",
-    "silhouette": "Contemporary Straight / Short Kurta",
-    "occasion": [
-      "garba",
-      "college-fest",
-      "diwali",
-      "festive-party",
-      "traditional"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Minimal",
-      "Contemporary"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.myntra.com/men-navy-linen-blend-mandarin-kurta",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy short kurta, navy, linen fabric appearance, solid details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A navy short kurta in linen, cut as a contemporary straight / short kurta. Picked for Garba, College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": "REF-S2 panel 20",
-    "accessory": false,
-    "coupleIds": [
-      "college-fest-20",
-      "diwali-14",
-      "festive-party-05"
     ]
   },
   {
@@ -6214,6 +6008,95 @@
     ]
   },
   {
+    "id": "w-footwear-gold-embroidered-juttis",
+    "gender": "women",
+    "category": "Footwear",
+    "subcategory": "Footwear",
+    "title": "Gold Embroidered Juttis",
+    "merchant": "SHOPSY",
+    "brand": "Marketplace sellers (varies)",
+    "price": 299,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Gold",
+    "secondaryColours": [],
+    "fabric": "Faux Leather",
+    "pattern": "Embroidered",
+    "embroidery": "embroidered juttis",
+    "silhouette": "Accessory",
+    "occasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Embroidered"
+    ],
+    "sizes": [
+      "UK 3",
+      "UK 4",
+      "UK 5",
+      "UK 6",
+      "UK 7",
+      "UK 8"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.shopsy.in/search?q=women%20Gold%20Embroidered%20Juttis",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": false,
+    "imagePrompt": "Luxury Indian fashion editorial still-life product photograph of gold embroidered juttis (embroidered juttis), realistic material texture, placed on a refined stone or fabric surface, soft editorial lighting, premium Indian fashion aesthetic, original VIRAAS composition, no text, no logos, no watermark.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A gold embroidered juttis to finish your festive look. Styled for Garba, College Fest, Diwali, Festive Party, Traditional.",
+    "reference": null,
+    "accessory": true,
+    "coupleIds": [
+      "diwali-01",
+      "diwali-02",
+      "diwali-03",
+      "diwali-04",
+      "diwali-05",
+      "diwali-06",
+      "diwali-07",
+      "diwali-08",
+      "diwali-09",
+      "diwali-10",
+      "diwali-11",
+      "diwali-12",
+      "diwali-13",
+      "diwali-14",
+      "diwali-15",
+      "diwali-16",
+      "diwali-18",
+      "diwali-19",
+      "diwali-20",
+      "traditional-01",
+      "traditional-02",
+      "traditional-03",
+      "traditional-05",
+      "traditional-08",
+      "traditional-09",
+      "traditional-10",
+      "traditional-12",
+      "traditional-13",
+      "traditional-14",
+      "traditional-18",
+      "traditional-19"
+    ]
+  },
+  {
     "id": "m-festive-kurta-set-cream-tonal-embroidery",
     "gender": "men",
     "category": "Festive Kurta Set",
@@ -6329,6 +6212,71 @@
     "accessory": false,
     "coupleIds": [
       "diwali-02"
+    ]
+  },
+  {
+    "id": "w-jewellery-gold-choker-necklace",
+    "gender": "women",
+    "category": "Jewellery",
+    "subcategory": "Jewellery",
+    "title": "Gold Choker Necklace",
+    "merchant": "MEESHO",
+    "brand": "Marketplace sellers (varies)",
+    "price": 1199,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Gold",
+    "secondaryColours": [],
+    "fabric": "Alloy",
+    "pattern": "Handcrafted",
+    "embroidery": "choker necklace",
+    "silhouette": "Accessory",
+    "occasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Minimal"
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.meesho.com/search?q=women%20Gold%20Choker%20Necklace",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": false,
+    "imagePrompt": "Luxury Indian fashion editorial still-life product photograph of gold choker necklace (choker necklace), realistic material texture, placed on a refined stone or fabric surface, soft editorial lighting, premium Indian fashion aesthetic, original VIRAAS composition, no text, no logos, no watermark.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A gold choker necklace to finish your festive look. Styled for Garba, College Fest, Diwali, Festive Party, Traditional.",
+    "reference": null,
+    "accessory": true,
+    "coupleIds": [
+      "diwali-02",
+      "diwali-06",
+      "diwali-10",
+      "diwali-14",
+      "diwali-18",
+      "festive-party-02",
+      "festive-party-06",
+      "festive-party-18",
+      "traditional-02",
+      "traditional-10",
+      "traditional-14",
+      "traditional-18"
     ]
   },
   {
@@ -7660,6 +7608,68 @@
     "accessory": false,
     "coupleIds": [
       "diwali-14"
+    ]
+  },
+  {
+    "id": "m-modern-kurta-navy-solid",
+    "gender": "men",
+    "category": "Modern Kurta",
+    "subcategory": "Kurta",
+    "title": "Navy Linen-Blend Mandarin Kurta",
+    "merchant": "MYNTRA",
+    "brand": "Marketplace sellers (varies)",
+    "price": 2699,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Navy",
+    "secondaryColours": [
+      "Silver"
+    ],
+    "fabric": "Linen",
+    "pattern": "Solid",
+    "embroidery": "solid",
+    "silhouette": "Contemporary Straight / Short Kurta",
+    "occasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Minimal",
+      "Contemporary"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.myntra.com/men-navy-linen-blend-mandarin-kurta",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": true,
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy kurta, navy, linen fabric appearance, solid details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A navy kurta in linen, cut as a contemporary straight / short kurta. Picked for Garba, College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": "REF-S2 panel 15",
+    "accessory": false,
+    "coupleIds": [
+      "diwali-14",
+      "festive-party-05"
     ]
   },
   {
@@ -13542,6 +13552,64 @@
     "coupleIds": []
   },
   {
+    "id": "w-chaniya-choli-navy-mirror-work",
+    "gender": "women",
+    "category": "Chaniya Choli",
+    "subcategory": "Garba Wear",
+    "title": "Navy Mirror-Work Cotton Chaniya Choli",
+    "merchant": "NYKAA",
+    "brand": "Marketplace sellers (varies)",
+    "price": 2499,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Navy",
+    "secondaryColours": [
+      "Silver"
+    ],
+    "fabric": "Cotton",
+    "pattern": "Embroidered",
+    "embroidery": "mirror work",
+    "silhouette": "Flared Chaniya",
+    "occasion": [
+      "garba",
+      "college-fest",
+      "traditional"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Mirror Work",
+      "Embroidered"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.nykaafashion.com/search?q=women%20Navy%20Mirror-Work%20Cotton%20Chaniya%20Choli",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": true,
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's navy mirror-work cotton chaniya choli with mirror work, navy, cotton fabric appearance, mirror work details, flared chaniya silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A navy mirror-work cotton chaniya choli with mirror work in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": "REF-W1",
+    "accessory": false,
+    "coupleIds": []
+  },
+  {
     "id": "w-chaniya-choli-mustard-kutchi-embroidered-crop-blouse",
     "gender": "women",
     "category": "Chaniya Choli",
@@ -18961,66 +19029,6 @@
     "coupleIds": []
   },
   {
-    "id": "w-lehenga-ivory-kutch-balloon-sleeve-blouse",
-    "gender": "women",
-    "category": "Lehenga",
-    "subcategory": "Lehenga Choli",
-    "title": "Ivory Lehenga with Kutch Balloon-Sleeve Blouse",
-    "merchant": "NYKAA",
-    "brand": "Marketplace sellers (varies)",
-    "price": 4399,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Ivory",
-    "secondaryColours": [
-      "Silver"
-    ],
-    "fabric": "Cotton Silk",
-    "pattern": "Embroidered",
-    "embroidery": "kutch balloon-sleeve blouse",
-    "silhouette": "A-line Flared",
-    "occasion": [
-      "garba",
-      "diwali",
-      "festive-party",
-      "traditional"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Kutchi",
-      "Embroidered",
-      "Ivory & White"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.nykaafashion.com/search?q=women%20Ivory%20Lehenga%20with%20Kutch%20Balloon-Sleeve%20Blouse",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's ivory lehenga with kutch balloon-sleeve blouse with kutch balloon-sleeve blouse, ivory, cotton silk fabric appearance, kutch balloon-sleeve blouse details, a-line flared silhouette, styled according to VIRAAS visual reference REF-W2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A ivory lehenga with kutch balloon-sleeve blouse with kutch balloon-sleeve blouse in cotton silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": "REF-W2",
-    "accessory": false,
-    "coupleIds": []
-  },
-  {
     "id": "w-sharara-mint-gota-trim",
     "gender": "women",
     "category": "Sharara",
@@ -20957,61 +20965,6 @@
     "lastChecked": null,
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
     "description": "A emerald block-print sharara set with block print in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": null,
-    "accessory": false,
-    "coupleIds": []
-  },
-  {
-    "id": "w-sharara-peach-gota-trim",
-    "gender": "women",
-    "category": "Sharara",
-    "subcategory": "Sharara Set",
-    "title": "Peach Gota-Trim Cotton Sharara Set",
-    "merchant": "NYKAA",
-    "brand": "Marketplace sellers (varies)",
-    "price": 1099,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Peach",
-    "secondaryColours": [],
-    "fabric": "Cotton",
-    "pattern": "Solid",
-    "embroidery": "gota trim",
-    "silhouette": "Wide-Leg Sharara",
-    "occasion": [
-      "college-fest",
-      "diwali",
-      "festive-party"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Zari & Gota"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.nykaafashion.com/search?q=women%20Peach%20Gota-Trim%20Cotton%20Sharara%20Set",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's peach gota-trim cotton sharara set with gota trim, peach, cotton fabric appearance, gota trim details, wide-leg sharara silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A peach gota-trim cotton sharara set with gota trim in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "reference": null,
     "accessory": false,
     "coupleIds": []
@@ -25369,6 +25322,57 @@
     "coupleIds": []
   },
   {
+    "id": "w-saree-gold-sequin-border",
+    "gender": "women",
+    "category": "Saree",
+    "subcategory": "Saree",
+    "title": "Gold Sequin-Border Georgette Saree",
+    "merchant": "MYNTRA",
+    "brand": "Marketplace sellers (varies)",
+    "price": 599,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Gold",
+    "secondaryColours": [],
+    "fabric": "Georgette",
+    "pattern": "Sequinned",
+    "embroidery": "sequin border",
+    "silhouette": "Classic Drape",
+    "occasion": [
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Sequin"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.myntra.com/women-gold-sequin-border-georgette-saree",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": true,
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's gold sequin-border georgette saree with sequin border, gold, georgette fabric appearance, sequin border details, classic drape silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A gold sequin-border georgette saree with sequin border in georgette, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": null,
+    "accessory": false,
+    "coupleIds": []
+  },
+  {
     "id": "w-pre-draped-saree-black-solid-with-embroidered-blouse",
     "gender": "women",
     "category": "Pre-Draped Saree",
@@ -27193,64 +27197,6 @@
     "coupleIds": []
   },
   {
-    "id": "w-anarkali-maroon-block-print",
-    "gender": "women",
-    "category": "Anarkali",
-    "subcategory": "Anarkali Set",
-    "title": "Maroon Block-Print Cotton Anarkali Set",
-    "merchant": "MYNTRA",
-    "brand": "Marketplace sellers (varies)",
-    "price": 1099,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Maroon",
-    "secondaryColours": [
-      "Gold"
-    ],
-    "fabric": "Cotton",
-    "pattern": "Block Print",
-    "embroidery": "block print",
-    "silhouette": "Flared Anarkali",
-    "occasion": [
-      "college-fest",
-      "diwali",
-      "festive-party",
-      "traditional"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Printed"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.myntra.com/women-maroon-block-print-cotton-anarkali-set",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's maroon block-print cotton anarkali set with block print, maroon, cotton fabric appearance, block print details, flared anarkali silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A maroon block-print cotton anarkali set with block print in cotton, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": null,
-    "accessory": false,
-    "coupleIds": []
-  },
-  {
     "id": "w-anarkali-emerald-gota",
     "gender": "women",
     "category": "Anarkali",
@@ -29060,6 +29006,66 @@
     "lastChecked": null,
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
     "description": "A peach gota-trim georgette anarkali set with gota in georgette, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": null,
+    "accessory": false,
+    "coupleIds": []
+  },
+  {
+    "id": "w-anarkali-rani-pink-mirror-yoke",
+    "gender": "women",
+    "category": "Anarkali",
+    "subcategory": "Anarkali Set",
+    "title": "Rani Pink Mirror-Yoke Anarkali Set",
+    "merchant": "SHOPSY",
+    "brand": "Marketplace sellers (varies)",
+    "price": 2599,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Rani Pink",
+    "secondaryColours": [
+      "Gold"
+    ],
+    "fabric": "Georgette",
+    "pattern": "Embroidered",
+    "embroidery": "mirror yoke",
+    "silhouette": "Flared Anarkali",
+    "occasion": [
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Mirror Work",
+      "Embroidered",
+      "Rani Pink"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.shopsy.in/search?q=women%20Rani%20Pink%20Mirror-Yoke%20Anarkali%20Set",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": true,
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing women's rani pink mirror-yoke anarkali set with mirror yoke, rani pink, georgette fabric appearance, mirror yoke details, flared anarkali silhouette, styled according to VIRAAS visual reference REF-W1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A rani pink mirror-yoke anarkali set with mirror yoke in georgette, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "reference": null,
     "accessory": false,
     "coupleIds": []
@@ -37643,6 +37649,63 @@
     "coupleIds": []
   },
   {
+    "id": "m-modern-kurta-mint-embroidered-placket",
+    "gender": "men",
+    "category": "Modern Kurta",
+    "subcategory": "Kurta",
+    "title": "Mint Short Kurta with Embroidered Placket",
+    "merchant": "NYKAA",
+    "brand": "Marketplace sellers (varies)",
+    "price": 1299,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Mint",
+    "secondaryColours": [],
+    "fabric": "Cotton",
+    "pattern": "Embroidered",
+    "embroidery": "embroidered placket",
+    "silhouette": "Contemporary Straight / Short Kurta",
+    "occasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Embroidered",
+      "Contemporary"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.nykaafashion.com/search?q=men%20Mint%20Short%20Kurta%20with%20Embroidered%20Placket",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": true,
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mint short kurta with embroidered placket with embroidered placket, mint, cotton fabric appearance, embroidered placket details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A mint short kurta with embroidered placket with embroidered placket in cotton, cut as a contemporary straight / short kurta. Picked for Garba, College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": "REF-M2",
+    "accessory": false,
+    "coupleIds": []
+  },
+  {
     "id": "m-modern-kurta-green-mirror-sequin",
     "gender": "men",
     "category": "Modern Kurta",
@@ -38579,63 +38642,6 @@
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
     "description": "A navy block-print cotton kurta with block print in cotton, cut as a contemporary straight / short kurta. Picked for Garba, College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "reference": null,
-    "accessory": false,
-    "coupleIds": []
-  },
-  {
-    "id": "m-modern-kurta-beige-chikankari",
-    "gender": "men",
-    "category": "Modern Kurta",
-    "subcategory": "Kurta",
-    "title": "Beige Chikankari Cotton Kurta",
-    "merchant": "MEESHO",
-    "brand": "Marketplace sellers (varies)",
-    "price": 1399,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Beige",
-    "secondaryColours": [],
-    "fabric": "Cotton",
-    "pattern": "Chikankari",
-    "embroidery": "chikankari",
-    "silhouette": "Contemporary Straight / Short Kurta",
-    "occasion": [
-      "garba",
-      "college-fest",
-      "diwali",
-      "festive-party",
-      "traditional"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Chikankari",
-      "Contemporary"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.meesho.com/search?q=men%20Beige%20Chikankari%20Cotton%20Kurta",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's beige chikankari cotton kurta with chikankari, beige, cotton fabric appearance, chikankari details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A beige chikankari cotton kurta with chikankari in cotton, cut as a contemporary straight / short kurta. Picked for Garba, College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": "REF-M1",
     "accessory": false,
     "coupleIds": []
   },
@@ -41252,62 +41258,6 @@
     "coupleIds": []
   },
   {
-    "id": "m-ethnic-shirt-cream-solid",
-    "gender": "men",
-    "category": "Ethnic Shirt",
-    "subcategory": "Ethnic Shirt",
-    "title": "Cream Relaxed Cotton Ethnic Shirt",
-    "merchant": "AJIO",
-    "brand": "Marketplace sellers (varies)",
-    "price": 1299,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Cream",
-    "secondaryColours": [],
-    "fabric": "Cotton",
-    "pattern": "Solid",
-    "embroidery": "solid",
-    "silhouette": "Relaxed Mandarin Shirt",
-    "occasion": [
-      "garba",
-      "college-fest",
-      "diwali",
-      "festive-party"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Ivory & White",
-      "Contemporary"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.ajio.com/search/?text=men%20Cream%20Relaxed%20Cotton%20Ethnic%20Shirt",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's cream relaxed cotton ethnic shirt with solid, cream, cotton fabric appearance, solid details, relaxed mandarin shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A cream relaxed cotton ethnic shirt with solid in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": null,
-    "accessory": false,
-    "coupleIds": []
-  },
-  {
     "id": "m-ethnic-shirt-black-tonal-embroidery",
     "gender": "men",
     "category": "Ethnic Shirt",
@@ -41996,6 +41946,64 @@
     "lastChecked": null,
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
     "description": "A teal botanical printed festive shirt with botanical print in rayon, cut as a relaxed printed shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": null,
+    "accessory": false,
+    "coupleIds": []
+  },
+  {
+    "id": "m-printed-ethnic-shirt-maroon-small-motif",
+    "gender": "men",
+    "category": "Printed Ethnic Shirt",
+    "subcategory": "Printed Shirt",
+    "title": "Maroon Small-Motif Printed Shirt",
+    "merchant": "MEESHO",
+    "brand": "Marketplace sellers (varies)",
+    "price": 1299,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Maroon",
+    "secondaryColours": [
+      "Gold"
+    ],
+    "fabric": "Rayon",
+    "pattern": "Motif Print",
+    "embroidery": "small motif",
+    "silhouette": "Relaxed Printed Shirt",
+    "occasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Printed",
+      "Contemporary"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.meesho.com/search?q=men%20Maroon%20Small-Motif%20Printed%20Shirt",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": true,
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon small-motif printed shirt with small motif, maroon, rayon fabric appearance, small motif details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A maroon small-motif printed shirt with small motif in rayon, cut as a relaxed printed shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "reference": null,
     "accessory": false,
     "coupleIds": []
@@ -44253,6 +44261,64 @@
     "coupleIds": []
   },
   {
+    "id": "m-printed-ethnic-shirt-mustard-floral-print",
+    "gender": "men",
+    "category": "Printed Ethnic Shirt",
+    "subcategory": "Printed Shirt",
+    "title": "Mustard Floral Printed Ethnic Shirt",
+    "merchant": "NYKAA",
+    "brand": "Marketplace sellers (varies)",
+    "price": 1199,
+    "priceType": "estimate",
+    "mrp": null,
+    "discount": null,
+    "currency": "INR",
+    "colour": "Mustard",
+    "secondaryColours": [
+      "Red"
+    ],
+    "fabric": "Rayon",
+    "pattern": "Floral Print",
+    "embroidery": "floral print",
+    "silhouette": "Relaxed Printed Shirt",
+    "occasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "ageSegment": [
+      "16-30"
+    ],
+    "styleTags": [
+      "Printed",
+      "Contemporary"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "imageUrl": "",
+    "gallery": [],
+    "merchantUrl": "https://www.nykaafashion.com/search?q=men%20Mustard%20Floral%20Printed%20Ethnic%20Shirt",
+    "merchantUrlType": "marketplace-search",
+    "affiliateUrl": "",
+    "affiliateSource": "",
+    "tryOnEnabled": true,
+    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard floral printed ethnic shirt with floral print, mustard, rayon fabric appearance, floral print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+    "generatedImageUrl": "",
+    "status": "image-pending",
+    "lastChecked": null,
+    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
+    "description": "A mustard floral printed ethnic shirt with floral print in rayon, cut as a relaxed printed shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
+    "reference": null,
+    "accessory": false,
+    "coupleIds": []
+  },
+  {
     "id": "m-printed-ethnic-shirt-rust-paisley-print",
     "gender": "men",
     "category": "Printed Ethnic Shirt",
@@ -44305,62 +44371,6 @@
     "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
     "description": "A rust paisley printed ethnic shirt with paisley print in rayon, cut as a relaxed printed shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "reference": "REF-M2",
-    "accessory": false,
-    "coupleIds": []
-  },
-  {
-    "id": "m-printed-ethnic-shirt-teal-block-print",
-    "gender": "men",
-    "category": "Printed Ethnic Shirt",
-    "subcategory": "Printed Shirt",
-    "title": "Teal Block-Print Ethnic Shirt",
-    "merchant": "MYNTRA",
-    "brand": "Marketplace sellers (varies)",
-    "price": 499,
-    "priceType": "estimate",
-    "mrp": null,
-    "discount": null,
-    "currency": "INR",
-    "colour": "Teal",
-    "secondaryColours": [],
-    "fabric": "Rayon",
-    "pattern": "Block Print",
-    "embroidery": "block print",
-    "silhouette": "Relaxed Printed Shirt",
-    "occasion": [
-      "garba",
-      "college-fest",
-      "diwali",
-      "festive-party"
-    ],
-    "ageSegment": [
-      "16-30"
-    ],
-    "styleTags": [
-      "Printed",
-      "Contemporary"
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "imageUrl": "",
-    "gallery": [],
-    "merchantUrl": "https://www.myntra.com/men-teal-block-print-ethnic-shirt",
-    "merchantUrlType": "marketplace-search",
-    "affiliateUrl": "",
-    "affiliateSource": "",
-    "tryOnEnabled": true,
-    "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's teal block-print ethnic shirt with block print, teal, rayon fabric appearance, block print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
-    "generatedImageUrl": "",
-    "status": "image-pending",
-    "lastChecked": null,
-    "notes": "Price is a typical marketplace price estimate for this style (not a live listing price). merchantUrl opens a marketplace search for this style. Affiliate link not configured.",
-    "description": "A teal block-print ethnic shirt with block print in rayon, cut as a relaxed printed shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "reference": null,
     "accessory": false,
     "coupleIds": []
   },

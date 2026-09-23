@@ -320,5 +320,37 @@
     "bytes": 172584,
     "sha256": "9dc53fdfee502de3c4d53e65afa6e2c7f993267fc9746ed5a12e02354effe218",
     "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction (black/white ethnic, printed kurtas and ethnic shirts, relaxed trousers, campus/fest settings). Not QA_PASS because the agent cannot view images or access the attached screenshots in this session."
+  },
+  "couple:college-fest-17": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 108952,
+    "sha256": "24f3f34e45c99431ada9ab145f43226dd8b7debbe22cf2615ec1fe88c198a314",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots."
+  },
+  "couple:college-fest-18": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 159236,
+    "sha256": "19f0f6dd62538affe844062bb7c2988181f32ca3da9e8cc12b7f1145acd5120f",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots."
+  },
+  "couple:college-fest-19": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 210004,
+    "sha256": "aba955187d61e85e18fb5f597dd158eebdc4274e58dddf3c7c9bef1569232b9d",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots."
+  },
+  "couple:college-fest-20": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 183282,
+    "sha256": "404534f2af41ff08786760efbf44432fafc68c84f8c66e86522110d9d36a1453",
+    "notes": "AWAITING VISUAL VERIFICATION: generated from the written College Fest direction. Not QA_PASS because the agent cannot view images or access the attached screenshots."
   }
 }
