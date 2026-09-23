@@ -1,9 +1,10 @@
 # VIRAAS — FINAL REPORT
 
 > **IMAGE GATE: 30 REAL / 916 PENDING / 0 FAILED / 0 PLACEHOLDERS.**
-> **Bucket 1 — Garba/Navratri couples 20/20 — COMPLETE + QA-PASSED** (CL-G-01…CL-G-20).
-> **Bucket 2 — College Fest couples 10/20 — in progress + QA-PASSED** (CL-C-01…CL-C-10).
-> Next: `couple:CL-C-11` at the **10 images/turn** cap.
+> **Bucket 1 — Garba/Navratri couples 20/20 — COMPLETE + OUTFIT-FIDELITY AUDIT PASSED** (`docs/garba-fidelity-audit.md`).
+> The audit opened every rendered frame against the 5 attached references: 14 passed, **6 rejected + regenerated** (CL-G-01/02/03/07/14/19 — colour stories had drifted, e.g. a hot-pink look rendered black), and **4 looks had product links reconciled** (CL-G-03/07/14/19 — the links, not the prompt, were driving CL-G-07's multicolour and CL-G-19's emerald renders).
+> **Bucket 2 — College Fest couples 10/20 — files exist, outfit-fidelity audit PENDING** (paused to lock Garba first).
+> Next: outfit-fidelity audit of CL-C-01…10 → then generate `couple:CL-C-11` onward at the **10 images/turn** cap.
 > Persistent queue: `src/data/image-manifest.json` — 946 exact prompts, §58 priority order.
 > Couple prompts are REFERENCE-RECREATION specs (docs/reference-map.md §13/§13b, scripts/enrich-couple-prompts.mjs).
 > Completion is NOT declared until pending = 0.
@@ -120,7 +121,7 @@ The brief's 10 uploaded reference files (8 screenshots + 2 sheets / 28 panels) *
 
 ## 12. Exact remaining issues (only these)
 
-1. **916 images pending** — queue head `couple:CL-C-11` (College Fest couples 11–20) at the 10/turn cap. Continue with "continue"; each turn: generate queue head 10 → `npm run sync-image-status` → audits → push.
+1. **916 images pending** — queue head `couple:CL-C-11` (College Fest couples 11–20) at the 10/turn cap. Next turn, in order: outfit-fidelity audit of the existing CL-C-01…10 frames vs the attached references → regenerate any failures exactly as Garba's 6 were → generate CL-C-11…20 → `npm run sync-image-status` → audits → push.
 2. Product grids/couple worlds populate automatically as images land (data-complete: 823 + 100). Progressive-reveal gating: zero broken boxes at any intermediate state.
 3. `merchantUrl` values marked **CHECK** await listing-level verification (7 verified category URLs in place).
 4. WhatsApp support CTA opens a prefilled wa.me message without a number (nothing invented).
