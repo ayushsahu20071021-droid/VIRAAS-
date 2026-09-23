@@ -65,7 +65,7 @@ Researched Myntra, AJIO, Flipkart, Shopsy, Meesho, Nykaa (2026-09-23). Youth ban
 | `audit-affiliate` | **PASS** — affiliateUrl/affiliateSource empty on all 823; "Affiliate link not configured" UI present; no Amazon; no EarnKaro/tracking fabrication; merchantUrl domains allowlisted or CHECK |
 | `audit-http-images` | **PASS** — zero hotlinked/remote images anywhere |
 | `audit-duplicates` | **PASS** — sha256 over generated assets, 0 duplicates |
-| `validate-real-images` | **FAIL (queue)** — flags the 90 missing couple + 823 product + 23 editorial assets as missing; every existing file is a real ≥30KB, ≥640px JPEG. Strict mode gates final completion. |
+| `validate-real-images` | **PASS (soft)** — 20/20 generated frames real (≥30KB, ≥640px JPEG); 926 slots queued; soft mode passes (nothing fake); **strict mode FAILs until queue drains** (final-completion gate) |
 | `typecheck` | **PASS** |
 | `build` | **PASS** — 1,705 static pages (823 product, 100 couple, 22 category, 5 world, 12 journal, try-on, etc.) |
 | `render-smoke` | **PASS** — all routes incl. sitemap/robots; ghost occasions (wedding/sangeet/haldi/engagement…) return non-200 |
