@@ -1,0 +1,101 @@
+{
+  "name": "check-catalog",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "product count 861 (min 653)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "product count 861 meets target ~823+",
+      "level": "warn"
+    },
+    {
+      "ok": true,
+      "msg": "unique ids 861/861",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "unique titles 861/861",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "unique gender|category|colour|detail signatures 861/861 (no meaningless duplicates)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "all 33 required fields present (0 missing)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "all prices finite, >0, <=₹8,000 (0 bad)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "currency INR",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no fabricated MRP/discount",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no fabricated ratings/reviews/stock/bestseller",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no rejected directions (achkan/sherwani/co-ord/fusion/costume) in catalog",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "women 525, men 336",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "couple looks 100",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "5 worlds × 20: {\"garba\":20,\"college-fest\":20,\"diwali\":20,\"festive-party\":20,\"traditional\":20}",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no ghost worlds on couples",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "product occasions limited to 5 public worlds",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "couple product links resolve (0 broken)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "4–6 linked products per couple (min 5, max 6)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "couple garment ↔ linked product category+colour agree (0 mismatches)",
+      "level": "error"
+    }
+  ]
+}

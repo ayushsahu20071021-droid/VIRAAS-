@@ -1,0 +1,227 @@
+{
+  "generatedAt": "2026-09-23T17:14:53.989Z",
+  "references": [
+    {
+      "id": "REF-C1",
+      "file": "Screenshot (1967).png",
+      "type": "couple",
+      "title": "Mirror selfie — rani pink lehenga + white bandeau / white kurta + phulkari dupatta",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-C2",
+      "file": "Screenshot (1917).png",
+      "type": "couple",
+      "title": "Overhead top-down — black brocade lehenga + white long-sleeve top / black embroidered kurta + ivory paisley stole",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-C3",
+      "file": "Screenshot (1914).png",
+      "type": "couple",
+      "title": "Garba Nights — ivory mirror-work lehenga / white chikankari kurta + jeans, golden hour on steps",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-S1",
+      "file": "viraas_pinterest_references_01-10.jpg",
+      "type": "couple-sheet",
+      "title": "Reference sheet A — panels 1–10 (garba couple searches)",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-S2",
+      "file": "viraas_pinterest_references_11-20.jpg",
+      "type": "couple-sheet",
+      "title": "Reference sheet B — panels 11–20 (navratri couple searches)",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-M1",
+      "file": "Screenshot (1890).png",
+      "type": "men",
+      "title": "Trending aesthetic garba outfits — men",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-M2",
+      "file": "Screenshot (1915).png",
+      "type": "men",
+      "title": "Kurta for men",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-M3",
+      "file": "Screenshot (1910).png",
+      "type": "men",
+      "title": "Men festive kurta / shirt set",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-W1",
+      "file": "Screenshot (1907).png",
+      "type": "women",
+      "title": "Trending navratri outfits — women",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-W2",
+      "file": "Screenshot (1905).png",
+      "type": "women",
+      "title": "Navratri outfit ideas — women",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    }
+  ],
+  "assets": [
+    {
+      "id": "couple:garba-01",
+      "path": "public/images/couples/garba-01.webp",
+      "type": "couple",
+      "reference": "REF-C1",
+      "dimensions": "896x1200",
+      "sha256": "afb8de039fbd474007e15eb6da7a551f94032cf319fcad4c03b1d00736ee29b4"
+    },
+    {
+      "id": "couple:garba-02",
+      "path": "public/images/couples/garba-02.webp",
+      "type": "couple",
+      "reference": "REF-C2",
+      "dimensions": "768x1376",
+      "sha256": "dd8ec729b0a4d779153f087ad38c4778d2a76f6ea59adf206bf587211a3689cd"
+    },
+    {
+      "id": "couple:garba-03",
+      "path": "public/images/couples/garba-03.webp",
+      "type": "couple",
+      "reference": "REF-C3",
+      "dimensions": "768x1376",
+      "sha256": "effb06e4d76d607010fbc4f807fc7e4d626ea496495026f3b6410e816600ef10"
+    },
+    {
+      "id": "couple:garba-04",
+      "path": "public/images/couples/garba-04.webp",
+      "type": "couple",
+      "reference": "REF-C2 side panel",
+      "dimensions": "768x1376",
+      "sha256": "107b0a4ce7782791164380705c1da39406b13f724a08f0c2abb06f5406837368"
+    },
+    {
+      "id": "couple:garba-05",
+      "path": "public/images/couples/garba-05.webp",
+      "type": "couple",
+      "reference": "REF-C1 side panel",
+      "dimensions": "768x1376",
+      "sha256": "71fa19e71c643b683559fa8cd785bcb8982a157a88a8b39de47fba461e25b68a"
+    },
+    {
+      "id": "couple:garba-06",
+      "path": "public/images/couples/garba-06.webp",
+      "type": "couple",
+      "reference": "REF-C1 side panel",
+      "dimensions": "768x1376",
+      "sha256": "ccdc5c7d7552b8100c2166234fde8961f0306fee13c9909964b29180b33472d8"
+    },
+    {
+      "id": "couple:garba-07",
+      "path": "public/images/couples/garba-07.webp",
+      "type": "couple",
+      "reference": "REF-S1 panel 2/10",
+      "dimensions": "768x1376",
+      "sha256": "50837118fd96bfe8f0f8165823514d353bb06f8df9f981637bdcc801eb44c6d0"
+    },
+    {
+      "id": "couple:garba-08",
+      "path": "public/images/couples/garba-08.webp",
+      "type": "couple",
+      "reference": "REF-S1 panel 5",
+      "dimensions": "768x1376",
+      "sha256": "fc467979aa38618f6949499affae94849ba4c84341f08ac53e24129fd9bf0371"
+    },
+    {
+      "id": "couple:garba-09",
+      "path": "public/images/couples/garba-09.webp",
+      "type": "couple",
+      "reference": "REF-S1 panel 6",
+      "dimensions": "768x1376",
+      "sha256": "d481ff88f77a55c304e9486675e277409c499e669beee7916865dda6e9d1db98"
+    },
+    {
+      "id": "couple:garba-10",
+      "path": "public/images/couples/garba-10.webp",
+      "type": "couple",
+      "reference": "REF-S1 panel 8 / REF-S2 panel 16",
+      "dimensions": "768x1376",
+      "sha256": "a6c44dd475afb15ef5fa25e3cc278093ff3221dab5f2959fdd31ad3bd187a931"
+    },
+    {
+      "id": "couple:garba-11",
+      "path": "public/images/couples/garba-11.webp",
+      "type": "couple",
+      "reference": "REF-S2 panel 11/19",
+      "dimensions": "768x1376",
+      "sha256": "cb2706271bd43d4cdda42e9ae675cbda8926e19a83292888edb53021d6d88c3c"
+    },
+    {
+      "id": "couple:garba-12",
+      "path": "public/images/couples/garba-12.webp",
+      "type": "couple",
+      "reference": "REF-S2 panel 20",
+      "dimensions": "768x1376",
+      "sha256": "1704ff2db96a723bf7ec2ef91133d906d4d4bfe3fd744f5054a65df7178e4fbb"
+    },
+    {
+      "id": "couple:garba-13",
+      "path": "public/images/couples/garba-13.webp",
+      "type": "couple",
+      "reference": "REF-S2 panel 13",
+      "dimensions": "768x1376",
+      "sha256": "7fdb811e2023b5773262785e764f281a07cc1e0ae258692569105c7320ddb93e"
+    },
+    {
+      "id": "couple:garba-15",
+      "path": "public/images/couples/garba-15.webp",
+      "type": "couple",
+      "reference": "REF-S2 panel 15",
+      "dimensions": "768x1376",
+      "sha256": "dd5d88a5989bb18ba1d3454bde90e1600993021116cd303a84685cde1b0f0a5c"
+    },
+    {
+      "id": "couple:garba-17",
+      "path": "public/images/couples/garba-17.webp",
+      "type": "couple",
+      "reference": "REF-S2 panel 17",
+      "dimensions": "768x1376",
+      "sha256": "6e4a540619e40584ac02d4c8c52d23422584c066629c2929b097c7f76fa76332"
+    },
+    {
+      "id": "couple:garba-18",
+      "path": "public/images/couples/garba-18.webp",
+      "type": "couple",
+      "reference": "REF-S2 panel 18",
+      "dimensions": "768x1376",
+      "sha256": "0dae41d2db4248b85550dbe863dc3324cb364276da20f201fce3997d02641fcf"
+    },
+    {
+      "id": "couple:garba-19",
+      "path": "public/images/couples/garba-19.webp",
+      "type": "couple",
+      "reference": "REF-S1 panel 4",
+      "dimensions": "768x1376",
+      "sha256": "7e6b6742e9e28d577d7d7648453fb14d35b57ba13e284b8ee1cfa25529255c1f"
+    },
+    {
+      "id": "couple:garba-20",
+      "path": "public/images/couples/garba-20.webp",
+      "type": "couple",
+      "reference": "REF-S1 panel 6",
+      "dimensions": "768x1376",
+      "sha256": "e07ad15ccd00b424e6088518b135307402e9dff50a7440f54908adfe94e786f6"
+    }
+  ],
+  "totals": {
+    "queued": 961,
+    "qaPass": 18,
+    "pending": 933,
+    "qaFail": 0
+  }
+}

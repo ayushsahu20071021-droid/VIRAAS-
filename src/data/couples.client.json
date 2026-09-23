@@ -1,0 +1,4101 @@
+[
+  {
+    "id": "garba-01",
+    "world": "garba",
+    "title": "Rani Pink Fitting-Room Mirror Check",
+    "ref": "REF-C1",
+    "pose": "standing mirror selfie; she holds the phone over part of her face with her other hand on her cheek; he stands close behind her shoulder with an arm around her waist",
+    "framing": "vertical 3/4-length mirror reflection",
+    "setting": "clothing store fitting area with garment racks",
+    "light": "cool fluorescent store light",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Rani Pink",
+      "fabric": "Silk Blend",
+      "detail": "gota border dupatta",
+      "desc": "rani pink flared silk lehenga skirt with a white strapless embroidered bandeau top and a rani pink gota-border dupatta with tassels"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "plain white cotton kurta pyjama set"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "phulkari embroidery",
+      "desc": "rani red phulkari dupatta with multicolour floral embroidery and tassels"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Rani pink · White · Phulkari red",
+    "tags": [
+      "mirror-selfie",
+      "twinning"
+    ],
+    "herProductIds": [
+      "w-lehenga-rani-pink-gota-border-dupatta",
+      "w-jewellery-oxidised-silver-jhumka-earrings",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-white-solid",
+      "m-traditional-layer-red-phulkari-embroidery",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-01.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-02",
+    "world": "garba",
+    "title": "Black Brocade Overhead Outfit Check",
+    "ref": "REF-C2",
+    "pose": "both lying side by side on the ground, bodies angled diagonally; her hand rests on her hair, his hands clasped at chest",
+    "framing": "directly overhead top-down, full body",
+    "setting": "sunlit grey concrete",
+    "light": "hard afternoon sun with crisp shadows",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Black",
+      "fabric": "Brocade",
+      "detail": "gold-teal paisley brocade",
+      "desc": "black flared lehenga with gold and teal brocade paisley motifs and a fitted white long-sleeve crop top"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Cotton Silk",
+      "detail": "copper thread placket embroidery",
+      "desc": "black kurta with copper-brown thread embroidery on the neckline placket"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "paisley block print",
+      "desc": "ivory paisley block-printed stole with black border"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Black · White · Ivory paisley",
+    "tags": [
+      "overhead",
+      "twinning"
+    ],
+    "herProductIds": [
+      "w-lehenga-black-gold-teal-paisley-brocade",
+      "w-jewellery-oxidised-silver-choker-necklace",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-copper-thread-placket-embroidery",
+      "m-traditional-layer-ivory-paisley-block-print",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-02.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-03",
+    "world": "garba",
+    "title": "Ivory Mirror-Work on the Diya Steps",
+    "ref": "REF-C3",
+    "pose": "seated close on stone steps; she takes a phone photo leaning into him; his forearm rests on his knee, head tilted to her",
+    "framing": "vertical, full seated bodies",
+    "setting": "old stone steps beside a carved pillar with lit diyas",
+    "light": "warm golden hour",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Ivory",
+      "fabric": "Georgette",
+      "detail": "mirror work embellishment",
+      "desc": "ivory lehenga densely covered in round mirror work with a sleeveless embellished crop blouse and sheer ivory dupatta"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "chikankari",
+      "desc": "white chikankari kurta worn with blue denim"
+    },
+    "tone": "Silver",
+    "colourStory": "Ivory · White · Denim",
+    "tags": [
+      "seated",
+      "golden-hour"
+    ],
+    "herProductIds": [
+      "w-lehenga-ivory-mirror-work-embellishment",
+      "w-jewellery-silver-bangle-stack",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-chikankari",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-03.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-04",
+    "world": "garba",
+    "title": "Red Backless Choli, Face-Cup Laugh",
+    "ref": "REF-C2 side panel",
+    "pose": "she, seen from behind at three-quarter, cups his face with both hands; he laughs",
+    "framing": "vertical waist-up",
+    "setting": "outdoor navratri venue with string lights and trees",
+    "light": "night ambient light",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "kutchi embroidered backless blouse",
+      "desc": "red chaniya choli with a multicolour kutchi-embroidered tie-up backless blouse and red dupatta"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "white cotton kurta set"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "bandhani print",
+      "desc": "long red bandhani dupatta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Red · White · Multicolour kutch",
+    "tags": [
+      "night",
+      "candid"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-red-kutchi-embroidered-backless-blouse",
+      "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-white-solid",
+      "m-traditional-layer-red-bandhani-print",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-04.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-05",
+    "world": "garba",
+    "title": "Pink Bandhani Hand-Hold on the Lawn",
+    "ref": "REF-C1 side panel",
+    "pose": "standing side by side holding hands between them; chest-down crop focusing on outfits",
+    "framing": "vertical chest-to-feet crop",
+    "setting": "evening garba ground lawn",
+    "light": "soft dusk light",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Rani Pink",
+      "fabric": "Cotton",
+      "detail": "bandhani print with mirror hem",
+      "desc": "rani pink bandhani flared chaniya with a mirror-work hem, white blouse and sheer white lace-edged dupatta"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "chikankari sequin",
+      "desc": "white chikankari kurta with fine sequins and white pyjama"
+    },
+    "tone": "Silver",
+    "colourStory": "Rani pink bandhani · White",
+    "tags": [
+      "hand-hold",
+      "detail-crop"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-rani-pink-bandhani-print-with-mirror-hem",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-chikankari-sequin",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-05.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-06",
+    "world": "garba",
+    "title": "Red & Ivory Shoulder-to-Shoulder",
+    "ref": "REF-C1 side panel",
+    "pose": "standing shoulder to shoulder, her bangled arm resting against him; nose-to-knee crop",
+    "framing": "vertical nose-to-knee crop",
+    "setting": "plain cream indoor wall",
+    "light": "warm indoor light",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Red",
+      "fabric": "Silk",
+      "detail": "gold border",
+      "desc": "red silk lehenga with gold-border dupatta and ivory embroidered blouse"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "self stripe",
+      "desc": "ivory self-stripe cotton kurta pyjama set with sheer white dupatta"
+    },
+    "tone": "Silver",
+    "colourStory": "Red · Ivory",
+    "tags": [
+      "outfit-check"
+    ],
+    "herProductIds": [
+      "w-lehenga-red-gold-border",
+      "w-jewellery-silver-choker-necklace",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-ivory-self-stripe",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-06.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-07",
+    "world": "garba",
+    "title": "Patchwork Walk Into the Canopy",
+    "ref": "REF-S1 panel 2/10",
+    "pose": "walking hand in hand away from camera into the crowd, three-quarter back view",
+    "framing": "vertical full body from behind",
+    "setting": "crowded garba ground under striped canopy and string lights",
+    "light": "night festival light",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Multicolour",
+      "fabric": "Cotton",
+      "detail": "patchwork with mirror work",
+      "desc": "multicolour patchwork flared chaniya choli in pink, orange, yellow and green with mirror work and a backless tie-up blouse"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "black kurta and black pants"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "bandhani print",
+      "desc": "red bandhani dupatta over one shoulder"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Multicolour patchwork · Black · Red",
+    "tags": [
+      "walking",
+      "back-view"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-multicolour-patchwork-with-mirror-work",
+      "w-jewellery-oxidised-silver-bangle-stack",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-black-solid",
+      "m-traditional-layer-red-bandhani-print",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-07.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-08",
+    "world": "garba",
+    "title": "Black Patola Dandiya Face-Off",
+    "ref": "REF-S1 panel 5",
+    "pose": "facing each other mid-dandiya, sticks crossed between them, both laughing",
+    "framing": "vertical full body",
+    "setting": "night garba ground with dancers",
+    "light": "festival lights",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Black",
+      "fabric": "Rayon",
+      "detail": "gold lampi border with patola dupatta",
+      "desc": "black chaniya with gold border, black long-sleeve crop top and multicolour patola dupatta with tassels"
+    },
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "small embroidered motifs",
+      "desc": "navy short kurta-shirt with small white embroidered motifs and cream pants"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Black · Patola multicolour · Navy",
+    "tags": [
+      "dandiya",
+      "playful"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-black-gold-lampi-border-with-patola-dupatta",
+      "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-ethnic-shirt-navy-small-embroidered-motifs",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-08.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-09",
+    "world": "garba",
+    "title": "Kutchi Halter, Dupatta Fix",
+    "ref": "REF-S1 panel 6",
+    "pose": "he gently adjusts the dupatta on her shoulder; she looks down smiling",
+    "framing": "vertical waist-up",
+    "setting": "evening path beside a garba venue",
+    "light": "warm bokeh light",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "kutchi mirror halter",
+      "desc": "white chaniya with kutchi mirror-embroidered halter blouse and multicolour patchwork tasselled dupatta"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "chikankari",
+      "desc": "white chikankari kurta"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Navy",
+      "fabric": "Georgette",
+      "detail": "sequin scatter",
+      "desc": "navy sequin-scattered stole"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "White · Kutch multicolour · Navy sequin",
+    "tags": [
+      "dupatta-adjust"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-white-kutchi-mirror-halter",
+      "w-jewellery-oxidised-silver-jhumka-earrings",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-chikankari",
+      "m-traditional-layer-navy-sequin-scatter",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-09.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-10",
+    "world": "garba",
+    "title": "Red Flare Twirl Under the Floodlights",
+    "ref": "REF-S1 panel 8 / REF-S2 panel 16",
+    "pose": "she twirls mid-spin while he holds her hand above her head guiding the twirl",
+    "framing": "vertical full body",
+    "setting": "grass garba field with floodlights and bunting",
+    "light": "night floodlight",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "kutchi mirror crop top",
+      "desc": "wide red flared chaniya with black kutchi mirror crop top and red-black bandhani dupatta"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "ivory kurta pyjama set"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "bandhani print",
+      "desc": "red bandhani dupatta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Red · Black kutch · Ivory",
+    "tags": [
+      "twirl",
+      "motion"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-red-kutchi-mirror-crop-top",
+      "w-jewellery-oxidised-silver-choker-necklace",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-ivory-solid",
+      "m-traditional-layer-red-bandhani-print",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-10.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-11",
+    "world": "garba",
+    "title": "Royal Blue Cheek-to-Cheek Selfie",
+    "ref": "REF-S2 panel 11/19",
+    "pose": "arm-length selfie taken by him, cheek to cheek, both grinning",
+    "framing": "vertical head-and-shoulders",
+    "setting": "night garba ground bokeh",
+    "light": "slight phone-flash night",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Royal Blue",
+      "fabric": "Cotton",
+      "detail": "mirror work",
+      "desc": "royal blue mirror-work chaniya choli with red bandhani dupatta loosely over her head"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "white kurta set"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "red cotton dupatta around the neck"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Royal blue · Red · White",
+    "tags": [
+      "selfie"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-royal-blue-mirror-work",
+      "w-jewellery-oxidised-silver-bangle-stack",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-white-solid",
+      "m-traditional-layer-red-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-11.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-12",
+    "world": "garba",
+    "title": "Mustard Mirror Mat-Side Laughs",
+    "ref": "REF-S2 panel 20",
+    "pose": "seated on a mat on the ground laughing, her head on his shoulder",
+    "framing": "vertical full seated",
+    "setting": "garba venue edge with fairy lights",
+    "light": "warm night",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Mustard",
+      "fabric": "Cotton",
+      "detail": "red mirror border",
+      "desc": "mustard chaniya choli with red mirror-work border, red embroidered blouse and green bandhani dupatta"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Olive",
+      "fabric": "Rayon",
+      "detail": "botanical print",
+      "desc": "olive printed ethnic shirt with ivory trousers"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Mustard · Red · Olive",
+    "tags": [
+      "seated",
+      "candid"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-mustard-red-mirror-border",
+      "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-olive-botanical-print",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-12.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-13",
+    "world": "garba",
+    "title": "Black Sequin Stage-Glow Embrace",
+    "ref": "REF-S2 panel 13",
+    "pose": "gentle embrace, her head on his chest, eyes closed",
+    "framing": "vertical waist-up",
+    "setting": "near a garba stage",
+    "light": "orange-red stage glow",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Rust",
+      "fabric": "Rayon",
+      "detail": "mirror work",
+      "desc": "rust-ochre and red mirror-work chaniya choli with black bandhani dupatta"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "mirror sequin",
+      "desc": "black mirror-sequin kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Rust · Black",
+    "tags": [
+      "embrace",
+      "night"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-rust-mirror-work",
+      "w-jewellery-oxidised-silver-jhumka-earrings",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-mirror-sequin",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-13.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-14",
+    "world": "garba",
+    "title": "Emerald Lift Mirror Selfie",
+    "ref": "REF-S2 panel 14",
+    "pose": "mirror selfie inside a steel lift; she holds the phone, he rests his chin on her head",
+    "framing": "vertical full body mirror",
+    "setting": "steel elevator interior",
+    "light": "cool overhead lift light",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Emerald",
+      "fabric": "Cotton",
+      "detail": "gamthi print with mirror",
+      "desc": "emerald gamthi-print chaniya choli with mirror blouse and magenta dupatta"
+    },
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "tonal embroidery",
+      "desc": "ivory ethnic shirt with tonal embroidery and emerald trousers"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Emerald · Magenta · Ivory",
+    "tags": [
+      "mirror-selfie"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-emerald-gamthi-print-with-mirror",
+      "w-jewellery-oxidised-silver-choker-necklace",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-ethnic-shirt-ivory-tonal-embroidery",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "REGENERATE"
+  },
+  {
+    "id": "garba-15",
+    "world": "garba",
+    "title": "Black-on-Black Fairy Light Bench",
+    "ref": "REF-S2 panel 15",
+    "pose": "seated on a bench, knees touching, he whispers, she laughs looking away",
+    "framing": "vertical full seated",
+    "setting": "bench under fairy lights",
+    "light": "fairy-light glow",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Black",
+      "fabric": "Rayon",
+      "detail": "black mirror work",
+      "desc": "black chaniya choli with black embroidered crop blouse and black mirror-dot dupatta"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Black",
+      "fabric": "Cotton Silk",
+      "detail": "tonal embroidery",
+      "desc": "black kurta set with tonal embroidery"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "gold paisley",
+      "desc": "black and gold paisley shawl"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Black-on-black · Gold",
+    "tags": [
+      "seated",
+      "black-on-black"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-black-black-mirror-work",
+      "w-jewellery-oxidised-silver-bangle-stack",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-black-tonal-embroidery",
+      "m-traditional-layer-black-gold-paisley",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-15.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-16",
+    "world": "garba",
+    "title": "Wine Lehenga Twirl, Hand in Hand",
+    "ref": "REF-S2 panel 16",
+    "pose": "both spinning together holding both hands, leaning back",
+    "framing": "vertical full body",
+    "setting": "night garba field",
+    "light": "floodlights",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Wine",
+      "fabric": "Cotton Silk",
+      "detail": "kutch embroidery",
+      "desc": "wine lehenga with kutch-embroidered blouse"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton",
+      "detail": "embroidered placket",
+      "desc": "cream kurta with embroidered placket"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Wine",
+      "fabric": "Cotton",
+      "detail": "bandhani print",
+      "desc": "wine bandhani stole"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Wine · Cream",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-lehenga-wine-kutch-embroidery",
+      "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-embroidered-placket",
+      "m-traditional-layer-wine-bandhani-print",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "REGENERATE"
+  },
+  {
+    "id": "garba-17",
+    "world": "garba",
+    "title": "Blue Bandhani Festive-Lights Hug",
+    "ref": "REF-S2 panel 17",
+    "pose": "side hug facing camera, she tucks under his arm, both laughing",
+    "framing": "vertical 3/4",
+    "setting": "lit garba entrance arch",
+    "light": "festive lights",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "bandhani print",
+      "desc": "navy bandhani chaniya choli with red mirror blouse"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "indigo block print",
+      "desc": "white shirt with indigo block print"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Navy bandhani · Red · Indigo",
+    "tags": [
+      "hug"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-navy-bandhani-print",
+      "w-jewellery-oxidised-silver-jhumka-earrings",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-white-indigo-block-print",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-17.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-18",
+    "world": "garba",
+    "title": "Ivory Twirl, Navy Kurta Watch",
+    "ref": "REF-S2 panel 18",
+    "pose": "she twirls in the foreground, he watches smiling behind",
+    "framing": "vertical full body",
+    "setting": "garba courtyard",
+    "light": "night warm",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "multicolour embroidered border",
+      "desc": "ivory chaniya with multicolour embroidered border and kutch balloon-sleeve blouse"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "embroidered yoke",
+      "desc": "navy kurta with embroidered yoke"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Ivory · Multicolour · Navy",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-ivory-multicolour-embroidered-border",
+      "w-jewellery-oxidised-silver-choker-necklace",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-navy-embroidered-yoke",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-18.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-19",
+    "world": "garba",
+    "title": "Maroon Mirror Kurta, Ground Walk",
+    "ref": "REF-S1 panel 4",
+    "pose": "walking toward camera side by side, fingers linked, mid-laugh",
+    "framing": "vertical full body",
+    "setting": "garba ground walkway",
+    "light": "dusk",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Maroon",
+      "fabric": "Cotton",
+      "detail": "gota and mirror",
+      "desc": "maroon chaniya with gota and mirror work and mustard dupatta"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Maroon",
+      "fabric": "Cotton",
+      "detail": "mirror work",
+      "desc": "maroon mirror-work kurta with ivory pants"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Maroon · Mustard · Ivory",
+    "tags": [
+      "walking"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-maroon-gota-and-mirror",
+      "w-jewellery-oxidised-silver-bangle-stack",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-maroon-mirror-work",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-19.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "garba-20",
+    "world": "garba",
+    "title": "Pink Pair Forehead Touch",
+    "ref": "REF-S1 panel 6",
+    "pose": "foreheads touching, eyes closed, dandiya sticks held together",
+    "framing": "vertical waist-up",
+    "setting": "garba ground night",
+    "light": "soft night",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Hot Pink",
+      "fabric": "Cotton",
+      "detail": "mirror work",
+      "desc": "hot pink mirror-work chaniya choli with white blouse"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "white kurta"
+    },
+    "layer": {
+      "cat": "Traditional Layer",
+      "colour": "Pink",
+      "fabric": "Cotton",
+      "detail": "bandhani print",
+      "desc": "pink bandhani scarf"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Hot pink · White",
+    "tags": [
+      "close"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-hot-pink-mirror-work",
+      "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-mirror-mojaris"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-solid",
+      "m-traditional-layer-pink-bandhani-print",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "/images/couples/garba-20.webp",
+    "imageStatus": "QA_PASS"
+  },
+  {
+    "id": "college-fest-01",
+    "world": "college-fest",
+    "title": "Campus Mirror Fit Check",
+    "ref": "REF-W1905-1 + REF-M1910-ivory",
+    "pose": "mirror selfie in a campus washroom mirror: she stands in front holding the phone at chest height, he stands directly behind her right shoulder, close, both looking into the mirror",
+    "framing": "vertical full-body mirror selfie",
+    "setting": "college corridor washroom mirror",
+    "light": "cool tube light",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "kalamkari print",
+      "desc": "ivory kalamkari-print flared skirt with a puff-sleeve cropped top"
+    },
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "solid mandarin collar",
+      "desc": "ivory cotton mandarin shirt with straight olive trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Ivory · Olive",
+    "tags": [
+      "mirror-selfie",
+      "campus"
+    ],
+    "herProductIds": [
+      "w-lehenga-ivory-kalamkari-print",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-ethnic-shirt-ivory-solid-mandarin-collar",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
+  },
+  {
+    "id": "college-fest-02",
+    "world": "college-fest",
+    "title": "Overhead on the Campus Lawn",
+    "ref": "REF-W1905-6 + REF-M1910-1",
+    "pose": "lying side by side on their backs on the campus lawn, heads close together near the centre, both laughing, arms relaxed at their sides, shot from directly above",
+    "framing": "overhead top-down, full bodies inside frame",
+    "setting": "campus lawn",
+    "light": "late afternoon sun",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "printed puff-sleeve crop top",
+      "desc": "black flared cotton skirt with a printed puff-sleeve cropped top and printed dupatta"
+    },
+    "him": {
+      "cat": "Embroidered Ethnic Shirt",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "tonal embroidery",
+      "desc": "navy cotton shirt with tonal embroidery and dark trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Black · Navy",
+    "tags": [
+      "overhead",
+      "campus"
+    ],
+    "herProductIds": [
+      "w-lehenga-black-printed-puff-sleeve-crop-top",
+      "w-jewellery-silver-choker-necklace",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-embroidered-ethnic-shirt-navy-tonal-embroidery",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
+  },
+  {
+    "id": "college-fest-03",
+    "world": "college-fest",
+    "title": "Library Steps Dupatta Fix",
+    "ref": "REF-M1915-couple",
+    "pose": "she stands one step above him on the library steps so they are almost eye level, he reaches up with both hands and adjusts the end of her dupatta back onto her shoulder, she holds her books to her chest watching his hands",
+    "framing": "vertical three-quarter, she one step higher",
+    "setting": "university library entrance steps",
+    "light": "soft late afternoon light",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "halter-neck crop top",
+      "desc": "ivory gathered skirt with a black halter-neck crop top and a black dupatta"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "pintuck placket",
+      "desc": "white pintuck cotton kurta with dark straight trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Ivory · Black",
+    "tags": [
+      "dupatta-adjust",
+      "campus"
+    ],
+    "herProductIds": [
+      "w-lehenga-ivory-halter-neck-crop-top",
+      "w-jewellery-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-pintuck-placket",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
+  },
+  {
+    "id": "college-fest-04",
+    "world": "college-fest",
+    "title": "Corridor Pillar Lean",
+    "ref": "REF-W1905-2 + REF-M1890-1",
+    "pose": "she leans back against a corridor pillar with his arm around her waist, he stands beside her leaning one shoulder on the pillar, both relaxed and looking at each other, close crop",
+    "framing": "vertical three-quarter close crop from thighs up",
+    "setting": "college corridor with pillars",
+    "light": "daylight from windows",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "bandeau crop top with printed dupatta",
+      "desc": "black flared skirt with a black bandeau crop top and a printed dupatta over one shoulder"
+    },
+    "him": {
+      "cat": "Festive Jacket",
+      "colour": "Beige",
+      "fabric": "Cotton",
+      "detail": "Nehru jacket over kurta",
+      "desc": "khaki Nehru jacket worn over a white kurta and straight trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Black · Ivory",
+    "tags": [
+      "leaning",
+      "campus"
+    ],
+    "herProductIds": [
+      "w-lehenga-black-bandeau-crop-top-with-printed-dupatta",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-jacket-beige-nehru-jacket-over-kurta",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
+  },
+  {
+    "id": "college-fest-05",
+    "world": "college-fest",
+    "title": "Walking the Arched Corridor",
+    "ref": "REF-W1907-5 + REF-M1910-1",
+    "pose": "walking side by side toward the camera down an arched campus corridor, chatting and smiling at each other, hands relaxed at their sides, full bodies",
+    "framing": "vertical full body, camera at chest height in front of them",
+    "setting": "arched campus corridor",
+    "light": "late afternoon golden light",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "blue printed crop top",
+      "desc": "ivory flared skirt with a blue printed cropped top and a sheer dupatta"
+    },
+    "him": {
+      "cat": "Embroidered Ethnic Shirt",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "tonal embroidery",
+      "desc": "navy cotton shirt with tonal embroidery and tapered trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Ivory · Navy",
+    "tags": [
+      "walking",
+      "campus"
+    ],
+    "herProductIds": [
+      "w-lehenga-ivory-blue-printed-crop-top",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-embroidered-ethnic-shirt-navy-tonal-embroidery",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
+  },
+  {
+    "id": "college-fest-06",
+    "world": "college-fest",
+    "title": "Backstage Cheek-to-Cheek Selfie",
+    "ref": "REF-W1907-2 + REF-M1915-5",
+    "pose": "cheek-to-cheek phone selfie backstage at the college fest, cheeks pressed together, both looking into the phone lens held above them, both smiling, chest-up crop",
+    "framing": "vertical close crop, chest up, casual phone photo",
+    "setting": "backstage at a college fest, stage curtain behind",
+    "light": "warm stage work-lights",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "patchwork halter blouse",
+      "desc": "white gathered skirt with a patchwork halter-neck blouse and silver jhumkas"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Beige",
+      "fabric": "Cotton",
+      "detail": "sequin stripe",
+      "desc": "beige kurta with fine sequin stripes and white trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Ivory · Beige",
+    "tags": [
+      "selfie",
+      "backstage"
+    ],
+    "herProductIds": [
+      "w-lehenga-ivory-patchwork-halter-blouse",
+      "w-jewellery-silver-choker-necklace",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-beige-sequin-stripe",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
+  },
+  {
+    "id": "college-fest-07",
+    "world": "college-fest",
+    "title": "Fest Ground Twirl",
+    "ref": "REF-W1907-6 + REF-M1910-7",
+    "pose": "she twirls in the foreground with her arms out and head back laughing, her flared skirt caught fully open mid-spin, he stands a few steps behind facing her with both hands raised clapping and cheering, full bodies",
+    "framing": "vertical full body, golden hour",
+    "setting": "open college fest ground with bunting",
+    "light": "low warm golden sun",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "multicolour patchwork print",
+      "desc": "ivory-based multicolour patchwork flared skirt with a simple cropped blouse and a printed dupatta flying"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Mustard",
+      "fabric": "Cotton",
+      "detail": "embroidered placket",
+      "desc": "mustard cotton kurta with an embroidered placket and dark trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Multicolour · Mustard",
+    "tags": [
+      "twirl",
+      "fest-ground"
+    ],
+    "herProductIds": [
+      "w-lehenga-ivory-multicolour-patchwork-print",
+      "w-jewellery-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-mustard-embroidered-placket",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
+  },
+  {
+    "id": "college-fest-08",
+    "world": "college-fest",
+    "title": "Amphitheatre Steps Phone Photo",
+    "ref": "REF-W1905-3 + REF-M1910-8",
+    "pose": "seated side by side on the same amphitheatre step, she holds her phone out at arm length photographing the two of them, he leans in from her right so their shoulders and temples touch, one hand on the step behind her, full bodies seated",
+    "framing": "vertical full-body seated",
+    "setting": "open-air college amphitheatre steps",
+    "light": "late afternoon sun",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "long-sleeve crop top with printed dupatta",
+      "desc": "black flared skirt with a black long-sleeve crop top and a printed dupatta"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Brown",
+      "fabric": "Cotton",
+      "detail": "black thread embroidery",
+      "desc": "brown cotton kurta with black thread embroidery and dark trousers"
+    },
+    "tone": "Silver",
+    "colourStory": "Black · Brown",
+    "tags": [
+      "seated",
+      "campus"
+    ],
+    "herProductIds": [
+      "w-lehenga-black-long-sleeve-crop-top-with-printed-dupatta",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-brown-black-thread-embroidery",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED"
+  },
+  {
+    "id": "college-fest-09",
+    "world": "college-fest",
+    "title": "Canteen Table Lean",
+    "ref": "REF-S2 panel 20",
+    "pose": "seated across a canteen table leaning in, laughing",
+    "framing": "vertical 3/4",
+    "setting": "college canteen",
+    "light": "window daylight",
+    "her": {
+      "cat": "Sharara",
+      "colour": "Rani Pink",
+      "fabric": "Rayon",
+      "detail": "mirror work",
+      "desc": "rani pink mirror-work sharara set"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Black",
+      "fabric": "Rayon",
+      "detail": "block print",
+      "desc": "black block-print ethnic shirt"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Rani pink · Black",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-sharara-rani-pink-mirror-work",
+      "w-jewellery-oxidised-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-black-block-print",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-10",
+    "world": "college-fest",
+    "title": "Scooter Stop Outfit Check",
+    "ref": "REF-C1 side panel",
+    "pose": "standing beside a parked scooter holding hands, chest-down crop",
+    "framing": "vertical detail crop",
+    "setting": "campus parking",
+    "light": "midday",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Teal",
+      "fabric": "Cotton",
+      "detail": "printed flared",
+      "desc": "teal printed flared lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Beige",
+      "fabric": "Linen",
+      "detail": "solid",
+      "desc": "beige linen kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Teal · Beige",
+    "tags": [
+      "hand-hold"
+    ],
+    "herProductIds": [
+      "w-lehenga-teal-printed-flared",
+      "w-jewellery-oxidised-silver-choker-necklace",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-beige-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-11",
+    "world": "college-fest",
+    "title": "Anarkali Group-Photo Break",
+    "ref": "REF-S1 panel 4",
+    "pose": "side hug facing camera",
+    "framing": "vertical 3/4",
+    "setting": "fest stalls",
+    "light": "evening",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Maroon",
+      "fabric": "Georgette",
+      "detail": "gota",
+      "desc": "maroon georgette anarkali with gota trims"
+    },
+    "him": {
+      "cat": "Festive Jacket",
+      "colour": "Beige",
+      "fabric": "Cotton Silk",
+      "detail": "solid nehru",
+      "desc": "beige nehru jacket over white kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Maroon · Beige",
+    "tags": [
+      "hug"
+    ],
+    "herProductIds": [
+      "w-anarkali-maroon-gota",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-jacket-beige-solid-nehru",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-12",
+    "world": "college-fest",
+    "title": "Black Saree Stairwell Selfie",
+    "ref": "REF-S2 panel 14",
+    "pose": "stairwell mirror selfie",
+    "framing": "vertical full body mirror",
+    "setting": "college stairwell mirror",
+    "light": "tube light",
+    "her": {
+      "cat": "Pre-Draped Saree",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "black sequin pre-draped saree"
+    },
+    "him": {
+      "cat": "Embroidered Ethnic Shirt",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "rust hem embroidery",
+      "desc": "black shirt with rust embroidered hem"
+    },
+    "tone": "Silver",
+    "colourStory": "Black · Rust",
+    "tags": [
+      "mirror-selfie"
+    ],
+    "herProductIds": [
+      "w-pre-draped-saree-black-sequin",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-embroidered-ethnic-shirt-black-rust-hem-embroidery",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-13",
+    "world": "college-fest",
+    "title": "Kurta-Set Tree Shade Sit",
+    "ref": "REF-C3",
+    "pose": "seated under a tree on a low wall, she photographs, he leans",
+    "framing": "vertical full seated",
+    "setting": "campus tree shade",
+    "light": "dappled light",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Yellow",
+      "fabric": "Cotton",
+      "detail": "block print",
+      "desc": "yellow block-print kurta set"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "indigo block print",
+      "desc": "white indigo-print shirt"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Yellow · Indigo",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-yellow-block-print",
+      "w-jewellery-oxidised-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-white-indigo-block-print",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-14",
+    "world": "college-fest",
+    "title": "Gharara Night Concert",
+    "ref": "REF-S2 panel 13",
+    "pose": "close embrace in concert crowd",
+    "framing": "vertical waist-up",
+    "setting": "fest concert crowd",
+    "light": "stage light purple",
+    "her": {
+      "cat": "Gharara",
+      "colour": "Emerald",
+      "fabric": "Silk Blend",
+      "detail": "zari",
+      "desc": "emerald zari gharara set"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "black short kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Emerald · Black",
+    "tags": [
+      "night"
+    ],
+    "herProductIds": [
+      "w-gharara-emerald-zari",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-15",
+    "world": "college-fest",
+    "title": "Printed Lehenga Hallway Walk",
+    "ref": "REF-S1 panel 2",
+    "pose": "walking away down a hallway, hand in hand",
+    "framing": "vertical back view",
+    "setting": "hostel hallway",
+    "light": "evening",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Coral",
+      "fabric": "Cotton",
+      "detail": "floral print",
+      "desc": "coral floral printed lehenga"
+    },
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "Sage Green",
+      "fabric": "Linen",
+      "detail": "solid",
+      "desc": "sage linen ethnic shirt"
+    },
+    "tone": "Silver",
+    "colourStory": "Coral · Sage",
+    "tags": [
+      "walking"
+    ],
+    "herProductIds": [
+      "w-lehenga-coral-floral-print",
+      "w-jewellery-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-ethnic-shirt-sage-green-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-16",
+    "world": "college-fest",
+    "title": "Sharara Rooftop Overhead",
+    "ref": "REF-C2",
+    "pose": "lying on rooftop mat, overhead",
+    "framing": "overhead",
+    "setting": "hostel rooftop",
+    "light": "golden hour",
+    "her": {
+      "cat": "Sharara",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "chikankari",
+      "desc": "ivory chikankari sharara set"
+    },
+    "him": {
+      "cat": "Embroidered Ethnic Shirt",
+      "colour": "Ivory",
+      "fabric": "Silk Blend",
+      "detail": "tonal floral",
+      "desc": "ivory silk shirt with tonal floral embroidery"
+    },
+    "tone": "Silver",
+    "colourStory": "Ivory on ivory",
+    "tags": [
+      "overhead"
+    ],
+    "herProductIds": [
+      "w-sharara-ivory-chikankari",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-embroidered-ethnic-shirt-ivory-tonal-floral",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-17",
+    "world": "college-fest",
+    "title": "Anarkali Twirl, Phone Filming",
+    "ref": "REF-S2 panel 18",
+    "pose": "she twirls, he films on phone",
+    "framing": "vertical full body",
+    "setting": "college quad",
+    "light": "afternoon",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Rani Pink",
+      "fabric": "Georgette",
+      "detail": "mirror yoke",
+      "desc": "rani pink anarkali with mirror yoke"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Mint",
+      "fabric": "Cotton",
+      "detail": "embroidered placket",
+      "desc": "mint short kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Rani pink · Mint",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-anarkali-rani-pink-mirror-yoke",
+      "w-jewellery-oxidised-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-mint-embroidered-placket",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-18",
+    "world": "college-fest",
+    "title": "Saree & Shirt Classroom Window",
+    "ref": "REF-C1 side panel",
+    "pose": "standing by classroom window shoulder to shoulder",
+    "framing": "vertical nose-to-knee",
+    "setting": "classroom window",
+    "light": "window light",
+    "her": {
+      "cat": "Saree",
+      "colour": "Mustard",
+      "fabric": "Cotton",
+      "detail": "contrast border",
+      "desc": "mustard cotton saree with maroon border"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Maroon",
+      "fabric": "Rayon",
+      "detail": "small motif",
+      "desc": "maroon small-motif printed shirt"
+    },
+    "tone": "Gold",
+    "colourStory": "Mustard · Maroon",
+    "tags": [
+      "outfit-check"
+    ],
+    "herProductIds": [
+      "w-saree-mustard-contrast-border",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-maroon-small-motif",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-19",
+    "world": "college-fest",
+    "title": "Chaniya Dandiya Practice",
+    "ref": "REF-S1 panel 5",
+    "pose": "dandiya practice mid-strike",
+    "framing": "vertical full body",
+    "setting": "college ground",
+    "light": "evening floodlight",
+    "her": {
+      "cat": "Chaniya Choli",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "mirror work",
+      "desc": "navy mirror chaniya with multicolour dupatta"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Mustard",
+      "fabric": "Rayon",
+      "detail": "floral print",
+      "desc": "mustard printed ethnic shirt"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Navy · Mustard",
+    "tags": [
+      "dandiya"
+    ],
+    "herProductIds": [
+      "w-chaniya-choli-navy-mirror-work",
+      "w-jewellery-oxidised-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-mustard-floral-print",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "college-fest-20",
+    "world": "college-fest",
+    "title": "Lightweight Lehenga Bench Laugh",
+    "ref": "REF-S2 panel 20",
+    "pose": "seated on bench laughing, her head on his shoulder",
+    "framing": "vertical full seated",
+    "setting": "campus bench",
+    "light": "evening",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Powder Blue",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "powder blue lightweight sequin lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "navy short kurta"
+    },
+    "tone": "Silver",
+    "colourStory": "Powder blue · Navy",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-lehenga-powder-blue-sequin",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-navy-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-01",
+    "world": "diwali",
+    "title": "Diya-Lit Mirror Selfie at Home",
+    "ref": "REF-C1",
+    "pose": "mirror selfie in a hallway mirror, he behind her shoulder",
+    "framing": "vertical 3/4 mirror",
+    "setting": "home hallway with diyas",
+    "light": "warm diya glow",
+    "her": {
+      "cat": "Saree",
+      "colour": "Wine",
+      "fabric": "Silk Blend",
+      "detail": "zari border",
+      "desc": "wine silk saree with zari border"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Cream",
+      "fabric": "Cotton Silk",
+      "detail": "tonal embroidery",
+      "desc": "cream kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Wine · Cream",
+    "tags": [
+      "mirror-selfie"
+    ],
+    "herProductIds": [
+      "w-saree-wine-zari-border",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-cream-tonal-embroidery",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-02",
+    "world": "diwali",
+    "title": "Rangoli Overhead",
+    "ref": "REF-C2",
+    "pose": "kneeling around a rangoli, shot overhead",
+    "framing": "overhead",
+    "setting": "courtyard rangoli with diyas",
+    "light": "dusk",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Emerald",
+      "fabric": "Silk",
+      "detail": "zari",
+      "desc": "emerald silk lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Ivory",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "ivory kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Emerald · Ivory",
+    "tags": [
+      "overhead"
+    ],
+    "herProductIds": [
+      "w-lehenga-emerald-zari",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-ivory-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-03",
+    "world": "diwali",
+    "title": "Diya Steps Glow",
+    "ref": "REF-C3",
+    "pose": "seated on steps lined with diyas, she photographs them",
+    "framing": "vertical full seated",
+    "setting": "home steps with diyas",
+    "light": "diya glow",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Ivory",
+      "fabric": "Georgette",
+      "detail": "gold sequin",
+      "desc": "ivory anarkali with gold sequins"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Mustard",
+      "fabric": "Cotton Silk",
+      "detail": "embroidered neckline",
+      "desc": "mustard kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Ivory · Mustard",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-anarkali-ivory-gold-sequin",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-mustard-embroidered-neckline",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-04",
+    "world": "diwali",
+    "title": "Phuljhadi Face-Cup",
+    "ref": "REF-C2 side panel",
+    "pose": "she cups his face holding a sparkler",
+    "framing": "vertical waist-up",
+    "setting": "terrace",
+    "light": "sparkler light",
+    "her": {
+      "cat": "Sharara",
+      "colour": "Red",
+      "fabric": "Georgette",
+      "detail": "gota",
+      "desc": "red gota sharara"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "white kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Red · White",
+    "tags": [
+      "sparkler"
+    ],
+    "herProductIds": [
+      "w-sharara-red-gota",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-white-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-05",
+    "world": "diwali",
+    "title": "Marigold Door Hand-Hold",
+    "ref": "REF-C1 side panel",
+    "pose": "holding hands, chest-down crop",
+    "framing": "detail crop",
+    "setting": "marigold-decorated doorway",
+    "light": "evening",
+    "her": {
+      "cat": "Pre-Draped Saree",
+      "colour": "Mustard",
+      "fabric": "Silk Blend",
+      "detail": "zari",
+      "desc": "mustard pre-draped saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Maroon",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "maroon kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Mustard · Maroon",
+    "tags": [
+      "hand-hold"
+    ],
+    "herProductIds": [
+      "w-pre-draped-saree-mustard-zari",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-maroon-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-06",
+    "world": "diwali",
+    "title": "Balcony Lights Shoulder-to-Shoulder",
+    "ref": "REF-C1 side panel",
+    "pose": "shoulder to shoulder at balcony",
+    "framing": "vertical nose-to-knee",
+    "setting": "balcony fairy lights",
+    "light": "night",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Rani Pink",
+      "fabric": "Silk Blend",
+      "detail": "gota",
+      "desc": "rani pink kurta set"
+    },
+    "him": {
+      "cat": "Festive Jacket",
+      "colour": "Navy",
+      "fabric": "Silk Blend",
+      "detail": "subtle embroidery",
+      "desc": "navy jacket over cream kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Rani pink · Navy",
+    "tags": [
+      "outfit-check"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-rani-pink-gota",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-jacket-navy-subtle-embroidery",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-07",
+    "world": "diwali",
+    "title": "Walking Past the Lantern Lane",
+    "ref": "REF-S1 panel 2",
+    "pose": "walking away hand in hand",
+    "framing": "back view",
+    "setting": "lantern-lit lane",
+    "light": "night lanterns",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Maroon",
+      "fabric": "Velvet",
+      "detail": "zari",
+      "desc": "maroon velvet lehenga"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Black",
+      "fabric": "Cotton Silk",
+      "detail": "tonal",
+      "desc": "black kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Maroon · Black",
+    "tags": [
+      "walking"
+    ],
+    "herProductIds": [
+      "w-lehenga-maroon-zari",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-black-tonal",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-08",
+    "world": "diwali",
+    "title": "Diya Lighting Together",
+    "ref": "REF-S1 panel 6",
+    "pose": "lighting a diya together, heads close",
+    "framing": "vertical waist-up",
+    "setting": "home altar",
+    "light": "diya",
+    "her": {
+      "cat": "Saree",
+      "colour": "Royal Blue",
+      "fabric": "Silk",
+      "detail": "zari",
+      "desc": "royal blue silk saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "cream kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Royal blue · Cream",
+    "tags": [
+      "candid"
+    ],
+    "herProductIds": [
+      "w-saree-royal-blue-zari",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-09",
+    "world": "diwali",
+    "title": "Gharara Twirl on the Terrace",
+    "ref": "REF-S2 panel 16",
+    "pose": "twirl guided by his hand",
+    "framing": "full body",
+    "setting": "terrace lights",
+    "light": "night",
+    "her": {
+      "cat": "Gharara",
+      "colour": "Wine",
+      "fabric": "Silk Blend",
+      "detail": "zari",
+      "desc": "wine gharara"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "ivory kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Wine · Ivory",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-gharara-wine-zari",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-ivory-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-10",
+    "world": "diwali",
+    "title": "Cheek-to-Cheek Sparkler Selfie",
+    "ref": "REF-S2 panel 11",
+    "pose": "selfie with sparklers",
+    "framing": "head-and-shoulders",
+    "setting": "rooftop",
+    "light": "sparkler",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Emerald",
+      "fabric": "Georgette",
+      "detail": "zari",
+      "desc": "emerald anarkali"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "black kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Emerald · Black",
+    "tags": [
+      "selfie"
+    ],
+    "herProductIds": [
+      "w-anarkali-emerald-zari",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-11",
+    "world": "diwali",
+    "title": "Sweets Box Sofa Laugh",
+    "ref": "REF-S2 panel 20",
+    "pose": "seated on sofa sharing sweets",
+    "framing": "full seated",
+    "setting": "living room",
+    "light": "warm lamp",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Mustard",
+      "fabric": "Silk Blend",
+      "detail": "zari",
+      "desc": "mustard kurta set"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Wine",
+      "fabric": "Rayon",
+      "detail": "paisley",
+      "desc": "wine paisley shirt"
+    },
+    "tone": "Gold",
+    "colourStory": "Mustard · Wine",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-mustard-zari",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-wine-paisley",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-12",
+    "world": "diwali",
+    "title": "Fairy Light Embrace",
+    "ref": "REF-S2 panel 13",
+    "pose": "embrace under lights",
+    "framing": "waist-up",
+    "setting": "fairy light curtain",
+    "light": "night",
+    "her": {
+      "cat": "Saree",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "gold border",
+      "desc": "black saree with gold border"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Ivory",
+      "fabric": "Cotton Silk",
+      "detail": "tonal",
+      "desc": "ivory kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Black · Ivory",
+    "tags": [
+      "embrace"
+    ],
+    "herProductIds": [
+      "w-saree-black-gold-border",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-ivory-tonal",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-13",
+    "world": "diwali",
+    "title": "Pre-Draped Lift Selfie",
+    "ref": "REF-S2 panel 14",
+    "pose": "lift mirror selfie",
+    "framing": "mirror full body",
+    "setting": "lift",
+    "light": "cool",
+    "her": {
+      "cat": "Pre-Draped Saree",
+      "colour": "Peach",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "peach pre-draped saree"
+    },
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "Sage Green",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "sage ethnic shirt"
+    },
+    "tone": "Gold",
+    "colourStory": "Peach · Sage",
+    "tags": [
+      "mirror-selfie"
+    ],
+    "herProductIds": [
+      "w-pre-draped-saree-peach-sequin",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-ethnic-shirt-sage-green-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-14",
+    "world": "diwali",
+    "title": "Courtyard Bench Diyas",
+    "ref": "REF-S2 panel 15",
+    "pose": "bench seated whispering",
+    "framing": "full seated",
+    "setting": "courtyard",
+    "light": "diyas",
+    "her": {
+      "cat": "Sharara",
+      "colour": "Mint",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "mint sharara"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Navy",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "navy kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Mint · Navy",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-sharara-mint-sequin",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-navy-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-15",
+    "world": "diwali",
+    "title": "Lantern Hand Twirl",
+    "ref": "REF-S2 panel 16",
+    "pose": "both hands spin",
+    "framing": "full body",
+    "setting": "lantern courtyard",
+    "light": "night",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Gold",
+      "fabric": "Tissue",
+      "detail": "zari",
+      "desc": "gold tissue lehenga"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Black",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "black kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Gold · Black",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-lehenga-gold-zari",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-black-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-16",
+    "world": "diwali",
+    "title": "Doorway Side Hug",
+    "ref": "REF-S2 panel 17",
+    "pose": "side hug at doorway",
+    "framing": "3/4",
+    "setting": "decorated door",
+    "light": "evening",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Red",
+      "fabric": "Georgette",
+      "detail": "gota",
+      "desc": "red anarkali"
+    },
+    "him": {
+      "cat": "Festive Jacket",
+      "colour": "Cream",
+      "fabric": "Silk Blend",
+      "detail": "subtle embroidery",
+      "desc": "cream jacket over kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Red · Cream",
+    "tags": [
+      "hug"
+    ],
+    "herProductIds": [
+      "w-anarkali-red-gota",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-jacket-cream-subtle-embroidery",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-17",
+    "world": "diwali",
+    "title": "Rangoli Twirl Watch",
+    "ref": "REF-S2 panel 18",
+    "pose": "she twirls, he watches",
+    "framing": "full body",
+    "setting": "rangoli courtyard",
+    "light": "dusk",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Lilac",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "lilac sequin lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "ivory kurta"
+    },
+    "tone": "Silver",
+    "colourStory": "Lilac · Ivory",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-lehenga-lilac-sequin",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-ivory-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-18",
+    "world": "diwali",
+    "title": "Market Lights Walk",
+    "ref": "REF-S1 panel 4",
+    "pose": "walking toward camera",
+    "framing": "full body",
+    "setting": "lit market",
+    "light": "night",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Wine",
+      "fabric": "Silk Blend",
+      "detail": "zari",
+      "desc": "wine kurta set"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Beige",
+      "fabric": "Linen",
+      "detail": "solid",
+      "desc": "beige kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Wine · Beige",
+    "tags": [
+      "walking"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-wine-zari",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-beige-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-19",
+    "world": "diwali",
+    "title": "Forehead Touch by the Diyas",
+    "ref": "REF-S1 panel 6",
+    "pose": "forehead touch",
+    "framing": "waist-up",
+    "setting": "diya windowsill",
+    "light": "diya",
+    "her": {
+      "cat": "Saree",
+      "colour": "Rani Pink",
+      "fabric": "Silk",
+      "detail": "zari",
+      "desc": "rani pink silk saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Ivory",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "ivory kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Rani pink · Ivory",
+    "tags": [
+      "close"
+    ],
+    "herProductIds": [
+      "w-saree-rani-pink-zari",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-ivory-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "diwali-20",
+    "world": "diwali",
+    "title": "Diwali Lawn Overhead",
+    "ref": "REF-C2",
+    "pose": "lying on lawn with diyas, overhead",
+    "framing": "overhead",
+    "setting": "lawn",
+    "light": "dusk",
+    "her": {
+      "cat": "Sharara",
+      "colour": "Ivory",
+      "fabric": "Georgette",
+      "detail": "gold sequin",
+      "desc": "ivory sequin sharara"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Maroon",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "maroon kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Ivory · Maroon",
+    "tags": [
+      "overhead"
+    ],
+    "herProductIds": [
+      "w-sharara-ivory-gold-sequin",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-maroon-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-01",
+    "world": "festive-party",
+    "title": "Black Sequin Party Mirror Selfie",
+    "ref": "REF-C1",
+    "pose": "mirror selfie",
+    "framing": "3/4 mirror",
+    "setting": "party venue washroom mirror",
+    "light": "moody",
+    "her": {
+      "cat": "Saree",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "black sequin saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "mirror sequin",
+      "desc": "black mirror-sequin kurta"
+    },
+    "tone": "Silver",
+    "colourStory": "Black-on-black",
+    "tags": [
+      "mirror-selfie"
+    ],
+    "herProductIds": [
+      "w-saree-black-sequin",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-block-heels"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-mirror-sequin",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-02",
+    "world": "festive-party",
+    "title": "Rooftop Overhead in Emerald",
+    "ref": "REF-C2",
+    "pose": "overhead lying",
+    "framing": "overhead",
+    "setting": "rooftop lounge",
+    "light": "dusk",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Emerald",
+      "fabric": "Velvet",
+      "detail": "sequin",
+      "desc": "emerald velvet lehenga"
+    },
+    "him": {
+      "cat": "Festive Jacket",
+      "colour": "Black",
+      "fabric": "Velvet",
+      "detail": "solid",
+      "desc": "black velvet jacket"
+    },
+    "tone": "Gold",
+    "colourStory": "Emerald · Black",
+    "tags": [
+      "overhead"
+    ],
+    "herProductIds": [
+      "w-lehenga-emerald-sequin",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-festive-jacket-black-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-03",
+    "world": "festive-party",
+    "title": "Staircase Sit",
+    "ref": "REF-C3",
+    "pose": "seated on staircase",
+    "framing": "full seated",
+    "setting": "wooden staircase",
+    "light": "warm",
+    "her": {
+      "cat": "Sharara",
+      "colour": "Wine",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "wine sequin sharara"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "cream kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Wine · Cream",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-sharara-wine-sequin",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-04",
+    "world": "festive-party",
+    "title": "Red Jacket Laugh",
+    "ref": "REF-C2 side panel",
+    "pose": "face-cup laugh",
+    "framing": "waist-up",
+    "setting": "party lights",
+    "light": "night",
+    "her": {
+      "cat": "Pre-Draped Saree",
+      "colour": "Black",
+      "fabric": "Satin",
+      "detail": "solid",
+      "desc": "black satin pre-draped saree"
+    },
+    "him": {
+      "cat": "Festive Jacket",
+      "colour": "Red",
+      "fabric": "Brocade",
+      "detail": "brocade",
+      "desc": "red brocade jacket over black"
+    },
+    "tone": "Silver",
+    "colourStory": "Black · Red brocade",
+    "tags": [
+      "candid"
+    ],
+    "herProductIds": [
+      "w-pre-draped-saree-black-solid",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-block-heels"
+    ],
+    "hisProductIds": [
+      "m-festive-jacket-red-brocade",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-05",
+    "world": "festive-party",
+    "title": "Lounge Hand-Hold Crop",
+    "ref": "REF-C1 side panel",
+    "pose": "hand-hold crop",
+    "framing": "detail crop",
+    "setting": "lounge",
+    "light": "warm",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Silver",
+      "fabric": "Tissue",
+      "detail": "sequin",
+      "desc": "silver tissue lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Navy",
+      "fabric": "Silk Blend",
+      "detail": "solid",
+      "desc": "navy kurta"
+    },
+    "tone": "Silver",
+    "colourStory": "Silver · Navy",
+    "tags": [
+      "hand-hold"
+    ],
+    "herProductIds": [
+      "w-lehenga-silver-sequin",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-block-heels"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-navy-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-06",
+    "world": "festive-party",
+    "title": "Bar Counter Shoulder Line",
+    "ref": "REF-C1 side panel",
+    "pose": "shoulder to shoulder",
+    "framing": "nose-to-knee",
+    "setting": "party bar counter",
+    "light": "moody",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "gold",
+      "desc": "black anarkali with gold"
+    },
+    "him": {
+      "cat": "Embroidered Ethnic Shirt",
+      "colour": "Ivory",
+      "fabric": "Silk Blend",
+      "detail": "tonal",
+      "desc": "ivory embroidered shirt"
+    },
+    "tone": "Gold",
+    "colourStory": "Black · Ivory",
+    "tags": [
+      "outfit-check"
+    ],
+    "herProductIds": [
+      "w-anarkali-black-gold",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-embroidered-ethnic-shirt-ivory-tonal",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-07",
+    "world": "festive-party",
+    "title": "Corridor Walk-Out",
+    "ref": "REF-S1 panel 2",
+    "pose": "walking away",
+    "framing": "back view",
+    "setting": "hotel corridor",
+    "light": "warm",
+    "her": {
+      "cat": "Saree",
+      "colour": "Emerald",
+      "fabric": "Satin",
+      "detail": "solid",
+      "desc": "emerald satin saree"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Black",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "black kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Emerald · Black",
+    "tags": [
+      "walking"
+    ],
+    "herProductIds": [
+      "w-saree-emerald-solid",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-black-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-08",
+    "world": "festive-party",
+    "title": "Earring Fix",
+    "ref": "REF-S1 panel 6",
+    "pose": "he helps fix her earring",
+    "framing": "waist-up",
+    "setting": "party hallway",
+    "light": "warm",
+    "her": {
+      "cat": "Sharara",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "mirror",
+      "desc": "black mirror sharara"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Teal",
+      "fabric": "Rayon",
+      "detail": "paisley",
+      "desc": "teal printed shirt"
+    },
+    "tone": "Silver",
+    "colourStory": "Black · Teal",
+    "tags": [
+      "candid"
+    ],
+    "herProductIds": [
+      "w-sharara-black-mirror",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-block-heels"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-teal-paisley",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-09",
+    "world": "festive-party",
+    "title": "Dance Floor Spin",
+    "ref": "REF-S2 panel 16",
+    "pose": "spin on dance floor",
+    "framing": "full body",
+    "setting": "dance floor",
+    "light": "party lights",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Wine",
+      "fabric": "Velvet",
+      "detail": "sequin",
+      "desc": "wine velvet lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "black kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Wine · Black",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-lehenga-wine-sequin",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-10",
+    "world": "festive-party",
+    "title": "Flash Selfie",
+    "ref": "REF-S2 panel 11",
+    "pose": "flash selfie",
+    "framing": "head-and-shoulders",
+    "setting": "party",
+    "light": "flash",
+    "her": {
+      "cat": "Pre-Draped Saree",
+      "colour": "Silver",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "silver sequin pre-draped saree"
+    },
+    "him": {
+      "cat": "Embroidered Ethnic Shirt",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "sequin dots",
+      "desc": "black sequin-dot shirt"
+    },
+    "tone": "Silver",
+    "colourStory": "Silver · Black",
+    "tags": [
+      "selfie"
+    ],
+    "herProductIds": [
+      "w-pre-draped-saree-silver-sequin",
+      "w-jewellery-silver-choker-necklace",
+      "w-footwear-silver-block-heels"
+    ],
+    "hisProductIds": [
+      "m-embroidered-ethnic-shirt-black-sequin-dots",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-11",
+    "world": "festive-party",
+    "title": "Couch Laugh",
+    "ref": "REF-S2 panel 20",
+    "pose": "seated laughing",
+    "framing": "full seated",
+    "setting": "house party couch",
+    "light": "lamp",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Emerald",
+      "fabric": "Silk Blend",
+      "detail": "sequin",
+      "desc": "emerald kurta set"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "ivory kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Emerald · Ivory",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-emerald-sequin",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-ivory-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-12",
+    "world": "festive-party",
+    "title": "Terrace Embrace",
+    "ref": "REF-S2 panel 13",
+    "pose": "embrace",
+    "framing": "waist-up",
+    "setting": "terrace lights",
+    "light": "night",
+    "her": {
+      "cat": "Gharara",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "gold",
+      "desc": "black gold gharara"
+    },
+    "him": {
+      "cat": "Festive Jacket",
+      "colour": "Ivory",
+      "fabric": "Silk Blend",
+      "detail": "subtle embroidery",
+      "desc": "ivory jacket"
+    },
+    "tone": "Gold",
+    "colourStory": "Black · Ivory",
+    "tags": [
+      "embrace"
+    ],
+    "herProductIds": [
+      "w-gharara-black-gold",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-festive-jacket-ivory-subtle-embroidery",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-13",
+    "world": "festive-party",
+    "title": "Gold Lift Mirror",
+    "ref": "REF-S2 panel 14",
+    "pose": "lift mirror selfie",
+    "framing": "mirror full",
+    "setting": "brass lift",
+    "light": "warm",
+    "her": {
+      "cat": "Saree",
+      "colour": "Gold",
+      "fabric": "Tissue",
+      "detail": "zari",
+      "desc": "gold tissue saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "black kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Gold · Black",
+    "tags": [
+      "mirror-selfie"
+    ],
+    "herProductIds": [
+      "w-saree-gold-zari",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-14",
+    "world": "festive-party",
+    "title": "Poolside Bench",
+    "ref": "REF-S2 panel 15",
+    "pose": "bench whisper",
+    "framing": "full seated",
+    "setting": "poolside bench",
+    "light": "night",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Navy",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "navy sequin anarkali"
+    },
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "White",
+      "fabric": "Linen",
+      "detail": "solid",
+      "desc": "white linen ethnic shirt"
+    },
+    "tone": "Silver",
+    "colourStory": "Navy · White",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-anarkali-navy-sequin",
+      "w-jewellery-silver-choker-necklace",
+      "w-footwear-silver-block-heels"
+    ],
+    "hisProductIds": [
+      "m-ethnic-shirt-white-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-15",
+    "world": "festive-party",
+    "title": "Two-Hand Spin",
+    "ref": "REF-S2 panel 16",
+    "pose": "two-hand spin",
+    "framing": "full body",
+    "setting": "banquet lawn",
+    "light": "fairy",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Rani Pink",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "rani pink sequin lehenga"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Ivory",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "ivory kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Rani pink · Ivory",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-lehenga-rani-pink-sequin",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-ivory-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-16",
+    "world": "festive-party",
+    "title": "Entrance Side Hug",
+    "ref": "REF-S2 panel 17",
+    "pose": "side hug",
+    "framing": "3/4",
+    "setting": "venue entrance",
+    "light": "night",
+    "her": {
+      "cat": "Sharara",
+      "colour": "Emerald",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "emerald sequin sharara"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "black kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Emerald · Black",
+    "tags": [
+      "hug"
+    ],
+    "herProductIds": [
+      "w-sharara-emerald-sequin",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-17",
+    "world": "festive-party",
+    "title": "Lawn Twirl Watch",
+    "ref": "REF-S2 panel 18",
+    "pose": "twirl watch",
+    "framing": "full body",
+    "setting": "party lawn",
+    "light": "dusk",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "black sequin lehenga"
+    },
+    "him": {
+      "cat": "Embroidered Ethnic Shirt",
+      "colour": "Ivory",
+      "fabric": "Silk Blend",
+      "detail": "tonal",
+      "desc": "ivory embroidered shirt"
+    },
+    "tone": "Silver",
+    "colourStory": "Black · Ivory",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-lehenga-black-sequin",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-block-heels"
+    ],
+    "hisProductIds": [
+      "m-embroidered-ethnic-shirt-ivory-tonal",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-18",
+    "world": "festive-party",
+    "title": "Arrival Walk",
+    "ref": "REF-S1 panel 4",
+    "pose": "walking toward camera",
+    "framing": "full body",
+    "setting": "venue driveway",
+    "light": "night",
+    "her": {
+      "cat": "Pre-Draped Saree",
+      "colour": "Wine",
+      "fabric": "Satin",
+      "detail": "solid",
+      "desc": "wine satin pre-draped saree"
+    },
+    "him": {
+      "cat": "Festive Jacket",
+      "colour": "Navy",
+      "fabric": "Silk Blend",
+      "detail": "solid",
+      "desc": "navy jacket"
+    },
+    "tone": "Gold",
+    "colourStory": "Wine · Navy",
+    "tags": [
+      "walking"
+    ],
+    "herProductIds": [
+      "w-pre-draped-saree-wine-solid",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-block-heels"
+    ],
+    "hisProductIds": [
+      "m-festive-jacket-navy-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-19",
+    "world": "festive-party",
+    "title": "Candlelit Forehead Touch",
+    "ref": "REF-S1 panel 6",
+    "pose": "forehead touch",
+    "framing": "waist-up",
+    "setting": "candle-lit table",
+    "light": "candle",
+    "her": {
+      "cat": "Saree",
+      "colour": "Wine",
+      "fabric": "Georgette",
+      "detail": "sequin",
+      "desc": "wine sequin saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Georgette",
+      "detail": "mirror sequin",
+      "desc": "black sequin kurta"
+    },
+    "tone": "Silver",
+    "colourStory": "Wine · Black",
+    "tags": [
+      "close"
+    ],
+    "herProductIds": [
+      "w-saree-wine-sequin",
+      "w-jewellery-silver-bangle-stack",
+      "w-footwear-silver-block-heels"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-mirror-sequin",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "festive-party-20",
+    "world": "festive-party",
+    "title": "Rooftop Rug Overhead",
+    "ref": "REF-C2",
+    "pose": "overhead lying on rug",
+    "framing": "overhead",
+    "setting": "rooftop rug",
+    "light": "dusk",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Silver",
+      "fabric": "Georgette",
+      "detail": "mirror",
+      "desc": "silver mirror lehenga"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Black",
+      "fabric": "Rayon",
+      "detail": "block print",
+      "desc": "black printed shirt"
+    },
+    "tone": "Silver",
+    "colourStory": "Silver · Black",
+    "tags": [
+      "overhead"
+    ],
+    "herProductIds": [
+      "w-lehenga-silver-mirror",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-block-heels"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-black-block-print",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-01",
+    "world": "traditional",
+    "title": "Temple Town Mirror Selfie",
+    "ref": "REF-C1",
+    "pose": "mirror selfie",
+    "framing": "3/4 mirror",
+    "setting": "old haveli mirror",
+    "light": "window",
+    "her": {
+      "cat": "Saree",
+      "colour": "Mustard",
+      "fabric": "Silk",
+      "detail": "temple border",
+      "desc": "mustard silk saree with temple border"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Ivory",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "ivory kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Mustard · Ivory",
+    "tags": [
+      "mirror-selfie"
+    ],
+    "herProductIds": [
+      "w-saree-mustard-temple-border",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-ivory-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-02",
+    "world": "traditional",
+    "title": "Haveli Floor Overhead",
+    "ref": "REF-C2",
+    "pose": "overhead lying",
+    "framing": "overhead",
+    "setting": "patterned haveli floor",
+    "light": "sun",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Maroon",
+      "fabric": "Silk",
+      "detail": "bandhani",
+      "desc": "maroon bandhani silk lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "cream kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Maroon · Cream",
+    "tags": [
+      "overhead"
+    ],
+    "herProductIds": [
+      "w-lehenga-maroon-bandhani",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-03",
+    "world": "traditional",
+    "title": "Ghat Steps",
+    "ref": "REF-C3",
+    "pose": "seated on ghat steps",
+    "framing": "full seated",
+    "setting": "river ghat",
+    "light": "golden hour",
+    "her": {
+      "cat": "Saree",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "contrast border",
+      "desc": "red cotton saree with white border"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "white kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Red · White",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-saree-red-contrast-border",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-04",
+    "world": "traditional",
+    "title": "Courtyard Laugh",
+    "ref": "REF-C2 side panel",
+    "pose": "face-cup laugh",
+    "framing": "waist-up",
+    "setting": "courtyard",
+    "light": "day",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Teal",
+      "fabric": "Cotton",
+      "detail": "block print",
+      "desc": "teal block-print anarkali"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Beige",
+      "fabric": "Linen",
+      "detail": "solid",
+      "desc": "beige kurta set"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Teal · Beige",
+    "tags": [
+      "candid"
+    ],
+    "herProductIds": [
+      "w-anarkali-teal-block-print",
+      "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-beige-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-05",
+    "world": "traditional",
+    "title": "Temple Door Hand-Hold",
+    "ref": "REF-C1 side panel",
+    "pose": "hand-hold crop",
+    "framing": "detail crop",
+    "setting": "temple door",
+    "light": "day",
+    "her": {
+      "cat": "Saree",
+      "colour": "Emerald",
+      "fabric": "Silk",
+      "detail": "zari",
+      "desc": "emerald silk saree"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Cream",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "cream kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Emerald · Cream",
+    "tags": [
+      "hand-hold"
+    ],
+    "herProductIds": [
+      "w-saree-emerald-zari",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-cream-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-06",
+    "world": "traditional",
+    "title": "Jharokha Shoulder Line",
+    "ref": "REF-C1 side panel",
+    "pose": "shoulder to shoulder",
+    "framing": "nose-to-knee",
+    "setting": "jharokha window",
+    "light": "window",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Indigo",
+      "fabric": "Cotton",
+      "detail": "block print",
+      "desc": "indigo block-print kurta set"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "white kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Indigo · White",
+    "tags": [
+      "outfit-check"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-indigo-block-print",
+      "w-jewellery-oxidised-silver-choker-necklace",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-07",
+    "world": "traditional",
+    "title": "Fort Lane Walk",
+    "ref": "REF-S1 panel 2",
+    "pose": "walking away",
+    "framing": "back view",
+    "setting": "fort lane",
+    "light": "afternoon",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Mustard",
+      "fabric": "Cotton",
+      "detail": "bandhani",
+      "desc": "mustard bandhani lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Maroon",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "maroon kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Mustard · Maroon",
+    "tags": [
+      "walking"
+    ],
+    "herProductIds": [
+      "w-lehenga-mustard-bandhani",
+      "w-jewellery-oxidised-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-maroon-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-08",
+    "world": "traditional",
+    "title": "Pallu Fix at the Temple",
+    "ref": "REF-S1 panel 6",
+    "pose": "he adjusts her pallu",
+    "framing": "waist-up",
+    "setting": "temple corridor",
+    "light": "soft",
+    "her": {
+      "cat": "Saree",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "gold border",
+      "desc": "ivory kasavu-style saree with gold border"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "ivory kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Ivory · Gold",
+    "tags": [
+      "dupatta-adjust"
+    ],
+    "herProductIds": [
+      "w-saree-ivory-gold-border",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-ivory-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-09",
+    "world": "traditional",
+    "title": "Courtyard Spin",
+    "ref": "REF-S2 panel 16",
+    "pose": "twirl",
+    "framing": "full body",
+    "setting": "haveli courtyard",
+    "light": "day",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "gota",
+      "desc": "red gota anarkali"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "ivory kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Red · Ivory",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-anarkali-red-gota",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-ivory-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-10",
+    "world": "traditional",
+    "title": "Temple Selfie",
+    "ref": "REF-S2 panel 11",
+    "pose": "selfie",
+    "framing": "head-and-shoulders",
+    "setting": "temple steps",
+    "light": "day",
+    "her": {
+      "cat": "Saree",
+      "colour": "Rani Pink",
+      "fabric": "Silk",
+      "detail": "temple border",
+      "desc": "rani pink silk saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Mustard",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "mustard kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Rani pink · Mustard",
+    "tags": [
+      "selfie"
+    ],
+    "herProductIds": [
+      "w-saree-rani-pink-temple-border",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-mustard-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-11",
+    "world": "traditional",
+    "title": "Jhoola Laugh",
+    "ref": "REF-S2 panel 20",
+    "pose": "seated on jhoola laughing",
+    "framing": "full seated",
+    "setting": "wooden jhoola",
+    "light": "day",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Green",
+      "fabric": "Cotton",
+      "detail": "block print",
+      "desc": "green block-print lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Linen",
+      "detail": "solid",
+      "desc": "cream kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Green · Cream",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-lehenga-green-block-print",
+      "w-jewellery-oxidised-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-12",
+    "world": "traditional",
+    "title": "Archway Embrace",
+    "ref": "REF-S2 panel 13",
+    "pose": "embrace",
+    "framing": "waist-up",
+    "setting": "stone archway",
+    "light": "dusk",
+    "her": {
+      "cat": "Saree",
+      "colour": "Maroon",
+      "fabric": "Silk",
+      "detail": "zari",
+      "desc": "maroon silk saree"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Ivory",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "ivory kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Maroon · Ivory",
+    "tags": [
+      "embrace"
+    ],
+    "herProductIds": [
+      "w-saree-maroon-zari",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-ivory-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-13",
+    "world": "traditional",
+    "title": "Heirloom Mirror",
+    "ref": "REF-S2 panel 14",
+    "pose": "mirror selfie",
+    "framing": "mirror full",
+    "setting": "carved mirror",
+    "light": "warm",
+    "her": {
+      "cat": "Pre-Draped Saree",
+      "colour": "Mustard",
+      "fabric": "Silk Blend",
+      "detail": "zari",
+      "desc": "mustard pre-draped saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Green",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "green kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Mustard · Green",
+    "tags": [
+      "mirror-selfie"
+    ],
+    "herProductIds": [
+      "w-pre-draped-saree-mustard-zari",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-green-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-14",
+    "world": "traditional",
+    "title": "Stone Bench",
+    "ref": "REF-S2 panel 15",
+    "pose": "bench seated",
+    "framing": "full seated",
+    "setting": "stone bench",
+    "light": "evening",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Maroon",
+      "fabric": "Cotton",
+      "detail": "gota",
+      "desc": "maroon kurta set"
+    },
+    "him": {
+      "cat": "Festive Kurta Set",
+      "colour": "Beige",
+      "fabric": "Linen",
+      "detail": "solid",
+      "desc": "beige kurta set"
+    },
+    "tone": "Gold",
+    "colourStory": "Maroon · Beige",
+    "tags": [
+      "seated"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-maroon-gota",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-kurta-set-beige-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-15",
+    "world": "traditional",
+    "title": "Hand Spin Courtyard",
+    "ref": "REF-S2 panel 16",
+    "pose": "two-hand spin",
+    "framing": "full body",
+    "setting": "courtyard",
+    "light": "day",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Royal Blue",
+      "fabric": "Silk",
+      "detail": "bandhani",
+      "desc": "royal blue bandhani lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "white kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Royal blue · White",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-lehenga-royal-blue-bandhani",
+      "w-jewellery-oxidised-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-16",
+    "world": "traditional",
+    "title": "Gate Side Hug",
+    "ref": "REF-S2 panel 17",
+    "pose": "side hug",
+    "framing": "3/4",
+    "setting": "old gate",
+    "light": "day",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Mustard",
+      "fabric": "Cotton",
+      "detail": "block print",
+      "desc": "mustard anarkali"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Indigo",
+      "fabric": "Cotton",
+      "detail": "block print",
+      "desc": "indigo kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Mustard · Indigo",
+    "tags": [
+      "hug"
+    ],
+    "herProductIds": [
+      "w-anarkali-mustard-block-print",
+      "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-indigo-block-print",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-17",
+    "world": "traditional",
+    "title": "Temple Twirl Watch",
+    "ref": "REF-S2 panel 18",
+    "pose": "twirl watch",
+    "framing": "full body",
+    "setting": "temple lawn",
+    "light": "dusk",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Red",
+      "fabric": "Cotton",
+      "detail": "bandhani",
+      "desc": "red bandhani lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "cream kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Red · Cream",
+    "tags": [
+      "twirl"
+    ],
+    "herProductIds": [
+      "w-lehenga-red-bandhani",
+      "w-jewellery-oxidised-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-18",
+    "world": "traditional",
+    "title": "Bazaar Walk",
+    "ref": "REF-S1 panel 4",
+    "pose": "walking toward camera",
+    "framing": "full body",
+    "setting": "old bazaar",
+    "light": "day",
+    "her": {
+      "cat": "Saree",
+      "colour": "Green",
+      "fabric": "Cotton",
+      "detail": "contrast border",
+      "desc": "green cotton saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "white kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Green · White",
+    "tags": [
+      "walking"
+    ],
+    "herProductIds": [
+      "w-saree-green-contrast-border",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-19",
+    "world": "traditional",
+    "title": "Aarti Forehead Touch",
+    "ref": "REF-S1 panel 6",
+    "pose": "forehead touch",
+    "framing": "waist-up",
+    "setting": "temple lamps",
+    "light": "lamp",
+    "her": {
+      "cat": "Saree",
+      "colour": "Red",
+      "fabric": "Silk",
+      "detail": "zari",
+      "desc": "red silk saree"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Ivory",
+      "fabric": "Cotton Silk",
+      "detail": "solid",
+      "desc": "ivory kurta"
+    },
+    "tone": "Gold",
+    "colourStory": "Red · Ivory",
+    "tags": [
+      "close"
+    ],
+    "herProductIds": [
+      "w-saree-red-zari",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-ivory-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  },
+  {
+    "id": "traditional-20",
+    "world": "traditional",
+    "title": "Courtyard Overhead",
+    "ref": "REF-C2",
+    "pose": "overhead lying",
+    "framing": "overhead",
+    "setting": "courtyard tiles",
+    "light": "sun",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "block print",
+      "desc": "ivory block-print lehenga"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Maroon",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "maroon kurta"
+    },
+    "tone": "Oxidised Silver",
+    "colourStory": "Ivory · Maroon",
+    "tags": [
+      "overhead"
+    ],
+    "herProductIds": [
+      "w-lehenga-ivory-block-print",
+      "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-maroon-solid",
+      "m-footwear-tan-kolhapuri-sandals"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "garba",
+    "name": "Garba",
+    "long": "Garba / Navratri",
+    "blurb": "Nine nights of mirror work, bandhani and twirl-ready flare."
+  },
+  {
+    "slug": "college-fest",
+    "name": "College Fest",
+    "long": "College Fest",
+    "blurb": "Light, move-all-day festive looks for campus ethnic day."
+  },
+  {
+    "slug": "diwali",
+    "name": "Diwali",
+    "long": "Diwali",
+    "blurb": "Diya-lit silks, soft gold and house-party ready drapes."
+  },
+  {
+    "slug": "festive-party",
+    "name": "Festive Party",
+    "long": "Festive Party",
+    "blurb": "After-dark sequins, jewel tones and black-on-black."
+  },
+  {
+    "slug": "traditional",
+    "name": "Traditional",
+    "long": "Traditional",
+    "blurb": "Handloom, temple borders and heirloom-inspired styling — worn young."
+  }
+]

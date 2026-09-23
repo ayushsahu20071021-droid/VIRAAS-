@@ -1,0 +1,106 @@
+{
+  "name": "audit-search",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "“garba women” → 262 results (top: Rani Pink Silk Lehenga with Gota-Border Dupatta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“garba men” → 310 results (top: White Cotton Kurta Pyjama Set)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“navratri women” → 262 results (top: Rani Pink Silk Lehenga with Gota-Border Dupatta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“navratri men” → 310 results (top: White Cotton Kurta Pyjama Set)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“college fest women” → 440 results (top: Red Kutchi Embroidered Backless Blouse Cotton Chaniya Choli)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“college fest men” → 264 results (top: Black Kurta with Thread-Embroidered Placket)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“diwali women” → 430 results (top: Rani Pink Silk Lehenga with Gota-Border Dupatta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“diwali men” → 336 results (top: White Cotton Kurta Pyjama Set)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“black festive outfit” → 83 results (top: Black Gold-Teal Paisley Brocade Lehenga)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“pink lehenga” → 5 results (top: Rani Pink Silk Lehenga with Gota-Border Dupatta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“chaniya choli” → 95 results (top: Red Kutchi Embroidered Backless Blouse Cotton Chaniya Choli)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“pre draped saree” → 34 results (top: Sage Green Pre-Draped Crepe Saree with Embroidered Blouse)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“sharara” → 42 results (top: Mint Gota-Trim Cotton Sharara Set)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“gharara” → 30 results (top: Peach Gota-Patti Gharara Set)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“ethnic shirt” → 117 results (top: Navy Motif-Embroidered Short Kurta-Shirt)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“modern kurta” → 95 results (top: Black Kurta with Thread-Embroidered Placket)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“men” → 336 results (top: White Cotton Kurta Pyjama Set)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“women” → 525 results (top: Rani Pink Silk Lehenga with Gota-Border Dupatta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“couple garba” → 20 garba couple looks",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "gender token bug absent: “men” never matches women",
+      "level": "error"
+    }
+  ]
+}

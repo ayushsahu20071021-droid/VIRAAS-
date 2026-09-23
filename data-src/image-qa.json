@@ -1,0 +1,260 @@
+{
+  "couple:garba-01": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C1 match: rani pink lehenga + white embroidered bandeau + gota-border pink dupatta with tassels; he in white kurta pyjama with red phulkari dupatta over both shoulders; mirror selfie with phone over face, hand on cheek, his arm at her waist; store fitting area with racks + fluorescent light. Both read ~20. Real faces, no mannequin.",
+    "dimensions": "896x1200",
+    "bytes": 157802,
+    "sha256": "afb8de039fbd474007e15eb6da7a551f94032cf319fcad4c03b1d00736ee29b4"
+  },
+  "couple:garba-02": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C2 match: true overhead top-down on sunlit concrete; black gold/teal paisley brocade lehenga fanned out, fitted white long-sleeve crop, hand on hair; he in black kurta with copper placket embroidery + ivory paisley stole with black border. Hard shadows.",
+    "dimensions": "768x1376",
+    "bytes": 334220,
+    "sha256": "dd8ec729b0a4d779153f087ad38c4778d2a76f6ea59adf206bf587211a3689cd"
+  },
+  "couple:garba-03": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C3 match: ivory mirror-work lehenga + embellished sleeveless blouse + sheer dupatta; he in white kurta with blue denim; seated on stone steps with carved pillar and diyas, golden hour; she holds phone, leaning in. Minor: kurta reads plain white rather than chikankari; acceptable.",
+    "dimensions": "768x1376",
+    "bytes": 192068,
+    "sha256": "effb06e4d76d607010fbc4f807fc7e4d626ea496495026f3b6410e816600ef10"
+  },
+  "couple:garba-04": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C2 side panel match: red chaniya with multicolour kutchi tie-up backless blouse, she cups his face from 3/4 back view; he laughs in white kurta with red bandhani dupatta; night venue with string lights.",
+    "dimensions": "768x1376",
+    "bytes": 178982,
+    "sha256": "107b0a4ce7782791164380705c1da39406b13f724a08f0c2abb06f5406837368"
+  },
+  "couple:garba-05": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C1 side panel match: chest-down crop, hands clasped; rani pink bandhani chaniya with multicolour mirror hem + white lace dupatta; white chikankari kurta pyjama; grass garba ground at dusk.",
+    "dimensions": "768x1376",
+    "bytes": 212094,
+    "sha256": "71fa19e71c643b683559fa8cd785bcb8982a157a88a8b39de47fba461e25b68a"
+  },
+  "couple:garba-06": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C1 side panel match: nose-to-knee crop, shoulder to shoulder; red lehenga + gold-border red dupatta + ivory embroidered blouse, silver choker, red/silver bangles; ivory kurta with sheer white dupatta; cream wall.",
+    "dimensions": "768x1376",
+    "bytes": 168020,
+    "sha256": "ccdc5c7d7552b8100c2166234fde8961f0306fee13c9909964b29180b33472d8"
+  },
+  "couple:garba-07": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 walking language: 3/4 back view walking hand in hand into canopy garba crowd; multicolour patchwork mirror chaniya with backless tie blouse and jasmine braid; black kurta set with red bandhani dupatta.",
+    "dimensions": "768x1376",
+    "bytes": 236846,
+    "sha256": "50837118fd96bfe8f0f8165823514d353bb06f8df9f981637bdcc801eb44c6d0"
+  },
+  "couple:garba-08": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 panel 5 / REF-W2 black chaniya language: dandiya face-off with crossed sticks; black chaniya with gold border, black long-sleeve top, patola tasselled dupatta; navy motif shirt with cream pants.",
+    "dimensions": "768x1376",
+    "bytes": 172792,
+    "sha256": "fc467979aa38618f6949499affae94849ba4c84341f08ac53e24129fd9bf0371"
+  },
+  "couple:garba-09": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 panel 6 dupatta-adjust interaction preserved: he adjusts her patchwork tasselled dupatta, she looks down smiling; white chaniya + kutchi mirror halter; white chikankari kurta + navy sequin stole (REF-M1).",
+    "dimensions": "768x1376",
+    "bytes": 180892,
+    "sha256": "d481ff88f77a55c304e9486675e277409c499e669beee7916865dda6e9d1db98"
+  },
+  "couple:garba-10": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 panel 8 twirl language: wide red flare mid-spin guided by his raised hand; black kutchi-embroidered crop + red/black dupatta; ivory kurta with red bandhani dupatta; floodlit garba field with bunting.",
+    "dimensions": "768x1376",
+    "bytes": 209282,
+    "sha256": "a6c44dd475afb15ef5fa25e3cc278093ff3221dab5f2959fdd31ad3bd187a931"
+  },
+  "couple:garba-11": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p11/19 selfie language: arm-length selfie by him, cheek to cheek, both grinning; royal blue mirror-work chaniya blouse + red bandhani dupatta over head/shoulder, oxidised jhumkas; white kurta + solid red dupatta; night garba lights. Both read ~20\u201323. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 171590,
+    "sha256": "cb2706271bd43d4cdda42e9ae675cbda8926e19a83292888edb53021d6d88c3c"
+  },
+  "couple:garba-12": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p20 seated language: cross-legged on woven mat at venue edge, her head on his shoulder, both laughing; mustard chaniya w/ red mirror border, red embroidered blouse, green bandhani dupatta; olive botanical-print shirt, ivory trousers, tan kolhapuris. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 183700,
+    "sha256": "1704ff2db96a723bf7ec2ef91133d906d4d4bfe3fd744f5054a65df7178e4fbb"
+  },
+  "couple:garba-13": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p13 embrace: standing embrace, her cheek on his chest eyes closed; black mirror-sequin kurta; rust/red mirror chaniya + black white-dot bandhani dupatta; orange-red stage glow and haze. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 129962,
+    "sha256": "7fdb811e2023b5773262785e764f281a07cc1e0ae258692569105c7320ddb93e"
+  },
+  "couple:garba-14": {
+    "generation": "GENERATED",
+    "qa": "REGENERATE",
+    "reviewer": "agent-visual-inspection",
+    "notes": "Regenerated with corrected pose; AWAITING VISUAL VERIFICATION, not QA_PASS.",
+    "dimensions": "768x1376",
+    "bytes": 123500,
+    "sha256": "571bbc177aa418345f38528571e181796ef04c46e41cba1214c53cb691a54e39",
+    "history": [
+      {
+        "sha256": "1f50bf5de7e8afa079ee1d1368c4e3587b91855bb5f298ce2c7b8402c42ff936",
+        "verdict": "QA_FAIL",
+        "notes": "Rejected on review: his hands on her shoulders; brief requires chin resting on top of her head with arms loosely around her."
+      }
+    ]
+  },
+  "couple:garba-15": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p15 black-on-black bench: wooden bench under fairy lights, knees touching, he leans in toward her ear, she laughs; black mirror-dot chaniya + black crop + sheer mirror-dot dupatta; black kurta set + black/gold paisley shawl. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 154068,
+    "sha256": "dd5d88a5989bb18ba1d3454bde90e1600993021116cd303a84685cde1b0f0a5c"
+  },
+  "couple:garba-16": {
+    "generation": "GENERATED",
+    "qa": "REGENERATE",
+    "reviewer": "agent-visual-inspection",
+    "notes": "Regenerated with corrected pose; AWAITING VISUAL VERIFICATION, not QA_PASS.",
+    "dimensions": "768x1376",
+    "bytes": 239096,
+    "sha256": "4889f5efd0018089a7efa1610d9fbb2cea4cbfa0eae511689e8af6e26c325d31",
+    "history": [
+      {
+        "sha256": "83cde6ccf1eae084376b38924b1c27ec12f4c956d699fc2d22a63dbf048b33bd",
+        "verdict": "QA_FAIL",
+        "notes": "Rejected on review: only one joined hand-pair visible; brief requires both hand-pairs clearly joined, arms extended, both leaning back mid-spin."
+      }
+    ]
+  },
+  "couple:garba-17": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p17 side hug: facing camera, tucked under his arm, laughing; navy white-dot bandhani chaniya + red mirror blouse + navy/red dupatta; white indigo block-print shirt, ivory trousers; marigold-lit entrance arch. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 217950,
+    "sha256": "6e4a540619e40584ac02d4c8c52d23422584c066629c2929b097c7f76fa76332"
+  },
+  "couple:garba-18": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p18 twirl-watch: she twirls in foreground, ivory chaniya with multicolour mirror border fully flared, kutch balloon-sleeve crop, arms raised; he watches behind in navy kurta with embroidered yoke + cream pants; courtyard string-light canopy. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 193034,
+    "sha256": "0dae41d2db4248b85550dbe863dc3324cb364276da20f201fce3997d02641fcf"
+  },
+  "couple:garba-19": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 p4 walking: walking toward camera, fingers linked, mid-laugh looking at each other; maroon gota/mirror chaniya + mustard dupatta; maroon kurta with mirror placket, ivory pants, kolhapuris; canopy at blue hour. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 155474,
+    "sha256": "7e6b6742e9e28d577d7d7648453fb14d35b57ba13e284b8ee1cfa25529255c1f"
+  },
+  "couple:garba-20": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 p6 forehead touch: foreheads touching eyes closed, dandiya held together at chest; hot pink mirror-waistband chaniya + white blouse, jhumkas, braid; white kurta + pink bandhani scarf; night bokeh. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 156060,
+    "sha256": "e07ad15ccd00b424e6088518b135307402e9dff50a7440f54908adfe94e786f6"
+  },
+  "couple:college-fest-01": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 94534,
+    "sha256": "b9ec71733803ad1a3dcea81ec22dff5d51015aa3d32d4c895f88e6c3922d4e74",
+    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+  },
+  "couple:college-fest-02": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 163594,
+    "sha256": "84f6b4fa0715b01bb684d1e30c1358a9bd8b8ce3d44ebfa6fa705f0fb0d145c0",
+    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+  },
+  "couple:college-fest-03": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 94416,
+    "sha256": "5bfb7fee1b55f940bcda9ba62344f753b4e931d6532fb9280db587bbc0f403b6",
+    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+  },
+  "couple:college-fest-04": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 158406,
+    "sha256": "f781e5d73a8d5d9ed0d2d4e31c5006bce1eecfdddd0094b59e5c9b304d4cdd29",
+    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+  },
+  "couple:college-fest-05": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 88316,
+    "sha256": "552cd3a4976816a6b429b2d326bc16c2f9f9ac92927313d092c9bf15a37c5616",
+    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+  },
+  "couple:college-fest-06": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 143164,
+    "sha256": "2f6334ffd7219a99b676db84dd54cc9aa49544e73d599fb505c431e7eed47be6",
+    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+  },
+  "couple:college-fest-07": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 172074,
+    "sha256": "a3c88e15c607635b906f4694352bd9d98967532112e8e29b1ef9c3ad6d2e4ead",
+    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+  },
+  "couple:college-fest-08": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 148548,
+    "sha256": "4925f1704061741732dbc0aa00bfbb970063a16268ec0769d587a7136043d30c",
+    "notes": "AWAITING VISUAL VERIFICATION: generated reference-first from the supplied screenshots. Not marked QA_PASS because image viewing was unavailable in this session."
+  }
+}
