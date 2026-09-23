@@ -118,8 +118,8 @@ The brief's 10 uploaded reference files (8 screenshots + 2 sheets / 28 panels) *
 
 ## 12. Exact remaining issues (only these)
 
-1. **926 images pending** in the persistent queue (80 remaining couple looks → 823 products → 11 heroes → 12 journal headers) at the 10-images/turn platform cap. Continue in next turns: generate in queue order → `npm run sync-image-status` → `npm run validate-real-images --strict` until PASS.
-2. Product grids/couple worlds populate automatically as their images land (data-complete now: 823 + 100). Progressive-reveal gating guarantees zero broken image boxes at every intermediate state.
+1. **926 images pending** — queue head `couple:CL-C-01` (College Fest couples) at 10/turn cap. Continue with "continue"; each turn: generate queue head 10 → `npm run sync-image-status` → audits → push.
+2. Product grids/couple worlds populate automatically as images land (data-complete: 823 + 100). Progressive-reveal gating: zero broken boxes at any intermediate state.
 3. `merchantUrl` values marked **CHECK** await listing-level verification (7 verified category URLs in place).
-4. WhatsApp support CTA opens a prefilled wa.me message without a number (no number supplied; nothing invented).
-5. `validate-real-images --strict` and the IMAGE GATE (REAL PRODUCTION IMAGES required, MISSING=0) flip to PASS only after the queue drains — until then completion is **not** declared.
+4. WhatsApp support CTA opens a prefilled wa.me message without a number (nothing invented).
+5. `validate-real-images --strict` flips to PASS only after the queue drains — until then completion is **not** declared.
