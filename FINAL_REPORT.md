@@ -3,9 +3,8 @@
 > **IMAGE GATE (this session): 20 REAL / 926 PENDING / 0 FAILED / 0 PLACEHOLDERS.**
 > **Bucket 1 — Garba/Navratri couples 20/20 — COMPLETE + QA-PASSED** (CL-G-01…CL-G-20).
 > Next queue head: `couple:CL-C-01` (College Fest couples, bucket 2), continuing down §58 order
-> (couples 2–5 → Garba products → … → accessories → heroes → journal) at the **10 images/turn** cap.
-> The persistent queue (`src/data/image-manifest.json`, 946 exact prompts) survives across turns.
-> Completion is NOT declared until pending = 0 and `validate-real-images --strict` passes.
+> at the **10 images/turn** cap. The persistent queue (`src/data/image-manifest.json`, 946 exact
+> prompts) survives across turns. Completion is NOT declared until pending = 0.
 >
 > **QUEUE STATUS: session 2 complete — 20 real / 926 pending / 0 failed / 0 placeholders.**
 > Bucket 1 (Garba/Navratri couples 20/20) DONE + QA-passed. Next: College Fest couples (bucket 2).
