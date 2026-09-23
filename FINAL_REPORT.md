@@ -1,9 +1,8 @@
 # VIRAAS — FINAL REPORT
 
-> **QUEUE STATUS (session 2): 20 real / 926 pending / 0 failed / 0 placeholders.**
-> Priority bucket 1 (Garba/Navratri couples 20/20) **complete + QA-passed**. Next bucket: College Fest couples.
-> The Arena image API enforces **10 generated images per turn**; the persistent queue
-> (`src/data/image-manifest.json`, 946 exact prompts, §58 order) continues across turns. Nothing is faked.
+> **QUEUE STATUS (session 2, pushed): 20 real / 926 pending / 0 failed / 0 placeholders.**
+> Priority bucket 1 (Garba/Navratri couples 20/20) **complete + QA-passed**. Next: College Fest couples (bucket 2, CL-C-01…).
+> Arena image cap: **10 per turn** — queue (`src/data/image-manifest.json`, 946 exact prompts, §58 order) persists across turns. Nothing is faked; completion is not declared.
 >
 > **QUEUE STATUS: session 2 complete — 20 real / 926 pending / 0 failed / 0 placeholders.**
 > Bucket 1 (Garba/Navratri couples 20/20) DONE + QA-passed. Next: College Fest couples (bucket 2).
