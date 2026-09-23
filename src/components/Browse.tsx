@@ -88,7 +88,7 @@ export function Browse({
         <div className="min-w-0 flex-1">
           <div className="mb-4 flex items-baseline justify-between gap-4">
             <p className="text-sm text-ink-soft">
-              {results.length} {results.length === 1 ? "look" : "looks"}
+              {results.filter((r) => r.status === "listed").length} shown of {results.length} curated {results.length === 1 ? "look" : "looks"}
               {results.length ? ` · ${formatINR(Math.min(...results.map((r) => r.price)))} onwards` : ""}
             </p>
           </div>

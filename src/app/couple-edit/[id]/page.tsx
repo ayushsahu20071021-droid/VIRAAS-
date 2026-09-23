@@ -4,7 +4,7 @@ import { Img } from "@/components/Img";
 import { SaveButton } from "@/components/SaveButton";
 import { ShareBar } from "@/components/ShareBar";
 import { ProductCard } from "@/components/ProductCard";
-import { ALL_COUPLES, getCouple, coupleProducts, WORLD_LABEL, WORLDS, isCoupleReady } from "@/lib/catalog";
+import { ALL_COUPLES, getCouple, coupleProducts, WORLD_LABEL, WORLDS, isCoupleReady, readyCouples } from "@/lib/catalog";
 import { formatINR } from "@/lib/money";
 import { pageMeta } from "@/lib/seo";
 
@@ -112,7 +112,7 @@ export default function CoupleDetailPage({ params }: { params: { id: string } })
       <section className="mt-16">
         <h2 className="heading-md">More {WORLD_LABEL[look.world] || look.world} couple looks</h2>
         <div className="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-4">
-          {others.map((c) => (
+          {others.filter(isCoupleReady).map((c) => (
             <Link key={c.id} href={`/couple-edit/${c.id}`} className="group block overflow-hidden bg-ink text-ivory">
               <div className="relative" style={{ aspectRatio: "3/4" }}>
                 <Img src={c.imageUrl} alt={`${c.title} — couple edit`} width={600} height={800} className="h-full w-full transition group-hover:scale-105" />
@@ -121,6 +121,9 @@ export default function CoupleDetailPage({ params }: { params: { id: string } })
               <p className="p-3 font-display text-sm">{c.title}</p>
             </Link>
           ))}
+          {others.filter(isCoupleReady).length === 0 ? (
+            <p className="col-span-2 text-sm text-ink-soft lg:col-span-4">More frames from this world render as production photography lands.</p>
+          ) : null}
         </div>
       </section>
       <p className="mt-10 text-xs text-ink-soft">
