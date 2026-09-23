@@ -1,13 +1,15 @@
 # VIRAAS — FINAL REPORT
 
-> **IMAGE GATE: 20 REAL / 926 PENDING / 0 FAILED / 0 PLACEHOLDERS.**
+> **IMAGE GATE: 30 REAL / 916 PENDING / 0 FAILED / 0 PLACEHOLDERS.**
 > **Bucket 1 — Garba/Navratri couples 20/20 — COMPLETE + QA-PASSED** (CL-G-01…CL-G-20).
-> Next: `couple:CL-C-01` (College Fest couples) at the **10 images/turn** cap.
+> **Bucket 2 — College Fest couples 10/20 — in progress + QA-PASSED** (CL-C-01…CL-C-10).
+> Next: `couple:CL-C-11` at the **10 images/turn** cap.
 > Persistent queue: `src/data/image-manifest.json` — 946 exact prompts, §58 priority order.
+> Couple prompts are REFERENCE-RECREATION specs (docs/reference-map.md §13/§13b, scripts/enrich-couple-prompts.mjs).
 > Completion is NOT declared until pending = 0.
 >
-> **QUEUE STATUS: session 2 complete — 20 real / 926 pending / 0 failed / 0 placeholders.**
-> Bucket 1 (Garba/Navratri couples 20/20) DONE + QA-passed. Next: College Fest couples (bucket 2).
+> **QUEUE STATUS: session 3 — 30 real / 916 pending / 0 failed / 0 placeholders.**
+> Buckets 1 (20/20) + 2 (10/20) DONE + QA-passed. Next: College Fest couples CL-C-11…20.
 
 ## 1. Catalog
 
@@ -118,8 +120,9 @@ The brief's 10 uploaded reference files (8 screenshots + 2 sheets / 28 panels) *
 
 ## 12. Exact remaining issues (only these)
 
-1. **926 images pending** — queue head `couple:CL-C-01` (College Fest couples) at 10/turn cap. Continue with "continue"; each turn: generate queue head 10 → `npm run sync-image-status` → audits → push.
+1. **916 images pending** — queue head `couple:CL-C-11` (College Fest couples 11–20) at the 10/turn cap. Continue with "continue"; each turn: generate queue head 10 → `npm run sync-image-status` → audits → push.
 2. Product grids/couple worlds populate automatically as images land (data-complete: 823 + 100). Progressive-reveal gating: zero broken boxes at any intermediate state.
 3. `merchantUrl` values marked **CHECK** await listing-level verification (7 verified category URLs in place).
 4. WhatsApp support CTA opens a prefilled wa.me message without a number (nothing invented).
 5. `validate-real-images --strict` flips to PASS only after the queue drains — until then completion is **not** declared.
+6. Remaining couple looks generate strictly from the attached-reference recreation specs (20 panel families × 5 worlds, 15-point spec) — see `docs/reference-map.md` §13b; re-run `node scripts/enrich-couple-prompts.mjs` before any prompt/content change.
