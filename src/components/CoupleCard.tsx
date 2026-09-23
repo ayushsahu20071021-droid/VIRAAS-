@@ -2,10 +2,8 @@ import Link from "next/link";
 import { Img } from "@/components/Img";
 import { SaveButton } from "@/components/SaveButton";
 import { formatINR } from "@/lib/money";
-import { WORLD_LABEL } from "@/lib/catalog";
-import type { CoupleLook } from "@/lib/types";
-
-export function CoupleCard({ look, tall = true }: { look: CoupleLook; tall?: boolean }) {
+import { WORLD_LABEL, isCoupleReady } from "@/lib/catalog";
+import type { CoupleLook } from "@/lib/types";({ look, tall = true }: { look: CoupleLook; tall?: boolean }) {
   return (
     <article className="group relative overflow-hidden bg-ink text-ivory">
       <Link href={`/couple-edit/${look.id}`} className="block">

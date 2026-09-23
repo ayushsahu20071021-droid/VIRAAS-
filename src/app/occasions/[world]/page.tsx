@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Browse } from "@/components/Browse";
 import { Img } from "@/components/Img";
 import { CoupleGrid } from "@/components/CoupleCard";
-import { ALL_COUPLES, listedProducts, byWorld, prioritySort, WORLDS, WORLD_LABEL } from "@/lib/catalog";
+import { ALL_COUPLES, listedProducts, byWorld, prioritySort, WORLDS, WORLD_LABEL, readyCouples } from "@/lib/catalog";
 import { facetStateFrom, type SearchParams } from "@/lib/query";
 import { pageMeta } from "@/lib/seo";
 
@@ -63,6 +63,7 @@ export default function OccasionPage({ params, searchParams }: { params: { world
               <div>
                 <p className="kicker">Couple Edit</p>
                 <h2 className="heading-md mt-1">{couples.length} looks · matched, not matching</h2>
+                <p className="mt-1 text-xs text-ivory/60">{readyCouples(couples).length} of {couples.length} production frames rendered</p>
               </div>
               <Link href="/couple-edit" className="text-[12px] font-semibold uppercase tracking-editorial text-rani hover:underline">All couple looks →</Link>
             </div>

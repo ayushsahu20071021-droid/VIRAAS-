@@ -3,6 +3,7 @@ export function QueueNote({ label }: { label: string }) {
     <div className="border border-dashed border-ink/20 bg-white/60 p-10 text-center">
       <p className="font-display text-xl">Production imagery in queue</p>
       <p className="mt-2 text-sm text-ink-soft">{label}</p>
+      <p className="mt-1 text-xs text-ink-soft/70">No placeholders — real editorial frames only.</p>
     </div>
   );
 }

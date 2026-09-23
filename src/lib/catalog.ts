@@ -88,3 +88,19 @@ export function coupleProducts(look: CoupleLook): { her: Product[]; his: Product
   const pick = (ids: string[]) => ids.map(getProduct).filter((p): p is Product => Boolean(p));
   return { her: pick(look.herProductIds), his: pick(look.hisProductIds) };
 }
+
+// Progressive reveal: only couple looks whose production image exists render as cards.
+import generatedImagesData from "@/data/generated-images.json";
+const generatedKeys = new Set(Object.keys(generatedImagesData as Record<string, string>));
+
+export function isCoupleReady(look: CoupleLook): boolean {
+  return generatedKeys.has(`couple:${look.id}`);
+}
+
+export function readyCouples(looks?: CoupleLook[]): CoupleLook[] {
+  return (looks ?? ALL_COUPLES).filter(isCoupleReady);
+}
+
+export function coupleReadyCount(world?: string): number {
+  return ALL_COUPLES.filter((c) => (!world || c.world === world) && isCoupleReady(c)).length;
+}

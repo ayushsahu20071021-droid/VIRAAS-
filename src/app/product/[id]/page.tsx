@@ -75,7 +75,6 @@ export default function ProductPage({ params }: { params: { id: string } }) {
             </div>
           ) : null}
         </div>
-
         {/* Buy box */}
         <div>
           <p className="kicker">{p.merchant} · {p.brand}</p>

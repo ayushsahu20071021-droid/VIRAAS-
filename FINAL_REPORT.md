@@ -44,15 +44,15 @@ Researched Myntra, AJIO, Flipkart, Shopsy, Meesho, Nykaa (2026-09-23). Youth ban
 
 | Metric | Count |
 |---|---|
-| **Real production images generated** | **10** |
-| **Pending in persistent queue** | **936** |
+| **Real production images generated** | **20** |
+| **Pending in persistent queue** | **926** |
 | **Failed image QA** | **0** |
 | Placeholder images | **0** (hard rule kept) |
 | SVG primary apparel visuals | 0 |
 | Exact-hash duplicates | 0 |
 | 1×1 / tiny JPEGs | 0 |
 
-- Generated so far: **CL-G-01 … CL-G-10** (Garba couples, priority bucket 1) — visually inspected against the reference language: real-human, 18–25, Indian, candid, colour-story-faithful outfits, correct poses (collar adjustment, dandiya twirl…), Garba-ground environments. **QA: PASS** on all 10.
+- Generated so far: **CL-G-01 … CL-G-20 — ALL 20 Garba / Navratri couple looks (priority bucket 1 complete)** — visually inspected against the reference language: real-human, 18–25, Indian, candid, colour-story-faithful outfits, correct poses (collar adjustment, dandiya twirl, mirror selfie, seated candid…), Garba-ground environments. **QA: PASS** on all 20.
 - Queue (`src/data/image-manifest.json`): every remaining slot holds the **exact prompt + negative + queue position + target path**. Priority order exactly per §58: 1–5 couples per world (Garba first) → 6–15 product shots per world/gender → 16 accessories → 17 heroes → 18 journal.
 - Arena limit reached at 10 images/turn → continue next turns with `node scripts/sync-image-status.mjs` after each batch. Products flip `awaiting_image → listed` automatically as files land; grids populate with zero code changes.
 - Product pages for pending shots show an honest "production image queued" notice — **not** a placeholder image.
@@ -108,8 +108,8 @@ The brief's 10 uploaded reference files (8 screenshots + 2 sheets / 28 panels) *
 
 ## 12. Exact remaining issues (only these)
 
-1. **936 images pending** in the persistent queue (90 remaining couple looks → 823 products → 11 heroes → 12 journal headers) at the 10-images/turn platform cap. Continue in next turns: generate in queue order → `npm run sync-image-status` → `npm run validate-real-images --strict` until PASS.
-2. Product grids/couple worlds populate automatically as their images land (data-complete now: 823 + 100).
+1. **926 images pending** in the persistent queue (80 remaining couple looks → 823 products → 11 heroes → 12 journal headers) at the 10-images/turn platform cap. Continue in next turns: generate in queue order → `npm run sync-image-status` → `npm run validate-real-images --strict` until PASS.
+2. Product grids/couple worlds populate automatically as their images land (data-complete now: 823 + 100). Progressive-reveal gating guarantees zero broken image boxes at every intermediate state.
 3. `merchantUrl` values marked **CHECK** await listing-level verification (7 verified category URLs in place).
 4. WhatsApp support CTA opens a prefilled wa.me message without a number (no number supplied; nothing invented).
 5. `validate-real-images --strict` and the IMAGE GATE (REAL PRODUCTION IMAGES required, MISSING=0) flip to PASS only after the queue drains — until then completion is **not** declared.

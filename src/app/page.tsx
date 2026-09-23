@@ -5,7 +5,7 @@ import { CoupleGrid } from "@/components/CoupleCard";
 import { SaveButton } from "@/components/SaveButton";
 import { formatINR } from "@/lib/money";
 import {
-  ALL_COUPLES, COLLECTIONS, JOURNAL, listedProducts, prioritySort, byGender, byWorld
+  ALL_COUPLES, COLLECTIONS, JOURNAL, listedProducts, prioritySort, byGender, byWorld, readyCouples
 } from "@/lib/catalog";
 import type { Product } from "@/lib/types";
 
@@ -37,7 +37,7 @@ export default function HomePage() {
   const men = pickFew(byGender(listed, "men"), 8);
   const trending = pickFew(listed, 8);
   const accessories = pickFew(listed.filter((p) => ["jewellery", "bags", "footwear", "beauty", "accessories"].includes(p.categorySlug)), 8);
-  const coupleLead = ALL_COUPLES.slice(0, 8);
+  const coupleLead = readyCouples(ALL_COUPLES).slice(0, 8);
   const budgetPicks = COLLECTIONS.budget.map((b) => ({
     ...b,
     items: pickFew(listed.filter((p) => p.price <= b.maxPrice && (b.query.world ? p.occasion === b.query.world : true) && (b.query.gender ? p.gender === b.query.gender : true)), 3)
@@ -149,8 +149,9 @@ export default function HomePage() {
             <p className="mt-4 text-sm leading-relaxed text-ivory/75">
               100 couple looks across five worlds — candid, believable, 18–25. Garba first, always.
             </p>
+            <p className="mt-1 text-xs text-ivory/50">{readyCouples().length} of 100 production frames rendered</p>
           </div>
-          {coupleLead.some((c) => true) ? (
+          {coupleLead.length ? (
             <div className="[&_article]:border-ivory/10">
               <CoupleGrid looks={coupleLead} />
             </div>

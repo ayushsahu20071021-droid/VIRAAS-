@@ -23,12 +23,12 @@ for (const item of manifest) {
     item.hash = createHash("sha256").update(buf).digest("hex");
     if (item.status === "queued") item.status = "generated";
     generated++;
-  } else {
-    item.status = "queued";
-    item.hash = null;
-    item.bytes = null;
+      } else {
+        item.status = "queued";
+        item.hash = null;
+        item.bytes = null;
+      }
   }
-}
 
 const imageExists = new Map();
 for (const item of manifest) {
@@ -47,6 +47,13 @@ for (const p of products) {
 
 writeFileSync(join(ROOT, "src/data/image-manifest.json"), JSON.stringify(manifest, null, 2));
 writeFileSync(join(ROOT, "src/data/products.json"), JSON.stringify(products));
+
+// Tiny generated-assets index for the site layer (progressive reveal — never broken images).
+const generated = {};
+for (const item of manifest) {
+  if (item.hash) generated[`${item.kind}:${item.refId}`] = item.publicPath;
+}
+writeFileSync(join(ROOT, "src/data/generated-images.json"), JSON.stringify(generated));
 
 const queued = manifest.filter((m) => m.status === "queued");
 console.log(`images: ${generated}/${manifest.length} generated`);

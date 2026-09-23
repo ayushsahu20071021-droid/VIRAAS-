@@ -46,7 +46,7 @@ export function Footer() {
       <div className="border-t border-ivory/10">
         <div className="container-page flex flex-col gap-3 py-6 text-xs text-ivory/60 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 VIRAAS · Wear your story.</p>
-          <p>Curated with Myntra · AJIO · Flipkart · Shopsy · Meesho · Nykaa · Affiliate links are configured per merchant — “Affiliate link not configured” shows until set.</p>
+      <p>Curated with Myntra · AJIO · Flipkart · Shopsy · Meesho · Nykaa · Affiliate links are configured per merchant — “Affiliate link not configured” shows until set.</p>
         </div>
       </div>
     </footer>

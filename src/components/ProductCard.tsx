@@ -60,9 +60,18 @@ export function ProductCard({ product, aspect = "3/4" }: { product: Product; asp
 
 export function ProductGrid({ products, cols = 4 }: { products: Product[]; cols?: 2 | 3 | 4 }) {
   const colClass = cols === 2 ? "sm:grid-cols-2" : cols === 3 ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2 lg:grid-cols-4";
+  // Progressive reveal — only listed (real image) products render as cards.
+  const shown = products.filter((p) => p.status === "listed");
+  if (!shown.length) {
+    return (
+      <div className="border border-dashed border-ink/20 bg-white/60 p-8 text-center text-sm text-ink-soft">
+        Production photography renders in strict priority order (Garba/Navratri first) — cards appear as frames land.
+      </div>
+    );
+  }
   return (
     <div className={`grid grid-cols-2 gap-4 sm:gap-5 lg:gap-6 ${colClass}`}>
-      {products.map((p) => (
+      {shown.map((p) => (
         <ProductCard key={p.id} product={p} />
       ))}
     </div>

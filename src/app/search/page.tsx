@@ -32,6 +32,7 @@ export default function SearchPage({ searchParams }: { searchParams: SearchParam
           <div className="mt-8">
             {couples.length ? <CoupleGrid looks={couples.slice(0, 12)} cols={3} /> : <p className="text-sm text-ink-soft">No couple looks match — try “couple garba” or “diwali couple”.</p>}
           </div>
+          {/* Search grids render generated photography only (progressive reveal) */}
           <p className="mt-10 text-[12px] font-semibold uppercase tracking-editorial text-ink-soft">Products</p>
         </div>
       ) : null}

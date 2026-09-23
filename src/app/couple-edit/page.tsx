@@ -1,5 +1,5 @@
 import { CoupleGrid } from "@/components/CoupleCard";
-import { ALL_COUPLES, WORLDS } from "@/lib/catalog";
+import { ALL_COUPLES, WORLDS, readyCouples } from "@/lib/catalog";
 import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 
@@ -29,6 +29,7 @@ export default function CoupleEditPage() {
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-wide2 text-rani">Priority {world.priority}</p>
               <h2 className="heading-md mt-1">{world.label} — {looks.length} looks</h2>
+              <p className="mt-1 text-xs text-ink-soft">{readyCouples(looks).length} of {looks.length} production frames rendered</p>
             </div>
             <Link href={`/occasions/${world.slug}`} className="text-[12px] font-semibold uppercase tracking-editorial text-rani hover:underline">
               Shop {world.label} →
