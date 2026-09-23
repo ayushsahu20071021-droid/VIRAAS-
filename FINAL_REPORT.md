@@ -25,6 +25,10 @@
 
 No co-ords / fusion / indo-western in the taxonomy. Achkan/Sherwani/Bandhgala/groomwear/Kediyu/Kafni/Chorno/Dhoti banned (validator-scanned).
 
+### Couplet images
+
+**Bucket 1 COMPLETE: 20/20 Garba / Navratri couple looks** (CL-G-01…CL-G-20), all QA-passed.
+
 ## 2. Couple looks
 
 | World | Looks |
