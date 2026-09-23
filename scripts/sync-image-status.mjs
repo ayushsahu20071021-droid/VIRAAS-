@@ -49,13 +49,14 @@ writeFileSync(join(ROOT, "src/data/image-manifest.json"), JSON.stringify(manifes
 writeFileSync(join(ROOT, "src/data/products.json"), JSON.stringify(products));
 
 // Tiny generated-assets index for the site layer (progressive reveal — never broken images).
-const generated = {};
+const generatedIndex = {};
 for (const item of manifest) {
-  if (item.hash) generated[`${item.kind}:${item.refId}`] = item.publicPath;
+  if (item.hash) generatedIndex[`${item.kind}:${item.refId}`] = item.publicPath;
 }
-writeFileSync(join(ROOT, "src/data/generated-images.json"), JSON.stringify(generated));
+writeFileSync(join(ROOT, "src/data/generated-images.json"), JSON.stringify(generatedIndex));
 
 const queued = manifest.filter((m) => m.status === "queued");
 console.log(`images: ${generated}/${manifest.length} generated`);
+console.log(`index entries: ${Object.keys(generatedIndex).length}`);
 console.log(`products listed: ${products.filter((p) => p.status === "listed").length}/${products.length}`);
 console.log(`next in queue: ${queued.slice(0, 5).map((q) => q.key).join(", ") || "none"}`);
