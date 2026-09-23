@@ -4,7 +4,7 @@
   "checks": [
     {
       "ok": true,
-      "msg": "all 10 referenced images valid & QA_PASS",
+      "msg": "all 20 referenced images valid & QA_PASS",
       "level": "error"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "ok": true,
-      "msg": "couple visuals QA_PASS 10/100 per world {\"garba\":10,\"college-fest\":0,\"diwali\":0,\"festive-party\":0,\"traditional\":0}",
+      "msg": "couple visuals QA_PASS 20/100 per world {\"garba\":20,\"college-fest\":0,\"diwali\":0,\"festive-party\":0,\"traditional\":0}",
       "level": "error"
     },
     {
@@ -24,7 +24,7 @@
     },
     {
       "ok": false,
-      "msg": "COMPLETION GATE: 100/100 couple visuals passed (10)",
+      "msg": "COMPLETION GATE: 100/100 couple visuals passed (20)",
       "level": "gate"
     },
     {

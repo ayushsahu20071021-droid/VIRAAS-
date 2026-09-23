@@ -88,5 +88,95 @@
     "dimensions": "768x1376",
     "bytes": 209282,
     "sha256": "a6c44dd475afb15ef5fa25e3cc278093ff3221dab5f2959fdd31ad3bd187a931"
+  },
+  "couple:garba-11": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p11/19 selfie language: arm-length selfie by him, cheek to cheek, both grinning; royal blue mirror-work chaniya blouse + red bandhani dupatta over head/shoulder, oxidised jhumkas; white kurta + solid red dupatta; night garba lights. Both read ~20–23. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 171590,
+    "sha256": "cb2706271bd43d4cdda42e9ae675cbda8926e19a83292888edb53021d6d88c3c"
+  },
+  "couple:garba-12": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p20 seated language: cross-legged on woven mat at venue edge, her head on his shoulder, both laughing; mustard chaniya w/ red mirror border, red embroidered blouse, green bandhani dupatta; olive botanical-print shirt, ivory trousers, tan kolhapuris. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 183700,
+    "sha256": "1704ff2db96a723bf7ec2ef91133d906d4d4bfe3fd744f5054a65df7178e4fbb"
+  },
+  "couple:garba-13": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p13 embrace: standing embrace, her cheek on his chest eyes closed; black mirror-sequin kurta; rust/red mirror chaniya + black white-dot bandhani dupatta; orange-red stage glow and haze. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 129962,
+    "sha256": "7fdb811e2023b5773262785e764f281a07cc1e0ae258692569105c7320ddb93e"
+  },
+  "couple:garba-14": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p14 lift mirror selfie: steel elevator full-length mirror; emerald gamthi chaniya w/ mirror + magenta dupatta, she holds phone; he stands behind in ivory embroidered shirt + emerald trousers. Minor: his head tilts to her with hands on shoulders rather than chin-on-head; interaction language (close behind, affectionate) preserved. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 116526,
+    "sha256": "1f50bf5de7e8afa079ee1d1368c4e3587b91855bb5f298ce2c7b8402c42ff936"
+  },
+  "couple:garba-15": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p15 black-on-black bench: wooden bench under fairy lights, knees touching, he leans in toward her ear, she laughs; black mirror-dot chaniya + black crop + sheer mirror-dot dupatta; black kurta set + black/gold paisley shawl. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 154068,
+    "sha256": "dd5d88a5989bb18ba1d3454bde90e1600993021116cd303a84685cde1b0f0a5c"
+  },
+  "couple:garba-16": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p16 spin: spinning facing each other holding hands leaning back, wine lehenga swirling, kutch-embroidered blouse, braid swinging; cream kurta + wine bandhani stole flying; floodlit field with bunting. Minor: one hand-pair visible rather than both. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 194980,
+    "sha256": "83cde6ccf1eae084376b38924b1c27ec12f4c956d699fc2d22a63dbf048b33bd"
+  },
+  "couple:garba-17": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p17 side hug: facing camera, tucked under his arm, laughing; navy white-dot bandhani chaniya + red mirror blouse + navy/red dupatta; white indigo block-print shirt, ivory trousers; marigold-lit entrance arch. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 217950,
+    "sha256": "6e4a540619e40584ac02d4c8c52d23422584c066629c2929b097c7f76fa76332"
+  },
+  "couple:garba-18": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S2 p18 twirl-watch: she twirls in foreground, ivory chaniya with multicolour mirror border fully flared, kutch balloon-sleeve crop, arms raised; he watches behind in navy kurta with embroidered yoke + cream pants; courtyard string-light canopy. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 193034,
+    "sha256": "0dae41d2db4248b85550dbe863dc3324cb364276da20f201fce3997d02641fcf"
+  },
+  "couple:garba-19": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 p4 walking: walking toward camera, fingers linked, mid-laugh looking at each other; maroon gota/mirror chaniya + mustard dupatta; maroon kurta with mirror placket, ivory pants, kolhapuris; canopy at blue hour. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 155474,
+    "sha256": "7e6b6742e9e28d577d7d7648453fb14d35b57ba13e284b8ee1cfa25529255c1f"
+  },
+  "couple:garba-20": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 p6 forehead touch: foreheads touching eyes closed, dandiya held together at chest; hot pink mirror-waistband chaniya + white blouse, jhumkas, braid; white kurta + pink bandhani scarf; night bokeh. Real human faces, youthful, no mannequin, no bridal styling.",
+    "dimensions": "768x1376",
+    "bytes": 156060,
+    "sha256": "e07ad15ccd00b424e6088518b135307402e9dff50a7440f54908adfe94e786f6"
   }
 }
