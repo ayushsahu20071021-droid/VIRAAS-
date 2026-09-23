@@ -4,7 +4,7 @@ import { Img } from "@/components/Img";
 import { SaveButton } from "@/components/SaveButton";
 import { ShareBar } from "@/components/ShareBar";
 import { ProductCard } from "@/components/ProductCard";
-import { ALL_COUPLES, getCouple, coupleProducts, WORLD_LABEL, WORLDS, isCoupleReady, readyCouples } from "@/lib/catalog";
+import { ALL_COUPLES, getCouple, coupleProducts, WORLD_LABEL, WORLDS, isCoupleReady } from "@/lib/catalog";
 import { formatINR } from "@/lib/money";
 import { pageMeta } from "@/lib/seo";
 
