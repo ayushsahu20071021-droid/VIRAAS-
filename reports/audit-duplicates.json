@@ -1,0 +1,21 @@
+{
+  "name": "audit-duplicates",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "no primary image URL reused across entities (0)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no identical sha256 image files among 10 (0)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no perceptual near-duplicates (dHash ≤4) ",
+      "level": "error"
+    }
+  ]
+}

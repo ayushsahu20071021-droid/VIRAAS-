@@ -1,0 +1,36 @@
+{
+  "name": "validate-images",
+  "pass": false,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "all 10 referenced images valid & QA_PASS",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no SVG plates posing as photography",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "couple visuals QA_PASS 10/100 per world {\"garba\":10,\"college-fest\":0,\"diwali\":0,\"festive-party\":0,\"traditional\":0}",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "product visuals QA_PASS 0/861",
+      "level": "error"
+    },
+    {
+      "ok": false,
+      "msg": "COMPLETION GATE: 100/100 couple visuals passed (10)",
+      "level": "gate"
+    },
+    {
+      "ok": false,
+      "msg": "COMPLETION GATE: all product visuals passed (0/861)",
+      "level": "gate"
+    }
+  ]
+}

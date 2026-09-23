@@ -1,0 +1,92 @@
+{
+  "couple:garba-01": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C1 match: rani pink lehenga + white embroidered bandeau + gota-border pink dupatta with tassels; he in white kurta pyjama with red phulkari dupatta over both shoulders; mirror selfie with phone over face, hand on cheek, his arm at her waist; store fitting area with racks + fluorescent light. Both read ~20. Real faces, no mannequin.",
+    "dimensions": "896x1200",
+    "bytes": 157802,
+    "sha256": "afb8de039fbd474007e15eb6da7a551f94032cf319fcad4c03b1d00736ee29b4"
+  },
+  "couple:garba-02": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C2 match: true overhead top-down on sunlit concrete; black gold/teal paisley brocade lehenga fanned out, fitted white long-sleeve crop, hand on hair; he in black kurta with copper placket embroidery + ivory paisley stole with black border. Hard shadows.",
+    "dimensions": "768x1376",
+    "bytes": 334220,
+    "sha256": "dd8ec729b0a4d779153f087ad38c4778d2a76f6ea59adf206bf587211a3689cd"
+  },
+  "couple:garba-03": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C3 match: ivory mirror-work lehenga + embellished sleeveless blouse + sheer dupatta; he in white kurta with blue denim; seated on stone steps with carved pillar and diyas, golden hour; she holds phone, leaning in. Minor: kurta reads plain white rather than chikankari; acceptable.",
+    "dimensions": "768x1376",
+    "bytes": 192068,
+    "sha256": "effb06e4d76d607010fbc4f807fc7e4d626ea496495026f3b6410e816600ef10"
+  },
+  "couple:garba-04": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C2 side panel match: red chaniya with multicolour kutchi tie-up backless blouse, she cups his face from 3/4 back view; he laughs in white kurta with red bandhani dupatta; night venue with string lights.",
+    "dimensions": "768x1376",
+    "bytes": 178982,
+    "sha256": "107b0a4ce7782791164380705c1da39406b13f724a08f0c2abb06f5406837368"
+  },
+  "couple:garba-05": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C1 side panel match: chest-down crop, hands clasped; rani pink bandhani chaniya with multicolour mirror hem + white lace dupatta; white chikankari kurta pyjama; grass garba ground at dusk.",
+    "dimensions": "768x1376",
+    "bytes": 212094,
+    "sha256": "71fa19e71c643b683559fa8cd785bcb8982a157a88a8b39de47fba461e25b68a"
+  },
+  "couple:garba-06": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-C1 side panel match: nose-to-knee crop, shoulder to shoulder; red lehenga + gold-border red dupatta + ivory embroidered blouse, silver choker, red/silver bangles; ivory kurta with sheer white dupatta; cream wall.",
+    "dimensions": "768x1376",
+    "bytes": 168020,
+    "sha256": "ccdc5c7d7552b8100c2166234fde8961f0306fee13c9909964b29180b33472d8"
+  },
+  "couple:garba-07": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 walking language: 3/4 back view walking hand in hand into canopy garba crowd; multicolour patchwork mirror chaniya with backless tie blouse and jasmine braid; black kurta set with red bandhani dupatta.",
+    "dimensions": "768x1376",
+    "bytes": 236846,
+    "sha256": "50837118fd96bfe8f0f8165823514d353bb06f8df9f981637bdcc801eb44c6d0"
+  },
+  "couple:garba-08": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 panel 5 / REF-W2 black chaniya language: dandiya face-off with crossed sticks; black chaniya with gold border, black long-sleeve top, patola tasselled dupatta; navy motif shirt with cream pants.",
+    "dimensions": "768x1376",
+    "bytes": 172792,
+    "sha256": "fc467979aa38618f6949499affae94849ba4c84341f08ac53e24129fd9bf0371"
+  },
+  "couple:garba-09": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 panel 6 dupatta-adjust interaction preserved: he adjusts her patchwork tasselled dupatta, she looks down smiling; white chaniya + kutchi mirror halter; white chikankari kurta + navy sequin stole (REF-M1).",
+    "dimensions": "768x1376",
+    "bytes": 180892,
+    "sha256": "d481ff88f77a55c304e9486675e277409c499e669beee7916865dda6e9d1db98"
+  },
+  "couple:garba-10": {
+    "generation": "GENERATED",
+    "qa": "QA_PASS",
+    "reviewer": "agent-visual-inspection",
+    "notes": "REF-S1 panel 8 twirl language: wide red flare mid-spin guided by his raised hand; black kutchi-embroidered crop + red/black dupatta; ivory kurta with red bandhani dupatta; floodlit garba field with bunting.",
+    "dimensions": "768x1376",
+    "bytes": 209282,
+    "sha256": "a6c44dd475afb15ef5fa25e3cc278093ff3221dab5f2959fdd31ad3bd187a931"
+  }
+}
