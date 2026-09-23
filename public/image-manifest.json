@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T19:32:29.617Z",
+  "generatedAt": "2026-09-23T19:44:16.117Z",
   "references": [
     {
       "id": "REF-C1",
@@ -77,87 +77,87 @@
       "id": "couple:garba-01",
       "path": "public/images/couples/garba-01.webp",
       "type": "couple",
-      "reference": "REF-C1",
-      "dimensions": "896x1200",
-      "sha256": "afb8de039fbd474007e15eb6da7a551f94032cf319fcad4c03b1d00736ee29b4"
+      "reference": "GARBA-REF-01",
+      "dimensions": "768x1376",
+      "sha256": "cf4241550a336f0999ea2e91959c25278c01b00716982f415423891c0d8d0d20"
     },
     {
       "id": "couple:garba-02",
       "path": "public/images/couples/garba-02.webp",
       "type": "couple",
-      "reference": "REF-C2",
+      "reference": "GARBA-REF-02",
       "dimensions": "768x1376",
-      "sha256": "dd8ec729b0a4d779153f087ad38c4778d2a76f6ea59adf206bf587211a3689cd"
+      "sha256": "98eb5837fc915c9e2e12856fd461a55838c8e215ccfb5ff964b541c9cd614b97"
     },
     {
       "id": "couple:garba-03",
       "path": "public/images/couples/garba-03.webp",
       "type": "couple",
-      "reference": "REF-C3",
+      "reference": "GARBA-REF-03",
       "dimensions": "768x1376",
-      "sha256": "effb06e4d76d607010fbc4f807fc7e4d626ea496495026f3b6410e816600ef10"
+      "sha256": "62aad629f0f90c6310107f2fce9ce9bd341696b92f425700b3ceccda75fc2e71"
     },
     {
       "id": "couple:garba-04",
       "path": "public/images/couples/garba-04.webp",
       "type": "couple",
-      "reference": "REF-C2 side panel",
+      "reference": "GARBA-REF-04",
       "dimensions": "768x1376",
-      "sha256": "107b0a4ce7782791164380705c1da39406b13f724a08f0c2abb06f5406837368"
+      "sha256": "2d4fbf36a9e67e016e1d3d9311b2d6d40e4b5a7ed8f4f8d8e745fc0f8df2cde8"
     },
     {
       "id": "couple:garba-05",
       "path": "public/images/couples/garba-05.webp",
       "type": "couple",
-      "reference": "REF-C1 side panel",
+      "reference": "GARBA-REF-05",
       "dimensions": "768x1376",
-      "sha256": "71fa19e71c643b683559fa8cd785bcb8982a157a88a8b39de47fba461e25b68a"
+      "sha256": "1b703f03651b4dfc9a1816f75faf8b05f4818889950c66e6ed039ec36319b125"
     },
     {
       "id": "couple:garba-06",
       "path": "public/images/couples/garba-06.webp",
       "type": "couple",
-      "reference": "REF-C1 side panel",
+      "reference": "GARBA-REF-06",
       "dimensions": "768x1376",
-      "sha256": "ccdc5c7d7552b8100c2166234fde8961f0306fee13c9909964b29180b33472d8"
+      "sha256": "ead47869d706df17abdf6515dc3629db9f9753a6c034d8d61dd90fd339dafb61"
     },
     {
       "id": "couple:garba-07",
       "path": "public/images/couples/garba-07.webp",
       "type": "couple",
-      "reference": "REF-S1 panel 2/10",
+      "reference": "GARBA-REF-07",
       "dimensions": "768x1376",
-      "sha256": "50837118fd96bfe8f0f8165823514d353bb06f8df9f981637bdcc801eb44c6d0"
+      "sha256": "1bd0b7af47768e00bd3fb78d1e93c0d642d86d7329bfea6be06909af92d96f70"
     },
     {
       "id": "couple:garba-08",
       "path": "public/images/couples/garba-08.webp",
       "type": "couple",
-      "reference": "REF-S1 panel 5",
+      "reference": "GARBA-REF-08",
       "dimensions": "768x1376",
-      "sha256": "fc467979aa38618f6949499affae94849ba4c84341f08ac53e24129fd9bf0371"
+      "sha256": "f1f466afab927a7e28b90f2615354a6bd19e450a9f32b9104aaee24e0e37d5b6"
     },
     {
       "id": "couple:garba-09",
       "path": "public/images/couples/garba-09.webp",
       "type": "couple",
-      "reference": "REF-S1 panel 6",
+      "reference": "GARBA-REF-09",
       "dimensions": "768x1376",
-      "sha256": "d481ff88f77a55c304e9486675e277409c499e669beee7916865dda6e9d1db98"
+      "sha256": "47859a7ce03264fe72b0fcd1afd824e024e4df94158f3b68a0d7fef410bdb8c9"
     },
     {
       "id": "couple:garba-10",
       "path": "public/images/couples/garba-10.webp",
       "type": "couple",
-      "reference": "REF-S1 panel 8 / REF-S2 panel 16",
+      "reference": "GARBA-REF-10",
       "dimensions": "768x1376",
-      "sha256": "a6c44dd475afb15ef5fa25e3cc278093ff3221dab5f2959fdd31ad3bd187a931"
+      "sha256": "bbf6ac000e81addbb071c211093e557f68e9b40f03daf6b03b29603dbab7fb84"
     },
     {
       "id": "couple:garba-11",
       "path": "public/images/couples/garba-11.webp",
       "type": "couple",
-      "reference": "REF-S2 panel 11/19",
+      "reference": "GARBA-REF-11",
       "dimensions": "768x1376",
       "sha256": "cb2706271bd43d4cdda42e9ae675cbda8926e19a83292888edb53021d6d88c3c"
     },
@@ -165,7 +165,7 @@
       "id": "couple:garba-12",
       "path": "public/images/couples/garba-12.webp",
       "type": "couple",
-      "reference": "REF-S2 panel 20",
+      "reference": "GARBA-REF-12",
       "dimensions": "768x1376",
       "sha256": "1704ff2db96a723bf7ec2ef91133d906d4d4bfe3fd744f5054a65df7178e4fbb"
     },
@@ -173,7 +173,7 @@
       "id": "couple:garba-13",
       "path": "public/images/couples/garba-13.webp",
       "type": "couple",
-      "reference": "REF-S2 panel 13",
+      "reference": "GARBA-REF-13",
       "dimensions": "768x1376",
       "sha256": "7fdb811e2023b5773262785e764f281a07cc1e0ae258692569105c7320ddb93e"
     },
@@ -181,7 +181,7 @@
       "id": "couple:garba-15",
       "path": "public/images/couples/garba-15.webp",
       "type": "couple",
-      "reference": "REF-S2 panel 15",
+      "reference": "GARBA-REF-15",
       "dimensions": "768x1376",
       "sha256": "dd5d88a5989bb18ba1d3454bde90e1600993021116cd303a84685cde1b0f0a5c"
     },
@@ -189,7 +189,7 @@
       "id": "couple:garba-17",
       "path": "public/images/couples/garba-17.webp",
       "type": "couple",
-      "reference": "REF-S2 panel 17",
+      "reference": "GARBA-REF-17",
       "dimensions": "768x1376",
       "sha256": "6e4a540619e40584ac02d4c8c52d23422584c066629c2929b097c7f76fa76332"
     },
@@ -197,7 +197,7 @@
       "id": "couple:garba-18",
       "path": "public/images/couples/garba-18.webp",
       "type": "couple",
-      "reference": "REF-S2 panel 18",
+      "reference": "GARBA-REF-18",
       "dimensions": "768x1376",
       "sha256": "0dae41d2db4248b85550dbe863dc3324cb364276da20f201fce3997d02641fcf"
     },
@@ -205,7 +205,7 @@
       "id": "couple:garba-19",
       "path": "public/images/couples/garba-19.webp",
       "type": "couple",
-      "reference": "REF-S1 panel 4",
+      "reference": "GARBA-REF-19",
       "dimensions": "768x1376",
       "sha256": "7e6b6742e9e28d577d7d7648453fb14d35b57ba13e284b8ee1cfa25529255c1f"
     },
@@ -213,7 +213,7 @@
       "id": "couple:garba-20",
       "path": "public/images/couples/garba-20.webp",
       "type": "couple",
-      "reference": "REF-S1 panel 6",
+      "reference": "GARBA-REF-20",
       "dimensions": "768x1376",
       "sha256": "e07ad15ccd00b424e6088518b135307402e9dff50a7440f54908adfe94e786f6"
     }

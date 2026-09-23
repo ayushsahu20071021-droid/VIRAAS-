@@ -1,93 +1,113 @@
 {
   "couple:garba-01": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-C1 match: rani pink lehenga + white embroidered bandeau + gota-border pink dupatta with tassels; he in white kurta pyjama with red phulkari dupatta over both shoulders; mirror selfie with phone over face, hand on cheek, his arm at her waist; store fitting area with racks + fluorescent light. Both read ~20. Real faces, no mannequin.",
-    "dimensions": "896x1200",
-    "bytes": 157802,
-    "sha256": "afb8de039fbd474007e15eb6da7a551f94032cf319fcad4c03b1d00736ee29b4"
+    "notes": "GARBA-REF-01 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 197848,
+    "sha256": "cf4241550a336f0999ea2e91959c25278c01b00716982f415423891c0d8d0d20",
+    "referenceNumber": 1,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-02": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-C2 match: true overhead top-down on sunlit concrete; black gold/teal paisley brocade lehenga fanned out, fitted white long-sleeve crop, hand on hair; he in black kurta with copper placket embroidery + ivory paisley stole with black border. Hard shadows.",
+    "notes": "GARBA-REF-02 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "dimensions": "768x1376",
-    "bytes": 334220,
-    "sha256": "dd8ec729b0a4d779153f087ad38c4778d2a76f6ea59adf206bf587211a3689cd"
+    "bytes": 259422,
+    "sha256": "98eb5837fc915c9e2e12856fd461a55838c8e215ccfb5ff964b541c9cd614b97",
+    "referenceNumber": 2,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-03": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-C3 match: ivory mirror-work lehenga + embellished sleeveless blouse + sheer dupatta; he in white kurta with blue denim; seated on stone steps with carved pillar and diyas, golden hour; she holds phone, leaning in. Minor: kurta reads plain white rather than chikankari; acceptable.",
+    "notes": "GARBA-REF-03 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "dimensions": "768x1376",
-    "bytes": 192068,
-    "sha256": "effb06e4d76d607010fbc4f807fc7e4d626ea496495026f3b6410e816600ef10"
+    "bytes": 135724,
+    "sha256": "62aad629f0f90c6310107f2fce9ce9bd341696b92f425700b3ceccda75fc2e71",
+    "referenceNumber": 3,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-04": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-C2 side panel match: red chaniya with multicolour kutchi tie-up backless blouse, she cups his face from 3/4 back view; he laughs in white kurta with red bandhani dupatta; night venue with string lights.",
+    "notes": "GARBA-REF-04 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "dimensions": "768x1376",
-    "bytes": 178982,
-    "sha256": "107b0a4ce7782791164380705c1da39406b13f724a08f0c2abb06f5406837368"
+    "bytes": 185320,
+    "sha256": "2d4fbf36a9e67e016e1d3d9311b2d6d40e4b5a7ed8f4f8d8e745fc0f8df2cde8",
+    "referenceNumber": 4,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-05": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-C1 side panel match: chest-down crop, hands clasped; rani pink bandhani chaniya with multicolour mirror hem + white lace dupatta; white chikankari kurta pyjama; grass garba ground at dusk.",
+    "notes": "GARBA-REF-05 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "dimensions": "768x1376",
-    "bytes": 212094,
-    "sha256": "71fa19e71c643b683559fa8cd785bcb8982a157a88a8b39de47fba461e25b68a"
+    "bytes": 194498,
+    "sha256": "1b703f03651b4dfc9a1816f75faf8b05f4818889950c66e6ed039ec36319b125",
+    "referenceNumber": 5,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-06": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-C1 side panel match: nose-to-knee crop, shoulder to shoulder; red lehenga + gold-border red dupatta + ivory embroidered blouse, silver choker, red/silver bangles; ivory kurta with sheer white dupatta; cream wall.",
+    "notes": "GARBA-REF-06 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "dimensions": "768x1376",
-    "bytes": 168020,
-    "sha256": "ccdc5c7d7552b8100c2166234fde8961f0306fee13c9909964b29180b33472d8"
+    "bytes": 196842,
+    "sha256": "ead47869d706df17abdf6515dc3629db9f9753a6c034d8d61dd90fd339dafb61",
+    "referenceNumber": 6,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-07": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-S1 walking language: 3/4 back view walking hand in hand into canopy garba crowd; multicolour patchwork mirror chaniya with backless tie blouse and jasmine braid; black kurta set with red bandhani dupatta.",
+    "notes": "GARBA-REF-07 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "dimensions": "768x1376",
-    "bytes": 236846,
-    "sha256": "50837118fd96bfe8f0f8165823514d353bb06f8df9f981637bdcc801eb44c6d0"
+    "bytes": 210228,
+    "sha256": "1bd0b7af47768e00bd3fb78d1e93c0d642d86d7329bfea6be06909af92d96f70",
+    "referenceNumber": 7,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-08": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-S1 panel 5 / REF-W2 black chaniya language: dandiya face-off with crossed sticks; black chaniya with gold border, black long-sleeve top, patola tasselled dupatta; navy motif shirt with cream pants.",
+    "notes": "GARBA-REF-08 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "dimensions": "768x1376",
-    "bytes": 172792,
-    "sha256": "fc467979aa38618f6949499affae94849ba4c84341f08ac53e24129fd9bf0371"
+    "bytes": 188904,
+    "sha256": "f1f466afab927a7e28b90f2615354a6bd19e450a9f32b9104aaee24e0e37d5b6",
+    "referenceNumber": 8,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-09": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-S1 panel 6 dupatta-adjust interaction preserved: he adjusts her patchwork tasselled dupatta, she looks down smiling; white chaniya + kutchi mirror halter; white chikankari kurta + navy sequin stole (REF-M1).",
+    "notes": "GARBA-REF-09 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "dimensions": "768x1376",
-    "bytes": 180892,
-    "sha256": "d481ff88f77a55c304e9486675e277409c499e669beee7916865dda6e9d1db98"
+    "bytes": 201294,
+    "sha256": "47859a7ce03264fe72b0fcd1afd824e024e4df94158f3b68a0d7fef410bdb8c9",
+    "referenceNumber": 9,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-10": {
     "generation": "GENERATED",
-    "qa": "QA_PASS",
+    "qa": "GENERATED",
     "reviewer": "agent-visual-inspection",
-    "notes": "REF-S1 panel 8 twirl language: wide red flare mid-spin guided by his raised hand; black kutchi-embroidered crop + red/black dupatta; ivory kurta with red bandhani dupatta; floodlit garba field with bunting.",
+    "notes": "GARBA-REF-10 recreation from the written reference spec (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
     "dimensions": "768x1376",
-    "bytes": 209282,
-    "sha256": "a6c44dd475afb15ef5fa25e3cc278093ff3221dab5f2959fdd31ad3bd187a931"
+    "bytes": 225548,
+    "sha256": "bbf6ac000e81addbb071c211093e557f68e9b40f03daf6b03b29603dbab7fb84",
+    "referenceNumber": 10,
+    "qaStatus": "GENERATED"
   },
   "couple:garba-11": {
     "generation": "GENERATED",
