@@ -197,81 +197,81 @@
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 72884,
-    "sha256": "ad2d2a47a8951caf3e14aba845c6dd3244df898f6d9454dcc6c13f3f6a98a0f0",
-    "notes": "LOOK-01 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 87934,
+    "sha256": "ed3a17bf4dcfab6f05674153a08e9b5a78a6693407bb9e2856f701aa89e29076",
+    "notes": "LOOK-01 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-02": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 153874,
-    "sha256": "267c348c6f506e34fd15d34469d078375921c74ebfc6e2521b27ca224e36b6d2",
-    "notes": "LOOK-02 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 138762,
+    "sha256": "31f9afe3ea261374b0fcf35aeb983900fd54c8a532ab25a979e68f3da6ba0d1e",
+    "notes": "LOOK-02 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-03": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 149566,
-    "sha256": "63eba517b4f9c778c0affc8edbd72591fd947bf52f1d680e44893bf0a2e1d74e",
-    "notes": "LOOK-03 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 209230,
+    "sha256": "e1b35a9637960f56ba0328399b20d360c834f6b7dddc5bfe07a12d4a0c682678",
+    "notes": "LOOK-03 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-04": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 93140,
-    "sha256": "239d463f8bb6f7076d6e81cbc4f442d768739086625ec9d12d0adcc233e11e44",
-    "notes": "LOOK-04 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 136814,
+    "sha256": "9f2808a9fa40513db5f5b4da7b0d030d27bea9a04be741e26633a9234a9e2b5d",
+    "notes": "LOOK-04 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-05": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 190260,
-    "sha256": "11f9336a8fc0435cb80412a2e01585df263630745ceaf6fb4c8343a1a3e1325c",
-    "notes": "LOOK-05 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 339976,
+    "sha256": "e18a284fa076951c1d7f7d05ae01bd4c10e0b831d34c479029f38b71c8b36cb8",
+    "notes": "LOOK-05 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-06": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 196076,
-    "sha256": "4395af2c08dad51a6c5dedd1dc913bcdda87f2d09d2299c86955c27d74ed4450",
-    "notes": "LOOK-06 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 184534,
+    "sha256": "39e38e0c1d00b8b26c8532f9b2cb244a0ef1a0371d9ef301cd097cd0409c4d0a",
+    "notes": "LOOK-06 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-07": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 128308,
-    "sha256": "e4c3a597d3fb1b84f1d2eae2750a0e9e5f219559eafcef6cfee26fd1d4f67780",
-    "notes": "LOOK-07 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 110808,
+    "sha256": "f9a8550fd645e6c2d16fc97e64b1ccfb5da93c8a9086ebddfacf03441fc755de",
+    "notes": "LOOK-07 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-08": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 274432,
-    "sha256": "d0521082b456e06a84b6c5eb7eadbf56a3c2991047af8d1e2dea527c03ceac6f",
-    "notes": "LOOK-08 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 256116,
+    "sha256": "00839b36a52038600a39862909f876dfd75badb30edca795cc444db012c054ee",
+    "notes": "LOOK-08 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-09": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 182718,
-    "sha256": "ecbfde235496f241fd19ec0fff6f3be0bcedb234a98605a284719465d8daa7b3",
-    "notes": "LOOK-09 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 166776,
+    "sha256": "2346c0156f4c23b191be27abf3ce23768bb5181827325bd4dc47a4aa9b1a0708",
+    "notes": "LOOK-09 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-10": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "768x1376",
-    "bytes": 120550,
-    "sha256": "5f9e8bf4ca119a3a8261ee3851818eebb8a24021e5f89ea5a20a1785633f682f",
-    "notes": "LOOK-10 recreation from the user written reference spec. AWAITING VISUAL VERIFICATION: agent cannot view images."
+    "bytes": 107430,
+    "sha256": "e514f1000c5ab05058be6caedd97f0b34b8531031c921956664fc3b97cbcf3d5",
+    "notes": "LOOK-10 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
   },
   "couple:college-fest-11": {
     "generation": "GENERATED",
