@@ -1,9 +1,9 @@
 # VIRAAS — FINAL REPORT
 
-> **IMAGE GATE (session 2): 20 REAL / 926 PENDING / 0 FAILED / 0 PLACEHOLDERS.**
-> **Bucket 1 — Garba/Navratri couples 20/20 — COMPLETE + QA-PASSED.**
-> Next queue head: `couple:CL-C-01` (College Fest couples, bucket 2). Arena cap 10 images/turn.
-> 946 exact prompts persisted in `src/data/image-manifest.json` (§58 priority order). Completion is NOT declared until pending = 0.
+> **IMAGE GATE (this session): 20 REAL / 926 PENDING / 0 FAILED / 0 PLACEHOLDERS.**
+> **Bucket 1 — Garba/Navratri couples 20/20 — COMPLETE + QA-PASSED** (CL-G-01…CL-G-20).
+> Next queue head: `couple:CL-C-01` → College Fest couples (bucket 2), then Diwali/Festive Party/Traditional couples → product shots (Garba first) → accessories → heroes → journal.
+> Arena image API cap = **10 per turn**; the persistent queue (`src/data/image-manifest.json`, 946 exact prompts in §58 order) survives across turns. Completion is NOT declared until pending = 0.
 >
 > **QUEUE STATUS: session 2 complete — 20 real / 926 pending / 0 failed / 0 placeholders.**
 > Bucket 1 (Garba/Navratri couples 20/20) DONE + QA-passed. Next: College Fest couples (bucket 2).
