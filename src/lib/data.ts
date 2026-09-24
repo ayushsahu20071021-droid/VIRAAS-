@@ -25,6 +25,17 @@ export const COUPLES = couplesRaw as unknown as Couple[];
 export const WORLDS = worldsRaw as World[];
 export const byId = new Map(PRODUCTS.map((p) => [p.id, p]));
 export const coupleById = new Map(COUPLES.map((c) => [c.id, c]));
+
+// Preview resolver: GENERATED couple assets are intentionally viewable for inspection,
+// while QA/status values remain authoritative and unchanged. The query is a preview-only
+// cache buster so a refreshed asset cannot be hidden behind an older browser cache.
+export const coupleImageSrc = (c: Couple) => {
+  if (c.imageStatus === 'GENERATED') {
+    const cacheBust = c.world === 'diwali' && /^diwali-(0[1-9]|10)$/.test(c.id) ? 'diwali-refresh-01-10' : 'generated-preview';
+    return `/images/couples/${c.id}.webp?v=${cacheBust}`;
+  }
+  return c.imageUrl || undefined;
+};
 export const worldName = (slug: string) => WORLDS.find((w) => w.slug === slug)?.name ?? slug;
 
 export const catSlug = (s: string) => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');

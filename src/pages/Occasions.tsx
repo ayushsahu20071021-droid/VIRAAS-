@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
-import { WORLDS, COUPLES, PRODUCTS } from '../lib/data';
+import { WORLDS, COUPLES, PRODUCTS, coupleImageSrc } from '../lib/data';
 import { ImageFrame, ProductCard, CoupleCard, SectionHead, Empty } from '../components/ui';
 
-const img = (slug: string) => { const c = COUPLES.find((x) => x.world === slug && x.imageUrl); return c?.imageStatus === 'GENERATED' ? `/images/couples/${c.id}.webp` : c?.imageUrl; };
+const img = (slug: string) => { const c = COUPLES.find((x) => x.world === slug); return c ? coupleImageSrc(c) : undefined; };
 
 export function Occasions() {
   return (
