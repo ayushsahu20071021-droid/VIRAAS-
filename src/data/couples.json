@@ -1804,822 +1804,963 @@
   {
     "id": "diwali-01",
     "world": "diwali",
-    "title": "Diya-Lit Mirror Selfie at Home",
-    "ref": "REF-C1",
-    "pose": "mirror selfie in a hallway mirror, he behind her shoulder",
-    "framing": "vertical 3/4 mirror",
-    "setting": "home hallway with diyas",
-    "light": "warm diya glow",
-    "her": {
-      "cat": "Saree",
-      "colour": "Wine",
-      "fabric": "Silk Blend",
-      "detail": "zari border",
-      "desc": "wine silk saree with zari border"
-    },
-    "him": {
-      "cat": "Festive Kurta Set",
-      "colour": "Cream",
-      "fabric": "Cotton Silk",
-      "detail": "tonal embroidery",
-      "desc": "cream kurta set"
-    },
-    "tone": "Gold",
-    "colourStory": "Wine · Cream",
-    "tags": [
-      "mirror-selfie"
-    ],
-    "herProductIds": [
-      "w-saree-wine-zari-border",
-      "w-jewellery-gold-jhumka-earrings",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-festive-kurta-set-cream-tonal-embroidery",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-C1. HER: wine silk saree with zari border. HIM: cream kurta set. POSE: mirror selfie in a hallway mirror, he behind her shoulder. FRAMING: vertical 3/4 mirror. SETTING: home hallway with diyas. LIGHT: warm diya glow."
-  },
-  {
-    "id": "diwali-02",
-    "world": "diwali",
-    "title": "Rangoli Overhead",
-    "ref": "REF-C2",
-    "pose": "kneeling around a rangoli, shot overhead",
-    "framing": "overhead",
-    "setting": "courtyard rangoli with diyas",
-    "light": "dusk",
-    "her": {
-      "cat": "Lehenga",
-      "colour": "Emerald",
-      "fabric": "Silk",
-      "detail": "zari",
-      "desc": "emerald silk lehenga"
-    },
-    "him": {
-      "cat": "Modern Kurta",
-      "colour": "Ivory",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "ivory kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Emerald · Ivory",
-    "tags": [
-      "overhead"
-    ],
-    "herProductIds": [
-      "w-lehenga-emerald-zari",
-      "w-jewellery-gold-choker-necklace",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-modern-kurta-ivory-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-C2. HER: emerald silk lehenga. HIM: ivory kurta. POSE: kneeling around a rangoli, shot overhead. FRAMING: overhead. SETTING: courtyard rangoli with diyas. LIGHT: dusk."
-  },
-  {
-    "id": "diwali-03",
-    "world": "diwali",
-    "title": "Diya Steps Glow",
-    "ref": "REF-C3",
-    "pose": "seated on steps lined with diyas, she photographs them",
-    "framing": "vertical full seated",
-    "setting": "home steps with diyas",
-    "light": "diya glow",
-    "her": {
-      "cat": "Anarkali",
-      "colour": "Ivory",
-      "fabric": "Georgette",
-      "detail": "gold sequin",
-      "desc": "ivory anarkali with gold sequins"
-    },
-    "him": {
-      "cat": "Modern Kurta",
-      "colour": "Mustard",
-      "fabric": "Cotton Silk",
-      "detail": "embroidered neckline",
-      "desc": "mustard kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Ivory · Mustard",
-    "tags": [
-      "seated"
-    ],
-    "herProductIds": [
-      "w-anarkali-ivory-gold-sequin",
-      "w-jewellery-gold-bangle-stack",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-modern-kurta-mustard-embroidered-neckline",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-C3. HER: ivory anarkali with gold sequins. HIM: mustard kurta. POSE: seated on steps lined with diyas, she photographs them. FRAMING: vertical full seated. SETTING: home steps with diyas. LIGHT: diya glow."
-  },
-  {
-    "id": "diwali-04",
-    "world": "diwali",
-    "title": "Phuljhadi Face-Cup",
-    "ref": "REF-C2 side panel",
-    "pose": "she cups his face holding a sparkler",
-    "framing": "vertical waist-up",
-    "setting": "terrace",
-    "light": "sparkler light",
-    "her": {
-      "cat": "Sharara",
-      "colour": "Red",
-      "fabric": "Georgette",
-      "detail": "gota",
-      "desc": "red gota sharara"
-    },
-    "him": {
-      "cat": "Festive Kurta Set",
-      "colour": "White",
-      "fabric": "Cotton",
-      "detail": "solid",
-      "desc": "white kurta set"
-    },
-    "tone": "Gold",
-    "colourStory": "Red · White",
-    "tags": [
-      "sparkler"
-    ],
-    "herProductIds": [
-      "w-sharara-red-gota",
-      "w-jewellery-gold-kamarbandh-waist-belt",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-festive-kurta-set-white-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-C2 side panel. HER: red gota sharara. HIM: white kurta set. POSE: she cups his face holding a sparkler. FRAMING: vertical waist-up. SETTING: terrace. LIGHT: sparkler light."
-  },
-  {
-    "id": "diwali-05",
-    "world": "diwali",
-    "title": "Marigold Door Hand-Hold",
-    "ref": "REF-C1 side panel",
-    "pose": "holding hands, chest-down crop",
-    "framing": "detail crop",
-    "setting": "marigold-decorated doorway",
-    "light": "evening",
-    "her": {
-      "cat": "Pre-Draped Saree",
-      "colour": "Mustard",
-      "fabric": "Silk Blend",
-      "detail": "zari",
-      "desc": "mustard pre-draped saree"
-    },
-    "him": {
-      "cat": "Modern Kurta",
-      "colour": "Maroon",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "maroon kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Mustard · Maroon",
-    "tags": [
-      "hand-hold"
-    ],
-    "herProductIds": [
-      "w-pre-draped-saree-mustard-zari",
-      "w-jewellery-gold-jhumka-earrings",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-modern-kurta-maroon-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-C1 side panel. HER: mustard pre-draped saree. HIM: maroon kurta. POSE: holding hands, chest-down crop. FRAMING: detail crop. SETTING: marigold-decorated doorway. LIGHT: evening."
-  },
-  {
-    "id": "diwali-06",
-    "world": "diwali",
-    "title": "Balcony Lights Shoulder-to-Shoulder",
-    "ref": "REF-C1 side panel",
-    "pose": "shoulder to shoulder at balcony",
-    "framing": "vertical nose-to-knee",
-    "setting": "balcony fairy lights",
-    "light": "night",
+    "title": "Black Embroidered Kurta, Glass Doorway",
+    "ref": "DIWALI-REF-01",
+    "referenceNumber": 1,
+    "pose": "standing very close together, she slightly in front and to the left, he slightly behind and to the right with his arm naturally around her shoulder, she stands relaxed with her handbag hanging from one hand, both looking toward the camera",
+    "poseDescription": "standing very close together, she slightly in front and to the left, he slightly behind and to the right with his arm naturally around her shoulder, she stands relaxed with her handbag hanging from one hand, both looking toward the camera",
+    "framing": "vertical full-body portrait, couple centred, entire outfits visible down to footwear",
+    "framingDescription": "vertical full-body portrait, couple centred, entire outfits visible down to footwear",
+    "setting": "dark reflective modern interior with a tall glass and mirror doorway behind them",
+    "environmentDescription": "dark reflective modern interior with a tall glass and mirror doorway behind them",
+    "light": "night indoor lighting",
     "her": {
       "cat": "Kurta Sets",
-      "colour": "Rani Pink",
-      "fabric": "Silk Blend",
-      "detail": "gota",
-      "desc": "rani pink kurta set"
-    },
-    "him": {
-      "cat": "Festive Jacket",
-      "colour": "Navy",
-      "fabric": "Silk Blend",
-      "detail": "subtle embroidery",
-      "desc": "navy jacket over cream kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Rani pink · Navy",
-    "tags": [
-      "outfit-check"
-    ],
-    "herProductIds": [
-      "w-kurta-sets-rani-pink-gota",
-      "w-jewellery-gold-choker-necklace",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-festive-jacket-navy-subtle-embroidery",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-C1 side panel. HER: rani pink kurta set. HIM: navy jacket over cream kurta. POSE: shoulder to shoulder at balcony. FRAMING: vertical nose-to-knee. SETTING: balcony fairy lights. LIGHT: night."
-  },
-  {
-    "id": "diwali-07",
-    "world": "diwali",
-    "title": "Walking Past the Lantern Lane",
-    "ref": "REF-S1 panel 2",
-    "pose": "walking away hand in hand",
-    "framing": "back view",
-    "setting": "lantern-lit lane",
-    "light": "night lanterns",
-    "her": {
-      "cat": "Lehenga",
-      "colour": "Maroon",
-      "fabric": "Velvet",
-      "detail": "zari",
-      "desc": "maroon velvet lehenga"
-    },
-    "him": {
-      "cat": "Festive Kurta Set",
-      "colour": "Black",
-      "fabric": "Cotton Silk",
-      "detail": "tonal",
-      "desc": "black kurta set"
-    },
-    "tone": "Gold",
-    "colourStory": "Maroon · Black",
-    "tags": [
-      "walking"
-    ],
-    "herProductIds": [
-      "w-lehenga-maroon-zari",
-      "w-jewellery-gold-bangle-stack",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-festive-kurta-set-black-tonal",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S1 panel 2. HER: maroon velvet lehenga. HIM: black kurta set. POSE: walking away hand in hand. FRAMING: back view. SETTING: lantern-lit lane. LIGHT: night lanterns."
-  },
-  {
-    "id": "diwali-08",
-    "world": "diwali",
-    "title": "Diya Lighting Together",
-    "ref": "REF-S1 panel 6",
-    "pose": "lighting a diya together, heads close",
-    "framing": "vertical waist-up",
-    "setting": "home altar",
-    "light": "diya",
-    "her": {
-      "cat": "Saree",
-      "colour": "Royal Blue",
-      "fabric": "Silk",
-      "detail": "zari",
-      "desc": "royal blue silk saree"
-    },
-    "him": {
-      "cat": "Modern Kurta",
-      "colour": "Cream",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "cream kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Royal blue · Cream",
-    "tags": [
-      "candid"
-    ],
-    "herProductIds": [
-      "w-saree-royal-blue-zari",
-      "w-jewellery-gold-kamarbandh-waist-belt",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-modern-kurta-cream-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S1 panel 6. HER: royal blue silk saree. HIM: cream kurta. POSE: lighting a diya together, heads close. FRAMING: vertical waist-up. SETTING: home altar. LIGHT: diya."
-  },
-  {
-    "id": "diwali-09",
-    "world": "diwali",
-    "title": "Gharara Twirl on the Terrace",
-    "ref": "REF-S2 panel 16",
-    "pose": "twirl guided by his hand",
-    "framing": "full body",
-    "setting": "terrace lights",
-    "light": "night",
-    "her": {
-      "cat": "Gharara",
-      "colour": "Wine",
-      "fabric": "Silk Blend",
-      "detail": "zari",
-      "desc": "wine gharara"
-    },
-    "him": {
-      "cat": "Modern Kurta",
-      "colour": "Ivory",
-      "fabric": "Cotton",
-      "detail": "solid",
-      "desc": "ivory kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Wine · Ivory",
-    "tags": [
-      "twirl"
-    ],
-    "herProductIds": [
-      "w-gharara-wine-zari",
-      "w-jewellery-gold-jhumka-earrings",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-modern-kurta-ivory-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S2 panel 16. HER: wine gharara. HIM: ivory kurta. POSE: twirl guided by his hand. FRAMING: full body. SETTING: terrace lights. LIGHT: night."
-  },
-  {
-    "id": "diwali-10",
-    "world": "diwali",
-    "title": "Cheek-to-Cheek Sparkler Selfie",
-    "ref": "REF-S2 panel 11",
-    "pose": "selfie with sparklers",
-    "framing": "head-and-shoulders",
-    "setting": "rooftop",
-    "light": "sparkler",
-    "her": {
-      "cat": "Anarkali",
-      "colour": "Emerald",
-      "fabric": "Georgette",
-      "detail": "zari",
-      "desc": "emerald anarkali"
-    },
-    "him": {
-      "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "solid",
-      "desc": "black kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Emerald · Black",
-    "tags": [
-      "selfie"
-    ],
-    "herProductIds": [
-      "w-anarkali-emerald-zari",
-      "w-jewellery-gold-choker-necklace",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-modern-kurta-black-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S2 panel 11. HER: emerald anarkali. HIM: black kurta. POSE: selfie with sparklers. FRAMING: head-and-shoulders. SETTING: rooftop. LIGHT: sparkler."
-  },
-  {
-    "id": "diwali-11",
-    "world": "diwali",
-    "title": "Sweets Box Sofa Laugh",
-    "ref": "REF-S2 panel 20",
-    "pose": "seated on sofa sharing sweets",
-    "framing": "full seated",
-    "setting": "living room",
-    "light": "warm lamp",
-    "her": {
-      "cat": "Kurta Sets",
-      "colour": "Mustard",
-      "fabric": "Silk Blend",
-      "detail": "zari",
-      "desc": "mustard kurta set"
-    },
-    "him": {
-      "cat": "Printed Ethnic Shirt",
-      "colour": "Wine",
-      "fabric": "Rayon",
-      "detail": "paisley",
-      "desc": "wine paisley shirt"
-    },
-    "tone": "Gold",
-    "colourStory": "Mustard · Wine",
-    "tags": [
-      "seated"
-    ],
-    "herProductIds": [
-      "w-kurta-sets-mustard-zari",
-      "w-jewellery-gold-bangle-stack",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-printed-ethnic-shirt-wine-paisley",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S2 panel 20. HER: mustard kurta set. HIM: wine paisley shirt. POSE: seated on sofa sharing sweets. FRAMING: full seated. SETTING: living room. LIGHT: warm lamp."
-  },
-  {
-    "id": "diwali-12",
-    "world": "diwali",
-    "title": "Fairy Light Embrace",
-    "ref": "REF-S2 panel 13",
-    "pose": "embrace under lights",
-    "framing": "waist-up",
-    "setting": "fairy light curtain",
-    "light": "night",
-    "her": {
-      "cat": "Saree",
-      "colour": "Black",
-      "fabric": "Georgette",
-      "detail": "gold border",
-      "desc": "black saree with gold border"
-    },
-    "him": {
-      "cat": "Festive Kurta Set",
-      "colour": "Ivory",
-      "fabric": "Cotton Silk",
-      "detail": "tonal",
-      "desc": "ivory kurta set"
-    },
-    "tone": "Gold",
-    "colourStory": "Black · Ivory",
-    "tags": [
-      "embrace"
-    ],
-    "herProductIds": [
-      "w-saree-black-gold-border",
-      "w-jewellery-gold-kamarbandh-waist-belt",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-festive-kurta-set-ivory-tonal",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S2 panel 13. HER: black saree with gold border. HIM: ivory kurta set. POSE: embrace under lights. FRAMING: waist-up. SETTING: fairy light curtain. LIGHT: night."
-  },
-  {
-    "id": "diwali-13",
-    "world": "diwali",
-    "title": "Pre-Draped Lift Selfie",
-    "ref": "REF-S2 panel 14",
-    "pose": "lift mirror selfie",
-    "framing": "mirror full body",
-    "setting": "lift",
-    "light": "cool",
-    "her": {
-      "cat": "Pre-Draped Saree",
-      "colour": "Peach",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "peach pre-draped saree"
+      "detail": "white floral embroidery with palazzo",
+      "desc": "black long straight kurta with prominent white floral embroidery, white loose palazzo bottoms, statement silver layered necklace, long silver earrings, silver embellished small handbag, white embroidered flats"
     },
     "him": {
       "cat": "Ethnic Shirt",
-      "colour": "Sage Green",
-      "fabric": "Cotton",
-      "detail": "solid",
-      "desc": "sage ethnic shirt"
-    },
-    "tone": "Gold",
-    "colourStory": "Peach · Sage",
-    "tags": [
-      "mirror-selfie"
-    ],
-    "herProductIds": [
-      "w-pre-draped-saree-peach-sequin",
-      "w-jewellery-gold-jhumka-earrings",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-ethnic-shirt-sage-green-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S2 panel 14. HER: peach pre-draped saree. HIM: sage ethnic shirt. POSE: lift mirror selfie. FRAMING: mirror full body. SETTING: lift. LIGHT: cool."
-  },
-  {
-    "id": "diwali-14",
-    "world": "diwali",
-    "title": "Courtyard Bench Diyas",
-    "ref": "REF-S2 panel 15",
-    "pose": "bench seated whispering",
-    "framing": "full seated",
-    "setting": "courtyard",
-    "light": "diyas",
-    "her": {
-      "cat": "Sharara",
-      "colour": "Mint",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "mint sharara"
-    },
-    "him": {
-      "cat": "Modern Kurta",
-      "colour": "Navy",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "navy kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Mint · Navy",
-    "tags": [
-      "seated"
-    ],
-    "herProductIds": [
-      "w-sharara-mint-sequin",
-      "w-jewellery-gold-choker-necklace",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-modern-kurta-navy-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S2 panel 15. HER: mint sharara. HIM: navy kurta. POSE: bench seated whispering. FRAMING: full seated. SETTING: courtyard. LIGHT: diyas."
-  },
-  {
-    "id": "diwali-15",
-    "world": "diwali",
-    "title": "Lantern Hand Twirl",
-    "ref": "REF-S2 panel 16",
-    "pose": "both hands spin",
-    "framing": "full body",
-    "setting": "lantern courtyard",
-    "light": "night",
-    "her": {
-      "cat": "Lehenga",
-      "colour": "Gold",
-      "fabric": "Tissue",
-      "detail": "zari",
-      "desc": "gold tissue lehenga"
-    },
-    "him": {
-      "cat": "Festive Kurta Set",
       "colour": "Black",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "black kurta set"
-    },
-    "tone": "Gold",
-    "colourStory": "Gold · Black",
-    "tags": [
-      "twirl"
-    ],
-    "herProductIds": [
-      "w-lehenga-gold-zari",
-      "w-jewellery-gold-bangle-stack",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-festive-kurta-set-black-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S2 panel 16. HER: gold tissue lehenga. HIM: black kurta set. POSE: both hands spin. FRAMING: full body. SETTING: lantern courtyard. LIGHT: night."
-  },
-  {
-    "id": "diwali-16",
-    "world": "diwali",
-    "title": "Doorway Side Hug",
-    "ref": "REF-S2 panel 17",
-    "pose": "side hug at doorway",
-    "framing": "3/4",
-    "setting": "decorated door",
-    "light": "evening",
-    "her": {
-      "cat": "Anarkali",
-      "colour": "Red",
-      "fabric": "Georgette",
-      "detail": "gota",
-      "desc": "red anarkali"
-    },
-    "him": {
-      "cat": "Festive Jacket",
-      "colour": "Cream",
-      "fabric": "Silk Blend",
-      "detail": "subtle embroidery",
-      "desc": "cream jacket over kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Red · Cream",
-    "tags": [
-      "hug"
-    ],
-    "herProductIds": [
-      "w-anarkali-red-gota",
-      "w-jewellery-gold-kamarbandh-waist-belt",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-festive-jacket-cream-subtle-embroidery",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S2 panel 17. HER: red anarkali. HIM: cream jacket over kurta. POSE: side hug at doorway. FRAMING: 3/4. SETTING: decorated door. LIGHT: evening."
-  },
-  {
-    "id": "diwali-17",
-    "world": "diwali",
-    "title": "Rangoli Twirl Watch",
-    "ref": "REF-S2 panel 18",
-    "pose": "she twirls, he watches",
-    "framing": "full body",
-    "setting": "rangoli courtyard",
-    "light": "dusk",
-    "her": {
-      "cat": "Lehenga",
-      "colour": "Lilac",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "lilac sequin lehenga"
-    },
-    "him": {
-      "cat": "Modern Kurta",
-      "colour": "Ivory",
       "fabric": "Cotton",
-      "detail": "solid",
-      "desc": "ivory kurta"
+      "detail": "solid full-sleeve",
+      "desc": "solid black full-sleeve button-up shirt, relaxed fit, white wide trousers, white sneakers, simple wristwatch"
     },
+    "outfitDescription": "Black kurta with white floral embroidery and white palazzo; black shirt with white trousers and sneakers",
+    "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Lilac · Ivory",
+    "colourStory": "Black · White",
     "tags": [
-      "twirl"
+      "standing",
+      "mirror-doorway"
     ],
     "herProductIds": [
-      "w-lehenga-lilac-sequin",
+      "w-kurta-sets-black-white-floral-embroidery-with-palazzo",
       "w-jewellery-silver-jhumka-earrings",
       "w-footwear-silver-embroidered-juttis"
     ],
     "hisProductIds": [
-      "m-modern-kurta-ivory-solid",
+      "m-ethnic-shirt-black-solid-full-sleeve",
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S2 panel 18. HER: lilac sequin lehenga. HIM: ivory kurta. POSE: she twirls, he watches. FRAMING: full body. SETTING: rangoli courtyard. LIGHT: dusk."
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-01. HER: black long straight kurta with prominent white floral embroidery, white loose palazzo bottoms, statement silver layered necklace, long silver earrings, silver embellished small handbag, white embroidered flats. HIM: solid black full-sleeve button-up shirt, relaxed fit, white wide trousers, white sneakers, simple wristwatch. POSE: standing very close together, she slightly in front and to the left, he slightly behind and to the right with his arm naturally around her shoulder, she stands relaxed with her handbag hanging from one hand, both looking toward the camera. FRAMING: vertical full-body portrait, couple centred, entire outfits visible down to footwear. SETTING: dark reflective modern interior with a tall glass and mirror doorway behind them. LIGHT: night indoor lighting."
   },
   {
-    "id": "diwali-18",
+    "id": "diwali-02",
     "world": "diwali",
-    "title": "Market Lights Walk",
-    "ref": "REF-S1 panel 4",
-    "pose": "walking toward camera",
-    "framing": "full body",
-    "setting": "lit market",
-    "light": "night",
+    "title": "Cream Printed Set on the Cafe Bench",
+    "ref": "DIWALI-REF-02",
+    "referenceNumber": 2,
+    "pose": "both seated together on a wooden bench, he on the left and she on the right, bodies slightly turned toward each other, looking at each other naturally in relaxed conversation, one arm resting naturally",
+    "poseDescription": "both seated together on a wooden bench, he on the left and she on the right, bodies slightly turned toward each other, looking at each other naturally in relaxed conversation, one arm resting naturally",
+    "framing": "vertical lifestyle portrait, full seated bodies and footwear visible, small round black cafe table in the left foreground",
+    "framingDescription": "vertical lifestyle portrait, full seated bodies and footwear visible, small round black cafe table in the left foreground",
+    "setting": "indoor modern cafe lounge with plants and window elements behind",
+    "environmentDescription": "indoor modern cafe lounge with plants and window elements behind",
+    "light": "soft daylight",
     "her": {
       "cat": "Kurta Sets",
-      "colour": "Wine",
-      "fabric": "Silk Blend",
-      "detail": "zari",
-      "desc": "wine kurta set"
-    },
-    "him": {
-      "cat": "Modern Kurta",
-      "colour": "Beige",
-      "fabric": "Linen",
-      "detail": "solid",
-      "desc": "beige kurta"
-    },
-    "tone": "Gold",
-    "colourStory": "Wine · Beige",
-    "tags": [
-      "walking"
-    ],
-    "herProductIds": [
-      "w-kurta-sets-wine-zari",
-      "w-jewellery-gold-choker-necklace",
-      "w-footwear-gold-embroidered-juttis"
-    ],
-    "hisProductIds": [
-      "m-modern-kurta-beige-solid",
-      "m-footwear-tan-embroidered-mojaris"
-    ],
-    "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S1 panel 4. HER: wine kurta set. HIM: beige kurta. POSE: walking toward camera. FRAMING: full body. SETTING: lit market. LIGHT: night."
-  },
-  {
-    "id": "diwali-19",
-    "world": "diwali",
-    "title": "Forehead Touch by the Diyas",
-    "ref": "REF-S1 panel 6",
-    "pose": "forehead touch",
-    "framing": "waist-up",
-    "setting": "diya windowsill",
-    "light": "diya",
-    "her": {
-      "cat": "Saree",
-      "colour": "Rani Pink",
-      "fabric": "Silk",
-      "detail": "zari",
-      "desc": "rani pink silk saree"
-    },
-    "him": {
-      "cat": "Modern Kurta",
       "colour": "Ivory",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "ivory kurta"
+      "fabric": "Cotton",
+      "detail": "olive floral print with dupatta",
+      "desc": "cream printed kurta set with a delicate olive floral pattern, matching bottoms, a long flowing dupatta with a green printed border, white sneakers, light beige shoulder bag"
     },
-    "tone": "Gold",
-    "colourStory": "Rani pink · Ivory",
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "Olive",
+      "fabric": "Cotton",
+      "detail": "solid full-sleeve",
+      "desc": "dark olive casual full-sleeve button-up shirt, relaxed fit, off-white loose trousers, white sneakers, wristwatch"
+    },
+    "outfitDescription": "Cream printed kurta set with olive floral dupatta; olive shirt with off-white trousers",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "Cream · Olive",
     "tags": [
-      "close"
+      "seated",
+      "cafe"
     ],
     "herProductIds": [
-      "w-saree-rani-pink-zari",
-      "w-jewellery-gold-bangle-stack",
-      "w-footwear-gold-embroidered-juttis"
+      "w-kurta-sets-ivory-olive-floral-print-with-dupatta",
+      "w-jewellery-silver-choker-necklace",
+      "w-footwear-silver-embroidered-juttis"
     ],
     "hisProductIds": [
-      "m-modern-kurta-ivory-solid",
+      "m-ethnic-shirt-olive-solid-full-sleeve",
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-S1 panel 6. HER: rani pink silk saree. HIM: ivory kurta. POSE: forehead touch. FRAMING: waist-up. SETTING: diya windowsill. LIGHT: diya."
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-02. HER: cream printed kurta set with a delicate olive floral pattern, matching bottoms, a long flowing dupatta with a green printed border, white sneakers, light beige shoulder bag. HIM: dark olive casual full-sleeve button-up shirt, relaxed fit, off-white loose trousers, white sneakers, wristwatch. POSE: both seated together on a wooden bench, he on the left and she on the right, bodies slightly turned toward each other, looking at each other naturally in relaxed conversation, one arm resting naturally. FRAMING: vertical lifestyle portrait, full seated bodies and footwear visible, small round black cafe table in the left foreground. SETTING: indoor modern cafe lounge with plants and window elements behind. LIGHT: soft daylight."
   },
   {
-    "id": "diwali-20",
+    "id": "diwali-03",
     "world": "diwali",
-    "title": "Diwali Lawn Overhead",
-    "ref": "REF-C2",
-    "pose": "lying on lawn with diyas, overhead",
-    "framing": "overhead",
-    "setting": "lawn",
-    "light": "dusk",
+    "title": "Ivory Mirror Lehenga, Steps Selfie",
+    "ref": "DIWALI-REF-03",
+    "referenceNumber": 3,
+    "pose": "both seated very close together on stone steps, she slightly forward holding a smartphone up in front of her face like a selfie with the phone partially obscuring her face, he leaning closely toward her face, heads close together",
+    "poseDescription": "both seated very close together on stone steps, she slightly forward holding a smartphone up in front of her face like a selfie with the phone partially obscuring her face, he leaning closely toward her face, heads close together",
+    "framing": "vertical close lifestyle portrait, camera slightly close to the subjects",
+    "framingDescription": "vertical close lifestyle portrait, camera slightly close to the subjects",
+    "setting": "stone haveli steps with diyas and soft festive lights around, warm beige environment",
+    "environmentDescription": "stone haveli steps with diyas and soft festive lights around, warm beige environment",
+    "light": "warm golden evening lighting",
     "her": {
-      "cat": "Sharara",
+      "cat": "Lehenga",
       "colour": "Ivory",
       "fabric": "Georgette",
-      "detail": "gold sequin",
-      "desc": "ivory sequin sharara"
+      "detail": "mirror-work blouse",
+      "desc": "ivory heavily mirror-work and sequin lehenga with a matching embellished blouse with thin shoulder straps, ivory dupatta, traditional silver bangles, large silver jhumka earrings"
     },
     "him": {
-      "cat": "Festive Kurta Set",
-      "colour": "Maroon",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "maroon kurta set"
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton",
+      "detail": "embroidered",
+      "desc": "cream embroidered kurta with light blue relaxed jeans, wristwatch"
     },
-    "tone": "Gold",
-    "colourStory": "Ivory · Maroon",
+    "outfitDescription": "Ivory mirror-work lehenga with embellished blouse; cream embroidered kurta with light blue jeans",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "Ivory · Cream",
     "tags": [
-      "overhead"
+      "seated",
+      "selfie",
+      "diyas"
     ],
     "herProductIds": [
-      "w-sharara-ivory-gold-sequin",
+      "w-lehenga-ivory-mirror-work-blouse",
+      "w-jewellery-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-embroidered",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-03. HER: ivory heavily mirror-work and sequin lehenga with a matching embellished blouse with thin shoulder straps, ivory dupatta, traditional silver bangles, large silver jhumka earrings. HIM: cream embroidered kurta with light blue relaxed jeans, wristwatch. POSE: both seated very close together on stone steps, she slightly forward holding a smartphone up in front of her face like a selfie with the phone partially obscuring her face, he leaning closely toward her face, heads close together. FRAMING: vertical close lifestyle portrait, camera slightly close to the subjects. SETTING: stone haveli steps with diyas and soft festive lights around, warm beige environment. LIGHT: warm golden evening lighting."
+  },
+  {
+    "id": "diwali-04",
+    "world": "diwali",
+    "title": "Wine Dress and Floral Blazer",
+    "ref": "DIWALI-REF-04",
+    "referenceNumber": 4,
+    "pose": "standing very close, she on the left slightly leaning toward him, he on the right looking down toward her, both looking at each other rather than the camera, his arm naturally behind and around her",
+    "poseDescription": "standing very close, she on the left slightly leaning toward him, he on the right looking down toward her, both looking at each other rather than the camera, his arm naturally behind and around her",
+    "framing": "vertical full-body portrait",
+    "framingDescription": "vertical full-body portrait",
+    "setting": "warm indoor evening setting with a curtain background strung with warm fairy lights and a dark elegant floor",
+    "environmentDescription": "warm indoor evening setting with a curtain background strung with warm fairy lights and a dark elegant floor",
+    "light": "soft cinematic lighting",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Wine",
+      "fabric": "Georgette",
+      "detail": "gold border",
+      "desc": "deep wine floor-length festive lehenga with a sleeveless spaghetti-strap bodice, long flowing skirt, decorative gold traditional border near the lower edge and on the dupatta, minimal elegant jewellery"
+    },
+    "him": {
+      "cat": "Festive Jacket",
+      "colour": "Black",
+      "fabric": "Cotton Blend",
+      "detail": "burgundy floral pattern",
+      "desc": "solid black shirt and black trousers with black shoes worn under a black and burgundy floral patterned tailored blazer"
+    },
+    "outfitDescription": "Wine floor-length lehenga with gold border; black shirt and trousers with burgundy floral blazer",
+    "qaStatus": "GENERATED",
+    "tone": "Gold",
+    "colourStory": "Wine · Black",
+    "tags": [
+      "standing",
+      "evening"
+    ],
+    "herProductIds": [
+      "w-lehenga-wine-gold-border",
       "w-jewellery-gold-kamarbandh-waist-belt",
       "w-footwear-gold-embroidered-juttis"
     ],
     "hisProductIds": [
-      "m-festive-kurta-set-maroon-solid",
+      "m-festive-jacket-black-burgundy-floral-pattern",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-04. HER: deep wine floor-length festive lehenga with a sleeveless spaghetti-strap bodice, long flowing skirt, decorative gold traditional border near the lower edge and on the dupatta, minimal elegant jewellery. HIM: solid black shirt and black trousers with black shoes worn under a black and burgundy floral patterned tailored blazer. POSE: standing very close, she on the left slightly leaning toward him, he on the right looking down toward her, both looking at each other rather than the camera, his arm naturally behind and around her. FRAMING: vertical full-body portrait. SETTING: warm indoor evening setting with a curtain background strung with warm fairy lights and a dark elegant floor. LIGHT: soft cinematic lighting."
+  },
+  {
+    "id": "diwali-05",
+    "world": "diwali",
+    "title": "Overhead Walk, Arm Linked",
+    "ref": "DIWALI-REF-05",
+    "referenceNumber": 5,
+    "pose": "top-down overhead photograph with the camera looking almost directly down, couple walking closely together with her arm looped around his arm, bodies seen from above, both looking naturally downward, legs and footwear visible",
+    "poseDescription": "top-down overhead photograph with the camera looking almost directly down, couple walking closely together with her arm looped around his arm, bodies seen from above, both looking naturally downward, legs and footwear visible",
+    "framing": "vertical overhead composition with the concrete outdoor walkway visible underneath",
+    "framingDescription": "vertical overhead composition with the concrete outdoor walkway visible underneath",
+    "setting": "outdoor stone walkway",
+    "environmentDescription": "outdoor stone walkway",
+    "light": "natural daylight",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "navy block print with white dupatta",
+      "desc": "white printed kurta set with a blue and navy floral block-print pattern, matching light bottoms, white lightweight dupatta, small delicate necklace"
+    },
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "solid navy button-up shirt, relaxed fit, off-white trousers, white sneakers, dark wristwatch"
+    },
+    "outfitDescription": "White and navy block-print kurta set; navy shirt with off-white trousers",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "Ivory · Navy",
+    "tags": [
+      "overhead",
+      "walking"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-ivory-navy-block-print-with-white-dupatta",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-ethnic-shirt-navy-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-05. HER: white printed kurta set with a blue and navy floral block-print pattern, matching light bottoms, white lightweight dupatta, small delicate necklace. HIM: solid navy button-up shirt, relaxed fit, off-white trousers, white sneakers, dark wristwatch. POSE: top-down overhead photograph with the camera looking almost directly down, couple walking closely together with her arm looped around his arm, bodies seen from above, both looking naturally downward, legs and footwear visible. FRAMING: vertical overhead composition with the concrete outdoor walkway visible underneath. SETTING: outdoor stone walkway. LIGHT: natural daylight."
+  },
+  {
+    "id": "diwali-06",
+    "world": "diwali",
+    "title": "Close Crop, Maroon Dupatta Detail",
+    "ref": "DIWALI-REF-06",
+    "referenceNumber": 6,
+    "pose": "very close cropped couple portrait showing torso arms and hands more than faces, she holds and adjusts her deep red dupatta near her front, he stands immediately beside her, their bodies almost touching",
+    "poseDescription": "very close cropped couple portrait showing torso arms and hands more than faces, she holds and adjusts her deep red dupatta near her front, he stands immediately beside her, their bodies almost touching",
+    "framing": "vertical close crop focused on garment details, dupatta border, embroidery and hand placement",
+    "framingDescription": "vertical close crop focused on garment details, dupatta border, embroidery and hand placement",
+    "setting": "neutral indoor background",
+    "environmentDescription": "neutral indoor background",
+    "light": "soft indoor light",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Ivory",
+      "fabric": "Silk Blend",
+      "detail": "gold floral embroidery with maroon dupatta",
+      "desc": "taupe champagne ethnic suit with heavy gold floral embroidery and a deep maroon dupatta with a prominent ornate gold embroidered border, mehendi on hands, gold jewellery"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton",
+      "detail": "plain",
+      "desc": "plain cream kurta with a clean straight silhouette, minimal styling, no jacket"
+    },
+    "outfitDescription": "Champagne gold-embroidered suit with deep maroon gold-bordered dupatta; plain cream kurta",
+    "qaStatus": "GENERATED",
+    "tone": "Gold",
+    "colourStory": "Champagne · Maroon",
+    "tags": [
+      "close-crop",
+      "detail"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-ivory-gold-floral-embroidery-with-maroon-dupatta",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-plain",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-06. HER: taupe champagne ethnic suit with heavy gold floral embroidery and a deep maroon dupatta with a prominent ornate gold embroidered border, mehendi on hands, gold jewellery. HIM: plain cream kurta with a clean straight silhouette, minimal styling, no jacket. POSE: very close cropped couple portrait showing torso arms and hands more than faces, she holds and adjusts her deep red dupatta near her front, he stands immediately beside her, their bodies almost touching. FRAMING: vertical close crop focused on garment details, dupatta border, embroidery and hand placement. SETTING: neutral indoor background. LIGHT: soft indoor light."
+  },
+  {
+    "id": "diwali-07",
+    "world": "diwali",
+    "title": "Soft Pink Monochrome Close Crop",
+    "ref": "DIWALI-REF-07",
+    "referenceNumber": 7,
+    "pose": "extremely close couple crop with their upper torsos touching, he positioned beside and behind her, her arm across and around him, he holds a smartphone close to his body, faces partially cropped out",
+    "poseDescription": "extremely close couple crop with their upper torsos touching, he positioned beside and behind her, her arm across and around him, he holds a smartphone close to his body, faces partially cropped out",
+    "framing": "vertical close-up cropped around the chest and waist area",
+    "framingDescription": "vertical close-up cropped around the chest and waist area",
+    "setting": "outdoor",
+    "environmentDescription": "outdoor",
+    "light": "natural daylight",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Rani Pink",
+      "fabric": "Cotton",
+      "detail": "white floral embroidery",
+      "desc": "soft pastel pink ethnic kurta with white floral embroidery on the sleeves and body, soft feminine silhouette, minimal jewellery"
+    },
+    "him": {
+      "cat": "Ethnic Shirt",
+      "colour": "Pink",
+      "fabric": "Cotton",
+      "detail": "solid pastel",
+      "desc": "light pastel pink button-up shirt, relaxed casual fit, holding a smartphone, wristwatch"
+    },
+    "outfitDescription": "Pastel pink kurta with white floral embroidery; pastel pink shirt",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "Pink · Pink",
+    "tags": [
+      "close-crop",
+      "monochrome"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-rani-pink-white-floral-embroidery",
+      "w-jewellery-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-ethnic-shirt-pink-solid-pastel",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-07. HER: soft pastel pink ethnic kurta with white floral embroidery on the sleeves and body, soft feminine silhouette, minimal jewellery. HIM: light pastel pink button-up shirt, relaxed casual fit, holding a smartphone, wristwatch. POSE: extremely close couple crop with their upper torsos touching, he positioned beside and behind her, her arm across and around him, he holds a smartphone close to his body, faces partially cropped out. FRAMING: vertical close-up cropped around the chest and waist area. SETTING: outdoor. LIGHT: natural daylight."
+  },
+  {
+    "id": "diwali-08",
+    "world": "diwali",
+    "title": "White Outfit, Hot Pink Bandhani Dupatta",
+    "ref": "DIWALI-REF-08",
+    "referenceNumber": 8,
+    "pose": "standing side by side, she on the left holding and fanning her hot pink dupatta outward so it becomes the dominant visual element, he on the right standing relaxed with one hand near his pocket, framed from the shoulders through the legs",
+    "poseDescription": "standing side by side, she on the left holding and fanning her hot pink dupatta outward so it becomes the dominant visual element, he on the right standing relaxed with one hand near his pocket, framed from the shoulders through the legs",
+    "framing": "vertical fashion lifestyle photograph",
+    "framingDescription": "vertical fashion lifestyle photograph",
+    "setting": "outdoor with a green fence and plants behind",
+    "environmentDescription": "outdoor with a green fence and plants behind",
+    "light": "outdoor daylight",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "hot pink bandhani dupatta",
+      "desc": "white ethnic base outfit with a simple sleeveless inner, bright hot pink bandhani dupatta with a traditional dotted geometric print and gold trim, beige flat sandals"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "chikankari",
+      "desc": "white chikankari embroidered kurta with light blue relaxed jeans, white casual footwear, silver watch"
+    },
+    "outfitDescription": "White outfit with hot pink bandhani dupatta; white chikankari kurta with light blue jeans",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "White · Hot Pink",
+    "tags": [
+      "standing",
+      "bandhani"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-ivory-hot-pink-bandhani-dupatta",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-chikankari",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-08. HER: white ethnic base outfit with a simple sleeveless inner, bright hot pink bandhani dupatta with a traditional dotted geometric print and gold trim, beige flat sandals. HIM: white chikankari embroidered kurta with light blue relaxed jeans, white casual footwear, silver watch. POSE: standing side by side, she on the left holding and fanning her hot pink dupatta outward so it becomes the dominant visual element, he on the right standing relaxed with one hand near his pocket, framed from the shoulders through the legs. FRAMING: vertical fashion lifestyle photograph. SETTING: outdoor with a green fence and plants behind. LIGHT: outdoor daylight."
+  },
+  {
+    "id": "diwali-09",
+    "world": "diwali",
+    "title": "Magenta Set on the Night Staircase",
+    "ref": "DIWALI-REF-09",
+    "referenceNumber": 9,
+    "pose": "standing together near a staircase, she close to his side and turning toward him, he raises one hand toward his hair, natural playful interaction, no formal posing",
+    "poseDescription": "standing together near a staircase, she close to his side and turning toward him, he raises one hand toward his hair, natural playful interaction, no formal posing",
+    "framing": "vertical full to three-quarter portrait",
+    "framingDescription": "vertical full to three-quarter portrait",
+    "setting": "outdoor apartment or venue staircase at night",
+    "environmentDescription": "outdoor apartment or venue staircase at night",
+    "light": "night lighting with warm street and festive lights",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Rani Pink",
+      "fabric": "Georgette",
+      "detail": "white floral motifs",
+      "desc": "bright magenta festive lehenga with a patterned skirt carrying white floral motifs and a sheer flowing hot pink dupatta with a gold border"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Peach",
+      "fabric": "Cotton",
+      "detail": "coral with cream ethnic layer",
+      "desc": "peach coral kurta with a white cream embroidered ethnic layer worn over it and a light cream lower garment"
+    },
+    "outfitDescription": "Magenta lehenga with white floral motifs and gold-bordered dupatta; peach kurta with cream ethnic layer",
+    "qaStatus": "GENERATED",
+    "tone": "Gold",
+    "colourStory": "Magenta · Peach",
+    "tags": [
+      "staircase",
+      "night"
+    ],
+    "herProductIds": [
+      "w-lehenga-rani-pink-white-floral-motifs",
+      "w-jewellery-gold-jhumka-earrings",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-peach-coral-with-cream-ethnic-layer",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-09. HER: bright magenta festive lehenga with a patterned skirt carrying white floral motifs and a sheer flowing hot pink dupatta with a gold border. HIM: peach coral kurta with a white cream embroidered ethnic layer worn over it and a light cream lower garment. POSE: standing together near a staircase, she close to his side and turning toward him, he raises one hand toward his hair, natural playful interaction, no formal posing. FRAMING: vertical full to three-quarter portrait. SETTING: outdoor apartment or venue staircase at night. LIGHT: night lighting with warm street and festive lights."
+  },
+  {
+    "id": "diwali-10",
+    "world": "diwali",
+    "title": "Sky Blue Suit, Foreheads Touching",
+    "ref": "DIWALI-REF-10",
+    "referenceNumber": 10,
+    "pose": "both seated on stairs, she on the left and he on the right, faces leaning very close toward each other with foreheads and cheeks almost touching, natural intimate eye contact, she holds a smartphone down near her lap",
+    "poseDescription": "both seated on stairs, she on the left and he on the right, faces leaning very close toward each other with foreheads and cheeks almost touching, natural intimate eye contact, she holds a smartphone down near her lap",
+    "framing": "vertical portrait with a close seated perspective",
+    "framingDescription": "vertical portrait with a close seated perspective",
+    "setting": "stone indoor stairs",
+    "environmentDescription": "stone indoor stairs",
+    "light": "soft daylight",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Powder Blue",
+      "fabric": "Cotton",
+      "detail": "white embroidery",
+      "desc": "light sky blue embroidered ethnic suit with a matching light blue dupatta and white embroidery, traditional salwar styling"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Powder Blue",
+      "fabric": "Cotton",
+      "detail": "embroidered",
+      "desc": "powder light blue embroidered kurta with white trousers in a matching pastel palette with traditional motifs"
+    },
+    "outfitDescription": "Sky blue embroidered suit with matching dupatta; powder blue embroidered kurta",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "Sky Blue · Sky Blue",
+    "tags": [
+      "seated",
+      "intimate"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-powder-blue-white-embroidery",
+      "w-jewellery-silver-choker-necklace",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-powder-blue-embroidered",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "GENERATED",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-10. HER: light sky blue embroidered ethnic suit with a matching light blue dupatta and white embroidery, traditional salwar styling. HIM: powder light blue embroidered kurta with white trousers in a matching pastel palette with traditional motifs. POSE: both seated on stairs, she on the left and he on the right, faces leaning very close toward each other with foreheads and cheeks almost touching, natural intimate eye contact, she holds a smartphone down near her lap. FRAMING: vertical portrait with a close seated perspective. SETTING: stone indoor stairs. LIGHT: soft daylight."
+  },
+  {
+    "id": "diwali-11",
+    "world": "diwali",
+    "title": "Ivory Anarkali on the Staircase",
+    "ref": "DIWALI-REF-11",
+    "referenceNumber": 11,
+    "pose": "seated on a staircase, she lower left and in front, he one or two steps above and to the right, she looking upward at him, he resting his elbow and hand near his face while looking at her, neither looking at the camera",
+    "poseDescription": "seated on a staircase, she lower left and in front, he one or two steps above and to the right, she looking upward at him, he resting his elbow and hand near his face while looking at her, neither looking at the camera",
+    "framing": "vertical lifestyle portrait with the staircase dominating the background",
+    "framingDescription": "vertical lifestyle portrait with the staircase dominating the background",
+    "setting": "indoor staircase",
+    "environmentDescription": "indoor staircase",
+    "light": "warm indoor light with a soft warm tone",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Ivory",
+      "fabric": "Georgette",
+      "detail": "floral embroidery",
+      "desc": "ivory embroidered festive anarkali with delicate floral embroidery and a matching sheer dupatta, minimal delicate jewellery"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "light embroidery",
+      "desc": "all white kurta pajama with light embroidered detailing"
+    },
+    "outfitDescription": "Ivory embroidered anarkali with sheer dupatta; white kurta pajama",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "Ivory · White",
+    "tags": [
+      "seated",
+      "staircase"
+    ],
+    "herProductIds": [
+      "w-anarkali-ivory-floral-embroidery",
+      "w-jewellery-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-light-embroidery",
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
     "imageStatus": "PENDING",
-    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: REF-C2. HER: ivory sequin sharara. HIM: maroon kurta set. POSE: lying on lawn with diyas, overhead. FRAMING: overhead. SETTING: lawn. LIGHT: dusk."
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-11. HER: ivory embroidered festive anarkali with delicate floral embroidery and a matching sheer dupatta, minimal delicate jewellery. HIM: all white kurta pajama with light embroidered detailing. POSE: seated on a staircase, she lower left and in front, he one or two steps above and to the right, she looking upward at him, he resting his elbow and hand near his face while looking at her, neither looking at the camera. FRAMING: vertical lifestyle portrait with the staircase dominating the background. SETTING: indoor staircase. LIGHT: warm indoor light with a soft warm tone."
+  },
+  {
+    "id": "diwali-12",
+    "world": "diwali",
+    "title": "Magenta Dupatta in the Heritage Lane",
+    "ref": "DIWALI-REF-12",
+    "referenceNumber": 12,
+    "pose": "both walking side by side in a heritage lane, she slightly ahead and to the left, he slightly behind and to the right, both looking downward naturally, relaxed walking movement with hands close to their bodies",
+    "poseDescription": "both walking side by side in a heritage lane, she slightly ahead and to the left, he slightly behind and to the right, both looking downward naturally, relaxed walking movement with hands close to their bodies",
+    "framing": "vertical full-body photograph",
+    "framingDescription": "vertical full-body photograph",
+    "setting": "old heritage village lane with cream walls and a wooden door",
+    "environmentDescription": "old heritage village lane with cream walls and a wooden door",
+    "light": "warm natural daylight",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Wine",
+      "fabric": "Silk Blend",
+      "detail": "gold embroidered dupatta",
+      "desc": "deep magenta ethnic lehenga with a cream printed lower portion, a rich decorative border and a large deep magenta dupatta with ornate gold embroidery"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton",
+      "detail": "textured",
+      "desc": "cream kurta with a matching cream lower garment and a simple embroidered texture, white footwear"
+    },
+    "outfitDescription": "Magenta lehenga with gold-embroidered dupatta; cream textured kurta",
+    "qaStatus": "GENERATED",
+    "tone": "Gold",
+    "colourStory": "Magenta · Cream",
+    "tags": [
+      "walking",
+      "heritage"
+    ],
+    "herProductIds": [
+      "w-lehenga-wine-gold-embroidered-dupatta",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-textured",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-12. HER: deep magenta ethnic lehenga with a cream printed lower portion, a rich decorative border and a large deep magenta dupatta with ornate gold embroidery. HIM: cream kurta with a matching cream lower garment and a simple embroidered texture, white footwear. POSE: both walking side by side in a heritage lane, she slightly ahead and to the left, he slightly behind and to the right, both looking downward naturally, relaxed walking movement with hands close to their bodies. FRAMING: vertical full-body photograph. SETTING: old heritage village lane with cream walls and a wooden door. LIGHT: warm natural daylight."
+  },
+  {
+    "id": "diwali-13",
+    "world": "diwali",
+    "title": "White Lehenga, Navy Dupatta, Steps",
+    "ref": "DIWALI-REF-13",
+    "referenceNumber": 13,
+    "pose": "she stands in the foreground to the left with her back partly toward the camera and extends one arm forward and upward, he is seated crouched on the steps below her leaning forward and down, playful unequal-height pose",
+    "poseDescription": "she stands in the foreground to the left with her back partly toward the camera and extends one arm forward and upward, he is seated crouched on the steps below her leaning forward and down, playful unequal-height pose",
+    "framing": "vertical full-body asymmetrical composition",
+    "framingDescription": "vertical full-body asymmetrical composition",
+    "setting": "night environment with a dark reflective wall and windows behind, staircase visible",
+    "environmentDescription": "night environment with a dark reflective wall and windows behind, staircase visible",
+    "light": "night low light",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Ivory",
+      "fabric": "Georgette",
+      "detail": "navy floral dupatta",
+      "desc": "white long ethnic lehenga skirt with a flowing navy blue floral printed dupatta and a white embroidered blouse, traditional silver jewellery"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "embroidered",
+      "desc": "white embroidered kurta with white pajama trousers"
+    },
+    "outfitDescription": "White lehenga with navy floral dupatta; white embroidered kurta and pajama",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "White · Navy",
+    "tags": [
+      "asymmetric",
+      "steps"
+    ],
+    "herProductIds": [
+      "w-lehenga-ivory-navy-floral-dupatta",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-embroidered",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-13. HER: white long ethnic lehenga skirt with a flowing navy blue floral printed dupatta and a white embroidered blouse, traditional silver jewellery. HIM: white embroidered kurta with white pajama trousers. POSE: she stands in the foreground to the left with her back partly toward the camera and extends one arm forward and upward, he is seated crouched on the steps below her leaning forward and down, playful unequal-height pose. FRAMING: vertical full-body asymmetrical composition. SETTING: night environment with a dark reflective wall and windows behind, staircase visible. LIGHT: night low light."
+  },
+  {
+    "id": "diwali-14",
+    "world": "diwali",
+    "title": "Red Lehenga, Night Driveway",
+    "ref": "DIWALI-REF-14",
+    "referenceNumber": 14,
+    "pose": "standing outside at night with his arm around her shoulder, she standing close against him, both smiling and laughing naturally, he looking down toward her and she looking toward him",
+    "poseDescription": "standing outside at night with his arm around her shoulder, she standing close against him, both smiling and laughing naturally, he looking down toward her and she looking toward him",
+    "framing": "vertical smartphone-style photograph",
+    "framingDescription": "vertical smartphone-style photograph",
+    "setting": "night street driveway with a dark car immediately behind them, festive lights and greenery in the background",
+    "environmentDescription": "night street driveway with a dark car immediately behind them, festive lights and greenery in the background",
+    "light": "strong overhead light source at night",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Red",
+      "fabric": "Silk",
+      "detail": "gold embellished blouse",
+      "desc": "bright red festive lehenga with a heavy gold embellished blouse, gold jewellery, bangles"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Cotton",
+      "detail": "gold motifs",
+      "desc": "charcoal grey ethnic kurta with repeating gold and cream traditional motifs and an embroidered neckline and cuffs, dark lower garment"
+    },
+    "outfitDescription": "Red lehenga with gold embellished blouse; charcoal kurta with gold motifs",
+    "qaStatus": "GENERATED",
+    "tone": "Gold",
+    "colourStory": "Red · Charcoal",
+    "tags": [
+      "standing",
+      "night"
+    ],
+    "herProductIds": [
+      "w-lehenga-red-gold-embellished-blouse",
+      "w-jewellery-gold-choker-necklace",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-black-gold-motifs",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-14. HER: bright red festive lehenga with a heavy gold embellished blouse, gold jewellery, bangles. HIM: charcoal grey ethnic kurta with repeating gold and cream traditional motifs and an embroidered neckline and cuffs, dark lower garment. POSE: standing outside at night with his arm around her shoulder, she standing close against him, both smiling and laughing naturally, he looking down toward her and she looking toward him. FRAMING: vertical smartphone-style photograph. SETTING: night street driveway with a dark car immediately behind them, festive lights and greenery in the background. LIGHT: strong overhead light source at night."
+  },
+  {
+    "id": "diwali-15",
+    "world": "diwali",
+    "title": "Maroon Crop Top, White Stole",
+    "ref": "DIWALI-REF-15",
+    "referenceNumber": 15,
+    "pose": "both standing very close in a garden, she facing slightly toward him, he leaning downward toward her, a white stole positioned between them with their hands interacting around the stole and waist area, playful styling moment",
+    "poseDescription": "both standing very close in a garden, she facing slightly toward him, he leaning downward toward her, a white stole positioned between them with their hands interacting around the stole and waist area, playful styling moment",
+    "framing": "vertical medium to full-body photograph",
+    "framingDescription": "vertical medium to full-body photograph",
+    "setting": "garden terrace with plants and a modern concrete wall",
+    "environmentDescription": "garden terrace with plants and a modern concrete wall",
+    "light": "daylight",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Maroon",
+      "fabric": "Cotton",
+      "detail": "oxidised silver embellishment",
+      "desc": "deep maroon crop top with a matching long skirt, white and silver geometric embellishments, oxidised silver jewellery, large silver earrings, heavy silver bangles, bare midriff"
+    },
+    "him": {
+      "cat": "Printed Ethnic Shirt",
+      "colour": "Maroon",
+      "fabric": "Cotton",
+      "detail": "traditional print with white stole",
+      "desc": "red maroon printed shirt with a dense traditional print, black loose wide trousers and a long white scarf draped around his neck"
+    },
+    "outfitDescription": "Maroon crop top and skirt with silver embellishments; maroon printed shirt with white stole",
+    "qaStatus": "GENERATED",
+    "tone": "Oxidised Silver",
+    "colourStory": "Maroon · White",
+    "tags": [
+      "garden",
+      "stole"
+    ],
+    "herProductIds": [
+      "w-lehenga-maroon-oxidised-silver-embellishment",
+      "w-jewellery-oxidised-silver-bangle-stack",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-printed-ethnic-shirt-maroon-traditional-print-with-white-stole",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-15. HER: deep maroon crop top with a matching long skirt, white and silver geometric embellishments, oxidised silver jewellery, large silver earrings, heavy silver bangles, bare midriff. HIM: red maroon printed shirt with a dense traditional print, black loose wide trousers and a long white scarf draped around his neck. POSE: both standing very close in a garden, she facing slightly toward him, he leaning downward toward her, a white stole positioned between them with their hands interacting around the stole and waist area, playful styling moment. FRAMING: vertical medium to full-body photograph. SETTING: garden terrace with plants and a modern concrete wall. LIGHT: daylight."
+  },
+  {
+    "id": "diwali-16",
+    "world": "diwali",
+    "title": "Maroon Dress, Lavender Kurta",
+    "ref": "DIWALI-REF-16",
+    "referenceNumber": 16,
+    "pose": "both standing and walking together, she on the right and he on the left, he looking toward her, she laughing with one hand raised near her face, natural walking conversation energy with visible space between their bodies",
+    "poseDescription": "both standing and walking together, she on the right and he on the left, he looking toward her, she laughing with one hand raised near her face, natural walking conversation energy with visible space between their bodies",
+    "framing": "vertical portrait",
+    "framingDescription": "vertical portrait",
+    "setting": "ornate upscale interior with a carved golden decorative wall",
+    "environmentDescription": "ornate upscale interior with a carved golden decorative wall",
+    "light": "warm yellow indoor lighting",
+    "her": {
+      "cat": "Lehenga",
+      "colour": "Wine",
+      "fabric": "Georgette",
+      "detail": "soft pink dupatta",
+      "desc": "deep maroon long flowing ethnic dress with a soft pink sheer dupatta, elegant simple jewellery"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Purple",
+      "fabric": "Cotton",
+      "detail": "solid",
+      "desc": "soft lavender kurta with a straight simple silhouette"
+    },
+    "outfitDescription": "Maroon dress with soft pink dupatta; lavender kurta",
+    "qaStatus": "GENERATED",
+    "tone": "Gold",
+    "colourStory": "Maroon · Lavender",
+    "tags": [
+      "walking",
+      "interior"
+    ],
+    "herProductIds": [
+      "w-lehenga-wine-soft-pink-dupatta",
+      "w-jewellery-gold-kamarbandh-waist-belt",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-purple-solid",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-16. HER: deep maroon long flowing ethnic dress with a soft pink sheer dupatta, elegant simple jewellery. HIM: soft lavender kurta with a straight simple silhouette. POSE: both standing and walking together, she on the right and he on the left, he looking toward her, she laughing with one hand raised near her face, natural walking conversation energy with visible space between their bodies. FRAMING: vertical portrait. SETTING: ornate upscale interior with a carved golden decorative wall. LIGHT: warm yellow indoor lighting."
+  },
+  {
+    "id": "diwali-17",
+    "world": "diwali",
+    "title": "She Fixes His Hair, Navy Dupatta",
+    "ref": "DIWALI-REF-17",
+    "referenceNumber": 17,
+    "pose": "she faces him and lifts both hands toward his face and head, adjusting his hair and collar area, he stands straight looking toward her, close personal interaction",
+    "poseDescription": "she faces him and lifts both hands toward his face and head, adjusting his hair and collar area, he stands straight looking toward her, close personal interaction",
+    "framing": "vertical three-quarter to full-body",
+    "framingDescription": "vertical three-quarter to full-body",
+    "setting": "outdoor residential or college style environment with green plants behind",
+    "environmentDescription": "outdoor residential or college style environment with green plants behind",
+    "light": "bright daytime",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "navy dupatta",
+      "desc": "white ethnic outfit with a deep navy blue dupatta with a blue embroidered border, traditional silver earrings, simple white lower"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "Cream",
+      "fabric": "Cotton",
+      "detail": "embroidered",
+      "desc": "cream embroidered kurta with a white lower garment, wristwatch"
+    },
+    "outfitDescription": "White outfit with navy embroidered dupatta; cream embroidered kurta",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "White · Navy",
+    "tags": [
+      "interaction",
+      "daytime"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-ivory-navy-dupatta",
+      "w-jewellery-silver-jhumka-earrings",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-cream-embroidered",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-17. HER: white ethnic outfit with a deep navy blue dupatta with a blue embroidered border, traditional silver earrings, simple white lower. HIM: cream embroidered kurta with a white lower garment, wristwatch. POSE: she faces him and lifts both hands toward his face and head, adjusting his hair and collar area, he stands straight looking toward her, close personal interaction. FRAMING: vertical three-quarter to full-body. SETTING: outdoor residential or college style environment with green plants behind. LIGHT: bright daytime."
+  },
+  {
+    "id": "diwali-18",
+    "world": "diwali",
+    "title": "Purple Suit in the Stairwell",
+    "ref": "DIWALI-REF-18",
+    "referenceNumber": 18,
+    "pose": "both seated on a staircase, he on the left leaning forward with one hand covering part of his face, she on the right seated upright touching and adjusting her hair, casual slightly awkward youthful pose, neither looking at the camera",
+    "poseDescription": "both seated on a staircase, he on the left leaning forward with one hand covering part of his face, she on the right seated upright touching and adjusting her hair, casual slightly awkward youthful pose, neither looking at the camera",
+    "framing": "vertical portrait",
+    "framingDescription": "vertical portrait",
+    "setting": "indoor stairwell with a white wall and the staircase rising behind",
+    "environmentDescription": "indoor stairwell with a white wall and the staircase rising behind",
+    "light": "cool indoor lighting",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Purple",
+      "fabric": "Cotton",
+      "detail": "embroidered neckline",
+      "desc": "deep purple ethnic suit with a long straight kurta, a detailed embroidered neckline and front panel, a matching purple dupatta, long sleeves, minimal jewellery"
+    },
+    "him": {
+      "cat": "Festive Separates",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "long-sleeve top with dark jeans",
+      "desc": "plain white long-sleeve t-shirt with dark charcoal jeans, white sneakers, wristwatch"
+    },
+    "outfitDescription": "Deep purple embroidered suit with dupatta; white tee with charcoal jeans",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "Purple · White",
+    "tags": [
+      "seated",
+      "stairwell"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-purple-embroidered-neckline",
+      "w-jewellery-silver-choker-necklace",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-festive-separates-white-long-sleeve-top-with-dark-jeans",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-18. HER: deep purple ethnic suit with a long straight kurta, a detailed embroidered neckline and front panel, a matching purple dupatta, long sleeves, minimal jewellery. HIM: plain white long-sleeve t-shirt with dark charcoal jeans, white sneakers, wristwatch. POSE: both seated on a staircase, he on the left leaning forward with one hand covering part of his face, she on the right seated upright touching and adjusting her hair, casual slightly awkward youthful pose, neither looking at the camera. FRAMING: vertical portrait. SETTING: indoor stairwell with a white wall and the staircase rising behind. LIGHT: cool indoor lighting."
+  },
+  {
+    "id": "diwali-19",
+    "world": "diwali",
+    "title": "Blush Lehenga in the Heritage Arch",
+    "ref": "DIWALI-REF-19",
+    "referenceNumber": 19,
+    "pose": "standing a few feet apart inside a grand heritage arch, she on the left partially lifting one hand to her face, he on the right standing upright with relaxed arms, both looking generally toward each other or to the side rather than at the camera, strong negative space between them",
+    "poseDescription": "standing a few feet apart inside a grand heritage arch, she on the left partially lifting one hand to her face, he on the right standing upright with relaxed arms, both looking generally toward each other or to the side rather than at the camera, strong negative space between them",
+    "framing": "vertical architectural composition with the archway a major part of the image",
+    "framingDescription": "vertical architectural composition with the archway a major part of the image",
+    "setting": "huge ornate Mughal and Rajasthani style archway with carved walls and a pink doorway far behind",
+    "environmentDescription": "huge ornate Mughal and Rajasthani style archway with carved walls and a pink doorway far behind",
+    "light": "warm daylight",
+    "her": {
+      "cat": "Anarkali",
+      "colour": "Rani Pink",
+      "fabric": "Georgette",
+      "detail": "embroidered upper with dupatta",
+      "desc": "soft blush dusty pink lehenga style anarkali with an intricately embellished upper portion, a flowing dupatta, traditional festive jewellery"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "minimal embroidery",
+      "desc": "pure white kurta pajama with minimal embroidery, white footwear"
+    },
+    "outfitDescription": "Blush pink embellished anarkali with dupatta; white kurta pajama",
+    "qaStatus": "GENERATED",
+    "tone": "Gold",
+    "colourStory": "Blush · White",
+    "tags": [
+      "archway",
+      "heritage"
+    ],
+    "herProductIds": [
+      "w-anarkali-rani-pink-embroidered-upper-with-dupatta",
+      "w-jewellery-gold-bangle-stack",
+      "w-footwear-gold-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-minimal-embroidery",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-19. HER: soft blush dusty pink lehenga style anarkali with an intricately embellished upper portion, a flowing dupatta, traditional festive jewellery. HIM: pure white kurta pajama with minimal embroidery, white footwear. POSE: standing a few feet apart inside a grand heritage arch, she on the left partially lifting one hand to her face, he on the right standing upright with relaxed arms, both looking generally toward each other or to the side rather than at the camera, strong negative space between them. FRAMING: vertical architectural composition with the archway a major part of the image. SETTING: huge ornate Mughal and Rajasthani style archway with carved walls and a pink doorway far behind. LIGHT: warm daylight."
+  },
+  {
+    "id": "diwali-20",
+    "world": "diwali",
+    "title": "Maroon Kurta, Balcony Crop",
+    "ref": "DIWALI-REF-20",
+    "referenceNumber": 20,
+    "pose": "standing side by side, he on the right with both arms crossed, she on the left with one hand around her waist, bodies close together, casual relaxed upper-body pose",
+    "poseDescription": "standing side by side, he on the right with both arms crossed, she on the left with one hand around her waist, bodies close together, casual relaxed upper-body pose",
+    "framing": "horizontal cropped composition from below the shoulders to the waist, not a full-body shot",
+    "framingDescription": "horizontal cropped composition from below the shoulders to the waist, not a full-body shot",
+    "setting": "night balcony terrace with a railing behind",
+    "environmentDescription": "night balcony terrace with a railing behind",
+    "light": "warm outdoor evening light",
+    "her": {
+      "cat": "Kurta Sets",
+      "colour": "Maroon",
+      "fabric": "Cotton",
+      "detail": "subtle embroidery",
+      "desc": "deep maroon ethnic kurta suit with subtle traditional embroidery and a long straight silhouette, minimal jewellery"
+    },
+    "him": {
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "embroidered",
+      "desc": "white embroidered kurta with white pajama trousers, arms crossed"
+    },
+    "outfitDescription": "Maroon embroidered kurta suit; white embroidered kurta pajama",
+    "qaStatus": "GENERATED",
+    "tone": "Silver",
+    "colourStory": "Maroon · White",
+    "tags": [
+      "balcony",
+      "cropped"
+    ],
+    "herProductIds": [
+      "w-kurta-sets-maroon-subtle-embroidery",
+      "w-jewellery-silver-kamarbandh-waist-belt",
+      "w-footwear-silver-embroidered-juttis"
+    ],
+    "hisProductIds": [
+      "m-modern-kurta-white-embroidered",
+      "m-footwear-tan-embroidered-mojaris"
+    ],
+    "imageUrl": "",
+    "imageStatus": "PENDING",
+    "imagePrompt": "Original editorial photograph of two Indian college students who are exactly 18 years old, realistic human faces, natural skin texture, realistic hair, natural anatomy and proportions, wearing the EXACT fashion combination and colour relationship shown in the supplied reference, recreate the reference styling and pose composition closely, preserve hand placement and body positioning, same visual interaction language, same camera perspective and framing language, authentic Indian festive environment, natural candid photographic feel, premium aesthetic, realistic lighting, slightly imperfect real-life photography, contemporary Gen-Z Indian fashion mood, no mannequin appearance, no faceless humans, no mature married-couple appearance, no bride/groom styling, no stiff studio pose, no politician-style kurta pyjama, no bandhgala, no Nehru jacket, no formal suit look, no extra accessories beyond the reference, no text, no logos, no watermark. Reference: DIWALI-REF-20. HER: deep maroon ethnic kurta suit with subtle traditional embroidery and a long straight silhouette, minimal jewellery. HIM: white embroidered kurta with white pajama trousers, arms crossed. POSE: standing side by side, he on the right with both arms crossed, she on the left with one hand around her waist, bodies close together, casual relaxed upper-body pose. FRAMING: horizontal cropped composition from below the shoulders to the waist, not a full-body shot. SETTING: night balcony terrace with a railing behind. LIGHT: warm outdoor evening light."
   },
   {
     "id": "festive-party-01",

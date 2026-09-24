@@ -392,5 +392,105 @@
     "bytes": 46538,
     "sha256": "bb175d6b9f1da675abea087a4292f8e012677ef5f1946acd0fb0b6b54f51ad67",
     "notes": "LOOK-20 recreation; age locked to exactly 18; no politician/formal styling. AWAITING VISUAL VERIFICATION: agent cannot view images."
+  },
+  "couple:diwali-01": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 1,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-01 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 84136,
+    "sha256": "d3bd0e69a684b7a64a49f3ead2bb37393f6133f9d39f3842d8c265af5519ce29"
+  },
+  "couple:diwali-02": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 2,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-02 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 147476,
+    "sha256": "7546705a960d75d89589be49e2334f3b8bec2ccc0d1f48caca7580147b673f4a"
+  },
+  "couple:diwali-03": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 3,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-03 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 181380,
+    "sha256": "9833a4377a2c2bfcbde43f3352c7afa1dac845bf6f3deb7f9c17ce96449444a8"
+  },
+  "couple:diwali-04": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 4,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-04 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 90984,
+    "sha256": "24e8ad24d908a567af9cc5d63411f6989a53e2eef1154eea89cc1061a4f28ac9"
+  },
+  "couple:diwali-05": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 5,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-05 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 227582,
+    "sha256": "72c0c84f71bc2f32a1c28accf26d04f625285005de95711395da526e532fd02a"
+  },
+  "couple:diwali-06": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 6,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-06 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 178888,
+    "sha256": "5145f2b9fe12e3dc61d4972ef5c652c88d3b39b6fa1c7f7c6f4128d1543582a8"
+  },
+  "couple:diwali-07": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 7,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-07 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 110534,
+    "sha256": "c183ef2605dfa5d88a148143c8bda488989125c9902a2e52b7fb8cc7e79c34c0"
+  },
+  "couple:diwali-08": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 8,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-08 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 236410,
+    "sha256": "5f464467ca6759356e4be94b3531dc2ef0f2ea7b2ce0e079ed46ee8c2120666b"
+  },
+  "couple:diwali-09": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 9,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-09 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 241256,
+    "sha256": "02b631f989603fb90ad8a001126ed3375828320fa12b8f90f53ab7074609b5a0"
+  },
+  "couple:diwali-10": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "referenceNumber": 10,
+    "qaStatus": "GENERATED",
+    "notes": "DIWALI-REF-10 recreation from the LOOK specification (outfit, pose, framing, environment). AWAITING VISUAL VERIFICATION: agent cannot view images.",
+    "dimensions": "768x1376",
+    "bytes": 110798,
+    "sha256": "b93b8a9a7b7c0a0d26574c160717d7fb90c8823ce41f4894319ab5a03f4ec66a"
   }
 }
