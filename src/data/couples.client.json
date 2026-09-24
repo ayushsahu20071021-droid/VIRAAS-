@@ -2720,30 +2720,32 @@
   {
     "id": "festive-party-01",
     "world": "festive-party",
-    "title": "Black Sequin Party Mirror Selfie",
-    "ref": "REF-C1",
-    "pose": "mirror selfie",
-    "framing": "3/4 mirror",
-    "setting": "party venue washroom mirror",
-    "light": "moody",
+    "title": "Hot Pink and Navy Night Entrance",
+    "ref": "FESTIVE-PARTY-REF-01",
+    "pose": "standing close side-by-side, she poses with one hand on her waist and one near her hair while he stands beside her with arms crossed",
+    "framing": "tall vertical portrait",
+    "setting": "outdoor residential or event entrance at night with warm hanging fairy lights, doorway and plants",
+    "light": "warm festive evening light",
     "her": {
-      "cat": "Saree",
-      "colour": "Black",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "black sequin saree"
+      "cat": "Lehenga",
+      "colour": "Hot Pink",
+      "fabric": "Flowing textile",
+      "detail": "silver ornamental detailing and yellow-pink dupatta",
+      "desc": "vivid hot-pink sleeveless festive blouse with silver detailing, flowing silver-grey lehenga and yellow-to-pink embellished dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
-      "colour": "Black",
-      "fabric": "Georgette",
-      "detail": "mirror sequin",
-      "desc": "black mirror-sequin kurta"
+      "colour": "Navy",
+      "fabric": "Textured textile",
+      "detail": "plain long kurta",
+      "desc": "deep royal or navy-blue long kurta with white pajama trousers"
     },
     "tone": "Silver",
-    "colourStory": "Black-on-black",
+    "colourStory": "Hot Pink · Navy",
     "tags": [
-      "mirror-selfie"
+      "night",
+      "fairy-lights",
+      "standing"
     ],
     "herProductIds": [
       "w-saree-black-sequin",
@@ -2755,35 +2757,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 1,
+    "poseDescription": "standing close side-by-side, she poses with one hand on her waist and one near her hair while he stands beside her with arms crossed",
+    "framingDescription": "tall vertical portrait",
+    "environmentDescription": "outdoor residential or event entrance at night with warm hanging fairy lights, doorway and plants",
+    "outfitDescription": "Hot-pink silver-detailed lehenga with yellow-pink dupatta; navy kurta with white pajama",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-02",
     "world": "festive-party",
-    "title": "Rooftop Overhead in Emerald",
-    "ref": "REF-C2",
-    "pose": "overhead lying",
-    "framing": "overhead",
-    "setting": "rooftop lounge",
-    "light": "dusk",
+    "title": "Blush Pink Garden Crop",
+    "ref": "FESTIVE-PARTY-REF-02",
+    "pose": "very close side-by-side crop with her hand raised near or over her face",
+    "framing": "upper-torso-down intimate crop",
+    "setting": "bright daytime garden with lawn and flower pots",
+    "light": "bright natural daylight",
     "her": {
-      "cat": "Lehenga",
-      "colour": "Emerald",
-      "fabric": "Velvet",
-      "detail": "sequin",
-      "desc": "emerald velvet lehenga"
+      "cat": "Anarkali",
+      "colour": "Blush Pink",
+      "fabric": "Lightweight textile",
+      "detail": "delicate embroidery and sheer dupatta",
+      "desc": "soft pastel blush-pink long embroidered anarkali-style outfit with matching sheer dupatta"
     },
     "him": {
-      "cat": "Festive Jacket",
-      "colour": "Black",
-      "fabric": "Velvet",
-      "detail": "solid",
-      "desc": "black velvet jacket"
+      "cat": "Ethnic Shirt",
+      "colour": "Pastel Pink",
+      "fabric": "Cotton",
+      "detail": "plain button-up",
+      "desc": "pastel pink button-up shirt with white or cream trousers"
     },
-    "tone": "Gold",
-    "colourStory": "Emerald · Black",
+    "tone": "Silver",
+    "colourStory": "Blush Pink · Pastel Pink",
     "tags": [
-      "overhead"
+      "daylight",
+      "garden",
+      "cropped"
     ],
     "herProductIds": [
       "w-lehenga-emerald-sequin",
@@ -2795,35 +2805,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 2,
+    "poseDescription": "very close side-by-side crop with her hand raised near or over her face",
+    "framingDescription": "upper-torso-down intimate crop",
+    "environmentDescription": "bright daytime garden with lawn and flower pots",
+    "outfitDescription": "Blush-pink embroidered anarkali with sheer dupatta; pastel-pink shirt with cream trousers",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-03",
     "world": "festive-party",
-    "title": "Staircase Sit",
-    "ref": "REF-C3",
-    "pose": "seated on staircase",
-    "framing": "full seated",
-    "setting": "wooden staircase",
-    "light": "warm",
+    "title": "Navy Top and Tiered White Skirt",
+    "ref": "FESTIVE-PARTY-REF-03",
+    "pose": "hands joined naturally at the center with both bodies close",
+    "framing": "close lower-body and torso crop",
+    "setting": "warm softly lit indoor floor or interior",
+    "light": "warm indoor light",
     "her": {
-      "cat": "Sharara",
-      "colour": "Wine",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "wine sequin sharara"
+      "cat": "Lehenga",
+      "colour": "White",
+      "fabric": "Flowing textile",
+      "detail": "tiered skirt and black crossbody bag",
+      "desc": "dark navy or black fitted top with flowing white tiered long skirt, small black chain-strap crossbody bag and minimal jewellery"
     },
     "him": {
-      "cat": "Modern Kurta",
-      "colour": "Cream",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "cream kurta"
+      "cat": "Ethnic Shirt",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "plain top and wristwatch",
+      "desc": "dark navy top with light cream trousers and a wristwatch"
     },
-    "tone": "Gold",
-    "colourStory": "Wine · Cream",
+    "tone": "Silver",
+    "colourStory": "Navy · White",
     "tags": [
-      "seated"
+      "hand-hold",
+      "cropped",
+      "indoors"
     ],
     "herProductIds": [
       "w-sharara-wine-sequin",
@@ -2835,35 +2853,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 3,
+    "poseDescription": "hands joined naturally at the center with both bodies close",
+    "framingDescription": "close lower-body and torso crop",
+    "environmentDescription": "warm softly lit indoor floor or interior",
+    "outfitDescription": "Dark navy top with white tiered skirt and black crossbody bag; navy top with cream trousers",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-04",
     "world": "festive-party",
-    "title": "Red Jacket Laugh",
-    "ref": "REF-C2 side panel",
-    "pose": "face-cup laugh",
-    "framing": "waist-up",
-    "setting": "party lights",
-    "light": "night",
+    "title": "Coordinated Navy Bench Portrait",
+    "ref": "FESTIVE-PARTY-REF-04",
+    "pose": "both seated close together on a bench with her arm around him and his arm around her",
+    "framing": "close seated crop",
+    "setting": "dim evening outdoor garden seating",
+    "light": "soft dim evening light",
     "her": {
-      "cat": "Pre-Draped Saree",
-      "colour": "Black",
-      "fabric": "Satin",
-      "detail": "solid",
-      "desc": "black satin pre-draped saree"
+      "cat": "Kurta Sets",
+      "colour": "Navy",
+      "fabric": "Textured textile",
+      "detail": "light trim and stacked bangles",
+      "desc": "long deep-navy ethnic outfit with subtle light trim and stacked bangles"
     },
     "him": {
-      "cat": "Festive Jacket",
-      "colour": "Red",
-      "fabric": "Brocade",
-      "detail": "brocade",
-      "desc": "red brocade jacket over black"
+      "cat": "Modern Kurta",
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "plain kurta",
+      "desc": "dark navy kurta with loose white or cream trousers"
     },
     "tone": "Silver",
-    "colourStory": "Black · Red brocade",
+    "colourStory": "Navy · White",
     "tags": [
-      "candid"
+      "seated",
+      "garden",
+      "night"
     ],
     "herProductIds": [
       "w-pre-draped-saree-black-solid",
@@ -2875,35 +2901,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 4,
+    "poseDescription": "both seated close together on a bench with her arm around him and his arm around her",
+    "framingDescription": "close seated crop",
+    "environmentDescription": "dim evening outdoor garden seating",
+    "outfitDescription": "Deep-navy ethnic outfit with light trim; navy kurta with cream trousers, seated together",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-05",
     "world": "festive-party",
-    "title": "Lounge Hand-Hold Crop",
-    "ref": "REF-C1 side panel",
-    "pose": "hand-hold crop",
-    "framing": "detail crop",
-    "setting": "lounge",
-    "light": "warm",
+    "title": "Ivory Looks in Tree-Shade",
+    "ref": "FESTIVE-PARTY-REF-05",
+    "pose": "standing relaxed side-by-side",
+    "framing": "vertical mid or full-body composition with natural face crop",
+    "setting": "warm brick wall with tree-shadow patterns",
+    "light": "strong natural daylight",
     "her": {
-      "cat": "Lehenga",
-      "colour": "Silver",
-      "fabric": "Tissue",
-      "detail": "sequin",
-      "desc": "silver tissue lehenga"
+      "cat": "Kurta Sets",
+      "colour": "Ivory",
+      "fabric": "Lightweight textile",
+      "detail": "delicate embroidery and light dupatta",
+      "desc": "ivory cream ethnic outfit with delicate embroidery and matching light dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
-      "colour": "Navy",
-      "fabric": "Silk Blend",
-      "detail": "solid",
-      "desc": "navy kurta"
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "plain kurta",
+      "desc": "clean white kurta with white pajama or trousers"
     },
     "tone": "Silver",
-    "colourStory": "Silver · Navy",
+    "colourStory": "Ivory · White",
     "tags": [
-      "hand-hold"
+      "daylight",
+      "brick-wall",
+      "standing"
     ],
     "herProductIds": [
       "w-lehenga-silver-sequin",
@@ -2915,35 +2949,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 5,
+    "poseDescription": "standing relaxed side-by-side",
+    "framingDescription": "vertical mid or full-body composition with natural face crop",
+    "environmentDescription": "warm brick wall with strong sunlight and tree-shadow patterns falling across wall and clothing",
+    "outfitDescription": "Ivory embroidered outfit with light dupatta; clean white kurta and pajama",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-06",
     "world": "festive-party",
-    "title": "Bar Counter Shoulder Line",
-    "ref": "REF-C1 side panel",
-    "pose": "shoulder to shoulder",
-    "framing": "nose-to-knee",
-    "setting": "party bar counter",
-    "light": "moody",
+    "title": "Mauve Outfit with Back-Facing Kurta",
+    "ref": "FESTIVE-PARTY-REF-06",
+    "pose": "woman faces camera or side while man is turned partly away with hands clasped behind his back",
+    "framing": "vertical portrait crop preserving unusual back-facing pose",
+    "setting": "rocky open natural landscape",
+    "light": "soft daylight",
     "her": {
-      "cat": "Anarkali",
-      "colour": "Black",
-      "fabric": "Georgette",
-      "detail": "gold",
-      "desc": "black anarkali with gold"
+      "cat": "Kurta Sets",
+      "colour": "Mauve",
+      "fabric": "Lightweight textile",
+      "detail": "maroon embroidered neckline and soft pink dupatta",
+      "desc": "dusty blush-pink or mauve traditional outfit with darker maroon embroidered neckline or panel and soft pink dupatta"
     },
     "him": {
-      "cat": "Embroidered Ethnic Shirt",
-      "colour": "Ivory",
-      "fabric": "Silk Blend",
-      "detail": "tonal",
-      "desc": "ivory embroidered shirt"
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "plain",
+      "desc": "plain white long kurta and white pajama"
     },
-    "tone": "Gold",
-    "colourStory": "Black · Ivory",
+    "tone": "Silver",
+    "colourStory": "Mauve · White",
     "tags": [
-      "outfit-check"
+      "landscape",
+      "back-facing",
+      "daylight"
     ],
     "herProductIds": [
       "w-anarkali-black-gold",
@@ -2955,35 +2997,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 6,
+    "poseDescription": "woman faces camera or side while man is turned partly away with hands clasped behind his back",
+    "framingDescription": "vertical portrait crop preserving unusual back-facing pose",
+    "environmentDescription": "rocky open natural landscape in soft daylight",
+    "outfitDescription": "Mauve embroidered ethnic outfit with pink dupatta; white kurta and pajama in back-facing pose",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-07",
     "world": "festive-party",
-    "title": "Corridor Walk-Out",
-    "ref": "REF-S1 panel 2",
-    "pose": "walking away",
-    "framing": "back view",
-    "setting": "hotel corridor",
-    "light": "warm",
+    "title": "Floral Kurta Mirror Selfie in Greenery",
+    "ref": "FESTIVE-PARTY-REF-07",
+    "pose": "full-length mirror selfie with both holding phones in front of their faces and standing close",
+    "framing": "full-length mirror composition",
+    "setting": "upscale outdoor or urban mirror area surrounded by lush plants",
+    "light": "natural outdoor light",
     "her": {
-      "cat": "Saree",
-      "colour": "Emerald",
-      "fabric": "Satin",
-      "detail": "solid",
-      "desc": "emerald satin saree"
+      "cat": "Kurta Sets",
+      "colour": "Ivory",
+      "fabric": "Cotton",
+      "detail": "small red floral motifs, red flats and beige handbag",
+      "desc": "cream embroidered straight kurta with small red floral motifs, loose cream palazzo trousers, red flats and small beige handbag"
     },
     "him": {
-      "cat": "Festive Kurta Set",
-      "colour": "Black",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "black kurta set"
+      "cat": "Modern Kurta",
+      "colour": "Maroon",
+      "fabric": "Cotton",
+      "detail": "plain kurta with watch",
+      "desc": "deep maroon or burgundy kurta with loose cream trousers, black shoes and watch"
     },
-    "tone": "Gold",
-    "colourStory": "Emerald · Black",
+    "tone": "Red",
+    "colourStory": "Cream · Maroon",
     "tags": [
-      "walking"
+      "mirror-selfie",
+      "greenery",
+      "full-length"
     ],
     "herProductIds": [
       "w-saree-emerald-solid",
@@ -2995,35 +3045,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 7,
+    "poseDescription": "full-length mirror selfie with both holding phones in front of their faces and standing close",
+    "framingDescription": "full-length mirror composition",
+    "environmentDescription": "upscale outdoor or urban mirror area surrounded by lush plants and greenery",
+    "outfitDescription": "Cream floral kurta set with red flats and beige bag; maroon kurta with cream trousers",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-08",
     "world": "festive-party",
-    "title": "Earring Fix",
-    "ref": "REF-S1 panel 6",
-    "pose": "he helps fix her earring",
-    "framing": "waist-up",
-    "setting": "party hallway",
-    "light": "warm",
+    "title": "White Embroidered Looks in Sunlight",
+    "ref": "FESTIVE-PARTY-REF-08",
+    "pose": "woman shields her eyes with one raised hand while man stands close beside and slightly behind",
+    "framing": "vertical full-body composition",
+    "setting": "bright exterior wall with geometric patterned floor tiles",
+    "light": "strong sunny daylight with natural shadows",
     "her": {
-      "cat": "Sharara",
-      "colour": "Black",
-      "fabric": "Georgette",
-      "detail": "mirror",
-      "desc": "black mirror sharara"
+      "cat": "Kurta Sets",
+      "colour": "White",
+      "fabric": "Lightweight textile",
+      "detail": "floral embroidery and flowing dupatta",
+      "desc": "white or ivory embroidered ethnic suit with floral embroidery, cream trousers and flowing dupatta"
     },
     "him": {
-      "cat": "Printed Ethnic Shirt",
-      "colour": "Teal",
-      "fabric": "Rayon",
-      "detail": "paisley",
-      "desc": "teal printed shirt"
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "plain",
+      "desc": "white kurta and white trousers"
     },
     "tone": "Silver",
-    "colourStory": "Black · Teal",
+    "colourStory": "White · Ivory",
     "tags": [
-      "candid"
+      "daylight",
+      "sunlight",
+      "standing"
     ],
     "herProductIds": [
       "w-sharara-black-mirror",
@@ -3035,35 +3093,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 8,
+    "poseDescription": "woman shields her eyes with one raised hand while man stands close beside and slightly behind",
+    "framingDescription": "vertical full-body composition",
+    "environmentDescription": "bright exterior wall with geometric patterned floor tiles",
+    "outfitDescription": "White floral-embroidered suit with dupatta; white kurta and trousers in strong sunlight",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-09",
     "world": "festive-party",
-    "title": "Dance Floor Spin",
-    "ref": "REF-S2 panel 16",
-    "pose": "spin on dance floor",
-    "framing": "full body",
-    "setting": "dance floor",
-    "light": "party lights",
+    "title": "Ivory Layered Outfit Checkerboard Crop",
+    "ref": "FESTIVE-PARTY-REF-09",
+    "pose": "standing close together with hands and garments emphasized",
+    "framing": "shoulder or upper-torso downward crop",
+    "setting": "bright entrance or interior with black-and-white checkerboard floor",
+    "light": "bright natural or entrance light",
     "her": {
-      "cat": "Lehenga",
-      "colour": "Wine",
-      "fabric": "Velvet",
-      "detail": "sequin",
-      "desc": "wine velvet lehenga"
+      "cat": "Anarkali",
+      "colour": "Ivory",
+      "fabric": "Layered textile",
+      "detail": "geometric patterning, gold trim and smartphone",
+      "desc": "ivory cream sleeveless or layered ethnic outfit with delicate geometric patterning, sheer lower layer, gold trim, minimal bangles and smartphone"
     },
     "him": {
       "cat": "Modern Kurta",
-      "colour": "Black",
-      "fabric": "Cotton",
-      "detail": "solid",
-      "desc": "black kurta"
+      "colour": "White",
+      "fabric": "Embroidered textile",
+      "detail": "plain white with tan sandals",
+      "desc": "white embroidered kurta and white pajama with tan or brown sandals"
     },
     "tone": "Gold",
-    "colourStory": "Wine · Black",
+    "colourStory": "Ivory · White",
     "tags": [
-      "twirl"
+      "detail-crop",
+      "checkerboard",
+      "indoors"
     ],
     "herProductIds": [
       "w-lehenga-wine-sequin",
@@ -3075,35 +3141,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 9,
+    "poseDescription": "standing close together with hands and garments emphasized",
+    "framingDescription": "shoulder or upper-torso downward crop",
+    "environmentDescription": "bright entrance or interior with black-and-white checkerboard floor",
+    "outfitDescription": "Ivory layered geometric ethnic outfit with gold trim; white embroidered kurta and pajama",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-10",
     "world": "festive-party",
-    "title": "Flash Selfie",
-    "ref": "REF-S2 panel 11",
-    "pose": "flash selfie",
-    "framing": "head-and-shoulders",
-    "setting": "party",
-    "light": "flash",
+    "title": "Burgundy Street-Style Couple",
+    "ref": "FESTIVE-PARTY-REF-10",
+    "pose": "standing or walking side-by-side with woman holding his arm and both looking naturally toward each other",
+    "framing": "elegant vertical street-style composition",
+    "setting": "outdoor sidewalk with metal fence, stone architecture and trees",
+    "light": "warm afternoon light",
     "her": {
-      "cat": "Pre-Draped Saree",
-      "colour": "Silver",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "silver sequin pre-draped saree"
+      "cat": "Kurta Sets",
+      "colour": "Burgundy",
+      "fabric": "Lightweight textile",
+      "detail": "subtle print or embroidery and matching dupatta",
+      "desc": "deep maroon or burgundy traditional salwar-style suit with matching dupatta and subtle print or embroidery"
     },
     "him": {
-      "cat": "Embroidered Ethnic Shirt",
-      "colour": "Black",
+      "cat": "Ethnic Shirt",
+      "colour": "Burgundy",
       "fabric": "Cotton",
-      "detail": "sequin dots",
-      "desc": "black sequin-dot shirt"
+      "detail": "plain button shirt",
+      "desc": "dark burgundy button shirt with light-wash straight jeans and white sneakers"
     },
     "tone": "Silver",
-    "colourStory": "Silver · Black",
+    "colourStory": "Burgundy · Light Blue",
     "tags": [
-      "selfie"
+      "street-style",
+      "daylight",
+      "walking"
     ],
     "herProductIds": [
       "w-pre-draped-saree-silver-sequin",
@@ -3115,35 +3189,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 10,
+    "poseDescription": "standing or walking side-by-side with woman holding his arm and both looking naturally toward each other",
+    "framingDescription": "elegant vertical street-style composition",
+    "environmentDescription": "outdoor sidewalk with metal fence, stone architecture and trees",
+    "outfitDescription": "Burgundy salwar suit with dupatta; burgundy shirt with light jeans and white sneakers",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-11",
     "world": "festive-party",
-    "title": "Couch Laugh",
-    "ref": "REF-S2 panel 20",
-    "pose": "seated laughing",
-    "framing": "full seated",
-    "setting": "house party couch",
-    "light": "lamp",
+    "title": "Red Elephant-Motif Saree and Kurta",
+    "ref": "FESTIVE-PARTY-REF-11",
+    "pose": "seated together on a heritage stone step or ledge, leaning casually and looking toward one another",
+    "framing": "close seated editorial composition",
+    "setting": "heritage stone architecture with greenery and flowers",
+    "light": "warm daylight",
     "her": {
-      "cat": "Kurta Sets",
-      "colour": "Emerald",
-      "fabric": "Silk Blend",
-      "detail": "sequin",
-      "desc": "emerald kurta set"
+      "cat": "Saree",
+      "colour": "Red",
+      "fabric": "Printed textile",
+      "detail": "repeated elephant motifs and embellished border",
+      "desc": "bright red saree with repeated small elephant motifs and embellished border"
     },
     "him": {
       "cat": "Modern Kurta",
-      "colour": "Ivory",
-      "fabric": "Cotton",
-      "detail": "solid",
-      "desc": "ivory kurta"
+      "colour": "Red",
+      "fabric": "Embroidered textile",
+      "detail": "elephant motifs and detailed neckline embroidery",
+      "desc": "bright red kurta with repeated elephant motifs, detailed neckline embroidery and loose white trousers"
     },
     "tone": "Gold",
-    "colourStory": "Emerald · Ivory",
+    "colourStory": "Red · White",
     "tags": [
-      "seated"
+      "seated",
+      "heritage",
+      "elephant-print"
     ],
     "herProductIds": [
       "w-kurta-sets-emerald-sequin",
@@ -3155,35 +3237,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 11,
+    "poseDescription": "seated together on a heritage stone step or ledge, leaning casually and looking toward one another",
+    "framingDescription": "close seated editorial composition",
+    "environmentDescription": "heritage stone architecture with greenery and flowers",
+    "outfitDescription": "Red elephant-motif saree; matching red elephant-motif embroidered kurta with white trousers",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-12",
     "world": "festive-party",
-    "title": "Terrace Embrace",
-    "ref": "REF-S2 panel 13",
-    "pose": "embrace",
-    "framing": "waist-up",
-    "setting": "terrace lights",
-    "light": "night",
+    "title": "Peach Embroidery with Black Stole",
+    "ref": "FESTIVE-PARTY-REF-12",
+    "pose": "standing close with hands relaxed in front and garments as the visual focus",
+    "framing": "cropped fashion-detail composition with faces less prominent",
+    "setting": "elegant warm indoor room with classic furniture",
+    "light": "warm indoor light",
     "her": {
-      "cat": "Gharara",
-      "colour": "Black",
-      "fabric": "Georgette",
-      "detail": "gold",
-      "desc": "black gold gharara"
+      "cat": "Anarkali",
+      "colour": "Peach",
+      "fabric": "Embroidered textile",
+      "detail": "heavy gold-toned borders and matching dupatta",
+      "desc": "dusty peach or blush long ethnic outfit with heavy embroidery, ornate gold-toned borders and matching dupatta"
     },
     "him": {
-      "cat": "Festive Jacket",
-      "colour": "Ivory",
-      "fabric": "Silk Blend",
-      "detail": "subtle embroidery",
-      "desc": "ivory jacket"
+      "cat": "Modern Kurta",
+      "colour": "Black",
+      "fabric": "Textured textile",
+      "detail": "long charcoal stole with light edging",
+      "desc": "black textured kurta with black trousers and long charcoal-black stole with light edging"
     },
     "tone": "Gold",
-    "colourStory": "Black · Ivory",
+    "colourStory": "Dusty Peach · Black",
     "tags": [
-      "embrace"
+      "indoors",
+      "detail-crop",
+      "embroidery"
     ],
     "herProductIds": [
       "w-gharara-black-gold",
@@ -3195,35 +3285,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 12,
+    "poseDescription": "standing close with hands relaxed in front and garments as the visual focus",
+    "framingDescription": "cropped fashion-detail composition with faces less prominent",
+    "environmentDescription": "elegant warm indoor room with classic furniture",
+    "outfitDescription": "Dusty peach embroidered outfit with gold borders; black textured kurta with charcoal stole",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-13",
     "world": "festive-party",
-    "title": "Gold Lift Mirror",
-    "ref": "REF-S2 panel 14",
-    "pose": "lift mirror selfie",
-    "framing": "mirror full",
-    "setting": "brass lift",
-    "light": "warm",
+    "title": "Navy and Gold Embroidery by the Car",
+    "ref": "FESTIVE-PARTY-REF-13",
+    "pose": "standing close side-by-side in a relaxed pose",
+    "framing": "vertical lower-body or full-body fashion composition",
+    "setting": "outdoor parking or driveway with white car behind",
+    "light": "bright natural daylight",
     "her": {
-      "cat": "Saree",
-      "colour": "Gold",
-      "fabric": "Tissue",
-      "detail": "zari",
-      "desc": "gold tissue saree"
+      "cat": "Kurta Sets",
+      "colour": "Navy",
+      "fabric": "Lightweight textile",
+      "detail": "gold floral embroidery and sheer dupatta",
+      "desc": "deep navy embroidered ethnic suit with gold floral embroidery, matching light sheer dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
-      "colour": "Black",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "black kurta"
+      "colour": "Navy",
+      "fabric": "Cotton",
+      "detail": "plain long kurta",
+      "desc": "navy-blue long kurta with white or cream pajama"
     },
     "tone": "Gold",
-    "colourStory": "Gold · Black",
+    "colourStory": "Navy · Gold",
     "tags": [
-      "mirror-selfie"
+      "daylight",
+      "parking",
+      "embroidery"
     ],
     "herProductIds": [
       "w-saree-gold-zari",
@@ -3235,35 +3333,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 13,
+    "poseDescription": "standing close side-by-side in a relaxed pose",
+    "framingDescription": "vertical lower-body or full-body fashion composition",
+    "environmentDescription": "outdoor parking or driveway with a white car behind",
+    "outfitDescription": "Navy suit with gold floral embroidery and sheer dupatta; navy kurta with light pajama",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-14",
     "world": "festive-party",
-    "title": "Poolside Bench",
-    "ref": "REF-S2 panel 15",
-    "pose": "bench whisper",
-    "framing": "full seated",
-    "setting": "poolside bench",
-    "light": "night",
+    "title": "Teal Kurta and Magenta Garden Look",
+    "ref": "FESTIVE-PARTY-REF-14",
+    "pose": "standing side-by-side, woman lightly touching or adjusting her hair while both remain naturally close",
+    "framing": "vertical natural garden portrait",
+    "setting": "lush garden with ornamental plants",
+    "light": "bright natural daylight",
     "her": {
-      "cat": "Anarkali",
-      "colour": "Navy",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "navy sequin anarkali"
+      "cat": "Lehenga",
+      "colour": "Magenta",
+      "fabric": "Flowing textile",
+      "detail": "ornate light border and matching dupatta",
+      "desc": "magenta or pink festive lehenga or long ethnic outfit with matching dupatta and ornate light border"
     },
     "him": {
-      "cat": "Ethnic Shirt",
-      "colour": "White",
-      "fabric": "Linen",
-      "detail": "solid",
-      "desc": "white linen ethnic shirt"
+      "cat": "Modern Kurta",
+      "colour": "Teal",
+      "fabric": "Textured textile",
+      "detail": "blue-green texture",
+      "desc": "textured teal or blue-green long kurta with white or light trousers"
     },
     "tone": "Silver",
-    "colourStory": "Navy · White",
+    "colourStory": "Magenta · Teal",
     "tags": [
-      "seated"
+      "garden",
+      "daylight",
+      "standing"
     ],
     "herProductIds": [
       "w-anarkali-navy-sequin",
@@ -3275,35 +3381,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 14,
+    "poseDescription": "standing side-by-side, woman lightly touching or adjusting her hair while both remain naturally close",
+    "framingDescription": "vertical natural garden portrait",
+    "environmentDescription": "lush garden with ornamental plants in daytime",
+    "outfitDescription": "Magenta festive lehenga with light border; textured teal kurta in a garden",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-15",
     "world": "festive-party",
-    "title": "Two-Hand Spin",
-    "ref": "REF-S2 panel 16",
-    "pose": "two-hand spin",
-    "framing": "full body",
-    "setting": "banquet lawn",
-    "light": "fairy",
+    "title": "Checked Top and Burgundy Shirt",
+    "ref": "FESTIVE-PARTY-REF-15",
+    "pose": "standing closely, woman leaning her head against his shoulder or chest while he stands relaxed",
+    "framing": "casual modern full-body composition",
+    "setting": "clean minimal bright studio or plain background",
+    "light": "bright even light",
     "her": {
-      "cat": "Lehenga",
-      "colour": "Rani Pink",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "rani pink sequin lehenga"
+      "cat": "Kurta Sets",
+      "colour": "Red",
+      "fabric": "Printed textile",
+      "detail": "checked top with light blue wide jeans",
+      "desc": "red-and-white checked or printed sleeveless top with light blue wide or flared jeans"
     },
     "him": {
-      "cat": "Festive Kurta Set",
-      "colour": "Ivory",
-      "fabric": "Cotton Silk",
-      "detail": "solid",
-      "desc": "ivory kurta set"
+      "cat": "Ethnic Shirt",
+      "colour": "Burgundy",
+      "fabric": "Cotton",
+      "detail": "plain button shirt",
+      "desc": "deep burgundy button shirt with white or cream trousers and white sneakers"
     },
-    "tone": "Gold",
-    "colourStory": "Rani pink · Ivory",
+    "tone": "Silver",
+    "colourStory": "Red · Burgundy",
     "tags": [
-      "twirl"
+      "casual",
+      "studio",
+      "standing"
     ],
     "herProductIds": [
       "w-lehenga-rani-pink-sequin",
@@ -3315,35 +3429,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 15,
+    "poseDescription": "standing closely, woman leaning her head against his shoulder or chest while he stands relaxed",
+    "framingDescription": "casual modern full-body composition",
+    "environmentDescription": "clean minimal bright studio or plain background",
+    "outfitDescription": "Red-and-white checked top with light-blue wide jeans; burgundy shirt with cream trousers",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-16",
     "world": "festive-party",
-    "title": "Entrance Side Hug",
-    "ref": "REF-S2 panel 17",
-    "pose": "side hug",
-    "framing": "3/4",
-    "setting": "venue entrance",
-    "light": "night",
+    "title": "Pink Floral Crop Top with Black Kurta",
+    "ref": "FESTIVE-PARTY-REF-16",
+    "pose": "relaxed side-by-side couple pose with natural closeness",
+    "framing": "vertical youthful party portrait",
+    "setting": "outdoor parking or campus-like setting at night with cars",
+    "light": "bright artificial night light",
     "her": {
-      "cat": "Sharara",
-      "colour": "Emerald",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "emerald sequin sharara"
+      "cat": "Lehenga",
+      "colour": "Pink",
+      "fabric": "Flowing textile",
+      "detail": "floral embroidery",
+      "desc": "pink floral embroidered crop top or choli with flowing pink lehenga or skirt"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "solid",
-      "desc": "black kurta"
+      "detail": "dark monochrome styling",
+      "desc": "black or dark charcoal kurta with dark trousers"
     },
-    "tone": "Gold",
-    "colourStory": "Emerald · Black",
+    "tone": "Silver",
+    "colourStory": "Pink · Black",
     "tags": [
-      "hug"
+      "night",
+      "parking",
+      "casual"
     ],
     "herProductIds": [
       "w-sharara-emerald-sequin",
@@ -3355,35 +3477,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 16,
+    "poseDescription": "relaxed side-by-side couple pose with natural closeness",
+    "framingDescription": "vertical youthful party portrait",
+    "environmentDescription": "outdoor parking or campus-like setting at night with cars and bright artificial lights",
+    "outfitDescription": "Pink floral crop top with flowing lehenga; dark charcoal kurta at night",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-17",
     "world": "festive-party",
-    "title": "Lawn Twirl Watch",
-    "ref": "REF-S2 panel 18",
-    "pose": "twirl watch",
-    "framing": "full body",
-    "setting": "party lawn",
-    "light": "dusk",
+    "title": "Royal Purple and Pale Pink Night Look",
+    "ref": "FESTIVE-PARTY-REF-17",
+    "pose": "standing side-by-side at night with relaxed natural interaction",
+    "framing": "vertical portrait",
+    "setting": "outdoor parking area with cars and strong overhead lights",
+    "light": "strong artificial night lighting",
     "her": {
-      "cat": "Lehenga",
-      "colour": "Black",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "black sequin lehenga"
+      "cat": "Kurta Sets",
+      "colour": "Purple",
+      "fabric": "Flowing textile",
+      "detail": "gold dotted or embellished details",
+      "desc": "deep navy or royal-purple long ethnic outfit with gold dotted or embellished details"
     },
     "him": {
-      "cat": "Embroidered Ethnic Shirt",
-      "colour": "Ivory",
-      "fabric": "Silk Blend",
-      "detail": "tonal",
-      "desc": "ivory embroidered shirt"
+      "cat": "Modern Kurta",
+      "colour": "Pastel Pink",
+      "fabric": "Textured textile",
+      "detail": "soft printed texture",
+      "desc": "soft pale-pink textured or printed kurta with light trousers"
     },
-    "tone": "Silver",
-    "colourStory": "Black · Ivory",
+    "tone": "Gold",
+    "colourStory": "Royal Purple · Pale Pink",
     "tags": [
-      "twirl"
+      "night",
+      "parking",
+      "contrast"
     ],
     "herProductIds": [
       "w-lehenga-black-sequin",
@@ -3395,34 +3525,42 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 17,
+    "poseDescription": "standing side-by-side at night with relaxed natural interaction",
+    "framingDescription": "vertical portrait",
+    "environmentDescription": "outdoor parking area with cars and strong overhead lights",
+    "outfitDescription": "Royal-purple ethnic outfit with gold details; pale-pink textured kurta",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-18",
     "world": "festive-party",
-    "title": "Arrival Walk",
-    "ref": "REF-S1 panel 4",
-    "pose": "walking toward camera",
-    "framing": "full body",
-    "setting": "venue driveway",
-    "light": "night",
+    "title": "Ivory and White Looks on a Sunny Street",
+    "ref": "FESTIVE-PARTY-REF-18",
+    "pose": "walking or standing naturally together with relaxed candid body language",
+    "framing": "vertical light full-body composition",
+    "setting": "bright outdoor residential road with parked car and blue wall or building",
+    "light": "bright natural daylight",
     "her": {
-      "cat": "Pre-Draped Saree",
-      "colour": "Wine",
-      "fabric": "Satin",
-      "detail": "solid",
-      "desc": "wine satin pre-draped saree"
+      "cat": "Kurta Sets",
+      "colour": "Ivory",
+      "fabric": "Lightweight textile",
+      "detail": "subtle embroidery and matching dupatta",
+      "desc": "ivory cream ethnic salwar-style outfit with matching dupatta and subtle embroidery"
     },
     "him": {
-      "cat": "Festive Jacket",
-      "colour": "Navy",
-      "fabric": "Silk Blend",
-      "detail": "solid",
-      "desc": "navy jacket"
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Cotton",
+      "detail": "plain",
+      "desc": "white long kurta and white trousers"
     },
-    "tone": "Gold",
-    "colourStory": "Wine · Navy",
+    "tone": "Silver",
+    "colourStory": "Ivory · White",
     "tags": [
+      "daylight",
+      "street",
       "walking"
     ],
     "herProductIds": [
@@ -3435,35 +3573,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 18,
+    "poseDescription": "walking or standing naturally together with relaxed candid body language",
+    "framingDescription": "vertical light full-body composition",
+    "environmentDescription": "bright outdoor residential road with parked car and blue wall or building",
+    "outfitDescription": "Ivory salwar outfit with dupatta; white kurta and trousers on a sunny street",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-19",
     "world": "festive-party",
-    "title": "Candlelit Forehead Touch",
-    "ref": "REF-S1 panel 6",
-    "pose": "forehead touch",
-    "framing": "waist-up",
-    "setting": "candle-lit table",
-    "light": "candle",
+    "title": "Green Saree and Teal Kurta at Home",
+    "ref": "FESTIVE-PARTY-REF-19",
+    "pose": "standing close together in a relaxed indoor couple portrait",
+    "framing": "vertical full-body-ish composition",
+    "setting": "warm home living room with sofa, decor and wall mirror",
+    "light": "warm indoor light",
     "her": {
       "cat": "Saree",
-      "colour": "Wine",
-      "fabric": "Georgette",
-      "detail": "sequin",
-      "desc": "wine sequin saree"
+      "colour": "Green",
+      "fabric": "Lightweight textile",
+      "detail": "light detailing",
+      "desc": "elegant green saree with coordinated blouse and light detailing"
     },
     "him": {
       "cat": "Modern Kurta",
-      "colour": "Black",
-      "fabric": "Georgette",
-      "detail": "mirror sequin",
-      "desc": "black sequin kurta"
+      "colour": "Teal",
+      "fabric": "Textured textile",
+      "detail": "long light or blue stole",
+      "desc": "rich teal or blue kurta with light trousers and a long light or blue stole"
     },
     "tone": "Silver",
-    "colourStory": "Wine · Black",
+    "colourStory": "Green · Teal",
     "tags": [
-      "close"
+      "indoors",
+      "living-room",
+      "standing"
     ],
     "herProductIds": [
       "w-saree-wine-sequin",
@@ -3475,35 +3621,43 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 19,
+    "poseDescription": "standing close together in a relaxed indoor couple portrait",
+    "framingDescription": "vertical full-body-ish composition",
+    "environmentDescription": "warm home living room with sofa, decor and wall mirror",
+    "outfitDescription": "Green saree with coordinated blouse; teal kurta with light trousers and stole",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-20",
     "world": "festive-party",
-    "title": "Rooftop Rug Overhead",
-    "ref": "REF-C2",
-    "pose": "overhead lying on rug",
-    "framing": "overhead",
-    "setting": "rooftop rug",
-    "light": "dusk",
+    "title": "White Kurta and Pink Floral Garden Look",
+    "ref": "FESTIVE-PARTY-REF-20",
+    "pose": "standing close side-by-side with relaxed natural expressions and body language",
+    "framing": "vertical bright garden portrait",
+    "setting": "outdoor garden beneath a large flowering tree with blue or purple blossoms",
+    "light": "bright natural daylight",
     "her": {
-      "cat": "Lehenga",
-      "colour": "Silver",
-      "fabric": "Georgette",
-      "detail": "mirror",
-      "desc": "silver mirror lehenga"
+      "cat": "Kurta Sets",
+      "colour": "Pastel Pink",
+      "fabric": "Printed textile",
+      "detail": "pink-white floral print and matching dupatta",
+      "desc": "pastel pink and white floral printed long ethnic outfit with matching trousers or dupatta"
     },
     "him": {
-      "cat": "Printed Ethnic Shirt",
-      "colour": "Black",
-      "fabric": "Rayon",
-      "detail": "block print",
-      "desc": "black printed shirt"
+      "cat": "Modern Kurta",
+      "colour": "White",
+      "fabric": "Textured textile",
+      "detail": "white texture or embroidery",
+      "desc": "white textured or embroidered long kurta with white trousers"
     },
     "tone": "Silver",
-    "colourStory": "Silver · Black",
+    "colourStory": "Pastel Pink · White",
     "tags": [
-      "overhead"
+      "garden",
+      "daylight",
+      "floral"
     ],
     "herProductIds": [
       "w-lehenga-silver-mirror",
@@ -3515,7 +3669,13 @@
       "m-footwear-tan-embroidered-mojaris"
     ],
     "imageUrl": "",
-    "imageStatus": "PENDING"
+    "imageStatus": "GENERATED",
+    "referenceNumber": 20,
+    "poseDescription": "standing close side-by-side with relaxed natural expressions and body language",
+    "framingDescription": "vertical bright garden portrait",
+    "environmentDescription": "outdoor garden beneath a large flowering tree with blue or purple blossoms",
+    "outfitDescription": "Pastel pink-white floral ethnic outfit; white textured kurta beneath flowering tree",
+    "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-01",
