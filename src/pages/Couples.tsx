@@ -36,7 +36,7 @@ export function CoupleDetail() {
     <div className="page couple-detail">
       <div className="crumbs"><Link to="/couple-edit">Couple Edit</Link> / <Link to={`/couple-edit?world=${c.world}`}>{worldName(c.world)}</Link></div>
       <div className="cd">
-        <div className="cd-img"><ImageFrame src={c.imageUrl} alt={`${c.title} — ${c.colourStory}`} label={c.title} detail={`${c.her.desc} / ${c.him.desc}`} ratio="3 / 4.3" eager /></div>
+        <div className="cd-img"><ImageFrame src={c.imageStatus === 'GENERATED' ? `/images/couples/${c.id}.webp` : c.imageUrl} alt={`${c.title} — ${c.colourStory}`} label={c.title} detail={`${c.her.desc} / ${c.him.desc}`} ratio="3 / 4.3" eager /></div>
         <div className="cd-info">
           <div className="kicker">{worldName(c.world)}</div>
           <h1>{c.title}</h1>

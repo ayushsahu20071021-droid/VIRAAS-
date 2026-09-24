@@ -91,7 +91,7 @@ export function CoupleCard({ c, large }: { c: Couple; large?: boolean }) {
   return (
     <article className={`ccard ${large ? 'large' : ''}`} data-couple-id={c.id}>
       <Link to={`/couple-edit/${c.id}`} className="ccard-img">
-        <ImageFrame src={c.imageUrl} alt={`${c.title} — ${c.colourStory}`} label={c.title} detail={c.colourStory} ratio="3 / 4.3" />
+        <ImageFrame src={c.imageStatus === 'GENERATED' ? `/images/couples/${c.id}.webp` : c.imageUrl} alt={`${c.title} — ${c.colourStory}`} label={c.title} detail={c.colourStory} ratio="3 / 4.3" />
         <span className="ccard-world">{worldName(c.world)}</span>
         <SaveButton kind="couple" id={c.id} image={c.imageUrl} compact />
       </Link>
