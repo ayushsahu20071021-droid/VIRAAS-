@@ -562,5 +562,75 @@
     "dimensions": "768x1376",
     "bytes": 149294,
     "sha256": "187cd1b0772fdb43b7a81a436cd5f174276cd42222938b82230a15421d4b0bce"
+  },
+  "couple:festive-party-01": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 204734,
+    "sha256": "c01fadf15eef8e557f2146366ccfd06e91a413174682fa4142972ce813bccf6e"
+  },
+  "couple:festive-party-02": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 97408,
+    "sha256": "b35463e0aafdfdfecec6ffe92179ff4d6083cdf1d031c84763e720fbbf722901"
+  },
+  "couple:festive-party-03": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x502",
+    "bytes": 43250,
+    "sha256": "bd307d2d96925efbf78a91114c945b017eb5b123103a4d4c8508d723ae3df312"
+  },
+  "couple:festive-party-04": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 80650,
+    "sha256": "14c2977598b16872729a5ff03065554ccd515a47edab7a04ee91c53ed67b40e4"
+  },
+  "couple:festive-party-05": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 206338,
+    "sha256": "7a79c72bbf6d79173c80aafbba91445d57ad887e16cbfbbdac197fcb3dc660d6"
+  },
+  "couple:festive-party-06": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 185690,
+    "sha256": "3cf7f7d1193213416f60196e5ebd6a6df63fcacafe4ecf352889c78e5dfeb149"
+  },
+  "couple:festive-party-07": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 285320,
+    "sha256": "58ac46f99f550ed3aebf5d32545fa59b50d6d350f033888cfb614a3a1da8854b"
+  },
+  "couple:festive-party-08": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 268372,
+    "sha256": "72859823498f697adccc174921bf9f2e6a92a9c1abd60424a310a9bbcb49ff65"
+  },
+  "couple:festive-party-09": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 153374,
+    "sha256": "62b6ae168b21af2335cb0685d0d9dbfb32b7f3c00a222124af38b9c3daafc762"
+  },
+  "couple:festive-party-10": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 88300,
+    "sha256": "32f4114d220ac701a70db3b2200b3fc4e17fde30fe6d89318bb572cf85634b0d"
   }
 }
