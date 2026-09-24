@@ -952,70 +952,70 @@
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 17720,
-    "sha256": "b3333c438e67efde48c2d5b6c6750f89b9d24b731c82e9acd123b244162828a0"
+    "bytes": 16056,
+    "sha256": "01d89f31d2e69d715fc645488d983646182ae781a367f195ca9df58e33627a23"
   },
   "product:men-look-005": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 14884,
-    "sha256": "83ea793a288461557b3a7d88effa29c88f731dab61179bb83e7411d2ec60927e"
+    "bytes": 15396,
+    "sha256": "61454112a483d668db486a81c767128f46e50e8108208c749e8402092b08376d"
   },
   "product:men-look-046": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 16554,
-    "sha256": "6366652e82dc3d59758bcc271279f78641f8d7db432723b090af491684f2b469"
+    "bytes": 10316,
+    "sha256": "3e4df734c273c1018b7bf7c4ad644a73cf6f8c8eb102b1b329473792d93b46d9"
   },
   "product:men-look-047": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 9106,
-    "sha256": "85c69df0b81fe44080907e272f92b060252c04935113598573d8d8f79f3b11e6"
+    "bytes": 12292,
+    "sha256": "7ee81a1831c8c4db2a72f9a79f093a8bfb39b48ac065694a016d4f3cea4ee015"
   },
   "product:men-look-088": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 10808,
-    "sha256": "6751bbdef58cd57bd3da3b58003b322f3e885de91a884a0b10c7f0a9f5cc25e2"
+    "bytes": 9614,
+    "sha256": "ed4e0151699e421112ba8e9264558fca8c765161a56cf4f2ab893fe787b7e4d3"
   },
   "product:men-look-089": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 12530,
-    "sha256": "4c8c8eca6f47f438954e6cf8f010bab74e5d00714e37dc574dc211f258c74650"
+    "bytes": 16432,
+    "sha256": "ba0c06282a11cff1b447ff4ae1ad6904090b3101b6de5f0cf7f408e615465d46"
   },
   "product:men-look-130": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 9048,
-    "sha256": "5309989ad0f4575e0d83114c01824e34176374793ddc4342f663390d39c16e3e"
+    "bytes": 12502,
+    "sha256": "93b293f7f944ee08698777c4283f26a11936a0abbdcb18466aa140a6d8b93b6c"
   },
   "product:men-look-131": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 17036,
-    "sha256": "9347eca195dcfd95ce5c6b0fd79aff317a6260e0a4cbc60782f65c8ff5cef599"
+    "bytes": 12086,
+    "sha256": "818fb286300d114d24b8f48c621b39087b4666fed6d779c477af7048a6010d06"
   },
   "product:men-look-172": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 10498,
-    "sha256": "37ac01994e1906c8ebe7783162ba2f3c84ad88b5f7cc7fb29868c6e7642d20c2"
+    "bytes": 9094,
+    "sha256": "e3a3802d754315381468f753990b8e559359bc6309de5c886a1b6e82a8911eeb"
   },
   "product:men-look-173": {
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 13134,
-    "sha256": "31f89763f7000f703e588770eb58f5133ce7a55e766579b0e061ba15b6a25c9b"
+    "bytes": 8960,
+    "sha256": "e070b9c5fd7b6c641a007882c8a8b7bf76fb61918a9e7e48b10dfed0550ed2c6"
   }
 }
