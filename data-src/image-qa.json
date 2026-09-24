@@ -772,5 +772,75 @@
     "dimensions": "768x1376",
     "bytes": 212380,
     "sha256": "df0edf919e15c089c50eaa7c8fb0c9be104d27afa4200163b985dc1be88c8602"
+  },
+  "couple:traditional-11": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 103304,
+    "sha256": "cfb581650fdce2432a7e4470a56334b247a9a20e15b109b21436929e18244ca9"
+  },
+  "couple:traditional-12": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 148990,
+    "sha256": "86727b268044e0fc25b9937d2eb8a50659c9c33ad479832e30972e2acdc5929b"
+  },
+  "couple:traditional-13": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 160944,
+    "sha256": "3696eca68549c621d8d78682ce1f150a5a90954761a953ed09e9f90f2fbbae23"
+  },
+  "couple:traditional-14": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 129164,
+    "sha256": "c47ca4570956bb0c573ab7badbddd88e7e247690455474213ce0ce2fd3651d6b"
+  },
+  "couple:traditional-15": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 176560,
+    "sha256": "4e287a18181b076c7c91bb0f80411f5a14589a6d628d5d2c6bad8528d801555e"
+  },
+  "couple:traditional-16": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 87670,
+    "sha256": "d02e59e480f2109badba990dbce89da55a0209033231904a15925b9597711b55"
+  },
+  "couple:traditional-17": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 68894,
+    "sha256": "03e826ce467f5fb747be4dd1077813bc56478d341038edbba69bce80492db575"
+  },
+  "couple:traditional-18": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 96952,
+    "sha256": "3c4c94954dea216114f0dfd6dce0f8e6cebe7face6cfb3f7928f07d8db7f6ced"
+  },
+  "couple:traditional-19": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 108064,
+    "sha256": "d90aad52fe92e142698b40a2aa38463c6a401b2b29ccdbf05c7afbfbc013a6ed"
+  },
+  "couple:traditional-20": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 111258,
+    "sha256": "1ede0c5b6717126df2a13ee0bd22511404e475bbf5303dbafca1e2772738133d"
   }
 }
