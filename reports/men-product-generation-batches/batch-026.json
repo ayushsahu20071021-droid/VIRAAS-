@@ -1,0 +1,303 @@
+{
+  "batchNumber": 26,
+  "startIndex": 251,
+  "endIndex": 260,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-printed-ethnic-shirt-black-block-print",
+      "title": "Black Block-Print Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "block print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 999,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black printed shirt, black, rayon fabric appearance, block print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-black-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-black-botanical-print",
+      "title": "Black Botanical Printed Festive Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Botanical Print",
+      "embroidery": "botanical print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1199,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black botanical printed festive shirt with botanical print, black, rayon fabric appearance, botanical print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-black-botanical-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-black-charcoal-print-with-ivory-stole",
+      "title": "Black Charcoal Print With Ivory Stole Cotton Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Printed",
+      "embroidery": "charcoal print with ivory stole",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 599,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black and charcoal printed kurta with an ivory and white stole and trousers, black, cotton fabric appearance, charcoal print with ivory stole details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference GARBA-REF-15, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-black-charcoal-print-with-ivory-stole.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-black-floral-print",
+      "title": "Black Floral Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Floral Print",
+      "embroidery": "floral print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1299,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black floral printed ethnic shirt with floral print, black, rayon fabric appearance, floral print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-black-floral-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-black-indigo-block-print",
+      "title": "Black Indigo Block-Print Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "indigo block print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 599,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black indigo block-print shirt with indigo block print, black, cotton fabric appearance, indigo block print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-black-indigo-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-black-paisley-print",
+      "title": "Black Paisley Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Paisley Print",
+      "embroidery": "paisley print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1599,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black paisley printed ethnic shirt with paisley print, black, rayon fabric appearance, paisley print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-black-paisley-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-black-paisley",
+      "title": "Black Paisley Statement Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Paisley Print",
+      "embroidery": "paisley",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 899,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black paisley statement shirt with paisley, black, rayon fabric appearance, paisley details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-black-paisley.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-black-printed-embroidery-detail",
+      "title": "Black Printed Embroidery Detail Cotton Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Printed",
+      "embroidery": "printed embroidery detail",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1699,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's matching dark navy and black ethnic kurta with printed and embroidered detail, black, cotton fabric appearance, printed embroidery detail details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference GARBA-REF-13, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-black-printed-embroidery-detail.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-indigo-block-print",
+      "title": "Indigo Block-Print Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Indigo",
+      "secondaryColours": [],
+      "pattern": "Block Print",
+      "embroidery": "block print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1299,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's indigo block-print ethnic shirt with block print, indigo, rayon fabric appearance, block print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-indigo-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-indigo-paisley-print",
+      "title": "Indigo Paisley Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Indigo",
+      "secondaryColours": [],
+      "pattern": "Paisley Print",
+      "embroidery": "paisley print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1499,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's indigo paisley printed ethnic shirt with paisley print, indigo, rayon fabric appearance, paisley print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-indigo-paisley-print.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

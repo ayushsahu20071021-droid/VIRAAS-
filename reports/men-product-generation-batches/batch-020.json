@@ -1,0 +1,309 @@
+{
+  "batchNumber": 20,
+  "startIndex": 191,
+  "endIndex": 200,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-modern-kurta-ivory-all-over-embroidery",
+      "title": "Ivory All-Over Embroidery Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "all-over embroidery",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1599,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory cream festive kurta with subtle all-over embroidery and a traditional lower garment, ivory, cotton fabric appearance, all-over embroidery details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference GARBA-REF-04, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-ivory-all-over-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-ivory-chikankari",
+      "title": "Ivory Chikankari Cotton Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Chikankari",
+      "embroidery": "chikankari",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 999,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory chikankari cotton kurta with chikankari, ivory, cotton fabric appearance, chikankari details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-ivory-chikankari.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-ivory-embroidered-festive",
+      "title": "Ivory Embroidered Festive Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "embroidered festive",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2099,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory embroidered festive kurta with light blue relaxed denim jeans, ivory, cotton fabric appearance, embroidered festive details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference GARBA-REF-01, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-ivory-embroidered-festive.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-ivory-embroidered-yoke",
+      "title": "Ivory Embroidered-Yoke Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "embroidered yoke",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 999,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory embroidered-yoke kurta with embroidered yoke, ivory, cotton fabric appearance, embroidered yoke details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-ivory-embroidered-yoke.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-ivory-solid",
+      "title": "Ivory Linen-Blend Mandarin Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 899,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory kurta, ivory, linen fabric appearance, solid details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-ivory-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-ivory-pintuck",
+      "title": "Ivory Pintuck Cotton Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Pintuck",
+      "embroidery": "pintuck",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1399,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory pintuck cotton kurta with pintuck, ivory, cotton fabric appearance, pintuck details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-ivory-pintuck.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-ivory-with-multicolour-gujarati-stole",
+      "title": "Ivory With Multicolour Gujarati Stole Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "with multicolour Gujarati stole",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2399,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory and white festive kurta with a multicolour Gujarati style scarf and dupatta, ivory, cotton fabric appearance, with multicolour Gujarati stole details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference GARBA-REF-14, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-ivory-with-multicolour-gujarati-stole.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-maroon-chikankari",
+      "title": "Maroon Chikankari Cotton Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Chikankari",
+      "embroidery": "chikankari",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2399,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon chikankari cotton kurta with chikankari, maroon, cotton fabric appearance, chikankari details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-maroon-chikankari.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-maroon-solid",
+      "title": "Maroon Linen-Blend Mandarin Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1699,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon kurta, maroon, linen fabric appearance, solid details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-maroon-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-maroon-mirror-sequin",
+      "title": "Maroon Mirror-Sequin Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Sequinned",
+      "embroidery": "mirror sequin",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1099,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon mirror-sequin kurta with mirror sequin, maroon, georgette fabric appearance, mirror sequin details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-maroon-mirror-sequin.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}
