@@ -5,7 +5,7 @@
 export const MEN_LOOK_CATALOG = [
   {
     "id": "men-look-001",
-    "referenceId": "REF-M3",
+    "referenceId": "#005",
     "occasion": "garba",
     "outfitDescription": "A beige sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -30,7 +30,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-002",
-    "referenceId": "REF-M2",
+    "referenceId": "#006",
     "occasion": "garba",
     "outfitDescription": "A beige shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -55,7 +55,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-003",
-    "referenceId": "REF-M3",
+    "referenceId": "#011",
     "occasion": "garba",
     "outfitDescription": "A beige small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -80,7 +80,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-004",
-    "referenceId": "REF-M3",
+    "referenceId": "#012",
     "occasion": "garba",
     "outfitDescription": "A black sequin-dot shirt in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -108,7 +108,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-005",
-    "referenceId": "REF-M3",
+    "referenceId": "#013",
     "occasion": "garba",
     "outfitDescription": "A black silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -136,7 +136,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-006",
-    "referenceId": null,
+    "referenceId": "#014",
     "occasion": "garba",
     "outfitDescription": "A black tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -164,7 +164,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-007",
-    "referenceId": "REF-M2",
+    "referenceId": "#015",
     "occasion": "garba",
     "outfitDescription": "A cream shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -189,7 +189,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-008",
-    "referenceId": "REF-M3",
+    "referenceId": "#016",
     "occasion": "garba",
     "outfitDescription": "A cream silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -214,7 +214,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-009",
-    "referenceId": "REF-M3",
+    "referenceId": "#025",
     "occasion": "garba",
     "outfitDescription": "A cream small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -239,7 +239,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-010",
-    "referenceId": null,
+    "referenceId": "#026",
     "occasion": "garba",
     "outfitDescription": "A cream tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -264,7 +264,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-011",
-    "referenceId": "REF-M3",
+    "referenceId": "#040",
     "occasion": "garba",
     "outfitDescription": "A ivory sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -291,7 +291,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-012",
-    "referenceId": "REF-M2",
+    "referenceId": "#051",
     "occasion": "garba",
     "outfitDescription": "A ivory shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -318,7 +318,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-013",
-    "referenceId": "REF-M3",
+    "referenceId": "#056",
     "occasion": "garba",
     "outfitDescription": "A ivory silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -345,7 +345,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-014",
-    "referenceId": "REF-M3",
+    "referenceId": "#065",
     "occasion": "garba",
     "outfitDescription": "A ivory small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -372,7 +372,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-015",
-    "referenceId": "REF-C1 side panel",
+    "referenceId": "#070",
     "occasion": "garba",
     "outfitDescription": "A ivory embroidered shirt in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -399,7 +399,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-016",
-    "referenceId": "REF-M2",
+    "referenceId": "#071",
     "occasion": "garba",
     "outfitDescription": "A maroon shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -426,7 +426,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-017",
-    "referenceId": "REF-M3",
+    "referenceId": "#077",
     "occasion": "garba",
     "outfitDescription": "A maroon silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -453,7 +453,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-018",
-    "referenceId": "REF-M3",
+    "referenceId": "#091",
     "occasion": "garba",
     "outfitDescription": "A maroon small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -480,7 +480,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-019",
-    "referenceId": null,
+    "referenceId": "#120",
     "occasion": "garba",
     "outfitDescription": "A maroon tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -507,7 +507,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-020",
-    "referenceId": "REF-M3",
+    "referenceId": "#122",
     "occasion": "garba",
     "outfitDescription": "A navy sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -534,7 +534,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-021",
-    "referenceId": "REF-M2",
+    "referenceId": "#134",
     "occasion": "garba",
     "outfitDescription": "A navy shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -561,7 +561,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-022",
-    "referenceId": "REF-M3",
+    "referenceId": "#136",
     "occasion": "garba",
     "outfitDescription": "A navy silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -588,7 +588,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-023",
-    "referenceId": null,
+    "referenceId": "#139",
     "occasion": "garba",
     "outfitDescription": "A navy tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -615,7 +615,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-024",
-    "referenceId": "REF-M3",
+    "referenceId": "#140",
     "occasion": "garba",
     "outfitDescription": "A olive sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -640,7 +640,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-025",
-    "referenceId": "REF-M2",
+    "referenceId": "#146",
     "occasion": "garba",
     "outfitDescription": "A olive shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -665,7 +665,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-026",
-    "referenceId": "REF-M3",
+    "referenceId": "#147",
     "occasion": "garba",
     "outfitDescription": "A olive small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -690,7 +690,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-027",
-    "referenceId": null,
+    "referenceId": "#153",
     "occasion": "garba",
     "outfitDescription": "A olive tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -715,7 +715,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-028",
-    "referenceId": "REF-M3",
+    "referenceId": "#154",
     "occasion": "garba",
     "outfitDescription": "A white sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -742,7 +742,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-029",
-    "referenceId": "REF-M3",
+    "referenceId": "#156",
     "occasion": "garba",
     "outfitDescription": "A white silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -769,7 +769,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-030",
-    "referenceId": null,
+    "referenceId": "#164",
     "occasion": "garba",
     "outfitDescription": "A white tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -796,7 +796,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-031",
-    "referenceId": null,
+    "referenceId": "#182",
     "occasion": "garba",
     "outfitDescription": "A beige linen mandarin ethnic shirt with solid mandarin in linen, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -821,7 +821,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-032",
-    "referenceId": null,
+    "referenceId": "#185",
     "occasion": "garba",
     "outfitDescription": "A beige mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -846,7 +846,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-033",
-    "referenceId": "REF-M3",
+    "referenceId": "#190",
     "occasion": "garba",
     "outfitDescription": "A beige motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -871,7 +871,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-034",
-    "referenceId": null,
+    "referenceId": "#191",
     "occasion": "garba",
     "outfitDescription": "A black mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -899,7 +899,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-035",
-    "referenceId": "REF-M3",
+    "referenceId": "#193",
     "occasion": "garba",
     "outfitDescription": "A black motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -927,7 +927,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-036",
-    "referenceId": "LOOK-01",
+    "referenceId": "#195",
     "occasion": "garba",
     "outfitDescription": "A solid black full-sleeve button-up shirt, relaxed fit, white wide trousers, white sneakers, simple wristwatch in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -955,7 +955,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-037",
-    "referenceId": null,
+    "referenceId": "#198",
     "occasion": "garba",
     "outfitDescription": "A cream mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -980,7 +980,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-038",
-    "referenceId": "REF-M3",
+    "referenceId": "#199",
     "occasion": "garba",
     "outfitDescription": "A cream motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -1005,7 +1005,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-039",
-    "referenceId": null,
+    "referenceId": "#203",
     "occasion": "garba",
     "outfitDescription": "A cream relaxed cotton ethnic shirt with solid in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -1030,7 +1030,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-040",
-    "referenceId": null,
+    "referenceId": "#205",
     "occasion": "garba",
     "outfitDescription": "A ivory linen mandarin ethnic shirt with solid mandarin in linen, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -1057,7 +1057,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-041",
-    "referenceId": null,
+    "referenceId": "#208",
     "occasion": "garba",
     "outfitDescription": "A ivory mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -1084,7 +1084,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-042",
-    "referenceId": null,
+    "referenceId": "#209",
     "occasion": "garba",
     "outfitDescription": "A ivory relaxed cotton ethnic shirt with solid in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -1111,7 +1111,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-043",
-    "referenceId": "REF-M3",
+    "referenceId": "#028",
     "occasion": "college-fest",
     "outfitDescription": "A beige sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1136,7 +1136,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-044",
-    "referenceId": "REF-M2",
+    "referenceId": "#030",
     "occasion": "college-fest",
     "outfitDescription": "A beige shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1161,7 +1161,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-045",
-    "referenceId": "REF-M3",
+    "referenceId": "#031",
     "occasion": "college-fest",
     "outfitDescription": "A beige small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1186,7 +1186,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-046",
-    "referenceId": "REF-M3",
+    "referenceId": "#032",
     "occasion": "college-fest",
     "outfitDescription": "A black sequin-dot shirt in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1214,7 +1214,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-047",
-    "referenceId": "REF-M3",
+    "referenceId": "#034",
     "occasion": "college-fest",
     "outfitDescription": "A black silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1242,7 +1242,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-048",
-    "referenceId": null,
+    "referenceId": "#035",
     "occasion": "college-fest",
     "outfitDescription": "A black tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1270,7 +1270,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-049",
-    "referenceId": "REF-M2",
+    "referenceId": "#043",
     "occasion": "college-fest",
     "outfitDescription": "A cream shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1295,7 +1295,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-050",
-    "referenceId": "REF-M3",
+    "referenceId": "#044",
     "occasion": "college-fest",
     "outfitDescription": "A cream silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1320,7 +1320,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-051",
-    "referenceId": "REF-M3",
+    "referenceId": "#046",
     "occasion": "college-fest",
     "outfitDescription": "A cream small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1345,7 +1345,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-052",
-    "referenceId": null,
+    "referenceId": "#048",
     "occasion": "college-fest",
     "outfitDescription": "A cream tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1370,7 +1370,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-053",
-    "referenceId": "REF-M3",
+    "referenceId": "#049",
     "occasion": "college-fest",
     "outfitDescription": "A ivory sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1397,7 +1397,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-054",
-    "referenceId": "REF-M2",
+    "referenceId": "#054",
     "occasion": "college-fest",
     "outfitDescription": "A ivory shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1424,7 +1424,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-055",
-    "referenceId": "REF-M3",
+    "referenceId": "#059",
     "occasion": "college-fest",
     "outfitDescription": "A ivory silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1451,7 +1451,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-056",
-    "referenceId": "REF-M3",
+    "referenceId": "#061",
     "occasion": "college-fest",
     "outfitDescription": "A ivory small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1478,7 +1478,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-057",
-    "referenceId": "REF-C1 side panel",
+    "referenceId": "#064",
     "occasion": "college-fest",
     "outfitDescription": "A ivory embroidered shirt in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1505,7 +1505,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-058",
-    "referenceId": "REF-M2",
+    "referenceId": "#068",
     "occasion": "college-fest",
     "outfitDescription": "A maroon shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1532,7 +1532,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-059",
-    "referenceId": "REF-M3",
+    "referenceId": "#075",
     "occasion": "college-fest",
     "outfitDescription": "A maroon silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1559,7 +1559,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-060",
-    "referenceId": "REF-M3",
+    "referenceId": "#083",
     "occasion": "college-fest",
     "outfitDescription": "A maroon small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1586,7 +1586,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-061",
-    "referenceId": null,
+    "referenceId": "#084",
     "occasion": "college-fest",
     "outfitDescription": "A maroon tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1613,7 +1613,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-062",
-    "referenceId": "REF-M3",
+    "referenceId": "#085",
     "occasion": "college-fest",
     "outfitDescription": "A navy sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1640,7 +1640,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-063",
-    "referenceId": "REF-M2",
+    "referenceId": "#087",
     "occasion": "college-fest",
     "outfitDescription": "A navy shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1667,7 +1667,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-064",
-    "referenceId": "REF-M3",
+    "referenceId": "#089",
     "occasion": "college-fest",
     "outfitDescription": "A navy silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1694,7 +1694,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-065",
-    "referenceId": null,
+    "referenceId": "#094",
     "occasion": "college-fest",
     "outfitDescription": "A navy tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1721,7 +1721,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-066",
-    "referenceId": "REF-M3",
+    "referenceId": "#098",
     "occasion": "college-fest",
     "outfitDescription": "A olive sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1746,7 +1746,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-067",
-    "referenceId": "REF-M2",
+    "referenceId": "#106",
     "occasion": "college-fest",
     "outfitDescription": "A olive shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1771,7 +1771,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-068",
-    "referenceId": "REF-M3",
+    "referenceId": "#108",
     "occasion": "college-fest",
     "outfitDescription": "A olive small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1796,7 +1796,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-069",
-    "referenceId": null,
+    "referenceId": "#110",
     "occasion": "college-fest",
     "outfitDescription": "A olive tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1821,7 +1821,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-070",
-    "referenceId": "REF-M3",
+    "referenceId": "#112",
     "occasion": "college-fest",
     "outfitDescription": "A white sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1848,7 +1848,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-071",
-    "referenceId": "REF-M3",
+    "referenceId": "#114",
     "occasion": "college-fest",
     "outfitDescription": "A white silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1875,7 +1875,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-072",
-    "referenceId": null,
+    "referenceId": "#119",
     "occasion": "college-fest",
     "outfitDescription": "A white tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -1902,7 +1902,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-073",
-    "referenceId": null,
+    "referenceId": "#127",
     "occasion": "college-fest",
     "outfitDescription": "A beige linen mandarin ethnic shirt with solid mandarin in linen, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -1927,7 +1927,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-074",
-    "referenceId": null,
+    "referenceId": "#129",
     "occasion": "college-fest",
     "outfitDescription": "A beige mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -1952,7 +1952,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-075",
-    "referenceId": "REF-M3",
+    "referenceId": "#142",
     "occasion": "college-fest",
     "outfitDescription": "A beige motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -1977,7 +1977,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-076",
-    "referenceId": null,
+    "referenceId": "#143",
     "occasion": "college-fest",
     "outfitDescription": "A black mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -2005,7 +2005,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-077",
-    "referenceId": "REF-M3",
+    "referenceId": "#144",
     "occasion": "college-fest",
     "outfitDescription": "A black motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -2033,7 +2033,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-078",
-    "referenceId": "LOOK-01",
+    "referenceId": "#148",
     "occasion": "college-fest",
     "outfitDescription": "A solid black full-sleeve button-up shirt, relaxed fit, white wide trousers, white sneakers, simple wristwatch in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -2061,7 +2061,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-079",
-    "referenceId": null,
+    "referenceId": "#157",
     "occasion": "college-fest",
     "outfitDescription": "A cream mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -2086,7 +2086,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-080",
-    "referenceId": "REF-M3",
+    "referenceId": "#158",
     "occasion": "college-fest",
     "outfitDescription": "A cream motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -2111,7 +2111,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-081",
-    "referenceId": null,
+    "referenceId": "#163",
     "occasion": "college-fest",
     "outfitDescription": "A cream relaxed cotton ethnic shirt with solid in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -2136,7 +2136,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-082",
-    "referenceId": null,
+    "referenceId": "#173",
     "occasion": "college-fest",
     "outfitDescription": "A ivory linen mandarin ethnic shirt with solid mandarin in linen, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -2163,7 +2163,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-083",
-    "referenceId": null,
+    "referenceId": "#207",
     "occasion": "college-fest",
     "outfitDescription": "A ivory mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -2190,7 +2190,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-084",
-    "referenceId": null,
+    "referenceId": "#210",
     "occasion": "college-fest",
     "outfitDescription": "A ivory relaxed cotton ethnic shirt with solid in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -2217,7 +2217,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-085",
-    "referenceId": "REF-M3",
+    "referenceId": "#001",
     "occasion": "diwali",
     "outfitDescription": "A beige sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2242,7 +2242,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-086",
-    "referenceId": "REF-M2",
+    "referenceId": "#002",
     "occasion": "diwali",
     "outfitDescription": "A beige shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2267,7 +2267,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-087",
-    "referenceId": "REF-M3",
+    "referenceId": "#003",
     "occasion": "diwali",
     "outfitDescription": "A beige small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2292,7 +2292,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-088",
-    "referenceId": "REF-M3",
+    "referenceId": "#004",
     "occasion": "diwali",
     "outfitDescription": "A black sequin-dot shirt in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2320,7 +2320,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-089",
-    "referenceId": "REF-M3",
+    "referenceId": "#009",
     "occasion": "diwali",
     "outfitDescription": "A black silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2348,7 +2348,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-090",
-    "referenceId": null,
+    "referenceId": "#010",
     "occasion": "diwali",
     "outfitDescription": "A black tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2376,7 +2376,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-091",
-    "referenceId": "REF-M2",
+    "referenceId": "#017",
     "occasion": "diwali",
     "outfitDescription": "A cream shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2401,7 +2401,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-092",
-    "referenceId": "REF-M3",
+    "referenceId": "#018",
     "occasion": "diwali",
     "outfitDescription": "A cream silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2426,7 +2426,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-093",
-    "referenceId": "REF-M3",
+    "referenceId": "#019",
     "occasion": "diwali",
     "outfitDescription": "A cream small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2451,7 +2451,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-094",
-    "referenceId": null,
+    "referenceId": "#020",
     "occasion": "diwali",
     "outfitDescription": "A cream tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2476,7 +2476,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-095",
-    "referenceId": "REF-M3",
+    "referenceId": "#021",
     "occasion": "diwali",
     "outfitDescription": "A ivory sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2503,7 +2503,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-096",
-    "referenceId": "REF-M2",
+    "referenceId": "#022",
     "occasion": "diwali",
     "outfitDescription": "A ivory shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2530,7 +2530,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-097",
-    "referenceId": "REF-M3",
+    "referenceId": "#023",
     "occasion": "diwali",
     "outfitDescription": "A ivory silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2557,7 +2557,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-098",
-    "referenceId": "REF-M3",
+    "referenceId": "#024",
     "occasion": "diwali",
     "outfitDescription": "A ivory small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2584,7 +2584,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-099",
-    "referenceId": "REF-C1 side panel",
+    "referenceId": "#029",
     "occasion": "diwali",
     "outfitDescription": "A ivory embroidered shirt in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2611,7 +2611,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-100",
-    "referenceId": "REF-M2",
+    "referenceId": "#033",
     "occasion": "diwali",
     "outfitDescription": "A maroon shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2638,7 +2638,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-101",
-    "referenceId": "REF-M3",
+    "referenceId": "#036",
     "occasion": "diwali",
     "outfitDescription": "A maroon silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2665,7 +2665,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-102",
-    "referenceId": "REF-M3",
+    "referenceId": "#037",
     "occasion": "diwali",
     "outfitDescription": "A maroon small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2692,7 +2692,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-103",
-    "referenceId": null,
+    "referenceId": "#039",
     "occasion": "diwali",
     "outfitDescription": "A maroon tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2719,7 +2719,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-104",
-    "referenceId": "REF-M3",
+    "referenceId": "#045",
     "occasion": "diwali",
     "outfitDescription": "A navy sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2746,7 +2746,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-105",
-    "referenceId": "REF-M2",
+    "referenceId": "#047",
     "occasion": "diwali",
     "outfitDescription": "A navy shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2773,7 +2773,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-106",
-    "referenceId": "REF-M3",
+    "referenceId": "#050",
     "occasion": "diwali",
     "outfitDescription": "A navy silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2800,7 +2800,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-107",
-    "referenceId": null,
+    "referenceId": "#052",
     "occasion": "diwali",
     "outfitDescription": "A navy tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2827,7 +2827,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-108",
-    "referenceId": "REF-M3",
+    "referenceId": "#057",
     "occasion": "diwali",
     "outfitDescription": "A olive sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2852,7 +2852,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-109",
-    "referenceId": "REF-M2",
+    "referenceId": "#062",
     "occasion": "diwali",
     "outfitDescription": "A olive shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2877,7 +2877,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-110",
-    "referenceId": "REF-M3",
+    "referenceId": "#063",
     "occasion": "diwali",
     "outfitDescription": "A olive small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2902,7 +2902,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-111",
-    "referenceId": null,
+    "referenceId": "#067",
     "occasion": "diwali",
     "outfitDescription": "A olive tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2927,7 +2927,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-112",
-    "referenceId": "REF-M3",
+    "referenceId": "#074",
     "occasion": "diwali",
     "outfitDescription": "A white sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2954,7 +2954,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-113",
-    "referenceId": "REF-M3",
+    "referenceId": "#090",
     "occasion": "diwali",
     "outfitDescription": "A white silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -2981,7 +2981,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-114",
-    "referenceId": null,
+    "referenceId": "#095",
     "occasion": "diwali",
     "outfitDescription": "A white tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3008,7 +3008,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-115",
-    "referenceId": null,
+    "referenceId": "#096",
     "occasion": "diwali",
     "outfitDescription": "A beige linen mandarin ethnic shirt with solid mandarin in linen, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3033,7 +3033,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-116",
-    "referenceId": null,
+    "referenceId": "#099",
     "occasion": "diwali",
     "outfitDescription": "A beige mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3058,7 +3058,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-117",
-    "referenceId": "REF-M3",
+    "referenceId": "#103",
     "occasion": "diwali",
     "outfitDescription": "A beige motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3083,7 +3083,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-118",
-    "referenceId": null,
+    "referenceId": "#105",
     "occasion": "diwali",
     "outfitDescription": "A black mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3111,7 +3111,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-119",
-    "referenceId": "REF-M3",
+    "referenceId": "#109",
     "occasion": "diwali",
     "outfitDescription": "A black motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3139,7 +3139,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-120",
-    "referenceId": "LOOK-01",
+    "referenceId": "#116",
     "occasion": "diwali",
     "outfitDescription": "A solid black full-sleeve button-up shirt, relaxed fit, white wide trousers, white sneakers, simple wristwatch in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3167,7 +3167,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-121",
-    "referenceId": null,
+    "referenceId": "#117",
     "occasion": "diwali",
     "outfitDescription": "A cream mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3192,7 +3192,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-122",
-    "referenceId": "REF-M3",
+    "referenceId": "#124",
     "occasion": "diwali",
     "outfitDescription": "A cream motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3217,7 +3217,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-123",
-    "referenceId": null,
+    "referenceId": "#125",
     "occasion": "diwali",
     "outfitDescription": "A cream relaxed cotton ethnic shirt with solid in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3242,7 +3242,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-124",
-    "referenceId": null,
+    "referenceId": "#128",
     "occasion": "diwali",
     "outfitDescription": "A ivory linen mandarin ethnic shirt with solid mandarin in linen, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3269,7 +3269,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-125",
-    "referenceId": null,
+    "referenceId": "#137",
     "occasion": "diwali",
     "outfitDescription": "A ivory mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3296,7 +3296,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-126",
-    "referenceId": null,
+    "referenceId": "#149",
     "occasion": "diwali",
     "outfitDescription": "A ivory relaxed cotton ethnic shirt with solid in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -3323,7 +3323,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-127",
-    "referenceId": "REF-M3",
+    "referenceId": "#007",
     "occasion": "festive-party",
     "outfitDescription": "A beige sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3348,7 +3348,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-128",
-    "referenceId": "REF-M2",
+    "referenceId": "#008",
     "occasion": "festive-party",
     "outfitDescription": "A beige shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3373,7 +3373,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-129",
-    "referenceId": "REF-M3",
+    "referenceId": "#027",
     "occasion": "festive-party",
     "outfitDescription": "A beige small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3398,7 +3398,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-130",
-    "referenceId": "REF-M3",
+    "referenceId": "#038",
     "occasion": "festive-party",
     "outfitDescription": "A black sequin-dot shirt in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3426,7 +3426,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-131",
-    "referenceId": "REF-M3",
+    "referenceId": "#042",
     "occasion": "festive-party",
     "outfitDescription": "A black silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3454,7 +3454,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-132",
-    "referenceId": null,
+    "referenceId": "#055",
     "occasion": "festive-party",
     "outfitDescription": "A black tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3482,7 +3482,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-133",
-    "referenceId": "REF-M2",
+    "referenceId": "#069",
     "occasion": "festive-party",
     "outfitDescription": "A cream shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3507,7 +3507,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-134",
-    "referenceId": "REF-M3",
+    "referenceId": "#072",
     "occasion": "festive-party",
     "outfitDescription": "A cream silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3532,7 +3532,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-135",
-    "referenceId": "REF-M3",
+    "referenceId": "#073",
     "occasion": "festive-party",
     "outfitDescription": "A cream small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3557,7 +3557,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-136",
-    "referenceId": null,
+    "referenceId": "#076",
     "occasion": "festive-party",
     "outfitDescription": "A cream tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3582,7 +3582,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-137",
-    "referenceId": "REF-M3",
+    "referenceId": "#082",
     "occasion": "festive-party",
     "outfitDescription": "A ivory sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3609,7 +3609,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-138",
-    "referenceId": "REF-M2",
+    "referenceId": "#092",
     "occasion": "festive-party",
     "outfitDescription": "A ivory shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3636,7 +3636,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-139",
-    "referenceId": "REF-M3",
+    "referenceId": "#093",
     "occasion": "festive-party",
     "outfitDescription": "A ivory silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3663,7 +3663,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-140",
-    "referenceId": "REF-M3",
+    "referenceId": "#097",
     "occasion": "festive-party",
     "outfitDescription": "A ivory small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3690,7 +3690,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-141",
-    "referenceId": "REF-C1 side panel",
+    "referenceId": "#101",
     "occasion": "festive-party",
     "outfitDescription": "A ivory embroidered shirt in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3717,7 +3717,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-142",
-    "referenceId": "REF-M2",
+    "referenceId": "#102",
     "occasion": "festive-party",
     "outfitDescription": "A maroon shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3744,7 +3744,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-143",
-    "referenceId": "REF-M3",
+    "referenceId": "#107",
     "occasion": "festive-party",
     "outfitDescription": "A maroon silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3771,7 +3771,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-144",
-    "referenceId": "REF-M3",
+    "referenceId": "#115",
     "occasion": "festive-party",
     "outfitDescription": "A maroon small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3798,7 +3798,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-145",
-    "referenceId": null,
+    "referenceId": "#121",
     "occasion": "festive-party",
     "outfitDescription": "A maroon tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3825,7 +3825,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-146",
-    "referenceId": "REF-M3",
+    "referenceId": "#123",
     "occasion": "festive-party",
     "outfitDescription": "A navy sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3852,7 +3852,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-147",
-    "referenceId": "REF-M2",
+    "referenceId": "#132",
     "occasion": "festive-party",
     "outfitDescription": "A navy shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3879,7 +3879,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-148",
-    "referenceId": "REF-M3",
+    "referenceId": "#133",
     "occasion": "festive-party",
     "outfitDescription": "A navy silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3906,7 +3906,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-149",
-    "referenceId": null,
+    "referenceId": "#135",
     "occasion": "festive-party",
     "outfitDescription": "A navy tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3933,7 +3933,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-150",
-    "referenceId": "REF-M3",
+    "referenceId": "#138",
     "occasion": "festive-party",
     "outfitDescription": "A olive sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3958,7 +3958,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-151",
-    "referenceId": "REF-M2",
+    "referenceId": "#141",
     "occasion": "festive-party",
     "outfitDescription": "A olive shirt with embroidered hem with rust hem embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -3983,7 +3983,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-152",
-    "referenceId": "REF-M3",
+    "referenceId": "#145",
     "occasion": "festive-party",
     "outfitDescription": "A olive small-motif embroidered shirt with heart motif embroidery in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -4008,7 +4008,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-153",
-    "referenceId": null,
+    "referenceId": "#151",
     "occasion": "festive-party",
     "outfitDescription": "A olive tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -4033,7 +4033,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-154",
-    "referenceId": "REF-M3",
+    "referenceId": "#155",
     "occasion": "festive-party",
     "outfitDescription": "A white sequin-dot festive shirt with sequin dots in cotton, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -4060,7 +4060,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-155",
-    "referenceId": "REF-M3",
+    "referenceId": "#159",
     "occasion": "festive-party",
     "outfitDescription": "A white silk-blend shirt with tonal floral embroidery with tonal floral in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -4087,7 +4087,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-156",
-    "referenceId": null,
+    "referenceId": "#166",
     "occasion": "festive-party",
     "outfitDescription": "A white tonal-embroidered festive shirt with tonal in silk blend, cut as a relaxed embroidered shirt. Picked for Garba, Diwali, Festive Party, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Embroidered Ethnic Shirt",
@@ -4114,7 +4114,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-157",
-    "referenceId": null,
+    "referenceId": "#167",
     "occasion": "festive-party",
     "outfitDescription": "A beige linen mandarin ethnic shirt with solid mandarin in linen, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4139,7 +4139,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-158",
-    "referenceId": null,
+    "referenceId": "#178",
     "occasion": "festive-party",
     "outfitDescription": "A beige mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4164,7 +4164,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-159",
-    "referenceId": "REF-M3",
+    "referenceId": "#180",
     "occasion": "festive-party",
     "outfitDescription": "A beige motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4189,7 +4189,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-160",
-    "referenceId": null,
+    "referenceId": "#184",
     "occasion": "festive-party",
     "outfitDescription": "A black mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4217,7 +4217,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-161",
-    "referenceId": "REF-M3",
+    "referenceId": "#186",
     "occasion": "festive-party",
     "outfitDescription": "A black motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4245,7 +4245,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-162",
-    "referenceId": "LOOK-01",
+    "referenceId": "#187",
     "occasion": "festive-party",
     "outfitDescription": "A solid black full-sleeve button-up shirt, relaxed fit, white wide trousers, white sneakers, simple wristwatch in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4273,7 +4273,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-163",
-    "referenceId": null,
+    "referenceId": "#189",
     "occasion": "festive-party",
     "outfitDescription": "A cream mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4298,7 +4298,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-164",
-    "referenceId": "REF-M3",
+    "referenceId": "#194",
     "occasion": "festive-party",
     "outfitDescription": "A cream motif-embroidered short kurta-shirt with small embroidered motifs in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4323,7 +4323,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-165",
-    "referenceId": null,
+    "referenceId": "#196",
     "occasion": "festive-party",
     "outfitDescription": "A cream relaxed cotton ethnic shirt with solid in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4348,7 +4348,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-166",
-    "referenceId": null,
+    "referenceId": "#197",
     "occasion": "festive-party",
     "outfitDescription": "A ivory linen mandarin ethnic shirt with solid mandarin in linen, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4375,7 +4375,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-167",
-    "referenceId": null,
+    "referenceId": "#202",
     "occasion": "festive-party",
     "outfitDescription": "A ivory mandarin ethnic shirt with tonal embroidery with tonal embroidery in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4402,7 +4402,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-168",
-    "referenceId": null,
+    "referenceId": "#206",
     "occasion": "festive-party",
     "outfitDescription": "A ivory relaxed cotton ethnic shirt with solid in cotton, cut as a relaxed mandarin shirt. Picked for Garba, College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Ethnic Shirt",
@@ -4429,7 +4429,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-169",
-    "referenceId": "REF-M1",
+    "referenceId": "#041",
     "occasion": "traditional",
     "outfitDescription": "A beige nehru jacket with solid nehru in cotton silk, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4454,7 +4454,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-170",
-    "referenceId": "REF-M2",
+    "referenceId": "#053",
     "occasion": "traditional",
     "outfitDescription": "A beige subtle-embroidery festive jacket with subtle embroidery in silk blend, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4479,7 +4479,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-171",
-    "referenceId": null,
+    "referenceId": "#058",
     "occasion": "traditional",
     "outfitDescription": "A beige velvet festive jacket with solid in velvet, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4504,7 +4504,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-172",
-    "referenceId": "LOOK-04",
+    "referenceId": "#060",
     "occasion": "traditional",
     "outfitDescription": "A solid black shirt and black trousers with black shoes worn under a black and burgundy floral patterned tailored blazer with a dense muted paisley pattern in cotton blend, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4532,7 +4532,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-173",
-    "referenceId": "REF-M1",
+    "referenceId": "#066",
     "occasion": "traditional",
     "outfitDescription": "A black nehru jacket with solid nehru in cotton silk, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4560,7 +4560,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-174",
-    "referenceId": "REF-M2",
+    "referenceId": "#078",
     "occasion": "traditional",
     "outfitDescription": "A black subtle-embroidery festive jacket with subtle embroidery in silk blend, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4588,7 +4588,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-175",
-    "referenceId": "REF-C2",
+    "referenceId": "#079",
     "occasion": "traditional",
     "outfitDescription": "A black velvet jacket in velvet, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4616,7 +4616,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-176",
-    "referenceId": "REF-M1",
+    "referenceId": "#080",
     "occasion": "traditional",
     "outfitDescription": "A cream brocade open jacket with brocade in brocade, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4641,7 +4641,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-177",
-    "referenceId": "REF-M1",
+    "referenceId": "#081",
     "occasion": "traditional",
     "outfitDescription": "A cream nehru jacket with solid nehru in cotton silk, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4666,7 +4666,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-178",
-    "referenceId": null,
+    "referenceId": "#086",
     "occasion": "traditional",
     "outfitDescription": "A cream velvet festive jacket with solid in velvet, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4691,7 +4691,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-179",
-    "referenceId": "REF-M1",
+    "referenceId": "#088",
     "occasion": "traditional",
     "outfitDescription": "A ivory brocade open jacket with brocade in brocade, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4718,7 +4718,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-180",
-    "referenceId": "REF-M1",
+    "referenceId": "#100",
     "occasion": "traditional",
     "outfitDescription": "A ivory nehru jacket with solid nehru in cotton silk, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4745,7 +4745,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-181",
-    "referenceId": "REF-M2",
+    "referenceId": "#104",
     "occasion": "traditional",
     "outfitDescription": "A ivory jacket in silk blend, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4772,7 +4772,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-182",
-    "referenceId": null,
+    "referenceId": "#111",
     "occasion": "traditional",
     "outfitDescription": "A ivory velvet festive jacket with solid in velvet, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4799,7 +4799,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-183",
-    "referenceId": "REF-M1",
+    "referenceId": "#113",
     "occasion": "traditional",
     "outfitDescription": "A maroon brocade open jacket with brocade in brocade, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4826,7 +4826,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-184",
-    "referenceId": "REF-M1",
+    "referenceId": "#118",
     "occasion": "traditional",
     "outfitDescription": "A maroon nehru jacket with solid nehru in cotton silk, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4853,7 +4853,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-185",
-    "referenceId": null,
+    "referenceId": "#126",
     "occasion": "traditional",
     "outfitDescription": "A maroon velvet festive jacket with solid in velvet, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4880,7 +4880,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-186",
-    "referenceId": "REF-M1",
+    "referenceId": "#130",
     "occasion": "traditional",
     "outfitDescription": "A navy nehru jacket with solid nehru in cotton silk, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4907,7 +4907,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-187",
-    "referenceId": "REF-M2",
+    "referenceId": "#131",
     "occasion": "traditional",
     "outfitDescription": "A navy subtle-embroidery festive jacket with subtle embroidery in silk blend, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4934,7 +4934,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-188",
-    "referenceId": "REF-S1 panel 4",
+    "referenceId": "#150",
     "occasion": "traditional",
     "outfitDescription": "A navy jacket in velvet, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4961,7 +4961,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-189",
-    "referenceId": "REF-M1",
+    "referenceId": "#152",
     "occasion": "traditional",
     "outfitDescription": "A olive brocade open jacket with brocade in brocade, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -4986,7 +4986,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-190",
-    "referenceId": "REF-M2",
+    "referenceId": "#160",
     "occasion": "traditional",
     "outfitDescription": "A olive subtle-embroidery festive jacket with subtle embroidery in silk blend, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -5011,7 +5011,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-191",
-    "referenceId": "REF-M1",
+    "referenceId": "#161",
     "occasion": "traditional",
     "outfitDescription": "A red brocade jacket over black in brocade, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -5039,7 +5039,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-192",
-    "referenceId": "REF-M2",
+    "referenceId": "#162",
     "occasion": "traditional",
     "outfitDescription": "A red subtle-embroidery festive jacket with subtle embroidery in silk blend, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -5067,7 +5067,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-193",
-    "referenceId": "REF-M1",
+    "referenceId": "#165",
     "occasion": "traditional",
     "outfitDescription": "A wine brocade open jacket with brocade in brocade, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -5094,7 +5094,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-194",
-    "referenceId": "REF-M2",
+    "referenceId": "#168",
     "occasion": "traditional",
     "outfitDescription": "A wine subtle-embroidery festive jacket with subtle embroidery in silk blend, cut as a nehru / open jacket. Picked for Diwali, Festive Party, Traditional, College Fest — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Jacket",
@@ -5121,7 +5121,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-195",
-    "referenceId": "REF-C2 side panel",
+    "referenceId": "#169",
     "occasion": "traditional",
     "outfitDescription": "A beige kurta set in cotton, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5146,7 +5146,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-196",
-    "referenceId": "REF-M3",
+    "referenceId": "#170",
     "occasion": "traditional",
     "outfitDescription": "A beige embroidered kurta with white pyjama with embroidered kurta with white pyjama in silk blend, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5171,7 +5171,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-197",
-    "referenceId": "REF-M2",
+    "referenceId": "#171",
     "occasion": "traditional",
     "outfitDescription": "A beige kurta set with 3d floral embroidery with 3D floral embroidery in cotton silk, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5196,7 +5196,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-198",
-    "referenceId": null,
+    "referenceId": "#172",
     "occasion": "traditional",
     "outfitDescription": "A beige self-stripe kurta pyjama set with self stripe in cotton, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5221,7 +5221,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-199",
-    "referenceId": null,
+    "referenceId": "#174",
     "occasion": "traditional",
     "outfitDescription": "A beige tonal-embroidered kurta set with tonal embroidery in cotton silk, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5246,7 +5246,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-200",
-    "referenceId": "REF-S1 panel 2",
+    "referenceId": "#175",
     "occasion": "traditional",
     "outfitDescription": "A black kurta set in cotton, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5274,7 +5274,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-201",
-    "referenceId": "REF-M3",
+    "referenceId": "#176",
     "occasion": "traditional",
     "outfitDescription": "A black embroidered kurta with white pyjama with embroidered kurta with white pyjama in silk blend, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5302,7 +5302,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-202",
-    "referenceId": "REF-M2",
+    "referenceId": "#177",
     "occasion": "traditional",
     "outfitDescription": "A black kurta set with 3d floral embroidery with 3D floral embroidery in cotton silk, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5330,7 +5330,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-203",
-    "referenceId": null,
+    "referenceId": "#179",
     "occasion": "traditional",
     "outfitDescription": "A black self-stripe kurta pyjama set with self stripe in cotton, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5358,7 +5358,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-204",
-    "referenceId": "REF-C1 side panel",
+    "referenceId": "#181",
     "occasion": "traditional",
     "outfitDescription": "A cream kurta set in cotton, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5383,7 +5383,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-205",
-    "referenceId": "REF-M3",
+    "referenceId": "#183",
     "occasion": "traditional",
     "outfitDescription": "A cream embroidered kurta with white pyjama with embroidered kurta with white pyjama in silk blend, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5408,7 +5408,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-206",
-    "referenceId": "REF-M2",
+    "referenceId": "#188",
     "occasion": "traditional",
     "outfitDescription": "A cream kurta set with 3d floral embroidery with 3D floral embroidery in cotton silk, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5433,7 +5433,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-207",
-    "referenceId": null,
+    "referenceId": "#192",
     "occasion": "traditional",
     "outfitDescription": "A cream self-stripe kurta pyjama set with self stripe in cotton, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5458,7 +5458,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-208",
-    "referenceId": null,
+    "referenceId": "#200",
     "occasion": "traditional",
     "outfitDescription": "A cream tonal-embroidered kurta set with tonal embroidery in cotton silk, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5483,7 +5483,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-209",
-    "referenceId": "REF-S2 panel 16",
+    "referenceId": "#201",
     "occasion": "traditional",
     "outfitDescription": "A ivory kurta set in cotton, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
@@ -5510,7 +5510,7 @@ export const MEN_LOOK_CATALOG = [
   },
   {
     "id": "men-look-210",
-    "referenceId": "REF-M2",
+    "referenceId": "#204",
     "occasion": "traditional",
     "outfitDescription": "A ivory kurta set with 3d floral embroidery with 3D floral embroidery in cotton silk, cut as a kurta with pyjama / trouser. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
     "garmentType": "Festive Kurta Set",
