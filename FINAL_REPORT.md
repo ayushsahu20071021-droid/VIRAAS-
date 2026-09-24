@@ -1,6 +1,6 @@
 # VIRAAS — Final Report (honest status)
 
-**Status: INCOMPLETE.** The platform, catalog and every technical gate pass. The image generation queue is still open, so this build must not be declared complete.
+**Status: INCOMPLETE.** The platform, catalog and every technical gate pass. The image generation queue is still open, so this build must not be declared complete. Diwali 01–20 are now generated, but remain pending human visual QA.
 
 | Item | Value |
 |---|---|
@@ -34,7 +34,7 @@ Garba 01–20 all read as real young adults (about 18–25). None are mannequins
 01 fitting-room mirror selfie (REF-C1) · 02 true overhead black brocade (REF-C2) · 03 ivory mirror-work lehenga on diya steps (REF-C3) · 04 red backless-choli face-cup · 05 pink bandhani hand-hold crop · 06 red/ivory shoulder-line crop · 07 patchwork walk into the canopy · 08 black patola dandiya · 09 dupatta adjust · 10 red flare twirl · 11 cheek-to-cheek selfie (royal blue + red bandhani) · 12 mat-side laughs (mustard/olive) · 13 stage-glow embrace (black sequin kurta) · 14 steel-lift mirror selfie (emerald gamthi) · 15 black-on-black bench whisper · 16 two-hand spin (wine lehenga) · 17 entrance-arch side hug (navy bandhani) · 18 ivory twirl with partner watching · 19 walking hand-hold (maroon mirror) · 20 forehead touch with dandiya (hot pink). Minor deviations noted honestly in the QA file: 14 (hands on shoulders instead of chin-on-head), 16 (one hand-pair visible). The per-image notes are in `data-src/image-qa.json`.
 
 ## Honest limitations
-- The per-turn image limit (10) was reached. The queue in `public/image-queue-ordered.json` resumes at **Diwali 01–20**, then Festive Party, then Traditional, then the 861 product images, then college-fest-02…20, diwali, festive-party, traditional, and then products (priorities 6–11).
+- The per-turn image limit (10) was reached. The queue in `public/image-queue-ordered.json` resumes at **Festive Party**, then Traditional, then Traditional, then the 861 product images, then college-fest-02…20, diwali, festive-party, traditional, and then products (priorities 6–11).
 - Prices are research-guided **estimates** for each style (`priceType: "estimate"`), not live listings. `merchantUrl` is a marketplace **search** URL, not a product listing. `mrp` and `discount` are null because they are not fabricated.
 - Couples in College Fest, Diwali, Festive Party and Traditional are specified by outfit and pose from the sheet panels. Those sheet panels are low-resolution, so their detail is less exact than the three individual screenshots.
 - The headless browser can't reach Google Fonts, so audit screenshots use a fallback serif font.
