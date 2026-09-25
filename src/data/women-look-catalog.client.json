@@ -5617,20 +5617,18 @@
     "id": "women-look-221",
     "referenceId": "#221",
     "occasion": "traditional",
-    "outfitDescription": "A ivory lehenga with kutch balloon-sleeve blouse with kutch balloon-sleeve blouse in cotton silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "An ivory anarkali with a floral-embroidered hem and a matching floral dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
       "primary": "Ivory",
-      "secondary": [
-        "Silver"
-      ]
+      "secondary": []
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "kutch balloon-sleeve blouse"
+      "embroidery": "floral-embroidered hem"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5643,18 +5641,20 @@
     "id": "women-look-222",
     "referenceId": "#222",
     "occasion": "traditional",
-    "outfitDescription": "A mint gota-trim cotton sharara set with gota trim in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A mauve anarkali with a gold-embroidered hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
-      "primary": "Mint",
-      "secondary": []
+      "primary": "Mauve",
+      "secondary": [
+        "Gold"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid",
-      "embroidery": "gota trim"
+      "pattern": "Embroidered",
+      "embroidery": "gold-embroidered hem"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5667,21 +5667,18 @@
     "id": "women-look-223",
     "referenceId": "#223",
     "occasion": "traditional",
-    "outfitDescription": "A red mirror-work sharara set with mirror work in rayon, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "An ivory sharara set with an embroidered kurti and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Red",
-      "secondary": [
-        "Gold",
-        "Green"
-      ]
+      "primary": "Ivory",
+      "secondary": []
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "mirror work"
+      "embroidery": "embroidered kurti"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5694,20 +5691,20 @@
     "id": "women-look-224",
     "referenceId": "#224",
     "occasion": "traditional",
-    "outfitDescription": "A emerald chikankari sharara set with chikankari in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A beige sharara set with an embellished kurti and a flared sharara with a scalloped hem, styled with a red bandhani dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Emerald",
+      "primary": "Beige",
       "secondary": [
-        "Gold"
+        "Red"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Chikankari",
-      "embroidery": "chikankari"
+      "pattern": "Embroidered",
+      "embroidery": "scalloped hem with a red bandhani dupatta"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5720,18 +5717,18 @@
     "id": "women-look-225",
     "referenceId": "#225",
     "occasion": "traditional",
-    "outfitDescription": "A lilac sequin georgette sharara set with sequin in georgette, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A lilac sharara set with a floral-embroidered kurti and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
       "primary": "Lilac",
       "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered kurti"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5744,18 +5741,20 @@
     "id": "women-look-226",
     "referenceId": "#226",
     "occasion": "traditional",
-    "outfitDescription": "A mint block-print sharara set with block print in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A gold sharara set with an embellished kurti and a flared dusty-pink sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Mint",
-      "secondary": []
+      "primary": "Gold",
+      "secondary": [
+        "Dusty Pink"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Block Print",
-      "embroidery": "block print"
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a dusty-pink sharara"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5768,20 +5767,20 @@
     "id": "women-look-227",
     "referenceId": "#227",
     "occasion": "traditional",
-    "outfitDescription": "A rani pink gota-trim cotton sharara set with gota trim in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "An ivory sharara set with an embroidered peplum kurti and a flared dusty-pink embroidered sharara. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Rani Pink",
+      "primary": "Ivory",
       "secondary": [
-        "Gold"
+        "Dusty Pink"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid",
-      "embroidery": "gota trim"
+      "pattern": "Embroidered",
+      "embroidery": "embroidered peplum kurti with a dusty-pink sharara"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5794,20 +5793,18 @@
     "id": "women-look-228",
     "referenceId": "#228",
     "occasion": "traditional",
-    "outfitDescription": "A wine mirror-work sharara set with mirror work in rayon, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A mauve anarkali with embroidery and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
-      "primary": "Wine",
-      "secondary": [
-        "Gold"
-      ]
+      "primary": "Mauve",
+      "secondary": []
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "mirror work"
+      "embroidery": "embroidery"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5820,18 +5817,20 @@
     "id": "women-look-229",
     "referenceId": "#229",
     "occasion": "traditional",
-    "outfitDescription": "A peach chikankari sharara set with chikankari in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A blush-pink sharara set with a gold-bordered kurti and a tiered flared sharara with a net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Peach",
-      "secondary": []
+      "primary": "Blush Pink",
+      "secondary": [
+        "Gold"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Chikankari",
-      "embroidery": "chikankari"
+      "pattern": "Embroidered",
+      "embroidery": "gold-bordered kurti with a tiered sharara"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5844,18 +5843,20 @@
     "id": "women-look-230",
     "referenceId": "#230",
     "occasion": "traditional",
-    "outfitDescription": "A powder blue sequin georgette sharara set with sequin in georgette, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "An ivory sharara set with an embellished kurti and a flared sharara, styled with a pink dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Powder Blue",
-      "secondary": []
+      "primary": "Ivory",
+      "secondary": [
+        "Pink"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a pink dupatta"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5868,20 +5869,20 @@
     "id": "women-look-231",
     "referenceId": "#231",
     "occasion": "traditional",
-    "outfitDescription": "A rani pink block-print sharara set with block print in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A dusty-rose sharara set with an embroidered kurti with a gold border and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Rani Pink",
+      "primary": "Dusty Rose",
       "secondary": [
         "Gold"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Block Print",
-      "embroidery": "block print"
+      "pattern": "Embroidered",
+      "embroidery": "gold-bordered kurti"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5894,20 +5895,18 @@
     "id": "women-look-232",
     "referenceId": "#232",
     "occasion": "traditional",
-    "outfitDescription": "A ivory gota-trim cotton sharara set with gota trim in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A powder-blue sharara set with an embellished kurti and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Ivory",
-      "secondary": [
-        "Silver"
-      ]
+      "primary": "Powder Blue",
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid",
-      "embroidery": "gota trim"
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5920,21 +5919,18 @@
     "id": "women-look-233",
     "referenceId": "#233",
     "occasion": "traditional",
-    "outfitDescription": "A black mirror-work sharara set with mirror work in rayon, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A peach indo-western set pairing a crop top and palazzo with a long embellished open jacket. Picked for traditional celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Black",
-      "secondary": [
-        "Gold",
-        "Multicolour"
-      ]
+      "primary": "Peach",
+      "secondary": []
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "mirror work"
+      "embroidery": "long embellished open jacket"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5947,20 +5943,20 @@
     "id": "women-look-234",
     "referenceId": "#234",
     "occasion": "traditional",
-    "outfitDescription": "A mustard chikankari sharara set with chikankari in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A peach suit with an embroidered flared kurta and palazzo, styled with a maroon embroidered dupatta. Picked for traditional celebrations.",
+    "garmentType": "Palazzo Suit",
     "colors": {
-      "primary": "Mustard",
+      "primary": "Peach",
       "secondary": [
-        "Red"
+        "Maroon"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Chikankari",
-      "embroidery": "chikankari"
+      "pattern": "Embroidered",
+      "embroidery": "embroidered flared kurta with a maroon dupatta"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5973,20 +5969,20 @@
     "id": "women-look-235",
     "referenceId": "#235",
     "occasion": "traditional",
-    "outfitDescription": "A maroon sequin georgette sharara set with sequin in georgette, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A gold tissue lehenga with a shimmering flared skirt, styled with a peach dupatta draped across the shoulder. Picked for traditional celebrations.",
+    "garmentType": "Lehenga",
     "colors": {
-      "primary": "Maroon",
+      "primary": "Gold",
       "secondary": [
-        "Gold"
+        "Pink"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Solid",
+      "embroidery": "shimmering tissue skirt with a peach dupatta"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Lehenga Choli",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5999,20 +5995,18 @@
     "id": "women-look-236",
     "referenceId": "#236",
     "occasion": "traditional",
-    "outfitDescription": "A ivory block-print sharara set with block print in cotton, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "An ivory anarkali with a scalloped embroidered hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
       "primary": "Ivory",
-      "secondary": [
-        "Silver"
-      ]
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Block Print",
-      "embroidery": "block print"
+      "pattern": "Embroidered",
+      "embroidery": "scalloped embroidered hem"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
