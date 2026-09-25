@@ -1087,5 +1087,75 @@
     "dimensions": "900x491",
     "bytes": 12130,
     "sha256": "8dda19b57ef7f3d6436ef85fe2eff8d5c405124eadca1352fa69554221de0bff"
+  },
+  "product:men-look-008": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 18312,
+    "sha256": "cf2245632fe9572e4344f5fdd57e43e0e5ed61d181de699a523b1d4302343a55"
+  },
+  "product:men-look-009": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 14156,
+    "sha256": "b99624609549668a1baff90f1364ef340a77233d82d8720a85c457a375c6dbd6"
+  },
+  "product:men-look-050": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 14060,
+    "sha256": "719c612620102f5a7312b79256698555693123586f2e89f7fb5920a9bfbade28"
+  },
+  "product:men-look-051": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 9992,
+    "sha256": "836810e891b761cc1119076ff28f3a82514c324c01c373551c161b12c62005a0"
+  },
+  "product:men-look-092": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 12460,
+    "sha256": "74dab753aa91a811458b4aa4aab1a226694fef20018d1a30ae920c76fb3902af"
+  },
+  "product:men-look-093": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 12630,
+    "sha256": "db0c479c93106af8c54130144c155995b51708f13b151b39818da10f067e79f5"
+  },
+  "product:men-look-134": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "768x1376",
+    "bytes": 56422,
+    "sha256": "567c93970171f5f06e00b238226de431925df2c665765957d801e384460ab55e"
+  },
+  "product:men-look-135": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 12704,
+    "sha256": "9cc723a7331fb563562cb4418cffbefa0210e53ba486092abb0f74931ae661a3"
+  },
+  "product:men-look-176": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 13482,
+    "sha256": "ba68e17a8498841366c9096cecfe981c8013899a7094e23823b3ff8ee50976e4"
+  },
+  "product:men-look-177": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 8192,
+    "sha256": "f22db54d9ab73799305372266fa640e1870481f8d0b57ec6f42bcec0ad773602"
   }
 }
