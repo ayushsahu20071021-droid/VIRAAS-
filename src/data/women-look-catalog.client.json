@@ -1585,20 +1585,21 @@
     "id": "women-look-061",
     "referenceId": "#061",
     "occasion": "garba",
-    "outfitDescription": "A maroon bandhani silk lehenga in silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt finished with a multicolour mirror-work border, styled with a red patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Maroon",
+      "primary": "Black",
       "secondary": [
-        "Gold"
+        "Red",
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Bandhani",
-      "embroidery": "bandhani"
+      "pattern": "Embroidered",
+      "embroidery": "multicolour mirror-work border with a red patola dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1611,21 +1612,21 @@
     "id": "women-look-062",
     "referenceId": "#062",
     "occasion": "garba",
-    "outfitDescription": "A red cotton saree with white border in cotton, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "An ivory indo-western set pairing a black crop top and cream palazzo with a long embroidered maroon open jacket with tassels. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Red",
+      "primary": "Ivory",
       "secondary": [
-        "Gold",
-        "Green"
+        "Maroon",
+        "Black"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Woven",
-      "embroidery": "contrast border"
+      "pattern": "Embroidered",
+      "embroidery": "embroidered maroon open jacket with tassels"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1638,18 +1639,20 @@
     "id": "women-look-063",
     "referenceId": "#063",
     "occasion": "garba",
-    "outfitDescription": "A teal block-print anarkali in cotton, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Anarkali",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt finished in a multicolour patola border, styled with a patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Teal",
-      "secondary": []
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Block Print",
-      "embroidery": "block print"
+      "pattern": "Printed",
+      "embroidery": "multicolour patola border and dupatta"
     },
     "layering": null,
-    "bottomwear": "Anarkali Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1662,20 +1665,20 @@
     "id": "women-look-064",
     "referenceId": "#064",
     "occasion": "garba",
-    "outfitDescription": "A emerald silk saree in silk, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "A black chaniya choli pairing a densely multicolour mirror-worked choli with a plain flared black skirt. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Emerald",
+      "primary": "Black",
       "secondary": [
-        "Gold"
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "zari"
+      "embroidery": "densely multicolour mirror-worked choli"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1688,18 +1691,20 @@
     "id": "women-look-065",
     "referenceId": "#065",
     "occasion": "garba",
-    "outfitDescription": "A indigo block-print kurta set in cotton, cut as a straight kurta set. Picked for College Fest, Diwali, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Kurta Sets",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt with gold trim, styled with a bold multicolour patola patchwork dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Indigo",
-      "secondary": []
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Block Print",
-      "embroidery": "block print"
+      "pattern": "Printed",
+      "embroidery": "multicolour patola patchwork dupatta with gold trim"
     },
     "layering": null,
-    "bottomwear": "Festive Kurta Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1712,20 +1717,20 @@
     "id": "women-look-066",
     "referenceId": "#066",
     "occasion": "garba",
-    "outfitDescription": "A mustard bandhani lehenga in silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A black chaniya choli with an embellished choli and a flared black skirt inset with maroon patola panels and gold coin buttons, finished with waist latkans. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Mustard",
+      "primary": "Black",
       "secondary": [
-        "Red"
+        "Maroon"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Bandhani",
-      "embroidery": "bandhani"
+      "pattern": "Printed",
+      "embroidery": "maroon patola panels with gold coin buttons and waist latkans"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1738,20 +1743,20 @@
     "id": "women-look-067",
     "referenceId": "#067",
     "occasion": "garba",
-    "outfitDescription": "A ivory kasavu-style saree with gold border in cotton, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "An ivory chaniya choli pairing a multicolour patchwork choli with a flared white skirt, styled with a multicolour patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
       "primary": "Ivory",
       "secondary": [
-        "Silver"
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Woven",
-      "embroidery": "gold border"
+      "pattern": "Printed",
+      "embroidery": "multicolour patchwork choli with a patola dupatta"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1764,21 +1769,21 @@
     "id": "women-look-068",
     "referenceId": "#068",
     "occasion": "garba",
-    "outfitDescription": "A red gota anarkali in georgette, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Anarkali",
+    "outfitDescription": "An ivory chaniya choli with a flared white skirt finished in a broad red patola border, styled with a red patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Red",
+      "primary": "Ivory",
       "secondary": [
-        "Gold",
-        "Green"
+        "Red",
+        "Maroon"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "gota"
+      "pattern": "Printed",
+      "embroidery": "broad red patola border and dupatta"
     },
     "layering": null,
-    "bottomwear": "Anarkali Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1791,20 +1796,20 @@
     "id": "women-look-069",
     "referenceId": "#069",
     "occasion": "college-fest",
-    "outfitDescription": "A rani pink silk saree in silk, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "An ivory palazzo suit with a self-embroidered cream kurta and matching palazzo and dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Palazzo Suit",
     "colors": {
-      "primary": "Rani Pink",
+      "primary": "Ivory",
       "secondary": [
-        "Gold"
+        "Cream"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Woven",
-      "embroidery": "temple border"
+      "pattern": "Embroidered",
+      "embroidery": "self-toned embroidered cream kurta"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1817,15 +1822,15 @@
     "id": "women-look-070",
     "referenceId": "#070",
     "occasion": "college-fest",
-    "outfitDescription": "A green block-print lehenga in cotton, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "outfitDescription": "A plum lehenga pairing an embellished purple crop top with a flared purple skirt. Picked for college fest and daytime celebrations.",
     "garmentType": "Lehenga",
     "colors": {
-      "primary": "Green",
+      "primary": "Purple",
       "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Printed",
-      "embroidery": "block print"
+      "pattern": "Embroidered",
+      "embroidery": "embellished purple crop top"
     },
     "layering": null,
     "bottomwear": "Lehenga Choli",
@@ -1841,20 +1846,18 @@
     "id": "women-look-071",
     "referenceId": "#071",
     "occasion": "college-fest",
-    "outfitDescription": "A maroon silk saree in silk, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "A wine lehenga pairing a peplum top with a flared wine skirt and a sheer dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
     "colors": {
-      "primary": "Maroon",
-      "secondary": [
-        "Gold"
-      ]
+      "primary": "Wine",
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "zari"
+      "pattern": "Solid",
+      "embroidery": "peplum top with a sheer dupatta"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Lehenga Choli",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1867,20 +1870,20 @@
     "id": "women-look-072",
     "referenceId": "#072",
     "occasion": "college-fest",
-    "outfitDescription": "A mustard pre-draped saree in silk blend, cut as a pre-draped. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Pre-Draped Saree",
+    "outfitDescription": "An ivory indo-western set pairing a pink floral crop top with a cream palazzo. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Mustard",
+      "primary": "Ivory",
       "secondary": [
-        "Red"
+        "Pink"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Zari Woven",
-      "embroidery": "zari"
+      "pattern": "Printed",
+      "embroidery": "pink floral crop top"
     },
     "layering": null,
-    "bottomwear": "Ready-to-Wear Saree",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1893,20 +1896,20 @@
     "id": "women-look-073",
     "referenceId": "#073",
     "occasion": "college-fest",
-    "outfitDescription": "A maroon kurta set in silk blend, cut as a straight kurta set. Picked for College Fest, Diwali, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Kurta Sets",
+    "outfitDescription": "An ivory indo-western set pairing a black embroidered velvet top with a cream palazzo. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Maroon",
+      "primary": "Ivory",
       "secondary": [
-        "Gold"
+        "Black"
       ]
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "gota"
+      "embroidery": "embroidered black velvet top"
     },
     "layering": null,
-    "bottomwear": "Festive Kurta Set",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1919,20 +1922,21 @@
     "id": "women-look-074",
     "referenceId": "#074",
     "occasion": "college-fest",
-    "outfitDescription": "A royal blue bandhani lehenga in silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "An indo-western look pairing a white top and blue jeans with a long pink floral open shrug. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Royal Blue",
+      "primary": "Pink",
       "secondary": [
-        "Silver"
+        "White",
+        "Blue"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Bandhani",
-      "embroidery": "bandhani"
+      "pattern": "Printed",
+      "embroidery": "pink floral open shrug"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Jeans",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1945,20 +1949,21 @@
     "id": "women-look-075",
     "referenceId": "#075",
     "occasion": "college-fest",
-    "outfitDescription": "A mustard anarkali in cotton, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Anarkali",
+    "outfitDescription": "An ivory indo-western set pairing a black crop top and cream palazzo with a gold waist belt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Mustard",
+      "primary": "Ivory",
       "secondary": [
-        "Red"
+        "Black",
+        "Gold"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Block Print",
-      "embroidery": "block print"
+      "pattern": "Solid",
+      "embroidery": "black crop top with a gold waist belt"
     },
     "layering": null,
-    "bottomwear": "Anarkali Set",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1971,21 +1976,20 @@
     "id": "women-look-076",
     "referenceId": "#076",
     "occasion": "college-fest",
-    "outfitDescription": "A red bandhani lehenga in silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A pale-yellow tiered midi dress layered with a white cropped shrug. Picked for college fest and daytime celebrations.",
+    "garmentType": "Midi Dress",
     "colors": {
-      "primary": "Red",
+      "primary": "Yellow",
       "secondary": [
-        "Gold",
-        "Green"
+        "White"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Bandhani",
-      "embroidery": "bandhani"
+      "pattern": "Solid",
+      "embroidery": "tiered midi dress with a cropped shrug"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Dress",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1998,18 +2002,20 @@
     "id": "women-look-077",
     "referenceId": "#077",
     "occasion": "college-fest",
-    "outfitDescription": "A green cotton saree in cotton, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "An ivory skirt set pairing a maroon crop top with a tiered flared ivory skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Green",
-      "secondary": []
+      "primary": "Ivory",
+      "secondary": [
+        "Maroon"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Woven",
-      "embroidery": "contrast border"
+      "pattern": "Solid",
+      "embroidery": "maroon crop top with a tiered skirt"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2022,21 +2028,21 @@
     "id": "women-look-078",
     "referenceId": "#078",
     "occasion": "college-fest",
-    "outfitDescription": "A red silk saree in silk, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "A navy skirt set pairing a black crop top with a flared navy block-printed skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Red",
+      "primary": "Navy",
       "secondary": [
-        "Gold",
-        "Green"
+        "Black",
+        "White"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "zari"
+      "pattern": "Printed",
+      "embroidery": "block-printed flared skirt"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2049,20 +2055,20 @@
     "id": "women-look-079",
     "referenceId": "#079",
     "occasion": "college-fest",
-    "outfitDescription": "A ivory block-print lehenga in cotton, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "An ivory indo-western look pairing a white chikankari long kurta with blue jeans. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
       "primary": "Ivory",
       "secondary": [
-        "Silver"
+        "Blue"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Printed",
-      "embroidery": "block print"
+      "pattern": "Embroidered",
+      "embroidery": "white chikankari long kurta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Jeans",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2075,21 +2081,20 @@
     "id": "women-look-080",
     "referenceId": "#080",
     "occasion": "college-fest",
-    "outfitDescription": "A black mirror-work cotton chaniya choli with mirror work in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A rose-gold peplum set pairing a shimmery peplum top with a matching flared skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Black",
+      "primary": "Rose Gold",
       "secondary": [
-        "Gold",
-        "Multicolour"
+        "Peach"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "mirror work"
+      "pattern": "Solid",
+      "embroidery": "shimmery peplum top with a matching skirt"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
