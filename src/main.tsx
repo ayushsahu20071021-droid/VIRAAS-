@@ -9,6 +9,7 @@ import { CoupleEdit, CoupleDetail } from './pages/Couples';
 import { Occasions, World } from './pages/Occasions';
 import Search from './pages/Search';
 import MenCatalog, { MenLookDetail } from './pages/MenCatalog';
+import WomenCatalog, { WomenLookDetail } from './pages/WomenCatalog';
 import Saved from './pages/Saved';
 import TryOn from './pages/TryOn';
 import { Journal, Article, About, Contact, FAQ, Privacy, Terms, AffiliateDisclosure, TryOnPrivacy, NotFound } from './pages/Static';
@@ -20,7 +21,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="women" element={<Listing mode="gender" fixedGender="women" key="w" />} />
+          <Route path="women" element={<WomenCatalog />} />
+          <Route path="women/:category" element={<WomenCatalog />} />
+          <Route path="women-look/:id" element={<WomenLookDetail />} />
           <Route path="men" element={<MenCatalog />} />
           <Route path="men/:category" element={<MenCatalog />} />
           <Route path="men-look/:id" element={<MenLookDetail />} />
