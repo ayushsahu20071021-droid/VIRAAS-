@@ -1059,20 +1059,20 @@
     "id": "women-look-041",
     "referenceId": "#041",
     "occasion": "garba",
-    "outfitDescription": "A emerald velvet lehenga in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "An ivory chaniya choli with a white choli and flared ivory skirt, styled with a navy-blue mirror-work dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Emerald",
+      "primary": "Ivory",
       "secondary": [
-        "Gold"
+        "Navy"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Embroidered",
+      "embroidery": "navy-blue mirror-work dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1085,20 +1085,20 @@
     "id": "women-look-042",
     "referenceId": "#042",
     "occasion": "garba",
-    "outfitDescription": "A wine sequin sharara in georgette, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A multicolour chaniya choli in ornate patola-style patchwork with a red tasselled border, styled with a red patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Wine",
+      "primary": "Multicolour",
       "secondary": [
-        "Gold"
+        "Red"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Printed",
+      "embroidery": "ornate patola patchwork with a red tasselled border"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1111,21 +1111,20 @@
     "id": "women-look-043",
     "referenceId": "#043",
     "occasion": "garba",
-    "outfitDescription": "A black satin pre-draped saree in satin, cut as a pre-draped. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Pre-Draped Saree",
+    "outfitDescription": "An ivory chaniya choli pairing a multicolour embellished full-sleeve choli with a plain flared cream skirt. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Black",
+      "primary": "Ivory",
       "secondary": [
-        "Gold",
         "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid",
-      "embroidery": "solid"
+      "pattern": "Embroidered",
+      "embroidery": "multicolour embellished full-sleeve choli with latkans"
     },
     "layering": null,
-    "bottomwear": "Ready-to-Wear Saree",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1138,18 +1137,21 @@
     "id": "women-look-044",
     "referenceId": "#044",
     "occasion": "garba",
-    "outfitDescription": "A silver tissue lehenga in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A navy chaniya choli with a flared navy skirt of multicolour floral motifs and a patola band, styled with a white mirror-work dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Silver",
-      "secondary": []
+      "primary": "Navy",
+      "secondary": [
+        "Multicolour",
+        "White"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Printed",
+      "embroidery": "multicolour floral motifs with a white mirror-work dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1162,21 +1164,20 @@
     "id": "women-look-045",
     "referenceId": "#045",
     "occasion": "garba",
-    "outfitDescription": "A black anarkali with gold in georgette, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Anarkali",
+    "outfitDescription": "An ivory chaniya choli in dense multicolour Kutch prints across a full flared skirt, worn with a matching choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Black",
+      "primary": "Ivory",
       "secondary": [
-        "Gold",
         "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "gold"
+      "pattern": "Printed",
+      "embroidery": "dense multicolour Kutch print with mirror work"
     },
     "layering": null,
-    "bottomwear": "Anarkali Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1189,20 +1190,20 @@
     "id": "women-look-046",
     "referenceId": "#046",
     "occasion": "garba",
-    "outfitDescription": "A emerald satin saree in satin, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "An ivory chaniya choli with a voluminous textured white skirt, worn with a choli and a pink dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Emerald",
+      "primary": "Ivory",
       "secondary": [
-        "Gold"
+        "Pink"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid",
-      "embroidery": "solid"
+      "pattern": "Embroidered",
+      "embroidery": "voluminous textured white skirt with a pink dupatta"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1215,21 +1216,20 @@
     "id": "women-look-047",
     "referenceId": "#047",
     "occasion": "garba",
-    "outfitDescription": "A black mirror sharara in georgette, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A plum chaniya choli with a purple choli and a flared plum skirt, styled with a cream dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Black",
+      "primary": "Plum",
       "secondary": [
-        "Gold",
-        "Multicolour"
+        "Cream"
       ]
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "mirror"
+      "embroidery": "subtle gold sequin work with a cream dupatta"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1242,17 +1242,18 @@
     "id": "women-look-048",
     "referenceId": "#048",
     "occasion": "garba",
-    "outfitDescription": "A wine velvet lehenga in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "outfitDescription": "An ivory lehenga with a flared skirt of diagonal gold zari chevron stripes, paired with a multicolour embroidered choli. Picked for Garba and Navratri celebrations.",
     "garmentType": "Lehenga",
     "colors": {
-      "primary": "Wine",
+      "primary": "Ivory",
       "secondary": [
-        "Gold"
+        "Gold",
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Embroidered",
+      "embroidery": "diagonal gold zari chevron stripes with a multicolour choli"
     },
     "layering": null,
     "bottomwear": "Lehenga Choli",
@@ -1268,18 +1269,20 @@
     "id": "women-look-049",
     "referenceId": "#049",
     "occasion": "garba",
-    "outfitDescription": "A silver sequin pre-draped saree in georgette, cut as a pre-draped. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Pre-Draped Saree",
+    "outfitDescription": "A black chaniya choli with a flared skirt of vertical multicolour striped panels, worn with a black choli and a mustard dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Silver",
-      "secondary": []
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Printed",
+      "embroidery": "multicolour panelled skirt with a mustard dupatta"
     },
     "layering": null,
-    "bottomwear": "Ready-to-Wear Saree",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1292,20 +1295,20 @@
     "id": "women-look-050",
     "referenceId": "#050",
     "occasion": "garba",
-    "outfitDescription": "A emerald kurta set in silk blend, cut as a straight kurta set. Picked for College Fest, Diwali, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Kurta Sets",
+    "outfitDescription": "A red-and-ivory chaniya choli with a red choli and a flared ivory skirt patterned with red patola prints and mirror motifs, styled with a red dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Emerald",
+      "primary": "Red",
       "secondary": [
-        "Gold"
+        "Ivory"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Printed",
+      "embroidery": "red patola prints with mirror motifs"
     },
     "layering": null,
-    "bottomwear": "Festive Kurta Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1318,21 +1321,20 @@
     "id": "women-look-051",
     "referenceId": "#051",
     "occasion": "garba",
-    "outfitDescription": "A black gold gharara in georgette, cut as a gathered gharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Gharara",
+    "outfitDescription": "A black chaniya choli with a flared black skirt in small white ikat spots, worn with a black choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
       "primary": "Black",
       "secondary": [
-        "Gold",
-        "Multicolour"
+        "White"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "gold"
+      "pattern": "Printed",
+      "embroidery": "white ikat spot print"
     },
     "layering": null,
-    "bottomwear": "Gharara Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1345,18 +1347,20 @@
     "id": "women-look-052",
     "referenceId": "#052",
     "occasion": "garba",
-    "outfitDescription": "A gold tissue saree in tissue, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "A black chaniya choli with a black choli and a flared black skirt finished in a broad maroon patola border, styled with a maroon patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Gold",
-      "secondary": []
+      "primary": "Black",
+      "secondary": [
+        "Maroon"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "zari"
+      "pattern": "Printed",
+      "embroidery": "broad maroon patola border with a matching patola dupatta"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1369,20 +1373,20 @@
     "id": "women-look-053",
     "referenceId": "#053",
     "occasion": "garba",
-    "outfitDescription": "A navy sequin anarkali in georgette, cut as a flared anarkali. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Anarkali",
+    "outfitDescription": "A black chaniya choli with a flared black skirt finished in a vivid multicolour patola and mirror border, styled with a multicolour tasselled dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Navy",
+      "primary": "Black",
       "secondary": [
-        "Silver"
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "sequin"
+      "embroidery": "multicolour patola and mirror border with a tasselled dupatta"
     },
     "layering": null,
-    "bottomwear": "Anarkali Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1395,20 +1399,20 @@
     "id": "women-look-054",
     "referenceId": "#054",
     "occasion": "garba",
-    "outfitDescription": "A rani pink sequin lehenga in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A black chaniya choli in a plain black choli and skirt, styled with a bold multicolour Kutch-patchwork dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Rani Pink",
+      "primary": "Black",
       "secondary": [
-        "Gold"
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Printed",
+      "embroidery": "bold multicolour Kutch-patchwork dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1421,20 +1425,21 @@
     "id": "women-look-055",
     "referenceId": "#055",
     "occasion": "garba",
-    "outfitDescription": "A emerald sequin sharara in georgette, cut as a wide-leg sharara. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Sharara",
+    "outfitDescription": "A black chaniya choli with a flared black skirt finished in a red and multicolour patola border, styled with a red dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Emerald",
+      "primary": "Black",
       "secondary": [
-        "Gold"
+        "Red",
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Printed",
+      "embroidery": "red and multicolour patola border with a red dupatta"
     },
     "layering": null,
-    "bottomwear": "Sharara Set",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1447,21 +1452,20 @@
     "id": "women-look-056",
     "referenceId": "#056",
     "occasion": "garba",
-    "outfitDescription": "A black sequin lehenga in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "An ivory chaniya choli with a red choli and a flared ivory skirt finished in a red patola border, styled with a red patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Black",
+      "primary": "Ivory",
       "secondary": [
-        "Gold",
-        "Multicolour"
+        "Red"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Printed",
+      "embroidery": "red patola border with a matching patola dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1474,20 +1478,21 @@
     "id": "women-look-057",
     "referenceId": "#057",
     "occasion": "garba",
-    "outfitDescription": "A wine satin pre-draped saree in satin, cut as a pre-draped. Picked for College Fest, Diwali, Festive Party — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Pre-Draped Saree",
+    "outfitDescription": "A maroon lehenga with a flared skirt in patola-style panels and gold detailing, worn with an embellished choli and dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Lehenga",
     "colors": {
-      "primary": "Wine",
+      "primary": "Maroon",
       "secondary": [
-        "Gold"
+        "Gold",
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid",
-      "embroidery": "solid"
+      "pattern": "Printed",
+      "embroidery": "patola-style panels with gold detailing"
     },
     "layering": null,
-    "bottomwear": "Ready-to-Wear Saree",
+    "bottomwear": "Lehenga Choli",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1500,20 +1505,20 @@
     "id": "women-look-058",
     "referenceId": "#058",
     "occasion": "garba",
-    "outfitDescription": "A wine sequin saree in georgette, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "A black chaniya choli in a plain black choli and skirt, layered with a long multicolour patola open jacket. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Wine",
+      "primary": "Black",
       "secondary": [
-        "Gold"
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "sequin"
+      "pattern": "Printed",
+      "embroidery": "long multicolour patola open jacket over a plain black choli and skirt"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1526,18 +1531,21 @@
     "id": "women-look-059",
     "referenceId": "#059",
     "occasion": "garba",
-    "outfitDescription": "A silver mirror lehenga in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A black chaniya choli with a flared black skirt finished in vivid multicolour patola tiers, styled with a green dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Silver",
-      "secondary": []
+      "primary": "Black",
+      "secondary": [
+        "Multicolour",
+        "Green"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "mirror"
+      "pattern": "Printed",
+      "embroidery": "multicolour patola tiered border with a green dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -1550,20 +1558,21 @@
     "id": "women-look-060",
     "referenceId": "#060",
     "occasion": "garba",
-    "outfitDescription": "A mustard silk saree with temple border in silk, cut as a classic drape. Picked for College Fest, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Saree",
+    "outfitDescription": "A multicolour chaniya choli in vivid pink and orange patchwork prints across a full flared skirt, worn with a pink choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
     "colors": {
-      "primary": "Mustard",
+      "primary": "Multicolour",
       "secondary": [
-        "Red"
+        "Pink",
+        "Orange"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Woven",
-      "embroidery": "temple border"
+      "pattern": "Printed",
+      "embroidery": "pink and orange patola patchwork with mirror work"
     },
     "layering": null,
-    "bottomwear": "Saree",
+    "bottomwear": "Garba Wear",
     "footwear": null,
     "accessories": null,
     "pose": null,
