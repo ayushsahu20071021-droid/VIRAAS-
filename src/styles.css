@@ -206,3 +206,29 @@ a:hover .frame img { transform: scale(1.03); }
   .wa-band { flex-direction: column; align-items: flex-start; }
   .header-inner { gap: 12px; }
 }
+
+/* Men reference-driven catalog preview */
+.men-catalog-toolbar { display: flex; gap: 18px; align-items: center; justify-content: space-between; margin: 18px 0 12px; flex-wrap: wrap; }
+.men-occasion-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.men-occasion-tabs a { border: 1px solid var(--line); background: #fff; border-radius: 99px; padding: 9px 13px; font-size: .78rem; }
+.men-occasion-tabs a.active, .men-occasion-tabs a:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+.men-occasion-tabs span { opacity: .65; font-size: .7rem; }
+.men-catalog-toolbar input { min-width: min(100%, 320px); padding: 11px 15px; border: 1px solid var(--line); border-radius: 99px; background: #fff; }
+.men-catalog-summary { color: var(--muted); font-size: .82rem; margin: 16px 0 20px; }
+.men-look-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px 18px; }
+.men-look-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.men-look-image { display: block; }
+.men-look-image .frame { border-radius: 0; }
+.men-look-body { padding: 15px 15px 17px; }
+.men-look-body .kicker { margin-bottom: 5px; font-size: .62rem; }
+.men-look-title { display: block; font-family: var(--serif); font-size: 1.45rem; font-weight: 600; }
+.men-look-body p { color: var(--ink-2); font-size: .82rem; line-height: 1.45; min-height: 48px; margin: 7px 0 9px; }
+.men-look-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.men-look-meta span { background: var(--paper); border-radius: 99px; padding: 4px 8px; color: var(--muted); font-size: .68rem; }
+.men-detail-grid { display: grid; grid-template-columns: minmax(280px, 520px) 1fr; gap: 52px; align-items: start; }
+.men-detail-grid > .frame { border-radius: 20px; }
+.men-detail-lead { max-width: 650px; font-size: 1.1rem; line-height: 1.6; color: var(--ink-2); }
+.placeholder-callout { border: 1px solid #d8c8b8; background: #fffaf5; border-radius: 12px; padding: 14px 16px; color: var(--ink-2); font-size: .84rem; }
+@media (max-width: 1100px) { .men-look-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 860px) { .men-look-grid { grid-template-columns: repeat(2, 1fr); } .men-detail-grid { grid-template-columns: 1fr; gap: 28px; } }
+@media (max-width: 540px) { .men-look-grid { grid-template-columns: 1fr; } }

@@ -20,7 +20,7 @@ export function ImageFrame({ src, alt, label, ratio = '3 / 4', eager = false, de
         <span className="pending-badge">{broken ? 'Image unavailable' : 'Image pending'}</span>
         <span className="pending-title">{label ?? alt}</span>
         {detail && <span className="pending-detail">{detail}</span>}
-        <span className="pending-note">Original VIRAAS visual is in the generation queue</span>
+        <span className="pending-note">Final approved VIRAAS image will be added here</span>
       </div>
     </div>
   );
