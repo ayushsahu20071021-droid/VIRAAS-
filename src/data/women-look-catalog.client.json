@@ -2107,18 +2107,20 @@
     "id": "women-look-081",
     "referenceId": "#081",
     "occasion": "college-fest",
-    "outfitDescription": "A hot pink chaniya choli with kutchi crop blouse with kutchi embroidered crop blouse in rayon, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A rust skirt set pairing a black crop top with a flared rust ajrakh block-printed skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Hot Pink",
-      "secondary": []
+      "primary": "Rust",
+      "secondary": [
+        "Black"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "kutchi embroidered crop blouse"
+      "pattern": "Printed",
+      "embroidery": "rust ajrakh block-printed skirt"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2131,20 +2133,20 @@
     "id": "women-look-082",
     "referenceId": "#082",
     "occasion": "college-fest",
-    "outfitDescription": "A navy bandhani-print chaniya choli with bandhani print in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "An ivory skirt set pairing a red embroidered crop top with a flared white skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Navy",
+      "primary": "Ivory",
       "secondary": [
-        "Silver"
+        "Red"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Bandhani",
-      "embroidery": "bandhani print"
+      "pattern": "Embroidered",
+      "embroidery": "red embroidered crop top"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2157,20 +2159,21 @@
     "id": "women-look-083",
     "referenceId": "#083",
     "occasion": "college-fest",
-    "outfitDescription": "A mustard boho patchwork flare chaniya choli with patchwork with mirror work in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A cream tissue lehenga with a gold-bordered flared skirt, styled with a red net dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
     "colors": {
-      "primary": "Mustard",
+      "primary": "Cream",
       "secondary": [
+        "Gold",
         "Red"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Patchwork",
-      "embroidery": "patchwork with mirror work"
+      "pattern": "Solid",
+      "embroidery": "gold-bordered tissue skirt with a red net dupatta"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Lehenga Choli",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2183,18 +2186,18 @@
     "id": "women-look-084",
     "referenceId": "#084",
     "occasion": "college-fest",
-    "outfitDescription": "A multicolour gamthi-print chaniya with mirror blouse with gamthi print with mirror in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "An ivory skirt set pairing an embellished white top with a tiered flared white skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Multicolour",
+      "primary": "Ivory",
       "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Printed",
-      "embroidery": "gamthi print with mirror"
+      "pattern": "Embroidered",
+      "embroidery": "embellished white top"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2207,21 +2210,20 @@
     "id": "women-look-085",
     "referenceId": "#085",
     "occasion": "college-fest",
-    "outfitDescription": "A black lampi-border chaniya with patola dupatta with gold lampi border with patola dupatta in rayon, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A green indo-western set pairing a mirror-embroidered gold jacket with a flared dark-green skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Black",
+      "primary": "Green",
       "secondary": [
-        "Gold",
-        "Multicolour"
+        "Gold"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid with Border",
-      "embroidery": "gold lampi border with patola dupatta"
+      "pattern": "Embroidered",
+      "embroidery": "mirror-embroidered gold jacket"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2234,18 +2236,20 @@
     "id": "women-look-086",
     "referenceId": "#086",
     "occasion": "college-fest",
-    "outfitDescription": "A hot pink chaniya with kutchi mirror halter blouse with kutchi mirror halter in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A maroon and ivory set pairing a maroon printed full-sleeve top with a flared ivory skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Hot Pink",
-      "secondary": []
+      "primary": "Maroon",
+      "secondary": [
+        "Ivory"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "kutchi mirror halter"
+      "pattern": "Printed",
+      "embroidery": "maroon printed full-sleeve top"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2258,21 +2262,20 @@
     "id": "women-look-087",
     "referenceId": "#087",
     "occasion": "college-fest",
-    "outfitDescription": "A red mirror-work cotton chaniya choli with mirror work in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "An ivory indo-western set pairing a multicolour floral peplum top with a cream palazzo. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Red",
+      "primary": "Ivory",
       "secondary": [
-        "Gold",
-        "Green"
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "mirror work"
+      "pattern": "Printed",
+      "embroidery": "multicolour floral peplum top"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2285,20 +2288,20 @@
     "id": "women-look-088",
     "referenceId": "#088",
     "occasion": "college-fest",
-    "outfitDescription": "A ivory chaniya choli with kutchi crop blouse with kutchi embroidered crop blouse in rayon, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A yellow floral sharara set with a sleeveless top and matching flared sharara. Picked for college fest and daytime celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Ivory",
+      "primary": "Yellow",
       "secondary": [
-        "Silver"
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "kutchi embroidered crop blouse"
+      "pattern": "Printed",
+      "embroidery": "yellow floral print"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2311,20 +2314,20 @@
     "id": "women-look-089",
     "referenceId": "#089",
     "occasion": "college-fest",
-    "outfitDescription": "A royal blue bandhani-print chaniya choli with bandhani print in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A mint-green skirt set pairing a fitted top with a tiered flared mint skirt, styled with a maroon patola dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Royal Blue",
+      "primary": "Mint Green",
       "secondary": [
-        "Silver"
+        "Maroon"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Bandhani",
-      "embroidery": "bandhani print"
+      "pattern": "Printed",
+      "embroidery": "maroon patola dupatta"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2337,20 +2340,20 @@
     "id": "women-look-090",
     "referenceId": "#090",
     "occasion": "college-fest",
-    "outfitDescription": "A wine boho patchwork flare chaniya choli with patchwork with mirror work in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "An ivory indo-western set pairing a red embroidered kurti with a flared white palazzo. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Wine",
+      "primary": "Ivory",
       "secondary": [
-        "Gold"
+        "Red"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Patchwork",
-      "embroidery": "patchwork with mirror work"
+      "pattern": "Embroidered",
+      "embroidery": "red embroidered kurti"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2363,18 +2366,20 @@
     "id": "women-look-091",
     "referenceId": "#091",
     "occasion": "college-fest",
-    "outfitDescription": "A yellow gamthi-print chaniya with mirror blouse with gamthi print with mirror in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "An ivory skirt set pairing a red floral crop top with a flared cream satin skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Yellow",
-      "secondary": []
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
     },
     "patternOrEmbroidery": {
       "pattern": "Printed",
-      "embroidery": "gamthi print with mirror"
+      "embroidery": "red floral crop top"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2387,21 +2392,20 @@
     "id": "women-look-092",
     "referenceId": "#092",
     "occasion": "college-fest",
-    "outfitDescription": "A red lampi-border chaniya with patola dupatta with gold lampi border with patola dupatta in rayon, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A black skirt set pairing a black crop top and flared black skirt with a multicolour patola dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Red",
+      "primary": "Black",
       "secondary": [
-        "Gold",
-        "Green"
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid with Border",
-      "embroidery": "gold lampi border with patola dupatta"
+      "pattern": "Printed",
+      "embroidery": "multicolour patola dupatta"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2414,20 +2418,20 @@
     "id": "women-look-093",
     "referenceId": "#093",
     "occasion": "college-fest",
-    "outfitDescription": "A ivory chaniya with kutchi mirror halter blouse with kutchi mirror halter in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A maroon lehenga pairing a brocade crop top with a flared maroon brocade skirt with gold motifs. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
     "colors": {
-      "primary": "Ivory",
+      "primary": "Maroon",
       "secondary": [
-        "Silver"
+        "Gold"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "kutchi mirror halter"
+      "pattern": "Woven",
+      "embroidery": "gold brocade motifs"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Lehenga Choli",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2440,20 +2444,21 @@
     "id": "women-look-094",
     "referenceId": "#094",
     "occasion": "college-fest",
-    "outfitDescription": "A rani pink mirror-work cotton chaniya choli with mirror work in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "An indo-western look pairing a rust top and blue jeans with a long navy floral printed open shrug. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
     "colors": {
-      "primary": "Rani Pink",
+      "primary": "Navy",
       "secondary": [
-        "Gold"
+        "Rust",
+        "Blue"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "mirror work"
+      "pattern": "Printed",
+      "embroidery": "navy floral printed open shrug"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Jeans",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2466,20 +2471,20 @@
     "id": "women-look-095",
     "referenceId": "#095",
     "occasion": "college-fest",
-    "outfitDescription": "A white chaniya choli with kutchi crop blouse with kutchi embroidered crop blouse in rayon, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "An ivory lehenga pairing a pink choli with a flared cream net skirt and a pink dupatta, cinched with a gold belt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
     "colors": {
-      "primary": "White",
+      "primary": "Ivory",
       "secondary": [
-        "Silver"
+        "Pink"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Embroidered",
-      "embroidery": "kutchi embroidered crop blouse"
+      "pattern": "Solid",
+      "embroidery": "gold belt with a pink dupatta"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Lehenga Choli",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2492,20 +2497,20 @@
     "id": "women-look-096",
     "referenceId": "#096",
     "occasion": "college-fest",
-    "outfitDescription": "A emerald bandhani-print chaniya choli with bandhani print in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "An ivory lehenga pairing a green choli with a flared cream skirt with a gold border and a green dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
     "colors": {
-      "primary": "Emerald",
+      "primary": "Ivory",
       "secondary": [
-        "Gold"
+        "Green"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Bandhani",
-      "embroidery": "bandhani print"
+      "pattern": "Solid",
+      "embroidery": "gold-bordered skirt with a green dupatta"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Lehenga Choli",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2518,20 +2523,21 @@
     "id": "women-look-097",
     "referenceId": "#097",
     "occasion": "college-fest",
-    "outfitDescription": "A maroon boho patchwork flare chaniya choli with patchwork with mirror work in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A cream lehenga pairing a black choli with a flared gold-toned skirt and a black net dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
     "colors": {
-      "primary": "Maroon",
+      "primary": "Cream",
       "secondary": [
+        "Black",
         "Gold"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Patchwork",
-      "embroidery": "patchwork with mirror work"
+      "pattern": "Solid",
+      "embroidery": "black net dupatta"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Lehenga Choli",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2544,18 +2550,20 @@
     "id": "women-look-098",
     "referenceId": "#098",
     "occasion": "college-fest",
-    "outfitDescription": "A rust gamthi-print chaniya with mirror blouse with gamthi print with mirror in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "An ivory skirt set pairing a red printed top with a tiered flared white skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
     "colors": {
-      "primary": "Rust",
-      "secondary": []
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
     },
     "patternOrEmbroidery": {
       "pattern": "Printed",
-      "embroidery": "gamthi print with mirror"
+      "embroidery": "red printed top"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Skirt",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2568,20 +2576,20 @@
     "id": "women-look-099",
     "referenceId": "#099",
     "occasion": "college-fest",
-    "outfitDescription": "A rani pink lampi-border chaniya with patola dupatta with gold lampi border with patola dupatta in rayon, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A pastel floral sharara set with a peplum top and matching flared sharara. Picked for college fest and daytime celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Rani Pink",
+      "primary": "Beige",
       "secondary": [
-        "Gold"
+        "Multicolour"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid with Border",
-      "embroidery": "gold lampi border with patola dupatta"
+      "pattern": "Printed",
+      "embroidery": "pastel floral print"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -2594,20 +2602,18 @@
     "id": "women-look-100",
     "referenceId": "#100",
     "occasion": "college-fest",
-    "outfitDescription": "A white chaniya with kutchi mirror halter blouse with kutchi mirror halter in cotton, cut as a flared chaniya. Picked for Garba, College Fest, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Chaniya Choli",
+    "outfitDescription": "A mint-green sharara set pairing an embroidered peplum top with a flared sharara. Picked for college fest and daytime celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "White",
-      "secondary": [
-        "Silver"
-      ]
+      "primary": "Mint Green",
+      "secondary": []
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "kutchi mirror halter"
+      "embroidery": "embroidered peplum top"
     },
     "layering": null,
-    "bottomwear": "Garba Wear",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
