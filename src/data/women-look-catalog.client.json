@@ -5126,20 +5126,18 @@
     "id": "women-look-201",
     "referenceId": "#201",
     "occasion": "traditional",
-    "outfitDescription": "A wine printed flared cotton lehenga with printed flared in cotton, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A gold sharara set with a heavily embroidered kurti and a flared sharara with a net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Wine",
-      "secondary": [
-        "Gold"
-      ]
+      "primary": "Gold",
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Printed",
-      "embroidery": "printed flared"
+      "pattern": "Embroidered",
+      "embroidery": "heavily embroidered kurti with a net dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5152,18 +5150,18 @@
     "id": "women-look-202",
     "referenceId": "#202",
     "occasion": "traditional",
-    "outfitDescription": "A lilac zari-woven silk lehenga with zari in silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A dusty-pink anarkali with a floral-embroidered hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
-      "primary": "Lilac",
+      "primary": "Dusty Pink",
       "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Zari Woven",
-      "embroidery": "zari"
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered hem"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5176,20 +5174,18 @@
     "id": "women-look-203",
     "referenceId": "#203",
     "occasion": "traditional",
-    "outfitDescription": "A emerald mirror-embellished georgette lehenga with mirror work embellishment in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A blush-pink sharara set with an embellished kurti and a flared sharara with a net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Emerald",
-      "secondary": [
-        "Gold"
-      ]
+      "primary": "Blush Pink",
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Embellished",
-      "embroidery": "mirror work embellishment"
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a net dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5202,18 +5198,18 @@
     "id": "women-look-204",
     "referenceId": "#204",
     "occasion": "traditional",
-    "outfitDescription": "A teal brocade lehenga with long-sleeve crop top with brocade in brocade, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A peach sharara set with an embroidered kurti and a flared sharara with a scalloped hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Teal",
+      "primary": "Peach",
       "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Woven",
-      "embroidery": "brocade"
+      "pattern": "Embroidered",
+      "embroidery": "scalloped-hem sharara"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5226,18 +5222,18 @@
     "id": "women-look-205",
     "referenceId": "#205",
     "occasion": "traditional",
-    "outfitDescription": "A silver silk lehenga with gota-border dupatta with gota border dupatta in silk blend, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A mint-green sharara set with a floral-embroidered kurta and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Silver",
+      "primary": "Mint Green",
       "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid",
-      "embroidery": "gota border dupatta"
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered kurta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5250,18 +5246,18 @@
     "id": "women-look-206",
     "referenceId": "#206",
     "occasion": "traditional",
-    "outfitDescription": "A coral lehenga with kutch balloon-sleeve blouse with kutch balloon-sleeve blouse in cotton silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A dusty-rose kurta set with an embroidered straight kurta and slim trousers and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Kurta Set",
     "colors": {
-      "primary": "Coral",
+      "primary": "Dusty Rose",
       "secondary": []
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "kutch balloon-sleeve blouse"
+      "embroidery": "embroidered straight kurta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Trousers",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5274,20 +5270,18 @@
     "id": "women-look-207",
     "referenceId": "#207",
     "occasion": "traditional",
-    "outfitDescription": "A emerald printed flared cotton lehenga with printed flared in cotton, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A mauve sharara set with an embroidered kurti and a flared sharara with an embroidered hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Emerald",
-      "secondary": [
-        "Gold"
-      ]
+      "primary": "Mauve",
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Printed",
-      "embroidery": "printed flared"
+      "pattern": "Embroidered",
+      "embroidery": "embroidered hem"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5300,18 +5294,20 @@
     "id": "women-look-208",
     "referenceId": "#208",
     "occasion": "traditional",
-    "outfitDescription": "A teal zari-woven silk lehenga with zari in silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "An ivory anarkali with embroidery and a pink dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
-      "primary": "Teal",
-      "secondary": []
+      "primary": "Ivory",
+      "secondary": [
+        "Pink"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Zari Woven",
-      "embroidery": "zari"
+      "pattern": "Embroidered",
+      "embroidery": "embroidery with a pink dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5324,15 +5320,17 @@
     "id": "women-look-209",
     "referenceId": "#209",
     "occasion": "traditional",
-    "outfitDescription": "A silver bandhani silk lehenga with bandhani in silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "outfitDescription": "A rose-pink lehenga with an embellished choli and a full flared skirt with a gold border and a matching dupatta. Picked for traditional celebrations.",
     "garmentType": "Lehenga",
     "colors": {
-      "primary": "Silver",
-      "secondary": []
+      "primary": "Rose Pink",
+      "secondary": [
+        "Gold"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Bandhani",
-      "embroidery": "bandhani"
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli with a gold border"
     },
     "layering": null,
     "bottomwear": "Lehenga Choli",
@@ -5348,20 +5346,18 @@
     "id": "women-look-210",
     "referenceId": "#210",
     "occasion": "traditional",
-    "outfitDescription": "A maroon mirror-embellished georgette lehenga with mirror work embellishment in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A maroon palazzo suit with a plain kurti and a wide palazzo and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Palazzo Suit",
     "colors": {
       "primary": "Maroon",
-      "secondary": [
-        "Gold"
-      ]
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Embellished",
-      "embroidery": "mirror work embellishment"
+      "pattern": "Solid",
+      "embroidery": "plain kurti and wide palazzo"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Palazzo",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5374,18 +5370,20 @@
     "id": "women-look-211",
     "referenceId": "#211",
     "occasion": "traditional",
-    "outfitDescription": "A powder blue brocade lehenga with long-sleeve crop top with brocade in brocade, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A black sharara set with a kurti and a flared sharara with a pink embroidered scalloped border and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Powder Blue",
-      "secondary": []
+      "primary": "Black",
+      "secondary": [
+        "Pink"
+      ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Woven",
-      "embroidery": "brocade"
+      "pattern": "Embroidered",
+      "embroidery": "pink embroidered scalloped border"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5398,15 +5396,17 @@
     "id": "women-look-212",
     "referenceId": "#212",
     "occasion": "traditional",
-    "outfitDescription": "A gold silk lehenga with gota-border dupatta with gota border dupatta in silk blend, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "outfitDescription": "An ivory lehenga with a choli and a tiered flared skirt with gold borders and a matching dupatta. Picked for traditional celebrations.",
     "garmentType": "Lehenga",
     "colors": {
-      "primary": "Gold",
-      "secondary": []
+      "primary": "Ivory",
+      "secondary": [
+        "Gold"
+      ]
     },
     "patternOrEmbroidery": {
       "pattern": "Solid",
-      "embroidery": "gota border dupatta"
+      "embroidery": "tiered skirt with gold borders"
     },
     "layering": null,
     "bottomwear": "Lehenga Choli",
@@ -5422,21 +5422,18 @@
     "id": "women-look-213",
     "referenceId": "#213",
     "occasion": "traditional",
-    "outfitDescription": "A black lehenga with kutch balloon-sleeve blouse with kutch balloon-sleeve blouse in cotton silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A powder-blue sharara set with an embellished kurti and a flared sharara with an embroidered net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Black",
-      "secondary": [
-        "Gold",
-        "Multicolour"
-      ]
+      "primary": "Powder Blue",
+      "secondary": []
     },
     "patternOrEmbroidery": {
       "pattern": "Embroidered",
-      "embroidery": "kutch balloon-sleeve blouse"
+      "embroidery": "embellished kurti with an embroidered net dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5449,18 +5446,15 @@
     "id": "women-look-214",
     "referenceId": "#214",
     "occasion": "traditional",
-    "outfitDescription": "A red lightweight sequin lehenga with sequin in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "outfitDescription": "A sage-green lehenga with an embellished choli and a flared skirt with an embroidered border and a net dupatta. Picked for traditional celebrations.",
     "garmentType": "Lehenga",
     "colors": {
-      "primary": "Red",
-      "secondary": [
-        "Gold",
-        "Green"
-      ]
+      "primary": "Sage Green",
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Sequinned",
-      "embroidery": "sequin"
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli with an embroidered border"
     },
     "layering": null,
     "bottomwear": "Lehenga Choli",
@@ -5476,20 +5470,18 @@
     "id": "women-look-215",
     "referenceId": "#215",
     "occasion": "traditional",
-    "outfitDescription": "A maroon printed flared cotton lehenga with printed flared in cotton, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A beige anarkali with a flared silhouette and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
-      "primary": "Maroon",
-      "secondary": [
-        "Gold"
-      ]
+      "primary": "Beige",
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Printed",
-      "embroidery": "printed flared"
+      "pattern": "Solid",
+      "embroidery": "matching dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5502,18 +5494,18 @@
     "id": "women-look-216",
     "referenceId": "#216",
     "occasion": "traditional",
-    "outfitDescription": "A powder blue zari-woven silk lehenga with zari in silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A maroon anarkali with a flared silhouette and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
-      "primary": "Powder Blue",
+      "primary": "Maroon",
       "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Zari Woven",
-      "embroidery": "zari"
+      "pattern": "Solid",
+      "embroidery": "matching dupatta"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5526,18 +5518,18 @@
     "id": "women-look-217",
     "referenceId": "#217",
     "occasion": "traditional",
-    "outfitDescription": "A gold bandhani silk lehenga with bandhani in silk, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "An ivory anarkali with subtle embroidery and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
-      "primary": "Gold",
+      "primary": "Ivory",
       "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Bandhani",
-      "embroidery": "bandhani"
+      "pattern": "Embroidered",
+      "embroidery": "subtle embroidery"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5550,18 +5542,18 @@
     "id": "women-look-218",
     "referenceId": "#218",
     "occasion": "traditional",
-    "outfitDescription": "A lilac mirror-embellished georgette lehenga with mirror work embellishment in georgette, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "A sage-green sharara set with an embroidered kurta and a flared sharara with a woven border and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
     "colors": {
-      "primary": "Lilac",
+      "primary": "Sage Green",
       "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Embellished",
-      "embroidery": "mirror work embellishment"
+      "pattern": "Embroidered",
+      "embroidery": "embroidered kurta with a woven border"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Sharara",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5574,20 +5566,18 @@
     "id": "women-look-219",
     "referenceId": "#219",
     "occasion": "traditional",
-    "outfitDescription": "A mustard brocade lehenga with long-sleeve crop top with brocade in brocade, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
-    "garmentType": "Lehenga",
+    "outfitDescription": "An ivory anarkali with embroidery and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
     "colors": {
-      "primary": "Mustard",
-      "secondary": [
-        "Red"
-      ]
+      "primary": "Ivory",
+      "secondary": []
     },
     "patternOrEmbroidery": {
-      "pattern": "Woven",
-      "embroidery": "brocade"
+      "pattern": "Embroidered",
+      "embroidery": "embroidery"
     },
     "layering": null,
-    "bottomwear": "Lehenga Choli",
+    "bottomwear": "Anarkali (floor-length)",
     "footwear": null,
     "accessories": null,
     "pose": null,
@@ -5600,17 +5590,18 @@
     "id": "women-look-220",
     "referenceId": "#220",
     "occasion": "traditional",
-    "outfitDescription": "A royal blue silk lehenga with gota-border dupatta with gota border dupatta in silk blend, cut as a a-line flared. Picked for Garba, Diwali, Festive Party, Traditional — youthful proportions, easy movement and a finish that photographs well at night.",
+    "outfitDescription": "An ivory-gold lehenga with a heavily embroidered choli and a flared skirt with a gold border, styled with a pink dupatta. Picked for traditional celebrations.",
     "garmentType": "Lehenga",
     "colors": {
-      "primary": "Royal Blue",
+      "primary": "Ivory",
       "secondary": [
-        "Silver"
+        "Gold",
+        "Pink"
       ]
     },
     "patternOrEmbroidery": {
-      "pattern": "Solid",
-      "embroidery": "gota border dupatta"
+      "pattern": "Embroidered",
+      "embroidery": "heavily embroidered choli with a gold border and a pink dupatta"
     },
     "layering": null,
     "bottomwear": "Lehenga Choli",
