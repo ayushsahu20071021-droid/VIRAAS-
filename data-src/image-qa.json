@@ -1099,8 +1099,8 @@
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 14156,
-    "sha256": "b99624609549668a1baff90f1364ef340a77233d82d8720a85c457a375c6dbd6"
+    "bytes": 6482,
+    "sha256": "8c1ed4d937e8d17ac94296ba4dcdbd2284eef72ff1e4bbadcc98f39f4eb2d9b1"
   },
   "product:men-look-050": {
     "generation": "GENERATED",
@@ -1113,8 +1113,8 @@
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 9992,
-    "sha256": "836810e891b761cc1119076ff28f3a82514c324c01c373551c161b12c62005a0"
+    "bytes": 8496,
+    "sha256": "e18b02203c89a8254f30f570aed31d080c894ef0835ebf36b6f83c55411106ce"
   },
   "product:men-look-092": {
     "generation": "GENERATED",
@@ -1127,8 +1127,8 @@
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 12630,
-    "sha256": "db0c479c93106af8c54130144c155995b51708f13b151b39818da10f067e79f5"
+    "bytes": 7378,
+    "sha256": "62a69004b6ad5b4175148e794c7ecdd5ff2c6d8b7ebc8425bfe0a1b90d0647fb"
   },
   "product:men-look-134": {
     "generation": "GENERATED",
@@ -1141,8 +1141,8 @@
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 12704,
-    "sha256": "9cc723a7331fb563562cb4418cffbefa0210e53ba486092abb0f74931ae661a3"
+    "bytes": 10210,
+    "sha256": "f9e730ef98bac6fa33c756fe6125a88368ccd8559a180c23c24c889cda6d2666"
   },
   "product:men-look-176": {
     "generation": "GENERATED",
@@ -1155,7 +1155,42 @@
     "generation": "GENERATED",
     "qa": "GENERATED",
     "dimensions": "900x491",
-    "bytes": 8192,
-    "sha256": "f22db54d9ab73799305372266fa640e1870481f8d0b57ec6f42bcec0ad773602"
+    "bytes": 6226,
+    "sha256": "a9826e80800c34a5101eb493b303fecff4f49fab30ee303f3fb0ed97eda625dd"
+  },
+  "product:men-look-010": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 11812,
+    "sha256": "256486c90d071ef2225809d4ba3871d273c169a5c723a9f8f34f937398ef263b"
+  },
+  "product:men-look-052": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 9536,
+    "sha256": "e9ba91ba760d7b041140b1a0cef5239876d803b6eb6ce4edb2b461e6474f17c4"
+  },
+  "product:men-look-094": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 8118,
+    "sha256": "a6aff2fb93e7bdb41308955ed71b07395d08931726978b08b144947f82373671"
+  },
+  "product:men-look-136": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 10894,
+    "sha256": "1069db6fe1f88d0f046ef4ddcac6c52fa507698b9e68241b117c8e7aa20b2d9d"
+  },
+  "product:men-look-178": {
+    "generation": "GENERATED",
+    "qa": "GENERATED",
+    "dimensions": "900x491",
+    "bytes": 9574,
+    "sha256": "4901557cb782ace909bd8ff56046a1a43df771fc7500d3b1c95fa59b3deb99c9"
   }
 }
