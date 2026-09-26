@@ -1,11 +1,14 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { MEN_LOOKS, menLookById, menOccasionLabel, menOccasions, type MenLook } from '../lib/menCatalog';
 import { ImageFrame } from '../components/ui';
+import menFinalImages from '../data/men-final-images.json';
+
+const finalImages = menFinalImages as Record<string, string>;
 
 function PlaceholderCard({ look }: { look: MenLook }) {
   return <article className="men-look-card" data-men-look-id={look.id}>
     <Link to={`/men-look/${look.id}`} className="men-look-image">
-      <ImageFrame alt={`${look.id} reference ${look.referenceId}`} label={`Look ${look.id.replace('men-look-', '')}`} detail={`Reference ${look.referenceId} · Final image placeholder`} />
+      <ImageFrame src={finalImages[look.id]} alt={`${look.id} reference ${look.referenceId}`} label={`Look ${look.id.replace('men-look-', '')}`} detail={`Reference ${look.referenceId} · Final image placeholder`} />
     </Link>
     <div className="men-look-body">
       <div className="kicker">{menOccasionLabel(look.occasion)}</div>
@@ -45,7 +48,7 @@ export function MenLookDetail() {
   if (!look) return <div className="page"><div className="empty"><h3>Men look not found</h3><Link className="btn btn-dark" to="/men">Back to Men</Link></div></div>;
   return <div className="page men-detail">
     <div className="crumbs"><Link to="/">Home</Link> / <Link to="/men">Men</Link> / {look.id}</div>
-    <div className="men-detail-grid"><ImageFrame alt={`${look.id} reference ${look.referenceId}`} label={`Look ${look.id.replace('men-look-', '')}`} detail={`Reference ${look.referenceId} · Final image placeholder`} ratio="3 / 4" />
+    <div className="men-detail-grid"><ImageFrame src={finalImages[look.id]} alt={`${look.id} reference ${look.referenceId}`} label={`Look ${look.id.replace('men-look-', '')}`} detail={`Reference ${look.referenceId} · Final image placeholder`} ratio="3 / 4" />
       <div><div className="kicker">{menOccasionLabel(look.occasion)} · {look.referenceId}</div><h1>Look {look.id.replace('men-look-', '')}</h1><p className="men-detail-lead">{look.outfitDescription.split('. Picked')[0]}.</p><dl className="specs"><div><dt>Garment</dt><dd>{look.garmentType}</dd></div><div><dt>Colour</dt><dd>{look.colors.primary}{look.colors.secondary?.length ? ` · ${look.colors.secondary.join(', ')}` : ''}</dd></div><div><dt>Pattern</dt><dd>{look.patternOrEmbroidery.pattern} · {look.patternOrEmbroidery.embroidery}</dd></div><div><dt>Layering</dt><dd>{look.layering ?? 'None recorded'}</dd></div><div><dt>Bottomwear</dt><dd>{look.bottomwear ?? 'Not recorded'}</dd></div><div><dt>Footwear</dt><dd>{look.footwear ?? 'Not recorded'}</dd></div><div><dt>Accessories</dt><dd>{look.accessories ?? 'Not recorded'}</dd></div></dl><p className="placeholder-callout">Final Men image placeholder · replace this reserved frame with the manually approved image later.</p><Link className="btn btn-dark" to={`/men/${look.occasion}`}>Browse {menOccasionLabel(look.occasion)}</Link></div>
     </div>
   </div>;
