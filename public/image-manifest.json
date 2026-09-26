@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-09-24T06:59:31.714Z",
+  "references": [
+    {
+      "id": "REF-C1",
+      "file": "Screenshot (1967).png",
+      "type": "couple",
+      "title": "Mirror selfie — rani pink lehenga + white bandeau / white kurta + phulkari dupatta",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-C2",
+      "file": "Screenshot (1917).png",
+      "type": "couple",
+      "title": "Overhead top-down — black brocade lehenga + white long-sleeve top / black embroidered kurta + ivory paisley stole",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-C3",
+      "file": "Screenshot (1914).png",
+      "type": "couple",
+      "title": "Garba Nights — ivory mirror-work lehenga / white chikankari kurta + jeans, golden hour on steps",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-S1",
+      "file": "viraas_pinterest_references_01-10.jpg",
+      "type": "couple-sheet",
+      "title": "Reference sheet A — panels 1–10 (garba couple searches)",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-S2",
+      "file": "viraas_pinterest_references_11-20.jpg",
+      "type": "couple-sheet",
+      "title": "Reference sheet B — panels 11–20 (navratri couple searches)",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-M1",
+      "file": "Screenshot (1890).png",
+      "type": "men",
+      "title": "Trending aesthetic garba outfits — men",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-M2",
+      "file": "Screenshot (1915).png",
+      "type": "men",
+      "title": "Kurta for men",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-M3",
+      "file": "Screenshot (1910).png",
+      "type": "men",
+      "title": "Men festive kurta / shirt set",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-W1",
+      "file": "Screenshot (1907).png",
+      "type": "women",
+      "title": "Trending navratri outfits — women",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    },
+    {
+      "id": "REF-W2",
+      "file": "Screenshot (1905).png",
+      "type": "women",
+      "title": "Navratri outfit ideas — women",
+      "note": "Third-party reference used for visual direction only; not stored or redistributed."
+    }
+  ],
+  "assets": [],
+  "totals": {
+    "queued": 961,
+    "qaPass": 0,
+    "pending": 901,
+    "qaFail": 0
+  }
+}

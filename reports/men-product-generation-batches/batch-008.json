@@ -1,0 +1,295 @@
+{
+  "batchNumber": 8,
+  "startIndex": 71,
+  "endIndex": 80,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-festive-jacket-cream-solid-nehru",
+      "title": "Cream Nehru Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Cream",
+      "secondaryColours": [],
+      "pattern": "Solid",
+      "embroidery": "solid nehru",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 1099,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's cream nehru jacket with solid nehru, cream, cotton silk fabric appearance, solid nehru details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-cream-solid-nehru.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-cream-solid",
+      "title": "Cream Velvet Festive Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Cream",
+      "secondaryColours": [],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 3099,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's cream velvet festive jacket with solid, cream, velvet fabric appearance, solid details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-cream-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-ivory-brocade",
+      "title": "Ivory Brocade Open Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Woven",
+      "embroidery": "brocade",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 1699,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory brocade open jacket with brocade, ivory, brocade fabric appearance, brocade details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-ivory-brocade.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-ivory-solid-nehru",
+      "title": "Ivory Nehru Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid nehru",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 3699,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory nehru jacket with solid nehru, ivory, cotton silk fabric appearance, solid nehru details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-ivory-solid-nehru.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-ivory-subtle-embroidery",
+      "title": "Ivory Subtle-Embroidery Festive Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "subtle embroidery",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 3299,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory jacket, ivory, silk blend fabric appearance, subtle embroidery details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-ivory-subtle-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-ivory-solid",
+      "title": "Ivory Velvet Festive Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 3999,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory velvet festive jacket with solid, ivory, velvet fabric appearance, solid details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-ivory-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-maroon-brocade",
+      "title": "Maroon Brocade Open Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Woven",
+      "embroidery": "brocade",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 2199,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon brocade open jacket with brocade, maroon, brocade fabric appearance, brocade details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-maroon-brocade.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-maroon-solid-nehru",
+      "title": "Maroon Nehru Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid nehru",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 1099,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon nehru jacket with solid nehru, maroon, cotton silk fabric appearance, solid nehru details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-maroon-solid-nehru.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-maroon-solid",
+      "title": "Maroon Velvet Festive Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 2299,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon velvet festive jacket with solid, maroon, velvet fabric appearance, solid details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-maroon-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-navy-solid-nehru",
+      "title": "Navy Nehru Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid nehru",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 3599,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy nehru jacket with solid nehru, navy, cotton silk fabric appearance, solid nehru details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-navy-solid-nehru.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

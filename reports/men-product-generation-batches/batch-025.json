@@ -1,0 +1,309 @@
+{
+  "batchNumber": 25,
+  "startIndex": 241,
+  "endIndex": 250,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-modern-kurta-white-solid",
+      "title": "White Linen-Blend Mandarin Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "White",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2699,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's white kurta, white, linen fabric appearance, solid details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-white-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-white-minimal-embroidery",
+      "title": "White Minimal Embroidery Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "White",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "minimal embroidery",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1399,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's pure white kurta pajama with minimal embroidery, clean relaxed silhouette, white footwear, white, cotton fabric appearance, minimal embroidery details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference LOOK-19, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-white-minimal-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-white-pintuck",
+      "title": "White Pintuck Cotton Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "White",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Pintuck",
+      "embroidery": "pintuck",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2999,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's white pintuck cotton kurta with pintuck, white, cotton fabric appearance, pintuck details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-white-pintuck.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-white-with-hot-pink-embroidered-stole",
+      "title": "White With Hot Pink Embroidered Stole Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "White",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "with hot pink embroidered stole",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1599,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's white kurta with a bright embroidered hot pink festive dupatta scarf with colourful detailing and tassels, white, cotton fabric appearance, with hot pink embroidered stole details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference GARBA-REF-03, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-white-with-hot-pink-embroidered-stole.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-wine-block-print",
+      "title": "Wine Block-Print Cotton Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "block print",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1099,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine block-print cotton kurta with block print, wine, cotton fabric appearance, block print details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-wine-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-wine-copper-thread-placket-embroidery",
+      "title": "Wine Kurta with Thread-Embroidered Placket",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "copper thread placket embroidery",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1699,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine kurta with thread-embroidered placket with copper thread placket embroidery, wine, cotton silk fabric appearance, copper thread placket embroidery details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-C2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-wine-copper-thread-placket-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-wine-mirror-sequin",
+      "title": "Wine Mirror-Sequin Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Sequinned",
+      "embroidery": "mirror sequin",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2199,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine mirror-sequin kurta with mirror sequin, wine, georgette fabric appearance, mirror sequin details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-wine-mirror-sequin.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-wine-sequin-stripe",
+      "title": "Wine Sequin-Stripe Long Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Sequinned",
+      "embroidery": "sequin stripe",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 699,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine sequin-stripe long kurta with sequin stripe, wine, cotton silk fabric appearance, sequin stripe details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-wine-sequin-stripe.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-wine-with-cream-stole",
+      "title": "Wine With Cream Stole Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "with cream stole",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1399,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's deep maroon wine kurta with a long cream and off-white stole, wine, cotton fabric appearance, with cream stole details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference GARBA-REF-08, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-wine-with-cream-stole.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-black-bandhani-print",
+      "title": "Black Bandhani-Print Festive Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Bandhani Print",
+      "embroidery": "bandhani print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1199,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black bandhani-print festive shirt with bandhani print, black, rayon fabric appearance, bandhani print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-black-bandhani-print.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

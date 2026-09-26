@@ -1,0 +1,6018 @@
+[
+  {
+    "id": "women-look-001",
+    "referenceId": "#001",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a fitted black choli and a flared black skirt finished with a gold and multicolour embroidered border, styled for dandiya. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Gold",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold and multicolour embroidered hem border"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-ivory-mirror-work-blouse"
+  },
+  {
+    "id": "women-look-002",
+    "referenceId": "#002",
+    "occasion": "garba",
+    "outfitDescription": "An olive-green chaniya choli pairing a white mirror-embellished choli with a flared olive skirt edged in a cream border. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Olive Green",
+      "secondary": [
+        "Ivory"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "white mirror-embellished choli with cream hem border"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-black-gold-motif-with-white-blouse"
+  },
+  {
+    "id": "women-look-003",
+    "referenceId": "#003",
+    "occasion": "garba",
+    "outfitDescription": "A multicolour chaniya choli in vivid patola-style patchwork prints across a full flared skirt, worn with a coordinating choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Multicolour",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "vivid patola-style patchwork prints with mirror accents"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-rani-pink-white-bandeau-blouse-with-gold-bordered-dupatta"
+  },
+  {
+    "id": "women-look-004",
+    "referenceId": "#004",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and a flared black skirt finished with an ornate maroon patola border, styled with a rust patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Maroon",
+        "Rust"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "ornate maroon patola border with a rust patola dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-pre-draped-saree-ivory-red-bandhani-dupatta-drape"
+  },
+  {
+    "id": "women-look-005",
+    "referenceId": "#005",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a cream choli and a flared ivory skirt trimmed in a colourful mirror-work border, styled with a multicolour dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "colourful mirror-work border and matching dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-lilac-embroidered-with-embellished-blouse"
+  },
+  {
+    "id": "women-look-006",
+    "referenceId": "#006",
+    "occasion": "garba",
+    "outfitDescription": "A red chaniya choli teaming a black full-sleeve top with a tiered red skirt finished in white bandhani-print borders. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Red",
+      "secondary": [
+        "Black",
+        "White"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "white bandhani-print tiered borders with a black full-sleeve top"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-multicolour-mirror-work-skirt-with-black-crop-blouse"
+  },
+  {
+    "id": "women-look-007",
+    "referenceId": "#007",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt edged in a gold-toned printed border, styled with a colourful printed dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Gold",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "gold-toned printed hem border with a colourful printed dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-ivory-colourful-printed-dupatta"
+  },
+  {
+    "id": "women-look-008",
+    "referenceId": "#008",
+    "occasion": "garba",
+    "outfitDescription": "A navy chaniya choli densely worked in multicolour mirror and patola-style prints across the flared skirt and choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Navy",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "all-over multicolour mirror and patola-style work"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-multicolour-maroon-and-green-accents-with-cream-dupatta"
+  },
+  {
+    "id": "women-look-009",
+    "referenceId": "#009",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a flared skirt of vertical multicolour striped panels, worn with a dark choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "multicolour vertical panelled skirt"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-black-colourful-embroidered-mirror-dupatta"
+  },
+  {
+    "id": "women-look-010",
+    "referenceId": "#010",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a cream embellished choli and a flared ivory skirt banded with multicolour patchwork above a cream hem. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "multicolour patchwork band above a cream hem"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-ivory-gold-embellished-blouse-with-sheer-dupatta"
+  },
+  {
+    "id": "women-look-011",
+    "referenceId": "#011",
+    "occasion": "garba",
+    "outfitDescription": "A navy-blue chaniya choli with a dark choli and flared navy skirt, styled with a colourful patola-print dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Navy",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "colourful patola-print dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-navy-geometric-sparkle-embellishment"
+  },
+  {
+    "id": "women-look-012",
+    "referenceId": "#012",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli pairing a dark multicolour-worked choli with a flared ivory skirt banded in bold multicolour patchwork. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Multicolour",
+        "Black"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "bold multicolour patchwork band with a dark worked choli"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-royal-blue-patterned-with-magenta-dupatta"
+  },
+  {
+    "id": "women-look-013",
+    "referenceId": "#013",
+    "occasion": "garba",
+    "outfitDescription": "A maroon chaniya choli pairing an embellished black choli with a flared maroon skirt. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": [
+        "Black"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished black choli"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-navy-colourful-motif-with-embellished-blouse"
+  },
+  {
+    "id": "women-look-014",
+    "referenceId": "#014",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt, styled with a multicolour embroidered mirror-work dupatta down the front. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "multicolour mirror-work dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-red-cream-blouse-with-traditional-detailing"
+  },
+  {
+    "id": "women-look-015",
+    "referenceId": "#015",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli pairing a red choli with a flared ivory skirt banded in vivid multicolour patchwork. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Multicolour",
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "vivid multicolour patchwork band with a red choli"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-black-light-embroidered-blouse-with-dupatta"
+  },
+  {
+    "id": "women-look-016",
+    "referenceId": "#016",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a white choli and a flared ivory skirt in tonal self-embroidery, styled with a sheer ivory dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "White"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "tonal self-embroidery with a sheer ivory dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-lilac-mirror-and-metallic-accents"
+  },
+  {
+    "id": "women-look-017",
+    "referenceId": "#017",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a cream choli and flared ivory skirt, styled with a red printed dupatta draped diagonally. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red printed dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-maroon-black-blouse-with-rich-dupatta"
+  },
+  {
+    "id": "women-look-018",
+    "referenceId": "#018",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a white embroidered choli and a flared ivory skirt, styled with a red mirror-work dupatta over one shoulder. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "white embroidered choli with a red mirror-work dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-black-colourful-dupatta-with-traditional-jewellery"
+  },
+  {
+    "id": "women-look-019",
+    "referenceId": "#019",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt, styled with a red and multicolour patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Red",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red and multicolour patola dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-black-white-crop-blouse-with-colourful-detailing"
+  },
+  {
+    "id": "women-look-020",
+    "referenceId": "#020",
+    "occasion": "garba",
+    "outfitDescription": "A red chaniya choli with a mirror-embellished choli and a flared skirt shading into multicolour patola patchwork, styled with a patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Red",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "mirror-work choli with a multicolour patola patchwork skirt and dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-ivory-blue-printed-detailing"
+  },
+  {
+    "id": "women-look-021",
+    "referenceId": "#021",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli pairing a red printed halter choli with a plain flared ivory skirt. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red printed halter choli"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-black-white-floral-embroidery-with-palazzo"
+  },
+  {
+    "id": "women-look-022",
+    "referenceId": "#022",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a red choli and a flared ivory skirt finished with a red patola border, styled with a red patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red",
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red patola border with a matching patola dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-ivory-olive-floral-print-with-dupatta"
+  },
+  {
+    "id": "women-look-023",
+    "referenceId": "#023",
+    "occasion": "garba",
+    "outfitDescription": "A multicolour chaniya choli in bold patola-style patchwork panels of red, green and white, worn with a full-sleeve embellished choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Multicolour",
+      "secondary": [
+        "Red",
+        "Green"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "patola-style patchwork with mirror work"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-wine-gold-border"
+  },
+  {
+    "id": "women-look-024",
+    "referenceId": "#024",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt bordered in dense multicolour Kutch mirror-work, styled with a black dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "dense multicolour Kutch mirror-work border with a black dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-ivory-navy-block-print-with-white-dupatta"
+  },
+  {
+    "id": "women-look-025",
+    "referenceId": "#025",
+    "occasion": "garba",
+    "outfitDescription": "A red chaniya choli in colour-blocked red, black and white panels with heavy mirror-work and latkans, worn with a matching choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Red",
+      "secondary": [
+        "Black",
+        "White"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "colour-blocked mirror-work with latkans"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-ivory-gold-floral-embroidery-with-maroon-dupatta"
+  },
+  {
+    "id": "women-look-026",
+    "referenceId": "#026",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a white choli and a plain flared white skirt, styled with a vivid yellow bandhani dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Yellow"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "vivid yellow bandhani dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-rani-pink-white-floral-embroidery"
+  },
+  {
+    "id": "women-look-027",
+    "referenceId": "#027",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli pairing a grey-blue printed full-sleeve choli with a plain flared ivory skirt. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Grey",
+        "Blue"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "grey-blue printed choli with blue tassels"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-ivory-hot-pink-bandhani-dupatta"
+  },
+  {
+    "id": "women-look-028",
+    "referenceId": "#028",
+    "occasion": "garba",
+    "outfitDescription": "An ivory lehenga with a flared skirt scattered with gold and pastel floral motifs at the hem, worn with a matching choli and a sheer cream dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold and pastel floral motifs at the hem with a sheer dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-rani-pink-white-floral-motifs"
+  },
+  {
+    "id": "women-look-029",
+    "referenceId": "#029",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt, styled with a red and multicolour printed dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Red",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red and multicolour printed dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-powder-blue-white-embroidery"
+  },
+  {
+    "id": "women-look-030",
+    "referenceId": "#030",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a maroon choli and a flared black skirt patterned with large white mandala motifs, finished with a cream hem and a printed dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "White",
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "large white mandala motifs with a printed dupatta and cream hem"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-anarkali-ivory-floral-embroidery"
+  },
+  {
+    "id": "women-look-031",
+    "referenceId": "#031",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt worked in dense multicolour mirror-work, styled with a matching colourful dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "dense multicolour mirror-work with a matching dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-wine-gold-embroidered-dupatta"
+  },
+  {
+    "id": "women-look-032",
+    "referenceId": "#032",
+    "occasion": "garba",
+    "outfitDescription": "An ivory lehenga with a flared skirt of gold zari chevron stripes, worn with a matching full-sleeve embellished choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold zari chevron stripes"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-ivory-navy-floral-dupatta"
+  },
+  {
+    "id": "women-look-033",
+    "referenceId": "#033",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt finished with a multicolour mirror-work border, styled with a red bandhani dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Red",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "multicolour mirror-work border with a red bandhani dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-red-gold-embellished-blouse"
+  },
+  {
+    "id": "women-look-034",
+    "referenceId": "#034",
+    "occasion": "garba",
+    "outfitDescription": "A red-and-ivory lehenga with a flared skirt in alternating red and ivory sequinned panels, worn with a red embellished choli and dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Red",
+      "secondary": [
+        "Ivory"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "alternating red and ivory sequinned panels"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-maroon-oxidised-silver-embellishment"
+  },
+  {
+    "id": "women-look-035",
+    "referenceId": "#035",
+    "occasion": "garba",
+    "outfitDescription": "An ivory lehenga with a heavily embellished maroon choli and latkans, paired with a flared cream skirt. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "heavily embellished maroon choli with latkans"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-wine-soft-pink-dupatta"
+  },
+  {
+    "id": "women-look-036",
+    "referenceId": "#036",
+    "occasion": "garba",
+    "outfitDescription": "An ivory lehenga with a flared skirt of gold zari chevron stripes, worn with an embellished choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold zari chevron stripes"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-ivory-navy-dupatta"
+  },
+  {
+    "id": "women-look-037",
+    "referenceId": "#037",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli pairing a black full-sleeve choli in multicolour mirror embroidery with blue latkans, and a plain flared cream skirt. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Black",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "multicolour mirror-embroidered black choli with blue latkans"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-purple-embroidered-neckline"
+  },
+  {
+    "id": "women-look-038",
+    "referenceId": "#038",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a dark embellished choli and a flared black skirt, styled with a red patola dupatta with a gold border. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Red",
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red patola dupatta with a gold border and embellished choli"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-anarkali-rani-pink-embroidered-upper-with-dupatta"
+  },
+  {
+    "id": "women-look-039",
+    "referenceId": "#039",
+    "occasion": "garba",
+    "outfitDescription": "A red lehenga with a flared red skirt striped in silver mirror-sequin work, paired with a contrasting black embellished choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Red",
+      "secondary": [
+        "Black",
+        "Silver"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "silver mirror-sequin striped skirt with an embellished black choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-maroon-subtle-embroidery"
+  },
+  {
+    "id": "women-look-040",
+    "referenceId": "#040",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli pairing a red choli and red patola dupatta with a flared black skirt accented with mirror motifs. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Red",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red patola dupatta with a mirror-accented skirt"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-black-sequin"
+  },
+  {
+    "id": "women-look-041",
+    "referenceId": "#041",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a white choli and flared ivory skirt, styled with a navy-blue mirror-work dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Navy"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "navy-blue mirror-work dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-emerald-sequin"
+  },
+  {
+    "id": "women-look-042",
+    "referenceId": "#042",
+    "occasion": "garba",
+    "outfitDescription": "A multicolour chaniya choli in ornate patola-style patchwork with a red tasselled border, styled with a red patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Multicolour",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "ornate patola patchwork with a red tasselled border"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-wine-sequin"
+  },
+  {
+    "id": "women-look-043",
+    "referenceId": "#043",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli pairing a multicolour embellished full-sleeve choli with a plain flared cream skirt. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "multicolour embellished full-sleeve choli with latkans"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-pre-draped-saree-black-solid"
+  },
+  {
+    "id": "women-look-044",
+    "referenceId": "#044",
+    "occasion": "garba",
+    "outfitDescription": "A navy chaniya choli with a flared navy skirt of multicolour floral motifs and a patola band, styled with a white mirror-work dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Navy",
+      "secondary": [
+        "Multicolour",
+        "White"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "multicolour floral motifs with a white mirror-work dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-silver-sequin"
+  },
+  {
+    "id": "women-look-045",
+    "referenceId": "#045",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli in dense multicolour Kutch prints across a full flared skirt, worn with a matching choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "dense multicolour Kutch print with mirror work"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-anarkali-black-gold"
+  },
+  {
+    "id": "women-look-046",
+    "referenceId": "#046",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a voluminous textured white skirt, worn with a choli and a pink dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "voluminous textured white skirt with a pink dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-emerald-solid"
+  },
+  {
+    "id": "women-look-047",
+    "referenceId": "#047",
+    "occasion": "garba",
+    "outfitDescription": "A plum chaniya choli with a purple choli and a flared plum skirt, styled with a cream dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Plum",
+      "secondary": [
+        "Cream"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "subtle gold sequin work with a cream dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-black-mirror"
+  },
+  {
+    "id": "women-look-048",
+    "referenceId": "#048",
+    "occasion": "garba",
+    "outfitDescription": "An ivory lehenga with a flared skirt of diagonal gold zari chevron stripes, paired with a multicolour embroidered choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Gold",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "diagonal gold zari chevron stripes with a multicolour choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-wine-sequin"
+  },
+  {
+    "id": "women-look-049",
+    "referenceId": "#049",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a flared skirt of vertical multicolour striped panels, worn with a black choli and a mustard dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "multicolour panelled skirt with a mustard dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-pre-draped-saree-silver-sequin"
+  },
+  {
+    "id": "women-look-050",
+    "referenceId": "#050",
+    "occasion": "garba",
+    "outfitDescription": "A red-and-ivory chaniya choli with a red choli and a flared ivory skirt patterned with red patola prints and mirror motifs, styled with a red dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Red",
+      "secondary": [
+        "Ivory"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red patola prints with mirror motifs"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-emerald-sequin"
+  },
+  {
+    "id": "women-look-051",
+    "referenceId": "#051",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a flared black skirt in small white ikat spots, worn with a black choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "White"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "white ikat spot print"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-gharara-black-gold"
+  },
+  {
+    "id": "women-look-052",
+    "referenceId": "#052",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and a flared black skirt finished in a broad maroon patola border, styled with a maroon patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "broad maroon patola border with a matching patola dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-gold-zari"
+  },
+  {
+    "id": "women-look-053",
+    "referenceId": "#053",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a flared black skirt finished in a vivid multicolour patola and mirror border, styled with a multicolour tasselled dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "multicolour patola and mirror border with a tasselled dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-anarkali-navy-sequin"
+  },
+  {
+    "id": "women-look-054",
+    "referenceId": "#054",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli in a plain black choli and skirt, styled with a bold multicolour Kutch-patchwork dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "bold multicolour Kutch-patchwork dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-rani-pink-sequin"
+  },
+  {
+    "id": "women-look-055",
+    "referenceId": "#055",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a flared black skirt finished in a red and multicolour patola border, styled with a red dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Red",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red and multicolour patola border with a red dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-emerald-sequin"
+  },
+  {
+    "id": "women-look-056",
+    "referenceId": "#056",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a red choli and a flared ivory skirt finished in a red patola border, styled with a red patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red patola border with a matching patola dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-black-sequin"
+  },
+  {
+    "id": "women-look-057",
+    "referenceId": "#057",
+    "occasion": "garba",
+    "outfitDescription": "A maroon lehenga with a flared skirt in patola-style panels and gold detailing, worn with an embellished choli and dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": [
+        "Gold",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "patola-style panels with gold detailing"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-pre-draped-saree-wine-solid"
+  },
+  {
+    "id": "women-look-058",
+    "referenceId": "#058",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli in a plain black choli and skirt, layered with a long multicolour patola open jacket. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "long multicolour patola open jacket over a plain black choli and skirt"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-wine-sequin"
+  },
+  {
+    "id": "women-look-059",
+    "referenceId": "#059",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a flared black skirt finished in vivid multicolour patola tiers, styled with a green dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour",
+        "Green"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "multicolour patola tiered border with a green dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-silver-mirror"
+  },
+  {
+    "id": "women-look-060",
+    "referenceId": "#060",
+    "occasion": "garba",
+    "outfitDescription": "A multicolour chaniya choli in vivid pink and orange patchwork prints across a full flared skirt, worn with a pink choli. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Multicolour",
+      "secondary": [
+        "Pink",
+        "Orange"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "pink and orange patola patchwork with mirror work"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-mustard-temple-border"
+  },
+  {
+    "id": "women-look-061",
+    "referenceId": "#061",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt finished with a multicolour mirror-work border, styled with a red patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Red",
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "multicolour mirror-work border with a red patola dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-maroon-bandhani"
+  },
+  {
+    "id": "women-look-062",
+    "referenceId": "#062",
+    "occasion": "garba",
+    "outfitDescription": "An ivory indo-western set pairing a black crop top and cream palazzo with a long embroidered maroon open jacket with tassels. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Maroon",
+        "Black"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered maroon open jacket with tassels"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-red-contrast-border"
+  },
+  {
+    "id": "women-look-063",
+    "referenceId": "#063",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt finished in a multicolour patola border, styled with a patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "multicolour patola border and dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-anarkali-teal-block-print"
+  },
+  {
+    "id": "women-look-064",
+    "referenceId": "#064",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli pairing a densely multicolour mirror-worked choli with a plain flared black skirt. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "densely multicolour mirror-worked choli"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-emerald-zari"
+  },
+  {
+    "id": "women-look-065",
+    "referenceId": "#065",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with a black choli and flared black skirt with gold trim, styled with a bold multicolour patola patchwork dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "multicolour patola patchwork dupatta with gold trim"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-indigo-block-print"
+  },
+  {
+    "id": "women-look-066",
+    "referenceId": "#066",
+    "occasion": "garba",
+    "outfitDescription": "A black chaniya choli with an embellished choli and a flared black skirt inset with maroon patola panels and gold coin buttons, finished with waist latkans. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "maroon patola panels with gold coin buttons and waist latkans"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-mustard-bandhani"
+  },
+  {
+    "id": "women-look-067",
+    "referenceId": "#067",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli pairing a multicolour patchwork choli with a flared white skirt, styled with a multicolour patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "multicolour patchwork choli with a patola dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-ivory-gold-border"
+  },
+  {
+    "id": "women-look-068",
+    "referenceId": "#068",
+    "occasion": "garba",
+    "outfitDescription": "An ivory chaniya choli with a flared white skirt finished in a broad red patola border, styled with a red patola dupatta. Picked for Garba and Navratri celebrations.",
+    "garmentType": "Chaniya Choli",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red",
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "broad red patola border and dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Garba Wear",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-anarkali-red-gota"
+  },
+  {
+    "id": "women-look-069",
+    "referenceId": "#069",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory palazzo suit with a self-embroidered cream kurta and matching palazzo and dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Palazzo Suit",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Cream"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "self-toned embroidered cream kurta"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-rani-pink-temple-border"
+  },
+  {
+    "id": "women-look-070",
+    "referenceId": "#070",
+    "occasion": "college-fest",
+    "outfitDescription": "A plum lehenga pairing an embellished purple crop top with a flared purple skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Purple",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished purple crop top"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-green-block-print"
+  },
+  {
+    "id": "women-look-071",
+    "referenceId": "#071",
+    "occasion": "college-fest",
+    "outfitDescription": "A wine lehenga pairing a peplum top with a flared wine skirt and a sheer dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Wine",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "peplum top with a sheer dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-maroon-zari"
+  },
+  {
+    "id": "women-look-072",
+    "referenceId": "#072",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory indo-western set pairing a pink floral crop top with a cream palazzo. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "pink floral crop top"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-pre-draped-saree-mustard-zari"
+  },
+  {
+    "id": "women-look-073",
+    "referenceId": "#073",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory indo-western set pairing a black embroidered velvet top with a cream palazzo. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Black"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered black velvet top"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-kurta-sets-maroon-gota"
+  },
+  {
+    "id": "women-look-074",
+    "referenceId": "#074",
+    "occasion": "college-fest",
+    "outfitDescription": "An indo-western look pairing a white top and blue jeans with a long pink floral open shrug. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Pink",
+      "secondary": [
+        "White",
+        "Blue"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "pink floral open shrug"
+    },
+    "layering": null,
+    "bottomwear": "Jeans",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-royal-blue-bandhani"
+  },
+  {
+    "id": "women-look-075",
+    "referenceId": "#075",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory indo-western set pairing a black crop top and cream palazzo with a gold waist belt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Black",
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "black crop top with a gold waist belt"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-anarkali-mustard-block-print"
+  },
+  {
+    "id": "women-look-076",
+    "referenceId": "#076",
+    "occasion": "college-fest",
+    "outfitDescription": "A pale-yellow tiered midi dress layered with a white cropped shrug. Picked for college fest and daytime celebrations.",
+    "garmentType": "Midi Dress",
+    "colors": {
+      "primary": "Yellow",
+      "secondary": [
+        "White"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "tiered midi dress with a cropped shrug"
+    },
+    "layering": null,
+    "bottomwear": "Dress",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-red-bandhani"
+  },
+  {
+    "id": "women-look-077",
+    "referenceId": "#077",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory skirt set pairing a maroon crop top with a tiered flared ivory skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "maroon crop top with a tiered skirt"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-green-contrast-border"
+  },
+  {
+    "id": "women-look-078",
+    "referenceId": "#078",
+    "occasion": "college-fest",
+    "outfitDescription": "A navy skirt set pairing a black crop top with a flared navy block-printed skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Navy",
+      "secondary": [
+        "Black",
+        "White"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "block-printed flared skirt"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-saree-red-zari"
+  },
+  {
+    "id": "women-look-079",
+    "referenceId": "#079",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory indo-western look pairing a white chikankari long kurta with blue jeans. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Blue"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "white chikankari long kurta"
+    },
+    "layering": null,
+    "bottomwear": "Jeans",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-ivory-block-print"
+  },
+  {
+    "id": "women-look-080",
+    "referenceId": "#080",
+    "occasion": "college-fest",
+    "outfitDescription": "A rose-gold peplum set pairing a shimmery peplum top with a matching flared skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Rose Gold",
+      "secondary": [
+        "Peach"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "shimmery peplum top with a matching skirt"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-black-mirror-work"
+  },
+  {
+    "id": "women-look-081",
+    "referenceId": "#081",
+    "occasion": "college-fest",
+    "outfitDescription": "A rust skirt set pairing a black crop top with a flared rust ajrakh block-printed skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Rust",
+      "secondary": [
+        "Black"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "rust ajrakh block-printed skirt"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-hot-pink-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-082",
+    "referenceId": "#082",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory skirt set pairing a red embroidered crop top with a flared white skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "red embroidered crop top"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-navy-bandhani-print"
+  },
+  {
+    "id": "women-look-083",
+    "referenceId": "#083",
+    "occasion": "college-fest",
+    "outfitDescription": "A cream tissue lehenga with a gold-bordered flared skirt, styled with a red net dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Cream",
+      "secondary": [
+        "Gold",
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "gold-bordered tissue skirt with a red net dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-mustard-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-084",
+    "referenceId": "#084",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory skirt set pairing an embellished white top with a tiered flared white skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished white top"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-multicolour-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-085",
+    "referenceId": "#085",
+    "occasion": "college-fest",
+    "outfitDescription": "A green indo-western set pairing a mirror-embroidered gold jacket with a flared dark-green skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Green",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "mirror-embroidered gold jacket"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-black-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-086",
+    "referenceId": "#086",
+    "occasion": "college-fest",
+    "outfitDescription": "A maroon and ivory set pairing a maroon printed full-sleeve top with a flared ivory skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": [
+        "Ivory"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "maroon printed full-sleeve top"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-hot-pink-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-087",
+    "referenceId": "#087",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory indo-western set pairing a multicolour floral peplum top with a cream palazzo. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "multicolour floral peplum top"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-red-mirror-work"
+  },
+  {
+    "id": "women-look-088",
+    "referenceId": "#088",
+    "occasion": "college-fest",
+    "outfitDescription": "A yellow floral sharara set with a sleeveless top and matching flared sharara. Picked for college fest and daytime celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Yellow",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "yellow floral print"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-ivory-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-089",
+    "referenceId": "#089",
+    "occasion": "college-fest",
+    "outfitDescription": "A mint-green skirt set pairing a fitted top with a tiered flared mint skirt, styled with a maroon patola dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Mint Green",
+      "secondary": [
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "maroon patola dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-royal-blue-bandhani-print"
+  },
+  {
+    "id": "women-look-090",
+    "referenceId": "#090",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory indo-western set pairing a red embroidered kurti with a flared white palazzo. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "red embroidered kurti"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-wine-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-091",
+    "referenceId": "#091",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory skirt set pairing a red floral crop top with a flared cream satin skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red floral crop top"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-yellow-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-092",
+    "referenceId": "#092",
+    "occasion": "college-fest",
+    "outfitDescription": "A black skirt set pairing a black crop top and flared black skirt with a multicolour patola dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "multicolour patola dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-red-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-093",
+    "referenceId": "#093",
+    "occasion": "college-fest",
+    "outfitDescription": "A maroon lehenga pairing a brocade crop top with a flared maroon brocade skirt with gold motifs. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Woven",
+      "embroidery": "gold brocade motifs"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-ivory-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-094",
+    "referenceId": "#094",
+    "occasion": "college-fest",
+    "outfitDescription": "An indo-western look pairing a rust top and blue jeans with a long navy floral printed open shrug. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Navy",
+      "secondary": [
+        "Rust",
+        "Blue"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "navy floral printed open shrug"
+    },
+    "layering": null,
+    "bottomwear": "Jeans",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rani-pink-mirror-work"
+  },
+  {
+    "id": "women-look-095",
+    "referenceId": "#095",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory lehenga pairing a pink choli with a flared cream net skirt and a pink dupatta, cinched with a gold belt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "gold belt with a pink dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-white-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-096",
+    "referenceId": "#096",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory lehenga pairing a green choli with a flared cream skirt with a gold border and a green dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Green"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "gold-bordered skirt with a green dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-emerald-bandhani-print"
+  },
+  {
+    "id": "women-look-097",
+    "referenceId": "#097",
+    "occasion": "college-fest",
+    "outfitDescription": "A cream lehenga pairing a black choli with a flared gold-toned skirt and a black net dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Cream",
+      "secondary": [
+        "Black",
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "black net dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-maroon-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-098",
+    "referenceId": "#098",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory skirt set pairing a red printed top with a tiered flared white skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red printed top"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rust-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-099",
+    "referenceId": "#099",
+    "occasion": "college-fest",
+    "outfitDescription": "A pastel floral sharara set with a peplum top and matching flared sharara. Picked for college fest and daytime celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Beige",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "pastel floral print"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rani-pink-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-100",
+    "referenceId": "#100",
+    "occasion": "college-fest",
+    "outfitDescription": "A mint-green sharara set pairing an embroidered peplum top with a flared sharara. Picked for college fest and daytime celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Mint Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered peplum top"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-white-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-101",
+    "referenceId": "#101",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory skirt set pairing a teal embroidered crop top with a tiered flared white skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Teal"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "teal embroidered crop top"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-hot-pink-mirror-work"
+  },
+  {
+    "id": "women-look-102",
+    "referenceId": "#102",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory indo-western set pairing a powder-blue embroidered flared-sleeve top with a white flared skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Blue"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "powder-blue flared-sleeve embroidered top"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-navy-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-103",
+    "referenceId": "#103",
+    "occasion": "college-fest",
+    "outfitDescription": "A sage-green indo-western set pairing an embellished crop top and palazzo with a long open jacket. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Sage Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished crop top with a long open jacket"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-mustard-bandhani-print"
+  },
+  {
+    "id": "women-look-104",
+    "referenceId": "#104",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory skirt set pairing a teal embroidered crop top with a flared white skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Teal"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "teal embroidered crop top"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-multicolour-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-105",
+    "referenceId": "#105",
+    "occasion": "college-fest",
+    "outfitDescription": "An ivory skirt set pairing an embroidered white top with a tiered flared white skirt, cinched with a gold belt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered top with a gold belt"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-black-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-106",
+    "referenceId": "#106",
+    "occasion": "college-fest",
+    "outfitDescription": "A brown indo-western set pairing a cream crop top and chocolate palazzo with a long floral printed shrug. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Brown",
+      "secondary": [
+        "Cream"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "floral printed long shrug"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-hot-pink-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-107",
+    "referenceId": "#107",
+    "occasion": "college-fest",
+    "outfitDescription": "A red lehenga pairing a black crop top with a flared red patola-print skirt and a red dupatta. Picked for college fest and daytime celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Red",
+      "secondary": [
+        "Black"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "red patola-print skirt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-navy-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-108",
+    "referenceId": "#108",
+    "occasion": "college-fest",
+    "outfitDescription": "A maroon indo-western set pairing a crop top and palazzo with a printed shrug. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "printed shrug"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-ivory-mirror-work"
+  },
+  {
+    "id": "women-look-109",
+    "referenceId": "#109",
+    "occasion": "college-fest",
+    "outfitDescription": "An indo-western set pairing an ivory kurti with an embroidered dusty-pink sharara. Picked for college fest and daytime celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Pink",
+      "secondary": [
+        "Ivory"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered dusty-pink sharara"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-royal-blue-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-110",
+    "referenceId": "#110",
+    "occasion": "college-fest",
+    "outfitDescription": "A green skirt set pairing an embroidered crop top with a flared green skirt. Picked for college fest and daytime celebrations.",
+    "garmentType": "Crop Top & Skirt",
+    "colors": {
+      "primary": "Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered crop top"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-wine-bandhani-print"
+  },
+  {
+    "id": "women-look-111",
+    "referenceId": "#111",
+    "occasion": "diwali",
+    "outfitDescription": "A copper tissue lehenga with a gold zari-bordered flared skirt and a dupatta draped across the shoulder. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Copper",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Woven",
+      "embroidery": "gold zari border"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-yellow-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-112",
+    "referenceId": "#112",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory sharara set with an embroidered kurti and matching flared sharara with a sheer dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered kurti with a sheer dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-red-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-113",
+    "referenceId": "#113",
+    "occasion": "diwali",
+    "outfitDescription": "A lemon-yellow anarkali with a chikankari hem and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Lemon Yellow",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "chikankari hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-ivory-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-114",
+    "referenceId": "#114",
+    "occasion": "diwali",
+    "outfitDescription": "A beige sharara set with an embroidered kurti and a flared cream sharara. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Beige",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-royal-blue-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-115",
+    "referenceId": "#115",
+    "occasion": "diwali",
+    "outfitDescription": "A beige sharara set pairing an embellished kurti with a flared beige sharara and a red dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Beige",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a red dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-white-mirror-work"
+  },
+  {
+    "id": "women-look-116",
+    "referenceId": "#116",
+    "occasion": "diwali",
+    "outfitDescription": "A rose-pink anarkali with peacock and floral embroidery at the hem and a matching embroidered dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Rose Pink",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "peacock and floral hem embroidery"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-emerald-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-117",
+    "referenceId": "#117",
+    "occasion": "diwali",
+    "outfitDescription": "A maroon anarkali with a matching draped dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "draped dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-maroon-bandhani-print"
+  },
+  {
+    "id": "women-look-118",
+    "referenceId": "#118",
+    "occasion": "diwali",
+    "outfitDescription": "A mauve sharara set with a bell-sleeve kurta and a flared sharara. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Mauve",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "embroidered border on a bell-sleeve kurta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rust-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-119",
+    "referenceId": "#119",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory suit pairing a pink floral-embroidered kurta with a palazzo and dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Palazzo Suit",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "pink floral-embroidered kurta"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rani-pink-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-120",
+    "referenceId": "#120",
+    "occasion": "diwali",
+    "outfitDescription": "A copper lehenga with an embellished choli and flared skirt, cinched with a gold belt. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Copper",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embellished",
+      "embroidery": "sequinned copper lehenga with a gold belt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-white-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-121",
+    "referenceId": "#121",
+    "occasion": "diwali",
+    "outfitDescription": "A maroon indo-western set pairing a crop top and flared skirt with a long embroidered shrug. Picked for Diwali celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "long embroidered shrug"
+    },
+    "layering": null,
+    "bottomwear": "Skirt",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-emerald-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-122",
+    "referenceId": "#122",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory indo-western set pairing an embellished crop top and palazzo with a long peach embroidered shrug. Picked for Diwali celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Peach"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "long peach embroidered shrug"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-navy-mirror-work"
+  },
+  {
+    "id": "women-look-123",
+    "referenceId": "#123",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory anarkali with a gold-embroidered hem and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-mustard-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-124",
+    "referenceId": "#124",
+    "occasion": "diwali",
+    "outfitDescription": "A cream lehenga with a gold-bordered flared skirt, styled with a red dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Cream",
+      "secondary": [
+        "Gold",
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Woven",
+      "embroidery": "gold-bordered skirt with a red dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-multicolour-bandhani-print"
+  },
+  {
+    "id": "women-look-125",
+    "referenceId": "#125",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory anarkali with tonal chikankari embroidery and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "tonal chikankari embroidery"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-black-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-126",
+    "referenceId": "#126",
+    "occasion": "diwali",
+    "outfitDescription": "A lemon-yellow sharara set with an embroidered kurti and matching flared sharara. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Lemon Yellow",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-hot-pink-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-127",
+    "referenceId": "#127",
+    "occasion": "diwali",
+    "outfitDescription": "A maroon anarkali with a gold-embroidered hem and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-navy-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-128",
+    "referenceId": "#128",
+    "occasion": "diwali",
+    "outfitDescription": "A maroon lehenga pairing an embellished choli with a flared bandhani-print skirt. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "bandhani-print skirt with an embellished choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-mustard-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-129",
+    "referenceId": "#129",
+    "occasion": "diwali",
+    "outfitDescription": "A gold lehenga with a gold-bordered flared skirt, styled with a peach dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Gold",
+      "secondary": [
+        "Peach"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Woven",
+      "embroidery": "gold-bordered skirt with a peach dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-royal-blue-mirror-work"
+  },
+  {
+    "id": "women-look-130",
+    "referenceId": "#130",
+    "occasion": "diwali",
+    "outfitDescription": "A mint-green sharara set with an embellished kurti and a sheer embroidered dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Mint Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "sheer embroidered dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-wine-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-131",
+    "referenceId": "#131",
+    "occasion": "diwali",
+    "outfitDescription": "A peach sharara set pairing an embellished crop top with a flared sharara and dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Peach",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished crop top"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-yellow-bandhani-print"
+  },
+  {
+    "id": "women-look-132",
+    "referenceId": "#132",
+    "occasion": "diwali",
+    "outfitDescription": "A taupe sharara set with a peplum kurti and a flared sharara with a dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Taupe",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "peplum kurti with a dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-red-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-133",
+    "referenceId": "#133",
+    "occasion": "diwali",
+    "outfitDescription": "A mint-green lehenga pairing an embellished choli with a flared skirt. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Mint Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-ivory-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-134",
+    "referenceId": "#134",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory anarkali with gold gota-work border layers and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold gota-work border layers"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-royal-blue-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-135",
+    "referenceId": "#135",
+    "occasion": "diwali",
+    "outfitDescription": "A navy-blue lehenga with a sequinned choli and a flared skirt with a gold scalloped border and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Navy Blue",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embellished",
+      "embroidery": "sequinned choli with a gold scalloped border"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-wine-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-136",
+    "referenceId": "#136",
+    "occasion": "diwali",
+    "outfitDescription": "A blush-pink anarkali with an embroidered dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Blush Pink",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-emerald-mirror-work"
+  },
+  {
+    "id": "women-look-137",
+    "referenceId": "#137",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory anarkali with a gold-bordered hem and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-bordered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-maroon-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-138",
+    "referenceId": "#138",
+    "occasion": "diwali",
+    "outfitDescription": "A maroon anarkali with gold booti motifs and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold booti motifs"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rust-bandhani-print"
+  },
+  {
+    "id": "women-look-139",
+    "referenceId": "#139",
+    "occasion": "diwali",
+    "outfitDescription": "A beige anarkali with an embellished bodice, a layered flared hem and a tonal dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Beige",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished bodice with a layered flared hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rani-pink-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-140",
+    "referenceId": "#140",
+    "occasion": "diwali",
+    "outfitDescription": "An olive-green lehenga pairing a choli with a flared skirt. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Olive Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "plain choli and flared skirt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-white-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-141",
+    "referenceId": "#141",
+    "occasion": "diwali",
+    "outfitDescription": "A grey sharara set with a peplum kurti and a tiered flared sharara with a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Grey",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "gold-bordered peplum kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-emerald-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-142",
+    "referenceId": "#142",
+    "occasion": "diwali",
+    "outfitDescription": "A cream sharara set with an embellished kurti and a flared sharara, styled with a red bandhani dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Cream",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a red bandhani dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-maroon-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-143",
+    "referenceId": "#143",
+    "occasion": "diwali",
+    "outfitDescription": "A dusty-pink sharara set with a kurti and a flared sharara with a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Dusty Pink",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "matching dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-mustard-mirror-work"
+  },
+  {
+    "id": "women-look-144",
+    "referenceId": "#144",
+    "occasion": "diwali",
+    "outfitDescription": "A dusty-rose lehenga with an embroidered-border flared skirt, styled with a gold-toned dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Dusty Rose",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered-border skirt with a gold-toned dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-multicolour-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-145",
+    "referenceId": "#145",
+    "occasion": "diwali",
+    "outfitDescription": "A beige sharara set with a floral-embroidered kurti and a flared sharara with a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Beige",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-black-bandhani-print"
+  },
+  {
+    "id": "women-look-146",
+    "referenceId": "#146",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory sharara set with an embellished peplum kurti and a flared sharara with a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished peplum kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-hot-pink-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-147",
+    "referenceId": "#147",
+    "occasion": "diwali",
+    "outfitDescription": "A coral anarkali with a gold-embroidered hem and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Coral",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-navy-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-148",
+    "referenceId": "#148",
+    "occasion": "diwali",
+    "outfitDescription": "A plum lehenga pairing a crop top with a flared skirt and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Plum",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "matching dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-mustard-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-149",
+    "referenceId": "#149",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory lehenga pairing a puff-sleeve choli with a floral-embroidered flared skirt. Picked for Diwali celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered skirt with a puff-sleeve choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-multicolour-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-150",
+    "referenceId": "#150",
+    "occasion": "diwali",
+    "outfitDescription": "A maroon suit pairing an embellished flared kurti with a wide palazzo and a matching dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Palazzo Suit",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished flared kurti"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-wine-mirror-work"
+  },
+  {
+    "id": "women-look-151",
+    "referenceId": "#151",
+    "occasion": "diwali",
+    "outfitDescription": "An ivory sharara set with a blue floral-printed kurti and a flared white sharara. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Blue"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "blue floral-printed kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-yellow-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-152",
+    "referenceId": "#152",
+    "occasion": "diwali",
+    "outfitDescription": "A maroon sharara set with a gold booti-embroidered kurti and a flared sharara, styled with a red net dupatta. Picked for Diwali celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold booti-embroidered kurti with a red net dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-red-bandhani-print"
+  },
+  {
+    "id": "women-look-153",
+    "referenceId": "#153",
+    "occasion": "festive-party",
+    "outfitDescription": "A dusty-pink kurta set pairing an embellished straight kurta with slim trousers and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Kurta Set",
+    "colors": {
+      "primary": "Dusty Pink",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished straight kurta"
+    },
+    "layering": null,
+    "bottomwear": "Trousers",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-ivory-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-154",
+    "referenceId": "#154",
+    "occasion": "festive-party",
+    "outfitDescription": "A beige indo-western set pairing an embellished bralette and palazzo with a long shrug. Picked for festive parties and evening celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Beige",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished bralette with a long shrug"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-royal-blue-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-155",
+    "referenceId": "#155",
+    "occasion": "festive-party",
+    "outfitDescription": "An ivory lehenga pairing an embellished maroon choli with a tiered flared skirt with a gold border. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished maroon choli with a gold-bordered skirt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-wine-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-156",
+    "referenceId": "#156",
+    "occasion": "festive-party",
+    "outfitDescription": "A teal anarkali with a flared silhouette and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Teal",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "matching dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-yellow-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-157",
+    "referenceId": "#157",
+    "occasion": "festive-party",
+    "outfitDescription": "A grey lehenga pairing a choli with a flared skirt with a gold border and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Grey",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "gold-bordered skirt with a matching dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-maroon-mirror-work"
+  },
+  {
+    "id": "women-look-158",
+    "referenceId": "#158",
+    "occasion": "festive-party",
+    "outfitDescription": "A magenta lehenga pairing an embellished choli and gold-bordered flared skirt with a long embellished cape. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Magenta",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-bordered skirt with a long embellished cape"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rust-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-159",
+    "referenceId": "#159",
+    "occasion": "festive-party",
+    "outfitDescription": "A teal sharara set with a kurti and a flared sharara with a gold border and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Teal",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-bordered sharara with a matching dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rani-pink-bandhani-print"
+  },
+  {
+    "id": "women-look-160",
+    "referenceId": "#160",
+    "occasion": "festive-party",
+    "outfitDescription": "A pink floral-printed lehenga with a floral choli and flared skirt and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Pink",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "floral-printed choli and skirt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-white-patchwork-with-mirror-work"
+  },
+  {
+    "id": "women-look-161",
+    "referenceId": "#161",
+    "occasion": "festive-party",
+    "outfitDescription": "A mauve lehenga pairing an embellished peplum choli with a flared skirt and a long dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Mauve",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished peplum choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-emerald-gamthi-print-with-mirror"
+  },
+  {
+    "id": "women-look-162",
+    "referenceId": "#162",
+    "occasion": "festive-party",
+    "outfitDescription": "A red lehenga with an embellished choli and a flared red-and-ivory skirt, styled with a red dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Red",
+      "secondary": [
+        "Ivory"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli with a red dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-maroon-gold-lampi-border-with-patola-dupatta"
+  },
+  {
+    "id": "women-look-163",
+    "referenceId": "#163",
+    "occasion": "festive-party",
+    "outfitDescription": "A magenta sharara set with an embellished peplum kurti and a flared sharara with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Magenta",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished peplum kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-rust-kutchi-mirror-halter"
+  },
+  {
+    "id": "women-look-164",
+    "referenceId": "#164",
+    "occasion": "festive-party",
+    "outfitDescription": "A powder-blue gharara set with a heavily embroidered kurti and a flared gharara with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Powder Blue",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "heavily embroidered kurti and gharara"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-multicolour-mirror-work"
+  },
+  {
+    "id": "women-look-165",
+    "referenceId": "#165",
+    "occasion": "festive-party",
+    "outfitDescription": "A beige-gold sharara set with an embellished kurti and a flared sharara with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Beige",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-chaniya-choli-black-kutchi-embroidered-crop-blouse"
+  },
+  {
+    "id": "women-look-166",
+    "referenceId": "#166",
+    "occasion": "festive-party",
+    "outfitDescription": "A sage-green anarkali with an embroidered hem and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Sage Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-black-mirror-work-embellishment"
+  },
+  {
+    "id": "women-look-167",
+    "referenceId": "#167",
+    "occasion": "festive-party",
+    "outfitDescription": "A multicolour lehenga with an embroidered choli and a scalloped-hem flared skirt, styled with an olive dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Multicolour",
+      "secondary": [
+        "Olive"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered choli with a scalloped-hem skirt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-red-brocade"
+  },
+  {
+    "id": "women-look-168",
+    "referenceId": "#168",
+    "occasion": "festive-party",
+    "outfitDescription": "An ivory sharara set with an embellished asymmetric kurti and a flared sharara with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished asymmetric kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-maroon-gota-border-dupatta"
+  },
+  {
+    "id": "women-look-169",
+    "referenceId": "#169",
+    "occasion": "festive-party",
+    "outfitDescription": "A powder-blue lehenga with an embroidered choli and a flared skirt with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Powder Blue",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-powder-blue-kutch-balloon-sleeve-blouse"
+  },
+  {
+    "id": "women-look-170",
+    "referenceId": "#170",
+    "occasion": "festive-party",
+    "outfitDescription": "A sage-green sharara set with an embellished choli and a flared gold-bordered sharara with a net dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Sage Green",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-bordered sharara with a net dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-gold-sequin"
+  },
+  {
+    "id": "women-look-171",
+    "referenceId": "#171",
+    "occasion": "festive-party",
+    "outfitDescription": "A dusty-blue lehenga with an embroidered choli and a flared embroidered-border skirt and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Dusty Blue",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered-border skirt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-black-printed-flared"
+  },
+  {
+    "id": "women-look-172",
+    "referenceId": "#172",
+    "occasion": "festive-party",
+    "outfitDescription": "A champagne lehenga with an embellished choli and a flared skirt with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Champagne",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-red-zari"
+  },
+  {
+    "id": "women-look-173",
+    "referenceId": "#173",
+    "occasion": "festive-party",
+    "outfitDescription": "A rust lehenga with an embellished choli and a flared skirt with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Rust",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-ivory-mirror-work-embellishment"
+  },
+  {
+    "id": "women-look-174",
+    "referenceId": "#174",
+    "occasion": "festive-party",
+    "outfitDescription": "A maroon lehenga with an embroidered choli and a flared skirt with a gold embroidered border and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold embroidered border"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-wine-brocade"
+  },
+  {
+    "id": "women-look-175",
+    "referenceId": "#175",
+    "occasion": "festive-party",
+    "outfitDescription": "A blush-pink lehenga with a floral-embroidered choli and a floral-embroidered flared skirt and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Blush Pink",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered choli and skirt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-lilac-gota-border-dupatta"
+  },
+  {
+    "id": "women-look-176",
+    "referenceId": "#176",
+    "occasion": "festive-party",
+    "outfitDescription": "A powder-blue sharara set with an embellished kurti and a flared sharara with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Powder Blue",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-mustard-kutch-balloon-sleeve-blouse"
+  },
+  {
+    "id": "women-look-177",
+    "referenceId": "#177",
+    "occasion": "festive-party",
+    "outfitDescription": "A navy-blue lehenga with an embellished choli and a flared skirt with a sheer dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Navy Blue",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli with a sheer dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-royal-blue-sequin"
+  },
+  {
+    "id": "women-look-178",
+    "referenceId": "#178",
+    "occasion": "festive-party",
+    "outfitDescription": "A lilac lehenga with an embellished choli and a floral flared skirt with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Lilac",
+      "secondary": [
+        "Multicolour"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "floral choli and skirt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-ivory-printed-flared"
+  },
+  {
+    "id": "women-look-179",
+    "referenceId": "#179",
+    "occasion": "festive-party",
+    "outfitDescription": "A beige-gold lehenga with an embellished choli and a flared skirt, styled with a coral dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Beige",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli with a coral dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-wine-zari"
+  },
+  {
+    "id": "women-look-180",
+    "referenceId": "#180",
+    "occasion": "festive-party",
+    "outfitDescription": "A dusty-pink lehenga with an embellished choli and a flared skirt with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Dusty Pink",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-lilac-bandhani"
+  },
+  {
+    "id": "women-look-181",
+    "referenceId": "#181",
+    "occasion": "festive-party",
+    "outfitDescription": "A yellow anarkali with a gold-embroidered hem and a multicolour dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Yellow",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-rani-pink-mirror-work-embellishment"
+  },
+  {
+    "id": "women-look-182",
+    "referenceId": "#182",
+    "occasion": "festive-party",
+    "outfitDescription": "A mauve sharara set with an embroidered kurti and a flared sharara with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Mauve",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-emerald-brocade"
+  },
+  {
+    "id": "women-look-183",
+    "referenceId": "#183",
+    "occasion": "festive-party",
+    "outfitDescription": "A navy-blue lehenga with an embroidered choli and a flared skirt with a sequinned border and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Navy Blue",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "sequinned border"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-teal-gota-border-dupatta"
+  },
+  {
+    "id": "women-look-184",
+    "referenceId": "#184",
+    "occasion": "festive-party",
+    "outfitDescription": "A grey sharara set with an embellished kurti and a flared sharara with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Grey",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-silver-kutch-balloon-sleeve-blouse"
+  },
+  {
+    "id": "women-look-185",
+    "referenceId": "#185",
+    "occasion": "festive-party",
+    "outfitDescription": "An ivory lehenga with an embellished choli and a flared skirt, styled with an olive dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Olive"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli with an olive dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-coral-sequin"
+  },
+  {
+    "id": "women-look-186",
+    "referenceId": "#186",
+    "occasion": "festive-party",
+    "outfitDescription": "A dusty-blue anarkali with an embroidered hem and a draped dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Dusty Blue",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-rani-pink-printed-flared"
+  },
+  {
+    "id": "women-look-187",
+    "referenceId": "#187",
+    "occasion": "festive-party",
+    "outfitDescription": "A navy-blue lehenga with a choli and a blue-and-white ombre flared skirt with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Navy Blue",
+      "secondary": [
+        "White"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Printed",
+      "embroidery": "blue-and-white ombre skirt"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-emerald-zari"
+  },
+  {
+    "id": "women-look-188",
+    "referenceId": "#188",
+    "occasion": "festive-party",
+    "outfitDescription": "An ivory sharara set with an embellished kurti and a flared sharara with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-teal-bandhani"
+  },
+  {
+    "id": "women-look-189",
+    "referenceId": "#189",
+    "occasion": "festive-party",
+    "outfitDescription": "An ivory lehenga with an embellished choli and a flared skirt, styled with a pink dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli with a pink dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-red-mirror-work-embellishment"
+  },
+  {
+    "id": "women-look-190",
+    "referenceId": "#190",
+    "occasion": "festive-party",
+    "outfitDescription": "A sage-green lehenga with an embellished cream choli and a gold-embroidered flared skirt, styled with a peach dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Sage Green",
+      "secondary": [
+        "Gold",
+        "Peach"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-embroidered skirt with a peach dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-maroon-brocade"
+  },
+  {
+    "id": "women-look-191",
+    "referenceId": "#191",
+    "occasion": "festive-party",
+    "outfitDescription": "A lemon-yellow anarkali with lace sleeves and an embroidered hem and a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Lemon Yellow",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "lace sleeves and an embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-powder-blue-gota-border-dupatta"
+  },
+  {
+    "id": "women-look-192",
+    "referenceId": "#192",
+    "occasion": "festive-party",
+    "outfitDescription": "A sage-green lehenga with an embellished choli and a flared skirt with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Sage Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-gold-kutch-balloon-sleeve-blouse"
+  },
+  {
+    "id": "women-look-193",
+    "referenceId": "#193",
+    "occasion": "festive-party",
+    "outfitDescription": "A gold sharara set with an embellished kurti and a flared sharara, styled with a red dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Gold",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a red dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-red-printed-flared"
+  },
+  {
+    "id": "women-look-194",
+    "referenceId": "#194",
+    "occasion": "festive-party",
+    "outfitDescription": "A dusty-rose sharara set with a gold-buti kurti and a gold-embroidered flared sharara with a matching dupatta. Picked for festive parties and evening celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Dusty Rose",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-buti kurti and gold-embroidered sharara"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-maroon-zari"
+  },
+  {
+    "id": "women-look-195",
+    "referenceId": "#195",
+    "occasion": "traditional",
+    "outfitDescription": "A blush-pink lehenga with an embellished choli and a flared skirt with a scalloped embroidered hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Blush Pink",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "scalloped embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-powder-blue-bandhani"
+  },
+  {
+    "id": "women-look-196",
+    "referenceId": "#196",
+    "occasion": "traditional",
+    "outfitDescription": "A pink kurta set with a chikankari kurta, white palazzo and a net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Palazzo Suit",
+    "colors": {
+      "primary": "Pink",
+      "secondary": [
+        "White"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "chikankari kurta"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-wine-mirror-work-embellishment"
+  },
+  {
+    "id": "women-look-197",
+    "referenceId": "#197",
+    "occasion": "traditional",
+    "outfitDescription": "A sage-green sharara set with an embellished peplum kurti and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Sage Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished peplum kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-lilac-brocade"
+  },
+  {
+    "id": "women-look-198",
+    "referenceId": "#198",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory anarkali with subtle floral embroidery and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "subtle floral embroidery"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-mustard-gota-border-dupatta"
+  },
+  {
+    "id": "women-look-199",
+    "referenceId": "#199",
+    "occasion": "traditional",
+    "outfitDescription": "A mint-green sharara set with an embellished kurti and a flared sharara, styled with a lilac dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Mint Green",
+      "secondary": [
+        "Lilac"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a lilac dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-royal-blue-kutch-balloon-sleeve-blouse"
+  },
+  {
+    "id": "women-look-200",
+    "referenceId": "#200",
+    "occasion": "traditional",
+    "outfitDescription": "A magenta lehenga with an embellished choli and a tiered flared skirt with gold borders and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Magenta",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "tiered skirt with gold borders"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-ivory-sequin"
+  },
+  {
+    "id": "women-look-201",
+    "referenceId": "#201",
+    "occasion": "traditional",
+    "outfitDescription": "A gold sharara set with a heavily embroidered kurti and a flared sharara with a net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Gold",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "heavily embroidered kurti with a net dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-wine-printed-flared"
+  },
+  {
+    "id": "women-look-202",
+    "referenceId": "#202",
+    "occasion": "traditional",
+    "outfitDescription": "A dusty-pink anarkali with a floral-embroidered hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Dusty Pink",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-lilac-zari"
+  },
+  {
+    "id": "women-look-203",
+    "referenceId": "#203",
+    "occasion": "traditional",
+    "outfitDescription": "A blush-pink sharara set with an embellished kurti and a flared sharara with a net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Blush Pink",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a net dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-emerald-mirror-work-embellishment"
+  },
+  {
+    "id": "women-look-204",
+    "referenceId": "#204",
+    "occasion": "traditional",
+    "outfitDescription": "A peach sharara set with an embroidered kurti and a flared sharara with a scalloped hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Peach",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "scalloped-hem sharara"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-teal-brocade"
+  },
+  {
+    "id": "women-look-205",
+    "referenceId": "#205",
+    "occasion": "traditional",
+    "outfitDescription": "A mint-green sharara set with a floral-embroidered kurta and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Mint Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered kurta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-silver-gota-border-dupatta"
+  },
+  {
+    "id": "women-look-206",
+    "referenceId": "#206",
+    "occasion": "traditional",
+    "outfitDescription": "A dusty-rose kurta set with an embroidered straight kurta and slim trousers and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Kurta Set",
+    "colors": {
+      "primary": "Dusty Rose",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered straight kurta"
+    },
+    "layering": null,
+    "bottomwear": "Trousers",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-coral-kutch-balloon-sleeve-blouse"
+  },
+  {
+    "id": "women-look-207",
+    "referenceId": "#207",
+    "occasion": "traditional",
+    "outfitDescription": "A mauve sharara set with an embroidered kurti and a flared sharara with an embroidered hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Mauve",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-emerald-printed-flared"
+  },
+  {
+    "id": "women-look-208",
+    "referenceId": "#208",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory anarkali with embroidery and a pink dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidery with a pink dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-teal-zari"
+  },
+  {
+    "id": "women-look-209",
+    "referenceId": "#209",
+    "occasion": "traditional",
+    "outfitDescription": "A rose-pink lehenga with an embellished choli and a full flared skirt with a gold border and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Rose Pink",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli with a gold border"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-silver-bandhani"
+  },
+  {
+    "id": "women-look-210",
+    "referenceId": "#210",
+    "occasion": "traditional",
+    "outfitDescription": "A maroon palazzo suit with a plain kurti and a wide palazzo and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Palazzo Suit",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "plain kurti and wide palazzo"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-maroon-mirror-work-embellishment"
+  },
+  {
+    "id": "women-look-211",
+    "referenceId": "#211",
+    "occasion": "traditional",
+    "outfitDescription": "A black sharara set with a kurti and a flared sharara with a pink embroidered scalloped border and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Black",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "pink embroidered scalloped border"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-powder-blue-brocade"
+  },
+  {
+    "id": "women-look-212",
+    "referenceId": "#212",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory lehenga with a choli and a tiered flared skirt with gold borders and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "tiered skirt with gold borders"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-gold-gota-border-dupatta"
+  },
+  {
+    "id": "women-look-213",
+    "referenceId": "#213",
+    "occasion": "traditional",
+    "outfitDescription": "A powder-blue sharara set with an embellished kurti and a flared sharara with an embroidered net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Powder Blue",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with an embroidered net dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-black-kutch-balloon-sleeve-blouse"
+  },
+  {
+    "id": "women-look-214",
+    "referenceId": "#214",
+    "occasion": "traditional",
+    "outfitDescription": "A sage-green lehenga with an embellished choli and a flared skirt with an embroidered border and a net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Sage Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished choli with an embroidered border"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-red-sequin"
+  },
+  {
+    "id": "women-look-215",
+    "referenceId": "#215",
+    "occasion": "traditional",
+    "outfitDescription": "A beige anarkali with a flared silhouette and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Beige",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "matching dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-maroon-printed-flared"
+  },
+  {
+    "id": "women-look-216",
+    "referenceId": "#216",
+    "occasion": "traditional",
+    "outfitDescription": "A maroon anarkali with a flared silhouette and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Maroon",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "matching dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-powder-blue-zari"
+  },
+  {
+    "id": "women-look-217",
+    "referenceId": "#217",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory anarkali with subtle embroidery and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "subtle embroidery"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-gold-bandhani"
+  },
+  {
+    "id": "women-look-218",
+    "referenceId": "#218",
+    "occasion": "traditional",
+    "outfitDescription": "A sage-green sharara set with an embroidered kurta and a flared sharara with a woven border and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Sage Green",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered kurta with a woven border"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-lilac-mirror-work-embellishment"
+  },
+  {
+    "id": "women-look-219",
+    "referenceId": "#219",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory anarkali with embroidery and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidery"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-mustard-brocade"
+  },
+  {
+    "id": "women-look-220",
+    "referenceId": "#220",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory-gold lehenga with a heavily embroidered choli and a flared skirt with a gold border, styled with a pink dupatta. Picked for traditional celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Gold",
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "heavily embroidered choli with a gold border and a pink dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-royal-blue-gota-border-dupatta"
+  },
+  {
+    "id": "women-look-221",
+    "referenceId": "#221",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory anarkali with a floral-embroidered hem and a matching floral dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-lehenga-ivory-kutch-balloon-sleeve-blouse"
+  },
+  {
+    "id": "women-look-222",
+    "referenceId": "#222",
+    "occasion": "traditional",
+    "outfitDescription": "A mauve anarkali with a gold-embroidered hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Mauve",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-mint-gota-trim"
+  },
+  {
+    "id": "women-look-223",
+    "referenceId": "#223",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory sharara set with an embroidered kurti and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-red-mirror-work"
+  },
+  {
+    "id": "women-look-224",
+    "referenceId": "#224",
+    "occasion": "traditional",
+    "outfitDescription": "A beige sharara set with an embellished kurti and a flared sharara with a scalloped hem, styled with a red bandhani dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Beige",
+      "secondary": [
+        "Red"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "scalloped hem with a red bandhani dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-emerald-chikankari"
+  },
+  {
+    "id": "women-look-225",
+    "referenceId": "#225",
+    "occasion": "traditional",
+    "outfitDescription": "A lilac sharara set with a floral-embroidered kurti and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Lilac",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "floral-embroidered kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-lilac-sequin"
+  },
+  {
+    "id": "women-look-226",
+    "referenceId": "#226",
+    "occasion": "traditional",
+    "outfitDescription": "A gold sharara set with an embellished kurti and a flared dusty-pink sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Gold",
+      "secondary": [
+        "Dusty Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a dusty-pink sharara"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-mint-block-print"
+  },
+  {
+    "id": "women-look-227",
+    "referenceId": "#227",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory sharara set with an embroidered peplum kurti and a flared dusty-pink embroidered sharara. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Dusty Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered peplum kurti with a dusty-pink sharara"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-rani-pink-gota-trim"
+  },
+  {
+    "id": "women-look-228",
+    "referenceId": "#228",
+    "occasion": "traditional",
+    "outfitDescription": "A mauve anarkali with embroidery and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Mauve",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidery"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-wine-mirror-work"
+  },
+  {
+    "id": "women-look-229",
+    "referenceId": "#229",
+    "occasion": "traditional",
+    "outfitDescription": "A blush-pink sharara set with a gold-bordered kurti and a tiered flared sharara with a net dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Blush Pink",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-bordered kurti with a tiered sharara"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-peach-chikankari"
+  },
+  {
+    "id": "women-look-230",
+    "referenceId": "#230",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory sharara set with an embellished kurti and a flared sharara, styled with a pink dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti with a pink dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-powder-blue-sequin"
+  },
+  {
+    "id": "women-look-231",
+    "referenceId": "#231",
+    "occasion": "traditional",
+    "outfitDescription": "A dusty-rose sharara set with an embroidered kurti with a gold border and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Dusty Rose",
+      "secondary": [
+        "Gold"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "gold-bordered kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-rani-pink-block-print"
+  },
+  {
+    "id": "women-look-232",
+    "referenceId": "#232",
+    "occasion": "traditional",
+    "outfitDescription": "A powder-blue sharara set with an embellished kurti and a flared sharara with a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Sharara Set",
+    "colors": {
+      "primary": "Powder Blue",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embellished kurti"
+    },
+    "layering": null,
+    "bottomwear": "Sharara",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-ivory-gota-trim"
+  },
+  {
+    "id": "women-look-233",
+    "referenceId": "#233",
+    "occasion": "traditional",
+    "outfitDescription": "A peach indo-western set pairing a crop top and palazzo with a long embellished open jacket. Picked for traditional celebrations.",
+    "garmentType": "Indo-Western",
+    "colors": {
+      "primary": "Peach",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "long embellished open jacket"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-black-mirror-work"
+  },
+  {
+    "id": "women-look-234",
+    "referenceId": "#234",
+    "occasion": "traditional",
+    "outfitDescription": "A peach suit with an embroidered flared kurta and palazzo, styled with a maroon embroidered dupatta. Picked for traditional celebrations.",
+    "garmentType": "Palazzo Suit",
+    "colors": {
+      "primary": "Peach",
+      "secondary": [
+        "Maroon"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "embroidered flared kurta with a maroon dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Palazzo",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-mustard-chikankari"
+  },
+  {
+    "id": "women-look-235",
+    "referenceId": "#235",
+    "occasion": "traditional",
+    "outfitDescription": "A gold tissue lehenga with a shimmering flared skirt, styled with a peach dupatta draped across the shoulder. Picked for traditional celebrations.",
+    "garmentType": "Lehenga",
+    "colors": {
+      "primary": "Gold",
+      "secondary": [
+        "Pink"
+      ]
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Solid",
+      "embroidery": "shimmering tissue skirt with a peach dupatta"
+    },
+    "layering": null,
+    "bottomwear": "Lehenga Choli",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-maroon-sequin"
+  },
+  {
+    "id": "women-look-236",
+    "referenceId": "#236",
+    "occasion": "traditional",
+    "outfitDescription": "An ivory anarkali with a scalloped embroidered hem and a matching dupatta. Picked for traditional celebrations.",
+    "garmentType": "Anarkali",
+    "colors": {
+      "primary": "Ivory",
+      "secondary": []
+    },
+    "patternOrEmbroidery": {
+      "pattern": "Embroidered",
+      "embroidery": "scalloped embroidered hem"
+    },
+    "layering": null,
+    "bottomwear": "Anarkali (floor-length)",
+    "footwear": null,
+    "accessories": null,
+    "pose": null,
+    "framing": null,
+    "environment": null,
+    "lighting": null,
+    "sourceProductId": "w-sharara-ivory-block-print"
+  }
+]

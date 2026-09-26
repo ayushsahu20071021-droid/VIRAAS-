@@ -1,0 +1,299 @@
+{
+  "batchNumber": 2,
+  "startIndex": 11,
+  "endIndex": 20,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-embroidered-ethnic-shirt-ivory-sequin-dots",
+      "title": "Ivory Sequin-Dot Festive Shirt",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Sequinned",
+      "embroidery": "sequin dots",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 1899,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory sequin-dot festive shirt with sequin dots, ivory, cotton fabric appearance, sequin dots details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-ivory-sequin-dots.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-embroidered-ethnic-shirt-ivory-rust-hem-embroidery",
+      "title": "Ivory Shirt with Embroidered Hem",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "rust hem embroidery",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 1599,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory shirt with embroidered hem with rust hem embroidery, ivory, cotton fabric appearance, rust hem embroidery details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-ivory-rust-hem-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-embroidered-ethnic-shirt-ivory-tonal-floral",
+      "title": "Ivory Silk-Blend Shirt with Tonal Floral Embroidery",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "tonal floral",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 1799,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory silk-blend shirt with tonal floral embroidery with tonal floral, ivory, silk blend fabric appearance, tonal floral details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-ivory-tonal-floral.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-embroidered-ethnic-shirt-ivory-heart-motif-embroidery",
+      "title": "Ivory Small-Motif Embroidered Shirt",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "heart motif embroidery",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 1099,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory small-motif embroidered shirt with heart motif embroidery, ivory, cotton fabric appearance, heart motif embroidery details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-ivory-heart-motif-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-embroidered-ethnic-shirt-ivory-tonal",
+      "title": "Ivory Tonal-Embroidered Festive Shirt",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "tonal",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 1999,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory embroidered shirt, ivory, silk blend fabric appearance, tonal details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-ivory-tonal.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-embroidered-ethnic-shirt-maroon-rust-hem-embroidery",
+      "title": "Maroon Shirt with Embroidered Hem",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "rust hem embroidery",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 2899,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon shirt with embroidered hem with rust hem embroidery, maroon, cotton fabric appearance, rust hem embroidery details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-maroon-rust-hem-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-embroidered-ethnic-shirt-maroon-tonal-floral",
+      "title": "Maroon Silk-Blend Shirt with Tonal Floral Embroidery",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "tonal floral",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 1399,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon silk-blend shirt with tonal floral embroidery with tonal floral, maroon, silk blend fabric appearance, tonal floral details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-maroon-tonal-floral.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-embroidered-ethnic-shirt-maroon-heart-motif-embroidery",
+      "title": "Maroon Small-Motif Embroidered Shirt",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "heart motif embroidery",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 1699,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon small-motif embroidered shirt with heart motif embroidery, maroon, cotton fabric appearance, heart motif embroidery details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-maroon-heart-motif-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-embroidered-ethnic-shirt-maroon-tonal",
+      "title": "Maroon Tonal-Embroidered Festive Shirt",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "tonal",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 2399,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon tonal-embroidered festive shirt with tonal, maroon, silk blend fabric appearance, tonal details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-maroon-tonal.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-embroidered-ethnic-shirt-navy-sequin-dots",
+      "title": "Navy Sequin-Dot Festive Shirt",
+      "category": "Embroidered Ethnic Shirt",
+      "subcategory": "Embroidered Shirt",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Sequinned",
+      "embroidery": "sequin dots",
+      "silhouette": "Relaxed Embroidered Shirt",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "college-fest"
+      ],
+      "price": 999,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy sequin-dot festive shirt with sequin dots, navy, cotton fabric appearance, sequin dots details, relaxed embroidered shirt silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-embroidered-ethnic-shirt-navy-sequin-dots.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "batchNumber": 32,
+  "startIndex": 311,
+  "endIndex": 320,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-traditional-layer-ivory-sequin-scatter",
+      "title": "Ivory Sequin-Scatter Stole",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Sequinned",
+      "embroidery": "sequin scatter",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1799,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory sequin-scatter stole with sequin scatter, ivory, georgette fabric appearance, sequin scatter details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-ivory-sequin-scatter.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-ivory-solid",
+      "title": "Ivory Solid Cotton Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 699,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory solid cotton dupatta with solid, ivory, cotton fabric appearance, solid details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-ivory-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-maroon-bandhani-print",
+      "title": "Maroon Bandhani Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Bandhani",
+      "embroidery": "bandhani print",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 799,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon bandhani dupatta with bandhani print, maroon, cotton fabric appearance, bandhani print details, draped layer silhouette, styled according to VIRAAS visual reference REF-S2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-maroon-bandhani-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-maroon-gold-paisley",
+      "title": "Maroon Gold Paisley Embroidered Shawl",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "gold paisley",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 499,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon gold paisley embroidered shawl with gold paisley, maroon, cotton fabric appearance, gold paisley details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-maroon-gold-paisley.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-maroon-paisley-block-print",
+      "title": "Maroon Paisley Block-Print Stole",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "paisley block print",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 999,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon paisley block-print stole with paisley block print, maroon, cotton fabric appearance, paisley block print details, draped layer silhouette, styled according to VIRAAS visual reference REF-C2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-maroon-paisley-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-mustard-bandhani-print",
+      "title": "Mustard Bandhani Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Mustard",
+      "secondaryColours": [
+        "Red"
+      ],
+      "pattern": "Bandhani",
+      "embroidery": "bandhani print",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 799,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard bandhani dupatta with bandhani print, mustard, cotton fabric appearance, bandhani print details, draped layer silhouette, styled according to VIRAAS visual reference REF-S2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-mustard-bandhani-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-mustard-gold-paisley",
+      "title": "Mustard Gold Paisley Embroidered Shawl",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Mustard",
+      "secondaryColours": [
+        "Red"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "gold paisley",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1099,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard gold paisley embroidered shawl with gold paisley, mustard, cotton fabric appearance, gold paisley details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-mustard-gold-paisley.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-mustard-paisley-block-print",
+      "title": "Mustard Paisley Block-Print Stole",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Mustard",
+      "secondaryColours": [
+        "Red"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "paisley block print",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1099,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard paisley block-print stole with paisley block print, mustard, cotton fabric appearance, paisley block print details, draped layer silhouette, styled according to VIRAAS visual reference REF-C2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-mustard-paisley-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-mustard-solid",
+      "title": "Mustard Solid Cotton Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Mustard",
+      "secondaryColours": [
+        "Red"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1999,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard solid cotton dupatta with solid, mustard, cotton fabric appearance, solid details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-mustard-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-navy-bandhani-print",
+      "title": "Navy Bandhani Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Bandhani",
+      "embroidery": "bandhani print",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 499,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy bandhani dupatta with bandhani print, navy, cotton fabric appearance, bandhani print details, draped layer silhouette, styled according to VIRAAS visual reference REF-S2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-navy-bandhani-print.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

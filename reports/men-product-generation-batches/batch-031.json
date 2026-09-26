@@ -1,0 +1,303 @@
+{
+  "batchNumber": 31,
+  "startIndex": 301,
+  "endIndex": 310,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-printed-ethnic-shirt-wine-block-print",
+      "title": "Wine Block-Print Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "block print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 799,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine block-print ethnic shirt with block print, wine, rayon fabric appearance, block print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-wine-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-wine-botanical-print",
+      "title": "Wine Botanical Printed Festive Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Botanical Print",
+      "embroidery": "botanical print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 999,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine botanical printed festive shirt with botanical print, wine, rayon fabric appearance, botanical print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-wine-botanical-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-wine-paisley-print",
+      "title": "Wine Paisley Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Paisley Print",
+      "embroidery": "paisley print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1799,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine paisley printed ethnic shirt with paisley print, wine, rayon fabric appearance, paisley print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-wine-paisley-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-wine-small-motif",
+      "title": "Wine Small-Motif Printed Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Motif Print",
+      "embroidery": "small motif",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1799,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine small-motif printed shirt with small motif, wine, rayon fabric appearance, small motif details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-wine-small-motif.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-black-paisley-block-print",
+      "title": "Black Paisley Block-Print Stole",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "paisley block print",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 699,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black paisley block-print stole with paisley block print, black, cotton fabric appearance, paisley block print details, draped layer silhouette, styled according to VIRAAS visual reference REF-C2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-black-paisley-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-black-phulkari-embroidery",
+      "title": "Black Phulkari Embroidered Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Phulkari",
+      "embroidery": "phulkari embroidery",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1399,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black phulkari embroidered dupatta with phulkari embroidery, black, cotton fabric appearance, phulkari embroidery details, draped layer silhouette, styled according to VIRAAS visual reference REF-C1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-black-phulkari-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-black-sequin-scatter",
+      "title": "Black Sequin-Scatter Stole",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Sequinned",
+      "embroidery": "sequin scatter",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1299,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black sequin-scatter stole with sequin scatter, black, georgette fabric appearance, sequin scatter details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-black-sequin-scatter.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-black-solid",
+      "title": "Black Solid Cotton Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1399,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black solid cotton dupatta with solid, black, cotton fabric appearance, solid details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-black-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-ivory-bandhani-print",
+      "title": "Ivory Bandhani Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Bandhani",
+      "embroidery": "bandhani print",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1399,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory bandhani dupatta with bandhani print, ivory, cotton fabric appearance, bandhani print details, draped layer silhouette, styled according to VIRAAS visual reference REF-S2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-ivory-bandhani-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-ivory-phulkari-embroidery",
+      "title": "Ivory Phulkari Embroidered Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Phulkari",
+      "embroidery": "phulkari embroidery",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 799,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory phulkari embroidered dupatta with phulkari embroidery, ivory, cotton fabric appearance, phulkari embroidery details, draped layer silhouette, styled according to VIRAAS visual reference REF-C1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-ivory-phulkari-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}
