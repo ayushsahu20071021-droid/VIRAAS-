@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { byId, PRODUCTS } from '../lib/data';
+import { byId, PRODUCTS, type Product } from '../lib/data';
+import { womenLookById, womenOccasionLabel, type WomenLook } from '../lib/womenCatalog';
+import womenPreviews from '../data/women-previews.client.json';
 import { ImageFrame, ShopButton, ShareRow, ProductCard } from '../components/ui';
 import { useSaved } from '../lib/saved';
 
@@ -8,12 +10,35 @@ type Step = 'pick' | 'age' | 'under18' | 'upload' | 'preview' | 'generating' | '
 interface TryOnResponse { ok: boolean; mode: 'demo' | 'live'; resultImage?: string; message?: string }
 
 const AGE_KEY = 'viraas:age-confirmed';
+const previewStatus = womenPreviews as Record<string, { live: boolean; src: string } | undefined>;
+
+// A Try-On subject is either a shoppable product or a QA-approved (live) Women look.
+type Subject =
+  | { kind: 'product'; id: string; title: string; category: string; colour: string; imageUrl: string; detailPath: string; product: Product }
+  | { kind: 'women'; id: string; title: string; category: string; colour: string; imageUrl: string; detailPath: string; look: WomenLook };
+
+function resolveSubject(productId: string | null, womenLookId: string | null): Subject | undefined {
+  if (productId) {
+    const p = byId.get(productId);
+    if (p) return { kind: 'product', id: p.id, title: p.title, category: p.category, colour: p.colour, imageUrl: p.imageUrl, detailPath: `/product/${p.id}`, product: p };
+  }
+  if (womenLookId) {
+    const look = womenLookById.get(womenLookId);
+    const st = previewStatus[womenLookId];
+    // Only QA-approved, live Women looks can be tried on — never a pending/failed image.
+    if (look && st?.live && st.src) {
+      return { kind: 'women', id: look.id, title: `Look ${look.id.replace('women-look-', '')}`, category: look.garmentType ?? 'Women look', colour: look.colors.primary ?? '', imageUrl: st.src, detailPath: `/women-look/${look.id}`, look };
+    }
+  }
+  return undefined;
+}
 
 export default function TryOn() {
   const [sp, setSp] = useSearchParams();
   const productId = sp.get('product');
-  const product = productId ? byId.get(productId) : undefined;
-  const [step, setStep] = useState<Step>(product ? 'age' : 'pick');
+  const womenLookId = sp.get('womenLook');
+  const subject = resolveSubject(productId, womenLookId);
+  const [step, setStep] = useState<Step>(subject ? 'age' : 'pick');
   const [photo, setPhoto] = useState<string | null>(null);
   const [result, setResult] = useState<TryOnResponse | null>(null);
   const [mode, setMode] = useState<'demo' | 'live' | 'unknown'>('unknown');
@@ -22,10 +47,10 @@ export default function TryOn() {
 
   useEffect(() => { fetch('/api/try-on/status').then((r) => r.json()).then((d) => setMode(d.mode)).catch(() => setMode('demo')); }, []);
   useEffect(() => {
-    if (!product) { setStep('pick'); return; }
+    if (!subject) { setStep('pick'); return; }
     setStep(sessionStorage.getItem(AGE_KEY) === '1' ? 'upload' : 'age');
     setPhoto(null); setResult(null);
-  }, [productId]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [productId, womenLookId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onFile = (f?: File) => {
     if (!f) return;
@@ -35,10 +60,13 @@ export default function TryOn() {
   };
 
   const generate = async () => {
-    if (!product || !photo) return;
+    if (!subject || !photo) return;
     setStep('generating');
     try {
-      const res = await fetch('/api/try-on', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ productId: product.id, photo, ageConfirmed: true }) });
+      const body = subject.kind === 'product'
+        ? { productId: subject.id, photo, ageConfirmed: true }
+        : { womenLookId: subject.id, photo, ageConfirmed: true };
+      const res = await fetch('/api/try-on', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
       const data = (await res.json()) as TryOnResponse;
       if (!res.ok || !data.ok) throw new Error(data.message || 'Try-on failed');
       setResult(data); setStep('result');
@@ -52,20 +80,21 @@ export default function TryOn() {
       <div className="page-head">
         <div className="kicker">AI Try-On</div>
         <h1>See it on you</h1>
-        {mode === 'demo' && <div className="demo-banner" role="note"><strong>DEMO MODE</strong>: no AI model is connected. The result shows your uploaded photo next to the product for layout preview only. Your photo is not stored.</div>}
+        {mode === 'demo' && <div className="demo-banner" role="note"><strong>DEMO MODE</strong>: no AI model is connected. The result shows your uploaded photo next to the selected look for layout preview only. Your photo is not stored.</div>}
       </div>
 
       {step === 'pick' && (<>
-        <p>Try-On starts from a product. Pick an outfit to begin:</p>
+        <p>Try-On starts from an outfit. Pick a look to begin — or open any live look from the <Link to="/women">Women edit</Link> and tap “Try On”.</p>
         <div className="grid4">{eligible.map((p) => <ProductCard key={p.id} p={p} />)}</div>
       </>)}
 
-      {product && step !== 'pick' && (
+      {subject && step !== 'pick' && (
         <div className="tryon-grid">
           <div className="tryon-product">
-            <ImageFrame src={product.imageUrl} alt={product.title} label={product.category} detail={product.colour} />
-            <div className="small strong">{product.title}</div>
-            <button className="btn btn-ghost sm" onClick={() => setSp({})}>Change product</button>
+            <ImageFrame src={subject.imageUrl} alt={subject.title} label={subject.category} detail={subject.colour} />
+            <div className="small strong">{subject.title}</div>
+            {subject.kind === 'women' && <div className="muted small">{womenOccasionLabel(subject.look.occasion)} · {subject.look.referenceId}</div>}
+            <button className="btn btn-ghost sm" onClick={() => setSp({})}>Change outfit</button>
           </div>
           <div className="tryon-panel">
             {step === 'age' && (
@@ -82,9 +111,13 @@ export default function TryOn() {
             {step === 'under18' && (
               <div className="gate">
                 <h2>Photo try-on is 18+ only</h2>
-                <p>You can still save this look, share it with friends, or shop it directly.</p>
-                <div className="row"><button className="btn btn-ghost" onClick={() => toggle('product', product.id, product.imageUrl)}>{isSaved('product', product.id) ? 'Saved ✓' : 'Save look'}</button><ShopButton p={product} /></div>
-                <ShareRow path={`/product/${product.id}`} />
+                <p>You can still explore this look, share it with friends{subject.kind === 'product' ? ', or shop it directly' : ''}.</p>
+                <div className="row">
+                  {subject.kind === 'product'
+                    ? <><button className="btn btn-ghost" onClick={() => toggle('product', subject.id, subject.imageUrl)}>{isSaved('product', subject.id) ? 'Saved ✓' : 'Save look'}</button><ShopButton p={subject.product} /></>
+                    : <Link className="btn btn-ghost" to={subject.detailPath}>View look details</Link>}
+                </div>
+                <ShareRow path={subject.detailPath} />
               </div>
             )}
             {step === 'upload' && (
@@ -110,16 +143,18 @@ export default function TryOn() {
                 {result.mode === 'demo' ? (
                   <div className="demo-compare">
                     <figure><img src={photo} alt="Your photo" /><figcaption>Your photo</figcaption></figure>
-                    <figure><ImageFrame src={product.imageUrl} alt={product.title} label={product.category} /><figcaption>The outfit</figcaption></figure>
+                    <figure><ImageFrame src={subject.imageUrl} alt={subject.title} label={subject.category} /><figcaption>The outfit</figcaption></figure>
                     <p className="muted small">{result.message}</p>
                   </div>
                 ) : <img src={result.resultImage} alt="Try-on result" className="user-photo" />}
                 <div className="row">
-                  <button className="btn btn-ghost" onClick={() => toggle('product', product.id, product.imageUrl)}>{isSaved('product', product.id) ? 'Saved ✓' : 'Save'}</button>
+                  {subject.kind === 'product'
+                    ? <button className="btn btn-ghost" onClick={() => toggle('product', subject.id, subject.imageUrl)}>{isSaved('product', subject.id) ? 'Saved ✓' : 'Save'}</button>
+                    : <Link className="btn btn-ghost" to={subject.detailPath}>View look</Link>}
                   <button className="btn btn-ghost" onClick={() => { setPhoto(null); setResult(null); setSp({}); }}>Try another</button>
-                  <ShopButton p={product} />
+                  {subject.kind === 'product' && <ShopButton p={subject.product} />}
                 </div>
-                <ShareRow path={`/product/${product.id}`} />
+                <ShareRow path={subject.detailPath} />
               </div>
             )}
             {step === 'error' && <div className="gate"><h2>Something went wrong</h2><p>{result?.message}</p><button className="btn btn-dark" onClick={() => setStep('preview')}>Try again</button></div>}

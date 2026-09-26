@@ -225,6 +225,7 @@ a:hover .frame img { transform: scale(1.03); }
 .men-look-body p { color: var(--ink-2); font-size: .82rem; line-height: 1.45; min-height: 48px; margin: 7px 0 9px; }
 .men-look-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
 .men-look-meta span { background: var(--paper); border-radius: 99px; padding: 4px 8px; color: var(--muted); font-size: .68rem; }
+.men-look-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .men-detail-grid { display: grid; grid-template-columns: minmax(280px, 520px) 1fr; gap: 52px; align-items: start; }
 .men-detail-grid > .frame { border-radius: 20px; }
 .men-detail-lead { max-width: 650px; font-size: 1.1rem; line-height: 1.6; color: var(--ink-2); }
