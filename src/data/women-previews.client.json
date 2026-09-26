@@ -168,11 +168,11 @@
     "src": "/images/women-previews/women-look-024.png"
   },
   "women-look-025": {
-    "qaStatus": "QA_FAIL",
-    "approval": "NOT_APPROVED",
-    "live": false,
+    "qaStatus": "QA_PASS",
+    "approval": "APPROVED",
+    "live": true,
     "referenceId": "#025",
-    "src": ""
+    "src": "/images/women-previews/women-look-025.png"
   },
   "women-look-026": {
     "qaStatus": "QA_PASS",
@@ -1295,11 +1295,11 @@
     "src": "/images/women-previews/women-look-185.png"
   },
   "women-look-186": {
-    "qaStatus": "QA_FAIL",
-    "approval": "NOT_APPROVED",
-    "live": false,
+    "qaStatus": "QA_PASS",
+    "approval": "APPROVED",
+    "live": true,
     "referenceId": "#186",
-    "src": ""
+    "src": "/images/women-previews/women-look-186.png"
   },
   "women-look-187": {
     "qaStatus": "QA_PASS",
