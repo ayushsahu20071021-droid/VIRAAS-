@@ -7649,5 +7649,115 @@
     "referencePanel": 7,
     "referenceSheet": "festive_party_men_sheet_1_21.jpg",
     "checkedAt": "2026-09-26"
+  },
+  "men:men-look-134": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-134.png",
+    "bytes": 2387790,
+    "width": 832,
+    "height": 1280,
+    "sha256": "9912eb9942f6c01747f94b27b31cc6e32bfb0a168e242a0937e81fad7b48b24c",
+    "referencePanel": 8,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-135": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-135.png",
+    "bytes": 2917212,
+    "width": 896,
+    "height": 1199,
+    "sha256": "f1475a09ffd0813bd25931e8b8fce6b070b17bad0ba4a0fd2f7143307a216caf",
+    "referencePanel": 9,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-136": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-136.png",
+    "bytes": 2934121,
+    "width": 912,
+    "height": 1155,
+    "sha256": "66e956e33575fcde7cc9d3699002d169a47d9bc679e67f00f9784c4069e658f2",
+    "referencePanel": 10,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-137": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-137.png",
+    "bytes": 2702910,
+    "width": 816,
+    "height": 1303,
+    "sha256": "07e2cbc2b31b97e56a95838aba99e204e922db2ab8c542b58c2e5a44c52294c7",
+    "referencePanel": 11,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-138": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-138.png",
+    "bytes": 2149981,
+    "width": 942,
+    "height": 1136,
+    "sha256": "aaea5090dcbfbb5d2b21e4c3bc96847dee2311a7c982765a75d8c79f50c8ad0d",
+    "referencePanel": 12,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-139": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-139.png",
+    "bytes": 2526154,
+    "width": 976,
+    "height": 1095,
+    "sha256": "db848a5b649fd8db076dd40133af5b7edcabd149ea19612f99ea5e0ac91a9bb2",
+    "referencePanel": 13,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-140": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-140.png",
+    "bytes": 2010979,
+    "width": 975,
+    "height": 1104,
+    "sha256": "2583e24db1de7602c9297ccc2257d375f40e3e2f61e48ea3cf0f75eb88a15543",
+    "referencePanel": 14,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-141": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-141.png",
+    "bytes": 2754551,
+    "width": 942,
+    "height": 1136,
+    "sha256": "581588f00f67fb12504592a6d8f4ff66305c72d35d74bb88e77f13a64c5e0713",
+    "referencePanel": 15,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-142": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-142.png",
+    "bytes": 2938742,
+    "width": 942,
+    "height": 1136,
+    "sha256": "2ba283be2aec9bbe90ef72484ec70cf3ff3bdb9fac534c5f63f20a1a015d0e5f",
+    "referencePanel": 16,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-143": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-143.png",
+    "bytes": 2525199,
+    "width": 912,
+    "height": 1155,
+    "sha256": "1622c6f83d182ac358dc8decb99f8fee8ebe1e422baf50453736c8547f5a9f13",
+    "referencePanel": 17,
+    "referenceSheet": "festive_party_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
   }
 }
