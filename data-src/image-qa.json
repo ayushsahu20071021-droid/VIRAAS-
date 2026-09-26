@@ -7330,5 +7330,116 @@
     "referencePanel": 20,
     "referenceSheet": "diwali_men_sheet_1_21.jpg",
     "checkedAt": "2026-09-26"
+  },
+  "men:men-look-105": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-105.png",
+    "bytes": 2725553,
+    "width": 944,
+    "height": 1118,
+    "sha256": "a82da5472ef9c11ba0c58fb5fce79e886ad6bf2198c8dd1644e2de51c1a3761e",
+    "referencePanel": 21,
+    "referenceSheet": "diwali_men_sheet_1_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-106": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-106.png",
+    "bytes": 2367093,
+    "width": 944,
+    "height": 1134,
+    "sha256": "95d2b08402d1d5f45b97c6e7997c0ebe120e9ad7a014dd00760e0810288137aa",
+    "referencePanel": 1,
+    "referenceSheet": "diwali_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-107": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-107.png",
+    "bytes": 2885762,
+    "width": 1376,
+    "height": 768,
+    "sha256": "31191a476f37d65f68e50c69ae1efdd6fe84308575055c57807be78f0d7c6769",
+    "referencePanel": 2,
+    "referenceSheet": "diwali_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-108": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-108.png",
+    "bytes": 2701992,
+    "width": 816,
+    "height": 1311,
+    "sha256": "33be6602f86372d81338f6ec82758beae157877fa705dd19f703d33b065c2978",
+    "referencePanel": 3,
+    "referenceSheet": "diwali_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-109": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-109.png",
+    "bytes": 2945802,
+    "width": 976,
+    "height": 1100,
+    "sha256": "c781905ffa2e4a607796f48923fe1a01fc03fd02809a96a7bdf963e2e3c95096",
+    "referencePanel": 4,
+    "referenceSheet": "diwali_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-110": {
+    "qaStatus": "QA_FAIL",
+    "file": "/images/men-previews/men-look-110.png",
+    "bytes": 2948840,
+    "width": 1200,
+    "height": 896,
+    "sha256": "624cc6b96f3a7ea1b9e03ecd25d5de51378d1e7a14828f07c6b90c1d87400a11",
+    "referencePanel": 5,
+    "referenceSheet": "diwali_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-26",
+    "qaNote": "Model rendered a distant full-venue shot; allover sequin/mirror embroidery on lilac kurta not visible, framing too far. Regenerate closer."
+  },
+  "men:men-look-111": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-111.png",
+    "bytes": 2778612,
+    "width": 880,
+    "height": 1197,
+    "sha256": "7843886925db8ae57b959cce300cebef7beffa2f48e2d8612c36b437d0a56ca9",
+    "referencePanel": 6,
+    "referenceSheet": "diwali_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-112": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-112.png",
+    "bytes": 2697471,
+    "width": 928,
+    "height": 1152,
+    "sha256": "1653b8fb88a0b01fea08475f6abed383808acb8d9ef45aa72a89299cacd637ac",
+    "referencePanel": 7,
+    "referenceSheet": "diwali_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-113": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-113.png",
+    "bytes": 2482881,
+    "width": 848,
+    "height": 1245,
+    "sha256": "5a00635cd597860bb92e236a1d04b9ad19144a96ee4beb9ac8909793fb8cc635",
+    "referencePanel": 8,
+    "referenceSheet": "diwali_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-26"
+  },
+  "men:men-look-114": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-114.png",
+    "bytes": 2479328,
+    "width": 912,
+    "height": 1155,
+    "sha256": "c7f8a5e769167850034e8b833782936b28767feccb8b6f4d0733c407228b00a3",
+    "referencePanel": 9,
+    "referenceSheet": "diwali_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-26"
   }
 }
