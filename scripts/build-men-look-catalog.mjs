@@ -250,6 +250,24 @@ const OCCASIONS = [
   { slug: 'traditional', label: 'Traditional', sheets: ['traditional_outfits_sheet_1_21', 'traditional_outfits_sheet_2_21'] },
 ];
 
+// Maps each definition-pack sheet label to the permanently saved reference-sheet
+// file in public/images/men-references/ (user-specified "_men_" filenames).
+// The definition-pack labels above are LOCKED content and are not renamed; this
+// derives the on-disk image path that each catalog record is wired to.
+const SHEET_IMAGE_DIR = 'images/men-references';
+const SHEET_TO_IMAGE = {
+  garba_navratri_42_sheet_1_21: 'garba_navratri_men_sheet_1_21.jpg',
+  garba_navratri_42_sheet_2_21: 'garba_navratri_men_sheet_2_21.jpg',
+  college_fest_42_sheet_1_21: 'college_fest_men_sheet_1_21.jpg',
+  college_fest_42_sheet_2_21: 'college_fest_men_sheet_2_21.jpg',
+  diwali_42_sheet_1_21: 'diwali_men_sheet_1_21.jpg',
+  diwali_42_sheet_2_21: 'diwali_men_sheet_2_21.jpg',
+  festive_party_42_sheet_1_21: 'festive_party_men_sheet_1_21.jpg',
+  festive_party_42_sheet_2_21: 'festive_party_men_sheet_2_21.jpg',
+  traditional_outfits_sheet_1_21: 'traditional_men_sheet_1_21.jpg',
+  traditional_outfits_sheet_2_21: 'traditional_men_sheet_2_21.jpg',
+};
+
 // --- Fixed generation-prompt wrapper (identical for all 210 looks) --------
 const RECREATE = "Recreate this exact outfit faithfully from the supplied reference. Preserve every visible garment layer, construction detail, silhouette, proportion, colour, print, embroidery, embellishment, texture and styling detail. Preserve the same pose, framing, crop, camera angle, background/environment and overall composition. Use a realistic young adult Indian male fashion subject, visually 18\u201322 years old, with natural adult anatomy and realistic garment draping. Do not add garments, remove garments, recolour garments, simplify the design, redesign the outfit or substitute another garment. Do not invent details that are not visible. The mannequin/subject changes; THE OUTFIT DOES NOT.";
 const buildPrompt = (def) => `Create a VIRAAS fashion image based on the attached reference and the following exact outfit definition:\n\n${def}\n\n${RECREATE}`;
@@ -357,6 +375,9 @@ const records = DEFS.map((rawDef, i) => {
   const withinOcc = i % 42;            // 0..41
   const sheet = occ.sheets[Math.floor(withinOcc / 21)];
   const panel = (withinOcc % 21) + 1;  // 1..21
+  const referenceSheetFile = SHEET_TO_IMAGE[sheet];
+  if (!referenceSheetFile) throw new Error(`No reference image mapped for sheet ${sheet}`);
+  const referenceImage = `${SHEET_IMAGE_DIR}/${referenceSheetFile}`;
   const id = `men-look-${String(n).padStart(3, '0')}`;
   const ref = `#${String(n).padStart(3, '0')}`;
   const d = rawDef.toLowerCase();
@@ -372,6 +393,8 @@ const records = DEFS.map((rawDef, i) => {
     sheet,
     panel,
     sheetPanelLabel: `${sheet.toUpperCase()} \u2014 IMAGE ${String(panel).padStart(2, '0')}`,
+    referenceSheetFile,
+    referenceImage,
     outfitDescription,
     garmentType: garmentType(d),
     colors: { primary: primaryColour(d), secondary: [] },
