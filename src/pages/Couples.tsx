@@ -33,7 +33,7 @@ export function CoupleDetail() {
   const his = c.hisProductIds.map((x) => byId.get(x)).filter(Boolean) as Product[];
   const total = sumPrices([...her, ...his].map((p) => p.price));
   const aff = coupleAffiliate(c.id);
-  // Try-On routes to the EXISTING product entry point: FOR HER = her outfit, FOR HIM = his outfit. Never combined.
+  // Try-On maps to the EXACT per-person reference: FOR HER = her outfit, FOR HIM = his outfit. Never combined, never cross-gender.
   const herTryOn = c.herProductIds[0];
   const himTryOn = c.hisProductIds[0];
   const more = COUPLES.filter((x) => x.world === c.world && x.id !== c.id).slice(0, 3);
@@ -57,8 +57,8 @@ export function CoupleDetail() {
             <div className="kicker">Try on</div>
             <p className="couple-tryon-q">Whose outfit do you want to try?</p>
             <div className="row">
-              {herTryOn ? <Link className="btn btn-accent" to={`/try-on?product=${herTryOn}`}>For her</Link> : <button className="btn btn-accent" disabled>For her</button>}
-              {himTryOn ? <Link className="btn btn-dark" to={`/try-on?product=${himTryOn}`}>For him</Link> : <button className="btn btn-dark" disabled>For him</button>}
+              {herTryOn ? <Link className="btn btn-accent" to={`/try-on?couple=${c.id}&side=her`}>For her</Link> : <button className="btn btn-accent" disabled>For her</button>}
+              {himTryOn ? <Link className="btn btn-dark" to={`/try-on?couple=${c.id}&side=him`}>For him</Link> : <button className="btn btn-dark" disabled>For him</button>}
             </div>
             <p className="muted small">Try-On opens the individual outfit — her look or his look, never combined.</p>
           </div>

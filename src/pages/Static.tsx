@@ -60,7 +60,7 @@ export const Privacy = () => (
   <Prose title="Privacy Policy">
     <p>VIRAAS doesn't need an account. Saved Looks stay in your browser's localStorage and never reach our servers.</p>
     <p>When you tap Shop, you leave VIRAAS, and the retailer's privacy policy applies from then on. Affiliate partners may set cookies on the retailer's site.</p>
-    <p>AI Try-On photos are covered by the <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link> notice.</p>
+    <p>AI Try-On photos are treated as private data — not stored on disk, added to the catalog, or shared with trackers. Details are in the <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link> notice.</p>
     <p>We don't sell personal data.</p>
   </Prose>
 );
@@ -81,10 +81,15 @@ export const AffiliateDisclosure = () => (
 );
 export const TryOnPrivacy = () => (
   <Prose title="AI Try-On Privacy">
-    <p>AI Try-On with a personal photo is only for users aged 18 and above.</p>
-    <p>Your photo is sent to our <code>/api/try-on</code> endpoint only to generate the preview. In demo mode, no AI provider is called, and the photo is never written to disk or stored.</p>
-    <p>If a live provider is enabled in future, photos will be processed only to create your result and deleted afterwards. We'll list the provider on this page.</p>
-    <p>Don't upload photos of other people without their consent, or photos of anyone under 18.</p>
+    <p>AI Try-On with a personal photo is only for users aged 18 and above. It works the same way for Men, Women and Couple looks.</p>
+    <h2>What happens to your photo</h2>
+    <p>Your photo is treated as private data. If you crop it or hide your face before generating, the edited version — not your original — is what leaves your device. It is sent over the network to our <code>/api/try-on</code> endpoint, held only in memory to create your try-on, and is <strong>not written to disk, not saved to any catalog, and not published to any public URL</strong>. We do not send your photo to any analytics or tracking service.</p>
+    <h2>Provider status</h2>
+    <p>Virtual Try-On is currently being configured, so no external AI provider is connected. In this state the app returns a labelled layout preview rather than an AI-generated image, and no photo is stored. Before any live AI provider is turned on, its retention, deletion, training-use and data-processing terms must be verified, and we will name that provider here.</p>
+    <h2>Your result</h2>
+    <p>A generated result is private to you. It is never added to the catalog or made public automatically. If you Save it, it is stored only in your browser (localStorage) on your device. Download and Share are actions you choose — sharing uses your device’s own share sheet and does not create a public link.</p>
+    <h2>Please note</h2>
+    <p>Don’t upload photos of other people without their consent, or photos of anyone under 18.</p>
   </Prose>
 );
 export const NotFound = () => <div className="page"><Empty title="Page not found"><Link to="/" className="btn btn-dark">Back home</Link></Empty></div>;

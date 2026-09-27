@@ -181,6 +181,20 @@ a:hover .frame img { transform: scale(1.03); }
 .spinner { width: 38px; height: 38px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; margin: 18px 0; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
+/* AI Try-On — privacy tip, photo edit & consent */
+.privacy-tip .tip-list { margin: 10px 0 0; padding-left: 18px; font-size: .9rem; color: var(--ink-2); }
+.privacy-tip .tip-list li { line-height: 1.6; }
+.photo-edit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; margin: 8px 0 4px; }
+.photo-edit .user-photo { width: 100%; max-height: 360px; }
+.edit-controls { display: flex; flex-direction: column; gap: 12px; }
+.edit-row { display: flex; flex-direction: column; gap: 6px; font-size: .9rem; }
+.edit-row input[type="checkbox"] { margin-right: 8px; }
+label.edit-row:first-child { flex-direction: row; align-items: center; }
+.edit-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-size: .84rem; color: var(--ink-2); line-height: 1.55; background: #faf7f2; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 6px 0 14px; }
+.consent input { margin-top: 3px; flex: 0 0 auto; }
+@media (max-width: 640px) { .photo-edit { grid-template-columns: 1fr; } }
+
 .prose { max-width: 760px; } .prose p, .prose li { line-height: 1.7; } .prose .lead { font-size: 1.15rem; color: var(--ink-2); }
 .article-links { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; } .article-links h3 { width: 100%; }
 
