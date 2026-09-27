@@ -8419,5 +8419,82 @@
     "referencePanel": 14,
     "referenceSheet": "traditional_men_sheet_2_21.jpg",
     "checkedAt": "2026-09-27"
+  },
+  "men:men-look-204": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-204.png",
+    "bytes": 1716937,
+    "width": 880,
+    "height": 1196,
+    "sha256": "31e28181391108b12d7d3ec034338e6454664515ba824ceffb0401fad39df7a8",
+    "referencePanel": 15,
+    "referenceSheet": "traditional_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-27"
+  },
+  "men:men-look-205": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-205.png",
+    "bytes": 2315523,
+    "width": 976,
+    "height": 1104,
+    "sha256": "074621008492164d3ca5cb3b09c2f952a2dc8483bda6f646e5f8c7a849ec42a8",
+    "referencePanel": 16,
+    "referenceSheet": "traditional_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-27"
+  },
+  "men:men-look-206": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-206.png",
+    "bytes": 2843365,
+    "width": 944,
+    "height": 1133,
+    "sha256": "581aa171bc5af216c41170d4656bc44c6ee6302df273fcd6b49b2fafc51eab1c",
+    "referencePanel": 17,
+    "referenceSheet": "traditional_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-27"
+  },
+  "men:men-look-207": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-207.png",
+    "bytes": 2558305,
+    "width": 880,
+    "height": 1196,
+    "sha256": "3650bb4bfff13a366bc2ecba81e3a40560ec996cc3f03f312e4729fbc69a4176",
+    "referencePanel": 18,
+    "referenceSheet": "traditional_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-27"
+  },
+  "men:men-look-208": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-208.png",
+    "bytes": 2118793,
+    "width": 880,
+    "height": 1191,
+    "sha256": "7b495461730ee584410c048a015b73a45a25a8ab4884846d0a1835f295dacf91",
+    "referencePanel": 19,
+    "referenceSheet": "traditional_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-27"
+  },
+  "men:men-look-209": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-209.png",
+    "bytes": 2972265,
+    "width": 816,
+    "height": 1311,
+    "sha256": "7bdcb451b2f6efb7dfde82270c6ff50b0a66d0ee6f1aaaf95d7c34d4ccdc2a0e",
+    "referencePanel": 20,
+    "referenceSheet": "traditional_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-27"
+  },
+  "men:men-look-210": {
+    "qaStatus": "QA_PASS",
+    "file": "/images/men-previews/men-look-210.png",
+    "bytes": 2616508,
+    "width": 1056,
+    "height": 1024,
+    "sha256": "88d5d0206acea24f4f2221bf67b447a7fb966d551b938577ec90b509cd5f05be",
+    "referencePanel": 21,
+    "referenceSheet": "traditional_men_sheet_2_21.jpg",
+    "checkedAt": "2026-09-27"
   }
 }
