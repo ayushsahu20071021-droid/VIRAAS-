@@ -236,3 +236,16 @@ a:hover .frame img { transform: scale(1.03); }
 @media (max-width: 1100px) { .men-look-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 860px) { .men-look-grid { grid-template-columns: repeat(2, 1fr); } .men-detail-grid { grid-template-columns: 1fr; gap: 28px; } }
 @media (max-width: 540px) { .men-look-grid { grid-template-columns: 1fr; } }
+
+/* Couple Try-On chooser + Shop-the-Look FOR HER / FOR HIM split */
+.couple-tryon { margin: 4px 0 14px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: rgba(0,0,0,.015); }
+.couple-tryon .kicker { margin-bottom: 4px; }
+.couple-tryon-q { font-weight: 600; margin: 2px 0 10px; }
+.couple-tryon .row { display: flex; flex-wrap: wrap; gap: 10px; }
+.couple-tryon .btn[disabled] { opacity: .5; cursor: not-allowed; }
+.shop-split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 8px; }
+.shop-option { border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.shop-option .kicker { margin-bottom: 2px; }
+.shop-option-desc { flex: 1; margin: 0; font-size: .9rem; color: var(--muted); }
+.shop-option .btn[disabled] { opacity: .55; cursor: not-allowed; }
+@media (max-width: 640px) { .shop-split { grid-template-columns: 1fr; } }

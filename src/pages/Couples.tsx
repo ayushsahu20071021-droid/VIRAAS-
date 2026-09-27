@@ -2,6 +2,7 @@ import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { COUPLES, WORLDS, coupleById, byId, worldName, coupleImageSrc, type Product } from '../lib/data';
 import { formatINR, sumPrices } from '../lib/format';
 import { CoupleCard, ImageFrame, ProductCard, SaveButton, ShareRow, Empty } from '../components/ui';
+import { coupleAffiliate } from '../lib/coupleAffiliate';
 
 export function CoupleEdit() {
   const [sp, setSp] = useSearchParams();
@@ -31,6 +32,10 @@ export function CoupleDetail() {
   const her = c.herProductIds.map((x) => byId.get(x)).filter(Boolean) as Product[];
   const his = c.hisProductIds.map((x) => byId.get(x)).filter(Boolean) as Product[];
   const total = sumPrices([...her, ...his].map((p) => p.price));
+  const aff = coupleAffiliate(c.id);
+  // Try-On routes to the EXISTING product entry point: FOR HER = her outfit, FOR HIM = his outfit. Never combined.
+  const herTryOn = c.herProductIds[0];
+  const himTryOn = c.hisProductIds[0];
   const more = COUPLES.filter((x) => x.world === c.world && x.id !== c.id).slice(0, 3);
   return (
     <div className="page couple-detail">
@@ -48,11 +53,37 @@ export function CoupleDetail() {
           </dl>
           {total !== null && <div className="pdp-price">Full look ≈ {formatINR(total)} <span className="muted small">(approx., {her.length + his.length} pieces)</span></div>}
           <div className="pdp-ctas"><a href="#shop-look" className="btn btn-dark block">Shop the look</a><SaveButton kind="couple" id={c.id} image={coupleImageSrc(c)} /></div>
+          <div className="couple-tryon" id="try-on">
+            <div className="kicker">Try on</div>
+            <p className="couple-tryon-q">Whose outfit do you want to try?</p>
+            <div className="row">
+              {herTryOn ? <Link className="btn btn-accent" to={`/try-on?product=${herTryOn}`}>For her</Link> : <button className="btn btn-accent" disabled>For her</button>}
+              {himTryOn ? <Link className="btn btn-dark" to={`/try-on?product=${himTryOn}`}>For him</Link> : <button className="btn btn-dark" disabled>For him</button>}
+            </div>
+            <p className="muted small">Try-On opens the individual outfit — her look or his look, never combined.</p>
+          </div>
           <ShareRow path={`/couple-edit/${c.id}`} />
         </div>
       </div>
       <section className="section" id="shop-look">
-        <h2>Style it together · Her</h2>
+        <h2>Shop the look</h2>
+        <div className="shop-split">
+          <div className="shop-option">
+            <div className="kicker">For her</div>
+            <p className="shop-option-desc">{c.her.desc}</p>
+            {aff.herAffiliateUrl
+              ? <a className="btn btn-dark block" href={aff.herAffiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop her look</a>
+              : <button className="btn btn-dark block" disabled>Affiliate link not configured</button>}
+          </div>
+          <div className="shop-option">
+            <div className="kicker">For him</div>
+            <p className="shop-option-desc">{c.him.desc}{c.layer ? `, with ${c.layer.desc}` : ''}</p>
+            {aff.himAffiliateUrl
+              ? <a className="btn btn-dark block" href={aff.himAffiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop his look</a>
+              : <button className="btn btn-dark block" disabled>Affiliate link not configured</button>}
+          </div>
+        </div>
+        <h2 style={{ marginTop: 32 }}>Style it together · Her</h2>
         <div className="grid4">{her.map((p) => <ProductCard key={p.id} p={p} />)}</div>
         <h2 style={{ marginTop: 32 }}>Style it together · Him</h2>
         <div className="grid4">{his.map((p) => <ProductCard key={p.id} p={p} />)}</div>

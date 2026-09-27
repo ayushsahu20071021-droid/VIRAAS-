@@ -1,6 +1,7 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { MEN_LOOKS, menLookById, menOccasionLabel, menOccasions, type MenLook } from '../lib/menCatalog';
 import { ImageFrame } from '../components/ui';
+import { menLookDetail, DETAIL_FIELDS } from '../lib/lookDetails';
 import menFinalImages from '../data/men-final-images.json';
 
 const finalImages = menFinalImages as Record<string, string>;
@@ -54,7 +55,7 @@ export function MenLookDetail() {
   return <div className="page men-detail">
     <div className="crumbs"><Link to="/">Home</Link> / <Link to="/men">Men</Link> / {look.id}</div>
     <div className="men-detail-grid"><ImageFrame src={src} alt={`Men look ${look.referenceId} — ${look.garmentType}`} label={`Look ${look.id.replace('men-look-', '')}`} detail={`Reference ${look.referenceId}`} ratio="3 / 4" fit="contain" />
-      <div><div className="kicker">{menOccasionLabel(look.occasion)} · {look.referenceId}</div><h1>Look {look.id.replace('men-look-', '')}</h1><p className="men-detail-lead">{look.outfitDescription.split('. Picked')[0]}.</p><dl className="specs"><div><dt>Garment</dt><dd>{look.garmentType}</dd></div><div><dt>Colour</dt><dd>{look.colors.primary}{look.colors.secondary?.length ? ` · ${look.colors.secondary.join(', ')}` : ''}</dd></div><div><dt>Pattern</dt><dd>{look.patternOrEmbroidery.pattern} · {look.patternOrEmbroidery.embroidery}</dd></div><div><dt>Layering</dt><dd>{look.layering ?? 'None recorded'}</dd></div><div><dt>Bottomwear</dt><dd>{look.bottomwear ?? 'Not recorded'}</dd></div><div><dt>Footwear</dt><dd>{look.footwear ?? 'Not recorded'}</dd></div><div><dt>Accessories</dt><dd>{look.accessories ?? 'Not recorded'}</dd></div></dl>
+      <div><div className="kicker">{menOccasionLabel(look.occasion)} · {look.referenceId}</div><h1>Look {look.id.replace('men-look-', '')}</h1><p className="men-detail-lead">{look.outfitDescription.split('. Picked')[0]}.</p>{(() => { const d = menLookDetail(look.id); return <dl className="specs">{DETAIL_FIELDS.map((f) => <div key={f.key}><dt>{f.label}</dt><dd>{d?.[f.key] ?? 'Not clearly visible in reference'}</dd></div>)}</dl>; })()}
         <div className="row">{src && <Link className="btn btn-accent" to={`/try-on?menLook=${look.id}`}>Try this look</Link>}<Link className="btn btn-dark" to={`/men/${look.occasion}`}>Browse {menOccasionLabel(look.occasion)}</Link></div>
       </div>
     </div>
