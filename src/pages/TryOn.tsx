@@ -11,8 +11,8 @@ import { SHARE_TEXT } from '../lib/saved';
 import { DEFAULT_EDIT, isEdited, processPhoto, downloadDataUrl, shareImage, type PhotoEdit } from '../lib/photo';
 
 type Step = 'pick' | 'age' | 'under18' | 'privacy' | 'upload' | 'preview' | 'generating' | 'result' | 'error';
-interface TryOnResponse { ok: boolean; mode: 'demo' | 'live'; resultImage?: string | null; message?: string }
-interface TryOnStatus { mode: 'demo' | 'live'; configured: boolean; provider: string | null }
+interface TryOnResponse { ok: boolean; mode: string; resultImage?: string | null; message?: string }
+interface TryOnStatus { mode: string; configured: boolean; provider: string | null }
 
 const AGE_KEY = 'viraas:age-confirmed';
 const previewStatus = womenPreviews as Record<string, { live: boolean; src: string } | undefined>;
@@ -288,8 +288,8 @@ export default function TryOn() {
             {/* 6 — Result */}
             {step === 'result' && result && (
               <div className="gate">
-                <h2>Your try-on {result.mode === 'demo' && <span className="demo-tag">PREVIEW</span>}</h2>
-                {result.mode === 'live' && result.resultImage ? (
+                <h2>Your try-on {!result.resultImage && <span className="demo-tag">PREVIEW</span>}</h2>
+                {result.resultImage ? (
                   <>
                     <img src={result.resultImage} alt="Your AI try-on result" className="user-photo" />
                     <p className="muted small">Private to you. This image isn’t added to the catalog or shared anywhere unless you choose to.</p>

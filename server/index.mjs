@@ -19,6 +19,30 @@ const menImages = readJson('src/data/men-final-images.json');
 const couples = readJson('src/data/couples.json');
 const coupleById = new Map(couples.map((c) => [c.id, c]));
 
+// Where the built/static assets live, so we can inline a garment reference as base64.
+const PUBLIC_DIR = path.join(ROOT, 'public');
+const DIST_DIR = path.join(ROOT, 'dist');
+const PUBLIC_BASE_URL = (process.env.PUBLIC_BASE_URL || '').replace(/\/$/, '');
+const MIME = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
+
+// Turn a VIRAAS reference (e.g. "/images/women-previews/women-look-001.png") into something a
+// provider can consume: prefer an inline base64 data-URL read from disk (no public hosting needed);
+// fall back to an absolute public URL when PUBLIC_BASE_URL is set. The garment is a VIRAAS catalog
+// image (not user data); the USER PHOTO is always sent as base64 and never hosted.
+function loadGarment(src) {
+  if (!src) return null;
+  if (/^https?:\/\//i.test(src) || src.startsWith('data:')) return src;
+  const rel = src.replace(/^\//, '').split('?')[0];
+  for (const base of [PUBLIC_DIR, DIST_DIR]) {
+    const abs = path.join(base, rel);
+    if (abs.startsWith(base) && fs.existsSync(abs)) {
+      const ext = path.extname(abs).toLowerCase();
+      return `data:${MIME[ext] || 'application/octet-stream'};base64,${fs.readFileSync(abs).toString('base64')}`;
+    }
+  }
+  return PUBLIC_BASE_URL ? `${PUBLIC_BASE_URL}${src.startsWith('/') ? '' : '/'}${src}` : null;
+}
+
 const app = express();
 app.disable('x-powered-by');
 app.use(express.json({ limit: '12mb' }));
@@ -88,13 +112,15 @@ app.post('/api/try-on', async (req, res) => {
   if (photo.length > 11 * 1024 * 1024) return res.status(413).json({ ok: false, message: 'Photo too large.' });
 
   try {
+    // Resolve the garment to an inline base64 data-URL (or public URL). Never a user photo.
+    const garment = loadGarment(subject.garmentImageUrl);
     // Safe, image-free metadata log only (id, outfit, gender, size in KB) — never the image.
-    console.log(`[try-on ${reqId}] outfit=${subject.outfitId} gender=${subject.gender} bytes=${Math.round(photo.length / 1024)}KB mode=${tryOnMode}`);
+    console.log(`[try-on ${reqId}] outfit=${subject.outfitId} gender=${subject.gender} bytes=${Math.round(photo.length / 1024)}KB garment=${garment ? (garment.startsWith('data:') ? 'inline' : 'url') : 'none'} mode=${tryOnMode}`);
     const out = await tryOnProvider.generateTryOn({
       outfitId: subject.outfitId,
       gender: subject.gender,
       photo,
-      garmentImageUrl: subject.garmentImageUrl,
+      garmentImageUrl: garment,
       garmentDescription: subject.garmentDescription,
     });
     console.log(`[try-on ${reqId}] done ok=${out.ok} mode=${out.mode} ${Date.now() - started}ms`);
