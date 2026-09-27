@@ -7,7 +7,7 @@ export function CoupleEdit() {
   const [sp, setSp] = useSearchParams();
   const world = sp.get('world');
   const list = COUPLES.filter((c) => !world || c.world === world);
-  const passed = COUPLES.filter((c) => c.imageUrl).length;
+  const passed = COUPLES.filter((c) => coupleImageSrc(c)).length;
   return (
     <div className="page">
       <div className="page-head">
@@ -36,7 +36,7 @@ export function CoupleDetail() {
     <div className="page couple-detail">
       <div className="crumbs"><Link to="/couple-edit">Couple Edit</Link> / <Link to={`/couple-edit?world=${c.world}`}>{worldName(c.world)}</Link></div>
       <div className="cd">
-        <div className="cd-img"><ImageFrame src={coupleImageSrc(c)} alt={`${c.title} — ${c.colourStory}`} label={c.title} detail={`${c.her.desc} / ${c.him.desc}`} ratio="3 / 4.3" eager /></div>
+        <div className="cd-img"><ImageFrame src={coupleImageSrc(c)} alt={`${c.title} — ${c.colourStory}`} label={c.title} detail={`${c.her.desc} / ${c.him.desc}`} ratio="3 / 4.3" eager fit="contain" /></div>
         <div className="cd-info">
           <div className="kicker">{worldName(c.world)}</div>
           <h1>{c.title}</h1>
@@ -47,7 +47,7 @@ export function CoupleDetail() {
             <div><dt>The moment</dt><dd>{c.pose}</dd></div>
           </dl>
           {total !== null && <div className="pdp-price">Full look ≈ {formatINR(total)} <span className="muted small">(approx., {her.length + his.length} pieces)</span></div>}
-          <div className="pdp-ctas"><a href="#shop-look" className="btn btn-dark block">Shop the look</a><SaveButton kind="couple" id={c.id} image={c.imageUrl} /></div>
+          <div className="pdp-ctas"><a href="#shop-look" className="btn btn-dark block">Shop the look</a><SaveButton kind="couple" id={c.id} image={coupleImageSrc(c)} /></div>
           <ShareRow path={`/couple-edit/${c.id}`} />
         </div>
       </div>

@@ -5,12 +5,12 @@ import { formatINR, sumPrices } from '../lib/format';
 import { useSaved, webShare, copyLink, whatsappUrl } from '../lib/saved';
 
 /** Real image if QA-passed, otherwise a clearly labelled pending state (never a fake photo). */
-export function ImageFrame({ src, alt, label, ratio = '3 / 4', eager = false, detail }: { src?: string; alt: string; label?: string; ratio?: string; eager?: boolean; detail?: string }) {
+export function ImageFrame({ src, alt, label, ratio = '3 / 4', eager = false, detail, fit = 'cover' }: { src?: string; alt: string; label?: string; ratio?: string; eager?: boolean; detail?: string; fit?: 'cover' | 'contain' }) {
   const [broken, setBroken] = useState(false);
   if (src && !broken) {
     return (
-      <div className="frame" style={{ aspectRatio: ratio }}>
-        <img src={src} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" onError={() => setBroken(true)} data-real-image="1" />
+      <div className={`frame${fit === 'contain' ? ' frame-contain' : ''}`} style={{ aspectRatio: ratio }}>
+        <img src={src} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" onError={() => setBroken(true)} data-real-image="1" style={{ objectFit: fit }} />
       </div>
     );
   }
@@ -103,6 +103,24 @@ export function CoupleCard({ c, large }: { c: Couple; large?: boolean }) {
           {total !== null && <span className="strong">Look ≈ {formatINR(total)}</span>}
         </div>
         <Link to={`/couple-edit/${c.id}`} className="btn btn-dark sm">Style it together</Link>
+      </div>
+    </article>
+  );
+}
+
+/** Card for an APPROVED look (Men/Women): always shows the real approved image. */
+export function LookCard({ to, image, alt, kicker, title, meta, tryOnTo }: { to: string; image?: string; alt: string; kicker: string; title: string; meta?: string[]; tryOnTo?: string }) {
+  return (
+    <article className="men-look-card">
+      <Link to={to} className="men-look-image"><ImageFrame src={image} alt={alt} label={title} /></Link>
+      <div className="men-look-body">
+        <div className="kicker">{kicker}</div>
+        <Link to={to} className="men-look-title">{title}</Link>
+        {meta && meta.length > 0 && <div className="men-look-meta">{meta.filter(Boolean).map((m) => <span key={m}>{m}</span>)}</div>}
+        <div className="men-look-actions">
+          {tryOnTo && <Link className="btn btn-ghost sm" to={tryOnTo}>Try this look</Link>}
+          <Link to={to} className="link-arrow">View details →</Link>
+        </div>
       </div>
     </article>
   );

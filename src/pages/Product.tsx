@@ -1,7 +1,9 @@
 import { Link, useParams } from 'react-router-dom';
 import { byId, PRODUCTS, COUPLES, worldName, type Product } from '../lib/data';
 import { formatINR } from '../lib/format';
-import { ImageFrame, SaveButton, ShopButton, ShareRow, ProductCard, Empty, CoupleCard } from '../components/ui';
+import { ImageFrame, SaveButton, ShopButton, ShareRow, ProductCard, Empty, CoupleCard, LookCard } from '../components/ui';
+import { womenLookForProduct, womenLookImage } from '../lib/looks';
+import { womenOccasionLabel } from '../lib/womenCatalog';
 
 function completeTheLook(p: Product): Product[] {
   // Prefer the actual couple look this product appears in
@@ -34,6 +36,7 @@ export default function ProductPage() {
   const ctl = completeTheLook(p);
   const similar = PRODUCTS.filter((x) => x.id !== p.id && x.gender === p.gender && x.category === p.category && (x.colour === p.colour || x.embroidery === p.embroidery)).slice(0, 4);
   const inCouples = COUPLES.filter((c) => p.coupleIds.includes(c.id)).slice(0, 3);
+  const featuredLook = womenLookForProduct(p.id);
   const gallery = p.gallery.length ? p.gallery : [''];
 
   return (
@@ -64,6 +67,7 @@ export default function ProductPage() {
           <p className="muted small">VIRAAS doesn't sell this item. The Shop button opens {p.merchant}, where you'll see live listings, prices and stock. VIRAAS may earn a commission when you shop through selected affiliate links.</p>
         </div>
       </div>
+      {featuredLook && <section className="section"><h2>Seen in this VIRAAS look</h2><div className="grid4"><LookCard to={`/women-look/${featuredLook.id}`} image={womenLookImage(featuredLook.id)} alt={`Women look ${featuredLook.referenceId} — ${featuredLook.garmentType}`} kicker={womenOccasionLabel(featuredLook.occasion)} title={`Look ${featuredLook.id.replace('women-look-', '')}`} meta={[featuredLook.garmentType, featuredLook.colors.primary]} tryOnTo={`/try-on?womenLook=${featuredLook.id}`} /></div></section>}
       {ctl.length > 0 && <section className="section"><h2>Complete the look</h2><div className="grid4">{ctl.map((x) => <ProductCard key={x.id} p={x} />)}</div></section>}
       {inCouples.length > 0 && <section className="section"><h2>Seen in the Couple Edit</h2><div className="grid3">{inCouples.map((c) => <CoupleCard key={c.id} c={c} />)}</div></section>}
       {similar.length > 0 && <section className="section"><h2>You may also like</h2><div className="grid4">{similar.map((x) => <ProductCard key={x.id} p={x} />)}</div></section>}

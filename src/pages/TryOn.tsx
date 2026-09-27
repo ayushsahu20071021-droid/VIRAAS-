@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { byId, PRODUCTS, type Product } from '../lib/data';
 import { womenLookById, womenOccasionLabel, type WomenLook } from '../lib/womenCatalog';
+import { menLookById, menOccasionLabel, type MenLook } from '../lib/menCatalog';
 import womenPreviews from '../data/women-previews.client.json';
+import menFinalImages from '../data/men-final-images.json';
 import { ImageFrame, ShopButton, ShareRow, ProductCard } from '../components/ui';
 import { useSaved } from '../lib/saved';
 
@@ -11,13 +13,15 @@ interface TryOnResponse { ok: boolean; mode: 'demo' | 'live'; resultImage?: stri
 
 const AGE_KEY = 'viraas:age-confirmed';
 const previewStatus = womenPreviews as Record<string, { live: boolean; src: string } | undefined>;
+const menImages = menFinalImages as Record<string, string>;
 
-// A Try-On subject is either a shoppable product or a QA-approved (live) Women look.
+// A Try-On subject is a shoppable product, a QA-approved Women look, or (visual-preview only) a Men look.
 type Subject =
   | { kind: 'product'; id: string; title: string; category: string; colour: string; imageUrl: string; detailPath: string; product: Product }
-  | { kind: 'women'; id: string; title: string; category: string; colour: string; imageUrl: string; detailPath: string; look: WomenLook };
+  | { kind: 'women'; id: string; title: string; category: string; colour: string; imageUrl: string; detailPath: string; look: WomenLook }
+  | { kind: 'men'; id: string; title: string; category: string; colour: string; imageUrl: string; detailPath: string; look: MenLook };
 
-function resolveSubject(productId: string | null, womenLookId: string | null): Subject | undefined {
+function resolveSubject(productId: string | null, womenLookId: string | null, menLookId: string | null): Subject | undefined {
   if (productId) {
     const p = byId.get(productId);
     if (p) return { kind: 'product', id: p.id, title: p.title, category: p.category, colour: p.colour, imageUrl: p.imageUrl, detailPath: `/product/${p.id}`, product: p };
@@ -30,6 +34,14 @@ function resolveSubject(productId: string | null, womenLookId: string | null): S
       return { kind: 'women', id: look.id, title: `Look ${look.id.replace('women-look-', '')}`, category: look.garmentType ?? 'Women look', colour: look.colors.primary ?? '', imageUrl: st.src, detailPath: `/women-look/${look.id}`, look };
     }
   }
+  if (menLookId) {
+    const look = menLookById.get(menLookId);
+    const src = menImages[menLookId];
+    // Men looks are a VISUAL preview entry point only in this phase — no photo upload / generation.
+    if (look && src) {
+      return { kind: 'men', id: look.id, title: `Look ${look.id.replace('men-look-', '')}`, category: look.garmentType ?? 'Men look', colour: look.colors.primary ?? '', imageUrl: src, detailPath: `/men-look/${look.id}`, look };
+    }
+  }
   return undefined;
 }
 
@@ -37,7 +49,8 @@ export default function TryOn() {
   const [sp, setSp] = useSearchParams();
   const productId = sp.get('product');
   const womenLookId = sp.get('womenLook');
-  const subject = resolveSubject(productId, womenLookId);
+  const menLookId = sp.get('menLook');
+  const subject = resolveSubject(productId, womenLookId, menLookId);
   const [step, setStep] = useState<Step>(subject ? 'age' : 'pick');
   const [photo, setPhoto] = useState<string | null>(null);
   const [result, setResult] = useState<TryOnResponse | null>(null);
@@ -50,7 +63,7 @@ export default function TryOn() {
     if (!subject) { setStep('pick'); return; }
     setStep(sessionStorage.getItem(AGE_KEY) === '1' ? 'upload' : 'age');
     setPhoto(null); setResult(null);
-  }, [productId, womenLookId]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [productId, womenLookId, menLookId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onFile = (f?: File) => {
     if (!f) return;
@@ -74,6 +87,37 @@ export default function TryOn() {
   };
 
   const eligible = PRODUCTS.filter((p) => p.tryOnEnabled).sort((a, b) => Number(!!b.imageUrl) - Number(!!a.imageUrl) || b.coupleIds.length - a.coupleIds.length).slice(0, 12);
+
+  // Men looks are a visual-preview entry point in this phase: show the look, no photo upload / generation.
+  if (subject && subject.kind === 'men') {
+    return (
+      <div className="page tryon">
+        <div className="page-head">
+          <div className="kicker">AI Try-On</div>
+          <h1>See it on you</h1>
+        </div>
+        <div className="tryon-grid">
+          <div className="tryon-product">
+            <ImageFrame src={subject.imageUrl} alt={subject.title} label={subject.category} detail={subject.colour} fit="contain" />
+            <div className="small strong">{subject.title}</div>
+            <div className="muted small">{menOccasionLabel(subject.look.occasion)} · {subject.look.referenceId}</div>
+            <button className="btn btn-ghost sm" onClick={() => setSp({})}>Change outfit</button>
+          </div>
+          <div className="tryon-panel">
+            <div className="gate">
+              <h2>Men’s AI Try-On is coming soon</h2>
+              <p>This is a visual preview of <strong>{subject.title}</strong> — {subject.look.garmentType}{subject.colour ? ` in ${subject.colour}` : ''}. Photo try-on for men’s looks arrives in the next VIRAAS phase. For now you can view the full look, save it or share it.</p>
+              <div className="row">
+                <Link className="btn btn-dark" to={subject.detailPath}>View look details</Link>
+                <Link className="btn btn-ghost" to={`/men/${subject.look.occasion}`}>Browse {menOccasionLabel(subject.look.occasion)}</Link>
+              </div>
+              <ShareRow path={subject.detailPath} />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="page tryon">
