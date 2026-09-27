@@ -14,16 +14,62 @@ single one-piece "dress" (the failure mode observed earlier with FASHN VTON v1.5
 
 | Provider / model | Multi-garment / ethnic sets | License (commercial) | Privacy / retention / training | Self-host | Approx. cost | Verdict |
 |---|---|---|---|---|---|---|
-| **FLUX VTO (Black Forest Labs), "vto-v1" / VTO v2** | **Yes** — up to 4 garments, full-outfit + layering + **model-to-model** transfer, **prompt-steerable** | Output commercial-use OK | ⚠️ **Standard API trains on inputs/outputs by default, no clean opt-out; Zero-Data-Retention only on Enterprise/dedicated (or verified ZDR reseller e.g. Runware)** | No (API only) | ~$0.04–0.06 / generation | **Selected — but ZDR-only** |
+| **Runware FLUX VTO (`bfl:flux@vto`)** | **Yes** — same FLUX VTO; up to 4 garments via 2×2 grid, full-outfit + model-to-model, **prompt-steerable** | Yes (commercial) | ✅ **Never trains on API data (with or without ZDR); ZDR (enterprise, org-level) = input media not retained, outputs deleted at TTL; `dataURI` output = nothing stored** | No (hosted API) | ~$0.0425–0.0475 / generation | **Selected — best privacy path** |
+| **FLUX VTO (Black Forest Labs) direct, "vto-v1"** | **Yes** — up to 4 garments, full-outfit + layering + **model-to-model** transfer, **prompt-steerable** | Output commercial-use OK | ⚠️ **Standard API trains on inputs/outputs by default, no clean opt-out; ZDR only on Enterprise/dedicated** | No (API only) | ~$0.04–0.06 / generation | Kept as secondary; ZDR-only |
 | FASHN v1.6 / Try-On Max | Partial — category-based (tops/bottoms/one-pieces), up to 3 layers; **collapses coordinated ethnic sets** | Yes | Auto-deletes inputs after 72h; commercial by default | No | $0.075 / gen | Rejected on quality for ethnic sets |
 | Google Vertex AI Virtual Try-On (`virtual-try-on-001`, GA Jan 2026) | Product/garment oriented; ethnic multi-piece unverified | Yes (GCP) | **Strong** — GCP DPA, not used to train Google models; data-residency options | No | GCP metered | Strong privacy alt; needs per-garment images + GCP project |
 | Kling Kolors v1.5 (Kuaishou) | Single garment on-model | Yes | Per fal / Kuaishou | No | $0.07 / gen | Not multi-garment |
 | Leffa (on fal) | Explicit garment type (upper/lower/dress) | Commercial on fal | Per fal | Yes (heavy) | $0.10 / gen | Single-garment; local run exhausted T4 RAM |
 | IDM-VTON / CatVTON | Research quality | **Non-commercial / research-only** | n/a | Yes | — | **Excluded from production (license)** |
 
-## Decision
+## Decision (updated)
 
-**Primary production approach: FLUX VTO (Black Forest Labs), used exclusively via a Zero-Data-Retention deployment.**
+**Primary production approach: Runware-hosted FLUX VTO (`bfl:flux@vto`), used with Zero-Data-Retention.**
+
+Runware serves the *same* FLUX VTO capability (multi-garment / full-outfit / model-to-model + prompt
+steering) but with a materially better privacy posture than BFL's own standard API:
+
+- **Runware never uses API data to train or improve models** — with *or* without ZDR
+  ([source](https://runware.ai/docs/platform/zero-data-retention)). This is the key differentiator vs
+  BFL direct, whose standard API trains on inputs by default.
+- **Zero Data Retention** (enterprise, org-level, enabled by Runware on request): prompts and input
+  media are not retained; generated media is deleted when its `ttl` expires (60s default).
+- The adapter requests **`outputType: "dataURI"`**, so the result is returned **inline in the API
+  response with no file stored** — nothing to fetch, expose, or expire, and the browser never sees a
+  provider URL.
+
+**Runware model ID:** `bfl:flux@vto`.
+**Pricing (documented):** ~**$0.0375 first input MP + $0.005 per additional input/output MP**, i.e.
+roughly **$0.0425 (1 ref) – $0.0475 (2 refs)** per generation. Confirm current pricing on Runware.
+**ZDR status:** available on enterprise accounts only, enabled per-organization via Runware Sales.
+**Commercial use:** permitted.
+
+The BFL-direct adapter (below) is kept as a secondary option. Both are gated so live generation is OFF
+until credentials + a verified ZDR deployment are configured.
+
+### Runware adapter specifics
+- File: `server/providers/runwareFluxVto.mjs`. Endpoint `POST https://api.runware.ai/v1`,
+  `Authorization: Bearer <RUNWARE_API_KEY>`, body = one `imageInference` task with
+  `model: bfl:flux@vto`, `positivePrompt`, `inputs.referenceImages: [{image,role:"person"},{image,role:"garment"}]`,
+  `outputType:"dataURI"`.
+- **Hard privacy gate:** refuses to send any photo unless `RUNWARE_ZDR=true`.
+- **Prompt engineering** explicitly preserves colours, print placement, embroidery, borders, fabric
+  texture, silhouette, drape, layering, folds/shadows, the user's face/identity/proportions/pose/camera
+  angle, and includes the exact ethnic rule:
+  _"Preserve the coordinated garments as separate clothing pieces. Do not reinterpret the lehenga and
+  choli as a one-piece dress. Preserve the dupatta as a separate draped garment."_
+- **Multi-garment:** builds a documented **2×2 grid** (`composeGrid`, lazy `sharp`) when ≥2 separate
+  component images are provided. VIRAAS currently ships single **on-model full-look** references, so the
+  model-reference workflow + strong prompt is used; the grid path activates automatically if per-garment
+  component images are ever added.
+- **Env vars:** `TRYON_MODE=runware-flux`, `RUNWARE_API_KEY`, `RUNWARE_FLUX_MODEL=bfl:flux@vto`,
+  `RUNWARE_ZDR=true`, optional `RUNWARE_API_URL`, `RUNWARE_OUTPUT_TTL`.
+- **Live generation configured?** **No.** Ships disabled (no key, `RUNWARE_ZDR` unset) — honest
+  "being configured" state until the owner sets credentials.
+
+---
+
+### Secondary approach: FLUX VTO (Black Forest Labs direct), used exclusively via a Zero-Data-Retention deployment.
 
 **Why:** It is the only currently-available try-on model that natively supports multi-garment /
 full-outfit composition **and** model-to-model transfer **and** natural-language prompt steering.
@@ -68,15 +114,19 @@ For-Her / For-Him **AI generation is not possible** until per-person reference i
 routing and mapping are correct and preserved; in `flux` mode couples return an honest error, and in
 `demo` mode they still show the labelled layout preview.
 
-## Owner setup to go live
-1. Create a Black Forest Labs account and obtain an **Enterprise / Zero-Data-Retention** endpoint
-   (or a reseller with a written ZDR/no-training DPA). Verify: input retention, output retention,
-   training use, deletion, signed-URL behaviour, DPA.
-2. Set server env (see `server/.env.example`): `TRYON_MODE=flux`, `BFL_API_KEY=…`,
-   `BFL_API_BASE=<your ZDR endpoint>`, and **`BFL_VTO_ZDR=true`**.
+## Owner setup to go live (recommended: Runware)
+1. Create a Runware account and request **Zero Data Retention** for your organization
+   (Runware → Contact Sales). Verify: input-media retention (none under ZDR), output TTL, no-training
+   policy, commercial use, DPA.
+2. Set server env (see `server/.env.example`): `TRYON_MODE=runware-flux`, `RUNWARE_API_KEY=…`,
+   `RUNWARE_FLUX_MODEL=bfl:flux@vto`, and **`RUNWARE_ZDR=true`**.
 3. Deploy so `public/images/**` reference images are present (they are inlined as base64), or set
    `PUBLIC_BASE_URL`.
 4. Run one real Garba women + men generation and confirm garments stay separate before announcing.
 
-Pricing to expect: roughly **$0.04–0.06 per generation** on FLUX VTO (varies by resolution/route);
-confirm current pricing at https://bfl.ai/pricing.
+Pricing to expect: roughly **$0.0425–0.0475 per generation** on Runware FLUX VTO (varies by
+input/output megapixels); confirm current pricing at https://runware.ai.
+
+### Alternative: BFL direct
+Set `TRYON_MODE=flux`, `BFL_API_KEY`, `BFL_API_BASE=<your ZDR endpoint>`, `BFL_VTO_ZDR=true`. Only use
+a Zero-Data-Retention BFL endpoint — the standard BFL API trains on inputs by default.

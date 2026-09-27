@@ -5,17 +5,18 @@
 // server-side env ONLY and are never sent to the browser.
 //
 // Modes (TRYON_MODE):
-//   demo   (default) — NO AI provider is called. Returns a clearly-labelled non-production
-//                      response. The user photo is never written to disk or stored.
-//   flux             — FLUX VTO (Black Forest Labs). See ./providers/fluxVto.mjs. Only actually
-//                      enabled when a key is present AND Zero-Data-Retention is acknowledged.
-//   custom / live    — Generic REST adapter for any other provider you host/verify yourself,
-//                      configured via TRYON_API_URL + TRYON_API_KEY.
+//   demo         (default) — NO AI provider is called. Returns a clearly-labelled non-production
+//                            response. The user photo is never written to disk or stored.
+//   flux                   — FLUX VTO via Black Forest Labs API. See ./providers/fluxVto.mjs.
+//   runware-flux           — FLUX VTO via Runware (hosted, no-training, ZDR). See ./providers/runwareFluxVto.mjs.
+//   custom / live          — Generic REST adapter for any other provider you host/verify yourself,
+//                            configured via TRYON_API_URL + TRYON_API_KEY.
 //
 // Privacy: no provider path here persists the user photo, writes it to disk, puts it in a public
 // path, or logs the raw image / base64 payload.
 
 import { fluxVtoProvider, fluxConfigured } from './providers/fluxVto.mjs';
+import { runwareFluxVtoProvider, runwareConfigured } from './providers/runwareFluxVto.mjs';
 
 const MODE = (process.env.TRYON_MODE || 'demo').toLowerCase();
 const API_URL = process.env.TRYON_API_URL || '';
@@ -73,6 +74,7 @@ const customProvider = {
 };
 
 function pick() {
+  if (MODE === 'runware-flux') return runwareFluxVtoProvider;
   if (MODE === 'flux') return fluxVtoProvider;
   if (MODE === 'custom' || MODE === 'live') return customProvider;
   return demoProvider;
@@ -81,4 +83,10 @@ function pick() {
 export const tryOnProvider = pick();
 export const tryOnMode = tryOnProvider.name;
 export const tryOnConfigured =
-  MODE === 'flux' ? fluxConfigured : MODE === 'custom' || MODE === 'live' ? Boolean(API_URL) && Boolean(API_KEY) : false;
+  MODE === 'runware-flux'
+    ? runwareConfigured
+    : MODE === 'flux'
+      ? fluxConfigured
+      : MODE === 'custom' || MODE === 'live'
+        ? Boolean(API_URL) && Boolean(API_KEY)
+        : false;
