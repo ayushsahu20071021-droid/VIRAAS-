@@ -130,3 +130,84 @@ input/output megapixels); confirm current pricing at https://runware.ai.
 ### Alternative: BFL direct
 Set `TRYON_MODE=flux`, `BFL_API_KEY`, `BFL_API_BASE=<your ZDR endpoint>`, `BFL_VTO_ZDR=true`. Only use
 a Zero-Data-Retention BFL endpoint — the standard BFL API trains on inputs by default.
+
+---
+
+## Payment-gated Try-On architecture (customer pays VIRAAS → Runware)
+
+**Business model.** The customer pays **VIRAAS** for an AI Try-On. Runware is VIRAAS's AI provider
+and its usage is billed to the **VIRAAS Runware account** by actual usage. The customer **never** pays
+Runware directly, and there is **no** customer↔Runware payment anywhere in the flow.
+
+### Flow (server-verified, one paid generation)
+
+```
+Customer → VIRAAS website → AI Try-On (pick look, 18+ gate, upload/edit photo, consent)
+  → POST /api/payment/create            (server creates PENDING payment + gateway order)
+  → customer completes payment at the gateway's checkout
+  → gateway → POST /api/payment/webhook (server-to-server, SIGNED)
+       server verifies the signature → marks payment VERIFIED → mints ONE authorization (AUTHORIZED)
+  → browser polls GET /api/payment/status?paymentId=…  → receives the one-time authToken
+  → POST /api/try-on { …, authToken }
+       server ATOMICALLY claims the authorization (AUTHORIZED → CONSUMED) BEFORE calling the provider
+       → Runware FLUX VTO → private dataURI result returned inline
+```
+
+### Trust boundary (security)
+- A frontend claim such as `{ paymentSuccess: true }` is **never trusted**. The server ignores any
+  client-supplied "paid" flag. A payment becomes `VERIFIED` **only** via a cryptographically-verified
+  gateway webhook (HMAC signature) or a server-side gateway poll (`/api/payment/verify`).
+- The one-time `authToken` is a high-entropy secret minted server-side and revealed only to the caller
+  holding the unguessable `paymentId` capability, only once the payment is `AUTHORIZED`.
+
+### One-time authorization state machine (`server/payments/store.mjs`)
+`PENDING → VERIFIED → AUTHORIZED → CONSUMED`, with `FAILED` (recoverable) on a genuine post-payment
+generation failure.
+- **Duplicate webhook** → `authorize()` is idempotent → **no** second authorization (same token).
+- **Duplicate generation request** → `claimForGeneration()` is an atomic compare-and-swap
+  (`AUTHORIZED → CONSUMED`) → exactly one caller wins → **no** double Runware generation.
+- **Genuine Runware failure after payment** → state becomes `FAILED` + `recoverable` (retains
+  `paymentId`/`generationId`) — the paid authorization is **not lost** and **not faked**, so a refund
+  or credit can be reconciled later. It is **not** auto-reverted to `AUTHORIZED` (that would allow a
+  second billed Runware call against one payment). Refund/credit APIs are intentionally **not**
+  implemented until a real gateway is selected.
+
+### Provider-agnostic payment gateway (`server/payments/providers.mjs`)
+Neither Razorpay nor Cashfree is hard-coded into the flow. A gateway adapter implements
+`createOrder()`, `verifyWebhook()` (signature check), and `verifyPayment()` (optional poll). Adapters:
+- **`mock`** (default) — test-only, HMAC-signed webhook, **moves no money, makes no network calls**,
+  and never reports itself as a configured production gateway.
+- **`razorpay`** / **`cashfree`** — documented **stubs**; report *not configured* until their
+  credentials are set. Wire the Orders API + signature verification when onboarding completes.
+
+### Configuration (server-side only; see `server/.env.example`)
+| Env var | Meaning | Default |
+|---|---|---|
+| `TRYON_PAYMENT_REQUIRED` | Gate real Try-On behind a verified payment | `false` (demo/preview works, no money) |
+| `TRYON_PRICE_INR` | Customer-facing price (config only — **no** margin math) | `20` |
+| `TRYON_CURRENCY` | Currency code | `INR` |
+| `PAYMENT_PROVIDER` | `mock` \| `razorpay` \| `cashfree` | `mock` |
+| `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET` / `RAZORPAY_WEBHOOK_SECRET` | Razorpay creds (later) | unset |
+| `CASHFREE_APP_ID` / `CASHFREE_SECRET_KEY` | Cashfree creds (later) | unset |
+
+Pricing is decoupled from the Runware integration: change `TRYON_PRICE_INR` at any time without
+touching the provider adapters.
+
+### Privacy (unchanged, preserved)
+No raw/base64 customer image is logged; the photo is never persisted, never public, never in Git, and
+never sent to the payment provider. No gateway secret or provider key is exposed to the browser
+(verified against `dist/`). The result is private by default; sharing is an explicit user action.
+
+### What is NOT live yet (blockers to real customer-payment → Runware)
+1. A real payment gateway must be selected and its credentials + verified webhook signature wired
+   (Razorpay onboarding is problematic; Cashfree onboarding in progress).
+2. `TRYON_PAYMENT_REQUIRED=true` must be set once a gateway is live.
+3. Runware must be activated separately (`TRYON_MODE=runware-flux`, `RUNWARE_API_KEY`,
+   `RUNWARE_ZDR=true` with org-level ZDR confirmed, funded credits) — still **OFF** by default.
+
+### Tests
+`npm run test-payment-tryon` — mock/local only (no real API calls, no money): store state machine,
+payment-pending blocks Try-On, fake `paymentSuccess` blocked, unverified blocks Runware, one
+authorization per verified payment, single-use consumption, duplicate-webhook idempotency,
+duplicate-generation guard, failure→recoverable state, no-key/ZDR-false → no live call, no image
+bytes in logs, no secrets in frontend. `npm run typecheck` and `npm run build` also pass.

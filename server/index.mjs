@@ -4,6 +4,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 import { tryOnProvider, tryOnMode, tryOnConfigured } from './tryOnProvider.mjs';
+import * as payments from './payments/service.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const readJson = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
@@ -45,14 +46,65 @@ function loadGarment(src) {
 
 const app = express();
 app.disable('x-powered-by');
+
+// Payment gateway webhook MUST be parsed as a raw body so its signature can be verified byte-for-byte.
+// It is registered BEFORE express.json() so the JSON parser never touches it. No customer photo or
+// secret is logged here; only a signed, server-verified fact is trusted.
+app.post('/api/payment/webhook', express.raw({ type: '*/*', limit: '1mb' }), (req, res) => {
+  const rawBody = Buffer.isBuffer(req.body) ? req.body.toString('utf8') : '';
+  const result = payments.handleWebhook({ rawBody, headers: req.headers });
+  // Always answer 200 to a validly-signed event (even a duplicate) so the gateway stops retrying;
+  // reject anything whose signature we could not verify.
+  if (!result.ok) return res.status(400).json({ ok: false });
+  res.json({ ok: true, status: result.status, duplicate: Boolean(result.duplicate) });
+});
+
 app.use(express.json({ limit: '12mb' }));
 
 app.get('/api/health', (_req, res) => res.json({ ok: true }));
 // Status the browser is allowed to know: the mode and whether real generation is configured.
 // The provider NAME is only exposed once real generation is actually configured.
 app.get('/api/try-on/status', (_req, res) =>
-  res.json({ mode: tryOnMode, configured: tryOnConfigured, provider: tryOnConfigured ? tryOnProvider.provider : null }),
+  res.json({
+    mode: tryOnMode,
+    configured: tryOnConfigured,
+    provider: tryOnConfigured ? tryOnProvider.provider : null,
+    // Payment gating (browser-safe fields only — never the gateway secret).
+    paymentRequired: payments.paymentRequired,
+    priceInr: payments.PRICE_INR,
+    currency: payments.CURRENCY,
+    paymentProvider: payments.paymentConfig.provider,
+    paymentConfigured: payments.paymentConfig.configured,
+  }),
 );
+
+// --- Payment routes ------------------------------------------------------------------------------
+// createPayment: begin a payment for one Try-On. Returns only browser-safe fields. NEVER trusts any
+// client-supplied "paid"/"paymentSuccess" flag — payment can only become VERIFIED via the signed
+// webhook (or a server-side gateway poll).
+app.post('/api/payment/create', async (req, res) => {
+  const { productId, womenLookId, menLookId, coupleId, side } = req.body || {};
+  const subject = resolveSubject({ productId, womenLookId, menLookId, coupleId, side });
+  const outfitId = subject.error ? undefined : subject.outfitId;
+  const out = await payments.createPayment({ outfitId });
+  if (!out.ok) return res.status(503).json({ ok: false, message: 'Payment could not be started right now.' });
+  res.json(out);
+});
+
+// getPaymentStatus: read-only. Reveals the one-time authToken only once the payment is AUTHORIZED,
+// and only to a caller holding the unguessable paymentId capability.
+app.get('/api/payment/status', (req, res) => {
+  const out = payments.getPaymentStatus({ paymentId: String(req.query.paymentId || '') });
+  if (!out.ok) return res.status(404).json({ ok: false, message: 'Unknown payment.' });
+  res.json(out);
+});
+
+// verifyPayment: optional server-side poll fallback (used when a gateway supports polling instead of
+// webhooks). Still a SERVER-SIDE check — a client cannot self-verify.
+app.post('/api/payment/verify', async (req, res) => {
+  const out = await payments.verifyPayment({ paymentId: String((req.body || {}).paymentId || '') });
+  res.status(out.ok ? 200 : 402).json(out);
+});
 
 // Resolve the Try-On subject into the EXACT VIRAAS reference for the selected outfit.
 // Mapping rules (no cross-mapping, ever):
@@ -111,6 +163,27 @@ app.post('/api/try-on', async (req, res) => {
     return res.status(400).json({ ok: false, message: 'Please upload a JPG, PNG or WebP photo.' });
   if (photo.length > 11 * 1024 * 1024) return res.status(413).json({ ok: false, message: 'Photo too large.' });
 
+  // PAYMENT GATE. When payment is required, a real generation needs a verified, paid, ONE-TIME
+  // authorization. A client-supplied "paymentSuccess" flag is IGNORED — we only accept a valid
+  // authToken that maps to a server-side AUTHORIZED record, and we atomically claim it BEFORE
+  // calling the provider so a duplicate request can never trigger a second generation.
+  let claimed = null;
+  if (payments.paymentRequired) {
+    const authToken = typeof (req.body || {}).authToken === 'string' ? req.body.authToken : '';
+    const claim = payments.claimForGeneration({ authToken });
+    if (!claim.ok) {
+      const msg =
+        claim.reason === 'invalid_token'
+          ? 'Payment is required for AI Try-On. Please complete payment to continue.'
+          : claim.reason === 'already_consumed' || claim.reason === 'failed'
+            ? 'This Try-On authorization has already been used.'
+            : 'Payment has not been verified yet. Please complete payment to continue.';
+      return res.status(402).json({ ok: false, message: msg });
+    }
+    claimed = claim; // holds generationId; on genuine failure we mark it recoverable (not lost).
+    console.log(`[try-on ${reqId}] authorized generation=${claimed.generationId}`);
+  }
+
   try {
     // Resolve the garment to an inline base64 data-URL (or public URL). Never a user photo.
     const garment = loadGarment(subject.garmentImageUrl);
@@ -124,8 +197,13 @@ app.post('/api/try-on', async (req, res) => {
       garmentDescription: subject.garmentDescription,
     });
     console.log(`[try-on ${reqId}] done ok=${out.ok} mode=${out.mode} ${Date.now() - started}ms`);
+    // A genuine post-payment failure must NOT be faked or lost: mark the claimed authorization
+    // FAILED + recoverable (retains paymentId for a later refund/credit) instead of returning a
+    // fake image. We never silently drop the customer's paid authorization.
+    if (!out.ok && claimed) payments.failGeneration({ generationId: claimed.generationId, reason: out.message || 'provider_error' });
     res.status(out.ok ? 200 : 502).json(out);
   } catch {
+    if (claimed) payments.failGeneration({ generationId: claimed.generationId, reason: 'exception' });
     console.log(`[try-on ${reqId}] error ${Date.now() - started}ms`);
     res.status(500).json({ ok: false, message: 'Try-on failed.' });
   }
@@ -136,4 +214,9 @@ app.use(express.static(dist, { maxAge: '1h', index: false }));
 app.get(/^(?!\/api\/).*/, (_req, res) => res.sendFile(path.join(dist, 'index.html')));
 
 const port = Number(process.env.PORT || 8787);
-app.listen(port, '0.0.0.0', () => console.log(`VIRAAS server on :${port} (try-on mode: ${tryOnMode}, configured: ${tryOnConfigured})`));
+app.listen(port, '0.0.0.0', () =>
+  console.log(
+    `VIRAAS server on :${port} (try-on mode: ${tryOnMode}, configured: ${tryOnConfigured}; ` +
+      `payment: provider=${payments.paymentConfig.provider} required=${payments.paymentRequired} configured=${payments.paymentConfig.configured})`,
+  ),
+);

@@ -19,7 +19,8 @@
     "audit-rendered-browser": "node scripts/audit-rendered-browser.mjs",
     "audit-search": "node scripts/audit-search.mjs",
     "final-audit": "node scripts/final-audit.mjs",
-    "ingest-images": "node scripts/ingest-images.mjs"
+    "ingest-images": "node scripts/ingest-images.mjs",
+    "test-payment-tryon": "node scripts/test-payment-tryon.mjs"
   },
   "dependencies": {
     "express": "^5.2.1",

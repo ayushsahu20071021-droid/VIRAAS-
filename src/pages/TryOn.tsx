@@ -10,9 +10,13 @@ import { useSaved } from '../lib/saved';
 import { SHARE_TEXT } from '../lib/saved';
 import { DEFAULT_EDIT, isEdited, processPhoto, downloadDataUrl, shareImage, type PhotoEdit } from '../lib/photo';
 
-type Step = 'pick' | 'age' | 'under18' | 'privacy' | 'upload' | 'preview' | 'generating' | 'result' | 'error';
+type Step = 'pick' | 'age' | 'under18' | 'privacy' | 'upload' | 'preview' | 'payment' | 'generating' | 'result' | 'error';
 interface TryOnResponse { ok: boolean; mode: string; resultImage?: string | null; message?: string }
-interface TryOnStatus { mode: string; configured: boolean; provider: string | null }
+interface TryOnStatus {
+  mode: string; configured: boolean; provider: string | null;
+  // Payment gating (browser-safe). Absent/false => no payment required (current default behaviour).
+  paymentRequired?: boolean; priceInr?: number; currency?: string; paymentConfigured?: boolean;
+}
 
 const AGE_KEY = 'viraas:age-confirmed';
 const previewStatus = womenPreviews as Record<string, { live: boolean; src: string } | undefined>;
@@ -103,19 +107,28 @@ export default function TryOn() {
   const [status, setStatus] = useState<TryOnStatus>({ mode: 'demo', configured: false, provider: null });
   const [stage, setStage] = useState(0);
   const [saved, setSavedFlag] = useState(false);
+  const [payNote, setPayNote] = useState<string>('');
   const fileRef = useRef<HTMLInputElement>(null);
   const stageTimer = useRef<ReturnType<typeof setInterval> | null>(null);
+  const pollTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const { toggle, isSaved } = useSaved();
 
   useEffect(() => {
     fetch('/api/try-on/status').then((r) => r.json()).then(setStatus).catch(() => setStatus({ mode: 'demo', configured: false, provider: null }));
   }, []);
 
+  // Clear any running timers when the component unmounts.
+  useEffect(() => () => {
+    if (stageTimer.current) clearInterval(stageTimer.current);
+    if (pollTimer.current) clearInterval(pollTimer.current);
+  }, []);
+
   const key = `${sp.get('product') || ''}|${sp.get('womenLook') || ''}|${sp.get('menLook') || ''}|${sp.get('couple') || ''}|${sp.get('side') || ''}`;
   useEffect(() => {
+    if (pollTimer.current) clearInterval(pollTimer.current);
     if (!subject) { setStep('pick'); return; }
     setStep(sessionStorage.getItem(AGE_KEY) === '1' ? 'privacy' : 'age');
-    setPhoto(null); setProcessed(null); setEdit(DEFAULT_EDIT); setConsent(false); setResult(null); setSavedFlag(false);
+    setPhoto(null); setProcessed(null); setEdit(DEFAULT_EDIT); setConsent(false); setResult(null); setSavedFlag(false); setPayNote('');
   }, [key]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Recompute the edited (sent) version whenever the photo or the privacy edit changes.
@@ -135,14 +148,56 @@ export default function TryOn() {
     r.readAsDataURL(f);
   };
 
-  const generate = async () => {
+  // Kick off the paid flow (only when the server reports payment is required). This NEVER asserts
+  // payment itself: it creates a payment, then waits for the SERVER to report an authorization that
+  // only the gateway webhook can produce. A real gateway's checkout widget would open here using the
+  // returned `checkout` descriptor.
+  const startPayment = async () => {
     if (!subject || !processed || !consent) return;
+    setPayNote(''); setStep('payment');
+    try {
+      const res = await fetch('/api/payment/create', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(subject.apiBody),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.ok || !data.paymentId) throw new Error('We couldn’t start the payment. Please try again.');
+      pollAuthorization(String(data.paymentId));
+    } catch (e) {
+      setResult({ ok: false, mode: status.mode, message: String((e as Error).message) }); setStep('error');
+    }
+  };
+
+  // Poll the server for the one-time authorization. The token only appears once the gateway webhook
+  // has been verified SERVER-SIDE — the browser cannot self-authorize.
+  const pollAuthorization = (paymentId: string) => {
+    if (pollTimer.current) clearInterval(pollTimer.current);
+    let tries = 0;
+    pollTimer.current = setInterval(async () => {
+      tries += 1;
+      try {
+        const r = await fetch(`/api/payment/status?paymentId=${encodeURIComponent(paymentId)}`);
+        const s = await r.json();
+        if (s?.authorized && s?.authToken) {
+          if (pollTimer.current) clearInterval(pollTimer.current);
+          generate(String(s.authToken));
+        } else if (tries >= 60) {
+          if (pollTimer.current) clearInterval(pollTimer.current);
+          setPayNote('We’re still waiting for your payment to be confirmed. If you completed payment, please try again shortly.');
+        }
+      } catch { /* keep polling until the cap */ }
+    }, 2000);
+  };
+
+  const generate = async (authToken?: string) => {
+    if (!subject || !processed || !consent) return;
+    if (pollTimer.current) clearInterval(pollTimer.current);
     setStep('generating'); setStage(0);
     stageTimer.current = setInterval(() => setStage((s) => Math.min(s + 1, GEN_STAGES.length - 1)), 1200);
     try {
       const res = await fetch('/api/try-on', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...subject.apiBody, photo: processed, ageConfirmed: true }),
+        body: JSON.stringify({ ...subject.apiBody, photo: processed, ageConfirmed: true, ...(authToken ? { authToken } : {}) }),
       });
       const data = (await res.json()) as TryOnResponse;
       if (!res.ok || !data.ok) throw new Error(data.message || 'Try-on failed');
@@ -154,7 +209,13 @@ export default function TryOn() {
     }
   };
 
-  const tryAnother = () => { setPhoto(null); setProcessed(null); setEdit(DEFAULT_EDIT); setConsent(false); setResult(null); setSavedFlag(false); setSp({}); };
+  // Route the "Generate" click: pay first when the server requires it, otherwise generate directly.
+  const onGenerateClick = () => { if (status.paymentRequired) startPayment(); else generate(); };
+
+  const tryAnother = () => {
+    if (pollTimer.current) clearInterval(pollTimer.current);
+    setPhoto(null); setProcessed(null); setEdit(DEFAULT_EDIT); setConsent(false); setResult(null); setSavedFlag(false); setPayNote(''); setSp({});
+  };
   const saveResult = (img?: string | null) => { toggle('tryon', subject!.id, img ?? subject!.imageUrl); setSavedFlag(true); };
   const doShareImage = async (img: string) => {
     const r = await shareImage(img, 'viraas-try-on.jpg', SHARE_TEXT);
@@ -272,7 +333,26 @@ export default function TryOn() {
                   <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} />
                   <span>I’m 18+ and I understand my photo is sent to the VIRAAS server to generate my try-on for this look. It isn’t added to the catalog or made public. See the <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link> notice.</span>
                 </label>
-                <div className="row"><button className="btn btn-accent" disabled={!consent || !processed} onClick={generate}>Generate my try-on</button></div>
+                <div className="row">
+                  <button className="btn btn-accent" disabled={!consent || !processed} onClick={onGenerateClick}>
+                    {status.paymentRequired ? `Pay ₹${status.priceInr ?? ''} & generate` : 'Generate my try-on'}
+                  </button>
+                </div>
+                {status.paymentRequired && <p className="muted small">One AI Try-On for this look. You pay VIRAAS securely; your photo is never sent to the payment provider.</p>}
+              </div>
+            )}
+
+            {/* 4b — Payment (only shown when the server requires payment) */}
+            {step === 'payment' && (
+              <div className="gate">
+                <h2>Complete your payment</h2>
+                <p>An AI Try-On for this look is ₹{status.priceInr ?? ''}. Once your payment is confirmed, your try-on is generated automatically.</p>
+                <div className="spinner" aria-label="Waiting for payment confirmation" />
+                <p className="muted small">Waiting for secure confirmation… Your payment is verified on the VIRAAS server before any generation starts.</p>
+                {payNote && <p className="muted small">{payNote}</p>}
+                <div className="row">
+                  <button className="btn btn-ghost" onClick={() => { if (pollTimer.current) clearInterval(pollTimer.current); setStep('preview'); }}>Cancel</button>
+                </div>
               </div>
             )}
 
