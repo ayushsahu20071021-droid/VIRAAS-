@@ -2,7 +2,7 @@
   {
     "id": "garba-01",
     "world": "garba",
-    "title": "Ivory Mirror Lehenga, Festive Steps Selfie",
+    "title": "Black Gold-Buti Lehenga, White Blouse Selfie",
     "ref": "GARBA-REF-01",
     "referenceNumber": 1,
     "pose": "both sitting very close together on festive steps, bodies relaxed and slightly angled toward each other, she holds a smartphone in front of her face for a selfie, he leans his face toward her affectionately",
@@ -16,23 +16,23 @@
       "cat": "Lehenga",
       "colour": "Ivory",
       "fabric": "Georgette",
-      "detail": "mirror-work blouse",
-      "desc": "ivory heavily mirror-worked and sequinned lehenga with a fitted ivory embellished blouse and a matching dupatta"
+      "detail": "gold buti with mirror waistline",
+      "desc": "black lehenga with gold buti motifs and a mirror-work waistline, worn with a white high-neck full-sleeve crop blouse, silver bangles and a nose-ring"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Ivory",
       "fabric": "Cotton",
-      "detail": "embroidered festive",
-      "desc": "ivory embroidered festive kurta with light blue relaxed denim jeans"
+      "detail": "gold-embroidered placket with white dupatta",
+      "desc": "black kurta with a gold-embroidered placket and a white silver-bordered dupatta"
     },
-    "outfitDescription": "Ivory mirror-work lehenga and embellished blouse with dupatta; ivory embroidered kurta with light blue jeans",
+    "outfitDescription": "Black gold-buti lehenga with white high-neck blouse and mirror waistline; black kurta with gold placket and white bordered dupatta",
     "qaStatus": "GENERATED",
-    "tone": "Silver",
-    "colourStory": "Ivory · Ivory",
+    "tone": "Gold",
+    "colourStory": "Black · Black",
     "tags": [
-      "seated",
       "selfie",
+      "overhead",
       "mirror-work"
     ],
     "herProductIds": [
@@ -51,7 +51,7 @@
   {
     "id": "garba-02",
     "world": "garba",
-    "title": "Overhead on the Festive Floor",
+    "title": "Ivory Mirror Lehenga, Haveli Steps Selfie",
     "ref": "GARBA-REF-02",
     "referenceNumber": 2,
     "pose": "true birds-eye overhead view with the camera directly above them, both lying beside each other looking upward, bodies arranged diagonally within the frame, relaxed natural pose",
@@ -65,23 +65,24 @@
       "cat": "Lehenga",
       "colour": "Black",
       "fabric": "Silk Blend",
-      "detail": "gold motif with white blouse",
-      "desc": "black lehenga with gold and metallic motifs, a fitted white long-sleeve blouse and a traditional dupatta drape"
+      "detail": "all-over mirror and sequin work",
+      "desc": "ivory heavily mirror-worked and sequinned lehenga with a matching embellished blouse and dupatta, stacked silver kada and jhumka earrings"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "with ivory patterned stole",
-      "desc": "black festive kurta with an ivory patterned stole and a light lower garment"
+      "detail": "sequin chikankari with denim",
+      "desc": "ivory sequin chikankari kurta worn with light blue denim jeans"
     },
-    "outfitDescription": "Black lehenga with gold motifs and white long-sleeve blouse; black kurta with ivory stole",
+    "outfitDescription": "Ivory mirror-work lehenga, blouse and dupatta; ivory sequin chikankari kurta with light blue jeans",
     "qaStatus": "GENERATED",
-    "tone": "Gold",
-    "colourStory": "Black · Ivory",
+    "tone": "Silver",
+    "colourStory": "Ivory · Ivory",
     "tags": [
-      "overhead",
-      "lying"
+      "seated",
+      "selfie",
+      "mirror-work"
     ],
     "herProductIds": [
       "w-lehenga-black-gold-motif-with-white-blouse",
@@ -99,7 +100,7 @@
   {
     "id": "garba-03",
     "world": "garba",
-    "title": "Hot Pink Lehenga Store Mirror Selfie",
+    "title": "Teal Striped Kurti, Garba Ground",
     "ref": "GARBA-REF-03",
     "referenceNumber": 3,
     "pose": "mirror selfie, she holds the phone in front of the mirror, he stands close behind and beside her with one arm around her waist, their bodies crop naturally at the edges",
@@ -113,23 +114,24 @@
       "cat": "Lehenga",
       "colour": "Rani Pink",
       "fabric": "Silk",
-      "detail": "white bandeau blouse with gold-bordered dupatta",
-      "desc": "very bright hot pink lehenga with a white fitted bandeau crop blouse and a rich gold-bordered pink festive dupatta, oxidised silver jewellery"
+      "detail": "gold-striped strappy kurti",
+      "desc": "teal green gold-striped strappy kurti with white palazzo, an oxidised silver choker and bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
-      "detail": "with hot pink embroidered stole",
-      "desc": "white kurta with a bright embroidered hot pink festive dupatta scarf with colourful detailing and tassels"
+      "detail": "pastel floral shirt with white dupatta",
+      "desc": "pastel floral printed short-sleeve shirt with black trousers and a white dupatta draped at the neck"
     },
-    "outfitDescription": "Hot pink lehenga, white bandeau blouse, gold-bordered dupatta; white kurta with hot pink embroidered stole",
+    "outfitDescription": "Teal gold-striped kurti with white palazzo; pastel floral shirt with black trousers and white dupatta",
     "qaStatus": "GENERATED",
     "tone": "Oxidised Silver",
-    "colourStory": "Hot Pink · White",
+    "colourStory": "Teal · Multicolour",
     "tags": [
-      "mirror-selfie",
-      "store"
+      "seated",
+      "garba-ground",
+      "candid"
     ],
     "herProductIds": [
       "w-lehenga-rani-pink-white-bandeau-blouse-with-gold-bordered-dupatta",
@@ -147,7 +149,7 @@
   {
     "id": "garba-04",
     "world": "garba",
-    "title": "Ivory Kurta and Bandhani Drape",
+    "title": "White Printed Choli, Navy Drape",
     "ref": "GARBA-REF-04",
     "referenceNumber": 4,
     "pose": "standing side by side extremely close, arms relaxed naturally, torsos and outfits dominating the frame",
@@ -161,24 +163,24 @@
       "cat": "Pre-Draped Saree",
       "colour": "Ivory",
       "fabric": "Georgette",
-      "detail": "red bandhani dupatta drape",
-      "desc": "cream and ivory embroidered blouse with a rich red and pink bandhani style dupatta drape and festive detailing"
+      "detail": "printed backless choli with navy dupatta",
+      "desc": "white printed backless choli and motif skirt with a navy blue dupatta drape"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Ivory",
       "fabric": "Cotton",
-      "detail": "all-over embroidery",
-      "desc": "ivory cream festive kurta with subtle all-over embroidery and a traditional lower garment"
+      "detail": "diamond-print",
+      "desc": "white diamond-print chikankari-style kurta"
     },
-    "outfitDescription": "Ivory embroidered blouse with red and pink bandhani drape; ivory embroidered kurta",
+    "outfitDescription": "White printed backless choli and motif lehenga with navy dupatta; white diamond-print kurta",
     "qaStatus": "GENERATED",
-    "tone": "Gold",
-    "colourStory": "Ivory · Red",
+    "tone": "Silver",
+    "colourStory": "Ivory · Navy",
     "tags": [
       "standing",
-      "close-crop",
-      "crowd"
+      "fairy-lights",
+      "embrace"
     ],
     "herProductIds": [
       "w-pre-draped-saree-ivory-red-bandhani-dupatta-drape",
@@ -196,7 +198,7 @@
   {
     "id": "garba-05",
     "world": "garba",
-    "title": "Purple Night Festive Close-Up",
+    "title": "Black Gold Kurta, White Tiered Chaniya",
     "ref": "GARBA-REF-05",
     "referenceNumber": 5,
     "pose": "both standing extremely close with arms and body language naturally connected, intimate and fashion-detail focused",
@@ -210,22 +212,23 @@
       "cat": "Lehenga",
       "colour": "Lilac",
       "fabric": "Silk Blend",
-      "detail": "embroidered with embellished blouse",
-      "desc": "rich purple and lilac traditional festive outfit with detailed embroidery, an embellished blouse and a flowing dupatta"
+      "detail": "white tiered skirt with mirror dupatta",
+      "desc": "white sleeveless crop top and tiered skirt with a colourful mirror-embroidered dupatta at the waist and silver bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Purple",
       "fabric": "Cotton",
-      "detail": "with white stole",
-      "desc": "deep purple festive kurta with a white cream stole and ethnic detailing"
+      "detail": "gold buti with zari-border dupatta",
+      "desc": "black gold-buti kurta with a black and gold zari-border dupatta and white pyjama"
     },
-    "outfitDescription": "Purple lilac embroidered lehenga with embellished blouse; deep purple kurta with white stole",
+    "outfitDescription": "White crop top and tiered chaniya with colourful mirror dupatta; black gold-buti kurta with zari-border dupatta and white pyjama",
     "qaStatus": "GENERATED",
-    "tone": "Silver",
-    "colourStory": "Purple · Purple",
+    "tone": "Gold",
+    "colourStory": "Ivory · Black",
     "tags": [
-      "close-crop",
+      "standing",
+      "portrait",
       "night"
     ],
     "herProductIds": [
@@ -244,7 +247,7 @@
   {
     "id": "garba-06",
     "world": "garba",
-    "title": "She Touches His Cheek, Garba Night",
+    "title": "Black Chaniya, White Chikankari Kurta",
     "ref": "GARBA-REF-06",
     "referenceNumber": 6,
     "pose": "she faces the man and touches his cheek and face, he stands relaxed facing her, their interaction is the main subject",
@@ -258,23 +261,24 @@
       "cat": "Chaniya Choli",
       "colour": "Multicolour",
       "fabric": "Cotton",
-      "detail": "mirror-work skirt with black crop blouse",
-      "desc": "black sleeveless crop blouse with a dramatic colourful mirror-work and embroidered multicolour chaniya skirt, festive jewellery"
+      "detail": "mirror waist belt with kutchi-border dupatta",
+      "desc": "black chaniya with a mirror-work waist belt and a black dupatta edged in colourful kutchi embroidery, silver choker and bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "contemporary with white trousers",
-      "desc": "black contemporary kurta with white and ivory trousers"
+      "detail": "chikankari with black trousers",
+      "desc": "white chikankari kurta with black trousers and boots"
     },
-    "outfitDescription": "Black crop blouse with multicolour mirror-work chaniya; black kurta with white trousers",
+    "outfitDescription": "Black chaniya with mirror waist belt and kutchi-border dupatta; white chikankari kurta with black trousers",
     "qaStatus": "GENERATED",
     "tone": "Oxidised Silver",
-    "colourStory": "Multicolour · Black",
+    "colourStory": "Black · White",
     "tags": [
-      "interaction",
-      "garba-ground"
+      "standing",
+      "night-street",
+      "facing"
     ],
     "herProductIds": [
       "w-chaniya-choli-multicolour-mirror-work-skirt-with-black-crop-blouse",
@@ -292,7 +296,7 @@
   {
     "id": "garba-07",
     "world": "garba",
-    "title": "Twirl Under the String Lights",
+    "title": "Wine Bandhani Lehenga, Black Kurta",
     "ref": "GARBA-REF-07",
     "referenceNumber": 7,
     "pose": "she is captured in the middle of a spin and twirl with her skirt and dupatta flowing dynamically, he stands slightly behind watching and supporting her",
@@ -306,23 +310,24 @@
       "cat": "Lehenga",
       "colour": "Ivory",
       "fabric": "Cotton",
-      "detail": "colourful printed dupatta",
-      "desc": "white and ivory lehenga chaniya with a colourful blue and green printed festive dupatta"
+      "detail": "black blouse with bandhani dupatta",
+      "desc": "wine purple lehenga with a black satin blouse and a purple leheriya-bandhani dupatta, silver waist chain and bangles"
     },
     "him": {
       "cat": "Printed Ethnic Shirt",
       "colour": "Navy",
       "fabric": "Cotton",
-      "detail": "blue and white print with white stole",
-      "desc": "blue and white contemporary printed ethnic kurta with a white stole"
+      "detail": "with white pyjama",
+      "desc": "black kurta with white pyjama"
     },
-    "outfitDescription": "Ivory lehenga with colourful blue and green printed dupatta; blue and white printed kurta with white stole",
+    "outfitDescription": "Wine lehenga with black blouse and purple bandhani dupatta; black kurta with white pyjama",
     "qaStatus": "GENERATED",
-    "tone": "Silver",
-    "colourStory": "Ivory · Blue",
+    "tone": "Oxidised Silver",
+    "colourStory": "Wine · Black",
     "tags": [
-      "twirl",
-      "action"
+      "standing",
+      "night-street",
+      "embrace"
     ],
     "herProductIds": [
       "w-lehenga-ivory-colourful-printed-dupatta",
@@ -340,7 +345,7 @@
   {
     "id": "garba-08",
     "world": "garba",
-    "title": "Maroon Kurta, Multicolour Chaniya",
+    "title": "Ivory Mirror Choli, Black Embroidered Dupatta",
     "ref": "GARBA-REF-08",
     "referenceNumber": 8,
     "pose": "both standing naturally and looking toward each other, no straight mannequin-like stance, gaze and interaction natural",
@@ -354,23 +359,24 @@
       "cat": "Chaniya Choli",
       "colour": "Multicolour",
       "fabric": "Cotton",
-      "detail": "maroon and green accents with cream dupatta",
-      "desc": "multicolour traditional chaniya choli with a cream dupatta, rich maroon and deep green accents, mirror and embroidered details"
+      "detail": "mirror blouse with embroidered black dupatta",
+      "desc": "ivory mirror-work blouse and cream tiered skirt with a black dupatta covered in multicolour mirror embroidery, oxidised tasselled choker and silver waist chain"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Wine",
       "fabric": "Cotton",
-      "detail": "with cream stole",
-      "desc": "deep maroon wine kurta with a long cream and off-white stole"
+      "detail": "sequin with cream shawl",
+      "desc": "black sequin kurta with a cream and grey fringed shawl"
     },
-    "outfitDescription": "Multicolour chaniya choli with cream dupatta and maroon green accents; maroon kurta with cream stole",
+    "outfitDescription": "Ivory mirror choli and cream chaniya with multicolour-embroidered black dupatta; black sequin kurta with cream shawl",
     "qaStatus": "GENERATED",
-    "tone": "Gold",
-    "colourStory": "Multicolour · Maroon",
+    "tone": "Oxidised Silver",
+    "colourStory": "Ivory · Black",
     "tags": [
       "standing",
-      "garba-ground"
+      "garba-ground",
+      "mirror-work"
     ],
     "herProductIds": [
       "w-chaniya-choli-multicolour-maroon-and-green-accents-with-cream-dupatta",
@@ -388,7 +394,7 @@
   {
     "id": "garba-09",
     "world": "garba",
-    "title": "Close Crop on Hands and Dupatta",
+    "title": "Red Bandhani Lehenga, Leheriya Dupatta",
     "ref": "GARBA-REF-09",
     "referenceNumber": 9,
     "pose": "very close cropped interaction with her hand and his hand positioned naturally, the gesture is the subject",
@@ -402,23 +408,24 @@
       "cat": "Chaniya Choli",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "colourful embroidered mirror dupatta",
-      "desc": "modern black crop blouse with a black festive chaniya skirt and a colourful embroidered mirror-work dupatta draped on one side"
+      "detail": "bandhani lehenga with white blouse",
+      "desc": "red bandhani lehenga and net dupatta with a white blouse, a silver statement necklace and kada"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "textured with ivory trousers",
-      "desc": "black textured and embroidered kurta with ivory white trousers"
+      "detail": "with multicolour leheriya dupatta",
+      "desc": "white chikankari kurta with a multicolour leheriya striped dupatta"
     },
-    "outfitDescription": "Black crop blouse and chaniya with colourful mirror dupatta; black textured kurta with ivory trousers",
+    "outfitDescription": "Red bandhani lehenga and dupatta with white blouse; white chikankari kurta with multicolour leheriya dupatta",
     "qaStatus": "GENERATED",
     "tone": "Oxidised Silver",
-    "colourStory": "Black · Multicolour",
+    "colourStory": "Red · Multicolour",
     "tags": [
-      "close-crop",
-      "hands"
+      "standing",
+      "daytime",
+      "embrace"
     ],
     "herProductIds": [
       "w-chaniya-choli-black-colourful-embroidered-mirror-dupatta",
@@ -436,7 +443,7 @@
   {
     "id": "garba-10",
     "world": "garba",
-    "title": "Gold Blouse, Maroon Printed Kurta",
+    "title": "Navy Bandhani-Buti Lehenga",
     "ref": "GARBA-REF-10",
     "referenceNumber": 10,
     "pose": "standing extremely close together with their arms and hands overlapping naturally, camera close enough that garments and accessories dominate",
@@ -450,23 +457,24 @@
       "cat": "Lehenga",
       "colour": "Ivory",
       "fabric": "Silk",
-      "detail": "gold embellished blouse with sheer dupatta",
-      "desc": "heavily embellished gold and silver blouse with a pale ivory lehenga and a light transparent dupatta"
+      "detail": "bandhani buti with silver haar",
+      "desc": "navy lehenga and blouse scattered with coppery bandhani buti dots, a white waistband, a long oxidised silver haar and bangles"
     },
     "him": {
       "cat": "Printed Ethnic Shirt",
       "colour": "Maroon",
       "fabric": "Cotton",
-      "detail": "traditional festive print",
-      "desc": "rich red maroon printed ethnic shirt kurta with traditional festive texture"
+      "detail": "block-print with kutchi-border dupatta",
+      "desc": "grey-blue block-print kurta with a black dupatta edged in colourful kutchi embroidery"
     },
-    "outfitDescription": "Gold and silver embellished blouse with pale ivory lehenga and sheer dupatta; maroon printed ethnic shirt",
+    "outfitDescription": "Navy bandhani-buti lehenga with silver haar; grey block-print kurta with kutchi-border dupatta",
     "qaStatus": "GENERATED",
-    "tone": "Gold",
-    "colourStory": "Ivory · Maroon",
+    "tone": "Oxidised Silver",
+    "colourStory": "Navy · Grey",
     "tags": [
       "close-crop",
-      "detail"
+      "standing",
+      "bandhani"
     ],
     "herProductIds": [
       "w-lehenga-ivory-gold-embellished-blouse-with-sheer-dupatta",
@@ -484,7 +492,7 @@
   {
     "id": "garba-11",
     "world": "garba",
-    "title": "Navy Geometric Chaniya",
+    "title": "Blue Patola Lehenga, Pink Border",
     "ref": "GARBA-REF-11",
     "referenceNumber": 11,
     "pose": "both standing beside each other with hands and dupattas held naturally, their hands holding the fabric and stole",
@@ -498,23 +506,24 @@
       "cat": "Chaniya Choli",
       "colour": "Navy",
       "fabric": "Cotton",
-      "detail": "geometric sparkle embellishment",
-      "desc": "dark navy festive chaniya with geometric and sparkly embellishments and a matching dupatta"
+      "detail": "patola print with pink border",
+      "desc": "royal blue patola-print lehenga with a pink border and dupatta and a mirror-work blue blouse, silver bangles"
     },
     "him": {
       "cat": "Printed Ethnic Shirt",
       "colour": "Navy",
       "fabric": "Cotton",
-      "detail": "printed with stole",
-      "desc": "dark navy printed ethnic kurta with a complementary stole"
+      "detail": "block-print with white churidar",
+      "desc": "mauve block-print kurta with white churidar, a white dupatta and brown mojaris"
     },
-    "outfitDescription": "Navy chaniya with geometric sparkle embellishment; navy printed kurta with stole",
+    "outfitDescription": "Royal blue patola lehenga with pink border and dupatta; mauve block-print kurta with white churidar",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Navy · Navy",
+    "colourStory": "Royal Blue · Mauve",
     "tags": [
-      "mid-crop",
-      "textile"
+      "standing",
+      "patola",
+      "night"
     ],
     "herProductIds": [
       "w-chaniya-choli-navy-geometric-sparkle-embellishment",
@@ -532,7 +541,7 @@
   {
     "id": "garba-12",
     "world": "garba",
-    "title": "Blue Lehenga, Magenta Dupatta",
+    "title": "Navy Sequin Lehenga, Elephant-Print Dupatta",
     "ref": "GARBA-REF-12",
     "referenceNumber": 12,
     "pose": "both standing very close with her arm and body slightly overlapping his side, cloth arrangement and overlap preserved",
@@ -546,23 +555,24 @@
       "cat": "Lehenga",
       "colour": "Royal Blue",
       "fabric": "Cotton",
-      "detail": "patterned with magenta dupatta",
-      "desc": "deep blue patterned festive lehenga skirt with a bright pink and magenta dupatta and a colourful border"
+      "detail": "silver sequin diamond pattern",
+      "desc": "navy lehenga in a silver sequin diamond pattern with a matching sleeveless blouse and navy dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Purple",
       "fabric": "Cotton",
-      "detail": "light lavender with white stole",
-      "desc": "light lavender pink kurta with a long white stole and white trousers"
+      "detail": "sequin with elephant-print dupatta",
+      "desc": "navy sequin kurta with a black and gold elephant-print dupatta and white pyjama"
     },
-    "outfitDescription": "Deep blue patterned lehenga with magenta dupatta; lavender kurta with white stole",
+    "outfitDescription": "Navy silver-sequin diamond lehenga and dupatta; navy sequin kurta with gold elephant-print dupatta and white pyjama",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Blue · Magenta",
+    "colourStory": "Navy · Navy",
     "tags": [
-      "close-crop",
-      "overlap"
+      "standing",
+      "sequin",
+      "matching"
     ],
     "herProductIds": [
       "w-lehenga-royal-blue-patterned-with-magenta-dupatta",
@@ -580,7 +590,7 @@
   {
     "id": "garba-13",
     "world": "garba",
-    "title": "Matching Navy Textile Crop",
+    "title": "Gold Sequin Blouse, Red Kurta",
     "ref": "GARBA-REF-13",
     "referenceNumber": 13,
     "pose": "both standing side by side with hands positioned naturally in front, gripping and holding the dupattas",
@@ -594,23 +604,24 @@
       "cat": "Chaniya Choli",
       "colour": "Navy",
       "fabric": "Cotton",
-      "detail": "colourful motif with embellished blouse",
-      "desc": "navy and black festive chaniya with repeated small colourful motifs and a dark navy embellished blouse"
+      "detail": "gold sequin blouse with sheer ivory skirt",
+      "desc": "heavily gold-sequinned blouse with a sheer ivory dupatta and skirt and an oxidised elephant-motif necklace"
     },
     "him": {
       "cat": "Printed Ethnic Shirt",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "printed embroidery detail",
-      "desc": "matching dark navy and black ethnic kurta with printed and embroidered detail"
+      "detail": "self-stripe textured",
+      "desc": "red self-stripe textured kurta with rolled sleeves"
     },
-    "outfitDescription": "Navy chaniya with colourful motifs and embellished blouse; matching navy and black printed kurta",
+    "outfitDescription": "Gold sequin blouse with sheer ivory skirt and dupatta; red self-stripe kurta",
     "qaStatus": "GENERATED",
-    "tone": "Oxidised Silver",
-    "colourStory": "Navy · Black",
+    "tone": "Gold",
+    "colourStory": "Gold · Red",
     "tags": [
-      "tight-crop",
-      "matching"
+      "close-crop",
+      "detail",
+      "standing"
     ],
     "herProductIds": [
       "w-chaniya-choli-navy-colourful-motif-with-embellished-blouse",
@@ -628,7 +639,7 @@
   {
     "id": "garba-14",
     "world": "garba",
-    "title": "Red Lehenga, Gujarati Stole",
+    "title": "Black Chaniya, Patchwork Mirror Dupatta",
     "ref": "GARBA-REF-14",
     "referenceNumber": 14,
     "pose": "close-standing festive couple, her arm around and near his side, his arm naturally around her waist and shoulder area",
@@ -642,23 +653,24 @@
       "cat": "Lehenga",
       "colour": "Red",
       "fabric": "Cotton",
-      "detail": "cream blouse with traditional detailing",
-      "desc": "bright red and orange festive lehenga with a cream and ivory blouse and rich traditional detailing"
+      "detail": "with patchwork mirror dupatta",
+      "desc": "black crop top and skirt with a multicolour kutchi patchwork mirror-work dupatta and silver bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Ivory",
       "fabric": "Cotton",
-      "detail": "with multicolour Gujarati stole",
-      "desc": "ivory and white festive kurta with a multicolour Gujarati style scarf and dupatta"
+      "detail": "sequin-dot with white pyjama",
+      "desc": "black sequin-dot kurta with white pyjama"
     },
-    "outfitDescription": "Red and orange lehenga with cream blouse; ivory kurta with multicolour Gujarati stole",
+    "outfitDescription": "Black chaniya with multicolour patchwork mirror dupatta; black sequin-dot kurta with white pyjama",
     "qaStatus": "GENERATED",
-    "tone": "Gold",
-    "colourStory": "Red · Ivory",
+    "tone": "Oxidised Silver",
+    "colourStory": "Black · Black",
     "tags": [
+      "close-crop",
       "standing",
-      "garba-event"
+      "mirror-work"
     ],
     "herProductIds": [
       "w-lehenga-red-cream-blouse-with-traditional-detailing",
@@ -676,7 +688,7 @@
   {
     "id": "garba-15",
     "world": "garba",
-    "title": "Black and White Garba Pair",
+    "title": "Green Ikat Blouse, Ivory Twirl",
     "ref": "GARBA-REF-15",
     "referenceNumber": 15,
     "pose": "both standing closely with bodies angled naturally toward one another, hand positions and garment positioning preserved",
@@ -690,23 +702,24 @@
       "cat": "Chaniya Choli",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "light embroidered blouse with dupatta",
-      "desc": "black and white contemporary garba outfit with a dark chaniya skirt, a light embroidered blouse and a traditional dupatta"
+      "detail": "ikat blouse with ivory tie-dye skirt",
+      "desc": "green ikat sleeveless blouse with an ivory tie-dye tiered lehenga, a multicolour embroidery panel and a green dupatta"
     },
     "him": {
       "cat": "Printed Ethnic Shirt",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "charcoal print with ivory stole",
-      "desc": "black and charcoal printed kurta with an ivory and white stole and trousers"
+      "detail": "block-print with white dupatta",
+      "desc": "indigo blue-and-white block-print kurta with a white dupatta and white pyjama"
     },
-    "outfitDescription": "Dark chaniya with light embroidered blouse and dupatta; charcoal printed kurta with ivory stole",
+    "outfitDescription": "Green ikat blouse with ivory tie-dye chaniya and green dupatta; indigo block-print kurta with white dupatta",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Black · White",
+    "colourStory": "Green · Indigo",
     "tags": [
-      "tight-crop",
-      "standing"
+      "twirl",
+      "fairy-lights",
+      "action"
     ],
     "herProductIds": [
       "w-chaniya-choli-black-light-embroidered-blouse-with-dupatta",
@@ -724,7 +737,7 @@
   {
     "id": "garba-16",
     "world": "garba",
-    "title": "Lavender Mirror Chaniya",
+    "title": "Maroon Mirror Choli, Panelled Chaniya",
     "ref": "GARBA-REF-16",
     "referenceNumber": 16,
     "pose": "close side-by-side standing interaction with hands positioned around the stole and dupatta, physical relationship preserved",
@@ -738,23 +751,24 @@
       "cat": "Lehenga",
       "colour": "Lilac",
       "fabric": "Silk Blend",
-      "detail": "mirror and metallic accents",
-      "desc": "lavender and purple traditional garba lehenga chaniya with shiny mirror and metallic accents and a matching dupatta"
+      "detail": "mirror blouse with panelled gota skirt",
+      "desc": "maroon mirror-embroidered blouse with a white, maroon and teal gota-panel tiered lehenga, a white dupatta and an oxidised silver necklace"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Purple",
       "fabric": "Cotton",
-      "detail": "embroidered with white stole",
-      "desc": "rich purple embroidered and printed kurta with a white and ivory stole and white trousers"
+      "detail": "with white tasselled dupatta",
+      "desc": "maroon kurta with white pyjama and a white tasselled gold-border dupatta"
     },
-    "outfitDescription": "Lavender chaniya with mirror and metallic accents; purple embroidered kurta with white stole",
+    "outfitDescription": "Maroon mirror choli with panelled gota chaniya and white dupatta; maroon kurta with white tasselled dupatta",
     "qaStatus": "GENERATED",
-    "tone": "Silver",
-    "colourStory": "Lavender · Purple",
+    "tone": "Oxidised Silver",
+    "colourStory": "Maroon · Maroon",
     "tags": [
       "standing",
-      "night"
+      "garba-ground",
+      "mirror-work"
     ],
     "herProductIds": [
       "w-lehenga-lilac-mirror-and-metallic-accents",
@@ -772,7 +786,7 @@
   {
     "id": "garba-17",
     "world": "garba",
-    "title": "Maroon Chaniya, Night Street",
+    "title": "Maroon Embroidered Chaniya, Garba Night",
     "ref": "GARBA-REF-17",
     "referenceNumber": 17,
     "pose": "close affectionate standing interaction with one persons head and upper body leaning toward the other, preserving the natural asymmetry of the pose",
@@ -786,23 +800,24 @@
       "cat": "Chaniya Choli",
       "colour": "Maroon",
       "fabric": "Cotton",
-      "detail": "black blouse with rich dupatta",
-      "desc": "deep burgundy and maroon festive chaniya skirt with a black blouse and a rich traditional dupatta"
+      "detail": "kutchi-embroidered backless choli",
+      "desc": "maroon backless choli and skirt with heavy multicolour Gujarati kutchi embroidery and mirror work"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "with ivory lower",
-      "desc": "black kurta with an ivory and white lower garment"
+      "detail": "with white pyjama",
+      "desc": "black kurta with white pyjama"
     },
-    "outfitDescription": "Maroon chaniya with black blouse and rich dupatta; black kurta with ivory lower",
+    "outfitDescription": "Maroon kutchi-embroidered backless choli and chaniya; black kurta with white pyjama",
     "qaStatus": "GENERATED",
-    "tone": "Gold",
+    "tone": "Oxidised Silver",
     "colourStory": "Maroon · Black",
     "tags": [
-      "standing",
-      "night-street"
+      "garba-ground",
+      "night",
+      "dancing"
     ],
     "herProductIds": [
       "w-chaniya-choli-maroon-black-blouse-with-rich-dupatta",
@@ -820,7 +835,7 @@
   {
     "id": "garba-18",
     "world": "garba",
-    "title": "Navy Lehenga, Cross-Body Bag",
+    "title": "Lavender Buti Lehenga, Tissue Dupatta",
     "ref": "GARBA-REF-18",
     "referenceNumber": 18,
     "pose": "both facing each other with arms crossed or relaxed in the same configuration, his cross-body bag and her drape and accessories preserved",
@@ -834,23 +849,24 @@
       "cat": "Lehenga",
       "colour": "Black",
       "fabric": "Silk Blend",
-      "detail": "colourful dupatta with traditional jewellery",
-      "desc": "dark navy and black festive lehenga with a colourful dupatta and traditional jewellery"
+      "detail": "buti print with tissue dupatta",
+      "desc": "lavender buti-print lehenga with a lilac silver-tissue banarasi dupatta and a red pendant necklace"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
-      "detail": "embroidered with charcoal lower",
-      "desc": "white and off-white embroidered kurta with a black and charcoal lower garment and a cross-body bag"
+      "detail": "chikankari with white dupatta",
+      "desc": "purple chikankari kurta with a white sequin dupatta and white churidar"
     },
-    "outfitDescription": "Navy and black lehenga with colourful dupatta; white embroidered kurta with charcoal lower and cross-body bag",
+    "outfitDescription": "Lavender buti lehenga with lilac tissue dupatta; purple chikankari kurta with white sequin dupatta",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Navy · White",
+    "colourStory": "Lavender · Purple",
     "tags": [
       "standing",
-      "night-road"
+      "tonal",
+      "night"
     ],
     "herProductIds": [
       "w-lehenga-black-colourful-dupatta-with-traditional-jewellery",
@@ -868,7 +884,7 @@
   {
     "id": "garba-19",
     "world": "garba",
-    "title": "Black and White Street Lean",
+    "title": "White Bandhani Blouse, Red Drape",
     "ref": "GARBA-REF-19",
     "referenceNumber": 19,
     "pose": "she leans very close into him, one person bends and tilts toward the other, spontaneous but preserving the exact body relationship",
@@ -882,23 +898,24 @@
       "cat": "Chaniya Choli",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "white crop blouse with colourful detailing",
-      "desc": "black and white contemporary festive outfit with a white crop blouse and a dark chaniya skirt with colourful detailing"
+      "detail": "bandhani blouse with red dupatta",
+      "desc": "white bandhani mirror blouse with an ivory skirt and a red bandhani dupatta, a silver kundan choker"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
-      "detail": "charcoal with white trousers",
-      "desc": "black and charcoal kurta or ethnic layer with white and ivory trousers"
+      "detail": "sequin chikankari with white dupatta",
+      "desc": "cream sequin chikankari kurta with a white dupatta and white churidar, stacked silver kada"
     },
-    "outfitDescription": "White crop blouse with dark chaniya and colourful detailing; charcoal kurta with white trousers",
+    "outfitDescription": "White bandhani blouse and ivory chaniya with red bandhani dupatta; cream sequin chikankari kurta with white dupatta",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Black · White",
+    "colourStory": "Ivory · Cream",
     "tags": [
-      "leaning",
-      "night-street"
+      "standing",
+      "hand-in-hand",
+      "bandhani"
     ],
     "herProductIds": [
       "w-chaniya-choli-black-white-crop-blouse-with-colourful-detailing",
@@ -916,7 +933,7 @@
   {
     "id": "garba-20",
     "world": "garba",
-    "title": "Ivory Chaniya, Seated Together",
+    "title": "Magenta Lehenga, Pink Mirror Dupatta",
     "ref": "GARBA-REF-20",
     "referenceNumber": 20,
     "pose": "both seated close together with her leaning toward him and toward his shoulder, heads and shoulders positioned closely, exact sitting arrangement preserved",
@@ -930,23 +947,24 @@
       "cat": "Chaniya Choli",
       "colour": "Ivory",
       "fabric": "Cotton",
-      "detail": "blue printed detailing",
-      "desc": "white and ivory festive chaniya with blue and navy printed detailing and a matching dupatta"
+      "detail": "halter blouse with bandhani dupatta",
+      "desc": "hot pink magenta lehenga with a white halter blouse, a pink bandhani gota-border dupatta and an embroidered waist belt, silver choker and bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Powder Blue",
       "fabric": "Cotton",
-      "detail": "light blue patterned",
-      "desc": "light blue and white patterned ethnic kurta with a white and light lower garment"
+      "detail": "with pink mirror dupatta",
+      "desc": "white kurta with a pink mirror-work embroidered dupatta and white pyjama"
     },
-    "outfitDescription": "Ivory chaniya with blue printed detailing; light blue patterned kurta with white lower",
+    "outfitDescription": "Magenta lehenga with white halter blouse and pink bandhani dupatta; white kurta with pink mirror-embroidered dupatta",
     "qaStatus": "GENERATED",
-    "tone": "Silver",
-    "colourStory": "Ivory · Blue",
+    "tone": "Oxidised Silver",
+    "colourStory": "Magenta · White",
     "tags": [
-      "seated",
-      "intimate"
+      "mirror-selfie",
+      "store",
+      "bandhani"
     ],
     "herProductIds": [
       "w-chaniya-choli-ivory-blue-printed-detailing",

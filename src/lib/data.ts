@@ -31,6 +31,9 @@ export const coupleById = new Map(COUPLES.map((c) => [c.id, c]));
 // cache buster so a refreshed asset cannot be hidden behind an older browser cache.
 export const coupleImageSrc = (c: Couple) => {
   if (c.imageStatus === 'GENERATED') {
+    // Garba / Navratri looks use the final real couple photographs, mapped 1:1 by look number.
+    const garba = /^garba-(\d{1,2})$/.exec(c.id);
+    if (garba) return `/images/couples/couple-garba-00${parseInt(garba[1], 10)}.png?v=garba-final-01`;
     const cacheBust = c.world === 'diwali' && /^diwali-(0[1-9]|10)$/.test(c.id) ? 'diwali-refresh-01-10' : 'generated-preview';
     return `/images/couples/${c.id}.webp?v=${cacheBust}`;
   }
