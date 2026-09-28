@@ -1,0 +1,1991 @@
+{
+  "generated": "2026-09-28",
+  "note": "Accessories page products (Jewellery/Footwear/Bags/Beauty + Traditional Layer). All status=image-pending. 32 Traditional Layer items also appear in Trending. Beauty (16) flagged for owner review re: inclusion in a Garba/Navratri accessories edit.",
+  "count": 126,
+  "items": [
+    {
+      "id": "w-jewellery-silver-jhumka-earrings",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Jhumka Earrings",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-silver-mirror-mojaris",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Silver",
+      "title": "Silver Mirror-Work Mojaris",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-tan-kolhapuri-sandals",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Tan",
+      "title": "Tan Kolhapuri Sandals",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-choker-necklace",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Choker Necklace",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-gold-mirror-mojaris",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Gold",
+      "title": "Gold Mirror-Work Mojaris",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-bangle-stack",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Bangle Stack (Set of 12)",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-kamarbandh-waist-belt",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Mirror Kamarbandh Waist Belt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-choker-necklace",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Choker Necklace",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-silver-bangle-stack",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Bangle Stack (Set of 12)",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-jhumka-earrings",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Jhumka Earrings",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-silver-kamarbandh-waist-belt",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Mirror Kamarbandh Waist Belt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-jhumka-earrings",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Jhumka Earrings",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-silver-choker-necklace",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Choker Necklace",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-silver-embroidered-juttis",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Silver",
+      "title": "Silver Embroidered Juttis",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-tan-embroidered-mojaris",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Tan",
+      "title": "Tan Embroidered Mojaris",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-gold-embroidered-juttis",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Gold",
+      "title": "Gold Embroidered Juttis",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-bangle-stack",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Bangle Stack (Set of 12)",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-silver-block-heels",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Silver",
+      "title": "Silver Embellished Block Heels",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-gold-block-heels",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Gold",
+      "title": "Gold Embellished Block Heels",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Mirror Kamarbandh Waist Belt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-nose-pin",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Clip-On Nose Pin",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-anklets",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Ghungroo Anklets (Pair)",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-maang-tikka",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Maang Tikka",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-hathphool",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Hathphool Hand Harness",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-statement-rings",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Statement Ring Set",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-oxidised-silver-hair-accessory",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Oxidised Silver",
+      "title": "Oxidised Silver Juda Pin Hair Accessory",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-nose-pin",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Clip-On Nose Pin",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-anklets",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Ghungroo Anklets (Pair)",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-maang-tikka",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Maang Tikka",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-hathphool",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Hathphool Hand Harness",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-statement-rings",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Statement Ring Set",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-gold-hair-accessory",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Gold",
+      "title": "Gold Juda Pin Hair Accessory",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-silver-nose-pin",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Clip-On Nose Pin",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-silver-anklets",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Ghungroo Anklets (Pair)",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-silver-maang-tikka",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Maang Tikka",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-silver-hathphool",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Hathphool Hand Harness",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-silver-statement-rings",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Statement Ring Set",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-jewellery-silver-hair-accessory",
+      "gender": "women",
+      "category": "Jewellery",
+      "subcategory": "Jewellery",
+      "colour": "Silver",
+      "title": "Silver Juda Pin Hair Accessory",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-black-mirror-potli",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Black",
+      "title": "Black Mirror-Work Potli Bag",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-ivory-embroidered-clutch",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Ivory",
+      "title": "Ivory Embroidered Festive Clutch",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-black-kutchi-sling",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Black",
+      "title": "Black Kutchi Embroidered Sling Bag",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-ivory-box-clutch",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Ivory",
+      "title": "Ivory Brocade Box Clutch",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-gold-mirror-potli",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Gold",
+      "title": "Gold Mirror-Work Potli Bag",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-red-embroidered-clutch",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Red",
+      "title": "Red Embroidered Festive Clutch",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-gold-kutchi-sling",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Gold",
+      "title": "Gold Kutchi Embroidered Sling Bag",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-red-box-clutch",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Red",
+      "title": "Red Brocade Box Clutch",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-multicolour-mirror-potli",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Multicolour",
+      "title": "Multicolour Mirror-Work Potli Bag",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-silver-embroidered-clutch",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Silver",
+      "title": "Silver Embroidered Festive Clutch",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-multicolour-kutchi-sling",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Multicolour",
+      "title": "Multicolour Kutchi Embroidered Sling Bag",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-silver-box-clutch",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Silver",
+      "title": "Silver Brocade Box Clutch",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-ivory-mirror-potli",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Ivory",
+      "title": "Ivory Mirror-Work Potli Bag",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-black-embroidered-clutch",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Black",
+      "title": "Black Embroidered Festive Clutch",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-ivory-kutchi-sling",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Ivory",
+      "title": "Ivory Kutchi Embroidered Sling Bag",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-black-box-clutch",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Black",
+      "title": "Black Brocade Box Clutch",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-red-mirror-potli",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Red",
+      "title": "Red Mirror-Work Potli Bag",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-bags-gold-embroidered-clutch",
+      "gender": "women",
+      "category": "Bags",
+      "subcategory": "Bags",
+      "colour": "Gold",
+      "title": "Gold Embroidered Festive Clutch",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-tan-kolhapuri-flats",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Tan",
+      "title": "Tan Kolhapuri Flats",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-tan-mirror-mojaris",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Tan",
+      "title": "Tan Mirror-Work Mojaris",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-multicolour-kolhapuri-flats",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Multicolour",
+      "title": "Multicolour Kolhapuri Flats",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-multicolour-mirror-mojaris",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Multicolour",
+      "title": "Multicolour Mirror-Work Mojaris",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-black-embroidered-juttis",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Black",
+      "title": "Black Embroidered Juttis",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-ivory-kolhapuri-flats",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Ivory",
+      "title": "Ivory Kolhapuri Flats",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-black-block-heels",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Black",
+      "title": "Black Embellished Block Heels",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-ivory-mirror-mojaris",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Ivory",
+      "title": "Ivory Mirror-Work Mojaris",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-tan-embroidered-juttis",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Tan",
+      "title": "Tan Embroidered Juttis",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-gold-kolhapuri-flats",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Gold",
+      "title": "Gold Kolhapuri Flats",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-tan-block-heels",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Tan",
+      "title": "Tan Embellished Block Heels",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-footwear-multicolour-embroidered-juttis",
+      "gender": "women",
+      "category": "Footwear",
+      "subcategory": "Footwear",
+      "colour": "Multicolour",
+      "title": "Multicolour Embroidered Juttis",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-red-matte-liquid-lipstick",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Red",
+      "title": "Red Long-Wear Matte Liquid Lipstick",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-gold-kajal",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Gold",
+      "title": "Gold Smudge-Proof Kajal",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-red-glitter-bindi-pack",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Red",
+      "title": "Red Garba Glitter Bindi Pack",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-gold-setting-spray",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Gold",
+      "title": "Gold All-Night Makeup Setting Spray",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-nude-matte-liquid-lipstick",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Nude",
+      "title": "Nude Long-Wear Matte Liquid Lipstick",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-black-kajal",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Black",
+      "title": "Black Smudge-Proof Kajal",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-nude-glitter-bindi-pack",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Nude",
+      "title": "Nude Garba Glitter Bindi Pack",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-black-setting-spray",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Black",
+      "title": "Black All-Night Makeup Setting Spray",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-berry-matte-liquid-lipstick",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Berry",
+      "title": "Berry Long-Wear Matte Liquid Lipstick",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-coral-kajal",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Coral",
+      "title": "Coral Smudge-Proof Kajal",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-berry-glitter-bindi-pack",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Berry",
+      "title": "Berry Garba Glitter Bindi Pack",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-coral-setting-spray",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Coral",
+      "title": "Coral All-Night Makeup Setting Spray",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-gold-matte-liquid-lipstick",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Gold",
+      "title": "Gold Long-Wear Matte Liquid Lipstick",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-red-kajal",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Red",
+      "title": "Red Smudge-Proof Kajal",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-gold-glitter-bindi-pack",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Gold",
+      "title": "Gold Garba Glitter Bindi Pack",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "w-beauty-red-setting-spray",
+      "gender": "women",
+      "category": "Beauty",
+      "subcategory": "Beauty",
+      "colour": "Red",
+      "title": "Red All-Night Makeup Setting Spray",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-traditional-layer-red-phulkari-embroidery",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Red",
+      "title": "Red Phulkari Embroidered Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C1"
+    },
+    {
+      "id": "m-traditional-layer-black-paisley-block-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Black",
+      "title": "Black Paisley Block-Print Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C2"
+    },
+    {
+      "id": "m-traditional-layer-maroon-bandhani-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Maroon",
+      "title": "Maroon Bandhani Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-S2"
+    },
+    {
+      "id": "m-traditional-layer-ivory-sequin-scatter",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Ivory",
+      "title": "Ivory Sequin-Scatter Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-pink-gold-paisley",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Pink",
+      "title": "Pink Gold Paisley Embroidered Shawl",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-mustard-solid",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Mustard",
+      "title": "Mustard Solid Cotton Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-traditional-layer-ivory-phulkari-embroidery",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Ivory",
+      "title": "Ivory Phulkari Embroidered Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C1"
+    },
+    {
+      "id": "m-traditional-layer-pink-paisley-block-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Pink",
+      "title": "Pink Paisley Block-Print Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C2"
+    },
+    {
+      "id": "m-traditional-layer-mustard-bandhani-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Mustard",
+      "title": "Mustard Bandhani Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-S2"
+    },
+    {
+      "id": "m-traditional-layer-navy-sequin-scatter",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Navy",
+      "title": "Navy Sequin-Scatter Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-wine-gold-paisley",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Wine",
+      "title": "Wine Gold Paisley Embroidered Shawl",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-red-solid",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Red",
+      "title": "Red Solid Cotton Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-traditional-layer-navy-phulkari-embroidery",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Navy",
+      "title": "Navy Phulkari Embroidered Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C1"
+    },
+    {
+      "id": "m-traditional-layer-wine-paisley-block-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Wine",
+      "title": "Wine Paisley Block-Print Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C2"
+    },
+    {
+      "id": "m-traditional-layer-red-bandhani-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Red",
+      "title": "Red Bandhani Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-S2"
+    },
+    {
+      "id": "m-traditional-layer-black-sequin-scatter",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Black",
+      "title": "Black Sequin-Scatter Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-maroon-gold-paisley",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Maroon",
+      "title": "Maroon Gold Paisley Embroidered Shawl",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-ivory-solid",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Ivory",
+      "title": "Ivory Solid Cotton Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-traditional-layer-black-phulkari-embroidery",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Black",
+      "title": "Black Phulkari Embroidered Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C1"
+    },
+    {
+      "id": "m-traditional-layer-maroon-paisley-block-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Maroon",
+      "title": "Maroon Paisley Block-Print Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C2"
+    },
+    {
+      "id": "m-traditional-layer-ivory-bandhani-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Ivory",
+      "title": "Ivory Bandhani Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-S2"
+    },
+    {
+      "id": "m-traditional-layer-pink-sequin-scatter",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Pink",
+      "title": "Pink Sequin-Scatter Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-mustard-gold-paisley",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Mustard",
+      "title": "Mustard Gold Paisley Embroidered Shawl",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-navy-solid",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Navy",
+      "title": "Navy Solid Cotton Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-traditional-layer-pink-phulkari-embroidery",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Pink",
+      "title": "Pink Phulkari Embroidered Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C1"
+    },
+    {
+      "id": "m-traditional-layer-mustard-paisley-block-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Mustard",
+      "title": "Mustard Paisley Block-Print Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C2"
+    },
+    {
+      "id": "m-traditional-layer-navy-bandhani-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Navy",
+      "title": "Navy Bandhani Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-S2"
+    },
+    {
+      "id": "m-traditional-layer-wine-sequin-scatter",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Wine",
+      "title": "Wine Sequin-Scatter Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-red-gold-paisley",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Red",
+      "title": "Red Gold Paisley Embroidered Shawl",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-M1"
+    },
+    {
+      "id": "m-traditional-layer-black-solid",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Black",
+      "title": "Black Solid Cotton Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-traditional-layer-wine-phulkari-embroidery",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Wine",
+      "title": "Wine Phulkari Embroidered Dupatta",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C1"
+    },
+    {
+      "id": "m-traditional-layer-red-paisley-block-print",
+      "gender": "men",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Red",
+      "title": "Red Paisley Block-Print Stole",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": "REF-C2"
+    },
+    {
+      "id": "m-footwear-gold-kolhapuri-sandals",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Gold",
+      "title": "Gold Kolhapuri Sandals",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-black-loafers",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Black",
+      "title": "Black Ethnic Loafers",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-black-embroidered-mojaris",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Black",
+      "title": "Black Embroidered Mojaris",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-brown-kolhapuri-sandals",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Brown",
+      "title": "Brown Kolhapuri Sandals",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-ivory-loafers",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Ivory",
+      "title": "Ivory Ethnic Loafers",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-ivory-embroidered-mojaris",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Ivory",
+      "title": "Ivory Embroidered Mojaris",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-gold-loafers",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Gold",
+      "title": "Gold Ethnic Loafers",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-gold-embroidered-mojaris",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Gold",
+      "title": "Gold Embroidered Mojaris",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-black-kolhapuri-sandals",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Black",
+      "title": "Black Kolhapuri Sandals",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    },
+    {
+      "id": "m-footwear-brown-loafers",
+      "gender": "men",
+      "category": "Footwear",
+      "subcategory": "Men Footwear",
+      "colour": "Brown",
+      "title": "Brown Ethnic Loafers",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "reference": null
+    }
+  ]
+}

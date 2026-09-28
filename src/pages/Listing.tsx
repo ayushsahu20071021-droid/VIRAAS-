@@ -80,7 +80,7 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
   const shown = results.slice(0, page * PAGE);
 
   const catName = category ? base[0]?.category ?? category : null;
-  const title = mode === 'trending' ? 'Trending' : mode === 'accessories' ? 'Accessories' : catName ? `${gender === 'women' ? 'Women' : 'Men'} · ${catName}` : gender === 'women' ? 'Women' : 'Men';
+  const title = mode === 'trending' ? 'Trending' : mode === 'accessories' ? 'Garba / Navratri Accessories Edit' : catName ? `${gender === 'women' ? 'Women' : 'Men'} · ${catName}` : gender === 'women' ? 'Women' : 'Men';
 
   if (base.length === 0) return <div className="page"><Empty title="Nothing here yet"><Link to="/" className="btn btn-dark">Back home</Link></Empty></div>;
 
@@ -88,8 +88,11 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
     <div className="page listing">
       <div className="page-head">
         <div className="crumbs"><Link to="/">Home</Link> / {gender && <Link to={`/${gender}`}>{gender === 'women' ? 'Women' : 'Men'}</Link>}{catName && <> / {catName}</>}</div>
+        {mode === 'accessories' && <div className="kicker">Complete the look</div>}
         <h1>{title}</h1>
-        <p className="muted">{results.length} styles · Prices are approximate marketplace prices. Always confirm on the merchant's site.</p>
+        {mode === 'accessories'
+          ? <p className="muted">{results.length} accessories to finish your Garba / Navratri look — jhumkas, chokers, kamarbandhs, mojaris, juttis, potlis, dupattas and more. Prices are approximate marketplace prices. Always confirm on the merchant's site.</p>
+          : <p className="muted">{results.length} styles · Prices are approximate marketplace prices. Always confirm on the merchant's site.</p>}
       </div>
       <div className="listing-body">
         <aside className="filters" aria-label="Filters">
