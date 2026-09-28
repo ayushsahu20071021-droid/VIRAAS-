@@ -100,7 +100,7 @@ export const WOMEN = {
     ],
   },
   'Jewellery': {
-    sub: 'Jewellery', silhouette: 'Accessory', occasions: ['garba', 'college-fest', 'diwali', 'festive-party', 'traditional'], band: [199, 1499], tryOn: false, accessory: true,
+    sub: 'Jewellery', silhouette: 'Accessory', occasions: ['garba'], band: [199, 1499], tryOn: false, accessory: true,
     colours: ['Oxidised Silver', 'Gold', 'Silver'],
     variants: [
       { detail: 'jhumka earrings', fabric: 'Alloy', pattern: 'Handcrafted', title: 'Jhumka Earrings' },
@@ -116,7 +116,7 @@ export const WOMEN = {
     ],
   },
   'Bags': {
-    sub: 'Bags', silhouette: 'Accessory', occasions: ['garba', 'college-fest', 'diwali', 'festive-party', 'traditional'], band: [299, 1499], tryOn: false, accessory: true,
+    sub: 'Bags', silhouette: 'Accessory', occasions: ['garba'], band: [299, 1499], tryOn: false, accessory: true,
     colours: ['Black', 'Gold', 'Multicolour', 'Ivory', 'Red', 'Silver'],
     variants: [
       { detail: 'mirror potli', fabric: 'Cotton', pattern: 'Mirror Work', title: 'Mirror-Work Potli Bag' },
@@ -126,7 +126,7 @@ export const WOMEN = {
     ],
   },
   'Footwear': {
-    sub: 'Footwear', silhouette: 'Accessory', occasions: ['garba', 'college-fest', 'diwali', 'festive-party', 'traditional'], band: [349, 1799], tryOn: false, accessory: true,
+    sub: 'Footwear', silhouette: 'Accessory', occasions: ['garba'], band: [349, 1799], tryOn: false, accessory: true,
     colours: ['Gold', 'Silver', 'Black', 'Tan', 'Multicolour', 'Ivory'],
     variants: [
       { detail: 'embroidered juttis', fabric: 'Faux Leather', pattern: 'Embroidered', title: 'Embroidered Juttis' },
@@ -135,16 +135,9 @@ export const WOMEN = {
       { detail: 'mirror mojaris', fabric: 'Faux Leather', pattern: 'Mirror', title: 'Mirror-Work Mojaris' },
     ],
   },
-  'Beauty': {
-    sub: 'Beauty', silhouette: 'Accessory', occasions: ['garba', 'college-fest', 'diwali', 'festive-party', 'traditional'], band: [199, 1299], tryOn: false, accessory: true,
-    colours: ['Red', 'Nude', 'Berry', 'Gold', 'Black', 'Coral'],
-    variants: [
-      { detail: 'matte liquid lipstick', fabric: 'Cosmetic', pattern: 'Matte', title: 'Long-Wear Matte Liquid Lipstick' },
-      { detail: 'kajal', fabric: 'Cosmetic', pattern: 'Smudge-proof', title: 'Smudge-Proof Kajal' },
-      { detail: 'glitter bindi pack', fabric: 'Cosmetic', pattern: 'Glitter', title: 'Garba Glitter Bindi Pack' },
-      { detail: 'setting spray', fabric: 'Cosmetic', pattern: 'Long-wear', title: 'All-Night Makeup Setting Spray' },
-    ],
-  },
+  // Beauty category removed: VIRAAS accessories are sourced from the approved Men/Women
+  // Garba/Navratri look catalogs, which contain no cosmetics/beauty items. Removing this
+  // block stops build-catalog from generating any Beauty products (persists through rebuild).
 };
 
 export const MEN = {
@@ -242,7 +235,7 @@ export const MEN = {
     ],
   },
   'Footwear': {
-    sub: 'Men Footwear', silhouette: 'Accessory', occasions: ['garba', 'college-fest', 'diwali', 'festive-party', 'traditional'], band: [399, 1999], tryOn: false, accessory: true,
+    sub: 'Men Footwear', silhouette: 'Accessory', occasions: ['garba'], band: [399, 1999], tryOn: false, accessory: true,
     colours: ['Tan', 'Black', 'Ivory', 'Gold', 'Brown'],
     variants: [
       { detail: 'embroidered mojaris', fabric: 'Faux Leather', pattern: 'Embroidered', title: 'Embroidered Mojaris' },
