@@ -262,4 +262,9 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
 .shop-option .kicker { margin-bottom: 2px; }
 .shop-option-desc { flex: 1; margin: 0; font-size: .9rem; color: var(--muted); }
 .shop-option .btn[disabled] { opacity: .55; cursor: not-allowed; }
+.btn-shop { background: var(--accent); color: #fff; border: 1px solid var(--accent); font-weight: 600; letter-spacing: .01em; box-shadow: 0 6px 18px rgba(155,28,75,.18); }
+.btn-shop:hover { background: var(--accent-2); border-color: var(--accent-2); }
+.btn-shop:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.btn-shop[disabled] { background: #f4ece3; color: var(--muted); border-color: var(--line); box-shadow: none; cursor: not-allowed; }
+.aff-note-soft { font-size: .76rem; color: var(--muted); font-style: italic; margin-top: -2px; }
 @media (max-width: 640px) { .shop-split { grid-template-columns: 1fr; } }

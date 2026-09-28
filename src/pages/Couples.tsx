@@ -1,7 +1,7 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { COUPLES, WORLDS, coupleById, byId, worldName, coupleImageSrc, type Product } from '../lib/data';
 import { formatINR, sumPrices } from '../lib/format';
-import { CoupleCard, ImageFrame, ProductCard, SaveButton, ShareRow, Empty } from '../components/ui';
+import { CoupleCard, ImageFrame, SaveButton, ShareRow, Empty } from '../components/ui';
 import { coupleAffiliate } from '../lib/coupleAffiliate';
 
 export function CoupleEdit() {
@@ -72,21 +72,17 @@ export function CoupleDetail() {
             <div className="kicker">For her</div>
             <p className="shop-option-desc">{c.her.desc}</p>
             {aff.herAffiliateUrl
-              ? <a className="btn btn-dark block" href={aff.herAffiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop her look</a>
-              : <button className="btn btn-dark block" disabled>Affiliate link not configured</button>}
+              ? <a className="btn btn-shop block" href={aff.herAffiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop for her</a>
+              : <><button className="btn btn-shop block" disabled aria-disabled="true">Shop for her</button><span className="aff-note-soft">Affiliate link not configured yet</span></>}
           </div>
           <div className="shop-option">
             <div className="kicker">For him</div>
             <p className="shop-option-desc">{c.him.desc}{c.layer ? `, with ${c.layer.desc}` : ''}</p>
             {aff.himAffiliateUrl
-              ? <a className="btn btn-dark block" href={aff.himAffiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop his look</a>
-              : <button className="btn btn-dark block" disabled>Affiliate link not configured</button>}
+              ? <a className="btn btn-shop block" href={aff.himAffiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop for him</a>
+              : <><button className="btn btn-shop block" disabled aria-disabled="true">Shop for him</button><span className="aff-note-soft">Affiliate link not configured yet</span></>}
           </div>
         </div>
-        <h2 style={{ marginTop: 32 }}>Style it together · Her</h2>
-        <div className="grid4">{her.map((p) => <ProductCard key={p.id} p={p} />)}</div>
-        <h2 style={{ marginTop: 32 }}>Style it together · Him</h2>
-        <div className="grid4">{his.map((p) => <ProductCard key={p.id} p={p} />)}</div>
       </section>
       {more.length > 0 && <section className="section"><h2>More {worldName(c.world)} couples</h2><div className="grid3">{more.map((x) => <CoupleCard key={x.id} c={x} />)}</div></section>}
     </div>

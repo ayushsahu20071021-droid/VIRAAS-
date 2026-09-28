@@ -962,9 +962,9 @@
   {
     "id": "college-fest-01",
     "world": "college-fest",
-    "title": "Black Kurta, Mirror Doorway",
+    "title": "Ivory Mirror Lehenga, Marigold Courtyard",
     "ref": "LOOK-01",
-    "pose": "standing very close together, she slightly in front and to the left, he slightly behind and to the right with his arm naturally around her shoulder, she stands relaxed with her handbag hanging from one hand, both looking toward the camera, casual affectionate not formal",
+    "pose": "standing close together at night in a decorated courtyard strung with marigold garlands and warm fairy lights, turned slightly toward each other, relaxed and affectionate",
     "framing": "vertical full-body portrait, couple centred, entire outfits visible down to footwear",
     "setting": "dark reflective modern interior with a tall glass doorway behind them",
     "light": "night indoor lighting",
@@ -973,17 +973,17 @@
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "white floral embroidery with palazzo",
-      "desc": "black long straight kurta with prominent white floral embroidery, white loose palazzo bottoms, statement silver layered necklace, long silver earrings, silver embellished small handbag, white embroidered flats"
+      "desc": "ivory mirror-work lehenga set, a mirror-embellished fitted blouse with a flared mirror-worked skirt and a matching light dupatta, stacked silver kada bangles and jhumka earrings"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "solid full-sleeve",
-      "desc": "solid black full-sleeve button-up shirt, relaxed fit, white wide trousers, white sneakers, simple wristwatch"
+      "desc": "ivory sequin-chikankari kurta with tonal thread and sequin work, worn with light-blue denim jeans and a wristwatch"
     },
     "tone": "Silver",
-    "colourStory": "Black · White",
+    "colourStory": "Ivory · Ivory",
     "tags": [
       "standing",
       "mirror-doorway"
@@ -1003,9 +1003,9 @@
   {
     "id": "college-fest-02",
     "world": "college-fest",
-    "title": "Cream Printed Set on the Cafe Bench",
+    "title": "Red Anarkali Gown, Blush Ombre Dupatta",
     "ref": "LOOK-02",
-    "pose": "both seated together on a wooden bench, he on the left and she on the right, bodies slightly turned toward each other, looking at each other naturally in relaxed conversation, one arm resting naturally rather than posed",
+    "pose": "standing side by side in front of a warm gold doorway, turned gently toward one another",
     "framing": "vertical lifestyle portrait, full seated bodies and footwear visible, small round black cafe table in the left foreground",
     "setting": "indoor modern cafe lounge with plants and window elements behind",
     "light": "soft daylight",
@@ -1014,17 +1014,17 @@
       "colour": "Ivory",
       "fabric": "Cotton",
       "detail": "olive floral print with dupatta",
-      "desc": "cream printed kurta set with a delicate olive floral pattern, matching bottoms, a long flowing dupatta with a green printed border, white sneakers, light beige shoulder bag"
+      "desc": "red floor-length anarkali gown with a fitted bodice and flared skirt, draped with a soft blush ombre net dupatta"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Olive",
       "fabric": "Cotton",
       "detail": "solid full-sleeve",
-      "desc": "dark olive casual full-sleeve button-up shirt, relaxed fit, off-white loose trousers, white sneakers, wristwatch"
+      "desc": "mauve-lilac self-striped kurta with a matching pyjama"
     },
     "tone": "Silver",
-    "colourStory": "Cream · Olive",
+    "colourStory": "Red · Lilac",
     "tags": [
       "seated",
       "cafe"
@@ -1044,9 +1044,9 @@
   {
     "id": "college-fest-03",
     "world": "college-fest",
-    "title": "Ivory Mirror Lehenga, Steps Selfie",
+    "title": "Blue Block-Print Kurta, Street Style",
     "ref": "LOOK-03",
-    "pose": "both seated very close together on stone steps, she slightly forward holding a smartphone up in front of her face like a selfie with the phone partially obscuring her face, he leaning closely toward her face, heads close together",
+    "pose": "standing together on a city street, both looking toward the camera, casual and easy",
     "framing": "vertical close lifestyle portrait, camera slightly close to the subjects",
     "setting": "stone haveli steps with diyas and soft festive lights around, warm beige environment",
     "light": "warm golden evening lighting",
@@ -1055,17 +1055,17 @@
       "colour": "Ivory",
       "fabric": "Georgette",
       "detail": "mirror-work blouse",
-      "desc": "ivory heavily mirror-work and sequin lehenga with a matching embellished blouse with thin shoulder straps, ivory dupatta, traditional silver bangles, large silver jhumka earrings"
+      "desc": "off-white straight kurta with an all-over blue floral block-print, a matching blue dupatta, a small black sling bag and tan flat sandals"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Cream",
       "fabric": "Cotton",
       "detail": "embroidered",
-      "desc": "cream embroidered kurta with light blue relaxed jeans, wristwatch, dark footwear"
+      "desc": "solid navy shirt with white trousers, white sneakers and a thin neck chain"
     },
     "tone": "Silver",
-    "colourStory": "Ivory · Cream",
+    "colourStory": "Off-White · Navy",
     "tags": [
       "seated",
       "selfie"
@@ -1085,9 +1085,9 @@
   {
     "id": "college-fest-04",
     "world": "college-fest",
-    "title": "Wine Dress and Floral Blazer",
+    "title": "Ivory Chikankari, Navy Tassel Dupatta",
     "ref": "LOOK-04",
-    "pose": "standing very close, she on the left slightly leaning toward him, he on the right looking down toward her, both looking at each other rather than the camera, his arm naturally behind and around her",
+    "pose": "standing close together, arms lightly linked, warm and relaxed",
     "framing": "vertical full-body portrait",
     "setting": "warm indoor evening setting with a curtain background strung with warm fairy lights and a dark elegant floor",
     "light": "soft cinematic lighting",
@@ -1096,17 +1096,17 @@
       "colour": "Wine",
       "fabric": "Georgette",
       "detail": "gold border",
-      "desc": "deep wine floor-length festive lehenga with a sleeveless spaghetti-strap bodice, long flowing skirt, decorative gold traditional border near the lower edge and on the dupatta, minimal elegant jewellery"
+      "desc": "ivory chikankari kurta with straight pants and a navy dupatta finished with mirror tassels"
     },
     "him": {
       "cat": "Festive Jacket",
       "colour": "Black",
       "fabric": "Cotton Blend",
       "detail": "burgundy floral pattern",
-      "desc": "solid black shirt and black trousers with black shoes worn under a black and burgundy floral patterned tailored blazer with a dense muted paisley pattern"
+      "desc": "cream chikankari kurta with a matching pyjama and a wristwatch"
     },
     "tone": "Gold",
-    "colourStory": "Wine · Black",
+    "colourStory": "Ivory · Cream",
     "tags": [
       "standing",
       "evening"
@@ -1126,9 +1126,9 @@
   {
     "id": "college-fest-05",
     "world": "college-fest",
-    "title": "Overhead Walk, Arm Linked",
+    "title": "Blush Sharara, Sequin Dupatta",
     "ref": "LOOK-05",
-    "pose": "top-down overhead photograph with the camera looking almost directly down, couple walking closely together with her arm looped around his arm, bodies seen from above, both looking naturally downward, legs and footwear visible",
+    "pose": "walking arm-linked beneath a grand palace arch, mid-stride and smiling",
     "framing": "vertical overhead composition with the concrete outdoor walkway visible underneath",
     "setting": "outdoor stone walkway",
     "light": "natural daylight",
@@ -1137,17 +1137,17 @@
       "colour": "Ivory",
       "fabric": "Cotton",
       "detail": "navy block print with white dupatta",
-      "desc": "white printed kurta set with a blue and navy floral block-print pattern, matching light bottoms, white lightweight dupatta, small delicate necklace"
+      "desc": "blush-pink embellished sharara set, a sequin-worked short kurta with flared sharara pants, a sequin dupatta and a matching potli bag"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Navy",
       "fabric": "Cotton",
       "detail": "solid",
-      "desc": "solid navy button-up shirt, relaxed fit, off-white trousers, white sneakers, dark wristwatch"
+      "desc": "crisp white kurta with white trousers"
     },
     "tone": "Silver",
-    "colourStory": "Ivory · Navy",
+    "colourStory": "Blush Pink · White",
     "tags": [
       "overhead",
       "walking"
@@ -1167,9 +1167,9 @@
   {
     "id": "college-fest-06",
     "world": "college-fest",
-    "title": "Close Crop, Maroon Dupatta Detail",
+    "title": "Rani Pink Sharara, Silver Stole Detail",
     "ref": "LOOK-06",
-    "pose": "very close cropped couple portrait showing torso arms and hands more than faces, she holds and adjusts her deep red dupatta near her front, he stands immediately beside her, their bodies almost touching",
+    "pose": "close crop on a night staircase, standing near each other with the dupatta and stole in focus",
     "framing": "vertical close crop focused on garment details, dupatta border, embroidery and hand placement",
     "setting": "neutral indoor background",
     "light": "soft indoor light",
@@ -1178,17 +1178,17 @@
       "colour": "Ivory",
       "fabric": "Silk Blend",
       "detail": "gold floral embroidery with maroon dupatta",
-      "desc": "taupe champagne ethnic suit with heavy gold floral embroidery and a deep maroon dupatta with a prominent ornate gold embroidered border, mehendi visible on hands, gold jewellery"
+      "desc": "rani-pink kurta with a printed sharara and a bright-pink gold-bordered dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Cream",
       "fabric": "Cotton",
       "detail": "plain",
-      "desc": "plain cream kurta with a clean straight silhouette, minimal styling, no jacket"
+      "desc": "peach kurta with a silver chikankari stole draped at the neck and a peach pyjama"
     },
     "tone": "Gold",
-    "colourStory": "Champagne · Maroon",
+    "colourStory": "Rani Pink · Peach",
     "tags": [
       "close-crop",
       "detail"
@@ -1208,9 +1208,9 @@
   {
     "id": "college-fest-07",
     "world": "college-fest",
-    "title": "Soft Pink Monochrome Close Crop",
+    "title": "Maroon Embroidered Set on the Balcony",
     "ref": "LOOK-07",
-    "pose": "extremely close couple crop with their upper torsos touching, he positioned beside and behind her, her arm across and around him, he holds a smartphone close to his body, faces partially cropped out",
+    "pose": "standing together on a balcony, turned toward each other",
     "framing": "vertical close-up cropped around the chest and waist area",
     "setting": "outdoor",
     "light": "natural daylight",
@@ -1219,17 +1219,17 @@
       "colour": "Rani Pink",
       "fabric": "Cotton",
       "detail": "white floral embroidery",
-      "desc": "soft pastel pink ethnic kurta with white floral embroidery on the sleeves and body, soft feminine silhouette, minimal jewellery"
+      "desc": "maroon kurta with subtle self-tone embroidery, a matching palazzo and a maroon dupatta"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Pink",
       "fabric": "Cotton",
       "detail": "solid pastel",
-      "desc": "light pastel pink button-up shirt, relaxed casual fit, holding a smartphone, wristwatch"
+      "desc": "white chikankari kurta with a matching white pyjama"
     },
     "tone": "Silver",
-    "colourStory": "Pink · Pink",
+    "colourStory": "Maroon · White",
     "tags": [
       "close-crop",
       "monochrome"
@@ -1249,9 +1249,9 @@
   {
     "id": "college-fest-08",
     "world": "college-fest",
-    "title": "White Outfit, Hot Pink Bandhani Dupatta",
+    "title": "Red Gown, Gold Yoke, Night Drive",
     "ref": "LOOK-08",
-    "pose": "standing side by side, she on the left holding and fanning her hot pink dupatta outward so it becomes the dominant visual element, he on the right standing relaxed with one hand near his pocket, framed from the shoulders through the legs",
+    "pose": "standing beside a car at night, leaning in close",
     "framing": "vertical fashion lifestyle photograph",
     "setting": "outdoor with a green fence and plants behind",
     "light": "outdoor daylight",
@@ -1260,17 +1260,17 @@
       "colour": "Ivory",
       "fabric": "Cotton",
       "detail": "hot pink bandhani dupatta",
-      "desc": "white ethnic base outfit with a simple sleeveless inner, bright hot pink bandhani dupatta with a traditional dotted geometric print and gold trim, beige flat sandals"
+      "desc": "red floor-length gown with a gold-embroidered yoke and scattered gold motifs across the skirt"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "chikankari",
-      "desc": "white chikankari embroidered kurta with light blue relaxed jeans, white casual footwear, silver watch"
+      "desc": "grey-olive kurta with gold buti motifs and rolled-up sleeves"
     },
     "tone": "Silver",
-    "colourStory": "White · Hot Pink",
+    "colourStory": "Red · Olive",
     "tags": [
       "standing",
       "bandhani"
@@ -1290,9 +1290,9 @@
   {
     "id": "college-fest-09",
     "world": "college-fest",
-    "title": "Magenta Set on the Night Staircase",
+    "title": "Plum Set, Silver Geometric Embroidery",
     "ref": "LOOK-09",
-    "pose": "standing together near a staircase, she close to his side and turning toward him, he raises one hand toward his hair, natural playful interaction, no formal posing",
+    "pose": "standing in a stairwell, angled toward each other",
     "framing": "vertical full to three-quarter portrait",
     "setting": "outdoor apartment staircase at night",
     "light": "night lighting with warm street and festive lights",
@@ -1301,17 +1301,17 @@
       "colour": "Rani Pink",
       "fabric": "Georgette",
       "detail": "white floral motifs",
-      "desc": "bright magenta festive lehenga with a patterned skirt carrying white floral motifs and a sheer flowing hot pink dupatta with a gold border"
+      "desc": "plum kurta with white and silver geometric embroidery worn with a matching palazzo"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Peach",
       "fabric": "Cotton",
       "detail": "coral with cream ethnic layer",
-      "desc": "peach coral kurta with a white cream embroidered ethnic layer worn over it and a light cream lower garment"
+      "desc": "white shirt with grey jeans and a red protection thread on the wrist"
     },
     "tone": "Gold",
-    "colourStory": "Magenta · Peach",
+    "colourStory": "Plum · White",
     "tags": [
       "staircase",
       "night"
@@ -1331,9 +1331,9 @@
   {
     "id": "college-fest-10",
     "world": "college-fest",
-    "title": "Sky Blue Suit, Foreheads Touching",
+    "title": "All-Ivory Chikankari, Foreheads Close",
     "ref": "LOOK-10",
-    "pose": "both seated on stairs, she on the left and he on the right, faces leaning very close toward each other with foreheads and cheeks almost touching, natural intimate eye contact, she holds a smartphone down near her lap",
+    "pose": "standing very close with foreheads almost touching, quiet and affectionate",
     "framing": "vertical portrait with a close seated perspective",
     "setting": "stone indoor stairs",
     "light": "soft daylight",
@@ -1342,17 +1342,17 @@
       "colour": "Powder Blue",
       "fabric": "Cotton",
       "detail": "white embroidery",
-      "desc": "light sky blue embroidered ethnic suit with a matching light blue dupatta and white embroidery, traditional salwar styling"
+      "desc": "ivory chikankari kurta suit with a matching dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Powder Blue",
       "fabric": "Cotton",
       "detail": "embroidered",
-      "desc": "powder light blue embroidered kurta with white trousers in a matching pastel palette with traditional motifs"
+      "desc": "ivory chikankari kurta with a matching pyjama, black boots and a silver cuff"
     },
     "tone": "Silver",
-    "colourStory": "Sky Blue · Sky Blue",
+    "colourStory": "Ivory · Ivory",
     "tags": [
       "seated",
       "intimate"
@@ -1372,9 +1372,9 @@
   {
     "id": "college-fest-11",
     "world": "college-fest",
-    "title": "Ivory Anarkali on the Staircase",
+    "title": "Magenta Saree, Teal Border, Garden",
     "ref": "LOOK-11",
-    "pose": "seated on a staircase, she lower left and in front, he one or two steps above and to the right, she looking upward at him, he resting his elbow and hand near his face while looking at her, neither looking at the camera",
+    "pose": "standing together in a garden, both smiling toward the camera",
     "framing": "vertical lifestyle portrait with the staircase dominating the background",
     "setting": "indoor staircase",
     "light": "warm indoor light with a soft warm tone",
@@ -1383,17 +1383,17 @@
       "colour": "Ivory",
       "fabric": "Georgette",
       "detail": "floral embroidery",
-      "desc": "ivory embroidered festive anarkali with delicate floral embroidery and a matching sheer dupatta, minimal delicate jewellery"
+      "desc": "magenta saree with a contrasting teal border and a grey blouse, holding a small bouquet"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "light embroidery",
-      "desc": "all white kurta pajama with light embroidered detailing, traditional silhouette"
+      "desc": "cream chikankari kurta with a matching pyjama"
     },
     "tone": "Silver",
-    "colourStory": "Ivory · White",
+    "colourStory": "Magenta · Cream",
     "tags": [
       "seated",
       "staircase"
@@ -1413,9 +1413,9 @@
   {
     "id": "college-fest-12",
     "world": "college-fest",
-    "title": "Magenta Dupatta in the Heritage Lane",
+    "title": "Soft Pink Chikankari Monochrome",
     "ref": "LOOK-12",
-    "pose": "both walking side by side in a heritage lane, she slightly ahead and to the left, he slightly behind and to the right, both looking downward naturally, relaxed walking movement with hands close to their bodies",
+    "pose": "standing close in a soft monochrome pink pairing, calm and relaxed",
     "framing": "vertical full-body photograph",
     "setting": "old heritage village lane with cream walls and a wooden door",
     "light": "warm natural daylight",
@@ -1424,17 +1424,17 @@
       "colour": "Wine",
       "fabric": "Silk Blend",
       "detail": "gold embroidered dupatta",
-      "desc": "deep magenta ethnic lehenga with a cream printed lower portion, a rich decorative border and a large deep magenta dupatta with ornate gold embroidery"
+      "desc": "light-pink kurta with delicate white chikankari floral embroidery"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Cream",
       "fabric": "Cotton",
       "detail": "textured",
-      "desc": "cream kurta with a matching cream lower garment and a simple embroidered texture, white footwear"
+      "desc": "light-pink linen shirt with white trousers"
     },
     "tone": "Gold",
-    "colourStory": "Magenta · Cream",
+    "colourStory": "Light Pink · Light Pink",
     "tags": [
       "walking",
       "heritage"
@@ -1454,9 +1454,9 @@
   {
     "id": "college-fest-13",
     "world": "college-fest",
-    "title": "White Lehenga, Navy Dupatta, Steps",
+    "title": "White Sequin Kurta, Bandhani Dupatta",
     "ref": "LOOK-13",
-    "pose": "she stands in the foreground to the left with her back partly toward the camera and extends one arm forward and upward, he is seated crouched on the steps below her leaning forward and down, playful unequal-height pose",
+    "pose": "standing side by side on steps, the bright bandhani dupatta as the pop of colour",
     "framing": "vertical full-body asymmetrical composition",
     "setting": "night environment with a dark reflective wall and windows behind, staircase visible",
     "light": "night low light",
@@ -1465,17 +1465,17 @@
       "colour": "Ivory",
       "fabric": "Georgette",
       "detail": "navy floral dupatta",
-      "desc": "white long ethnic lehenga skirt with a flowing navy blue floral printed dupatta and a white embroidered blouse, traditional silver jewellery"
+      "desc": "white kurta with sequin stripes and matching pants, tan slide sandals and a rani-pink bandhani dupatta with gota edging"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "embroidered",
-      "desc": "white embroidered kurta with white pajama trousers, minimal festive styling"
+      "desc": "white chikankari kurta with light-blue denim jeans and sneakers"
     },
     "tone": "Silver",
-    "colourStory": "White · Navy",
+    "colourStory": "White · White",
     "tags": [
       "asymmetric",
       "steps"
@@ -1495,9 +1495,9 @@
   {
     "id": "college-fest-14",
     "world": "college-fest",
-    "title": "Red Lehenga, Night Driveway",
+    "title": "White Mirror Skirt, Royal Blue Dupatta",
     "ref": "LOOK-14",
-    "pose": "standing outside at night with his arm around her shoulder, she standing close against him, both smiling and laughing naturally, he looking down toward her and she looking toward him",
+    "pose": "standing together, the royal-blue dupatta framing the white outfits",
     "framing": "vertical smartphone-style photograph",
     "setting": "night street driveway with a dark car immediately behind them, festive lights and greenery in the background",
     "light": "strong overhead light source at night",
@@ -1506,17 +1506,17 @@
       "colour": "Red",
       "fabric": "Silk",
       "detail": "gold embellished blouse",
-      "desc": "bright red festive lehenga with a heavy gold embellished blouse, rich festive detailing, gold jewellery, bangles and watch as visible"
+      "desc": "white skirt densely covered in mirror coins with a royal-blue embroidered dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "gold motifs",
-      "desc": "charcoal grey ethnic kurta with repeating gold and cream traditional motifs and an embroidered neckline and cuffs, dark lower garment"
+      "desc": "white chikankari kurta with a matching pyjama"
     },
     "tone": "Gold",
-    "colourStory": "Red · Charcoal",
+    "colourStory": "White · Royal Blue",
     "tags": [
       "standing",
       "night"
@@ -1536,9 +1536,9 @@
   {
     "id": "college-fest-15",
     "world": "college-fest",
-    "title": "Maroon Crop Top, White Stole",
+    "title": "Maroon Mirror Bustier, White Net Dupatta",
     "ref": "LOOK-15",
-    "pose": "both standing very close in a garden, she facing slightly toward him, he leaning downward toward her, a white stole positioned between them with their hands interacting around the stole and waist area, playful styling moment rather than a camera-facing pose",
+    "pose": "standing close together, coordinated in maroon",
     "framing": "vertical medium to full-body photograph",
     "setting": "garden terrace with plants and a modern concrete wall",
     "light": "daylight",
@@ -1547,17 +1547,17 @@
       "colour": "Maroon",
       "fabric": "Cotton",
       "detail": "oxidised silver embellishment",
-      "desc": "deep maroon crop top with a matching long skirt, white and silver geometric embellishments, oxidised silver jewellery, large silver earrings, heavy silver bangles, bare midriff"
+      "desc": "maroon mirror-work bustier with a matching skirt patterned in white triangular motifs, a silver choker and kada, and a sheer white net dupatta"
     },
     "him": {
       "cat": "Printed Ethnic Shirt",
       "colour": "Maroon",
       "fabric": "Cotton",
       "detail": "traditional print with white stole",
-      "desc": "red maroon printed shirt with a dense traditional print, black loose wide trousers and a long white scarf draped around his neck"
+      "desc": "maroon shirt with a floral block-print and black trousers"
     },
     "tone": "Oxidised Silver",
-    "colourStory": "Maroon · White",
+    "colourStory": "Maroon · Maroon",
     "tags": [
       "garden",
       "stole"
@@ -1577,9 +1577,9 @@
   {
     "id": "college-fest-16",
     "world": "college-fest",
-    "title": "Maroon Dress, Lavender Kurta",
+    "title": "Ivory Floral Lehenga, Village Wall",
     "ref": "LOOK-16",
-    "pose": "both standing and walking together, she on the right and he on the left, he looking toward her, she laughing with one hand raised near her face, natural walking conversation energy with visible space between their bodies",
+    "pose": "standing against a rustic village wall in daylight",
     "framing": "vertical portrait",
     "setting": "ornate upscale interior with a carved golden decorative wall",
     "light": "warm yellow indoor lighting",
@@ -1588,17 +1588,17 @@
       "colour": "Wine",
       "fabric": "Georgette",
       "detail": "soft pink dupatta",
-      "desc": "deep maroon long flowing ethnic dress with a soft pink sheer dupatta, elegant simple jewellery"
+      "desc": "ivory floral-embroidered lehenga with a rani-pink gold-bordered dupatta and a hair accessory"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Purple",
       "fabric": "Cotton",
       "detail": "solid",
-      "desc": "soft lavender kurta with a straight simple silhouette"
+      "desc": "off-white chikankari kurta with a cream pyjama"
     },
     "tone": "Gold",
-    "colourStory": "Maroon · Lavender",
+    "colourStory": "Ivory · Off-White",
     "tags": [
       "walking",
       "interior"
@@ -1618,9 +1618,9 @@
   {
     "id": "college-fest-17",
     "world": "college-fest",
-    "title": "She Fixes His Hair, Navy Dupatta",
+    "title": "White Top, Pink Bandhani Skirt, Lights",
     "ref": "LOOK-17",
-    "pose": "she faces him and lifts both hands toward his face and head, adjusting his hair and collar area, he stands straight looking toward her, close personal interaction",
+    "pose": "standing under warm string lights at night, she reaching toward him",
     "framing": "vertical three-quarter to full-body",
     "setting": "outdoor residential or college style environment with green plants behind",
     "light": "bright daytime",
@@ -1629,17 +1629,17 @@
       "colour": "Ivory",
       "fabric": "Cotton",
       "detail": "navy dupatta",
-      "desc": "white ethnic outfit with a deep navy blue dupatta with a blue embroidered border, traditional silver earrings, simple white lower"
+      "desc": "white top with a pink bandhani skirt and layered silver chokers"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Cream",
       "fabric": "Cotton",
       "detail": "embroidered",
-      "desc": "cream embroidered kurta with a white lower garment, wristwatch, clean contemporary traditional look"
+      "desc": "white kurta with sleeves rolled up and a black embroidered stole"
     },
     "tone": "Silver",
-    "colourStory": "White · Navy",
+    "colourStory": "White · White",
     "tags": [
       "interaction",
       "daytime"
@@ -1659,9 +1659,9 @@
   {
     "id": "college-fest-18",
     "world": "college-fest",
-    "title": "Purple Suit in the Stairwell",
+    "title": "Maroon Gown, Floral Brocade Blazer",
     "ref": "LOOK-18",
-    "pose": "both seated on a staircase, he on the left leaning forward with one hand covering part of his face, she on the right seated upright touching and adjusting her hair, casual slightly awkward youthful pose, neither looking at the camera",
+    "pose": "standing in a marble hall, poised and dressed-up",
     "framing": "vertical portrait",
     "setting": "indoor stairwell with a white wall and the staircase rising behind",
     "light": "cool indoor lighting",
@@ -1670,17 +1670,17 @@
       "colour": "Purple",
       "fabric": "Cotton",
       "detail": "embroidered neckline",
-      "desc": "deep purple ethnic suit with a long straight kurta, a detailed embroidered neckline and front panel, a matching purple dupatta, long sleeves, minimal jewellery"
+      "desc": "maroon floor-length gown with a gold hem border and a maroon sequin dupatta"
     },
     "him": {
       "cat": "Festive Separates",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "long-sleeve top with dark jeans",
-      "desc": "plain white long-sleeve t-shirt with dark charcoal jeans, white sneakers, wristwatch"
+      "desc": "black shirt and trousers layered under a floral-brocade blazer, with sunglasses"
     },
     "tone": "Silver",
-    "colourStory": "Purple · White",
+    "colourStory": "Maroon · Black",
     "tags": [
       "seated",
       "stairwell"
@@ -1700,9 +1700,9 @@
   {
     "id": "college-fest-19",
     "world": "college-fest",
-    "title": "Blush Lehenga in the Heritage Arch",
+    "title": "Taupe Tissue Kurta, Red Net Dupatta",
     "ref": "LOOK-19",
-    "pose": "standing a few feet apart inside a grand heritage arch, she on the left partially lifting one hand to her face, he on the right standing upright with relaxed arms, both looking generally toward each other or to the side rather than at the camera, strong negative space between them",
+    "pose": "standing by the waterfront in daylight",
     "framing": "vertical architectural composition with the archway a major part of the image",
     "setting": "huge ornate Mughal and Rajasthani style archway with carved walls and a pink doorway far behind",
     "light": "warm daylight",
@@ -1711,17 +1711,17 @@
       "colour": "Rani Pink",
       "fabric": "Georgette",
       "detail": "embroidered upper with dupatta",
-      "desc": "soft blush dusty pink lehenga style anarkali with an intricately embellished upper portion, a flowing dupatta, traditional festive jewellery"
+      "desc": "taupe-brown tissue kurta with gold floral buti and a gold-embroidered yoke, paired with a red gold-bordered net dupatta, mehndi on the hands"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "minimal embroidery",
-      "desc": "pure white kurta pajama with minimal embroidery, clean relaxed silhouette, white footwear"
+      "desc": "plain beige kurta"
     },
     "tone": "Gold",
-    "colourStory": "Blush · White",
+    "colourStory": "Taupe · Beige",
     "tags": [
       "archway",
       "heritage"
@@ -1741,9 +1741,9 @@
   {
     "id": "college-fest-20",
     "world": "college-fest",
-    "title": "Maroon Kurta, Balcony Crop",
+    "title": "Sky Blue Chikankari on the Steps",
     "ref": "LOOK-20",
-    "pose": "standing side by side, he on the right with both arms crossed, she on the left with one hand around her waist, bodies close together, casual relaxed upper-body pose",
+    "pose": "standing on dark steps, coordinated in shades of blue",
     "framing": "horizontal cropped composition from below the shoulders to the waist, not a full-body shot",
     "setting": "night balcony terrace with a railing behind",
     "light": "warm outdoor evening light",
@@ -1752,17 +1752,17 @@
       "colour": "Maroon",
       "fabric": "Cotton",
       "detail": "subtle embroidery",
-      "desc": "deep maroon ethnic kurta suit with subtle traditional embroidery and a long straight silhouette, minimal jewellery"
+      "desc": "sky-blue chikankari kurta with white pants and a blue dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "embroidered",
-      "desc": "white embroidered kurta with white pajama trousers, arms crossed"
+      "desc": "light-blue kurta with white buti motifs and a matching pyjama"
     },
     "tone": "Silver",
-    "colourStory": "Maroon · White",
+    "colourStory": "Sky Blue · Light Blue",
     "tags": [
       "balcony",
       "cropped"
@@ -1782,11 +1782,11 @@
   {
     "id": "diwali-01",
     "world": "diwali",
-    "title": "Hot Pink Festive Look with Lavender Kurta",
+    "title": "Kutchi Patchwork Lehenga, Wine Kurta",
     "ref": "DIWALI-REF-01",
     "referenceNumber": 1,
-    "pose": "man on the left and woman on the right, standing close and turned toward each other, both smiling naturally while holding lit sparklers low",
-    "poseDescription": "man on the left and woman on the right, standing close and turned toward each other, both smiling naturally while holding lit sparklers low",
+    "pose": "standing close together at night, turned toward each other",
+    "poseDescription": "standing close together at night, turned toward each other",
     "framing": "vertical medium/full upper-body phone photograph",
     "framingDescription": "vertical medium/full upper-body phone photograph",
     "setting": "tree-lined outdoor Diwali celebration at night with streetlights, dark road, distant festive activity and softly blurred people",
@@ -1797,19 +1797,19 @@
       "colour": "Hot Pink",
       "fabric": "Lightweight",
       "detail": "subtle silver detailing",
-      "desc": "vivid hot-pink festive saree with subtle silver detailing, matching pink blouse, silver-toned bangles and simple earrings"
+      "desc": "multicolour kutchi patchwork lehenga-saree in a diamond grid of red, orange, teal and cream, with a patchwork blouse, patchwork skirt and a draped pallu"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Lavender",
       "fabric": "Textured",
       "detail": "subtle geometric texture",
-      "desc": "light lavender pastel long kurta with subtle geometric texture and a light lower"
+      "desc": "deep wine-magenta kurta with a white pyjama and off-white sneakers"
     },
-    "outfitDescription": "Vivid hot-pink saree with silver detailing and matching blouse; light lavender textured kurta",
+    "outfitDescription": "multicolour kutchi patchwork lehenga-saree in a diamond grid of red, orange, teal and cream, with a patchwork blouse, patchwork skirt and a draped pallu; deep wine-magenta kurta with a white pyjama and off-white sneakers",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Hot Pink · Lavender",
+    "colourStory": "Multicolour · Wine",
     "tags": [
       "sparklers",
       "night",
@@ -1830,11 +1830,11 @@
   {
     "id": "diwali-02",
     "world": "diwali",
-    "title": "Patchwork Lehenga with Magenta Kurta",
+    "title": "Floral-Border Skirt, Black Kurta, Lanterns",
     "ref": "DIWALI-REF-02",
     "referenceNumber": 2,
-    "pose": "couple standing very close outdoors, woman resting her head gently on his shoulder and man tilting his head toward her",
-    "poseDescription": "couple standing very close outdoors, woman resting her head gently on his shoulder and man tilting his head toward her",
+    "pose": "standing together beneath glowing paper lanterns",
+    "poseDescription": "standing together beneath glowing paper lanterns",
     "framing": "vertical casual full-body smartphone photograph with feet visible",
     "framingDescription": "vertical casual full-body smartphone photograph with feet visible",
     "setting": "residential apartment driveway or parking lane at night with building wall, parked scooters or bikes and road edge",
@@ -1845,19 +1845,19 @@
       "colour": "Multicolour",
       "fabric": "Printed textile",
       "detail": "geometric patchwork print",
-      "desc": "multicolour patchwork and printed lehenga with varied geometric textile motifs in warm red, orange, cream and green, with a matching sleeveless blouse"
+      "desc": "blush-pink mirror-and-embroidery blouse with a pink skirt featuring a large multicolour floral hem border, and a fur-cuff bracelet"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Magenta",
       "fabric": "Textured",
       "detail": "minimal texture",
-      "desc": "deep magenta or pink straight kurta with a light white lower and simple light footwear"
+      "desc": "black kurta with a white pyjama and black loafers"
     },
-    "outfitDescription": "Multicolour geometric patchwork lehenga; deep magenta kurta with light lower",
+    "outfitDescription": "blush-pink mirror-and-embroidery blouse with a pink skirt featuring a large multicolour floral hem border, and a fur-cuff bracelet; black kurta with a white pyjama and black loafers",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Multicolour · Magenta",
+    "colourStory": "Blush Pink · Black",
     "tags": [
       "standing",
       "night",
@@ -1878,11 +1878,11 @@
   {
     "id": "diwali-03",
     "world": "diwali",
-    "title": "Ivory Floral Saree with Pastel Pink Kurta",
+    "title": "Hot Pink Organza Saree, Sparklers",
     "ref": "DIWALI-REF-03",
     "referenceNumber": 3,
-    "pose": "woman on the left and man on the right standing extremely close, each with an arm around the other at the waist and faces turned toward each other",
-    "poseDescription": "woman on the left and man on the right standing extremely close, each with an arm around the other at the waist and faces turned toward each other",
+    "pose": "standing on a night street holding sparklers low, smiling",
+    "poseDescription": "standing on a night street holding sparklers low, smiling",
     "framing": "vertical centered full-body photograph with feet visible",
     "framingDescription": "vertical centered full-body photograph with feet visible",
     "setting": "bright outdoor garden or bamboo area with dense bamboo stems, dark railing and concrete platform",
@@ -1893,19 +1893,19 @@
       "colour": "Ivory",
       "fabric": "Lightweight",
       "detail": "delicate floral detail",
-      "desc": "cream ivory saree with delicate floral detailing and a pastel floral border, paired with a sleeveless floral blouse and minimal silver jewellery"
+      "desc": "hot-pink organza saree with silver zari buti, a matching pink blouse, bangles and jhumkas, holding a lit sparkler"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Pastel Pink",
       "fabric": "Textured",
       "detail": "subtle woven texture",
-      "desc": "soft pastel pink straight kurta with a subtly textured finish and white straight pajama"
+      "desc": "lilac-lavender chikankari kurta with a matching pyjama"
     },
-    "outfitDescription": "Ivory floral saree with floral blouse; pastel pink textured kurta and white pajama",
+    "outfitDescription": "hot-pink organza saree with silver zari buti, a matching pink blouse, bangles and jhumkas, holding a lit sparkler; lilac-lavender chikankari kurta with a matching pyjama",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Ivory · Pastel Pink",
+    "colourStory": "Hot Pink · Lavender",
     "tags": [
       "standing",
       "daylight",
@@ -1926,11 +1926,11 @@
   {
     "id": "diwali-04",
     "world": "diwali",
-    "title": "Ivory Lehenga with All-White Kurta",
+    "title": "Navy Lehenga, Patchwork Dupatta Selfie",
     "ref": "DIWALI-REF-04",
     "referenceNumber": 4,
-    "pose": "close side-by-side fashion-detail composition with natural arm and hand positions, clothing and lower body emphasized rather than faces",
-    "poseDescription": "close side-by-side fashion-detail composition with natural arm and hand positions, clothing and lower body emphasized rather than faces",
+    "pose": "mirror selfie in a warm yellow-walled palace room",
+    "poseDescription": "mirror selfie in a warm yellow-walled palace room",
     "framing": "strict vertical lower-body and torso-to-feet crop with faces mostly or completely outside the frame",
     "framingDescription": "strict vertical lower-body and torso-to-feet crop with faces mostly or completely outside the frame",
     "setting": "outdoor paved driveway with a parked car and realistic building environment",
@@ -1941,19 +1941,19 @@
       "colour": "Ivory",
       "fabric": "Lightweight",
       "detail": "broad silver-grey border",
-      "desc": "ivory cream lehenga-style outfit with flowing light cream dupatta and broad silver-grey embroidered border"
+      "desc": "navy lehenga with a gold waist-belt and a multicolour kutchi patchwork dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "clean minimal styling",
-      "desc": "all-white kurta and white pajama with dark loafers and dark smartwatch"
+      "desc": "black kurta with sequin work"
     },
-    "outfitDescription": "Ivory lehenga-style outfit with silver-grey border; all-white kurta and pajama",
+    "outfitDescription": "navy lehenga with a gold waist-belt and a multicolour kutchi patchwork dupatta; black kurta with sequin work",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Ivory · White",
+    "colourStory": "Navy · Black",
     "tags": [
       "detail-crop",
       "daylight",
@@ -1974,11 +1974,11 @@
   {
     "id": "diwali-05",
     "world": "diwali",
-    "title": "Mauve Ethnic Suit with Dusty Pink Kurta",
+    "title": "Black Sequin-Border Saree, Mirror",
     "ref": "DIWALI-REF-05",
     "referenceNumber": 5,
-    "pose": "couple standing directly beside each other with bodies very close, the man holding a small cream clutch or pouch and only torsos and hands emphasized",
-    "poseDescription": "couple standing directly beside each other with bodies very close, the man holding a small cream clutch or pouch and only torsos and hands emphasized",
+    "pose": "bedroom mirror selfie, dressed in coordinated black",
+    "poseDescription": "bedroom mirror selfie, dressed in coordinated black",
     "framing": "very tight vertical torso-to-hands fashion crop with no requirement for faces",
     "framingDescription": "very tight vertical torso-to-hands fashion crop with no requirement for faces",
     "setting": "warm indoor festive or event environment with soft neutral walls and a softly blurred background",
@@ -1989,19 +1989,19 @@
       "colour": "Dusty Lavender",
       "fabric": "Lightweight",
       "detail": "delicate embroidery and purple printed dupatta",
-      "desc": "dusty lavender or mauve ethnic suit with delicate embroidery, translucent sleeves and a deep purple printed dupatta with fine edging"
+      "desc": "black saree with a sheer sequin border and a black blouse"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Dusty Mauve Pink",
       "fabric": "Textured",
       "detail": "subtle geometric detail",
-      "desc": "dusty mauve-pink straight kurta with button placket and subtle light geometric detailing, holding a small cream clutch or pouch"
+      "desc": "black self-sheen shirt-kurta with a silver ring and bracelet"
     },
-    "outfitDescription": "Dusty lavender mauve ethnic suit with purple dupatta; dusty mauve-pink kurta with cream pouch",
+    "outfitDescription": "black saree with a sheer sequin border and a black blouse; black self-sheen shirt-kurta with a silver ring and bracelet",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Dusty Lavender · Mauve Pink",
+    "colourStory": "Black · Black",
     "tags": [
       "close-crop",
       "indoors",
@@ -2022,11 +2022,11 @@
   {
     "id": "diwali-06",
     "world": "diwali",
-    "title": "Powder Blue Saree Mirror Selfie",
+    "title": "Pink Floral-Sequin Skirt, Blossom Plaza",
     "ref": "DIWALI-REF-06",
     "referenceNumber": 6,
-    "pose": "mirror selfie with woman on the right holding the smartphone directly in front of her face, man on the left looking toward her, both standing close",
-    "poseDescription": "mirror selfie with woman on the right holding the smartphone directly in front of her face, man on the left looking toward her, both standing close",
+    "pose": "standing in a blossom-tree plaza, he with arms crossed",
+    "poseDescription": "standing in a blossom-tree plaza, he with arms crossed",
     "framing": "vertical nearly full-body or three-quarter mirror selfie",
     "framingDescription": "vertical nearly full-body or three-quarter mirror selfie",
     "setting": "dressing-room or wardrobe interior with pale grey patterned wall and tall wardrobe doors",
@@ -2037,19 +2037,19 @@
       "colour": "Powder Blue",
       "fabric": "Translucent",
       "detail": "silver-grey embellished border",
-      "desc": "icy powder-blue translucent saree with silver-grey embellished border and silver detailing, matching blouse and light bangles"
+      "desc": "blush-pink embellished blouse with a pink floral-sequin skirt, a pink net dupatta and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Blush Pink",
       "fabric": "Textured",
       "detail": "ivory stole",
-      "desc": "blush pale-pink textured or embroidered kurta with an ivory cream stole draped vertically over the front and a light lower"
+      "desc": "black kurta with a white pyjama and grey-and-white sneakers"
     },
-    "outfitDescription": "Icy powder-blue saree with silver border; blush-pink kurta with ivory stole",
+    "outfitDescription": "blush-pink embellished blouse with a pink floral-sequin skirt, a pink net dupatta and jhumkas; black kurta with a white pyjama and grey-and-white sneakers",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Powder Blue · Blush Pink",
+    "colourStory": "Blush Pink · Black",
     "tags": [
       "mirror-selfie",
       "dressing-room"
@@ -2069,11 +2069,11 @@
   {
     "id": "diwali-07",
     "world": "diwali",
-    "title": "Ivory Embellished Mirror Selfie",
+    "title": "Champagne Skirt, Floral Blouse, Sparkler",
     "ref": "DIWALI-REF-07",
     "referenceNumber": 7,
-    "pose": "warm mirror selfie with woman holding the smartphone in front of her face and man standing extremely close beside or slightly behind her",
-    "poseDescription": "warm mirror selfie with woman holding the smartphone in front of her face and man standing extremely close beside or slightly behind her",
+    "pose": "standing close together with a sparkler glowing between them",
+    "poseDescription": "standing close together with a sparkler glowing between them",
     "framing": "vertical full or near-full-body mirror composition",
     "framingDescription": "vertical full or near-full-body mirror composition",
     "setting": "warm home interior with large mirror or dark doorway, chandelier, soft lamps and small diyas or candles",
@@ -2084,19 +2084,19 @@
       "colour": "Ivory",
       "fabric": "Embellished textile",
       "detail": "delicate embroidery and sequin detail",
-      "desc": "ivory cream embellished ethnic outfit with matching trousers, light cream dupatta and delicate embroidery or sequin details"
+      "desc": "champagne-gold satin flared skirt with a multicolour floral crop blouse, jhumkas and a hair accessory, holding a sparkler"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Ivory",
       "fabric": "Embroidered textile",
       "detail": "deep maroon stole",
-      "desc": "ivory cream embroidered kurta with matching lower and a long deep maroon stole hanging straight down"
+      "desc": "ivory chikankari kurta with light-blue jeans, white sneakers and a gold chain"
     },
-    "outfitDescription": "Ivory embellished ethnic outfit with cream dupatta; ivory embroidered kurta with deep maroon stole",
+    "outfitDescription": "champagne-gold satin flared skirt with a multicolour floral crop blouse, jhumkas and a hair accessory, holding a sparkler; ivory chikankari kurta with light-blue jeans, white sneakers and a gold chain",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Ivory · Deep Maroon",
+    "colourStory": "Champagne Gold · Ivory",
     "tags": [
       "mirror-selfie",
       "warm-light"
@@ -2116,11 +2116,11 @@
   {
     "id": "diwali-08",
     "world": "diwali",
-    "title": "Wine Traditional Look in Corridor Mirror",
+    "title": "Ivory Zari Saree, Grey Buti Kurta",
     "ref": "DIWALI-REF-08",
     "referenceNumber": 8,
-    "pose": "mirror selfie in a corridor, man facing the mirror with phone covering his face and woman directly in front or beside him with her back mostly toward camera, bodies almost touching",
-    "poseDescription": "mirror selfie in a corridor, man facing the mirror with phone covering his face and woman directly in front or beside him with her back mostly toward camera, bodies almost touching",
+    "pose": "standing together in soft daylight",
+    "poseDescription": "standing together in soft daylight",
     "framing": "vertical full-body corridor mirror selfie",
     "framingDescription": "vertical full-body corridor mirror selfie",
     "setting": "long indoor corridor with stairs on one side, mirrors or doors, tiled floor and realistic residential or institutional surroundings",
@@ -2131,19 +2131,19 @@
       "colour": "Deep Maroon",
       "fabric": "Textured textile",
       "detail": "gold and black embroidered detail",
-      "desc": "deep maroon or wine traditional skirt or lehenga with rich gold and black embroidered detailing, maroon dupatta and dark patterned lower"
+      "desc": "ivory organza saree with gold zari buti and a gold border, a gold blouse, gold kada and pearls"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Burgundy",
       "fabric": "Textured",
       "detail": "dark stole",
-      "desc": "deep maroon burgundy long kurta with subtle texture, dark stole or scarf and dark lower"
+      "desc": "silver-grey kurta with an all-over buti print"
     },
-    "outfitDescription": "Deep maroon wine skirt or lehenga with maroon dupatta; deep maroon kurta with dark stole",
+    "outfitDescription": "ivory organza saree with gold zari buti and a gold border, a gold blouse, gold kada and pearls; silver-grey kurta with an all-over buti print",
     "qaStatus": "GENERATED",
     "tone": "Gold",
-    "colourStory": "Deep Maroon · Black",
+    "colourStory": "Ivory · Grey",
     "tags": [
       "mirror-selfie",
       "corridor"
@@ -2163,11 +2163,11 @@
   {
     "id": "diwali-09",
     "world": "diwali",
-    "title": "Black Saree and Black Kurta Selfie",
+    "title": "Ivory Floral Lehenga by the Car",
     "ref": "DIWALI-REF-09",
     "referenceNumber": 9,
-    "pose": "close mirror selfie with woman on the right holding the phone to her face while the man leans his head down close toward her, both seated or leaning together",
-    "poseDescription": "close mirror selfie with woman on the right holding the phone to her face while the man leans his head down close toward her, both seated or leaning together",
+    "pose": "standing beside a car, dressed in soft ivory and white",
+    "poseDescription": "standing beside a car, dressed in soft ivory and white",
     "framing": "vertical tight or medium mirror composition focused on upper-body interaction",
     "framingDescription": "vertical tight or medium mirror composition focused on upper-body interaction",
     "setting": "bedroom or personal room with a bed or couch visible and a dressing mirror",
@@ -2178,19 +2178,19 @@
       "colour": "Black",
       "fabric": "Lightweight",
       "detail": "silver sequin detail",
-      "desc": "black saree with black blouse, delicate silver or metallic sequin detailing, sheer black sleeves and silver jewellery"
+      "desc": "ivory self-tone floral-print lehenga with a gold border and an ivory beaded dupatta, mehndi on the hands and bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Textured",
       "detail": "black-on-black texture",
-      "desc": "all-black traditional kurta with subtle black-on-black texture and dark lower"
+      "desc": "white kurta with a white salwar, black loafers and a watch"
     },
-    "outfitDescription": "Black saree with silver detail; all-black textured kurta in a close bedroom mirror selfie",
+    "outfitDescription": "ivory self-tone floral-print lehenga with a gold border and an ivory beaded dupatta, mehndi on the hands and bangles; white kurta with a white salwar, black loafers and a watch",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Black · Silver",
+    "colourStory": "Ivory · White",
     "tags": [
       "mirror-selfie",
       "bedroom",
@@ -2211,11 +2211,11 @@
   {
     "id": "diwali-10",
     "world": "diwali",
-    "title": "Navy Outfit with Multicolour Dupatta",
+    "title": "Navy Printed Suit, Silver Buti Dupatta",
     "ref": "DIWALI-REF-10",
     "referenceNumber": 10,
-    "pose": "mirror selfie with woman holding the phone in front of her face, man on the left leaning one arm on a wooden counter and gesturing toward her with his other hand while looking at her",
-    "poseDescription": "mirror selfie with woman holding the phone in front of her face, man on the left leaning one arm on a wooden counter and gesturing toward her with his other hand while looking at her",
+    "pose": "mirror selfie, coordinated in deep navy",
+    "poseDescription": "mirror selfie, coordinated in deep navy",
     "framing": "vertical medium or full mirror composition",
     "framingDescription": "vertical medium or full mirror composition",
     "setting": "ornate heritage or palace-like interior with warm yellow walls, repeated framed mirrors and a wooden counter",
@@ -2226,19 +2226,19 @@
       "colour": "Midnight Blue",
       "fabric": "Textured textile",
       "detail": "multicolour printed dupatta with bright border",
-      "desc": "deep navy midnight-blue ethnic outfit with sleeveless fitted blouse, dark lehenga or long skirt and a multicolour printed dupatta with bright woven border"
+      "desc": "navy-indigo printed kurta suit with white geometric embroidery on the sleeves and a navy dupatta with silver buti"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Textured",
       "detail": "subtle black texture",
-      "desc": "black festive kurta with subtle black textured or sequin surface and black trousers"
+      "desc": "navy kurta with white buti motifs and gold buttons"
     },
-    "outfitDescription": "Midnight-blue ethnic outfit with multicolour dupatta; black textured festive kurta",
+    "outfitDescription": "navy-indigo printed kurta suit with white geometric embroidery on the sleeves and a navy dupatta with silver buti; navy kurta with white buti motifs and gold buttons",
     "qaStatus": "GENERATED",
     "tone": "Multicolour",
-    "colourStory": "Midnight Blue · Black",
+    "colourStory": "Navy · Navy",
     "tags": [
       "mirror-selfie",
       "heritage",
@@ -2259,11 +2259,11 @@
   {
     "id": "diwali-11",
     "world": "diwali",
-    "title": "Royal Blue Suit Mirror Selfie",
+    "title": "Maroon Gold-Foil Lehenga, Corridor",
     "ref": "DIWALI-REF-11",
     "referenceNumber": 11,
-    "pose": "both seated or crouched very close in front of a mirror, woman holding the phone in front of her face and man leaning his cheek close to her, heads nearly touching",
-    "poseDescription": "both seated or crouched very close in front of a mirror, woman holding the phone in front of her face and man leaning his cheek close to her, heads nearly touching",
+    "pose": "corridor mirror selfie, both in maroon",
+    "poseDescription": "corridor mirror selfie, both in maroon",
     "framing": "vertical medium or tight mirror selfie with knees and body partly visible",
     "framingDescription": "vertical medium or tight mirror selfie with knees and body partly visible",
     "setting": "minimal indoor room with warm beige wall and large mirror frame",
@@ -2274,19 +2274,19 @@
       "colour": "Royal Blue",
       "fabric": "Printed textile",
       "detail": "small white floral motifs",
-      "desc": "deep navy or royal-blue ethnic outfit with small repeated white floral motifs, embellished neckline, embroidered cuffs, matching dupatta and silver bangles"
+      "desc": "dark maroon lehenga with gold foil work and a maroon draped dupatta, seen from the back"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Navy",
       "fabric": "Embroidered textile",
       "detail": "subtle gold or light motifs",
-      "desc": "deep navy embroidered kurta with subtle light motifs, decorative buttons and matching dark lower"
+      "desc": "maroon chikankari kurta with a black pyjama and a black dupatta"
     },
-    "outfitDescription": "Royal-blue floral ethnic outfit with blue dupatta; navy embroidered kurta",
+    "outfitDescription": "dark maroon lehenga with gold foil work and a maroon draped dupatta, seen from the back; maroon chikankari kurta with a black pyjama and a black dupatta",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Royal Blue · Navy",
+    "colourStory": "Maroon · Maroon",
     "tags": [
       "mirror-selfie",
       "seated",
@@ -2307,11 +2307,11 @@
   {
     "id": "diwali-12",
     "world": "diwali",
-    "title": "Floral Skirt and Sparklers",
+    "title": "Olive Ajrakh Halter Dress, Blue Lights",
     "ref": "DIWALI-REF-12",
     "referenceNumber": 12,
-    "pose": "couple standing together facing the camera, man naturally around her shoulder or upper back, both holding lit sparklers with sparks prominent on either side",
-    "poseDescription": "couple standing together facing the camera, man naturally around her shoulder or upper back, both holding lit sparklers with sparks prominent on either side",
+    "pose": "standing together at night under blue fairy lights",
+    "poseDescription": "standing together at night under blue fairy lights",
     "framing": "vertical centered full-body festive snapshot",
     "framingDescription": "vertical centered full-body festive snapshot",
     "setting": "nighttime outdoor celebration with dark trees, wall or fence, urban surroundings and distant festive lights",
@@ -2322,19 +2322,19 @@
       "colour": "Olive",
       "fabric": "Flowing textile",
       "detail": "colourful floral print",
-      "desc": "olive or champagne-beige long flowing skirt with colourful floral blouse in red, green, pink and warm multicolour tones"
+      "desc": "olive ajrakh-print halter dress with circular block motifs, a silver choker and bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Textured",
       "detail": "subtle ethnic texture",
-      "desc": "white or ivory textured long kurta with loose pale blue-grey lower and light footwear"
+      "desc": "sage-mint chikankari kurta with a white pyjama and a hair bandana"
     },
-    "outfitDescription": "Olive champagne floral skirt and colourful blouse; white textured kurta, both holding sparklers",
+    "outfitDescription": "olive ajrakh-print halter dress with circular block motifs, a silver choker and bangles; sage-mint chikankari kurta with a white pyjama and a hair bandana",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Olive · White",
+    "colourStory": "Olive · Sage",
     "tags": [
       "sparklers",
       "night",
@@ -2355,11 +2355,11 @@
   {
     "id": "diwali-13",
     "world": "diwali",
-    "title": "Navy Sleeveless Top and Sage Kurta",
+    "title": "Ivory Banarasi Saree, Maroon Kurta",
     "ref": "DIWALI-REF-13",
     "referenceNumber": 13,
-    "pose": "mirror selfie with woman holding the phone in front of her face, man slightly behind and to the left standing naturally with both hands behind his back",
-    "poseDescription": "mirror selfie with woman holding the phone in front of her face, man slightly behind and to the left standing naturally with both hands behind his back",
+    "pose": "standing indoors in warm daylight",
+    "poseDescription": "standing indoors in warm daylight",
     "framing": "vertical medium or full mirror portrait",
     "framingDescription": "vertical medium or full mirror portrait",
     "setting": "simple minimal room with a plain pale mint or light green wall",
@@ -2370,19 +2370,19 @@
       "colour": "Navy",
       "fabric": "Printed textile",
       "detail": "white floral block print",
-      "desc": "navy sleeveless ethnic top with repeated white or light floral block-print motifs, matching lower and light bangles"
+      "desc": "ivory banarasi saree with self-tone paisley and a gold border, a black blouse and black bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Sage Green",
       "fabric": "Textured",
       "detail": "horizontal woven pattern and long ivory stole",
-      "desc": "sage or light grey-green patterned kurta with subtle horizontal texture, very long ivory stole and white or cream loose pajama"
+      "desc": "maroon sequin-chikankari kurta with grey jeans"
     },
-    "outfitDescription": "Navy sleeveless floral-print ethnic top; sage patterned kurta with long ivory stole",
+    "outfitDescription": "ivory banarasi saree with self-tone paisley and a gold border, a black blouse and black bangles; maroon sequin-chikankari kurta with grey jeans",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Navy · Sage Green",
+    "colourStory": "Ivory · Maroon",
     "tags": [
       "mirror-selfie",
       "mint-wall"
@@ -2402,11 +2402,11 @@
   {
     "id": "diwali-14",
     "world": "diwali",
-    "title": "Black Floral Skirt at the Mountain Viewpoint",
+    "title": "Black Ajrakh Drape at the Viewpoint",
     "ref": "DIWALI-REF-14",
     "referenceNumber": 14,
-    "pose": "woman on the left reaches one hand toward the man’s chin or neck and looks up at him while he stands tall and angled toward her",
-    "poseDescription": "woman on the left reaches one hand toward the man’s chin or neck and looks up at him while he stands tall and angled toward her",
+    "pose": "standing on a mountain rooftop viewpoint, coordinated in black",
+    "poseDescription": "standing on a mountain rooftop viewpoint, coordinated in black",
     "framing": "vertical three-quarter to full-body outdoor photograph",
     "framingDescription": "vertical three-quarter to full-body outdoor photograph",
     "setting": "mountain or hill viewpoint with distant green hills, valley and terrace railing",
@@ -2417,19 +2417,19 @@
       "colour": "Black",
       "fabric": "Printed textile",
       "detail": "dense multicolour floral print",
-      "desc": "black sleeveless fitted top with a long black skirt densely covered in multicolour floral print and a dark printed dupatta"
+      "desc": "black halter blouse with a black draped saree-skirt printed in multicolour ajrakh and floral motifs, and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "monochrome styling",
-      "desc": "all-black long kurta with black lower"
+      "desc": "black kurta with a black pyjama and rolled-up sleeves"
     },
-    "outfitDescription": "Black sleeveless top and multicolour floral skirt; all-black kurta at a mountain viewpoint",
+    "outfitDescription": "black halter blouse with a black draped saree-skirt printed in multicolour ajrakh and floral motifs, and jhumkas; black kurta with a black pyjama and rolled-up sleeves",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Black · Multicolour",
+    "colourStory": "Black · Black",
     "tags": [
       "viewpoint",
       "daylight",
@@ -2450,11 +2450,11 @@
   {
     "id": "diwali-15",
     "world": "diwali",
-    "title": "Ivory Saree and Playful Cheek Touch",
+    "title": "Cream Saree, Floral Blouse, Cheek Touch",
     "ref": "DIWALI-REF-15",
     "referenceNumber": 15,
-    "pose": "camera behind or to the right of the man, who reaches forward and gently cups the woman’s cheek while she smiles with eyes partly closed, bodies angled toward each other",
-    "poseDescription": "camera behind or to the right of the man, who reaches forward and gently cups the woman’s cheek while she smiles with eyes partly closed, bodies angled toward each other",
+    "pose": "standing close, a playful cheek touch, against a bamboo backdrop",
+    "poseDescription": "standing close, a playful cheek touch, against a bamboo backdrop",
     "framing": "vertical medium or three-quarter candid composition",
     "framingDescription": "vertical medium or three-quarter candid composition",
     "setting": "outdoor garden or public festive area with railing, colourful event posters and softly visible people",
@@ -2465,19 +2465,19 @@
       "colour": "Ivory",
       "fabric": "Translucent",
       "detail": "light embellished border",
-      "desc": "soft translucent ivory saree with subtle motifs, light embellished border and silver bangles"
+      "desc": "cream organza saree with a multicolour floral-embroidered blouse and a matching pallu border"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Textured",
       "detail": "subtle ethnic motifs",
-      "desc": "white or ivory kurta with repeated subtle ethnic motifs and matching lower"
+      "desc": "rose-pink linen kurta with a white churidar"
     },
-    "outfitDescription": "Translucent ivory saree with light border; white patterned kurta with playful cheek touch",
+    "outfitDescription": "cream organza saree with a multicolour floral-embroidered blouse and a matching pallu border; rose-pink linen kurta with a white churidar",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Ivory · White",
+    "colourStory": "Cream · Rose",
     "tags": [
       "garden",
       "daylight",
@@ -2498,11 +2498,11 @@
   {
     "id": "diwali-16",
     "world": "diwali",
-    "title": "Champagne Saree and Fuchsia Kurta",
+    "title": "Lilac Embroidered Kurta, Plum Palazzo",
     "ref": "DIWALI-REF-16",
     "referenceNumber": 16,
-    "pose": "woman on the left and man on the right stand several feet apart facing each other, both raising one hand under or near the chin in the same playful thoughtful pose",
-    "poseDescription": "woman on the left and man on the right stand several feet apart facing each other, both raising one hand under or near the chin in the same playful thoughtful pose",
+    "pose": "standing together, dressed in coordinated lilac and mauve",
+    "poseDescription": "standing together, dressed in coordinated lilac and mauve",
     "framing": "vertical full or three-quarter body composition",
     "framingDescription": "vertical full or three-quarter body composition",
     "setting": "warm minimalist indoor room with cream walls and a visible doorway",
@@ -2513,19 +2513,19 @@
       "colour": "Champagne Gold",
       "fabric": "Translucent",
       "detail": "delicate floral texture",
-      "desc": "cream or champagne-gold saree with delicate floral or ornamental texture and soft translucent pallu"
+      "desc": "lilac organza kurta heavily worked in tonal floral embroidery and sequins, with a plum embroidered dupatta and a plum palazzo, mehndi on the hands"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Fuchsia",
       "fabric": "Textured",
       "detail": "subtle ethnic texture",
-      "desc": "bright deep-pink or fuchsia long kurta with subtle textured ethnic finish and light beige lower"
+      "desc": "mauve dusty-pink kurta with a silver watch, holding a gold clutch"
     },
-    "outfitDescription": "Champagne-gold saree and fuchsia textured kurta in a playful matching hand-near-chin pose",
+    "outfitDescription": "lilac organza kurta heavily worked in tonal floral embroidery and sequins, with a plum embroidered dupatta and a plum palazzo, mehndi on the hands; mauve dusty-pink kurta with a silver watch, holding a gold clutch",
     "qaStatus": "GENERATED",
     "tone": "Gold",
-    "colourStory": "Champagne Gold · Fuchsia",
+    "colourStory": "Lilac · Mauve",
     "tags": [
       "indoors",
       "golden-hour",
@@ -2546,11 +2546,11 @@
   {
     "id": "diwali-17",
     "world": "diwali",
-    "title": "Olive Printed Lehenga with Mint Kurta",
+    "title": "Rust Blouse, Grey Ajrakh Skirt",
     "ref": "DIWALI-REF-17",
     "referenceNumber": 17,
-    "pose": "woman on the left and man on the right face each other with crossed-arm casual styling and playful expressions",
-    "poseDescription": "woman on the left and man on the right face each other with crossed-arm casual styling and playful expressions",
+    "pose": "standing at a night haveli, turned toward each other",
+    "poseDescription": "standing at a night haveli, turned toward each other",
     "framing": "vertical three-quarter to full-body photograph",
     "framingDescription": "vertical three-quarter to full-body photograph",
     "setting": "night street or outdoor celebration with white car, trees wrapped in blue decorative lights and residential surroundings",
@@ -2561,19 +2561,19 @@
       "colour": "Olive Green",
       "fabric": "Printed textile",
       "detail": "repeated geometric ethnic pattern",
-      "desc": "olive-green printed sleeveless ethnic blouse with matching long flowing lehenga or skirt, silver choker and bangles"
+      "desc": "rust-red block-print halter blouse with a grey ajrakh-print flared skirt and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Mint Green",
       "fabric": "Printed textile",
       "detail": "light green-white print and headband",
-      "desc": "pale mint light green-white printed kurta with white loose pajama and a light headband"
+      "desc": "dusty-rose mauve kurta with a white pyjama and a white net stole"
     },
-    "outfitDescription": "Olive-green geometric printed lehenga with silver jewellery; mint printed kurta with white pajama",
+    "outfitDescription": "rust-red block-print halter blouse with a grey ajrakh-print flared skirt and jhumkas; dusty-rose mauve kurta with a white pyjama and a white net stole",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Olive Green · Mint Green",
+    "colourStory": "Rust · Mauve",
     "tags": [
       "night",
       "blue-lights",
@@ -2594,11 +2594,11 @@
   {
     "id": "diwali-18",
     "world": "diwali",
-    "title": "Pink Floral Lehenga with Black Kurta",
+    "title": "Navy Buti Halter Top, Cream Palazzo",
     "ref": "DIWALI-REF-18",
     "referenceNumber": 18,
-    "pose": "man on the left and woman on the right stand side by side, man facing mostly forward with arms crossed and woman facing forward with one hand on her hip",
-    "poseDescription": "man on the left and woman on the right stand side by side, man facing mostly forward with arms crossed and woman facing forward with one hand on her hip",
+    "pose": "mirror selfie, contrasting navy and grey",
+    "poseDescription": "mirror selfie, contrasting navy and grey",
     "framing": "vertical full-body portrait with space above both heads",
     "framingDescription": "vertical full-body portrait with space above both heads",
     "setting": "outdoor paved plaza at night with brick or stone building, landscaped trees, pathway lights and a warmly lit tree",
@@ -2609,19 +2609,19 @@
       "colour": "Pink",
       "fabric": "Printed textile",
       "detail": "dense floral print and sheer dupatta",
-      "desc": "pink floral lehenga with fitted pink blouse, heavily floral printed surface, sheer bright-pink dupatta and one hand on her hip"
+      "desc": "navy block-print halter top with white buti and a gold border, paired with a cream palazzo and layered bracelets"
     },
     "him": {
       "cat": "Festive Separates",
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "clean monochrome kurta",
-      "desc": "black long kurta with white pajama and clean white sneakers, arms crossed"
+      "desc": "grey striped kurta with a white embroidered stole and a white pyjama"
     },
-    "outfitDescription": "Pink floral lehenga with sheer dupatta; black kurta with white pajama and sneakers",
+    "outfitDescription": "navy block-print halter top with white buti and a gold border, paired with a cream palazzo and layered bracelets; grey striped kurta with a white embroidered stole and a white pyjama",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Pink · Black and White",
+    "colourStory": "Navy · Grey",
     "tags": [
       "night",
       "plaza",
@@ -2642,11 +2642,11 @@
   {
     "id": "diwali-19",
     "world": "diwali",
-    "title": "Red Blouse and Patterned Skirt at Night",
+    "title": "Powder Blue Net Saree, Blush Sherwani-Jacket",
     "ref": "DIWALI-REF-19",
     "referenceNumber": 19,
-    "pose": "man on the left and woman on the right stand side by side; woman keeps one hand on her hip while the man playfully covers part of his face with one hand",
-    "poseDescription": "man on the left and woman on the right stand side by side; woman keeps one hand on her hip while the man playfully covers part of his face with one hand",
+    "pose": "mirror selfie, dressed for a big Diwali evening",
+    "poseDescription": "mirror selfie, dressed for a big Diwali evening",
     "framing": "vertical candid full-body night snapshot",
     "framingDescription": "vertical candid full-body night snapshot",
     "setting": "outdoor residential or event area at night with warm-lit shrubs, trees and beige building wall",
@@ -2657,19 +2657,19 @@
       "colour": "Red",
       "fabric": "Printed textile",
       "detail": "red-orange print on dark skirt",
-      "desc": "red or wine sleeveless fitted blouse with a long black or grey patterned skirt carrying red-orange ethnic print, festive jewellery and one hand on hip"
+      "desc": "powder-blue net saree with silver-blue embroidery and an embellished blouse, kundan jewellery, bangles and mehndi"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Dusty Pink",
       "fabric": "Cotton",
       "detail": "white scarf",
-      "desc": "dusty-pink or mauve long kurta with white or cream scarf and white pajama"
+      "desc": "blush-pink schiffli-eyelet sherwani-style jacket over a white kurta with a white pyjama"
     },
-    "outfitDescription": "Red blouse with black-grey patterned skirt; dusty-pink kurta with white scarf in a playful night snapshot",
+    "outfitDescription": "powder-blue net saree with silver-blue embroidery and an embellished blouse, kundan jewellery, bangles and mehndi; blush-pink schiffli-eyelet sherwani-style jacket over a white kurta with a white pyjama",
     "qaStatus": "GENERATED",
     "tone": "Silver",
-    "colourStory": "Red · Dusty Pink",
+    "colourStory": "Powder Blue · Blush Pink",
     "tags": [
       "night",
       "candid",
@@ -2690,11 +2690,11 @@
   {
     "id": "diwali-20",
     "world": "diwali",
-    "title": "Pink Floral Lehenga Dance with Black Kurta",
+    "title": "All-Chikankari, Marigold Stole, Mirror",
     "ref": "DIWALI-REF-20",
     "referenceNumber": 20,
-    "pose": "woman on the left and man on the right face each other with both arms raised toward one another in a playful festive dance interaction",
-    "poseDescription": "woman on the left and man on the right face each other with both arms raised toward one another in a playful festive dance interaction",
+    "pose": "dark home mirror selfie, both in matching ivory chikankari",
+    "poseDescription": "dark home mirror selfie, both in matching ivory chikankari",
     "framing": "vertical full-body composition with the couple and surrounding lights visible",
     "framingDescription": "vertical full-body composition with the couple and surrounding lights visible",
     "setting": "outdoor nighttime festive lane with many hanging round white lanterns or balloons and warm fairy lights",
@@ -2705,19 +2705,19 @@
       "colour": "Bright Pink",
       "fabric": "Flowing textile",
       "detail": "floral border and blouse detail",
-      "desc": "bright pink blouse or choli with floral detail and flowing pink lehenga or skirt with a broad colourful floral or printed border"
+      "desc": "ivory chikankari embroidered kurta with a matching pyjama and dupatta, and heeled sandals"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "clean dark styling",
-      "desc": "black or navy long kurta with white straight pajama and dark loafers"
+      "desc": "white chikankari kurta with a white pyjama, a red marigold stole and black loafers"
     },
-    "outfitDescription": "Bright pink floral-border lehenga; black kurta with white pajama in a lantern-lit dance moment",
+    "outfitDescription": "ivory chikankari embroidered kurta with a matching pyjama and dupatta, and heeled sandals; white chikankari kurta with a white pyjama, a red marigold stole and black loafers",
     "qaStatus": "GENERATED",
     "tone": "Multicolour",
-    "colourStory": "Bright Pink · Black and White",
+    "colourStory": "Ivory · Ivory",
     "tags": [
       "dance",
       "lanterns",
@@ -2738,9 +2738,9 @@
   {
     "id": "festive-party-01",
     "world": "festive-party",
-    "title": "Hot Pink and Navy Night Entrance",
+    "title": "Navy Satin Sets, Night Bench",
     "ref": "FESTIVE-PARTY-REF-01",
-    "pose": "standing close side-by-side, she poses with one hand on her waist and one near her hair while he stands beside her with arms crossed",
+    "pose": "seated together at night among plants, coordinated in navy satin",
     "framing": "tall vertical portrait",
     "setting": "outdoor residential or event entrance at night with warm hanging fairy lights, doorway and plants",
     "light": "warm festive evening light",
@@ -2749,17 +2749,17 @@
       "colour": "Hot Pink",
       "fabric": "Flowing textile",
       "detail": "silver ornamental detailing and yellow-pink dupatta",
-      "desc": "vivid hot-pink sleeveless festive blouse with silver detailing, flowing silver-grey lehenga and yellow-to-pink embellished dupatta"
+      "desc": "navy satin shirt-kurta with white piped edges and navy satin trousers, glass bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Navy",
       "fabric": "Textured textile",
       "detail": "plain long kurta",
-      "desc": "deep royal or navy-blue long kurta with white pajama trousers"
+      "desc": "navy satin kurta with cream trousers and white sneakers"
     },
     "tone": "Silver",
-    "colourStory": "Hot Pink · Navy",
+    "colourStory": "Navy · Navy",
     "tags": [
       "night",
       "fairy-lights",
@@ -2777,18 +2777,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 1,
-    "poseDescription": "standing close side-by-side, she poses with one hand on her waist and one near her hair while he stands beside her with arms crossed",
+    "poseDescription": "seated together at night among plants, coordinated in navy satin",
     "framingDescription": "tall vertical portrait",
     "environmentDescription": "outdoor residential or event entrance at night with warm hanging fairy lights, doorway and plants",
-    "outfitDescription": "Hot-pink silver-detailed lehenga with yellow-pink dupatta; navy kurta with white pajama",
+    "outfitDescription": "navy satin shirt-kurta with white piped edges and navy satin trousers, glass bangles; navy satin kurta with cream trousers and white sneakers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-02",
     "world": "festive-party",
-    "title": "Blush Pink Garden Crop",
+    "title": "Ivory Chikankari Peplum, Checkerboard Floor",
     "ref": "FESTIVE-PARTY-REF-02",
-    "pose": "very close side-by-side crop with her hand raised near or over her face",
+    "pose": "standing on a checkerboard floor, both in soft ivory",
     "framing": "upper-torso-down intimate crop",
     "setting": "bright daytime garden with lawn and flower pots",
     "light": "bright natural daylight",
@@ -2797,17 +2797,17 @@
       "colour": "Blush Pink",
       "fabric": "Lightweight textile",
       "detail": "delicate embroidery and sheer dupatta",
-      "desc": "soft pastel blush-pink long embroidered anarkali-style outfit with matching sheer dupatta"
+      "desc": "ivory chikankari peplum kurta with diamond embroidery, a cream sharara, a net dupatta, stacked bangles and mehndi"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Pastel Pink",
       "fabric": "Cotton",
       "detail": "plain button-up",
-      "desc": "pastel pink button-up shirt with white or cream trousers"
+      "desc": "ivory silk chikankari kurta with a white pyjama and tan sandals"
     },
     "tone": "Silver",
-    "colourStory": "Blush Pink · Pastel Pink",
+    "colourStory": "Ivory · Ivory",
     "tags": [
       "daylight",
       "garden",
@@ -2825,18 +2825,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 2,
-    "poseDescription": "very close side-by-side crop with her hand raised near or over her face",
+    "poseDescription": "standing on a checkerboard floor, both in soft ivory",
     "framingDescription": "upper-torso-down intimate crop",
     "environmentDescription": "bright daytime garden with lawn and flower pots",
-    "outfitDescription": "Blush-pink embroidered anarkali with sheer dupatta; pastel-pink shirt with cream trousers",
+    "outfitDescription": "ivory chikankari peplum kurta with diamond embroidery, a cream sharara, a net dupatta, stacked bangles and mehndi; ivory silk chikankari kurta with a white pyjama and tan sandals",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-03",
     "world": "festive-party",
-    "title": "Navy Top and Tiered White Skirt",
+    "title": "Red Floral Kurta, Wine Shirt Selfie",
     "ref": "FESTIVE-PARTY-REF-03",
-    "pose": "hands joined naturally at the center with both bodies close",
+    "pose": "outdoor mirror selfie, casual and coordinated",
     "framing": "close lower-body and torso crop",
     "setting": "warm softly lit indoor floor or interior",
     "light": "warm indoor light",
@@ -2845,17 +2845,17 @@
       "colour": "White",
       "fabric": "Flowing textile",
       "detail": "tiered skirt and black crossbody bag",
-      "desc": "dark navy or black fitted top with flowing white tiered long skirt, small black chain-strap crossbody bag and minimal jewellery"
+      "desc": "cream kurta with red floral embroidery on the placket and sleeves, a cream salwar, red flats and a beige bag"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Navy",
       "fabric": "Cotton",
       "detail": "plain top and wristwatch",
-      "desc": "dark navy top with light cream trousers and a wristwatch"
+      "desc": "wine-maroon casual shirt with cream wide trousers, black shoes and a watch"
     },
     "tone": "Silver",
-    "colourStory": "Navy · White",
+    "colourStory": "Cream · Maroon",
     "tags": [
       "hand-hold",
       "cropped",
@@ -2873,18 +2873,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 3,
-    "poseDescription": "hands joined naturally at the center with both bodies close",
+    "poseDescription": "outdoor mirror selfie, casual and coordinated",
     "framingDescription": "close lower-body and torso crop",
     "environmentDescription": "warm softly lit indoor floor or interior",
-    "outfitDescription": "Dark navy top with white tiered skirt and black crossbody bag; navy top with cream trousers",
+    "outfitDescription": "cream kurta with red floral embroidery on the placket and sleeves, a cream salwar, red flats and a beige bag; wine-maroon casual shirt with cream wide trousers, black shoes and a watch",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-04",
     "world": "festive-party",
-    "title": "Coordinated Navy Bench Portrait",
+    "title": "Blush Kurta, Maroon Placket, Mountains",
     "ref": "FESTIVE-PARTY-REF-04",
-    "pose": "both seated close together on a bench with her arm around him and his arm around her",
+    "pose": "standing on a rocky mountain in daylight, she in profile",
     "framing": "close seated crop",
     "setting": "dim evening outdoor garden seating",
     "light": "soft dim evening light",
@@ -2893,17 +2893,17 @@
       "colour": "Navy",
       "fabric": "Textured textile",
       "detail": "light trim and stacked bangles",
-      "desc": "long deep-navy ethnic outfit with subtle light trim and stacked bangles"
+      "desc": "blush-pink kurta with a maroon embroidered front placket panel, a pink floral dupatta, gold bangles and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Navy",
       "fabric": "Cotton",
       "detail": "plain kurta",
-      "desc": "dark navy kurta with loose white or cream trousers"
+      "desc": "plain white kurta with a white pyjama"
     },
     "tone": "Silver",
-    "colourStory": "Navy · White",
+    "colourStory": "Blush Pink · White",
     "tags": [
       "seated",
       "garden",
@@ -2921,18 +2921,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 4,
-    "poseDescription": "both seated close together on a bench with her arm around him and his arm around her",
+    "poseDescription": "standing on a rocky mountain in daylight, she in profile",
     "framingDescription": "close seated crop",
     "environmentDescription": "dim evening outdoor garden seating",
-    "outfitDescription": "Deep-navy ethnic outfit with light trim; navy kurta with cream trousers, seated together",
+    "outfitDescription": "blush-pink kurta with a maroon embroidered front placket panel, a pink floral dupatta, gold bangles and jhumkas; plain white kurta with a white pyjama",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-05",
     "world": "festive-party",
-    "title": "Ivory Looks in Tree-Shade",
+    "title": "Ivory Chikankari in Tree-Shade",
     "ref": "FESTIVE-PARTY-REF-05",
-    "pose": "standing relaxed side-by-side",
+    "pose": "standing outdoors in dappled tree-shade",
     "framing": "vertical mid or full-body composition with natural face crop",
     "setting": "warm brick wall with tree-shadow patterns",
     "light": "strong natural daylight",
@@ -2941,14 +2941,14 @@
       "colour": "Ivory",
       "fabric": "Lightweight textile",
       "detail": "delicate embroidery and light dupatta",
-      "desc": "ivory cream ethnic outfit with delicate embroidery and matching light dupatta"
+      "desc": "ivory chikankari kurta with gold-bordered embroidery on the hem and sleeves, an ivory palazzo and a cream dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "plain kurta",
-      "desc": "clean white kurta with white pajama or trousers"
+      "desc": "white chikankari kurta with a white pyjama and black slides"
     },
     "tone": "Silver",
     "colourStory": "Ivory · White",
@@ -2969,18 +2969,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 5,
-    "poseDescription": "standing relaxed side-by-side",
+    "poseDescription": "standing outdoors in dappled tree-shade",
     "framingDescription": "vertical mid or full-body composition with natural face crop",
     "environmentDescription": "warm brick wall with strong sunlight and tree-shadow patterns falling across wall and clothing",
-    "outfitDescription": "Ivory embroidered outfit with light dupatta; clean white kurta and pajama",
+    "outfitDescription": "ivory chikankari kurta with gold-bordered embroidery on the hem and sleeves, an ivory palazzo and a cream dupatta; white chikankari kurta with a white pyjama and black slides",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-06",
     "world": "festive-party",
-    "title": "Mauve Outfit with Back-Facing Kurta",
+    "title": "Navy Zardozi Suit, Gold Net Dupatta",
     "ref": "FESTIVE-PARTY-REF-06",
-    "pose": "woman faces camera or side while man is turned partly away with hands clasped behind his back",
+    "pose": "standing together outside, coordinated in navy and gold",
     "framing": "vertical portrait crop preserving unusual back-facing pose",
     "setting": "rocky open natural landscape",
     "light": "soft daylight",
@@ -2989,17 +2989,17 @@
       "colour": "Mauve",
       "fabric": "Lightweight textile",
       "detail": "maroon embroidered neckline and soft pink dupatta",
-      "desc": "dusty blush-pink or mauve traditional outfit with darker maroon embroidered neckline or panel and soft pink dupatta"
+      "desc": "navy kurta with gold-copper floral zardozi on the yoke and a vertical vine motif, a matching navy palazzo with a gold border, and a gold net dupatta with gold embroidery"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "plain",
-      "desc": "plain white long kurta and white pajama"
+      "desc": "navy kurta with a white churidar, a red thread and sunglasses"
     },
     "tone": "Silver",
-    "colourStory": "Mauve · White",
+    "colourStory": "Navy · Navy",
     "tags": [
       "landscape",
       "back-facing",
@@ -3017,18 +3017,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 6,
-    "poseDescription": "woman faces camera or side while man is turned partly away with hands clasped behind his back",
+    "poseDescription": "standing together outside, coordinated in navy and gold",
     "framingDescription": "vertical portrait crop preserving unusual back-facing pose",
     "environmentDescription": "rocky open natural landscape in soft daylight",
-    "outfitDescription": "Mauve embroidered ethnic outfit with pink dupatta; white kurta and pajama in back-facing pose",
+    "outfitDescription": "navy kurta with gold-copper floral zardozi on the yoke and a vertical vine motif, a matching navy palazzo with a gold border, and a gold net dupatta with gold embroidery; navy kurta with a white churidar, a red thread and sunglasses",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-07",
     "world": "festive-party",
-    "title": "Floral Kurta Mirror Selfie in Greenery",
+    "title": "Navy Top, Silver Tiered Skirt",
     "ref": "FESTIVE-PARTY-REF-07",
-    "pose": "full-length mirror selfie with both holding phones in front of their faces and standing close",
+    "pose": "close crop, holding hands, jewellery and details in focus",
     "framing": "full-length mirror composition",
     "setting": "upscale outdoor or urban mirror area surrounded by lush plants",
     "light": "natural outdoor light",
@@ -3037,17 +3037,17 @@
       "colour": "Ivory",
       "fabric": "Cotton",
       "detail": "small red floral motifs, red flats and beige handbag",
-      "desc": "cream embroidered straight kurta with small red floral motifs, loose cream palazzo trousers, red flats and small beige handbag"
+      "desc": "navy sleeveless top with a grey-silver tiered satin skirt, a black crossbody bag on a gold chain and a silver watch"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Maroon",
       "fabric": "Cotton",
       "detail": "plain kurta with watch",
-      "desc": "deep maroon or burgundy kurta with loose cream trousers, black shoes and watch"
+      "desc": "navy shirt with grey-taupe trousers"
     },
     "tone": "Red",
-    "colourStory": "Cream · Maroon",
+    "colourStory": "Navy · Navy",
     "tags": [
       "mirror-selfie",
       "greenery",
@@ -3065,18 +3065,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 7,
-    "poseDescription": "full-length mirror selfie with both holding phones in front of their faces and standing close",
+    "poseDescription": "close crop, holding hands, jewellery and details in focus",
     "framingDescription": "full-length mirror composition",
     "environmentDescription": "upscale outdoor or urban mirror area surrounded by lush plants and greenery",
-    "outfitDescription": "Cream floral kurta set with red flats and beige bag; maroon kurta with cream trousers",
+    "outfitDescription": "navy sleeveless top with a grey-silver tiered satin skirt, a black crossbody bag on a gold chain and a silver watch; navy shirt with grey-taupe trousers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-08",
     "world": "festive-party",
-    "title": "White Embroidered Looks in Sunlight",
+    "title": "Dusty Rose Anarkali, Black Shawl",
     "ref": "FESTIVE-PARTY-REF-08",
-    "pose": "woman shields her eyes with one raised hand while man stands close beside and slightly behind",
+    "pose": "standing indoors, she adjusting her dupatta",
     "framing": "vertical full-body composition",
     "setting": "bright exterior wall with geometric patterned floor tiles",
     "light": "strong sunny daylight with natural shadows",
@@ -3085,17 +3085,17 @@
       "colour": "White",
       "fabric": "Lightweight textile",
       "detail": "floral embroidery and flowing dupatta",
-      "desc": "white or ivory embroidered ethnic suit with floral embroidery, cream trousers and flowing dupatta"
+      "desc": "dusty-rose anarkali with gold gota-zardozi on the yoke and a matching embroidered-border dupatta, with a hair accessory"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "plain",
-      "desc": "white kurta and white trousers"
+      "desc": "black self-textured kurta with a black silver-bordered shawl, black trousers and a watch"
     },
     "tone": "Silver",
-    "colourStory": "White · Ivory",
+    "colourStory": "Dusty Rose · Black",
     "tags": [
       "daylight",
       "sunlight",
@@ -3113,18 +3113,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 8,
-    "poseDescription": "woman shields her eyes with one raised hand while man stands close beside and slightly behind",
+    "poseDescription": "standing indoors, she adjusting her dupatta",
     "framingDescription": "vertical full-body composition",
     "environmentDescription": "bright exterior wall with geometric patterned floor tiles",
-    "outfitDescription": "White floral-embroidered suit with dupatta; white kurta and trousers in strong sunlight",
+    "outfitDescription": "dusty-rose anarkali with gold gota-zardozi on the yoke and a matching embroidered-border dupatta, with a hair accessory; black self-textured kurta with a black silver-bordered shawl, black trousers and a watch",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-09",
     "world": "festive-party",
-    "title": "Ivory Layered Outfit Checkerboard Crop",
+    "title": "Red Elephant Block-Print Saree and Kurta",
     "ref": "FESTIVE-PARTY-REF-09",
-    "pose": "standing close together with hands and garments emphasized",
+    "pose": "leaning on temple steps in coordinated red elephant-print",
     "framing": "shoulder or upper-torso downward crop",
     "setting": "bright entrance or interior with black-and-white checkerboard floor",
     "light": "bright natural or entrance light",
@@ -3133,17 +3133,17 @@
       "colour": "Ivory",
       "fabric": "Layered textile",
       "detail": "geometric patterning, gold trim and smartphone",
-      "desc": "ivory cream sleeveless or layered ethnic outfit with delicate geometric patterning, sheer lower layer, gold trim, minimal bangles and smartphone"
+      "desc": "bright-red cotton saree with white-cream elephant block-print motifs and a printed border, a matching red blouse and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Embroidered textile",
       "detail": "plain white with tan sandals",
-      "desc": "white embroidered kurta and white pajama with tan or brown sandals"
+      "desc": "matching bright-red kurta with white elephant block-print, a cream embroidered placket and a white pyjama"
     },
     "tone": "Gold",
-    "colourStory": "Ivory · White",
+    "colourStory": "Red · Red",
     "tags": [
       "detail-crop",
       "checkerboard",
@@ -3161,18 +3161,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 9,
-    "poseDescription": "standing close together with hands and garments emphasized",
+    "poseDescription": "leaning on temple steps in coordinated red elephant-print",
     "framingDescription": "shoulder or upper-torso downward crop",
     "environmentDescription": "bright entrance or interior with black-and-white checkerboard floor",
-    "outfitDescription": "Ivory layered geometric ethnic outfit with gold trim; white embroidered kurta and pajama",
+    "outfitDescription": "bright-red cotton saree with white-cream elephant block-print motifs and a printed border, a matching red blouse and jhumkas; matching bright-red kurta with white elephant block-print, a cream embroidered placket and a white pyjama",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-10",
     "world": "festive-party",
-    "title": "Burgundy Street-Style Couple",
+    "title": "Sage Green Mirror Suit, Brick Wall",
     "ref": "FESTIVE-PARTY-REF-10",
-    "pose": "standing or walking side-by-side with woman holding his arm and both looking naturally toward each other",
+    "pose": "standing against a red-brick wall in daylight",
     "framing": "elegant vertical street-style composition",
     "setting": "outdoor sidewalk with metal fence, stone architecture and trees",
     "light": "warm afternoon light",
@@ -3181,17 +3181,17 @@
       "colour": "Burgundy",
       "fabric": "Lightweight textile",
       "detail": "subtle print or embroidery and matching dupatta",
-      "desc": "deep maroon or burgundy traditional salwar-style suit with matching dupatta and subtle print or embroidery"
+      "desc": "sage-green kurta with silver mirror-sequin work on the neckline and hem, a matching green palazzo, a sheer dupatta and a red thread"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Burgundy",
       "fabric": "Cotton",
       "detail": "plain button shirt",
-      "desc": "dark burgundy button shirt with light-wash straight jeans and white sneakers"
+      "desc": "white kurta with a white pyjama and a watch"
     },
     "tone": "Silver",
-    "colourStory": "Burgundy · Light Blue",
+    "colourStory": "Sage Green · White",
     "tags": [
       "street-style",
       "daylight",
@@ -3209,18 +3209,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 10,
-    "poseDescription": "standing or walking side-by-side with woman holding his arm and both looking naturally toward each other",
+    "poseDescription": "standing against a red-brick wall in daylight",
     "framingDescription": "elegant vertical street-style composition",
     "environmentDescription": "outdoor sidewalk with metal fence, stone architecture and trees",
-    "outfitDescription": "Burgundy salwar suit with dupatta; burgundy shirt with light jeans and white sneakers",
+    "outfitDescription": "sage-green kurta with silver mirror-sequin work on the neckline and hem, a matching green palazzo, a sheer dupatta and a red thread; white kurta with a white pyjama and a watch",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-11",
     "world": "festive-party",
-    "title": "Red Elephant-Motif Saree and Kurta",
+    "title": "Maroon Paisley Kurti, Denim, Studio",
     "ref": "FESTIVE-PARTY-REF-11",
-    "pose": "seated together on a heritage stone step or ledge, leaning casually and looking toward one another",
+    "pose": "studio portrait, an embrace, coordinated in maroon",
     "framing": "close seated editorial composition",
     "setting": "heritage stone architecture with greenery and flowers",
     "light": "warm daylight",
@@ -3229,17 +3229,17 @@
       "colour": "Red",
       "fabric": "Printed textile",
       "detail": "repeated elephant motifs and embellished border",
-      "desc": "bright red saree with repeated small elephant motifs and embellished border"
+      "desc": "maroon paisley-print spaghetti-strap short kurti with a side slit over light-blue wide-leg jeans, oxidised earrings, a black cuff bracelet and white sneakers"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Red",
       "fabric": "Embroidered textile",
       "detail": "elephant motifs and detailed neckline embroidery",
-      "desc": "bright red kurta with repeated elephant motifs, detailed neckline embroidery and loose white trousers"
+      "desc": "deep wine-maroon linen shirt with cream trousers and white sneakers"
     },
     "tone": "Gold",
-    "colourStory": "Red · White",
+    "colourStory": "Maroon · Maroon",
     "tags": [
       "seated",
       "heritage",
@@ -3257,18 +3257,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 11,
-    "poseDescription": "seated together on a heritage stone step or ledge, leaning casually and looking toward one another",
+    "poseDescription": "studio portrait, an embrace, coordinated in maroon",
     "framingDescription": "close seated editorial composition",
     "environmentDescription": "heritage stone architecture with greenery and flowers",
-    "outfitDescription": "Red elephant-motif saree; matching red elephant-motif embroidered kurta with white trousers",
+    "outfitDescription": "maroon paisley-print spaghetti-strap short kurti with a side slit over light-blue wide-leg jeans, oxidised earrings, a black cuff bracelet and white sneakers; deep wine-maroon linen shirt with cream trousers and white sneakers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-12",
     "world": "festive-party",
-    "title": "Peach Embroidery with Black Stole",
+    "title": "White Multicolour-Floral Kurta, Star Tiles",
     "ref": "FESTIVE-PARTY-REF-12",
-    "pose": "standing close with hands relaxed in front and garments as the visual focus",
+    "pose": "standing on a star-patterned tile floor, both in white",
     "framing": "cropped fashion-detail composition with faces less prominent",
     "setting": "elegant warm indoor room with classic furniture",
     "light": "warm indoor light",
@@ -3277,17 +3277,17 @@
       "colour": "Peach",
       "fabric": "Embroidered textile",
       "detail": "heavy gold-toned borders and matching dupatta",
-      "desc": "dusty peach or blush long ethnic outfit with heavy embroidery, ornate gold-toned borders and matching dupatta"
+      "desc": "white kurta with multicolour floral embroidery on the placket and hem border, a white palazzo and a white dupatta"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Textured textile",
       "detail": "long charcoal stole with light edging",
-      "desc": "black textured kurta with black trousers and long charcoal-black stole with light edging"
+      "desc": "white linen shirt with white trousers and black shoes"
     },
     "tone": "Gold",
-    "colourStory": "Dusty Peach · Black",
+    "colourStory": "White · White",
     "tags": [
       "indoors",
       "detail-crop",
@@ -3305,18 +3305,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 12,
-    "poseDescription": "standing close with hands relaxed in front and garments as the visual focus",
+    "poseDescription": "standing on a star-patterned tile floor, both in white",
     "framingDescription": "cropped fashion-detail composition with faces less prominent",
     "environmentDescription": "elegant warm indoor room with classic furniture",
-    "outfitDescription": "Dusty peach embroidered outfit with gold borders; black textured kurta with charcoal stole",
+    "outfitDescription": "white kurta with multicolour floral embroidery on the placket and hem border, a white palazzo and a white dupatta; white linen shirt with white trousers and black shoes",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-13",
     "world": "festive-party",
-    "title": "Navy and Gold Embroidery by the Car",
+    "title": "Hot Pink Blouse, Silver Skirt, Fairy Lights",
     "ref": "FESTIVE-PARTY-REF-13",
-    "pose": "standing close side-by-side in a relaxed pose",
+    "pose": "standing back-to-back at night by fairy lights and marigold garlands",
     "framing": "vertical lower-body or full-body fashion composition",
     "setting": "outdoor parking or driveway with white car behind",
     "light": "bright natural daylight",
@@ -3325,17 +3325,17 @@
       "colour": "Navy",
       "fabric": "Lightweight textile",
       "detail": "gold floral embroidery and sheer dupatta",
-      "desc": "deep navy embroidered ethnic suit with gold floral embroidery, matching light sheer dupatta"
+      "desc": "hot-pink sequinned crop blouse with a silver-grey shimmer flared skirt, an orange-to-pink ombre dupatta, bangles and a silver waist chain"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Navy",
       "fabric": "Cotton",
       "detail": "plain long kurta",
-      "desc": "navy-blue long kurta with white or cream pajama"
+      "desc": "royal-blue kurta with a white pyjama"
     },
     "tone": "Gold",
-    "colourStory": "Navy · Gold",
+    "colourStory": "Hot Pink · Royal Blue",
     "tags": [
       "daylight",
       "parking",
@@ -3353,18 +3353,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 13,
-    "poseDescription": "standing close side-by-side in a relaxed pose",
+    "poseDescription": "standing back-to-back at night by fairy lights and marigold garlands",
     "framingDescription": "vertical lower-body or full-body fashion composition",
     "environmentDescription": "outdoor parking or driveway with a white car behind",
-    "outfitDescription": "Navy suit with gold floral embroidery and sheer dupatta; navy kurta with light pajama",
+    "outfitDescription": "hot-pink sequinned crop blouse with a silver-grey shimmer flared skirt, an orange-to-pink ombre dupatta, bangles and a silver waist chain; royal-blue kurta with a white pyjama",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-14",
     "world": "festive-party",
-    "title": "Teal Kurta and Magenta Garden Look",
+    "title": "Navy Gold-Buti Lehenga, Mauve Kurta",
     "ref": "FESTIVE-PARTY-REF-14",
-    "pose": "standing side-by-side, woman lightly touching or adjusting her hair while both remain naturally close",
+    "pose": "standing in a snowy night parking lot, smiling for the camera",
     "framing": "vertical natural garden portrait",
     "setting": "lush garden with ornamental plants",
     "light": "bright natural daylight",
@@ -3373,17 +3373,17 @@
       "colour": "Magenta",
       "fabric": "Flowing textile",
       "detail": "ornate light border and matching dupatta",
-      "desc": "magenta or pink festive lehenga or long ethnic outfit with matching dupatta and ornate light border"
+      "desc": "royal-navy lehenga-saree with gold polka-buti motifs and a gold border, an embellished blouse and gold jewellery"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Teal",
       "fabric": "Textured textile",
       "detail": "blue-green texture",
-      "desc": "textured teal or blue-green long kurta with white or light trousers"
+      "desc": "mauve-lavender chikankari kurta with a cream churidar"
     },
     "tone": "Silver",
-    "colourStory": "Magenta · Teal",
+    "colourStory": "Navy · Mauve",
     "tags": [
       "garden",
       "daylight",
@@ -3401,18 +3401,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 14,
-    "poseDescription": "standing side-by-side, woman lightly touching or adjusting her hair while both remain naturally close",
+    "poseDescription": "standing in a snowy night parking lot, smiling for the camera",
     "framingDescription": "vertical natural garden portrait",
     "environmentDescription": "lush garden with ornamental plants in daytime",
-    "outfitDescription": "Magenta festive lehenga with light border; textured teal kurta in a garden",
+    "outfitDescription": "royal-navy lehenga-saree with gold polka-buti motifs and a gold border, an embellished blouse and gold jewellery; mauve-lavender chikankari kurta with a cream churidar",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-15",
     "world": "festive-party",
-    "title": "Checked Top and Burgundy Shirt",
+    "title": "Maroon Buti Suit, Burgundy Shirt, Street",
     "ref": "FESTIVE-PARTY-REF-15",
-    "pose": "standing closely, woman leaning her head against his shoulder or chest while he stands relaxed",
+    "pose": "standing on a leafy street in daylight, arm-linked",
     "framing": "casual modern full-body composition",
     "setting": "clean minimal bright studio or plain background",
     "light": "bright even light",
@@ -3421,17 +3421,17 @@
       "colour": "Red",
       "fabric": "Printed textile",
       "detail": "checked top with light blue wide jeans",
-      "desc": "red-and-white checked or printed sleeveless top with light blue wide or flared jeans"
+      "desc": "deep maroon kurta suit with silver buti and a mirror-embroidered yoke, a matching maroon palazzo and a maroon dupatta, with a watch"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Burgundy",
       "fabric": "Cotton",
       "detail": "plain button shirt",
-      "desc": "deep burgundy button shirt with white or cream trousers and white sneakers"
+      "desc": "wine-maroon shirt with light-blue jeans and white sneakers"
     },
     "tone": "Silver",
-    "colourStory": "Red · Burgundy",
+    "colourStory": "Maroon · Maroon",
     "tags": [
       "casual",
       "studio",
@@ -3449,18 +3449,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 15,
-    "poseDescription": "standing closely, woman leaning her head against his shoulder or chest while he stands relaxed",
+    "poseDescription": "standing on a leafy street in daylight, arm-linked",
     "framingDescription": "casual modern full-body composition",
     "environmentDescription": "clean minimal bright studio or plain background",
-    "outfitDescription": "Red-and-white checked top with light-blue wide jeans; burgundy shirt with cream trousers",
+    "outfitDescription": "deep maroon kurta suit with silver buti and a mirror-embroidered yoke, a matching maroon palazzo and a maroon dupatta, with a watch; wine-maroon shirt with light-blue jeans and white sneakers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-16",
     "world": "festive-party",
-    "title": "Pink Floral Crop Top with Black Kurta",
+    "title": "Maroon Organza Kurta, Teal Kurta, Garden",
     "ref": "FESTIVE-PARTY-REF-16",
-    "pose": "relaxed side-by-side couple pose with natural closeness",
+    "pose": "standing together in a garden in daylight",
     "framing": "vertical youthful party portrait",
     "setting": "outdoor parking or campus-like setting at night with cars",
     "light": "bright artificial night light",
@@ -3469,17 +3469,17 @@
       "colour": "Pink",
       "fabric": "Flowing textile",
       "detail": "floral embroidery",
-      "desc": "pink floral embroidered crop top or choli with flowing pink lehenga or skirt"
+      "desc": "maroon organza kurta with silver buti and a gold-embroidered hem border over a maroon lehenga, with a rani-pink net dupatta and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "dark monochrome styling",
-      "desc": "black or dark charcoal kurta with dark trousers"
+      "desc": "teal chikankari kurta with a charcoal pyjama"
     },
     "tone": "Silver",
-    "colourStory": "Pink · Black",
+    "colourStory": "Maroon · Teal",
     "tags": [
       "night",
       "parking",
@@ -3497,18 +3497,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 16,
-    "poseDescription": "relaxed side-by-side couple pose with natural closeness",
+    "poseDescription": "standing together in a garden in daylight",
     "framingDescription": "vertical youthful party portrait",
     "environmentDescription": "outdoor parking or campus-like setting at night with cars and bright artificial lights",
-    "outfitDescription": "Pink floral crop top with flowing lehenga; dark charcoal kurta at night",
+    "outfitDescription": "maroon organza kurta with silver buti and a gold-embroidered hem border over a maroon lehenga, with a rani-pink net dupatta and jhumkas; teal chikankari kurta with a charcoal pyjama",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-17",
     "world": "festive-party",
-    "title": "Royal Purple and Pale Pink Night Look",
+    "title": "Blush Floral Blouse, Gota Skirt, Night",
     "ref": "FESTIVE-PARTY-REF-17",
-    "pose": "standing side-by-side at night with relaxed natural interaction",
+    "pose": "standing close at night beside a parked scooter",
     "framing": "vertical portrait",
     "setting": "outdoor parking area with cars and strong overhead lights",
     "light": "strong artificial night lighting",
@@ -3517,17 +3517,17 @@
       "colour": "Purple",
       "fabric": "Flowing textile",
       "detail": "gold dotted or embellished details",
-      "desc": "deep navy or royal-purple long ethnic outfit with gold dotted or embellished details"
+      "desc": "blush-pink floral-embroidered sequin crop blouse with a blush-pink flared skirt striped with gold gota, and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Pastel Pink",
       "fabric": "Textured textile",
       "detail": "soft printed texture",
-      "desc": "soft pale-pink textured or printed kurta with light trousers"
+      "desc": "black kurta with a black pyjama and a watch"
     },
     "tone": "Gold",
-    "colourStory": "Royal Purple · Pale Pink",
+    "colourStory": "Blush Pink · Black",
     "tags": [
       "night",
       "parking",
@@ -3545,18 +3545,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 17,
-    "poseDescription": "standing side-by-side at night with relaxed natural interaction",
+    "poseDescription": "standing close at night beside a parked scooter",
     "framingDescription": "vertical portrait",
     "environmentDescription": "outdoor parking area with cars and strong overhead lights",
-    "outfitDescription": "Royal-purple ethnic outfit with gold details; pale-pink textured kurta",
+    "outfitDescription": "blush-pink floral-embroidered sequin crop blouse with a blush-pink flared skirt striped with gold gota, and jhumkas; black kurta with a black pyjama and a watch",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-18",
     "world": "festive-party",
-    "title": "Ivory and White Looks on a Sunny Street",
+    "title": "Blush Anarkali, Pale Pink Shirt, Garden",
     "ref": "FESTIVE-PARTY-REF-18",
-    "pose": "walking or standing naturally together with relaxed candid body language",
+    "pose": "standing together in a garden in daylight",
     "framing": "vertical light full-body composition",
     "setting": "bright outdoor residential road with parked car and blue wall or building",
     "light": "bright natural daylight",
@@ -3565,17 +3565,17 @@
       "colour": "Ivory",
       "fabric": "Lightweight textile",
       "detail": "subtle embroidery and matching dupatta",
-      "desc": "ivory cream ethnic salwar-style outfit with matching dupatta and subtle embroidery"
+      "desc": "blush-pink anarkali with silver-white thread floral embroidery and a pearl-edged placket, a pink net dupatta with a pearl border and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "plain",
-      "desc": "white long kurta and white trousers"
+      "desc": "light-pink linen shirt with white trousers"
     },
     "tone": "Silver",
-    "colourStory": "Ivory · White",
+    "colourStory": "Blush Pink · Pink",
     "tags": [
       "daylight",
       "street",
@@ -3593,18 +3593,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 18,
-    "poseDescription": "walking or standing naturally together with relaxed candid body language",
+    "poseDescription": "standing together in a garden in daylight",
     "framingDescription": "vertical light full-body composition",
     "environmentDescription": "bright outdoor residential road with parked car and blue wall or building",
-    "outfitDescription": "Ivory salwar outfit with dupatta; white kurta and trousers on a sunny street",
+    "outfitDescription": "blush-pink anarkali with silver-white thread floral embroidery and a pearl-edged placket, a pink net dupatta with a pearl border and jhumkas; light-pink linen shirt with white trousers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-19",
     "world": "festive-party",
-    "title": "Green Saree and Teal Kurta at Home",
+    "title": "Green Ombre Saree, Teal Kurta at Home",
     "ref": "FESTIVE-PARTY-REF-19",
-    "pose": "standing close together in a relaxed indoor couple portrait",
+    "pose": "standing together in a living room, poised for a portrait",
     "framing": "vertical full-body-ish composition",
     "setting": "warm home living room with sofa, decor and wall mirror",
     "light": "warm indoor light",
@@ -3613,14 +3613,14 @@
       "colour": "Green",
       "fabric": "Lightweight textile",
       "detail": "light detailing",
-      "desc": "elegant green saree with coordinated blouse and light detailing"
+      "desc": "teal-to-green ombre chiffon saree with a gold-mustard sleeveless blouse, gold kada and a white chooda"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Teal",
       "fabric": "Textured textile",
       "detail": "long light or blue stole",
-      "desc": "rich teal or blue kurta with light trousers and a long light or blue stole"
+      "desc": "teal kurta with a white chikankari stole and a white pyjama"
     },
     "tone": "Silver",
     "colourStory": "Green · Teal",
@@ -3641,18 +3641,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 19,
-    "poseDescription": "standing close together in a relaxed indoor couple portrait",
+    "poseDescription": "standing together in a living room, poised for a portrait",
     "framingDescription": "vertical full-body-ish composition",
     "environmentDescription": "warm home living room with sofa, decor and wall mirror",
-    "outfitDescription": "Green saree with coordinated blouse; teal kurta with light trousers and stole",
+    "outfitDescription": "teal-to-green ombre chiffon saree with a gold-mustard sleeveless blouse, gold kada and a white chooda; teal kurta with a white chikankari stole and a white pyjama",
     "qaStatus": "GENERATED"
   },
   {
     "id": "festive-party-20",
     "world": "festive-party",
-    "title": "White Kurta and Pink Floral Garden Look",
+    "title": "White Lotus-Print Kurta, Blue Blossoms",
     "ref": "FESTIVE-PARTY-REF-20",
-    "pose": "standing close side-by-side with relaxed natural expressions and body language",
+    "pose": "standing before a wall of blue blossoms in daylight",
     "framing": "vertical bright garden portrait",
     "setting": "outdoor garden beneath a large flowering tree with blue or purple blossoms",
     "light": "bright natural daylight",
@@ -3661,17 +3661,17 @@
       "colour": "Pastel Pink",
       "fabric": "Printed textile",
       "detail": "pink-white floral print and matching dupatta",
-      "desc": "pastel pink and white floral printed long ethnic outfit with matching trousers or dupatta"
+      "desc": "white kurta with a large multicolour lotus-floral print and a mirror-embellished neckline"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "White",
       "fabric": "Textured textile",
       "detail": "white texture or embroidery",
-      "desc": "white textured or embroidered long kurta with white trousers"
+      "desc": "white chikankari kurta with a white pyjama and sunglasses"
     },
     "tone": "Silver",
-    "colourStory": "Pastel Pink · White",
+    "colourStory": "White · White",
     "tags": [
       "garden",
       "daylight",
@@ -3689,18 +3689,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 20,
-    "poseDescription": "standing close side-by-side with relaxed natural expressions and body language",
+    "poseDescription": "standing before a wall of blue blossoms in daylight",
     "framingDescription": "vertical bright garden portrait",
     "environmentDescription": "outdoor garden beneath a large flowering tree with blue or purple blossoms",
-    "outfitDescription": "Pastel pink-white floral ethnic outfit; white textured kurta beneath flowering tree",
+    "outfitDescription": "white kurta with a large multicolour lotus-floral print and a mirror-embellished neckline; white chikankari kurta with a white pyjama and sunglasses",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-01",
     "world": "traditional",
-    "title": "Indigo Suit and Navy Shirt at the Entrance",
+    "title": "Blush Bee-Buti Saree, Patola Stole",
     "ref": "TRADITIONAL-REF-01",
-    "pose": "walking or standing side-by-side, man looking toward woman as she turns slightly toward him",
+    "pose": "standing on a balcony in daylight, playful and candid",
     "framing": "vertical full-body",
     "setting": "modern building entrance or corridor with neutral walls and potted plant",
     "light": "soft natural indoor light",
@@ -3709,17 +3709,17 @@
       "colour": "Navy",
       "fabric": "Textile",
       "detail": "silver-white patterned dupatta",
-      "desc": "deep navy indigo ethnic suit with long flowing silhouette and heavily patterned navy dupatta with light motifs"
+      "desc": "blush-pink chiffon saree with scattered gold bee-and-floral buti and a white blouse, carrying a cream crossbody bag"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Navy",
       "fabric": "Cotton",
       "detail": "plain long-sleeve styling",
-      "desc": "dark navy long-sleeve shirt with white trousers and white sneakers"
+      "desc": "cream chikankari kurta with a multicolour patola-ikat stole in red, blue and cream geometric print, black trousers and a watch"
     },
     "tone": "Silver",
-    "colourStory": "Indigo · Navy",
+    "colourStory": "Blush Pink · Cream",
     "tags": [
       "standing",
       "entrance"
@@ -3736,18 +3736,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 1,
-    "poseDescription": "walking or standing side-by-side, man looking toward woman as she turns slightly toward him",
+    "poseDescription": "standing on a balcony in daylight, playful and candid",
     "framingDescription": "vertical full-body casual-traditional framing",
     "environmentDescription": "modern building entrance or corridor with neutral walls and potted plant",
-    "outfitDescription": "Indigo patterned suit with navy dupatta; navy shirt with white trousers and sneakers",
+    "outfitDescription": "blush-pink chiffon saree with scattered gold bee-and-floral buti and a white blouse, carrying a cream crossbody bag; cream chikankari kurta with a multicolour patola-ikat stole in red, blue and cream geometric print, black trousers and a watch",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-02",
     "world": "traditional",
-    "title": "Champagne Festive Look in the Haveli",
+    "title": "Violet Saree Beneath the Tree",
     "ref": "TRADITIONAL-REF-02",
-    "pose": "standing close indoors, woman lightly linking his arm while both look naturally downward toward each other",
+    "pose": "seated together on the grass under a tree, seen from behind",
     "framing": "vertical full-body portrait",
     "setting": "warm heritage room with traditional furniture and decor",
     "light": "soft warm indoor lighting",
@@ -3756,17 +3756,17 @@
       "colour": "Champagne",
       "fabric": "Flowing textile",
       "detail": "delicate shimmer and dupatta",
-      "desc": "champagne beige-gold festive ethnic outfit with delicate shimmer, flowing skirt silhouette and dupatta"
+      "desc": "purple-violet chiffon saree with a matching purple blouse and gold bangles"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Cream",
       "fabric": "Cotton",
       "detail": "plain kurta",
-      "desc": "cream off-white kurta with matching pajama or trousers"
+      "desc": "black shirt with black trousers and rolled-up sleeves"
     },
     "tone": "Gold",
-    "colourStory": "Champagne · Cream",
+    "colourStory": "Purple · Black",
     "tags": [
       "indoors",
       "heritage",
@@ -3784,18 +3784,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 2,
-    "poseDescription": "standing close indoors, woman lightly linking his arm while both look naturally downward toward each other",
+    "poseDescription": "seated together on the grass under a tree, seen from behind",
     "framingDescription": "vertical full-body portrait",
     "environmentDescription": "warm heritage room with traditional furniture and decor",
-    "outfitDescription": "Champagne-gold festive outfit with dupatta; cream kurta pajama",
+    "outfitDescription": "purple-violet chiffon saree with a matching purple blouse and gold bangles; black shirt with black trousers and rolled-up sleeves",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-03",
     "world": "traditional",
-    "title": "Wine Outfit at the Bougainvillea Ledge",
+    "title": "Floral Lehenga, Magenta Velvet Dupatta",
     "ref": "TRADITIONAL-REF-03",
-    "pose": "man seated or leaning on stone ledge, woman standing close holding his arm, both turned toward each other",
+    "pose": "walking together down a sunlit village lane",
     "framing": "vertical portrait",
     "setting": "heritage stone exterior with vivid pink flowers or bougainvillea",
     "light": "warm outdoor daylight",
@@ -3804,17 +3804,17 @@
       "colour": "Wine",
       "fabric": "Flowing textile",
       "detail": "gold metallic embroidery and dupatta",
-      "desc": "deep magenta-wine ethnic outfit with gold detailing and matching dupatta"
+      "desc": "cream floral-print lehenga with a rani-pink velvet dupatta bordered in gold zari, jhumkas and a hair accessory"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "dark monochrome",
-      "desc": "full black kurta with black or dark trousers"
+      "desc": "cream silk kurta with a subtle self-embroidered placket, a cream pyjama and white shoes"
     },
     "tone": "Gold",
-    "colourStory": "Wine · Black",
+    "colourStory": "Cream · Magenta",
     "tags": [
       "heritage",
       "seated",
@@ -3832,18 +3832,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 3,
-    "poseDescription": "man seated or leaning on stone ledge, woman standing close holding his arm, both turned toward each other",
+    "poseDescription": "walking together down a sunlit village lane",
     "framingDescription": "vertical portrait",
     "environmentDescription": "heritage stone exterior with vivid pink flowers or bougainvillea",
-    "outfitDescription": "Wine ethnic outfit with gold detailing; black kurta against heritage stone",
+    "outfitDescription": "cream floral-print lehenga with a rani-pink velvet dupatta bordered in gold zari, jhumkas and a hair accessory; cream silk kurta with a subtle self-embroidered placket, a cream pyjama and white shoes",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-04",
     "world": "traditional",
-    "title": "Maroon Saree in the Old Lane",
+    "title": "Blush Organza Saree, Old-City Steps",
     "ref": "TRADITIONAL-REF-04",
-    "pose": "walking through a narrow lane, woman slightly ahead looking down while man leans toward her",
+    "pose": "standing on old-city red steps, holding hands",
     "framing": "vertical candid walking frame",
     "setting": "rustic heritage lane with plaster walls and wooden doorway",
     "light": "soft natural daylight",
@@ -3852,17 +3852,17 @@
       "colour": "Maroon",
       "fabric": "Flowing textile",
       "detail": "traditional gold border",
-      "desc": "deep maroon wine saree with traditional gold border or details"
+      "desc": "blush-nude organza saree with a subtle floral print on the pallu and border and a white blouse, with a floral hair accessory"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Cream",
       "fabric": "Cotton",
       "detail": "plain kurta pajama",
-      "desc": "cream off-white kurta pajama"
+      "desc": "white kurta with black trousers and black shoes"
     },
     "tone": "Gold",
-    "colourStory": "Maroon · Cream",
+    "colourStory": "Blush Nude · White",
     "tags": [
       "walking",
       "heritage-lane"
@@ -3879,18 +3879,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 4,
-    "poseDescription": "walking through a narrow lane, woman slightly ahead looking down while man leans toward her",
+    "poseDescription": "standing on old-city red steps, holding hands",
     "framingDescription": "vertical candid walking frame",
     "environmentDescription": "rustic heritage lane with plaster walls and wooden doorway",
-    "outfitDescription": "Maroon saree with traditional border; cream kurta pajama walking in an old lane",
+    "outfitDescription": "blush-nude organza saree with a subtle floral print on the pallu and border and a white blouse, with a floral hair accessory; white kurta with black trousers and black shoes",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-05",
     "world": "traditional",
-    "title": "Blush Suit at the Heritage Doorway",
+    "title": "Sage Zari Saree, Haveli Courtyard",
     "ref": "TRADITIONAL-REF-05",
-    "pose": "man looking down toward woman as she stands close with one hand near his arm",
+    "pose": "standing close in a heritage haveli courtyard",
     "framing": "close full-body vertical composition",
     "setting": "ornate heritage doorway or interior architecture",
     "light": "soft warm traditional light",
@@ -3899,17 +3899,17 @@
       "colour": "Blush Pink",
       "fabric": "Lightweight textile",
       "detail": "subtle embroidery and sheer dupatta",
-      "desc": "dusty blush-pink traditional suit or anarkali with matching sheer dupatta and subtle embroidery"
+      "desc": "sage-green organza saree with gold zari floral buti and a gold border, an embellished blouse, gold bangles and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Cream",
       "fabric": "Embroidered textile",
       "detail": "matching pajama",
-      "desc": "cream off-white embroidered kurta with matching pajama"
+      "desc": "cream kurta with a white pyjama, brown loafers and a watch"
     },
     "tone": "Gold",
-    "colourStory": "Blush Pink · Cream",
+    "colourStory": "Sage Green · Cream",
     "tags": [
       "doorway",
       "standing",
@@ -3927,18 +3927,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 5,
-    "poseDescription": "man looking down toward woman as she stands close with one hand near his arm",
+    "poseDescription": "standing close in a heritage haveli courtyard",
     "framingDescription": "close full-body vertical composition",
     "environmentDescription": "ornate heritage doorway or interior architecture",
-    "outfitDescription": "Blush-pink suit with sheer dupatta; cream embroidered kurta",
+    "outfitDescription": "sage-green organza saree with gold zari floral buti and a gold border, an embellished blouse, gold bangles and jhumkas; cream kurta with a white pyjama, brown loafers and a watch",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-06",
     "world": "traditional",
-    "title": "Purple Saree Beneath the Tree",
+    "title": "Red Zardozi Suit, Bougainvillea Door",
     "ref": "TRADITIONAL-REF-06",
-    "pose": "sitting together on the ground under a large tree from rear or side angle, woman leaning against man",
+    "pose": "standing by a carved door draped with bougainvillea",
     "framing": "vertical rear or side composition",
     "setting": "green park or garden beneath a mature tree",
     "light": "bright natural daytime",
@@ -3947,17 +3947,17 @@
       "colour": "Purple",
       "fabric": "Flowing textile",
       "detail": "spread drape",
-      "desc": "rich purple-violet saree or lehenga-style drape spread around her seated position"
+      "desc": "deep-red kurta suit with gold zardozi on the V-neck yoke and a matching red dupatta with a gold-embroidered border, kundan jhumkas and a low bun"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "dark styling",
-      "desc": "black or dark shirt with dark trousers"
+      "desc": "black kurta with a black pyjama and rolled-up sleeves"
     },
     "tone": "Silver",
-    "colourStory": "Purple · Black",
+    "colourStory": "Red · Black",
     "tags": [
       "seated",
       "tree",
@@ -3975,18 +3975,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 6,
-    "poseDescription": "sitting together on the ground under a large tree from rear or side angle, woman leaning against man",
+    "poseDescription": "standing by a carved door draped with bougainvillea",
     "framingDescription": "vertical rear or side composition",
     "environmentDescription": "green park or garden beneath a mature tree",
-    "outfitDescription": "Flowing purple drape and dark shirt beneath a mature tree",
+    "outfitDescription": "deep-red kurta suit with gold zardozi on the V-neck yoke and a matching red dupatta with a gold-embroidered border, kundan jhumkas and a low bun; black kurta with a black pyjama and rolled-up sleeves",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-07",
     "world": "traditional",
-    "title": "Powder Blue Saree on the Night Street",
+    "title": "Green Floral Top, Wide Denim, Studio",
     "ref": "TRADITIONAL-REF-07",
-    "pose": "standing very close side-facing, man turned toward woman with arm near her waist",
+    "pose": "studio portrait against a grey curtain, arm-linked",
     "framing": "tall narrow vertical portrait",
     "setting": "dark residential street with warm streetlights and distant lights",
     "light": "moody warm night street light",
@@ -3995,17 +3995,17 @@
       "colour": "Powder Blue",
       "fabric": "Flowing textile",
       "detail": "elegant drape",
-      "desc": "powder or icy blue saree with matching blouse and elegant flowing drape"
+      "desc": "dark-green floral-print square-neck long top with marigold-style motifs over blue wide-leg jeans, a layered black choker, jhumkas, a black bag and white sneakers"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Light Blue",
       "fabric": "Cotton",
       "detail": "button-up shirt",
-      "desc": "light blue button-up shirt with black trousers"
+      "desc": "olive-green shirt with beige trousers and black shoes"
     },
     "tone": "Silver",
-    "colourStory": "Powder Blue · Light Blue",
+    "colourStory": "Green · Olive",
     "tags": [
       "night",
       "street",
@@ -4023,18 +4023,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 7,
-    "poseDescription": "standing very close side-facing, man turned toward woman with arm near her waist",
+    "poseDescription": "studio portrait against a grey curtain, arm-linked",
     "framingDescription": "tall narrow vertical portrait",
     "environmentDescription": "dark residential street with warm streetlights and distant lights",
-    "outfitDescription": "Powder-blue saree; light-blue shirt with black trousers on a night street",
+    "outfitDescription": "dark-green floral-print square-neck long top with marigold-style motifs over blue wide-leg jeans, a layered black choker, jhumkas, a black bag and white sneakers; olive-green shirt with beige trousers and black shoes",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-08",
     "world": "traditional",
-    "title": "Lime Saree on the Rooftop",
+    "title": "Navy Chikankari Suit, Modern Porch",
     "ref": "TRADITIONAL-REF-08",
-    "pose": "man with arm around woman, woman raises one hand near face and leans toward him",
+    "pose": "leaning against a pillar on a modern porch, turned toward each other",
     "framing": "vertical moody low-light portrait",
     "setting": "outdoor terrace or rooftop with dark background and scattered lights",
     "light": "moody low-light night photography",
@@ -4043,17 +4043,17 @@
       "colour": "Lime Green",
       "fabric": "Flowing textile",
       "detail": "subtle traditional styling",
-      "desc": "bright lime or olive-green saree with matching blouse"
+      "desc": "navy-blue kurta suit with white chikankari motifs, a matching navy palazzo and a navy dupatta with a white block-print border, a beige bag and white sneakers"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Black",
       "fabric": "Cotton",
       "detail": "dark shirt",
-      "desc": "black or dark shirt with dark trousers"
+      "desc": "navy-blue linen shirt with off-white trousers and white sneakers"
     },
     "tone": "Silver",
-    "colourStory": "Lime Green · Black",
+    "colourStory": "Navy · Navy",
     "tags": [
       "night",
       "rooftop",
@@ -4071,18 +4071,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 8,
-    "poseDescription": "man with arm around woman, woman raises one hand near face and leans toward him",
+    "poseDescription": "leaning against a pillar on a modern porch, turned toward each other",
     "framingDescription": "vertical moody low-light portrait",
     "environmentDescription": "outdoor terrace or rooftop with dark background and scattered city or house lights",
-    "outfitDescription": "Lime-green saree with dark shirt on a moody rooftop",
+    "outfitDescription": "navy-blue kurta suit with white chikankari motifs, a matching navy palazzo and a navy dupatta with a white block-print border, a beige bag and white sneakers; navy-blue linen shirt with off-white trousers and white sneakers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-09",
     "world": "traditional",
-    "title": "Powder Blue Saree on the Sofa",
+    "title": "Ice Blue Draped Saree, Night Street",
     "ref": "TRADITIONAL-REF-09",
-    "pose": "both seated closely on a bench or sofa, woman leaning gently toward man",
+    "pose": "standing close under a streetlamp at night",
     "framing": "close torso/full-body crop",
     "setting": "bright elegant neutral interior",
     "light": "soft natural indoor light",
@@ -4091,17 +4091,17 @@
       "colour": "Powder Blue",
       "fabric": "Flowing textile",
       "detail": "minimal jewellery",
-      "desc": "light powder-blue saree with matching blouse and minimal jewellery"
+      "desc": "ice-blue satin saree draped modern-style with an off-shoulder ruffle-sleeve lace-up-back blouse and a matching sheer blue dupatta"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "White",
       "fabric": "Cotton",
       "detail": "clean shirt",
-      "desc": "clean white shirt with beige or cream trousers"
+      "desc": "light-blue shirt with black trousers and rolled-up sleeves"
     },
     "tone": "Silver",
-    "colourStory": "Powder Blue · White",
+    "colourStory": "Powder Blue · Light Blue",
     "tags": [
       "seated",
       "indoors",
@@ -4119,18 +4119,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 9,
-    "poseDescription": "both seated closely on a bench or sofa, woman leaning gently toward man",
+    "poseDescription": "standing close under a streetlamp at night",
     "framingDescription": "close torso/full-body crop",
     "environmentDescription": "bright elegant neutral interior with soft natural light",
-    "outfitDescription": "Powder-blue saree; white shirt with cream trousers in a bright interior",
+    "outfitDescription": "ice-blue satin saree draped modern-style with an off-shoulder ruffle-sleeve lace-up-back blouse and a matching sheer blue dupatta; light-blue shirt with black trousers and rolled-up sleeves",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-10",
     "world": "traditional",
-    "title": "Blush Saree on Heritage Stairs",
+    "title": "Lime Chiffon Saree on the Rooftop",
     "ref": "TRADITIONAL-REF-10",
-    "pose": "walking down stone stairs, man slightly ahead turned toward woman as she follows beside or behind",
+    "pose": "standing on a night rooftop, he leaning toward her",
     "framing": "vertical candid walking composition",
     "setting": "old narrow stone staircase with brick and heritage walls",
     "light": "soft natural daylight",
@@ -4139,17 +4139,17 @@
       "colour": "Blush Pink",
       "fabric": "Flowing textile",
       "detail": "subtle traditional detail",
-      "desc": "light blush or soft-beige saree with subtle traditional detailing"
+      "desc": "lime-green chiffon saree with a floral-embellished corset blouse, chandbali earrings and a gold bangle"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Powder Blue",
       "fabric": "Cotton",
       "detail": "plain kurta",
-      "desc": "pale powder-blue kurta with dark trousers"
+      "desc": "black shirt with black trousers"
     },
     "tone": "Silver",
-    "colourStory": "Blush Pink · Powder Blue",
+    "colourStory": "Lime Green · Black",
     "tags": [
       "stairs",
       "walking",
@@ -4167,18 +4167,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 10,
-    "poseDescription": "walking down stone stairs, man slightly ahead turned toward woman as she follows beside or behind",
+    "poseDescription": "standing on a night rooftop, he leaning toward her",
     "framingDescription": "vertical candid walking composition",
     "environmentDescription": "old narrow stone staircase with brick and heritage walls",
-    "outfitDescription": "Blush saree; powder-blue kurta on heritage stairs",
+    "outfitDescription": "lime-green chiffon saree with a floral-embellished corset blouse, chandbali earrings and a gold bangle; black shirt with black trousers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-11",
     "world": "traditional",
-    "title": "Lime Saree at the Modern Entrance",
+    "title": "White Chikankari Suit, Teal Kurta, Plaza",
     "ref": "TRADITIONAL-REF-11",
-    "pose": "standing close outside a modern entrance and looking toward each other",
+    "pose": "standing in a daytime plaza, laughing together",
     "framing": "vertical full-body fashion photograph",
     "setting": "modern shop or building entrance",
     "light": "natural daylight",
@@ -4187,17 +4187,17 @@
       "colour": "Lime Green",
       "fabric": "Flowing textile",
       "detail": "delicate traditional detail",
-      "desc": "bright lime or yellow saree with matching blouse and delicate traditional detailing"
+      "desc": "white chikankari kurta suit with a white palazzo and a grey-blue block-print bordered dupatta"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Burgundy",
       "fabric": "Cotton",
       "detail": "plain shirt",
-      "desc": "rich maroon burgundy shirt with white trousers and white sneakers"
+      "desc": "teal self-print textured kurta with a white pyjama and a watch"
     },
     "tone": "Silver",
-    "colourStory": "Lime · Burgundy",
+    "colourStory": "White · Teal",
     "tags": [
       "standing",
       "entrance",
@@ -4215,18 +4215,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 11,
-    "poseDescription": "standing close outside a modern entrance and looking toward each other",
+    "poseDescription": "standing in a daytime plaza, laughing together",
     "framingDescription": "vertical full-body fashion photograph",
     "environmentDescription": "modern shop or building entrance",
-    "outfitDescription": "Lime-yellow saree; burgundy shirt with white trousers and sneakers",
+    "outfitDescription": "white chikankari kurta suit with a white palazzo and a grey-blue block-print bordered dupatta; teal self-print textured kurta with a white pyjama and a watch",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-12",
     "world": "traditional",
-    "title": "Coral Saree and Peach Kurta in the Courtyard",
+    "title": "White Shirt-Kurta, Wide Denim, Mirror",
     "ref": "TRADITIONAL-REF-12",
-    "pose": "woman leans affectionately against his arm or shoulder while holding him, man relaxed and smiling",
+    "pose": "minimalist mirror selfie, relaxed fusion styling",
     "framing": "vertical casual couple portrait",
     "setting": "outdoor courtyard",
     "light": "natural daylight",
@@ -4235,17 +4235,17 @@
       "colour": "Coral Pink",
       "fabric": "Flowing textile",
       "detail": "traditional styling",
-      "desc": "coral-pink saree with matching blouse and traditional styling"
+      "desc": "white oversized long shirt-kurta with a side slit over blue wide-leg jeans, a black handbag and black flip-flops"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Pastel Pink",
       "fabric": "Cotton",
       "detail": "plain long kurta",
-      "desc": "light peach pastel-pink long kurta with dark trousers"
+      "desc": "light-blue linen shirt with white wide trousers and black flip-flops"
     },
     "tone": "Silver",
-    "colourStory": "Coral Pink · Peach",
+    "colourStory": "White · Light Blue",
     "tags": [
       "courtyard",
       "standing",
@@ -4263,18 +4263,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 12,
-    "poseDescription": "woman leans affectionately against his arm or shoulder while holding him, man relaxed and smiling",
+    "poseDescription": "minimalist mirror selfie, relaxed fusion styling",
     "framingDescription": "vertical casual couple portrait",
     "environmentDescription": "outdoor courtyard",
-    "outfitDescription": "Coral-pink saree; peach kurta in a relaxed courtyard pose",
+    "outfitDescription": "white oversized long shirt-kurta with a side slit over blue wide-leg jeans, a black handbag and black flip-flops; light-blue linen shirt with white wide trousers and black flip-flops",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-13",
     "world": "traditional",
-    "title": "White Suit and Teal Kurta in the Plaza",
+    "title": "Yellow Chikankari Kurta, Gota Sharara",
     "ref": "TRADITIONAL-REF-13",
-    "pose": "standing close facing each other, woman turning slightly upward toward man",
+    "pose": "standing beside a blue car in daylight",
     "framing": "vertical candid walking or standing composition",
     "setting": "open plaza or sidewalk with trees and buildings",
     "light": "natural daylight",
@@ -4283,17 +4283,17 @@
       "colour": "White",
       "fabric": "Lightweight textile",
       "detail": "embroidery and flowing dupatta",
-      "desc": "white or off-white embroidered ethnic suit with flowing dupatta"
+      "desc": "yellow chikankari kurta with tone-on-tone embroidery over a white gota-striped sharara"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Teal",
       "fabric": "Cotton",
       "detail": "plain long kurta",
-      "desc": "teal deep blue-green long kurta with light trousers"
+      "desc": "grey-sage self-print kurta with a white churidar and white sneakers"
     },
     "tone": "Silver",
-    "colourStory": "White · Teal",
+    "colourStory": "Yellow · Grey",
     "tags": [
       "plaza",
       "daylight",
@@ -4311,18 +4311,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 13,
-    "poseDescription": "standing close facing each other, woman turning slightly upward toward man",
+    "poseDescription": "standing beside a blue car in daylight",
     "framingDescription": "vertical candid walking or standing composition",
     "environmentDescription": "open plaza or sidewalk with trees and buildings in background",
-    "outfitDescription": "White embroidered suit with dupatta; teal kurta with light trousers",
+    "outfitDescription": "yellow chikankari kurta with tone-on-tone embroidery over a white gota-striped sharara; grey-sage self-print kurta with a white churidar and white sneakers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-14",
     "world": "traditional",
-    "title": "Peach Saree on the Night Bench",
+    "title": "Navy Buti Peplum Top, Denim, Studio",
     "ref": "TRADITIONAL-REF-14",
-    "pose": "seated together on a low bench, woman very close and leaning toward man",
+    "pose": "studio portrait against a grey curtain",
     "framing": "vertical nighttime seated composition",
     "setting": "outdoor bench with city lights and buildings in distance",
     "light": "soft night light",
@@ -4331,17 +4331,17 @@
       "colour": "Peach",
       "fabric": "Flowing textile",
       "detail": "soft traditional drape",
-      "desc": "soft peach or coral-pink saree"
+      "desc": "navy block-print peplum top with white buti and bell sleeves over light-blue wide-leg jeans, a white bag, a hair clip, jhumkas and white sneakers"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Sky Blue",
       "fabric": "Cotton",
       "detail": "plain kurta",
-      "desc": "light sky-blue kurta with light trousers"
+      "desc": "navy mandarin-collar shirt with beige trousers and white sneakers"
     },
     "tone": "Silver",
-    "colourStory": "Peach · Sky Blue",
+    "colourStory": "Navy · Navy",
     "tags": [
       "seated",
       "night",
@@ -4359,18 +4359,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 14,
-    "poseDescription": "seated together on a low bench, woman very close and leaning toward man",
+    "poseDescription": "studio portrait against a grey curtain",
     "framingDescription": "vertical nighttime seated composition",
     "environmentDescription": "outdoor bench at night with distant city lights and buildings",
-    "outfitDescription": "Peach saree; sky-blue kurta seated together at night",
+    "outfitDescription": "navy block-print peplum top with white buti and bell sleeves over light-blue wide-leg jeans, a white bag, a hair clip, jhumkas and white sneakers; navy mandarin-collar shirt with beige trousers and white sneakers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-15",
     "world": "traditional",
-    "title": "Blush Outfit and Stole on the Balcony",
+    "title": "Baby Pink Saree, Festive Lights",
     "ref": "TRADITIONAL-REF-15",
-    "pose": "standing close taking a mirror or selfie-style photograph with phone visible",
+    "pose": "seated together at night among festive lights",
     "framing": "vertical balcony composition",
     "setting": "outdoor balcony or terrace with bright city skyline",
     "light": "bright natural daylight",
@@ -4379,17 +4379,17 @@
       "colour": "Blush Pink",
       "fabric": "Flowing textile",
       "detail": "matching dupatta and small handbag",
-      "desc": "pale blush-pink traditional outfit with matching dupatta and small handbag"
+      "desc": "baby-pink chiffon saree with a floral-embellished sequin blouse and a silver bangle"
     },
     "him": {
       "cat": "Traditional Layer",
       "colour": "Multicolour",
       "fabric": "Textured textile",
       "detail": "patterned stole or jacket",
-      "desc": "white or light kurta layered with a long multicolour patterned stole or jacket"
+      "desc": "powder-blue self-stripe kurta with a beige pyjama and a watch"
     },
     "tone": "Silver",
-    "colourStory": "Blush Pink · Multicolour",
+    "colourStory": "Blush Pink · Powder Blue",
     "tags": [
       "balcony",
       "selfie",
@@ -4407,18 +4407,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 15,
-    "poseDescription": "standing close taking a mirror or selfie-style photograph with phone visible",
+    "poseDescription": "seated together at night among festive lights",
     "framingDescription": "vertical balcony composition",
     "environmentDescription": "outdoor balcony or terrace with bright city skyline",
-    "outfitDescription": "Blush ethnic outfit with handbag; light kurta with multicolour stole on a balcony",
+    "outfitDescription": "baby-pink chiffon saree with a floral-embellished sequin blouse and a silver bangle; powder-blue self-stripe kurta with a beige pyjama and a watch",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-16",
     "world": "traditional",
-    "title": "Mustard and Grey by the Blue Car",
+    "title": "Dusty Rose Zardozi Saree, Peach Kurta",
     "ref": "TRADITIONAL-REF-16",
-    "pose": "standing beside bright blue car, man with one hand on waist and woman close beside him",
+    "pose": "standing close in a bright hall, smiling",
     "framing": "vertical full-body outdoor composition",
     "setting": "tiled courtyard or driveway beside bright blue car",
     "light": "bright daytime",
@@ -4427,17 +4427,17 @@
       "colour": "Mustard",
       "fabric": "Flowing textile",
       "detail": "white palazzo and dupatta",
-      "desc": "mustard-yellow traditional kurta with flowing white trousers or palazzo and dupatta"
+      "desc": "dusty-rose satin saree with silver-and-gold zardozi floral on the border and pallu, a matching blouse and jhumkas"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Grey",
       "fabric": "Textured textile",
       "detail": "patterned texture",
-      "desc": "grey patterned or textured kurta with light trousers"
+      "desc": "peach brocade kurta with self circular motifs and black trousers"
     },
     "tone": "Silver",
-    "colourStory": "Mustard · Grey",
+    "colourStory": "Dusty Rose · Peach",
     "tags": [
       "car",
       "daylight",
@@ -4455,18 +4455,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 16,
-    "poseDescription": "standing beside bright blue car, man with one hand on waist and woman close beside him",
+    "poseDescription": "standing close in a bright hall, smiling",
     "framingDescription": "vertical full-body outdoor composition",
     "environmentDescription": "tiled courtyard or driveway beside bright blue car",
-    "outfitDescription": "Mustard kurta with white palazzo; grey patterned kurta by a blue car",
+    "outfitDescription": "dusty-rose satin saree with silver-and-gold zardozi floral on the border and pallu, a matching blouse and jhumkas; peach brocade kurta with self circular motifs and black trousers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-17",
     "world": "traditional",
-    "title": "White and Powder Blue Mirror Selfie",
+    "title": "Dusty Rose Anarkali, Carved Haveli",
     "ref": "TRADITIONAL-REF-17",
-    "pose": "woman holds phone in front of faces while both stand close in a mirror selfie",
+    "pose": "standing before carved marble jaali, looking at each other",
     "framing": "vertical full-body mirror framing",
     "setting": "neutral modern apartment or living room",
     "light": "soft indoor light",
@@ -4475,17 +4475,17 @@
       "colour": "White",
       "fabric": "Cotton",
       "detail": "light-blue wide trousers and black tote",
-      "desc": "oversized white ethnic kurta with light-blue wide trousers or palazzo and black tote bag"
+      "desc": "dusty-rose anarkali with a gathered waist, silver-tonal sequin embroidery on the V-neck yoke and a matching pink net dupatta with scattered sequin motifs, and jhumkas"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Pale Blue",
       "fabric": "Cotton",
       "detail": "casual shirt and sandals",
-      "desc": "pale blue casual shirt with loose white trousers and black sandals"
+      "desc": "cream silk kurta with tone-on-tone buti motifs and a white pyjama"
     },
     "tone": "Silver",
-    "colourStory": "White · Powder Blue",
+    "colourStory": "Dusty Rose · Cream",
     "tags": [
       "mirror-selfie",
       "indoors",
@@ -4503,18 +4503,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 17,
-    "poseDescription": "woman holds phone in front of faces while both stand close in a mirror selfie",
+    "poseDescription": "standing before carved marble jaali, looking at each other",
     "framingDescription": "vertical full-body mirror framing",
     "environmentDescription": "neutral modern apartment or living room",
-    "outfitDescription": "White kurta with blue wide trousers and tote; pale-blue shirt with white trousers",
+    "outfitDescription": "dusty-rose anarkali with a gathered waist, silver-tonal sequin embroidery on the V-neck yoke and a matching pink net dupatta with scattered sequin motifs, and jhumkas; cream silk kurta with tone-on-tone buti motifs and a white pyjama",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-18",
     "world": "traditional",
-    "title": "Green Tunic and Olive Shirt Studio Look",
+    "title": "Blue Ombre Saree, White Shirt, Garden",
     "ref": "TRADITIONAL-REF-18",
-    "pose": "woman links or holds man’s arm while both stand naturally side-by-side",
+    "pose": "seated together in a garden with baby's breath",
     "framing": "vertical studio-like portrait",
     "setting": "dark grey pleated curtain studio background",
     "light": "soft studio light",
@@ -4523,17 +4523,17 @@
       "colour": "Green",
       "fabric": "Printed textile",
       "detail": "floral motifs with wide denim",
-      "desc": "dark green printed ethnic tunic or kurta with floral motifs and loose blue wide-leg jeans"
+      "desc": "blue-and-white ombre chiffon saree with a silver-embellished scalloped border and a matching spaghetti-strap blouse, with a gold bangle"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Olive",
       "fabric": "Cotton",
       "detail": "plain button shirt",
-      "desc": "olive-green button shirt with beige trousers and white sneakers"
+      "desc": "white shirt with beige trousers and rolled-up sleeves"
     },
     "tone": "Silver",
-    "colourStory": "Green · Olive",
+    "colourStory": "Blue Ombre · White",
     "tags": [
       "studio",
       "curtain",
@@ -4551,18 +4551,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 18,
-    "poseDescription": "woman links or holds man’s arm while both stand naturally side-by-side",
+    "poseDescription": "seated together in a garden with baby's breath",
     "framingDescription": "vertical studio-like portrait",
     "environmentDescription": "dark grey pleated curtain studio background",
-    "outfitDescription": "Green floral tunic with wide denim; olive shirt with beige trousers",
+    "outfitDescription": "blue-and-white ombre chiffon saree with a silver-embellished scalloped border and a matching spaghetti-strap blouse, with a gold bangle; white shirt with beige trousers and rolled-up sleeves",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-19",
     "world": "traditional",
-    "title": "Navy Printed Top and Shirt Studio Look",
+    "title": "Magenta Shibori Kurta, Wide Denim",
     "ref": "TRADITIONAL-REF-19",
-    "pose": "woman linked to man’s arm while he stands relaxed with one leg slightly crossed or angled",
+    "pose": "studio portrait, coordinated in magenta with denim",
     "framing": "vertical studio-like portrait",
     "setting": "dark grey pleated curtain studio background",
     "light": "soft studio light",
@@ -4571,17 +4571,17 @@
       "colour": "Navy",
       "fabric": "Printed textile",
       "detail": "geometric or floral pattern and wide denim",
-      "desc": "navy-blue printed traditional kurta or top with blue wide-leg jeans"
+      "desc": "magenta shibori tie-dye kurta with white chikankari floral on the yoke and body over light-blue wide-leg jeans, a denim tote, drop earrings and white sneakers"
     },
     "him": {
       "cat": "Ethnic Shirt",
       "colour": "Navy",
       "fabric": "Cotton",
       "detail": "long-sleeve shirt",
-      "desc": "deep navy long-sleeve shirt with beige trousers and white sneakers"
+      "desc": "magenta shirt with white trousers and white sneakers"
     },
     "tone": "Silver",
-    "colourStory": "Navy · Beige",
+    "colourStory": "Magenta · Magenta",
     "tags": [
       "studio",
       "curtain",
@@ -4599,18 +4599,18 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 19,
-    "poseDescription": "woman linked to man’s arm while he stands relaxed with one leg slightly crossed or angled",
+    "poseDescription": "studio portrait, coordinated in magenta with denim",
     "framingDescription": "vertical studio-like portrait",
     "environmentDescription": "dark grey pleated curtain studio background",
-    "outfitDescription": "Navy printed top with wide jeans; navy shirt with beige trousers",
+    "outfitDescription": "magenta shibori tie-dye kurta with white chikankari floral on the yoke and body over light-blue wide-leg jeans, a denim tote, drop earrings and white sneakers; magenta shirt with white trousers and white sneakers",
     "qaStatus": "GENERATED"
   },
   {
     "id": "traditional-20",
     "world": "traditional",
-    "title": "Fuchsia Kurta and Pink Floral Top",
+    "title": "Yellow Chikankari Saree, Wine Blouse",
     "ref": "TRADITIONAL-REF-20",
-    "pose": "woman stands close holding man’s arm, couple turned slightly toward each other",
+    "pose": "standing outside a boutique storefront in daylight",
     "framing": "vertical editorial composition",
     "setting": "dark grey pleated curtain studio background",
     "light": "soft studio light",
@@ -4619,17 +4619,17 @@
       "colour": "Pink",
       "fabric": "Printed textile",
       "detail": "vivid floral print with blue jeans",
-      "desc": "vivid pink floral printed long kurta or top with blue wide-leg jeans"
+      "desc": "pastel-yellow organza saree with a white chikankari floral scalloped border and a wine embroidered blouse with white floral work"
     },
     "him": {
       "cat": "Modern Kurta",
       "colour": "Magenta",
       "fabric": "Cotton",
       "detail": "bright solid kurta",
-      "desc": "bright magenta or fuchsia traditional kurta with white trousers"
+      "desc": "wine-maroon shirt with white trousers and white sneakers"
     },
     "tone": "Silver",
-    "colourStory": "Pink · Fuchsia",
+    "colourStory": "Yellow · Maroon",
     "tags": [
       "studio",
       "curtain",
@@ -4647,10 +4647,10 @@
     "imageUrl": "",
     "imageStatus": "GENERATED",
     "referenceNumber": 20,
-    "poseDescription": "woman stands close holding man’s arm, couple turned slightly toward each other",
+    "poseDescription": "standing outside a boutique storefront in daylight",
     "framingDescription": "vertical editorial composition",
     "environmentDescription": "dark grey pleated curtain studio background",
-    "outfitDescription": "Pink floral top with wide jeans; fuchsia kurta with white trousers",
+    "outfitDescription": "pastel-yellow organza saree with a white chikankari floral scalloped border and a wine embroidered blouse with white floral work; wine-maroon shirt with white trousers and white sneakers",
     "qaStatus": "GENERATED"
   }
 ]
