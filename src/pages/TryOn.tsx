@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { byId, coupleById, coupleImageSrc, PRODUCTS, type Product } from '../lib/data';
+import { byId, coupleById, coupleImageSrc, type Product } from '../lib/data';
 import { womenLookById, womenOccasionLabel, type WomenLook } from '../lib/womenCatalog';
 import { menLookById, menOccasionLabel, type MenLook } from '../lib/menCatalog';
 import womenPreviews from '../data/women-previews.client.json';
 import menFinalImages from '../data/men-final-images.json';
-import { ImageFrame, ShopButton, ShareRow, ProductCard } from '../components/ui';
+import { ImageFrame, ShopButton, ShareRow } from '../components/ui';
 import { useSaved } from '../lib/saved';
 import { SHARE_TEXT } from '../lib/saved';
 import { DEFAULT_EDIT, isEdited, processPhoto, downloadDataUrl, shareImage, type PhotoEdit } from '../lib/photo';
@@ -21,6 +21,63 @@ interface TryOnStatus {
 const AGE_KEY = 'viraas:age-confirmed';
 const previewStatus = womenPreviews as Record<string, { live: boolean; src: string } | undefined>;
 const menImages = menFinalImages as Record<string, string>;
+
+// Featured Try-On looks — a curated, diverse set of approved production looks (6 Men + 6 Women).
+// These are NOT ranked by any behavioural data (no "popular"/"bestseller"/"trending" claims): they are
+// hand-selected for category, occasion and visual diversity. Each opens the existing Try-On flow for that
+// exact approved look via its ?menLook= / ?womenLook= reference. No Couple looks are featured here.
+const FEATURED_MEN_IDS = ['men-look-001', 'men-look-045', 'men-look-131', 'men-look-025', 'men-look-152', 'men-look-108'];
+const FEATURED_WOMEN_IDS = ['women-look-034', 'women-look-003', 'women-look-159', 'women-look-113', 'women-look-077', 'women-look-153'];
+
+interface FeaturedLook {
+  id: string; kind: 'men' | 'women'; title: string; garment: string; colour: string;
+  occasionLabel: string; src: string; href: string; alt: string;
+}
+
+function buildFeatured(): { men: FeaturedLook[]; women: FeaturedLook[] } {
+  const men = FEATURED_MEN_IDS.map((id): FeaturedLook | null => {
+    const look = menLookById.get(id);
+    const src = menImages[id];
+    if (!look || !src) return null;
+    return {
+      id, kind: 'men' as const, title: `${look.colors.primary} ${look.garmentType}`,
+      garment: look.garmentType, colour: look.colors.primary, occasionLabel: menOccasionLabel(look.occasion),
+      src, href: `/try-on?menLook=${id}`, alt: `Men look ${look.referenceId} — ${look.garmentType}`,
+    };
+  }).filter((x): x is FeaturedLook => x !== null);
+  const women = FEATURED_WOMEN_IDS.map((id): FeaturedLook | null => {
+    const look = womenLookById.get(id);
+    const st = previewStatus[id];
+    if (!look || !st?.live || !st.src) return null;
+    return {
+      id, kind: 'women' as const, title: `${look.colors.primary} ${look.garmentType}`,
+      garment: look.garmentType, colour: look.colors.primary, occasionLabel: womenOccasionLabel(look.occasion),
+      src: st.src, href: `/try-on?womenLook=${id}`, alt: `Women look ${look.referenceId} — ${look.garmentType}`,
+    };
+  }).filter((x): x is FeaturedLook => x !== null);
+  return { men, women };
+}
+
+const FEATURED = buildFeatured();
+
+function FeaturedCard({ f }: { f: FeaturedLook }) {
+  return (
+    <article className="men-look-card" data-featured-look-id={f.id} data-tryon-kind={f.kind}>
+      <Link to={f.href} className="men-look-image">
+        <ImageFrame src={f.src} alt={f.alt} label={f.title} detail={f.occasionLabel} />
+      </Link>
+      <div className="men-look-body">
+        <div className="kicker">{f.occasionLabel}</div>
+        <Link to={f.href} className="men-look-title">{f.title}</Link>
+        <div className="men-look-meta"><span>{f.garment}</span><span>{f.colour}</span></div>
+        <div className="men-look-actions">
+          <Link className="btn btn-accent sm" to={f.href}>Try On</Link>
+          <Link to={f.href} className="link-arrow">Start try-on →</Link>
+        </div>
+      </div>
+    </article>
+  );
+}
 
 // A Try-On subject is a Men look, a QA-approved Women look, a Couple (her/him) outfit, or a shoppable product.
 interface Subject {
@@ -222,9 +279,6 @@ export default function TryOn() {
     if (r === 'unsupported') { downloadDataUrl(img, 'viraas-try-on.jpg'); alert('Sharing isn’t supported here, so your result was downloaded instead.'); }
   };
 
-  const eligible = PRODUCTS.filter((p) => p.tryOnEnabled)
-    .sort((a, b) => Number(!!b.imageUrl) - Number(!!a.imageUrl) || b.coupleIds.length - a.coupleIds.length).slice(0, 12);
-
   const notProduction = !status.configured; // no real provider connected yet
 
   return (
@@ -243,8 +297,13 @@ export default function TryOn() {
       </div>
 
       {step === 'pick' && (<>
-        <p>Try-On starts from an outfit. Pick a look to begin — or open any look from the <Link to="/men">Men</Link>, <Link to="/women">Women</Link> or <Link to="/couple-edit">Couple</Link> edits and tap “Try this look”.</p>
-        <div className="grid4">{eligible.map((p) => <ProductCard key={p.id} p={p} />)}</div>
+        <p>Try-On starts from an outfit. Pick a featured look below to begin — or open any look from the <Link to="/men">Men</Link>, <Link to="/women">Women</Link> or <Link to="/couple-edit">Couple</Link> edits and tap “Try this look”.</p>
+        <section className="tryon-featured">
+          <div className="kicker">Featured Try-On looks · Men</div>
+          <div className="men-look-grid">{FEATURED.men.map((f) => <FeaturedCard key={f.id} f={f} />)}</div>
+          <div className="kicker tryon-featured-sub">Featured Try-On looks · Women</div>
+          <div className="men-look-grid">{FEATURED.women.map((f) => <FeaturedCard key={f.id} f={f} />)}</div>
+        </section>
       </>)}
 
       {subject && step !== 'pick' && (

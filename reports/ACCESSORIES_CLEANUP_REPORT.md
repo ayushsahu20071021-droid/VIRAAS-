@@ -13,16 +13,27 @@ created; no replacements were added.
 - Catalog total: **861 → 845** (−16, all Beauty).
 - Beauty products remaining: **0** (verified in both catalog files).
 
-## 2. Remaining accessories (78) — support against approved look data
+## 1b. Bags removed (applied in the Bags-cleanup follow-up)
+
+All **18 Bags** accessory products were **removed at source** (the `Bags` category was deleted from
+`data-src/taxonomy.mjs`) and from the committed `src/data/catalog.json` / `catalog.client.json`. No approved Men (0)
+or Women (0) look references any bag / potli / clutch / sling, so Bags is unsupported by the approved catalog source
+of truth. Removing the source block means `build-catalog` will not regenerate any Bags product on future builds.
+
+- Catalog total: **845 → 827** (−18, all Bags).
+- Bags products remaining: **0** (verified in both catalog files and on a fresh `build-catalog` regen).
+
+## 2. Final accessories (60) — support against approved look data
 
 | Category | Count | Supported by approved looks? | Basis |
 |---|---:|:--:|---|
 | Jewellery | 30 | ✅ Yes | Jhumka / choker / bangle / oxidised / maang-tikka etc. described in **68 women** + **22 men** approved looks |
 | Footwear (women) | 18 | ✅ Yes (category) | Juttis/mojaris/kolhapuris described in **51 men** looks; women footwear is not itemised in approved women data, but footwear as a category is supported |
 | Men Footwear | 12 | ✅ Yes | Mojaris / kolhapuris / loafers described in **51 men** approved looks |
-| **Bags** | **18** | ❌ **No** | **No** approved Men or Women look mentions a bag / potli / clutch / sling (0 / 0) |
+| Bags | 0 | — | **Removed** — unsupported by approved data (see §1b) |
 
-**Total remaining accessory:true products: 78.**
+**Final accessories total: 60** (Jewellery 30 + Footwear 30 · Beauty 0 · Bags 0). Presentation remains the
+**Garba / Navratri Accessories Edit**. Jewellery and Footwear were not touched.
 
 ### Occasion correction (applied)
 
@@ -31,12 +42,10 @@ All 78 non-Beauty accessories previously carried a synthetic **all-5-occasion** 
 Garba/Navratri look catalogs, their occasion was corrected to **`["garba"]`** (the Garba/Navratri edit) in both
 `data-src/taxonomy.mjs` and the committed catalog files. No occasion was invented.
 
-## 3. Recommendation on Bags (needs your decision)
+## 3. Bags decision — RESOLVED (removed)
 
-**Bags (18)** are **not supported by any approved look** and, per the "keep only genuinely supported categories"
-directive, are candidates for removal. They were **not** removed this phase because only Beauty removal was explicitly
-approved. Options: (a) remove the `Bags` block from `data-src/taxonomy.mjs` (same mechanism as Beauty), or
-(b) keep them if you consider bags an intentional standalone accessory line. **No action taken yet.**
+Bags were confirmed unsupported (0 Men / 0 Women approved-look references) and have now been **removed at source**
+(see §1b). This is applied and persists through production rebuilds.
 
 ## 4. Accessory → supporting look → image status
 
@@ -49,8 +58,7 @@ whether the accessory has its **own** product image (**none do**), and `futureIm
 | Jewellery | 30 / 30 |
 | Footwear (women) | 18 / 18 |
 | Men Footwear | 12 / 12 |
-| Bags | 18 / 18 |
-| **Total** | **78 / 78** |
+| **Total** | **60 / 60** |
 
 **Image rule enforced in the report:** each accessory needs a **dedicated accessory product image** — outfit/look
 images must **never** be reused as an accessory product image. No accessory images were generated in this phase.

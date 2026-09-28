@@ -115,16 +115,9 @@ export const WOMEN = {
       { detail: 'hair accessory', fabric: 'Alloy', pattern: 'Handcrafted', title: 'Juda Pin Hair Accessory' },
     ],
   },
-  'Bags': {
-    sub: 'Bags', silhouette: 'Accessory', occasions: ['garba'], band: [299, 1499], tryOn: false, accessory: true,
-    colours: ['Black', 'Gold', 'Multicolour', 'Ivory', 'Red', 'Silver'],
-    variants: [
-      { detail: 'mirror potli', fabric: 'Cotton', pattern: 'Mirror Work', title: 'Mirror-Work Potli Bag' },
-      { detail: 'embroidered clutch', fabric: 'Silk Blend', pattern: 'Embroidered', title: 'Embroidered Festive Clutch' },
-      { detail: 'kutchi sling', fabric: 'Cotton', pattern: 'Embroidered', title: 'Kutchi Embroidered Sling Bag' },
-      { detail: 'box clutch', fabric: 'Brocade', pattern: 'Woven', title: 'Brocade Box Clutch' },
-    ],
-  },
+  // Bags category removed: no approved Men (0) or Women (0) look references any bag/potli/clutch/sling,
+  // so Bags is unsupported by the approved catalog source of truth. Removing this block stops
+  // build-catalog from regenerating any Bags product (persists through production rebuild).
   'Footwear': {
     sub: 'Footwear', silhouette: 'Accessory', occasions: ['garba'], band: [349, 1799], tryOn: false, accessory: true,
     colours: ['Gold', 'Silver', 'Black', 'Tan', 'Multicolour', 'Ivory'],

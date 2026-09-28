@@ -232,6 +232,8 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
 .men-occasion-tabs span { opacity: .65; font-size: .7rem; }
 .men-catalog-toolbar input { min-width: min(100%, 320px); padding: 11px 15px; border: 1px solid var(--line); border-radius: 99px; background: #fff; }
 .men-catalog-summary { color: var(--muted); font-size: .82rem; margin: 16px 0 20px; }
+.tryon-featured .kicker { margin-bottom: 12px; }
+.tryon-featured-sub { margin-top: 32px; }
 .men-look-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px 18px; }
 .men-look-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
 .men-look-image { display: block; }
