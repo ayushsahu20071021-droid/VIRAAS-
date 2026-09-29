@@ -1,30 +1,40 @@
-# VIRAAS — Current Trending Snapshot (767)
+# Trending — Current 767 (frozen snapshot)
 
-**Frozen snapshot of the live Trending page BEFORE deduplication.** Read-only; no records modified.
-Machine-readable: [`TRENDING_CURRENT_767.json`](./TRENDING_CURRENT_767.json).
+Snapshot of the current Trending marketplace universe = **all non-accessory catalog products**. No field was modified, rewritten, or invented; existing image/visual direction (`imagePrompt`) and `reference` are preserved verbatim. **No new image briefs were created.**
 
-## Totals
-| Metric | Value |
+- **Total: 767** (Men 324 · Women 443)
+- Amazon products: **0**
+
+## Field coverage (present / 767)
+| field | present |
 |---|---|
-| Records | 767 |
-| Unique product IDs | 767 |
-| Duplicate IDs | 0 |
-| Men | 324 |
-| Women | 443 |
+| merchant | 767 |
+| merchantUrl | 767 |
+| affiliateUrl | 0 |
+| affiliateSource | 0 |
+| title | 767 |
+| description | 767 |
+| colour | 767 |
+| fabric | 767 |
+| silhouette | 767 |
+| pattern | 767 |
+| embroidery | 767 |
+| price | 767 |
+| occasion | 767 |
+| styleTags | 767 |
+| reference | 427 |
+| imagePrompt_existingVisualDirection | 767 |
+| imageUrl_real | 0 |
+| generatedImageUrl | 0 |
 
-## Validation
-| Check | Result |
+## Merchant coverage
+| merchant | count |
 |---|---|
-| 767 records | PASS |
-| Unique product IDs | PASS |
-| Allowed merchants only | PASS |
-| Amazon = 0 | PASS |
-| Invented affiliate URLs = 0 | PASS |
-| Fake analytics/popularity/ratings/reviews/stock | NONE (not present in dataset) |
+| AJIO | 145 |
+| MYNTRA | 139 |
+| MEESHO | 127 |
+| NYKAA | 125 |
+| SHOPSY | 116 |
+| FLIPKART | 115 |
 
-Merchants present: SHOPSY, FLIPKART, MYNTRA, AJIO, MEESHO, NYKAA.
-
-## Fields captured per product
-productId, merchant, merchantUrl, affiliateUrl, affiliateSource, productName, category, subcategory, gender,
-occasion, colour, style, silhouette, fabric, details, approxPrice, reference, imageStatus.
-Missing source values are recorded as `NOT SPECIFIED` (nothing invented). All 767 are currently image-pending.
+Full per-product records: `reports/TRENDING_CURRENT_767.json`.
