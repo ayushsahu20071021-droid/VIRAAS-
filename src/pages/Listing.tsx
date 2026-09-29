@@ -2,6 +2,12 @@ import { useMemo } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { PRODUCTS, WORLDS, BUDGETS, catSlug, worldName, type Product } from '../lib/data';
 import { ProductCard, Empty } from '../components/ui';
+import trendingFinal from '../data/trending-final.client.json';
+
+// Phase 3: Trending resolves to the real 321-product deduped dataset (767 marketplace products
+// minus 236 women counterparts via authored sourceProductId, minus 210 men duplicates via the
+// deterministic Phase 2 exclusion map). This is a genuine dataset subset — not a CSS/pagination trick.
+const TRENDING_IDS = new Set((trendingFinal as { id: string }[]).map((p) => p.id));
 
 type Mode = 'gender' | 'trending' | 'accessories';
 type FacetKey = 'gender' | 'category' | 'occasion' | 'colour' | 'budget' | 'style' | 'silhouette' | 'fabric' | 'detail';
@@ -42,7 +48,7 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
     // Accessories view is driven directly by build-catalog's `accessory` source flag (Jewellery + Footwear = 60).
     // Traditional Layer is apparel (accessory:false) and is intentionally excluded here — it stays in Trending.
     if (mode === 'accessories') list = list.filter((p) => p.accessory);
-    if (mode === 'trending') list = list.filter((p) => !p.accessory);
+    if (mode === 'trending') list = list.filter((p) => TRENDING_IDS.has(p.id));
     return list;
   }, [mode, gender, category]);
 
