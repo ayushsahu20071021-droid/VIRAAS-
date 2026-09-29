@@ -50,10 +50,10 @@ export const FAQ = () => (
   <Prose title="FAQ">
     <h2>Do you sell these products?</h2><p>No. VIRAAS curates and links out. Checkout happens on the retailer's site.</p>
     <h2>Why is the price different on the retailer's site?</h2><p>Prices on VIRAAS are approximate prices for the style. Marketplace prices change often, so always check the retailer's price.</p>
-    <h2>Why does it say “Affiliate link not configured”?</h2><p>For that product, the Shop button opens a regular marketplace search. Affiliate tracking hasn't been set up for it yet.</p>
+    <h2>How do I shop a look?</h2><p>Where a look's Shop button is active, it opens the retailer so you can buy that piece. Some looks don't have an active Shop link yet.</p>
     <h2>Who can use AI Try-On?</h2><p>Photo upload is for users aged 18+. Users aged 16–17 can browse, save, share and shop.</p>
     <h2>Where are my Saved Looks stored?</h2><p>On your device only (browser localStorage).</p>
-    <h2>Why do some images say “Image pending”?</h2><p>We only publish original VIRAAS visuals that pass our quality check. Pending items are still in the generation queue.</p>
+    <h2>Why do some images say “Coming soon”?</h2><p>We only publish original VIRAAS visuals that pass our quality check. A few are still on the way.</p>
   </Prose>
 );
 export const Privacy = () => (
@@ -75,7 +75,7 @@ export const Terms = () => (
 export const AffiliateDisclosure = () => (
   <Prose title="Affiliate Disclosure">
     <p className="lead">VIRAAS may earn a commission when you shop through selected affiliate links.</p>
-    <p>This never changes the price you pay. Where a product says “Affiliate link not configured”, the link is a plain marketplace link with no affiliate tracking.</p>
+    <p>This never changes the price you pay. Some looks don't have an active Shop link yet — those simply aren't shoppable through VIRAAS until a verified link is added.</p>
     <p>We link only to Myntra, AJIO, Flipkart, Shopsy, Meesho and Nykaa.</p>
   </Prose>
 );

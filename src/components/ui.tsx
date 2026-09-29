@@ -17,10 +17,9 @@ export function ImageFrame({ src, alt, label, ratio = '3 / 4', eager = false, de
   return (
     <div className="frame pending" style={{ aspectRatio: ratio }} data-pending-image="1" role="img" aria-label={`${alt} — image pending`}>
       <div className="pending-inner">
-        <span className="pending-badge">{broken ? 'Image unavailable' : 'Image pending'}</span>
+        <span className="pending-badge">{broken ? 'Image unavailable' : 'Coming soon'}</span>
         <span className="pending-title">{label ?? alt}</span>
         {detail && <span className="pending-detail">{detail}</span>}
-        <span className="pending-note">Final approved VIRAAS image will be added here</span>
       </div>
     </div>
   );
@@ -39,13 +38,13 @@ export function SaveButton({ kind, id, image, compact }: { kind: 'product' | 'co
 }
 
 export function ShopButton({ p, block }: { p: Product; block?: boolean }) {
-  const href = p.affiliateUrl || p.merchantUrl;
+  // A Shop CTA is active ONLY when a verified affiliate URL exists. Otherwise it is shown disabled
+  // (never routed to a homepage/search/guessed URL) with no technical wording exposed to shoppers.
   return (
     <div className={`shop-wrap ${block ? 'block' : ''}`}>
-      <a className="btn btn-dark" href={href} target="_blank" rel="noopener noreferrer nofollow sponsored" data-merchant={p.merchant}>
-        Shop on {p.merchant}
-      </a>
-      {!p.affiliateUrl && <span className="aff-note">Affiliate link not configured</span>}
+      {p.affiliateUrl
+        ? <a className="btn btn-shop" href={p.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored" data-merchant={p.merchant}>Shop this look</a>
+        : <button className="btn btn-shop" disabled aria-disabled="true">Shop this look</button>}
     </div>
   );
 }
@@ -64,7 +63,9 @@ export function ProductCard({ p }: { p: Product }) {
         <div className="tags">{[worldName(p.occasion[0]), ...p.styleTags.slice(0, 2)].map((t) => <span key={t} className="tag">{t}</span>)}</div>
         <div className="pcard-actions">
           {p.tryOnEnabled && <Link className="btn btn-ghost sm" to={`/try-on?product=${p.id}`}>Try On</Link>}
-          <a className="btn btn-dark sm" href={p.affiliateUrl || p.merchantUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>
+          {p.affiliateUrl
+            ? <a className="btn btn-shop sm" href={p.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>
+            : <button className="btn btn-shop sm" disabled aria-disabled="true">Shop</button>}
         </div>
       </div>
     </article>

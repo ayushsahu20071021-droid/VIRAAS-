@@ -73,14 +73,14 @@ export function CoupleDetail() {
             <p className="shop-option-desc">{c.her.desc}</p>
             {aff.herAffiliateUrl
               ? <a className="btn btn-shop block" href={aff.herAffiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop for her</a>
-              : <><button className="btn btn-shop block" disabled aria-disabled="true">Shop for her</button><span className="aff-note-soft">Affiliate link not configured yet</span></>}
+              : <button className="btn btn-shop block" disabled aria-disabled="true">Shop for her</button>}
           </div>
           <div className="shop-option">
             <div className="kicker">For him</div>
             <p className="shop-option-desc">{c.him.desc}{c.layer ? `, with ${c.layer.desc}` : ''}</p>
             {aff.himAffiliateUrl
               ? <a className="btn btn-shop block" href={aff.himAffiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop for him</a>
-              : <><button className="btn btn-shop block" disabled aria-disabled="true">Shop for him</button><span className="aff-note-soft">Affiliate link not configured yet</span></>}
+              : <button className="btn btn-shop block" disabled aria-disabled="true">Shop for him</button>}
           </div>
         </div>
       </section>

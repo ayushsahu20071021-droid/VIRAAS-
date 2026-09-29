@@ -1,6 +1,9 @@
 :root {
-  --ink: #17120f; --ink-2: #3a302a; --muted: #7a6d64; --line: #e7dfd6; --paper: #faf6f1; --card: #fff;
-  --accent: #b3124f; --accent-2: #7a0f36; --gold: #b48a3c; --night: #120c0a;
+  /* VIRAAS luxury palette — Crimson Depth accent on warm Soft Pearl / Cotton neutrals.
+     PALETTE 1: Crimson Depth #710014 · Warm Sand #B38F6F · Soft Pearl #F2F1ED · Obsidian #161616
+     PALETTE 2: Cotton #EDEBDE · Cherry Red #810100 · Maroon #630102 · Noir #1B1716 */
+  --ink: #161616; --ink-2: #3a322f; --muted: #77695f; --line: #e3d9cc; --paper: #f2f1ed; --paper-2: #edebde; --card: #fbfaf6;
+  --accent: #710014; --accent-2: #630102; --accent-cherry: #810100; --sand: #b38f6f; --gold: #b38f6f; --night: #161616; --night-2: #1b1716;
   --serif: 'Cormorant Garamond', Georgia, serif; --sans: 'Inter', system-ui, -apple-system, sans-serif;
   --r: 14px;
 }
@@ -18,7 +21,7 @@ h3 { font-size: 1.35rem; }
 .kicker.light { color: #f3c9a8; }
 
 .announce { background: var(--night); color: #e9dccf; font-size: .74rem; letter-spacing: .08em; text-align: center; padding: 7px 12px; }
-.header { position: sticky; top: 0; z-index: 50; background: rgba(250,246,241,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.header { position: sticky; top: 0; z-index: 50; background: rgba(242,241,237,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .header-inner { max-width: 1360px; margin: 0 auto; display: flex; align-items: center; gap: 28px; padding: 14px 24px; }
 .logo { font-family: var(--serif); font-size: 1.9rem; letter-spacing: .28em; font-weight: 600; }
 .logo.light { color: #fff; }
@@ -40,8 +43,10 @@ h3 { font-size: 1.35rem; }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 22px; border-radius: 99px; border: 1px solid transparent; font-weight: 600; font-size: .86rem; letter-spacing: .03em; transition: .2s; white-space: nowrap; }
 .btn.sm { padding: 8px 14px; font-size: .78rem; }
 .btn.block { width: 100%; }
-.btn-dark { background: var(--ink); color: #fff; } .btn-dark:hover { background: #000; }
-.btn-accent { background: var(--accent); color: #fff; } .btn-accent:hover { background: var(--accent-2); }
+.btn-dark { background: var(--night); color: var(--paper); } .btn-dark:hover { background: var(--night-2); }
+.btn-accent { background: var(--accent); color: var(--paper); } .btn-accent:hover { background: var(--accent-2); } .btn-accent:active { background: var(--accent-cherry); }
+.btn-shop { background: var(--accent); color: var(--paper); } .btn-shop:hover { background: var(--accent-2); } .btn-shop:active { background: var(--accent-cherry); }
+.btn:disabled, .btn[disabled], .btn[aria-disabled="true"] { background: #e7ddd0; color: #9a8d80; cursor: default; pointer-events: none; border-color: transparent; }
 .btn-light { background: #fff; color: var(--ink); }
 .btn-outline-light { border-color: rgba(255,255,255,.7); color: #fff; }
 .btn-ghost { background: transparent; border-color: var(--line); color: var(--ink); } .btn-ghost:hover { border-color: var(--ink); }
@@ -198,7 +203,8 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
 .prose { max-width: 760px; } .prose p, .prose li { line-height: 1.7; } .prose .lead { font-size: 1.15rem; color: var(--ink-2); }
 .article-links { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; } .article-links h3 { width: 100%; }
 
-.footer { background: var(--night); color: #d9ccc0; margin-top: 40px; }
+.footer { background: var(--night); color: var(--paper); margin-top: 40px; }
+.footer-min { max-width: 1360px; margin: 0 auto; padding: 30px 24px; text-align: center; font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; color: var(--paper); }
 .footer-inner { max-width: 1360px; margin: 0 auto; padding: 50px 24px 30px; display: grid; grid-template-columns: 1.6fr repeat(4, 1fr); gap: 30px; }
 .footer h4 { font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: #fff; margin: 0 0 12px; }
 .footer a { display: block; font-size: .86rem; padding: 4px 0; color: #cdbfb2; } .footer a:hover { color: #fff; }
@@ -356,3 +362,7 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
   .vc-form-2 { grid-template-columns: 1fr; }
   .vc-preview { max-width: 40vw; }
 }
+
+/* Shop-the-look CTA block on Men/Women look detail pages */
+.look-shop { margin: 22px 0 10px; padding: 18px 0 4px; border-top: 1px solid var(--line); }
+.look-shop .kicker { margin-bottom: 10px; }
