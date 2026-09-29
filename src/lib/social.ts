@@ -21,6 +21,7 @@ export interface Profile {
   is18Plus: boolean;
   self?: boolean;
   relation?: Relation;
+  visibility?: 'public' | 'connections';
 }
 export interface IncomingRequest { id: string; from: Profile; createdAt: string }
 export interface OutgoingRequest { id: string; to: Profile; createdAt: string }
@@ -52,7 +53,7 @@ const post = (p: string, body?: unknown) => req(p, { method: 'POST', body: body 
 
 export const social = {
   me: () => req<{ ok: true; me: Profile | null }>('/me'),
-  createId: (p: { viraasId: string; displayName?: string; bio?: string; city?: string; instagramHandle?: string; is18Plus: boolean }) =>
+  createId: (p: { viraasId: string; displayName?: string; bio?: string; city?: string; instagramHandle?: string; is18Plus: boolean; visibility?: 'public' | 'connections' }) =>
     post('/session', p) as Promise<{ ok: true; me: Profile }>,
   updateMe: (p: Partial<Pick<Profile, 'displayName' | 'bio' | 'city' | 'instagramHandle'>>) =>
     req<{ ok: true; me: Profile }>('/me', { method: 'PATCH', body: JSON.stringify(p) }),

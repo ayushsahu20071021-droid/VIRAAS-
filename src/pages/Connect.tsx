@@ -12,12 +12,13 @@ function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
   const [bio, setBio] = useState('');
   const [city, setCity] = useState('');
   const [instagramHandle, setInstagramHandle] = useState('');
+  const [visibility, setVisibility] = useState<'public' | 'connections'>('public');
   const [age, setAge] = useState(false);
   const [err, setErr] = useState('');
   const [busy, setBusy] = useState(false);
   const submit = async () => {
     setErr(''); setBusy(true);
-    try { const r = await social.createId({ viraasId, displayName, bio, city, instagramHandle, is18Plus: age }); onDone(r.me); }
+    try { const r = await social.createId({ viraasId, displayName, bio, city, instagramHandle, is18Plus: age, visibility }); onDone(r.me); }
     catch (e) { setErr((e as Error).message); } finally { setBusy(false); }
   };
   return (
@@ -44,6 +45,12 @@ function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
             <small className="muted">Just a public handle — Instagram is never the chat backend.</small>
           </label>
         </div>
+        <label className="vc-label">Profile visibility
+          <select value={visibility} onChange={(e) => setVisibility(e.target.value as 'public' | 'connections')}>
+            <option value="public">Public — discoverable by everyone</option>
+            <option value="connections">Connections only — hidden from discovery</option>
+          </select>
+        </label>
         <label className="vc-check">
           <input type="checkbox" checked={age} onChange={(e) => setAge(e.target.checked)} />
           <span>I confirm I am 18 years or older. VIRAAS Connect is for adults only.</span>

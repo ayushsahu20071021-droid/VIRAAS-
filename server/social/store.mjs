@@ -73,14 +73,14 @@ export function publicProfile(user, viewerId = null) {
     createdAt: user.createdAt,
     // 18+ status is a public boolean; the DOB itself is NEVER exposed.
     is18Plus: user.is18Plus === true,
-    ...(isSelf ? { self: true } : {}),
+    ...(isSelf ? { self: true, visibility: user.visibility || 'public' } : {}),
   };
 }
 
 // ---- Users -------------------------------------------------------------------------------------
 const HANDLE_RE = /^[a-z0-9](?:[a-z0-9_.]{2,22}[a-z0-9])$/;
 
-export function createUser({ viraasId, displayName, bio, city, instagramHandle, is18Plus }) {
+export function createUser({ viraasId, displayName, bio, city, instagramHandle, is18Plus, visibility }) {
   const handle = String(viraasId || '').trim().toLowerCase();
   if (!HANDLE_RE.test(handle)) return { error: 400, message: 'Choose a VIRAAS ID: 4–24 letters, numbers, dot or underscore.' };
   if (viraasIndex.has(handle)) return { error: 409, message: 'That VIRAAS ID is already taken.' };
@@ -96,6 +96,8 @@ export function createUser({ viraasId, displayName, bio, city, instagramHandle, 
     instagramHandle: String(instagramHandle || '').trim().replace(/^@/, '').slice(0, 40),
     avatarSeed: crypto.randomBytes(4).toString('hex'),
     is18Plus: true,
+    // 'public' = discoverable in search; 'connections' = only shown to accepted connections.
+    visibility: visibility === 'connections' ? 'connections' : 'public',
     createdAt: now(),
   };
   users.set(uid, user);
@@ -115,6 +117,7 @@ export function updateUser(userId, patch) {
   if (patch.bio !== undefined) u.bio = String(patch.bio).trim().slice(0, 240);
   if (patch.city !== undefined) u.city = String(patch.city).trim().slice(0, 40);
   if (patch.instagramHandle !== undefined) u.instagramHandle = String(patch.instagramHandle).trim().replace(/^@/, '').slice(0, 40);
+  if (patch.visibility !== undefined) u.visibility = patch.visibility === 'connections' ? 'connections' : 'public';
   return u;
 }
 
@@ -124,6 +127,8 @@ export function searchUsers(viewerId, q = '') {
   for (const u of users.values()) {
     if (u.id === viewerId) continue;
     if (isBlockedEither(viewerId, u.id)) continue; // never surface blocked/blocking users
+    // 'connections'-visibility profiles are hidden from discovery unless already connected.
+    if (u.visibility === 'connections' && !findConnection(viewerId, u.id)) continue;
     if (term && !u.viraasId.includes(term) && !u.displayName.toLowerCase().includes(term)) continue;
     out.push({ ...publicProfile(u, viewerId), relation: relationTo(viewerId, u.id) });
   }

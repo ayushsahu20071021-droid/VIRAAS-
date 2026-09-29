@@ -49,8 +49,8 @@ const router = express.Router();
 // ---- Session / profile -------------------------------------------------------------------------
 // Create a VIRAAS ID (onboarding). Requires an explicit 18+ acknowledgement (enforced in the store).
 router.post('/session', (req, res) => {
-  const { viraasId, displayName, bio, city, instagramHandle, is18Plus } = req.body || {};
-  const out = store.createUser({ viraasId, displayName, bio, city, instagramHandle, is18Plus });
+  const { viraasId, displayName, bio, city, instagramHandle, is18Plus, visibility } = req.body || {};
+  const out = store.createUser({ viraasId, displayName, bio, city, instagramHandle, is18Plus, visibility });
   if (out.error) return res.status(out.error).json({ ok: false, message: out.message });
   setSessionCookie(res, store.signSession(out.user.id));
   res.json({ ok: true, me: store.publicProfile(out.user, out.user.id) });
