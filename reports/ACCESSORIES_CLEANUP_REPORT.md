@@ -35,6 +35,16 @@ of truth. Removing the source block means `build-catalog` will not regenerate an
 **Final accessories total: 60** (Jewellery 30 + Footwear 30 · Beauty 0 · Bags 0). Presentation remains the
 **Garba / Navratri Accessories Edit**. Jewellery and Footwear were not touched.
 
+### Traditional Layer excluded from the Accessories view (view fix)
+
+Traditional Layer (32 men Stole/Dupatta/Shawl products) is **apparel** (`accessory: false`), not an accessory. It had
+been appearing in the Accessories page via a special-case in `src/pages/Listing.tsx`
+(`… || p.category === 'Traditional Layer'`), inflating the page to 92. The Accessories view now filters strictly on
+build-catalog's **`accessory` source flag** (`list.filter((p) => p.accessory)`), so it shows exactly **60** and
+Traditional Layer can never reappear there — proven by a fresh `build-catalog` regeneration (accessory:true = 60,
+Traditional Layer stays `accessory:false`). Traditional Layer products remain apparel in the catalog / Trending
+(unchanged), and the women-look linkage (236/236) is untouched.
+
 ### Occasion correction (applied)
 
 All 78 non-Beauty accessories previously carried a synthetic **all-5-occasion** tag

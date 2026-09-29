@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
-import { PRODUCTS, WORLDS, BUDGETS, catSlug, ACCESSORY_CATS, worldName, type Product } from '../lib/data';
+import { PRODUCTS, WORLDS, BUDGETS, catSlug, worldName, type Product } from '../lib/data';
 import { ProductCard, Empty } from '../components/ui';
 
 type Mode = 'gender' | 'trending' | 'accessories';
@@ -39,7 +39,9 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
     let list = PRODUCTS;
     if (mode === 'gender') list = list.filter((p) => p.gender === gender);
     if (category) list = list.filter((p) => catSlug(p.category) === category);
-    if (mode === 'accessories') list = list.filter((p) => ACCESSORY_CATS.includes(p.category) || p.category === 'Traditional Layer');
+    // Accessories view is driven directly by build-catalog's `accessory` source flag (Jewellery + Footwear = 60).
+    // Traditional Layer is apparel (accessory:false) and is intentionally excluded here — it stays in Trending.
+    if (mode === 'accessories') list = list.filter((p) => p.accessory);
     if (mode === 'trending') list = list.filter((p) => !p.accessory);
     return list;
   }, [mode, gender, category]);
