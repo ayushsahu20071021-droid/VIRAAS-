@@ -12,6 +12,8 @@ import MenCatalog, { MenLookDetail } from './pages/MenCatalog';
 import WomenCatalog, { WomenLookDetail } from './pages/WomenCatalog';
 import Saved from './pages/Saved';
 import TryOn from './pages/TryOn';
+import Connect, { ConnectProfile } from './pages/Connect';
+import ChatList, { Conversation } from './pages/Chat';
 import { Journal, Article, About, Contact, FAQ, Privacy, Terms, AffiliateDisclosure, TryOnPrivacy, NotFound } from './pages/Static';
 import './styles.css';
 
@@ -38,6 +40,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="search" element={<Search />} />
           <Route path="saved" element={<Saved />} />
           <Route path="try-on" element={<TryOn />} />
+          <Route path="connect" element={<Connect />} />
+          <Route path="connect/u/:viraasId" element={<ConnectProfile />} />
+          <Route path="chat" element={<ChatList />} />
+          <Route path="chat/:conversationId" element={<Conversation />} />
           <Route path="journal" element={<Journal />} />
           <Route path="journal/:slug" element={<Article />} />
           <Route path="about" element={<About />} />

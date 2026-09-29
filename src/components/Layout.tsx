@@ -53,6 +53,7 @@ export default function Layout() {
             {item('/couple-edit', 'Couple Edit')}
             {item('/trending', 'Trending')}
             {item('/accessories', 'Accessories')}
+            {item('/connect', 'Connect')}
             {item('/journal', 'Journal')}
           </nav>
           <div className="header-actions">
