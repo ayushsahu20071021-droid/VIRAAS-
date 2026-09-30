@@ -2,25 +2,8 @@ import { useMemo } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { PRODUCTS, WORLDS, BUDGETS, catSlug, worldName, type Product } from '../lib/data';
 import { ProductCard, Empty } from '../components/ui';
-import counterpartImages from '../data/trending-counterpart-images.client.json';
-
-// Trending is ONE unified feed of all 767 styles = 210 Men-approved counterparts + 236 Women-approved
-// counterparts + 321 independent Trending products. The 446 counterparts reuse their approved look
-// images (below); the 321 independents keep their honest "coming soon" frame. sourceType is internal
-// metadata only — it NEVER becomes a visible grouping (one mixed grid, deterministic curated order).
-type Counterpart = { src: string; lookId: string; gender: string; sourceType: string };
-const COUNTERPART = counterpartImages as Record<string, Counterpart | undefined>;
-const withTrendingImage = (p: Product): Product => {
-  const c = COUNTERPART[p.id];
-  return c ? { ...p, imageUrl: c.src } : p;
-};
-// Deterministic FNV-1a hash → a stable curated order that interleaves men/women/independent without
-// grouping and never reshuffles between refreshes.
-const stableKey = (id: string): number => {
-  let h = 2166136261;
-  for (let i = 0; i < id.length; i++) { h ^= id.charCodeAt(i); h = Math.imul(h, 16777619); }
-  return h >>> 0;
-};
+// NOTE: the Trending feed has its own component (src/pages/Trending.tsx) so its Men/Women cards render
+// the EXACT authoritative look records. This Listing component handles gender + accessories views only.
 
 type Mode = 'gender' | 'trending' | 'accessories';
 type FacetKey = 'gender' | 'category' | 'occasion' | 'colour' | 'budget' | 'style' | 'silhouette' | 'fabric' | 'detail';
@@ -62,7 +45,6 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
     // Traditional Layer is apparel (accessory:false) and is intentionally excluded here — it stays in Trending.
     if (mode === 'accessories') list = list.filter((p) => p.accessory);
     // Unified Trending feed = every non-accessory style (the 767). Filters operate on this same set.
-    if (mode === 'trending') list = list.filter((p) => !p.accessory);
     return list;
   }, [mode, gender, category]);
 
@@ -88,7 +70,6 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
     const sorted = [...list];
     if (sort === 'price-asc') sorted.sort((a, b) => a.price - b.price);
     else if (sort === 'price-desc') sorted.sort((a, b) => b.price - a.price);
-    else if (mode === 'trending') sorted.sort((a, b) => stableKey(a.id) - stableKey(b.id)); // deterministic mixed order
     else sorted.sort((a, b) => Number(!!b.imageUrl) - Number(!!a.imageUrl) || b.coupleIds.length - a.coupleIds.length);
     return sorted;
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -147,7 +128,7 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
           </div>
           {results.length === 0 ? <Empty title="No styles match these filters"><button className="btn btn-dark" onClick={() => setSp({}, { replace: true })}>Clear filters</button></Empty> : (
             <>
-              <div className="grid4">{shown.map((p) => <ProductCard key={p.id} p={mode === 'trending' ? withTrendingImage(p) : p} />)}</div>
+              <div className="grid4">{shown.map((p) => <ProductCard key={p.id} p={p} />)}</div>
               {shown.length < results.length && <div className="center"><button className="btn btn-ghost" onClick={() => { const n = new URLSearchParams(sp); n.set('page', String(page + 1)); setSp(n, { replace: true }); }}>Show more ({results.length - shown.length} left)</button></div>}
             </>
           )}

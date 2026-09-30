@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Listing from './pages/Listing';
+import Trending from './pages/Trending';
 import ProductPage from './pages/Product';
 import { CoupleEdit, CoupleDetail } from './pages/Couples';
 import { Occasions, World } from './pages/Occasions';
@@ -30,7 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="men/:category" element={<MenCatalog />} />
           <Route path="men-look/:id" element={<MenLookDetail />} />
           <Route path=":gender/:category" element={<Listing mode="gender" />} />
-          <Route path="trending" element={<Listing mode="trending" />} />
+          <Route path="trending" element={<Trending />} />
           <Route path="accessories" element={<Listing mode="accessories" />} />
           <Route path="product/:id" element={<ProductPage />} />
           <Route path="occasions" element={<Occasions />} />
