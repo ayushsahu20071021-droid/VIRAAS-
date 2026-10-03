@@ -1,12 +1,14 @@
 import raw from '../data/women-look-catalog.client.json';
 import garba001017 from '../data/women-garba-taxonomy-001-017.json';
 import garba018034 from '../data/women-garba-taxonomy-018-034.json';
+import garba025034 from '../data/women-garba-taxonomy-025-034.json';
 import garba035051 from '../data/women-garba-taxonomy-035-051.json';
 import garba052068 from '../data/women-garba-taxonomy-052-068.json';
 
 const garbaVisualTaxonomy = [
   ...garba001017,
   ...garba018034,
+  ...garba025034,
   ...garba035051,
   ...garba052068,
 ];
