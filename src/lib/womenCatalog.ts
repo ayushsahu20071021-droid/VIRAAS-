@@ -1,6 +1,22 @@
 import raw from '../data/women-look-catalog.client.json';
-export type WomenLook = typeof raw[number];
-export const WOMEN_LOOKS = raw as WomenLook[];
+import garba001017 from '../data/women-garba-taxonomy-001-017.json';
+import garba018034 from '../data/women-garba-taxonomy-018-034.json';
+import garba035051 from '../data/women-garba-taxonomy-035-051.json';
+import garba052068 from '../data/women-garba-taxonomy-052-068.json';
+
+const garbaVisualTaxonomy = [
+  ...garba001017,
+  ...garba018034,
+  ...garba035051,
+  ...garba052068,
+];
+const garbaById = new Map(garbaVisualTaxonomy.map((look) => [look.id, look]));
+
+export type WomenLook = typeof raw[number] & Partial<typeof garbaVisualTaxonomy[number]>;
+export const WOMEN_LOOKS = raw.map((look) => ({
+  ...look,
+  ...(garbaById.get(look.id) ?? {}),
+})) as WomenLook[];
 export const womenLookById = new Map(WOMEN_LOOKS.map((look) => [look.id, look]));
 export const womenOccasions = [
   { slug: 'garba', label: 'Garba / Navratri', range: '001–068' },
