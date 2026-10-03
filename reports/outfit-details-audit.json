@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-09-28T17:33:09.927Z",
+  "men": {
+    "gender": "men",
+    "total": 210,
+    "covered": 210,
+    "missing": 0,
+    "extra": 0,
+    "empty": 0,
+    "generic": 0
+  },
+  "women": {
+    "gender": "women",
+    "total": 236,
+    "covered": 236,
+    "missing": 0,
+    "extra": 0,
+    "empty": 0,
+    "generic": 0
+  },
+  "totals": {
+    "menDetails": "210/210",
+    "womenDetails": "236/236",
+    "combined": "446/446",
+    "remainingGenericMenWomen": 0,
+    "emptyInvalidMenWomen": 0
+  },
+  "couples": {
+    "total": 100,
+    "contentPreserved": "100/100",
+    "herMappingValid": "100/100",
+    "himMappingValid": "100/100",
+    "crossMappedCouples": 0,
+    "shopTheLookHer": "100/100",
+    "shopTheLookHim": "100/100",
+    "tryOnHer": "100/100",
+    "tryOnHim": "100/100",
+    "affiliatePlaceholdersMissing": 0,
+    "inventedAffiliateUrls": 0
+  },
+  "productCatalogAffiliateNonEmpty": 0
+}

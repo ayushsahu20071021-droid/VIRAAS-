@@ -1,0 +1,291 @@
+{
+  "name": "render-smoke",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "GET / → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /occasions → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /occasions/garba → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /occasions/college-fest → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /occasions/diwali → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /occasions/festive-party → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /occasions/traditional → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /couple-edit → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /couple-edit?world=garba → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /couple-edit/garba-01 → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /couple-edit/traditional-20 → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /trending → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /trending?budget=under-999 → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /accessories → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /search?q=garba%20men → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /search?q=couple%20garba → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /saved → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /try-on → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /try-on?product=w-lehenga-rani-pink-gota-border-dupatta → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /product/w-lehenga-rani-pink-gota-border-dupatta → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /product/m-footwear-brown-loafers → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /journal → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /journal/garba-night-outfit-formula → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /about → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /contact → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /faq → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /privacy → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /terms → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /affiliate-disclosure → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /ai-try-on-privacy → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/lehenga → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/jewellery → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/footwear → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/festive-kurta-set → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/traditional-layer → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/footwear → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/modern-kurta → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/chaniya-choli → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/ethnic-shirt → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/printed-ethnic-shirt → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/sharara → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/saree → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/anarkali → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/pre-draped-saree → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/gharara → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/kurta-sets → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/festive-jacket → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/embroidered-ethnic-shirt → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/bags → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/beauty → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/festive-separates → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "try-on mode: demo (TRYON_MODE=demo)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "try-on without 18+ confirmation rejected (403)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "try-on demo response clearly labelled DEMO",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no secrets in try-on response",
+      "level": "error"
+    }
+  ]
+}

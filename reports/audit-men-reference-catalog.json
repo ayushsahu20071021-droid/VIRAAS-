@@ -1,0 +1,16 @@
+{
+  "total": 210,
+  "perOccasion": {
+    "garba": 42,
+    "college-fest": 42,
+    "diwali": 42,
+    "festive-party": 42,
+    "traditional": 42
+  },
+  "canonicalReferences": 210,
+  "missing": [],
+  "duplicateReferences": [],
+  "amazonPresent": false,
+  "placeholderPolicy": "UI renders intentional placeholders; no Men generated image is used by the preview",
+  "sourceSheets": 5
+}

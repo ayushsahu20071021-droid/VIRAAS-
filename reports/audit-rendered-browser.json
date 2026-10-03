@@ -1,0 +1,291 @@
+{
+  "name": "audit-rendered-browser",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "/ — real imgs 11, pending 36",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/occasions — real imgs 1, pending 4",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/occasions/garba — real imgs 7, pending 16",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/occasions/college-fest — real imgs 0, pending 23",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/occasions/diwali — real imgs 0, pending 23",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/occasions/festive-party — real imgs 0, pending 23",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/occasions/traditional — real imgs 0, pending 23",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/couple-edit — real imgs 10, pending 90",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/couple-edit?world=garba — real imgs 10, pending 10",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/couple-edit/garba-01 — real imgs 4, pending 6",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/couple-edit/traditional-20 — real imgs 0, pending 9",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/trending — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/trending?budget=under-999 — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/accessories — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/search?q=garba%20men — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/search?q=couple%20garba — real imgs 6, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/saved — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/try-on — real imgs 0, pending 12",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/try-on?product=w-lehenga-rani-pink-gota-border-dupatta — real imgs 0, pending 1",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/w-lehenga-rani-pink-gota-border-dupatta — real imgs 1, pending 7",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/m-footwear-brown-loafers — real imgs 0, pending 6",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/journal — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/journal/garba-night-outfit-formula — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/about — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/contact — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/faq — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/privacy — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/terms — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/affiliate-disclosure — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/ai-try-on-privacy — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/lehenga — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/jewellery — real imgs 0, pending 30",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/footwear — real imgs 0, pending 18",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men/festive-kurta-set — real imgs 0, pending 40",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men/traditional-layer — real imgs 0, pending 32",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men/footwear — real imgs 0, pending 12",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men/modern-kurta — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/chaniya-choli — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men/ethnic-shirt — real imgs 0, pending 32",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men/printed-ethnic-shirt — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/sharara — real imgs 0, pending 42",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/saree — real imgs 0, pending 48",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/anarkali — real imgs 0, pending 45",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/pre-draped-saree — real imgs 0, pending 34",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/gharara — real imgs 0, pending 30",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/kurta-sets — real imgs 0, pending 42",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men/festive-jacket — real imgs 0, pending 26",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men/embroidered-ethnic-shirt — real imgs 0, pending 30",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/bags — real imgs 0, pending 18",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/beauty — real imgs 0, pending 16",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/men/festive-separates — real imgs 0, pending 14",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "main nav: Women · Men · Occasions · Couple Edit · Trending · Accessories · Journal",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "homepage shows exactly 5 worlds: Garba, College Fest, Diwali, Festive Party, Traditional",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "hero copy + 3 CTAs",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "couple edit renders 100 looks",
+      "level": "error"
+    }
+  ]
+}

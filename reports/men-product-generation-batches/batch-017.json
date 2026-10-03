@@ -1,0 +1,316 @@
+{
+  "batchNumber": 17,
+  "startIndex": 161,
+  "endIndex": 170,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-modern-kurta-black-contemporary-with-white-trousers",
+      "title": "Black Contemporary With White Trousers Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "contemporary with white trousers",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2699,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black contemporary kurta with white and ivory trousers, black, cotton fabric appearance, contemporary with white trousers details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference GARBA-REF-06, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-black-contemporary-with-white-trousers.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-black-embroidered-yoke",
+      "title": "Black Embroidered-Yoke Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "embroidered yoke",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1599,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black embroidered-yoke kurta with embroidered yoke, black, cotton fabric appearance, embroidered yoke details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-black-embroidered-yoke.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-black-gold-motifs",
+      "title": "Black Gold Motifs Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "gold motifs",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2399,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's charcoal grey ethnic kurta with repeating gold and cream traditional motifs and an embroidered neckline and cuffs, dark lower garment, black, cotton fabric appearance, gold motifs details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference LOOK-14, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-black-gold-motifs.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-black-solid",
+      "title": "Black Linen-Blend Mandarin Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2499,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black kurta, black, linen fabric appearance, solid details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-black-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-black-mirror-sequin",
+      "title": "Black Mirror-Sequin Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Sequinned",
+      "embroidery": "mirror sequin",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2599,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black mirror-sequin kurta, black, georgette fabric appearance, mirror sequin details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-black-mirror-sequin.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-black-mirror-work",
+      "title": "Black Selective Mirror-Work Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Mirror Work",
+      "embroidery": "mirror work",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1299,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black selective mirror-work kurta with mirror work, black, cotton fabric appearance, mirror work details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-black-mirror-work.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-black-textured-with-ivory-trousers",
+      "title": "Black Textured With Ivory Trousers Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "textured with ivory trousers",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1199,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black textured and embroidered kurta with ivory white trousers, black, cotton fabric appearance, textured with ivory trousers details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference GARBA-REF-09, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-black-textured-with-ivory-trousers.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-black-with-ivory-lower",
+      "title": "Black With Ivory Lower Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "with ivory lower",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 699,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black kurta with an ivory and white lower garment, black, cotton fabric appearance, with ivory lower details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference GARBA-REF-17, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-black-with-ivory-lower.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-black-with-ivory-patterned-stole",
+      "title": "Black With Ivory Patterned Stole Cotton Modern Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Black",
+      "secondaryColours": [
+        "Gold",
+        "Multicolour"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "with ivory patterned stole",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 599,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's black festive kurta with an ivory patterned stole and a light lower garment, black, cotton fabric appearance, with ivory patterned stole details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference GARBA-REF-02, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-black-with-ivory-patterned-stole.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-modern-kurta-brown-block-print",
+      "title": "Brown Block-Print Cotton Kurta",
+      "category": "Modern Kurta",
+      "subcategory": "Kurta",
+      "colour": "Brown",
+      "secondaryColours": [],
+      "pattern": "Block Print",
+      "embroidery": "block print",
+      "silhouette": "Contemporary Straight / Short Kurta",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1899,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's brown block-print cotton kurta with block print, brown, cotton fabric appearance, block print details, contemporary straight / short kurta silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-modern-kurta-brown-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

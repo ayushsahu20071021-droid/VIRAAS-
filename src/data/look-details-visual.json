@@ -1,0 +1,1850 @@
+{
+  "men": {
+    "men-look-001": {
+      "poseFraming": "Standing · three-quarter (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-002": {
+      "poseFraming": "Standing · three-quarter (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-003": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-004": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-005": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-006": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-007": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-008": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-009": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-010": {
+      "poseFraming": "Standing · three-quarter (mirror selfie)",
+      "settingLight": "Indoor · warm lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-011": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-012": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-013": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-014": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor festive · warm night lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-015": {
+      "poseFraming": "Standing · three-quarter (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-016": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-017": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-018": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-019": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-020": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-021": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-022": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-023": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-024": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "White sneakers"
+    },
+    "men-look-025": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-026": {
+      "poseFraming": "Seated · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-027": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-028": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Watch"
+    },
+    "men-look-029": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor festive · warm night lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-030": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-031": {
+      "poseFraming": "Seated · mid-length",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-032": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-033": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · warm lighting"
+    },
+    "men-look-034": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-035": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-036": {
+      "poseFraming": "Seated · mid-length",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "White shoes"
+    },
+    "men-look-037": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-038": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-039": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-040": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-041": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-042": {
+      "poseFraming": "Seated · mid-length",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-043": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-044": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-045": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-046": {
+      "poseFraming": "Seated · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-047": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-048": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-049": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-050": {
+      "poseFraming": "Walking · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-051": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-052": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-053": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-054": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-055": {
+      "poseFraming": "Seated · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-056": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-057": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting",
+      "footwear": "Black shoes"
+    },
+    "men-look-058": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-059": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-060": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-061": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-062": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Loafers"
+    },
+    "men-look-063": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-064": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-065": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Indoor · warm lighting",
+      "footwear": "Black shoes"
+    },
+    "men-look-066": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-067": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-068": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-069": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-070": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-071": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Black shoes"
+    },
+    "men-look-072": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-073": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-074": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-075": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-076": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-077": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-078": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-079": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-080": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-081": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-082": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-083": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-084": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-085": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-086": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-087": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-088": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-089": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Black shoes"
+    },
+    "men-look-090": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-091": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-092": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-093": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting",
+      "footwear": "Brown shoes"
+    },
+    "men-look-094": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-095": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-096": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Loafers",
+      "accessories": "Sunglasses"
+    },
+    "men-look-097": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-098": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-099": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-100": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-101": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "footwear": "Black shoes"
+    },
+    "men-look-102": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-103": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-104": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-105": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-106": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-107": {
+      "poseFraming": "Walking · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-108": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-109": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-110": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-111": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Brown shoes"
+    },
+    "men-look-112": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-113": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-114": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-115": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting",
+      "footwear": "Brown loafers"
+    },
+    "men-look-116": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-117": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-118": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-119": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-120": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-121": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-122": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Sandals"
+    },
+    "men-look-123": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-124": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "men-look-125": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-126": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · warm lighting"
+    },
+    "men-look-127": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-128": {
+      "poseFraming": "Seated · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-129": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting",
+      "footwear": "Brown shoes"
+    },
+    "men-look-130": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-131": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Sandals",
+      "accessories": "Sunglasses"
+    },
+    "men-look-132": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-133": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-134": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-135": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-136": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-137": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-138": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-139": {
+      "poseFraming": "Seated · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-140": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-141": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Brown shoes",
+      "accessories": "Sunglasses"
+    },
+    "men-look-142": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-143": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-144": {
+      "poseFraming": "Standing · three-quarter",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-145": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-146": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting",
+      "footwear": "Beige shoes"
+    },
+    "men-look-147": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-148": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-149": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "footwear": "Brown shoes"
+    },
+    "men-look-150": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-151": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting",
+      "footwear": "Brown shoes"
+    },
+    "men-look-152": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-153": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-154": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-155": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Loafers",
+      "accessories": "Sunglasses"
+    },
+    "men-look-156": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-157": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-158": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "footwear": "Sandals"
+    },
+    "men-look-159": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-160": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-161": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-162": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-163": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-164": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-165": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-166": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-167": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "footwear": "Sandals"
+    },
+    "men-look-168": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-169": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · warm lighting"
+    },
+    "men-look-170": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-171": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-172": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · warm lighting"
+    },
+    "men-look-173": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-174": {
+      "poseFraming": "Seated · mid-length",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-175": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-176": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-177": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-178": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-179": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-180": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · warm lighting"
+    },
+    "men-look-181": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-182": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-183": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-184": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting",
+      "footwear": "Brown shoes"
+    },
+    "men-look-185": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-186": {
+      "poseFraming": "Standing · three-quarter (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-187": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-188": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-189": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-190": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-191": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-192": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-193": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-194": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-195": {
+      "poseFraming": "Standing · full-body (mirror selfie)",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "men-look-196": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-197": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "accessories": "Watch"
+    },
+    "men-look-198": {
+      "poseFraming": "Walking · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-199": {
+      "poseFraming": "Standing · mid-length",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-200": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-201": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · warm lighting"
+    },
+    "men-look-202": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-203": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "men-look-204": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-205": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "men-look-206": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting",
+      "accessories": "Sunglasses"
+    },
+    "men-look-207": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "men-look-208": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · warm lighting"
+    },
+    "men-look-209": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Sunglasses"
+    },
+    "men-look-210": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    }
+  },
+  "women": {
+    "women-look-001": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-002": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-003": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-004": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-005": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-006": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-007": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-008": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-009": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-010": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-011": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-012": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-013": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-014": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-015": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-016": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-017": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-018": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-019": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-020": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-021": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-022": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-023": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-024": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-025": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-026": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-027": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-028": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-029": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-030": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-031": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-032": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-033": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-034": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-035": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-036": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-037": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-038": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-039": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-040": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-041": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-042": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "women-look-043": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-044": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-045": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-046": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-047": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-048": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-049": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-050": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-051": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-052": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-053": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-054": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-055": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-056": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor festive · warm night lighting"
+    },
+    "women-look-057": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-058": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-059": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-060": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-061": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-062": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-063": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-064": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-065": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-066": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-067": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-068": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-069": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-070": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-071": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-072": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-073": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Handbag"
+    },
+    "women-look-074": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-075": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-076": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-077": {
+      "poseFraming": "Walking · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-078": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-079": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-080": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "women-look-081": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-082": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-083": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-084": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-085": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-086": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-087": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-088": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-089": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight",
+      "accessories": "Handbag"
+    },
+    "women-look-090": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-091": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-092": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-093": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-094": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-095": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-096": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-097": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-098": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-099": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-100": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-101": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-102": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting",
+      "accessories": "Handbag"
+    },
+    "women-look-103": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-104": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-105": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting",
+      "accessories": "Handbag"
+    },
+    "women-look-106": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-107": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-108": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-109": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-110": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-111": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-112": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-113": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-114": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-115": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-116": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-117": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-118": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-119": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-120": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-121": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-122": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-123": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-124": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-125": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-126": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-127": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-128": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-129": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-130": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-131": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-132": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-133": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-134": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-135": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-136": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-137": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-138": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-139": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-140": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-141": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-142": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-143": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-144": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-145": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-146": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-147": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-148": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-149": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-150": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-151": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-152": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-153": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-154": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-155": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "accessories": "Handbag"
+    },
+    "women-look-156": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-157": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-158": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "women-look-159": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-160": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-161": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-162": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-163": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-164": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-165": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-166": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-167": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-168": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-169": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-170": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-171": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-172": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-173": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-174": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-175": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-176": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-177": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-178": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-179": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-180": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-181": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-182": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-183": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-184": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-185": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-186": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-187": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "women-look-188": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-189": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-190": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-191": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-192": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-193": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-194": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-195": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-196": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "accessories": "Handbag"
+    },
+    "women-look-197": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-198": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-199": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Studio · soft diffused lighting"
+    },
+    "women-look-200": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-201": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-202": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-203": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-204": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-205": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-206": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-207": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-208": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-209": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-210": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-211": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-212": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-213": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-214": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting",
+      "accessories": "Handbag"
+    },
+    "women-look-215": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-216": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-217": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-218": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-219": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-220": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-221": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-222": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-223": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-224": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-225": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-226": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Indoor · warm lighting"
+    },
+    "women-look-227": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-228": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-229": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-230": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-231": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting",
+      "accessories": "Handbag"
+    },
+    "women-look-232": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-233": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-234": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    },
+    "women-look-235": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Outdoor · natural daylight"
+    },
+    "women-look-236": {
+      "poseFraming": "Standing · full-body",
+      "settingLight": "Heritage/palace setting · warm lighting"
+    }
+  }
+}

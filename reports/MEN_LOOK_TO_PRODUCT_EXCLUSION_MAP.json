@@ -1,0 +1,4087 @@
+[
+  {
+    "menLook": "men-look-001",
+    "lookGarment": "Kurta",
+    "lookColour": "Off-White",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-beige-3d-floral-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-002",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-black-3d-floral-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-003",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-black-embroidered-kurta-with-white-pyjama",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-004",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "White",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-white-3d-floral-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-005",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-white-self-stripe",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-006",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-black-self-stripe",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-007",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-black-solid",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-008",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-black-charcoal-with-white-trousers",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-009",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-black-chikankari",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-010",
+    "lookGarment": "Kurta",
+    "lookColour": "Charcoal",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-beige-embroidered-kurta-with-white-pyjama",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-011",
+    "lookGarment": "Kurta",
+    "lookColour": "Maroon",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-maroon-3d-floral-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-012",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "Off-White",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-beige-self-stripe",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-013",
+    "lookGarment": "Kurta",
+    "lookColour": "Navy",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-navy-3d-floral-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-014",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-black-contemporary-with-white-trousers",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-015",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-festive-jacket-black-burgundy-floral-pattern",
+    "productCategory": "Festive Jacket",
+    "productColour": "Black",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1050); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-016",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Royal-Blue",
+    "lookOccasion": "garba",
+    "productId": "m-festive-jacket-beige-solid",
+    "productCategory": "Festive Jacket",
+    "productColour": "Beige",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1000); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-017",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-black-embroidered-yoke",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-018",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-cream-3d-floral-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-019",
+    "lookGarment": "Kurta",
+    "lookColour": "Rose",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-beige-solid",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-020",
+    "lookGarment": "Kurta",
+    "lookColour": "Navy",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-navy-embroidered-kurta-with-white-pyjama",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-021",
+    "lookGarment": "Kurta",
+    "lookColour": "Navy",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-navy-solid",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-022",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-black-gold-motifs",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-023",
+    "lookGarment": "Kurta",
+    "lookColour": "Wine",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-wine-3d-floral-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Wine",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-024",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "White",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-white-solid",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-025",
+    "lookGarment": "Ethnic Shirt",
+    "lookColour": "Red",
+    "lookOccasion": "garba",
+    "productId": "m-embroidered-ethnic-shirt-beige-heart-motif-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-026",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-cream-embroidered-kurta-with-white-pyjama",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-027",
+    "lookGarment": "Kurta",
+    "lookColour": "Beige",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-beige-tonal-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-028",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "Cream",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-cream-self-stripe",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-029",
+    "lookGarment": "Kurta",
+    "lookColour": "Blue",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-cream-solid",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-030",
+    "lookGarment": "Kurta",
+    "lookColour": "Mint",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-mint-copper-thread-placket-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "Mint",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-031",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-black-mirror-sequin",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-032",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-cream-tonal-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-033",
+    "lookGarment": "Kurta",
+    "lookColour": "Pink",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-ivory-3d-floral-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-034",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "Cream",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-cream-chikankari",
+    "productCategory": "Modern Kurta",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-035",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-black-mirror-work",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-036",
+    "lookGarment": "Kurta",
+    "lookColour": "Pink",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-ivory-self-stripe",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-037",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-cream-embroidered",
+    "productCategory": "Modern Kurta",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-038",
+    "lookGarment": "Kurta",
+    "lookColour": "Off-White",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-ivory-solid",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-039",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "White",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-white-tonal-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-040",
+    "lookGarment": "Kurta",
+    "lookColour": "Maroon",
+    "lookOccasion": "garba",
+    "productId": "m-festive-kurta-set-maroon-embroidered-kurta-with-white-pyjama",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-041",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-white-chikankari",
+    "productCategory": "Modern Kurta",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-042",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "garba",
+    "productId": "m-modern-kurta-white-embroidered",
+    "productCategory": "Modern Kurta",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-043",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-white-embroidered-with-charcoal-lower",
+    "productCategory": "Modern Kurta",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-044",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-cream-embroidered-placket",
+    "productCategory": "Modern Kurta",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-045",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-black-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-046",
+    "lookGarment": "Kurta",
+    "lookColour": "Charcoal",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-beige-embroidered-placket",
+    "productCategory": "Modern Kurta",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-047",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-cream-embroidered-yoke",
+    "productCategory": "Modern Kurta",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-048",
+    "lookGarment": "Kurta",
+    "lookColour": "Beige",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-beige-mirror-sequin",
+    "productCategory": "Modern Kurta",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-049",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-white-embroidered-yoke",
+    "productCategory": "Modern Kurta",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-050",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-white-light-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-051",
+    "lookGarment": "Kurta",
+    "lookColour": "Beige",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-beige-sequin-stripe",
+    "productCategory": "Modern Kurta",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-052",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-white-minimal-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-053",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-cream-pintuck",
+    "productCategory": "Modern Kurta",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-054",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-cream-plain",
+    "productCategory": "Modern Kurta",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-055",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-white-pintuck",
+    "productCategory": "Modern Kurta",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-056",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-white-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-057",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-white-with-hot-pink-embroidered-stole",
+    "productCategory": "Modern Kurta",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-058",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-cream-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-059",
+    "lookGarment": "Kurta",
+    "lookColour": "Blue",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-beige-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-060",
+    "lookGarment": "Kurta",
+    "lookColour": "Pink",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-black-textured-with-ivory-trousers",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-061",
+    "lookGarment": "Kurta",
+    "lookColour": "Maroon",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-maroon-chikankari",
+    "productCategory": "Modern Kurta",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-062",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-cream-textured",
+    "productCategory": "Modern Kurta",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-063",
+    "lookGarment": "Kurta",
+    "lookColour": "Beige",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-black-with-ivory-lower",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-064",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-black-with-ivory-patterned-stole",
+    "productCategory": "Modern Kurta",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-065",
+    "lookGarment": "Kurta",
+    "lookColour": "Red",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-brown-block-print",
+    "productCategory": "Modern Kurta",
+    "productColour": "Brown",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-066",
+    "lookGarment": "Kurta",
+    "lookColour": "Navy",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-navy-chikankari",
+    "productCategory": "Modern Kurta",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-067",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-brown-copper-thread-placket-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "Brown",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-068",
+    "lookGarment": "Kurta",
+    "lookColour": "Navy",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-navy-embroidered-placket",
+    "productCategory": "Modern Kurta",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-069",
+    "lookGarment": "Kurta",
+    "lookColour": "Green",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-green-block-print",
+    "productCategory": "Modern Kurta",
+    "productColour": "Green",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-070",
+    "lookGarment": "Kurta",
+    "lookColour": "Pink",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-brown-mirror-work",
+    "productCategory": "Modern Kurta",
+    "productColour": "Brown",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-071",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-green-copper-thread-placket-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "Green",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-072",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-green-mirror-sequin",
+    "productCategory": "Modern Kurta",
+    "productColour": "Green",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-073",
+    "lookGarment": "Kurta",
+    "lookColour": "Grey",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-green-mirror-work",
+    "productCategory": "Modern Kurta",
+    "productColour": "Green",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-074",
+    "lookGarment": "Ethnic Shirt",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-embroidered-ethnic-shirt-cream-heart-motif-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-075",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-green-sequin-stripe",
+    "productCategory": "Modern Kurta",
+    "productColour": "Green",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-076",
+    "lookGarment": "Kurta",
+    "lookColour": "Coral",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-green-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Green",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-077",
+    "lookGarment": "Kurta",
+    "lookColour": "Rust",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-indigo-block-print",
+    "productCategory": "Modern Kurta",
+    "productColour": "Indigo",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-078",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-indigo-copper-thread-placket-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "Indigo",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-079",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-indigo-mirror-sequin",
+    "productCategory": "Modern Kurta",
+    "productColour": "Indigo",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-080",
+    "lookGarment": "Kurta",
+    "lookColour": "Mustard",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-mustard-embroidered-placket",
+    "productCategory": "Modern Kurta",
+    "productColour": "Mustard",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-081",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-indigo-sequin-stripe",
+    "productCategory": "Modern Kurta",
+    "productColour": "Indigo",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-082",
+    "lookGarment": "Kurta",
+    "lookColour": "Off-White",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-ivory-all-over-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-083",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-ivory-chikankari",
+    "productCategory": "Modern Kurta",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-084",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "college-fest",
+    "productId": "m-modern-kurta-ivory-embroidered-festive",
+    "productCategory": "Modern Kurta",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-085",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-maroon-solid",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-086",
+    "lookGarment": "Kurta",
+    "lookColour": "Champagne",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-maroon-tonal-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-087",
+    "lookGarment": "Kurta",
+    "lookColour": "Peach",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-peach-block-print",
+    "productCategory": "Modern Kurta",
+    "productColour": "Peach",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-088",
+    "lookGarment": "Kurta",
+    "lookColour": "Champagne",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-navy-tonal-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-089",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-olive-embroidered-kurta-with-white-pyjama",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-090",
+    "lookGarment": "Kurta",
+    "lookColour": "Peach",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-peach-copper-thread-placket-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "Peach",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-091",
+    "lookGarment": "Kurta",
+    "lookColour": "Maroon",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-maroon-embroidered-placket",
+    "productCategory": "Modern Kurta",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-092",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-olive-self-stripe",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-093",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-olive-tonal-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-094",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-purple-embroidered-kurta-with-white-pyjama",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-095",
+    "lookGarment": "Kurta",
+    "lookColour": "Blue",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-purple-self-stripe",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-096",
+    "lookGarment": "Kurta",
+    "lookColour": "Maroon",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-maroon-mirror-sequin",
+    "productCategory": "Modern Kurta",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-097",
+    "lookGarment": "Kurta",
+    "lookColour": "Brown",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-purple-solid",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-098",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-purple-tonal-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-099",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-wine-embroidered-kurta-with-white-pyjama",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Wine",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-100",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-wine-self-stripe",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Wine",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-101",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "diwali",
+    "productId": "m-festive-kurta-set-wine-tonal-embroidery",
+    "productCategory": "Festive Kurta Set",
+    "productColour": "Wine",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-102",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-ivory-embroidered-yoke",
+    "productCategory": "Modern Kurta",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-103",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-ivory-pintuck",
+    "productCategory": "Modern Kurta",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-104",
+    "lookGarment": "Kurta",
+    "lookColour": "Teal",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-ivory-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-105",
+    "lookGarment": "Kurta",
+    "lookColour": "Maroon",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-maroon-pintuck",
+    "productCategory": "Modern Kurta",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-106",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-ivory-with-multicolour-gujarati-stole",
+    "productCategory": "Modern Kurta",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-107",
+    "lookGarment": "Kurta",
+    "lookColour": "Maroon",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-maroon-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-108",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-mint-embroidered-placket",
+    "productCategory": "Modern Kurta",
+    "productColour": "Mint",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-109",
+    "lookGarment": "Ethnic Shirt",
+    "lookColour": "Red",
+    "lookOccasion": "diwali",
+    "productId": "m-embroidered-ethnic-shirt-beige-rust-hem-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-110",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-mint-mirror-sequin",
+    "productCategory": "Modern Kurta",
+    "productColour": "Mint",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-111",
+    "lookGarment": "Kurta",
+    "lookColour": "Olive",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-olive-chikankari",
+    "productCategory": "Modern Kurta",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-112",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-mint-sequin-stripe",
+    "productCategory": "Modern Kurta",
+    "productColour": "Mint",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-113",
+    "lookGarment": "Kurta",
+    "lookColour": "Pink",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-mint-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Mint",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-114",
+    "lookGarment": "Kurta",
+    "lookColour": "Blue",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-mustard-mirror-sequin",
+    "productCategory": "Modern Kurta",
+    "productColour": "Mustard",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-115",
+    "lookGarment": "Kurta",
+    "lookColour": "Mint",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-mustard-sequin-stripe",
+    "productCategory": "Modern Kurta",
+    "productColour": "Mustard",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-116",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-mustard-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Mustard",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-117",
+    "lookGarment": "Kurta",
+    "lookColour": "Rose",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-navy-pintuck",
+    "productCategory": "Modern Kurta",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-118",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-navy-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-119",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-olive-embroidered-placket",
+    "productCategory": "Modern Kurta",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-120",
+    "lookGarment": "Kurta",
+    "lookColour": "Burgundy",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-olive-pintuck",
+    "productCategory": "Modern Kurta",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-121",
+    "lookGarment": "Kurta",
+    "lookColour": "Charcoal",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-olive-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-122",
+    "lookGarment": "Ethnic Shirt",
+    "lookColour": "Pink",
+    "lookOccasion": "diwali",
+    "productId": "m-ethnic-shirt-pink-solid",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Pink",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-123",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-peach-coral-with-cream-ethnic-layer",
+    "productCategory": "Modern Kurta",
+    "productColour": "Peach",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-124",
+    "lookGarment": "Kurta",
+    "lookColour": "Rust",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-peach-embroidered-yoke",
+    "productCategory": "Modern Kurta",
+    "productColour": "Peach",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-125",
+    "lookGarment": "Kurta",
+    "lookColour": "Red",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-peach-mirror-work",
+    "productCategory": "Modern Kurta",
+    "productColour": "Peach",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-126",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "diwali",
+    "productId": "m-modern-kurta-powder-blue-embroidered",
+    "productCategory": "Modern Kurta",
+    "productColour": "Powder Blue",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-127",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-powder-blue-embroidered-yoke",
+    "productCategory": "Modern Kurta",
+    "productColour": "Powder Blue",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-128",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-powder-blue-light-blue-patterned",
+    "productCategory": "Modern Kurta",
+    "productColour": "Powder Blue",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-129",
+    "lookGarment": "Kurta",
+    "lookColour": "Lavender",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-powder-blue-mirror-work",
+    "productCategory": "Modern Kurta",
+    "productColour": "Powder Blue",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-130",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-purple-block-print",
+    "productCategory": "Modern Kurta",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-131",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Orange",
+    "lookOccasion": "festive-party",
+    "productId": "m-festive-jacket-beige-solid-nehru",
+    "productCategory": "Festive Jacket",
+    "productColour": "Beige",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-132",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-purple-copper-thread-placket-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-133",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-purple-embroidered-with-white-stole",
+    "productCategory": "Modern Kurta",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-134",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Blue",
+    "lookOccasion": "festive-party",
+    "productId": "m-festive-jacket-beige-subtle-embroidery",
+    "productCategory": "Festive Jacket",
+    "productColour": "Beige",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-135",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-purple-light-lavender-with-white-stole",
+    "productCategory": "Modern Kurta",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-136",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Maroon",
+    "lookOccasion": "festive-party",
+    "productId": "m-festive-jacket-maroon-brocade",
+    "productCategory": "Festive Jacket",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-137",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-purple-mirror-work",
+    "productCategory": "Modern Kurta",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-138",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-purple-solid",
+    "productCategory": "Modern Kurta",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-139",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-purple-with-white-stole",
+    "productCategory": "Modern Kurta",
+    "productColour": "Purple",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-140",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-wine-block-print",
+    "productCategory": "Modern Kurta",
+    "productColour": "Wine",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-141",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-wine-copper-thread-placket-embroidery",
+    "productCategory": "Modern Kurta",
+    "productColour": "Wine",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-142",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-wine-mirror-sequin",
+    "productCategory": "Modern Kurta",
+    "productColour": "Wine",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-143",
+    "lookGarment": "Kurta",
+    "lookColour": "Charcoal",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-wine-sequin-stripe",
+    "productCategory": "Modern Kurta",
+    "productColour": "Wine",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-144",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-modern-kurta-wine-with-cream-stole",
+    "productCategory": "Modern Kurta",
+    "productColour": "Wine",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party",
+      "traditional"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-145",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Black",
+    "lookOccasion": "festive-party",
+    "productId": "m-festive-jacket-black-solid",
+    "productCategory": "Festive Jacket",
+    "productColour": "Black",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-146",
+    "lookGarment": "Kurta",
+    "lookColour": "Blue",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-beige-sequin-dots",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 520); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-147",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Black",
+    "lookOccasion": "festive-party",
+    "productId": "m-festive-jacket-black-solid-nehru",
+    "productCategory": "Festive Jacket",
+    "productColour": "Black",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-148",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-white-sequin-dots",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-149",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-black-sequin-dots",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-150",
+    "lookGarment": "Kurta",
+    "lookColour": "Mint",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-black-tonal",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 520); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-151",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-cream-rust-hem-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-152",
+    "lookGarment": "Waistcoat / Layered Set",
+    "lookColour": "Burgundy",
+    "lookOccasion": "festive-party",
+    "productId": "m-festive-jacket-black-subtle-embroidery",
+    "productCategory": "Festive Jacket",
+    "productColour": "Black",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-153",
+    "lookGarment": "Kurta",
+    "lookColour": "Olive",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-olive-heart-motif-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-154",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-black-tonal-floral",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-155",
+    "lookGarment": "Kurta",
+    "lookColour": "Navy",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-navy-rust-hem-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-156",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-white-tonal",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-157",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-white-tonal-floral",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-158",
+    "lookGarment": "Kurta",
+    "lookColour": "Mustard",
+    "lookOccasion": "festive-party",
+    "productId": "m-printed-ethnic-shirt-mustard-bandhani-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "Mustard",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-159",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-cream-tonal",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-160",
+    "lookGarment": "Kurta",
+    "lookColour": "Terracotta",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-cream-tonal-floral",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 520); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-161",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "Taupe",
+    "lookOccasion": "festive-party",
+    "productId": "m-embroidered-ethnic-shirt-ivory-heart-motif-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 520); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-162",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-ethnic-shirt-white-solid",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-163",
+    "lookGarment": "Kurta",
+    "lookColour": "Pink",
+    "lookOccasion": "festive-party",
+    "productId": "m-ethnic-shirt-pink-solid-mandarin",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Pink",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-164",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-ethnic-shirt-white-solid-mandarin",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-165",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-ethnic-shirt-cream-small-embroidered-motifs",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-166",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-ethnic-shirt-white-tonal-embroidery",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-167",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "festive-party",
+    "productId": "m-ethnic-shirt-cream-solid",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-168",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "festive-party",
+    "productId": "m-printed-ethnic-shirt-white-bandhani-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 570); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-169",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-white-botanical-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-170",
+    "lookGarment": "Ethnic Shirt",
+    "lookColour": "Red",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-ivory-rust-hem-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1000); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-171",
+    "lookGarment": "Kurta",
+    "lookColour": "Blue",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-ivory-sequin-dots",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-172",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-white-floral-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-173",
+    "lookGarment": "Ethnic Shirt",
+    "lookColour": "Teal",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-teal-small-embroidered-motifs",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Teal",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1050); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-174",
+    "lookGarment": "Kurta",
+    "lookColour": "Pink",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-pink-solid-pastel",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Pink",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-175",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-black-small-embroidered-motifs",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-176",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-black-solid-full-sleeve",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-177",
+    "lookGarment": "Kurta",
+    "lookColour": "Pink",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-ivory-tonal",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-178",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-black-tonal-embroidery",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-179",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-black-bandhani-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-180",
+    "lookGarment": "Kurta",
+    "lookColour": "Grey",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-ivory-tonal-floral",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-181",
+    "lookGarment": "Ethnic Shirt",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-cream-tonal-embroidery",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Cream",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1050); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-182",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-white-indigo-block-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-183",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-maroon-heart-motif-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-184",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-maroon-rust-hem-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-185",
+    "lookGarment": "Kurta",
+    "lookColour": "Maroon",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-maroon-tonal",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-186",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-maroon-tonal-floral",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Maroon",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-187",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-black-block-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-188",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-white-paisley-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "White",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-189",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-navy-sequin-dots",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-190",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-black-botanical-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-191",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-festive-jacket-cream-brocade",
+    "productCategory": "Festive Jacket",
+    "productColour": "Cream",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+colour+occasion",
+    "confidence": "high",
+    "reason": "same-garment match (score 1070); colour matched; occasion matched"
+  },
+  {
+    "menLook": "men-look-192",
+    "lookGarment": "Kurta",
+    "lookColour": "Peach",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-navy-tonal",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-193",
+    "lookGarment": "Kurta",
+    "lookColour": "White",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-navy-tonal-floral",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-194",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "White",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-olive-rust-hem-embroidery",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-195",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-black-charcoal-print-with-ivory-stole",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-196",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Pink",
+    "lookOccasion": "traditional",
+    "productId": "m-festive-jacket-cream-solid",
+    "productCategory": "Festive Jacket",
+    "productColour": "Cream",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-197",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-olive-sequin-dots",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-198",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-embroidered-ethnic-shirt-olive-tonal",
+    "productCategory": "Embroidered Ethnic Shirt",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "diwali",
+      "festive-party",
+      "college-fest"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-199",
+    "lookGarment": "Kurta",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-beige-small-embroidered-motifs",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-200",
+    "lookGarment": "Kurta",
+    "lookColour": "Brown",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-beige-solid-mandarin",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 500); colour differs; occasion differs"
+  },
+  {
+    "menLook": "men-look-201",
+    "lookGarment": "Kurta-Pajama Set",
+    "lookColour": "Beige",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-beige-tonal-embroidery",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Beige",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-202",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-black-floral-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-203",
+    "lookGarment": "Kurta",
+    "lookColour": "Olive",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-olive-small-embroidered-motifs",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Olive",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-204",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-festive-jacket-cream-solid-nehru",
+    "productCategory": "Festive Jacket",
+    "productColour": "Cream",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-205",
+    "lookGarment": "Kurta",
+    "lookColour": "Navy",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-navy-solid",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-206",
+    "lookGarment": "Kurta",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-printed-ethnic-shirt-black-indigo-block-print",
+    "productCategory": "Printed Ethnic Shirt",
+    "productColour": "Black",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-207",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Black",
+    "lookOccasion": "traditional",
+    "productId": "m-festive-jacket-ivory-brocade",
+    "productCategory": "Festive Jacket",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-208",
+    "lookGarment": "Kurta",
+    "lookColour": "Navy",
+    "lookOccasion": "traditional",
+    "productId": "m-ethnic-shirt-navy-tonal-embroidery",
+    "productCategory": "Ethnic Shirt",
+    "productColour": "Navy",
+    "productOccasion": [
+      "garba",
+      "college-fest",
+      "diwali",
+      "festive-party"
+    ],
+    "matchBasis": "ethnic-top-family",
+    "fieldsUsed": "garment-family+colour",
+    "confidence": "low",
+    "reason": "ethnic-top-family match (score 550); colour matched; occasion differs"
+  },
+  {
+    "menLook": "men-look-209",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Brown",
+    "lookOccasion": "traditional",
+    "productId": "m-festive-jacket-ivory-solid",
+    "productCategory": "Festive Jacket",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  },
+  {
+    "menLook": "men-look-210",
+    "lookGarment": "Ethnic Jacket / Layered Set",
+    "lookColour": "Cream",
+    "lookOccasion": "traditional",
+    "productId": "m-festive-jacket-ivory-solid-nehru",
+    "productCategory": "Festive Jacket",
+    "productColour": "Ivory",
+    "productOccasion": [
+      "diwali",
+      "festive-party",
+      "traditional",
+      "college-fest"
+    ],
+    "matchBasis": "same-garment",
+    "fieldsUsed": "garment-family+occasion",
+    "confidence": "medium",
+    "reason": "same-garment match (score 1020); colour differs; occasion matched"
+  }
+]

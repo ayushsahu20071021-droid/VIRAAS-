@@ -1,0 +1,299 @@
+{
+  "batchNumber": 28,
+  "startIndex": 271,
+  "endIndex": 280,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-printed-ethnic-shirt-mustard-block-print",
+      "title": "Mustard Block-Print Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Mustard",
+      "secondaryColours": [
+        "Red"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "block print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 499,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard block-print ethnic shirt with block print, mustard, rayon fabric appearance, block print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-mustard-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-mustard-botanical-print",
+      "title": "Mustard Botanical Printed Festive Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Mustard",
+      "secondaryColours": [
+        "Red"
+      ],
+      "pattern": "Botanical Print",
+      "embroidery": "botanical print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1899,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard botanical printed festive shirt with botanical print, mustard, rayon fabric appearance, botanical print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-mustard-botanical-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-mustard-paisley-print",
+      "title": "Mustard Paisley Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Mustard",
+      "secondaryColours": [
+        "Red"
+      ],
+      "pattern": "Paisley Print",
+      "embroidery": "paisley print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 699,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard paisley printed ethnic shirt with paisley print, mustard, rayon fabric appearance, paisley print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-mustard-paisley-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-mustard-small-motif",
+      "title": "Mustard Small-Motif Printed Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Mustard",
+      "secondaryColours": [
+        "Red"
+      ],
+      "pattern": "Motif Print",
+      "embroidery": "small motif",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 699,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard small-motif printed shirt with small motif, mustard, rayon fabric appearance, small motif details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-mustard-small-motif.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-navy-block-print",
+      "title": "Navy Block-Print Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "block print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1099,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy block-print ethnic shirt with block print, navy, rayon fabric appearance, block print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-navy-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-navy-blue-and-white-print-with-white-stole",
+      "title": "Navy Blue And White Print With White Stole Cotton Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Printed",
+      "embroidery": "blue and white print with white stole",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 799,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's blue and white contemporary printed ethnic kurta with a white stole, navy, cotton fabric appearance, blue and white print with white stole details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference GARBA-REF-07, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-navy-blue-and-white-print-with-white-stole.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-navy-floral-print",
+      "title": "Navy Floral Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Floral Print",
+      "embroidery": "floral print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 999,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy floral printed ethnic shirt with floral print, navy, rayon fabric appearance, floral print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-navy-floral-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-navy-indigo-block-print",
+      "title": "Navy Indigo Block-Print Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "indigo block print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 899,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy indigo block-print shirt with indigo block print, navy, cotton fabric appearance, indigo block print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-navy-indigo-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-navy-paisley",
+      "title": "Navy Paisley Statement Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Paisley Print",
+      "embroidery": "paisley",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 799,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy paisley statement shirt with paisley, navy, rayon fabric appearance, paisley details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-navy-paisley.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-navy-printed-with-stole",
+      "title": "Navy Printed With Stole Cotton Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Printed",
+      "embroidery": "printed with stole",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1799,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's dark navy printed ethnic kurta with a complementary stole, navy, cotton fabric appearance, printed with stole details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference GARBA-REF-11, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-navy-printed-with-stole.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

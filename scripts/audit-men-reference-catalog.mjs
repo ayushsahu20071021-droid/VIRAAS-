@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import { MEN_LOOK_CATALOG } from '../data-src/men-look-catalog.mjs';
+const refs = MEN_LOOK_CATALOG.map((x) => x.referenceId);
+const ids = MEN_LOOK_CATALOG.map((x) => x.id);
+const occasions = ['garba', 'college-fest', 'diwali', 'festive-party', 'traditional'];
+const perOccasion = Object.fromEntries(occasions.map((o) => [o, MEN_LOOK_CATALOG.filter((x) => x.occasion === o).length]));
+const missing = MEN_LOOK_CATALOG.filter((x) => !x.referenceId || !x.id || !x.occasion || !x.outfitDescription);
+const duplicateRefs = [...new Set(refs.filter((r, i) => refs.indexOf(r) !== i))];
+const amazon = JSON.stringify(MEN_LOOK_CATALOG).match(/amazon/i);
+const result = { total: MEN_LOOK_CATALOG.length, perOccasion, canonicalReferences: new Set(refs).size, missing: missing.map((x) => x.id), duplicateReferences: duplicateRefs, amazonPresent: !!amazon, placeholderPolicy: 'UI renders intentional placeholders; no Men generated image is used by the preview', sourceSheets: 5 };
+fs.mkdirSync('reports', { recursive: true });
+fs.writeFileSync('reports/audit-men-reference-catalog.json', JSON.stringify(result, null, 2) + '\n');
+console.log(JSON.stringify(result, null, 2));
+if (result.total !== 210 || result.canonicalReferences !== 210 || result.missing.length || result.duplicateReferences.length || result.amazonPresent || Object.values(perOccasion).some((n) => n !== 42)) process.exit(1);

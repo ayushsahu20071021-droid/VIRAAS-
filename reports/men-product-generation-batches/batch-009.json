@@ -1,0 +1,293 @@
+{
+  "batchNumber": 9,
+  "startIndex": 81,
+  "endIndex": 90,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-festive-jacket-navy-subtle-embroidery",
+      "title": "Navy Subtle-Embroidery Festive Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "subtle embroidery",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 1799,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy subtle-embroidery festive jacket with subtle embroidery, navy, silk blend fabric appearance, subtle embroidery details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-navy-subtle-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-navy-solid",
+      "title": "Navy Velvet Festive Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 1899,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy jacket, navy, velvet fabric appearance, solid details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-navy-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-olive-brocade",
+      "title": "Olive Brocade Open Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Olive",
+      "secondaryColours": [],
+      "pattern": "Woven",
+      "embroidery": "brocade",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 1099,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's olive brocade open jacket with brocade, olive, brocade fabric appearance, brocade details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-olive-brocade.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-olive-subtle-embroidery",
+      "title": "Olive Subtle-Embroidery Festive Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Olive",
+      "secondaryColours": [],
+      "pattern": "Embroidered",
+      "embroidery": "subtle embroidery",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 2599,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's olive subtle-embroidery festive jacket with subtle embroidery, olive, silk blend fabric appearance, subtle embroidery details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-olive-subtle-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-red-brocade",
+      "title": "Red Brocade Open Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Red",
+      "secondaryColours": [
+        "Gold",
+        "Green"
+      ],
+      "pattern": "Woven",
+      "embroidery": "brocade",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 3499,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's red brocade jacket over black, red, brocade fabric appearance, brocade details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-red-brocade.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-red-subtle-embroidery",
+      "title": "Red Subtle-Embroidery Festive Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Red",
+      "secondaryColours": [
+        "Gold",
+        "Green"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "subtle embroidery",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 2099,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's red subtle-embroidery festive jacket with subtle embroidery, red, silk blend fabric appearance, subtle embroidery details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-red-subtle-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-wine-brocade",
+      "title": "Wine Brocade Open Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Woven",
+      "embroidery": "brocade",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 999,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine brocade open jacket with brocade, wine, brocade fabric appearance, brocade details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-wine-brocade.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-jacket-wine-subtle-embroidery",
+      "title": "Wine Subtle-Embroidery Festive Jacket",
+      "category": "Festive Jacket",
+      "subcategory": "Jacket",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "subtle embroidery",
+      "silhouette": "Nehru / Open Jacket",
+      "occasion": [
+        "diwali",
+        "festive-party",
+        "traditional",
+        "college-fest"
+      ],
+      "price": 1799,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine subtle-embroidery festive jacket with subtle embroidery, wine, silk blend fabric appearance, subtle embroidery details, nehru / open jacket silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-jacket-wine-subtle-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-beige-solid",
+      "title": "Beige Cotton Kurta Pyjama Set",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Beige",
+      "secondaryColours": [],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2099,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's beige kurta set, beige, cotton fabric appearance, solid details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-beige-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-beige-embroidered-kurta-with-white-pyjama",
+      "title": "Beige Embroidered Kurta with White Pyjama",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Beige",
+      "secondaryColours": [],
+      "pattern": "Embroidered",
+      "embroidery": "embroidered kurta with white pyjama",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1999,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's beige embroidered kurta with white pyjama with embroidered kurta with white pyjama, beige, silk blend fabric appearance, embroidered kurta with white pyjama details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-beige-embroidered-kurta-with-white-pyjama.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

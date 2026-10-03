@@ -1,0 +1,16 @@
+{
+  "name": "audit-http-images",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "10 image URLs referenced",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "all served 200 image/* (0 bad) ",
+      "level": "error"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "batchNumber": 11,
+  "startIndex": 101,
+  "endIndex": 110,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-festive-kurta-set-cream-self-stripe",
+      "title": "Cream Self-Stripe Kurta Pyjama Set",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Cream",
+      "secondaryColours": [],
+      "pattern": "Self Stripe",
+      "embroidery": "self stripe",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2299,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's cream self-stripe kurta pyjama set with self stripe, cream, cotton fabric appearance, self stripe details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-cream-self-stripe.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-cream-tonal-embroidery",
+      "title": "Cream Tonal-Embroidered Kurta Set",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Cream",
+      "secondaryColours": [],
+      "pattern": "Embroidered",
+      "embroidery": "tonal embroidery",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 799,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's cream tonal-embroidered kurta set with tonal embroidery, cream, cotton silk fabric appearance, tonal embroidery details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-cream-tonal-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-ivory-solid",
+      "title": "Ivory Cotton Kurta Pyjama Set",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1599,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory kurta set, ivory, cotton fabric appearance, solid details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-ivory-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-ivory-3d-floral-embroidery",
+      "title": "Ivory Kurta Set with 3D Floral Embroidery",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "3D floral embroidery",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 3199,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory kurta set with 3d floral embroidery with 3D floral embroidery, ivory, cotton silk fabric appearance, 3D floral embroidery details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-ivory-3d-floral-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-ivory-self-stripe",
+      "title": "Ivory Self-Stripe Kurta Pyjama Set",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Ivory",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Self Stripe",
+      "embroidery": "self stripe",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1199,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's ivory self-stripe kurta pyjama set with self stripe, ivory, cotton fabric appearance, self stripe details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-ivory-self-stripe.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-maroon-solid",
+      "title": "Maroon Cotton Kurta Pyjama Set",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 899,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon cotton kurta pyjama set with solid, maroon, cotton fabric appearance, solid details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-maroon-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-maroon-embroidered-kurta-with-white-pyjama",
+      "title": "Maroon Embroidered Kurta with White Pyjama",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "embroidered kurta with white pyjama",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2799,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon embroidered kurta with white pyjama with embroidered kurta with white pyjama, maroon, silk blend fabric appearance, embroidered kurta with white pyjama details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M3, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-maroon-embroidered-kurta-with-white-pyjama.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-maroon-3d-floral-embroidery",
+      "title": "Maroon Kurta Set with 3D Floral Embroidery",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "3D floral embroidery",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1899,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon kurta set with 3d floral embroidery with 3D floral embroidery, maroon, cotton silk fabric appearance, 3D floral embroidery details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-maroon-3d-floral-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-maroon-tonal-embroidery",
+      "title": "Maroon Tonal-Embroidered Kurta Set",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "tonal embroidery",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 2199,
+      "merchant": "FLIPKART",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon tonal-embroidered kurta set with tonal embroidery, maroon, cotton silk fabric appearance, tonal embroidery details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-maroon-tonal-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-festive-kurta-set-navy-solid",
+      "title": "Navy Cotton Kurta Pyjama Set",
+      "category": "Festive Kurta Set",
+      "subcategory": "Kurta Set",
+      "colour": "Navy",
+      "secondaryColours": [
+        "Silver"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Kurta with Pyjama / Trouser",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1299,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's navy cotton kurta pyjama set with solid, navy, cotton fabric appearance, solid details, kurta with pyjama / trouser silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-festive-kurta-set-navy-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

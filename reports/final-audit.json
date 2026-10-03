@@ -1,0 +1,23 @@
+{
+  "results": {
+    "check-catalog": "PASS",
+    "validate-images": "PASS (completion gate open)",
+    "audit-affiliate": "PASS",
+    "audit-duplicates": "PASS",
+    "audit-search": "PASS",
+    "audit-http-images": "PASS",
+    "render-smoke": "PASS",
+    "audit-rendered-browser": "PASS",
+    "typecheck": "PASS"
+  },
+  "images": {
+    "couplePass": 10,
+    "coupleTotal": 100,
+    "productPass": 0,
+    "productTotal": 861,
+    "qaFail": 0,
+    "pending": 951
+  },
+  "technicalGatesPass": true,
+  "status": "INCOMPLETE — image generation queue still open"
+}

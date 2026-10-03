@@ -1,0 +1,36 @@
+{
+  "name": "audit-affiliate",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "only allowed merchants (used: AJIO, FLIPKART, MEESHO, MYNTRA, NYKAA, SHOPSY)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "merchantUrl host matches merchant (0 bad)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "affiliateUrl empty on all 861 products (0 filled)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "affiliateSource empty (not configured)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no invented tracking parameters (0)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "forbidden marketplace absent from code/data/docs/build (0 files)",
+      "level": "error"
+    }
+  ]
+}

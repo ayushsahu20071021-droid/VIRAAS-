@@ -1,0 +1,1082 @@
+[
+  {
+    "productId": "w-jewellery-silver-jhumka-earrings",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Jhumka Earrings",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-silver-mirror-mojaris",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Silver Mirror-Work Mojaris",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-tan-kolhapuri-sandals",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Tan Kolhapuri Sandals",
+    "colour": "Tan",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-choker-necklace",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Choker Necklace",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-gold-mirror-mojaris",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Gold Mirror-Work Mojaris",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-bangle-stack",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Bangle Stack (Set of 12)",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-kamarbandh-waist-belt",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Mirror Kamarbandh Waist Belt",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-choker-necklace",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Choker Necklace",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-silver-bangle-stack",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Bangle Stack (Set of 12)",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-jhumka-earrings",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Jhumka Earrings",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-silver-kamarbandh-waist-belt",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Mirror Kamarbandh Waist Belt",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-jhumka-earrings",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Jhumka Earrings",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-silver-choker-necklace",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Choker Necklace",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-silver-embroidered-juttis",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Silver Embroidered Juttis",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-tan-embroidered-mojaris",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Tan Embroidered Mojaris",
+    "colour": "Tan",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-gold-embroidered-juttis",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Gold Embroidered Juttis",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-bangle-stack",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Bangle Stack (Set of 12)",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-silver-block-heels",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Silver Embellished Block Heels",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-gold-block-heels",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Gold Embellished Block Heels",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-kamarbandh-waist-belt",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Mirror Kamarbandh Waist Belt",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-nose-pin",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Clip-On Nose Pin",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-anklets",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Ghungroo Anklets (Pair)",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-maang-tikka",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Maang Tikka",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-hathphool",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Hathphool Hand Harness",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-statement-rings",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Statement Ring Set",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-oxidised-silver-hair-accessory",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Oxidised Silver Juda Pin Hair Accessory",
+    "colour": "Oxidised Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-nose-pin",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Clip-On Nose Pin",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-anklets",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Ghungroo Anklets (Pair)",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-maang-tikka",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Maang Tikka",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-hathphool",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Hathphool Hand Harness",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-statement-rings",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Statement Ring Set",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-gold-hair-accessory",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Gold Juda Pin Hair Accessory",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-silver-nose-pin",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Clip-On Nose Pin",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-silver-anklets",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Ghungroo Anklets (Pair)",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-silver-maang-tikka",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Maang Tikka",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-silver-hathphool",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Hathphool Hand Harness",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-silver-statement-rings",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Statement Ring Set",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-jewellery-silver-hair-accessory",
+    "gender": "women",
+    "subcategory": "Jewellery",
+    "title": "Silver Juda Pin Hair Accessory",
+    "colour": "Silver",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "jhumka/choker/bangle/oxidised/maang-tikka etc. described in approved looks",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-tan-kolhapuri-flats",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Tan Kolhapuri Flats",
+    "colour": "Tan",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-tan-mirror-mojaris",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Tan Mirror-Work Mojaris",
+    "colour": "Tan",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-multicolour-kolhapuri-flats",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Multicolour Kolhapuri Flats",
+    "colour": "Multicolour",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-multicolour-mirror-mojaris",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Multicolour Mirror-Work Mojaris",
+    "colour": "Multicolour",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-black-embroidered-juttis",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Black Embroidered Juttis",
+    "colour": "Black",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-ivory-kolhapuri-flats",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Ivory Kolhapuri Flats",
+    "colour": "Ivory",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-black-block-heels",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Black Embellished Block Heels",
+    "colour": "Black",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-ivory-mirror-mojaris",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Ivory Mirror-Work Mojaris",
+    "colour": "Ivory",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-tan-embroidered-juttis",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Tan Embroidered Juttis",
+    "colour": "Tan",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-gold-kolhapuri-flats",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Gold Kolhapuri Flats",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-tan-block-heels",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Tan Embellished Block Heels",
+    "colour": "Tan",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "w-footwear-multicolour-embroidered-juttis",
+    "gender": "women",
+    "subcategory": "Footwear",
+    "title": "Multicolour Embroidered Juttis",
+    "colour": "Multicolour",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "juttis/mojaris/kolhapuris described in approved MEN looks (women footwear not itemised in approved data)",
+    "supportingLookSource": "approved WOMEN look catalog (236)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-gold-kolhapuri-sandals",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Gold Kolhapuri Sandals",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-black-loafers",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Black Ethnic Loafers",
+    "colour": "Black",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-black-embroidered-mojaris",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Black Embroidered Mojaris",
+    "colour": "Black",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-brown-kolhapuri-sandals",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Brown Kolhapuri Sandals",
+    "colour": "Brown",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-ivory-loafers",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Ivory Ethnic Loafers",
+    "colour": "Ivory",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-ivory-embroidered-mojaris",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Ivory Embroidered Mojaris",
+    "colour": "Ivory",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-gold-loafers",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Gold Ethnic Loafers",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-gold-embroidered-mojaris",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Gold Embroidered Mojaris",
+    "colour": "Gold",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-black-kolhapuri-sandals",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Black Kolhapuri Sandals",
+    "colour": "Black",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  },
+  {
+    "productId": "m-footwear-brown-loafers",
+    "gender": "men",
+    "subcategory": "Men Footwear",
+    "title": "Brown Ethnic Loafers",
+    "colour": "Brown",
+    "occasion": [
+      "garba"
+    ],
+    "supportedByApprovedData": true,
+    "supportBasis": "mojaris/kolhapuris/loafers described in approved MEN looks",
+    "supportingLookSource": "approved MEN look catalog (210)",
+    "lookImageOrReferenceAvailable": true,
+    "ownAccessoryImageAvailable": false,
+    "futureImageRequired": true,
+    "imageRule": "Requires a DEDICATED accessory product image — outfit/look images must NOT be reused as the accessory image",
+    "recommendation": "KEEP"
+  }
+]
