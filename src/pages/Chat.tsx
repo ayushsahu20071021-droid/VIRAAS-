@@ -1,8 +1,8 @@
 // VIRAAS private chat — 1:1 only, LOCKED until a mutual connection exists (enforced server-side).
 //
-// HONESTY: new messages arrive via POLLING (a short interval fetch), NOT a realtime socket. This
-// keeps the demo functional against the in-memory server, but production needs WebSocket/SSE + a
-// persistent database. There are no group chats, no AI replies, and no fabricated messages.
+// HONESTY: new messages arrive via POLLING (a short interval fetch), NOT a realtime socket.
+// Messages and unread state are persisted in PostgreSQL. There are no group chats, no AI replies,
+// and no fabricated messages.
 import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { social, timeAgo, type ChatMessage, type ConversationSummary, type Profile } from '../lib/social';

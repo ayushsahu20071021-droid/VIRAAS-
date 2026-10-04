@@ -1,128 +1,199 @@
-// VIRAAS Connect — HTTP API (Express router mounted at /api/social).
-//
-// Every route enforces authorization SERVER-SIDE (section 8F): identity comes from a signed session
-// cookie, never from a client-supplied user id. Private chat is LOCKED until a mutual connection
-// exists (section 8C). The 18+ gate is enforced at profile creation (section 8B). See store.mjs for
-// the non-production notice — this is a real, testable API contract backed by an in-memory store.
+// VIRAAS Connect routes backed only by PostgreSQL. Identity is supplied by the configured Supabase
+// Auth provider in an encrypted, httpOnly session cookie; no request body can choose its user id.
 import express from 'express';
-import * as store from './store.mjs';
-
-const COOKIE = 'viraas_sid';
-
-function parseCookies(req) {
-  const out = {};
-  const raw = req.headers.cookie;
-  if (!raw) return out;
-  for (const part of raw.split(';')) {
-    const i = part.indexOf('=');
-    if (i === -1) continue;
-    out[part.slice(0, i).trim()] = decodeURIComponent(part.slice(i + 1).trim());
-  }
-  return out;
-}
-function setSessionCookie(res, token) {
-  // httpOnly so client JS can never read it; SameSite=Lax; Path=/. (Secure is added by the proxy/CDN
-  // in production over HTTPS.) 30-day demo session.
-  res.append('Set-Cookie', `${COOKIE}=${encodeURIComponent(token)}; HttpOnly; SameSite=Lax; Path=/; Max-Age=${60 * 60 * 24 * 30}`);
-}
-function clearSessionCookie(res) {
-  res.append('Set-Cookie', `${COOKIE}=; HttpOnly; SameSite=Lax; Path=/; Max-Age=0`);
-}
-function currentUserId(req) {
-  return store.verifySession(parseCookies(req)[COOKIE]);
-}
-// Auth guard: 401 if no valid session.
-function requireAuth(req, res, next) {
-  const uid = currentUserId(req);
-  if (!uid) return res.status(401).json({ ok: false, message: 'Sign in to VIRAAS Connect first.' });
-  req.userId = uid;
-  next();
-}
-// Turn a store result ({error, message} | data) into an HTTP response.
-function send(res, result, okStatus = 200) {
-  if (result && result.error) return res.status(result.error).json({ ok: false, message: result.message });
-  return res.status(okStatus).json({ ok: true, ...result });
-}
+import { authProviderStatus, getAuthIdentity } from '../auth/provider.mjs';
+import { databaseStatus } from '../db/pool.mjs';
+import * as repo from './repository.mjs';
+import { publicRequirements } from '../readiness/messages.mjs';
 
 const router = express.Router();
-// The existing Map store is intentionally available only as an explicitly enabled local test/demo.
-// It is never exposed as a production account/chat service because state disappears on restarts and
-// is not shared between Vercel function instances.
-const localDemoEnabled = process.env.NODE_ENV !== 'production' && process.env.VIRAAS_CONNECT_DEMO === 'true';
-router.get('/status', (_req, res) => res.json({
-  ok: true,
-  available: localDemoEnabled,
-  persistent: false,
-  mode: localDemoEnabled ? 'local-demo' : 'unavailable',
-  requirements: localDemoEnabled ? [] : [
-    'A shared persistent database adapter and a verified account/session provider are required before VIRAAS Connect can accept accounts or messages.',
-  ],
-}));
-router.use((req, res, next) => {
-  if (localDemoEnabled) return next();
-  return res.status(503).json({
-    ok: false,
-    code: 'VIRAAS_CONNECT_NOT_CONFIGURED',
-    message: 'VIRAAS Connect requires persistent account storage and a verified sign-in provider. No account or message was saved.',
+
+function sendError(res, error) {
+  const status = Number(error?.status) || 503;
+  return res.status(status).json({ ok: false, message: error?.message || 'VIRAAS Connect is temporarily unavailable.' });
+}
+
+function route(handler) {
+  return (req, res, next) => Promise.resolve(handler(req, res, next)).catch(next);
+}
+
+async function requireReady(_req, res, next) {
+  try {
+    const db = await databaseStatus();
+    const auth = authProviderStatus();
+    const readiness = await repo.socialReadiness(auth, db);
+    if (!readiness.available) {
+      return res.status(503).json({
+        ok: false,
+        code: 'VIRAAS_CONNECT_NOT_CONFIGURED',
+        message: 'VIRAAS Connect is unavailable until persistent PostgreSQL storage and Supabase email sign-in are configured and migrated. No account or message was saved.',
+        requirements: publicRequirements(readiness.requirements),
+      });
+    }
+    return next();
+  } catch (error) { return sendError(res, error); }
+}
+
+async function context(req, res, { profileRequired = true, ensureAccount = false } = {}) {
+  try {
+    const identity = await getAuthIdentity(req, res);
+    let user = await repo.getUserByAuthSubject(identity.subject);
+    if (!user && ensureAccount) user = (await repo.createAccount(identity.subject)).user;
+    if (profileRequired && (!user || !user.profile_complete)) {
+      res.status(409).json({ ok: false, code: 'PROFILE_REQUIRED', message: 'Complete adult VIRAAS Connect onboarding first.' });
+      return null;
+    }
+    if (!user) {
+      res.status(409).json({ ok: false, code: 'ACCOUNT_REQUIRED', message: 'A persistent VIRAAS account is required.' });
+      return null;
+    }
+    return { identity, user };
+  } catch (error) {
+    sendError(res, error);
+    return null;
+  }
+}
+
+router.get('/status', route(async (_req, res) => {
+  res.set('Cache-Control', 'no-store');
+  const db = await databaseStatus();
+  const auth = authProviderStatus();
+  const state = await repo.socialReadiness(auth, db);
+  res.json({
+    ok: true,
+    ...state,
+    mode: state.available ? 'postgres' : 'unavailable',
+    requirements: publicRequirements(state.requirements),
   });
-});
+}));
 
-// ---- Session / profile -------------------------------------------------------------------------
-// Create a VIRAAS ID (onboarding). Requires an explicit 18+ acknowledgement (enforced in the store).
-router.post('/session', (req, res) => {
-  const { viraasId, displayName, bio, city, instagramHandle, is18Plus, visibility } = req.body || {};
-  const out = store.createUser({ viraasId, displayName, bio, city, instagramHandle, is18Plus, visibility });
-  if (out.error) return res.status(out.error).json({ ok: false, message: out.message });
-  setSessionCookie(res, store.signSession(out.user.id));
-  res.json({ ok: true, me: store.publicProfile(out.user, out.user.id) });
-});
-// Who am I (used by the app to decide onboarding vs. app shell).
-router.get('/me', (req, res) => {
-  const uid = currentUserId(req);
-  if (!uid) return res.json({ ok: true, me: null });
-  res.json({ ok: true, me: store.publicProfile(store.getUser(uid), uid) });
-});
-router.post('/logout', (req, res) => { clearSessionCookie(res); res.json({ ok: true }); });
-router.patch('/me', requireAuth, (req, res) => {
-  const u = store.updateUser(req.userId, req.body || {});
-  res.json({ ok: true, me: store.publicProfile(u, req.userId) });
-});
+router.get('/report/categories', (_req, res) => res.json({ ok: true, categories: repo.reportCategories() }));
+router.use(requireReady);
 
-// ---- Discovery / profiles ----------------------------------------------------------------------
-router.get('/users', requireAuth, (req, res) => {
-  res.json({ ok: true, users: store.searchUsers(req.userId, req.query.q || '') });
-});
-router.get('/users/:viraasId', requireAuth, (req, res) => {
-  const u = store.getUserByViraasId(req.params.viraasId);
-  if (!u) return res.status(404).json({ ok: false, message: 'User not found.' });
-  // Never reveal that someone blocked the viewer beyond a generic "unavailable" relation.
-  res.json({ ok: true, profile: { ...store.publicProfile(u, req.userId), relation: store.relationTo(req.userId, u.id) } });
-});
+// The email/password account exists at the auth provider first. This creates the VIRAAS profile,
+// generates one stable globally unique public ID, and grants the two signup credits exactly once.
+router.post('/session', route(async (req, res) => {
+  const ctx = await context(req, res, { profileRequired: false, ensureAccount: true });
+  if (!ctx) return;
+  const me = await repo.createProfile(ctx.identity.subject, req.body || {});
+  res.status(201).json({ ok: true, me });
+}));
 
-// ---- Connect flow ------------------------------------------------------------------------------
-router.post('/connect/:viraasId', requireAuth, (req, res) => send(res, store.sendRequest(req.userId, req.params.viraasId)));
-router.get('/requests', requireAuth, (req, res) =>
-  res.json({ ok: true, incoming: store.incomingRequests(req.userId), outgoing: store.outgoingRequests(req.userId) }));
-router.post('/requests/:id/accept', requireAuth, (req, res) => send(res, store.respondRequest(req.userId, req.params.id, true)));
-router.post('/requests/:id/decline', requireAuth, (req, res) => send(res, store.respondRequest(req.userId, req.params.id, false)));
-router.get('/connections', requireAuth, (req, res) => res.json({ ok: true, connections: store.listConnections(req.userId) }));
-router.delete('/connections/:id', requireAuth, (req, res) => send(res, store.disconnect(req.userId, req.params.id)));
+router.get('/me', route(async (req, res) => {
+  try {
+    const identity = await getAuthIdentity(req, res, { optional: true });
+    if (!identity) return res.json({ ok: true, authenticated: false, me: null });
+    const me = await repo.getProfileByAuthSubject(identity.subject);
+    return res.json({ ok: true, authenticated: true, email: identity.email || null, me });
+  } catch (error) { return sendError(res, error); }
+}));
 
-// ---- Conversations & messages (locked until mutual connection) ----------------------------------
-router.get('/conversations', requireAuth, (req, res) => res.json({ ok: true, conversations: store.listConversations(req.userId) }));
-router.get('/conversations/with/:viraasId', requireAuth, (req, res) => send(res, store.getConversationWith(req.userId, req.params.viraasId)));
-router.get('/conversations/:id/messages', requireAuth, (req, res) => send(res, store.getMessages(req.userId, req.params.id)));
-router.post('/conversations/:id/messages', requireAuth, (req, res) => send(res, store.sendMessage(req.userId, req.params.id, (req.body || {}).text), 201));
-router.post('/conversations/:id/read', requireAuth, (req, res) => send(res, store.markRead(req.userId, req.params.id)));
+router.patch('/me', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  const me = await repo.updateProfile(ctx.identity.subject, req.body || {});
+  res.json({ ok: true, me });
+}));
 
-// ---- Safety: block / unblock / report ----------------------------------------------------------
-router.post('/block/:viraasId', requireAuth, (req, res) => send(res, store.blockUser(req.userId, req.params.viraasId)));
-router.delete('/block/:viraasId', requireAuth, (req, res) => send(res, store.unblockUser(req.userId, req.params.viraasId)));
-router.get('/report/categories', (_req, res) => res.json({ ok: true, categories: store.REPORT_CATEGORIES }));
-router.post('/report/:viraasId', requireAuth, (req, res) =>
-  send(res, store.reportUser(req.userId, req.params.viraasId, (req.body || {}).category, (req.body || {}).details)));
+router.get('/users', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  const users = await repo.searchUsers(ctx.user.user_id, req.query.q || '');
+  res.json({ ok: true, users });
+}));
 
-// Non-PII stats for the audit.
-router.get('/_stats', (_req, res) => res.json({ ok: true, stats: store.stats() }));
+router.get('/users/:viraasId', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  const profile = await repo.getPublicProfile(ctx.user.user_id, req.params.viraasId);
+  res.json({ ok: true, profile });
+}));
+
+router.post('/connect/:viraasId', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  const result = await repo.sendRequest(ctx.user.user_id, req.params.viraasId);
+  res.json({ ok: true, ...result });
+}));
+
+router.get('/requests', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json({ ok: true, ...(await repo.listRequests(ctx.user.user_id)) });
+}));
+
+router.post('/requests/:id/accept', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json({ ok: true, ...(await repo.acceptRequest(ctx.user.user_id, req.params.id)) });
+}));
+
+router.post('/requests/:id/decline', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json(await repo.declineRequest(ctx.user.user_id, req.params.id));
+}));
+
+router.get('/connections', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json({ ok: true, connections: await repo.listConnections(ctx.user.user_id) });
+}));
+
+router.delete('/connections/:id', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json(await repo.disconnect(ctx.user.user_id, req.params.id));
+}));
+
+router.get('/conversations', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json({ ok: true, conversations: await repo.listConversations(ctx.user.user_id) });
+}));
+
+router.get('/conversations/with/:viraasId', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json({ ok: true, ...(await repo.conversationWith(ctx.user.user_id, req.params.viraasId)) });
+}));
+
+router.get('/conversations/:id/messages', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json({ ok: true, ...(await repo.getMessages(ctx.user.user_id, req.params.id)) });
+}));
+
+router.post('/conversations/:id/messages', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.status(201).json({ ok: true, ...(await repo.sendMessage(ctx.user.user_id, req.params.id, req.body?.text)) });
+}));
+
+router.post('/conversations/:id/read', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json(await repo.markRead(ctx.user.user_id, req.params.id));
+}));
+
+router.post('/block/:viraasId', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json(await repo.blockUser(ctx.user.user_id, req.params.viraasId));
+}));
+
+router.delete('/block/:viraasId', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json(await repo.unblockUser(ctx.user.user_id, req.params.viraasId));
+}));
+
+router.post('/report/:viraasId', route(async (req, res) => {
+  const ctx = await context(req, res);
+  if (!ctx) return;
+  res.json(await repo.createReport(ctx.user.user_id, req.params.viraasId, req.body?.category, req.body?.details));
+}));
+
+router.use((error, _req, res, _next) => sendError(res, error));
 
 export default router;

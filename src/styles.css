@@ -281,8 +281,11 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
 /* VIRAAS Connect — social layer (VIRAAS ID · Connect · private 1:1 chat). Mobile-first.          */
 /* ============================================================================================== */
 .vc-page { max-width: 720px; margin: 0 auto; padding: 24px 18px 64px; }
-.vc-avatar { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: #fff; font-weight: 700; letter-spacing: .02em; flex: 0 0 auto; }
+.vc-avatar { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: #fff; font-weight: 700; letter-spacing: .02em; flex: 0 0 auto; overflow: hidden; }
+.vc-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
 .vc-err { color: var(--accent-2); font-size: .82rem; }
+.vc-notice { color: var(--ink-2); background: #f6f0e8; border-radius: 12px; padding: 11px 13px; font-size: .84rem; }
+.vc-form h2 { margin: 0; font-size: 1.2rem; }
 .vc-pill { font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; background: #f0e8df; color: var(--ink-2); padding: 3px 9px; border-radius: 99px; }
 .vc-pill.muted { background: #f3efe9; color: var(--muted); }
 .vc-btnrow { display: inline-flex; gap: 8px; align-items: center; }
@@ -304,6 +307,8 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
 .vc-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
 .vc-header h1 { margin: 0; }
 .vc-me { display: flex; align-items: center; gap: 12px; }
+.vc-visibility { display: grid; gap: 4px; padding: 14px 16px; margin: 0 0 18px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+.vc-visibility p { margin: 0; }
 .vc-tabs { display: flex; gap: 6px; border-bottom: 1px solid var(--line); margin-bottom: 18px; }
 .vc-tab { background: none; border: 0; padding: 10px 14px; font-weight: 600; font-size: .86rem; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px; }
 .vc-tab.active { color: var(--accent); border-bottom-color: var(--accent); }

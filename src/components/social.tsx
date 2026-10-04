@@ -1,28 +1,80 @@
 // Shared VIRAAS Connect UI atoms + the current-user hook. Kept separate so both the Connect hub and
 // the Chat pages reuse the exact same avatar, connect-button and report dialog behaviour.
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, type FormEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { social, avatarColor, initials, type Profile, type Relation } from '../lib/social';
+import { auth, social, avatarColor, initials, type Profile, type Relation } from '../lib/social';
 
 // Loads the signed-in VIRAAS user (or null). `loading` distinguishes "checking" from "signed out".
 export function useMe() {
   const [me, setMe] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
   const [available, setAvailable] = useState(false);
+  const [authenticated, setAuthenticated] = useState(false);
   const refresh = useCallback(async () => {
     try {
       const status = await social.status();
       setAvailable(status.available);
-      if (!status.available) { setMe(null); return; }
+      if (!status.available) { setMe(null); setAuthenticated(false); return; }
       const r = await social.me();
       setMe(r.me);
+      setAuthenticated(r.authenticated);
     } catch {
       setAvailable(false);
       setMe(null);
+      setAuthenticated(false);
     } finally { setLoading(false); }
   }, []);
   useEffect(() => { refresh(); }, [refresh]);
-  return { me, loading, available, setMe, refresh };
+  return { me, loading, available, authenticated, setMe, refresh, setAuthenticated };
+}
+
+export function AuthPanel({ onSuccess }: { onSuccess: () => void | Promise<void> }) {
+  const [mode, setMode] = useState<'login' | 'signup'>('signup');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState('');
+  const [notice, setNotice] = useState('');
+  const submit = async (event: FormEvent) => {
+    event.preventDefault();
+    setErr(''); setNotice(''); setBusy(true);
+    try {
+      if (mode === 'login') {
+        await auth.login(email, password);
+        await onSuccess();
+      } else {
+        const result = await auth.signup(email, password);
+        if (result.authenticated) await onSuccess();
+        else setNotice(result.message);
+      }
+    } catch (e) { setErr((e as Error).message); }
+    finally { setBusy(false); }
+  };
+  return (
+    <div className="vc-onboard">
+      <h1>VIRAAS Connect</h1>
+      <p className="lead">Sign in with email to create your VIRAAS account. Adults can create a discoverable Connect profile and chat privately after a request is accepted.</p>
+      <form className="vc-form" onSubmit={submit}>
+        <h2>{mode === 'signup' ? 'Create your VIRAAS account' : 'Welcome back'}</h2>
+        <label className="vc-label">Email address
+          <input type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </label>
+        <label className="vc-label">Password
+          <input type="password" required minLength={mode === 'signup' ? 12 : 1} maxLength={128} autoComplete={mode === 'signup' ? 'new-password' : 'current-password'} value={password} onChange={(e) => setPassword(e.target.value)} />
+          {mode === 'signup' && <small className="muted">Use at least 12 characters.</small>}
+        </label>
+        {err && <p className="vc-err" role="alert">{err}</p>}
+        {notice && <p className="vc-notice" role="status">{notice}</p>}
+        <div className="vc-btnrow">
+          <button className="btn btn-accent" type="submit" disabled={busy}>{busy ? 'Please wait…' : mode === 'signup' ? 'Create account' : 'Sign in'}</button>
+          <button className="btn sm" type="button" onClick={() => { setMode(mode === 'signup' ? 'login' : 'signup'); setErr(''); setNotice(''); }}>
+            {mode === 'signup' ? 'I already have an account' : 'Create an account'}
+          </button>
+        </div>
+        <p className="muted vc-fineprint">VIRAAS Connect profiles are for adults 18 and older. No public profile is created until you complete adult onboarding.</p>
+      </form>
+    </div>
+  );
 }
 
 export function ConnectUnavailable({ title = 'VIRAAS Connect' }: { title?: string }) {
@@ -37,14 +89,16 @@ export function ConnectUnavailable({ title = 'VIRAAS Connect' }: { title?: strin
   );
 }
 
-export function Avatar({ profile, size = 44 }: { profile: Pick<Profile, 'displayName' | 'avatarSeed'>; size?: number }) {
+export function Avatar({ profile, size = 44 }: { profile: Pick<Profile, 'displayName' | 'avatarSeed' | 'profilePhoto'>; size?: number }) {
   return (
     <span
       className="vc-avatar"
       style={{ width: size, height: size, background: avatarColor(profile.avatarSeed), fontSize: size * 0.38 }}
       aria-hidden
     >
-      {initials(profile.displayName)}
+      {profile.profilePhoto
+        ? <img src={profile.profilePhoto} alt="" loading="lazy" referrerPolicy="no-referrer" />
+        : initials(profile.displayName)}
     </span>
   );
 }
@@ -74,7 +128,7 @@ export function ConnectButton({ profile, onChange }: { profile: Profile; onChang
   if (rel === 'request_received')
     return (
       <span className="vc-btnrow">
-        <button className="btn btn-accent sm" disabled={busy} onClick={() => act(() => social.connect(profile.viraasId), 'connected')}>Accept</button>
+        <button className="btn btn-accent sm" disabled={busy || !profile.requestId} onClick={() => profile.requestId && act(() => social.accept(profile.requestId!), 'connected')}>Accept</button>
       </span>
     );
   return (
@@ -137,7 +191,8 @@ export function ProfileCard({ profile, onChange }: { profile: Profile; onChange?
         <Avatar profile={profile} />
         <span className="vc-card-txt">
           <strong>{profile.displayName}</strong>
-          <span className="muted">@{profile.viraasId}</span>
+          <span className="muted">@{profile.viraasId} · {profile.age}</span>
+          <span className="muted">{profile.locality} · {profile.city}{profile.state ? `, ${profile.state}` : ''}</span>
           {profile.bio && <span className="vc-bio">{profile.bio}</span>}
         </span>
       </Link>

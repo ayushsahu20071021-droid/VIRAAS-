@@ -14,6 +14,7 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 import { tryOnProvider, tryOnMode, tryOnConfigured, tryOnRequirements } from './tryOnProvider.mjs';
 import * as payments from './payments/service.mjs';
+import authRouter from './auth/routes.mjs';
 import socialRouter from './social/routes.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
@@ -82,10 +83,9 @@ app.post('/api/payment/webhook', express.raw({ type: '*/*', limit: '1mb' }), (re
 app.use(express.json({ limit: '12mb' }));
 
 app.get('/api/health', (_req, res) => res.json({ ok: true }));
+app.use('/api/auth', authRouter);
 
-// VIRAAS Connect (social) — VIRAAS ID -> Connect request -> mutual accept -> private 1:1 chat.
-// This is NOT an AI assistant; it is the human-to-human social layer. See server/social/store.mjs
-// for the non-production (in-memory, no realtime) notice.
+// VIRAAS Connect is persistent and human-to-human; private chat is separate from any AI feature.
 app.use('/api/social', socialRouter);
 // Status the browser is allowed to know: the mode and whether real generation is configured.
 // The provider NAME is only exposed once real generation is actually configured.
