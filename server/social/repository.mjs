@@ -138,8 +138,8 @@ async function ensureAccountInTransaction(client, authSubject) {
   if (existing) return { user: existing, created: false };
   const userId = id();
   const inserted = await client.query(
-    `INSERT INTO viraas_users (user_id, auth_subject, credits, reserved_credits, visibility, profile_complete)
-     VALUES ($1,$2,2,0,'hidden',false) ON CONFLICT (auth_subject) DO NOTHING RETURNING *`,
+    `INSERT INTO viraas_users (user_id, auth_subject, visibility, profile_complete)
+     VALUES ($1,$2,'hidden',false) ON CONFLICT (auth_subject) DO NOTHING RETURNING *`,
     [userId, authSubject],
   );
   if (!inserted.rowCount) {
@@ -147,11 +147,6 @@ async function ensureAccountInTransaction(client, authSubject) {
     if (!raced) throw new SocialError('Could not create the VIRAAS account. Try again.', 503);
     return { user: raced, created: false };
   }
-  await client.query(
-    `INSERT INTO credit_ledger (ledger_id, user_id, event_type, delta, idempotency_key, reference_type, reference_id)
-     VALUES ($1,$2,'CREDIT_GRANT',2,$3,'signup',$2)`,
-    [id(), userId, `signup:${userId}`],
-  );
   return { user: inserted.rows[0], created: true };
 }
 
@@ -558,46 +553,6 @@ export async function unblockUser(userId, viraasId) {
     await client.query("UPDATE connect_pairs SET status='DECLINED', declined_by=$3, updated_at=now() WHERE user_low=$1 AND user_high=$2 AND status='BLOCKED'", [low, high, userId]);
     return { ok: true };
   });
-}
-
-export async function listSavedItems(userId) {
-  const result = await query(
-    `SELECT s.item_kind, s.item_id, s.created_at, t.outfit_id, t.status AS tryon_status, t.result_storage_path
-     FROM saved_items s
-     LEFT JOIN tryon_jobs t ON s.item_kind='tryon' AND s.item_id=t.job_id::text AND t.user_id=s.user_id
-     WHERE s.user_id=$1
-     ORDER BY s.created_at DESC`,
-    [userId],
-  );
-  return result.rows.map((row) => ({
-    kind: row.item_kind,
-    id: row.item_id,
-    savedAt: nowIso(row.created_at),
-    outfitId: row.outfit_id || null,
-    status: row.tryon_status || null,
-    resultStoragePath: row.result_storage_path || null,
-  }));
-}
-
-export async function addSavedItem(userId, kind, itemId) {
-  if (!['product', 'couple', 'tryon'].includes(kind)) throw new SocialError('That saved item type is not supported.');
-  const value = String(itemId || '').trim();
-  if (!value || value.length > 180 || !/^[a-zA-Z0-9._:-]+$/.test(value)) throw new SocialError('That saved item is not available.');
-  if (kind === 'tryon') {
-    const job = await query("SELECT 1 FROM tryon_jobs WHERE job_id::text=$1 AND user_id=$2 AND status='SUCCEEDED'", [value, userId]);
-    if (!job.rowCount) throw new SocialError('Only your successfully generated Try-On results can be saved.', 404);
-  }
-  await query(
-    'INSERT INTO saved_items (user_id, item_kind, item_id) VALUES ($1,$2,$3) ON CONFLICT (user_id,item_kind,item_id) DO NOTHING',
-    [userId, kind, value],
-  );
-  return { ok: true };
-}
-
-export async function removeSavedItem(userId, kind, itemId) {
-  if (!['product', 'couple', 'tryon'].includes(kind)) throw new SocialError('That saved item type is not supported.');
-  const result = await query('DELETE FROM saved_items WHERE user_id=$1 AND item_kind=$2 AND item_id=$3', [userId, kind, String(itemId || '')]);
-  return { ok: true, removed: result.rowCount > 0 };
 }
 
 export async function createReport(userId, viraasId, reason, details = '') {

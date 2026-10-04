@@ -29,7 +29,7 @@ This applies the ordered SQL migrations in `server/db/migrations/`. Run it once 
 
 The user row stores a database UUID (`user_id`), a unique stable public VIRAAS ID, display name, calculated age, gender, state, city, locality, bio, profile-photo URL, visibility, and created/updated timestamps. The exact date of birth is validated by the server and discarded. Location fields do not include an exact address or GPS coordinates.
 
-Requests, connection status, conversation metadata, messages, read state, blocks, reports, and saved items are stored in PostgreSQL. Private chat is authorized by participant identity and a currently accepted connection on every request.
+Requests, connection status, conversation metadata, messages, read state, blocks, and reports are stored in PostgreSQL. Private chat is authorized by participant identity and a currently accepted connection on every request.
 
 ## Validation without real services
 

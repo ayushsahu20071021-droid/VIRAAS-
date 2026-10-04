@@ -54,9 +54,7 @@ export async function withTransaction(work) {
 }
 
 const REQUIRED_TABLES = [
-  'viraas_users', 'credit_ledger', 'tryon_jobs', 'credit_reservations',
-  'payment_orders', 'payment_events', 'connect_pairs', 'conversations',
-  'messages', 'blocks', 'reports', 'saved_items', 'schema_migrations',
+  'viraas_users', 'connect_pairs', 'conversations', 'messages', 'blocks', 'reports', 'schema_migrations',
 ];
 
 export async function databaseStatus() {
