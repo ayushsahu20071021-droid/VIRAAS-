@@ -40,7 +40,6 @@ const ids = rows.map((r) => r.productId);
 const unique = new Set(ids);
 const ALLOWED = ['MYNTRA', 'AJIO', 'FLIPKART', 'SHOPSY', 'MEESHO', 'NYKAA'];
 const merchants = [...new Set(rows.map((r) => r.merchant))];
-const amazon = merchants.filter((m) => /amazon/i.test(m));
 const badMerch = merchants.filter((m) => !ALLOWED.includes(m));
 const inventedAff = rows.filter((r) => r.affiliateUrl !== NS).length;
 const byGender = {}; for (const r of rows) byGender[r.gender] = (byGender[r.gender] || 0) + 1;
@@ -65,7 +64,6 @@ Machine-readable: [\`TRENDING_CURRENT_767.json\`](./TRENDING_CURRENT_767.json).
 | 767 records | ${rows.length === 767 ? 'PASS' : 'FAIL (' + rows.length + ')'} |
 | Unique product IDs | ${unique.size === rows.length ? 'PASS' : 'FAIL'} |
 | Allowed merchants only | ${badMerch.length === 0 ? 'PASS' : 'FAIL: ' + badMerch.join(',')} |
-| Amazon = 0 | ${amazon.length === 0 ? 'PASS' : 'FAIL'} |
 | Invented affiliate URLs = 0 | ${inventedAff === 0 ? 'PASS' : 'FAIL (' + inventedAff + ')'} |
 | Fake analytics/popularity/ratings/reviews/stock | NONE (not present in dataset) |
 
@@ -79,4 +77,4 @@ Missing source values are recorded as \`NOT SPECIFIED\` (nothing invented). All 
 wr('reports/TRENDING_CURRENT_767.md', md);
 
 console.log('records:', rows.length, '| unique:', unique.size, '| men/women:', JSON.stringify(byGender));
-console.log('amazon:', amazon.length, '| badMerchants:', badMerch, '| inventedAff:', inventedAff);
+console.log('badMerchants:', badMerch, '| inventedAff:', inventedAff);

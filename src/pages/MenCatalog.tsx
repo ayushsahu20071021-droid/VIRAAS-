@@ -7,7 +7,7 @@ import menLookAffiliate from '../data/men-look-affiliate.json';
 
 const finalImages = menFinalImages as Record<string, string>;
 const lookAff = menLookAffiliate as Record<string, { affiliateUrl: string; affiliateSource: string } | undefined>;
-const shopUrl = (id: string) => { const a = lookAff[id]; return a?.affiliateUrl || ''; };
+const shopUrl = (id: string) => { const a = lookAff[id]; return a?.affiliateSource === 'wishlink' && /^https:\/\/(?:www\.)?wishlink\.com\/share\/[^/?#]+(?:[?#].*)?$/.test(a.affiliateUrl) ? a.affiliateUrl : ''; };
 const MEN_LIVE_COUNT = MEN_LOOKS.filter((l) => finalImages[l.id]).length;
 
 function LookCard({ look }: { look: MenLook }) {
@@ -21,7 +21,7 @@ function LookCard({ look }: { look: MenLook }) {
       <p>{look.outfitDescription.split('. Picked')[0]}.</p>
       <div className="men-look-meta"><span>{look.garmentType}</span><span>{look.colors.primary}</span></div>
       <div className="men-look-actions">
-        <Link className="btn btn-ghost sm" to={`/try-on?menLook=${look.id}`}>Try this look</Link>
+        <Link className="btn btn-accent sm" to={`/try-on?menLook=${look.id}`}>Try it on</Link>
         <Link to={`/men-look/${look.id}`} className="link-arrow">View outfit details →</Link>
       </div>
     </div>
@@ -59,8 +59,8 @@ export function MenLookDetail() {
     <div className="crumbs"><Link to="/">Home</Link> / <Link to="/men">Men</Link> / {look.id}</div>
     <div className="men-detail-grid"><ImageFrame src={src} alt={`Men look ${look.referenceId} — ${look.garmentType}`} label={`Look ${look.id.replace('men-look-', '')}`} detail={`Reference ${look.referenceId}`} ratio="3 / 4" fit="contain" />
       <div><div className="kicker">{menOccasionLabel(look.occasion)} · {look.referenceId}</div><h1>Look {look.id.replace('men-look-', '')}</h1><p className="men-detail-lead">{look.outfitDescription.split('. Picked')[0]}.</p>{(() => { const d = menLookDetail(look.id); return <dl className="specs">{DETAIL_FIELDS.map((f) => <div key={f.key}><dt>{f.label}</dt><dd>{d?.[f.key] ?? 'Not clearly visible in reference'}</dd></div>)}</dl>; })()}
-        <div className="look-shop"><div className="kicker">Shop the look</div>{shopUrl(look.id) ? <a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop this look</a> : <button className="btn btn-shop" disabled aria-disabled="true">Shop this look</button>}</div>
-        <div className="row">{src && <Link className="btn btn-accent" to={`/try-on?menLook=${look.id}`}>Try this look</Link>}<Link className="btn btn-dark" to={`/men/${look.occasion}`}>Browse {menOccasionLabel(look.occasion)}</Link></div>
+        {shopUrl(look.id) && <div className="look-shop"><div className="kicker">Optional product link</div><a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop this look</a></div>}
+        <div className="row">{src && <Link className="btn btn-accent" to={`/try-on?menLook=${look.id}`}>Try it on</Link>}<Link className="btn btn-dark" to={`/men/${look.occasion}`}>Browse {menOccasionLabel(look.occasion)}</Link></div>
       </div>
     </div>
   </div>;

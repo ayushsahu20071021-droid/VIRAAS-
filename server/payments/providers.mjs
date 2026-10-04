@@ -88,7 +88,9 @@ const mockProvider = {
 const razorpayProvider = {
   name: 'razorpay',
   get configured() {
-    return Boolean(process.env.RAZORPAY_KEY_ID && process.env.RAZORPAY_KEY_SECRET && process.env.RAZORPAY_WEBHOOK_SECRET);
+    // Credentials alone do not make this stub a working gateway. Keep the UI/server fail-closed
+    // until order creation, signature verification and capture polling are implemented and tested.
+    return false;
   },
   async createOrder() {
     throw new Error('Razorpay is not configured yet (set RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET / RAZORPAY_WEBHOOK_SECRET and implement Orders API).');
@@ -110,7 +112,9 @@ const razorpayProvider = {
 const cashfreeProvider = {
   name: 'cashfree',
   get configured() {
-    return Boolean(process.env.CASHFREE_APP_ID && process.env.CASHFREE_SECRET_KEY);
+    // Credentials alone do not make this stub a working gateway. Keep the UI/server fail-closed
+    // until order creation, signature verification and capture polling are implemented and tested.
+    return false;
   },
   async createOrder() {
     throw new Error('Cashfree is not configured yet (set CASHFREE_APP_ID / CASHFREE_SECRET_KEY and implement Orders API).');

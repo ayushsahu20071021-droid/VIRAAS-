@@ -2,7 +2,7 @@
 import { execSync } from 'node:child_process';
 import fs from 'node:fs'; import path from 'node:path';
 import { ROOT, readJSON } from './lib/common.mjs';
-const steps = ['check-catalog', 'validate-images', 'audit-affiliate', 'audit-duplicates', 'audit-search', 'audit-http-images', 'render-smoke', 'audit-rendered-browser', 'typecheck'];
+const steps = ['check-catalog', 'validate-images', 'audit-affiliate', 'audit-product-actions', 'audit-duplicates', 'audit-search', 'audit-http-images', 'render-smoke', 'audit-rendered-browser', 'typecheck'];
 const results = {};
 for (const s of steps) {
   try { execSync(`npm run -s ${s}`, { cwd: ROOT, stdio: 'pipe', timeout: 600000 }); results[s] = 'PASS'; }

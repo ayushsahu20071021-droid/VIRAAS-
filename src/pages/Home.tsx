@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { COUPLES, WORLDS, PRODUCTS, BUDGETS, budgetsWithResults, coupleImageSrc } from '../lib/data';
+import { COUPLES, WORLDS, PRODUCTS, budgetsWithResults, coupleImageSrc } from '../lib/data';
 import { CoupleCard, LookCard, SectionHead, ImageFrame } from '../components/ui';
 import { featuredMenLooks, featuredWomenLooks, menLookImage, womenLookImage, shortDesc } from '../lib/looks';
 import { menOccasionLabel } from '../lib/menCatalog';
@@ -124,9 +124,10 @@ export default function Home() {
 
       {/* 9 BUDGET */}
       <section className="section">
-        <SectionHead kicker="Budget collections" title="Festive at every price" />
-        <div className="budget-row">{budgets.map((b) => <Link key={b.slug} to={`/trending?budget=${b.slug}`} className="budget-chip">{b.label}</Link>)}</div>
-        <p className="muted small">Budgets shown only where products exist. {BUDGETS.length - budgets.length > 0 ? `${BUDGETS.length - budgets.length} band(s) hidden: no current products.` : ''}</p>
+        <SectionHead kicker="Budget collections" title={budgets.length ? 'Festive at every price' : 'A clearer price guide'} />
+        {budgets.length > 0
+          ? <div className="budget-row">{budgets.map((b) => <Link key={b.slug} to={`/trending?budget=${b.slug}`} className="budget-chip">{b.label}</Link>)}</div>
+          : <p className="muted small">Budget collections will appear when exact seller prices are verified.</p>}
       </section>
 
       {/* 10 JOURNAL */}

@@ -1,7 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import { byId, PRODUCTS, COUPLES, worldName, type Product } from '../lib/data';
 import { formatINR } from '../lib/format';
-import { ImageFrame, SaveButton, ShopButton, ShareRow, ProductCard, Empty, CoupleCard, LookCard } from '../components/ui';
+import { ImageFrame, SaveButton, ProductActionButton, ShareRow, ProductCard, Empty, CoupleCard, LookCard } from '../components/ui';
+import { exactMerchantProductUrl, hasVerifiedPrice, productOutboundAction, tryOnHrefForProduct } from '../lib/productActions';
 import { womenLookForProduct, womenLookImage } from '../lib/looks';
 import { womenOccasionLabel } from '../lib/womenCatalog';
 
@@ -25,7 +26,7 @@ function whyPicked(p: Product): string[] {
   if (p.reference) out.push(`Follows the ${p.reference.split(' ')[0]} reference direction for this season: ${p.embroidery}.`);
   out.push(`${p.fabric} in a ${p.silhouette.toLowerCase()} cut. Easy to move in for ${p.occasion.map(worldName).join(', ')}.`);
   if (p.styleTags.includes('Mirror Work')) out.push('Mirror work catches garba lights and camera flash.');
-  if (p.price <= 1499) out.push('Sits in the under-₹1,499 budget band.');
+  if (p.priceType === 'verified' && p.price <= 1499) out.push('Sits in the under-₹1,499 budget band.');
   return out;
 }
 
@@ -37,6 +38,10 @@ export default function ProductPage() {
   const similar = PRODUCTS.filter((x) => x.id !== p.id && x.gender === p.gender && x.category === p.category && (x.colour === p.colour || x.embroidery === p.embroidery)).slice(0, 4);
   const inCouples = COUPLES.filter((c) => p.coupleIds.includes(c.id)).slice(0, 3);
   const featuredLook = womenLookForProduct(p.id);
+  const tryOnHref = tryOnHrefForProduct(p);
+  const exactMerchantUrl = exactMerchantProductUrl(p);
+  const hasPrice = hasVerifiedPrice(p);
+  const hasOutbound = Boolean(productOutboundAction(p));
   const gallery = p.gallery.length ? p.gallery : [''];
 
   return (
@@ -45,9 +50,9 @@ export default function ProductPage() {
       <div className="pdp">
         <div className="pdp-gallery">{gallery.map((g, i) => <ImageFrame key={i} src={g} alt={p.title} label={p.category} detail={`${p.colour} · ${p.embroidery} · ${p.fabric}`} eager />)}</div>
         <div className="pdp-info">
-          <div className="pcard-merchant">{p.merchant}</div>
+          {exactMerchantUrl && <div className="pcard-merchant">{p.merchant}</div>}
           <h1>{p.title}</h1>
-          <div className="pdp-price">{formatINR(p.price)} <span className="muted small">approx. price. Confirm on {p.merchant}</span></div>
+          {hasPrice && <div className="pdp-price">{formatINR(p.price)}</div>}
           <dl className="specs">
             <div><dt>Colour</dt><dd>{p.colour}{p.secondaryColours.length ? ` with ${p.secondaryColours.join(', ')}` : ''}</dd></div>
             <div><dt>Occasion</dt><dd>{p.occasion.map((o) => <Link key={o} to={`/occasions/${o}`} className="tag">{worldName(o)}</Link>)}</dd></div>
@@ -55,16 +60,15 @@ export default function ProductPage() {
             <div><dt>Fabric</dt><dd>{p.fabric}</dd></div>
             <div><dt>Details</dt><dd>{p.embroidery}</dd></div>
             <div><dt>Silhouette</dt><dd>{p.silhouette}</dd></div>
-            <div><dt>Sizes</dt><dd>{p.sizes.join(' · ')} <span className="muted small">(availability varies by seller)</span></dd></div>
           </dl>
           <div className="pdp-ctas">
-            {p.tryOnEnabled && <Link to={`/try-on?product=${p.id}`} className="btn btn-accent block">Try this outfit on you</Link>}
-            <ShopButton p={p} block />
+            {tryOnHref && <Link to={tryOnHref} className="btn btn-accent block">Try this outfit on you</Link>}
+            <ProductActionButton p={p} block />
             <SaveButton kind="product" id={p.id} image={p.imageUrl} />
           </div>
           <ShareRow path={`/product/${p.id}`} />
           <section className="why"><h3>Why we picked it</h3><ul>{whyPicked(p).map((w) => <li key={w}>{w}</li>)}</ul><p className="muted small">{p.description}</p></section>
-          <p className="muted small">VIRAAS doesn't sell this item. The Shop button opens {p.merchant}, where you'll see live listings, prices and stock. VIRAAS may earn a commission when you shop through selected affiliate links.</p>
+          {hasOutbound && <p className="muted small">VIRAAS does not sell this item. Confirm current product details with the seller before purchasing.</p>}
         </div>
       </div>
       {featuredLook && <section className="section"><h2>Seen in this VIRAAS look</h2><div className="grid4"><LookCard to={`/women-look/${featuredLook.id}`} image={womenLookImage(featuredLook.id)} alt={`Women look ${featuredLook.referenceId} — ${featuredLook.garmentType}`} kicker={womenOccasionLabel(featuredLook.occasion)} title={`Look ${featuredLook.id.replace('women-look-', '')}`} meta={[featuredLook.garmentType, featuredLook.colors.primary]} tryOnTo={`/try-on?womenLook=${featuredLook.id}`} /></div></section>}

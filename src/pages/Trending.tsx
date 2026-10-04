@@ -12,6 +12,7 @@ import { WOMEN_LOOKS, womenOccasionLabel } from '../lib/womenCatalog';
 import { menLookImage, womenLookImage, shortDesc } from '../lib/looks';
 import { worldName } from '../lib/data';
 import { ImageFrame, Empty } from '../components/ui';
+import { exactWishlinkShareUrl } from '../lib/productActions';
 import trendingFinal from '../data/trending-final.client.json';
 import menLookAffiliate from '../data/men-look-affiliate.json';
 import womenLookAffiliate from '../data/women-look-affiliate.json';
@@ -21,12 +22,12 @@ interface TItem {
   key: string; sourceType: SourceType; sourceProductId: string;
   gender: 'men' | 'women'; category: string; occasion: string[]; colour: string;
   image?: string; title: string; desc: string; detailHref: string; tryOnHref?: string;
-  affiliateUrl: string; price: number | null; merchant?: string; occasionLabel: string;
+  affiliateUrl: string; price: number | null; occasionLabel: string;
 }
 
-const menAff = menLookAffiliate as Record<string, { affiliateUrl: string } | undefined>;
-const womenAff = womenLookAffiliate as Record<string, { affiliateUrl: string } | undefined>;
-type IndieProduct = { id: string; gender: 'men' | 'women'; category: string; occasion: string[]; colour: string; title: string; description: string; price: number; merchant: string; affiliateUrl?: string; tryOnEnabled?: boolean };
+const menAff = menLookAffiliate as Record<string, { affiliateUrl: string; affiliateSource?: string } | undefined>;
+const womenAff = womenLookAffiliate as Record<string, { affiliateUrl: string; affiliateSource?: string } | undefined>;
+type IndieProduct = { id: string; gender: 'men' | 'women'; category: string; occasion: string[]; colour: string; title: string; description: string; price: number; priceType?: string; merchant: string; affiliateUrl?: string; affiliateSource?: string; tryOnEnabled?: boolean; imageUrl?: string; status?: string };
 
 // Deterministic FNV-1a hash → a stable, mixed, never-reshuffled curated order.
 const stableKey = (id: string): number => { let h = 2166136261; for (let i = 0; i < id.length; i++) { h ^= id.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
@@ -38,26 +39,28 @@ const ITEMS: TItem[] = [
     gender: 'men', category: l.garmentType, occasion: [l.occasion], colour: l.colors.primary,
     image: menLookImage(l.id), title: `Look ${l.id.replace('men-look-', '')}`, desc: shortDesc(l.outfitDescription),
     detailHref: `/men-look/${l.id}`, tryOnHref: menLookImage(l.id) ? `/try-on?menLook=${l.id}` : undefined,
-    affiliateUrl: menAff[l.id]?.affiliateUrl || '', price: null, occasionLabel: menOccasionLabel(l.occasion),
+    affiliateUrl: menAff[l.id]?.affiliateSource === 'wishlink' ? exactWishlinkShareUrl(menAff[l.id]?.affiliateUrl || '') || '' : '', price: null, occasionLabel: menOccasionLabel(l.occasion),
   })),
   ...WOMEN_LOOKS.map((l): TItem => ({
     key: l.id, sourceType: 'women-approved', sourceProductId: l.id,
     gender: 'women', category: l.garmentType, occasion: [l.occasion], colour: l.colors.primary,
     image: womenLookImage(l.id), title: `Look ${l.id.replace('women-look-', '')}`, desc: shortDesc(l.outfitDescription),
     detailHref: `/women-look/${l.id}`, tryOnHref: womenLookImage(l.id) ? `/try-on?womenLook=${l.id}` : undefined,
-    affiliateUrl: womenAff[l.id]?.affiliateUrl || '', price: null, occasionLabel: womenOccasionLabel(l.occasion),
+    affiliateUrl: womenAff[l.id]?.affiliateSource === 'wishlink' ? exactWishlinkShareUrl(womenAff[l.id]?.affiliateUrl || '') || '' : '', price: null, occasionLabel: womenOccasionLabel(l.occasion),
   })),
   ...(trendingFinal as IndieProduct[]).map((p): TItem => ({
     key: p.id, sourceType: 'trending-independent', sourceProductId: p.id,
     gender: p.gender, category: p.category, occasion: p.occasion, colour: p.colour,
     image: undefined, title: p.title, desc: shortDesc(p.description),
-    detailHref: `/product/${p.id}`, tryOnHref: p.tryOnEnabled ? `/try-on?product=${p.id}` : undefined,
-    affiliateUrl: p.affiliateUrl || '', price: p.price, merchant: p.merchant,
+    detailHref: `/product/${p.id}`, tryOnHref: p.tryOnEnabled && p.status === 'live' && p.imageUrl ? `/try-on?product=${p.id}` : undefined,
+    affiliateUrl: p.affiliateSource === 'wishlink' ? exactWishlinkShareUrl(p.affiliateUrl || '') || '' : '',
+    price: p.priceType === 'verified' ? p.price : null,
     occasionLabel: p.occasion[0] ? worldName(p.occasion[0]) : '',
   })),
 ];
 
 const fmtINR = (n: number) => `₹${n.toLocaleString('en-IN')}`;
+const HAS_VERIFIED_PRICE = ITEMS.some((item) => item.price !== null);
 const PAGE = 48;
 type FacetKey = 'gender' | 'category' | 'occasion' | 'colour';
 const LABEL: Record<FacetKey, string> = { gender: 'Gender', category: 'Category', occasion: 'Occasion', colour: 'Colour' };
@@ -79,10 +82,10 @@ function Card({ it }: { it: TItem }) {
         <p className="pcard-desc">{it.desc}</p>
         <div className="tags"><span className="tag">{it.category}</span><span className="tag">{it.colour}</span></div>
         <div className="pcard-actions">
-          {it.tryOnHref && <Link className="btn btn-ghost sm" to={it.tryOnHref}>Try this look</Link>}
-          {it.affiliateUrl
-            ? <a className="btn btn-shop sm" href={it.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>
-            : <button className="btn btn-shop sm" disabled aria-disabled="true">Shop</button>}
+          {it.tryOnHref
+            ? <Link className="btn btn-accent sm" to={it.tryOnHref}>Try it on</Link>
+            : <Link className="btn btn-ghost sm" to={it.detailHref}>{it.sourceType === 'trending-independent' ? 'View style' : 'View look'}</Link>}
+          {it.affiliateUrl && <a className="btn btn-shop sm" href={it.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>}
         </div>
       </div>
     </article>
@@ -143,7 +146,7 @@ export default function Trending() {
             <span className="small muted">{results.length} styles</span>
             <label className="small">Sort{' '}
               <select value={sp.get('sort') ?? ''} onChange={(e) => { const n = new URLSearchParams(sp); if (e.target.value) n.set('sort', e.target.value); else n.delete('sort'); setSp(n, { replace: true }); }}>
-                <option value="">Curated</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option>
+                <option value="">Curated</option>{HAS_VERIFIED_PRICE && <><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option></>}
               </select>
             </label>
           </div>

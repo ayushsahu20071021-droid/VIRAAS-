@@ -6,11 +6,12 @@ const checks = [];
 for (const r of ROUTES) { try { const res = await fetch(BASE + r); const t = await res.text(); checks.push([res.status === 200 && t.includes('<div id="root">'), `GET ${r} → ${res.status}`]); } catch (e) { checks.push([false, `GET ${r} → ${e.message}`]); } }
 const st = await (await fetch(BASE + '/api/try-on/status')).json();
 checks.push([st.mode === 'demo', `try-on mode: ${st.mode} (TRYON_MODE=demo)`]);
-const pid = readJSON('src/data/catalog.json').find((p) => p.tryOnEnabled).id;
+const previews = readJSON('src/data/women-previews.client.json');
+const testLookId = Object.entries(previews).find(([, preview]) => preview.live && preview.src)?.[0];
 const photo = 'data:image/png;base64,' + Buffer.from('x'.repeat(100)).toString('base64');
-const noAge = await fetch(BASE + '/api/try-on', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ productId: pid, photo }) });
+const noAge = await fetch(BASE + '/api/try-on', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ womenLookId: testLookId, photo }) });
 checks.push([noAge.status === 403, `try-on without 18+ confirmation rejected (${noAge.status})`]);
-const ok = await fetch(BASE + '/api/try-on', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ productId: pid, photo, ageConfirmed: true }) });
+const ok = await fetch(BASE + '/api/try-on', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ womenLookId: testLookId, photo, ageConfirmed: true }) });
 const body = await ok.json();
 checks.push([ok.status === 200 && body.mode === 'demo' && /DEMO/.test(body.message), 'try-on demo response clearly labelled DEMO']);
 checks.push([!JSON.stringify(body).match(/key|token|secret/i), 'no secrets in try-on response']);

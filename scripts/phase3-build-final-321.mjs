@@ -42,7 +42,8 @@ const ids = final321.map((p) => p.id);
 const uniq = new Set(ids);
 const g = {}; for (const p of final321) g[p.gender] = (g[p.gender] || 0) + 1;
 const merchants = [...new Set(final321.map((p) => p.merchant))];
-const amazon = merchants.filter((m) => /amazon/i.test(m));
+const ALLOWED = ['MYNTRA', 'AJIO', 'FLIPKART', 'SHOPSY', 'MEESHO', 'NYKAA'];
+const badMerch = merchants.filter((m) => !ALLOWED.includes(m));
 const inventedAff = final321.filter((p) => p.affiliateUrl && p.affiliateUrl.trim()).length;
 const tl = final321.filter((p) => p.category === 'Traditional Layer').length;
 
@@ -78,7 +79,7 @@ const md = `# VIRAAS — Final Trending Dataset (321)
 | 236 women removed via valid source linkage | ${womenExcluded.size === 236 ? 'PASS' : 'FAIL'} |
 | 210 men removed via documented exclusion map | ${menExcluded.size === 210 ? 'PASS' : 'FAIL'} |
 | Traditional Layer retained (not deleted) | ${tl > 0 ? 'PASS (' + tl + ' kept)' : 'CHECK'} |
-| No Amazon | ${amazon.length === 0 ? 'PASS' : 'FAIL'} |
+| Allowed merchants only | ${badMerch.length === 0 ? 'PASS' : 'FAIL (' + badMerch.join(', ') + ')'} |
 | No invented affiliate URLs | ${inventedAff === 0 ? 'PASS' : 'FAIL (' + inventedAff + ')'} |
 | No fake analytics/ratings/reviews/stock/popularity | NONE present |
 
@@ -88,4 +89,4 @@ but are excluded from the Trending view via this dedicated dataset.
 wr('reports/TRENDING_FINAL_321.md', md);
 
 console.log('final trending:', final321.length, '| unique:', uniq.size, '| men/women:', JSON.stringify(g), '| TL kept:', tl);
-console.log('women excluded:', womenExcluded.size, '| men excluded:', menExcluded.size, '| amazon:', amazon.length, '| inventedAff:', inventedAff, '| wrongTL excluded:', wrongTL);
+console.log('women excluded:', womenExcluded.size, '| men excluded:', menExcluded.size, '| badMerchants:', badMerch, '| inventedAff:', inventedAff, '| wrongTL excluded:', wrongTL);

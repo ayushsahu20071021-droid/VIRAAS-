@@ -59,6 +59,6 @@ export const BUDGETS = [
   { slug: '5000-plus', label: '₹5,000+', min: 5000, max: 8000 },
 ];
 export const budgetsWithResults = (list: Product[]) =>
-  BUDGETS.filter((b) => list.some((p) => p.price >= b.min && p.price <= b.max));
+  BUDGETS.filter((b) => list.some((p) => p.priceType === 'verified' && p.price >= b.min && p.price <= b.max));
 
 export const ACCESSORY_CATS = ['Jewellery', 'Bags', 'Footwear', 'Beauty'];

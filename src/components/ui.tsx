@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { type Product, type Couple, byId, worldName, coupleImageSrc } from '../lib/data';
 import { formatINR, sumPrices } from '../lib/format';
+import { exactMerchantProductUrl, hasVerifiedPrice, productOutboundAction, tryOnHrefForProduct } from '../lib/productActions';
 import { useSaved, webShare, copyLink, whatsappUrl } from '../lib/saved';
 
 /** Real image if QA-passed, otherwise a clearly labelled pending state (never a fake photo). */
@@ -37,19 +38,28 @@ export function SaveButton({ kind, id, image, compact }: { kind: 'product' | 'co
   );
 }
 
-export function ShopButton({ p, block }: { p: Product; block?: boolean }) {
-  // A Shop CTA is active ONLY when a verified affiliate URL exists. Otherwise it is shown disabled
-  // (never routed to a homepage/search/guessed URL) with no technical wording exposed to shoppers.
+export function ProductActionButton({ p, block, small }: { p: Product; block?: boolean; small?: boolean }) {
+  const action = productOutboundAction(p);
+  if (!action) return null;
+  const shop = action.label === 'Shop';
   return (
-    <div className={`shop-wrap ${block ? 'block' : ''}`}>
-      {p.affiliateUrl
-        ? <a className="btn btn-shop" href={p.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored" data-merchant={p.merchant}>Shop this look</a>
-        : <button className="btn btn-shop" disabled aria-disabled="true">Shop this look</button>}
-    </div>
+    <a
+      className={`btn ${shop ? 'btn-shop' : 'btn-ghost'} ${small ? 'sm' : ''} ${block ? 'block' : ''}`}
+      href={action.href}
+      target="_blank"
+      rel={shop ? 'noopener noreferrer nofollow sponsored' : 'noopener noreferrer'}
+      data-merchant={p.merchant}
+    >
+      {action.label}
+    </a>
   );
 }
 
 export function ProductCard({ p }: { p: Product }) {
+  const tryOn = tryOnHrefForProduct(p);
+  const outbound = productOutboundAction(p);
+  const exactMerchantUrl = exactMerchantProductUrl(p);
+  const verifiedPrice = hasVerifiedPrice(p);
   return (
     <article className="pcard" data-product-id={p.id}>
       <Link to={`/product/${p.id}`} className="pcard-img">
@@ -57,16 +67,14 @@ export function ProductCard({ p }: { p: Product }) {
         <SaveButton kind="product" id={p.id} image={p.imageUrl} compact />
       </Link>
       <div className="pcard-body">
-        <div className="pcard-merchant">{p.merchant}</div>
+        {exactMerchantUrl && <div className="pcard-merchant">{p.merchant}</div>}
         <Link to={`/product/${p.id}`} className="pcard-title">{p.title}</Link>
-        <div className="pcard-price">{formatINR(p.price)} <span className="muted small">approx.</span></div>
+        {verifiedPrice && <div className="pcard-price">{formatINR(p.price)}</div>}
         <div className="tags">{[worldName(p.occasion[0]), ...p.styleTags.slice(0, 2)].map((t) => <span key={t} className="tag">{t}</span>)}</div>
-        <div className="pcard-actions">
-          {p.tryOnEnabled && <Link className="btn btn-ghost sm" to={`/try-on?product=${p.id}`}>Try On</Link>}
-          {p.affiliateUrl
-            ? <a className="btn btn-shop sm" href={p.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>
-            : <button className="btn btn-shop sm" disabled aria-disabled="true">Shop</button>}
-        </div>
+        {(tryOn || outbound) && <div className="pcard-actions">
+          {tryOn && <Link className="btn btn-accent sm" to={tryOn}>Try it on</Link>}
+          {outbound && <ProductActionButton p={p} small />}
+        </div>}
       </div>
     </article>
   );
@@ -88,7 +96,10 @@ export function ShareRow({ path, compact }: { path: string; compact?: boolean })
 export function CoupleCard({ c, large }: { c: Couple; large?: boolean }) {
   const her = c.herProductIds.map((id) => byId.get(id)).filter(Boolean) as Product[];
   const his = c.hisProductIds.map((id) => byId.get(id)).filter(Boolean) as Product[];
-  const total = sumPrices([...her, ...his].map((p) => p.price));
+  const outfitProducts = [...her, ...his];
+  const total = outfitProducts.length > 0 && outfitProducts.every(hasVerifiedPrice)
+    ? sumPrices(outfitProducts.map((p) => p.price))
+    : null;
   return (
     <article className={`ccard ${large ? 'large' : ''}`} data-couple-id={c.id}>
       <Link to={`/couple-edit/${c.id}`} className="ccard-img">
@@ -119,7 +130,7 @@ export function LookCard({ to, image, alt, kicker, title, meta, tryOnTo }: { to:
         <Link to={to} className="men-look-title">{title}</Link>
         {meta && meta.length > 0 && <div className="men-look-meta">{meta.filter(Boolean).map((m) => <span key={m}>{m}</span>)}</div>}
         <div className="men-look-actions">
-          {tryOnTo && <Link className="btn btn-ghost sm" to={tryOnTo}>Try this look</Link>}
+          {tryOnTo && <Link className="btn btn-accent sm" to={tryOnTo}>Try it on</Link>}
           <Link to={to} className="link-arrow">View details →</Link>
         </div>
       </div>

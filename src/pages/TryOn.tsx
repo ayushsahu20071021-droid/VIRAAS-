@@ -5,7 +5,8 @@ import { womenLookById, womenOccasionLabel, type WomenLook } from '../lib/womenC
 import { menLookById, menOccasionLabel, type MenLook } from '../lib/menCatalog';
 import womenPreviews from '../data/women-previews.client.json';
 import menFinalImages from '../data/men-final-images.json';
-import { ImageFrame, ShopButton, ShareRow } from '../components/ui';
+import { ImageFrame, ProductActionButton, ShareRow } from '../components/ui';
+import { tryOnHrefForProduct } from '../lib/productActions';
 import { useSaved } from '../lib/saved';
 import { SHARE_TEXT } from '../lib/saved';
 import { DEFAULT_EDIT, isEdited, processPhoto, downloadDataUrl, shareImage, type PhotoEdit } from '../lib/photo';
@@ -15,7 +16,8 @@ interface TryOnResponse { ok: boolean; mode: string; resultImage?: string | null
 interface TryOnStatus {
   mode: string; configured: boolean; provider: string | null;
   // Payment gating (browser-safe). Absent/false => no payment required (current default behaviour).
-  paymentRequired?: boolean; priceInr?: number; currency?: string; paymentConfigured?: boolean;
+  paymentRequired?: boolean; priceInr?: number; currency?: string; paymentConfigured?: boolean; paymentProvider?: string;
+  generationAvailable?: boolean;
 }
 
 const AGE_KEY = 'viraas:age-confirmed';
@@ -94,7 +96,12 @@ interface Subject {
   product?: Product;
 }
 
-const GEN_STAGES = ['Preparing your photo…', 'Uploading securely…', 'Preparing the outfit…', 'Generating your try-on…', 'Finalising…'];
+const IDEMPOTENCY_HEADER = 'Idempotency-Key';
+function newAttemptKey() {
+  return typeof crypto !== 'undefined' && 'randomUUID' in crypto
+    ? crypto.randomUUID()
+    : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
 
 function resolveSubject(sp: URLSearchParams): Subject | undefined {
   const productId = sp.get('product');
@@ -129,20 +136,21 @@ function resolveSubject(sp: URLSearchParams): Subject | undefined {
   }
   if (coupleId && (side === 'her' || side === 'him')) {
     const c = coupleById.get(coupleId);
-    if (c) {
+    const ids = side === 'her' ? c?.herProductIds : c?.hisProductIds;
+    const product = ids?.map((id) => byId.get(id)).find((p) => p && tryOnHrefForProduct(p));
+    if (c && product) {
       const person = side === 'her' ? c.her : c.him;
       return {
-        kind: 'couple', id: `${coupleId}:${side}`, title: `${c.title} — ${side === 'her' ? 'For her' : 'For him'}`,
-        category: person.cat, colour: person.colour, imageUrl: coupleImageSrc(c),
-        detailPath: `/couple-edit/${coupleId}`, outfitDesc: person.desc,
-        meta: `${side === 'her' ? 'Her' : 'His'} outfit only — never combined`,
-        apiBody: { coupleId, side },
+        kind: 'product', id: product.id, title: product.title, category: product.category, colour: product.colour,
+        imageUrl: product.imageUrl, detailPath: `/couple-edit/${coupleId}`, outfitDesc: person.desc,
+        meta: `${side === 'her' ? 'Her' : 'His'} outfit — exact product image`,
+        apiBody: { productId: product.id }, product,
       };
     }
   }
   if (productId) {
     const p = byId.get(productId);
-    if (p) {
+    if (p && tryOnHrefForProduct(p)) {
       return {
         kind: 'product', id: p.id, title: p.title, category: p.category, colour: p.colour, imageUrl: p.imageUrl,
         detailPath: `/product/${p.id}`, apiBody: { productId: p.id }, outfitDesc: p.title, product: p,
@@ -162,11 +170,11 @@ export default function TryOn() {
   const [consent, setConsent] = useState(false);
   const [result, setResult] = useState<TryOnResponse | null>(null);
   const [status, setStatus] = useState<TryOnStatus>({ mode: 'demo', configured: false, provider: null });
-  const [stage, setStage] = useState(0);
   const [saved, setSavedFlag] = useState(false);
   const [payNote, setPayNote] = useState<string>('');
   const fileRef = useRef<HTMLInputElement>(null);
-  const stageTimer = useRef<ReturnType<typeof setInterval> | null>(null);
+  const generateLock = useRef(false);
+  const paymentLock = useRef(false);
   const pollTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const { toggle, isSaved } = useSaved();
 
@@ -174,9 +182,8 @@ export default function TryOn() {
     fetch('/api/try-on/status').then((r) => r.json()).then(setStatus).catch(() => setStatus({ mode: 'demo', configured: false, provider: null }));
   }, []);
 
-  // Clear any running timers when the component unmounts.
+  // Clear payment polling when the component unmounts.
   useEffect(() => () => {
-    if (stageTimer.current) clearInterval(stageTimer.current);
     if (pollTimer.current) clearInterval(pollTimer.current);
   }, []);
 
@@ -209,8 +216,11 @@ export default function TryOn() {
   // payment itself: it creates a payment, then waits for the SERVER to report an authorization that
   // only the gateway webhook can produce. A real gateway's checkout widget would open here using the
   // returned `checkout` descriptor.
+  const paymentReady = Boolean(status.paymentConfigured && status.paymentProvider !== 'mock');
+
   const startPayment = async () => {
-    if (!subject || !processed || !consent) return;
+    if (!subject || !processed || !consent || paymentLock.current || !paymentReady) return;
+    paymentLock.current = true;
     setPayNote(''); setStep('payment');
     try {
       const res = await fetch('/api/payment/create', {
@@ -222,6 +232,8 @@ export default function TryOn() {
       pollAuthorization(String(data.paymentId));
     } catch (e) {
       setResult({ ok: false, mode: status.mode, message: String((e as Error).message) }); setStep('error');
+    } finally {
+      paymentLock.current = false;
     }
   };
 
@@ -247,13 +259,14 @@ export default function TryOn() {
   };
 
   const generate = async (authToken?: string) => {
-    if (!subject || !processed || !consent) return;
+    if (!subject || !processed || !consent || generateLock.current) return;
+    generateLock.current = true;
     if (pollTimer.current) clearInterval(pollTimer.current);
-    setStep('generating'); setStage(0);
-    stageTimer.current = setInterval(() => setStage((s) => Math.min(s + 1, GEN_STAGES.length - 1)), 1200);
+    setStep('generating');
     try {
       const res = await fetch('/api/try-on', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', [IDEMPOTENCY_HEADER]: newAttemptKey() },
         body: JSON.stringify({ ...subject.apiBody, photo: processed, ageConfirmed: true, ...(authToken ? { authToken } : {}) }),
       });
       const data = (await res.json()) as TryOnResponse;
@@ -262,7 +275,7 @@ export default function TryOn() {
     } catch (e) {
       setResult({ ok: false, mode: status.mode, message: String((e as Error).message) }); setStep('error');
     } finally {
-      if (stageTimer.current) clearInterval(stageTimer.current);
+      generateLock.current = false;
     }
   };
 
@@ -280,6 +293,7 @@ export default function TryOn() {
   };
 
   const notProduction = !status.configured; // no real provider connected yet
+  const generationBlocked = status.configured && status.generationAvailable === false;
 
   return (
     <div className="page tryon">
@@ -292,6 +306,11 @@ export default function TryOn() {
             generation needs a connected provider, so results show a labelled layout preview — not an AI image. Your
             photo is sent only to the VIRAAS server for the preview and is not stored. See{' '}
             <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link>.
+          </div>
+        )}
+        {generationBlocked && (
+          <div className="demo-banner" role="status">
+            <strong>Live Try-On is temporarily unavailable.</strong> Usage limits or verified checkout are not active yet. No generation or charge will be made.
           </div>
         )}
       </div>
@@ -333,10 +352,10 @@ export default function TryOn() {
             {step === 'under18' && (
               <div className="gate">
                 <h2>Photo try-on is 18+ only</h2>
-                <p>You can still explore this look, share it{subject.kind === 'product' ? ', or shop it directly' : ''}.</p>
+                <p>You can still browse, save, and share this look.</p>
                 <div className="row">
                   {subject.kind === 'product' && subject.product
-                    ? <><button className="btn btn-ghost" onClick={() => toggle('product', subject.id, subject.imageUrl)}>{isSaved('product', subject.id) ? 'Saved ✓' : 'Save look'}</button><ShopButton p={subject.product} /></>
+                    ? <><button className="btn btn-ghost" onClick={() => toggle('product', subject.id, subject.imageUrl)}>{isSaved('product', subject.id) ? 'Saved ✓' : 'Save look'}</button><Link className="btn btn-ghost" to={subject.detailPath}>View details</Link><ProductActionButton p={subject.product} /></>
                     : <Link className="btn btn-ghost" to={subject.detailPath}>View look details</Link>}
                 </div>
                 <ShareRow path={subject.detailPath} />
@@ -393,11 +412,12 @@ export default function TryOn() {
                   <span>I’m 18+ and I understand my photo is sent to the VIRAAS server to generate my try-on for this look. It isn’t added to the catalog or made public. See the <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link> notice.</span>
                 </label>
                 <div className="row">
-                  <button className="btn btn-accent" disabled={!consent || !processed} onClick={onGenerateClick}>
-                    {status.paymentRequired ? `Pay ₹${status.priceInr ?? ''} & generate` : 'Generate my try-on'}
+                  <button className="btn btn-accent" disabled={!consent || !processed || generationBlocked || (status.paymentRequired && !paymentReady)} onClick={onGenerateClick}>
+                    {generationBlocked ? 'Try-On unavailable' : status.paymentRequired ? (paymentReady ? `Pay ₹${status.priceInr ?? 20} & generate` : 'Try-On checkout unavailable') : 'Generate my try-on'}
                   </button>
                 </div>
-                {status.paymentRequired && <p className="muted small">One AI Try-On for this look. You pay VIRAAS securely; your photo is never sent to the payment provider.</p>}
+                {status.paymentRequired && paymentReady && <p className="muted small">One AI Try-On for this look. Your photo is sent to VIRAAS only, not the payment provider.</p>}
+                {status.paymentRequired && !paymentReady && <p className="muted small">₹{status.priceInr ?? 20} checkout is not connected. No payment has been taken.</p>}
               </div>
             )}
 
@@ -418,7 +438,7 @@ export default function TryOn() {
             {/* 5 — Loading */}
             {step === 'generating' && (
               <div className="gate">
-                <h2>{GEN_STAGES[stage]}</h2>
+                <h2>Processing your try-on…</h2>
                 <div className="spinner" aria-label="Working" />
                 <p className="muted small">This can take a moment. Please keep this tab open.</p>
               </div>
@@ -449,7 +469,7 @@ export default function TryOn() {
                         ? <button className="btn btn-ghost" onClick={() => toggle('product', subject.id, subject.imageUrl)}>{isSaved('product', subject.id) ? 'Saved ✓' : 'Save look'}</button>
                         : <Link className="btn btn-ghost" to={subject.detailPath}>View look</Link>}
                       <button className="btn btn-dark" onClick={tryAnother}>Try another</button>
-                      {subject.kind === 'product' && subject.product && <ShopButton p={subject.product} />}
+                      {subject.kind === 'product' && subject.product && <ProductActionButton p={subject.product} />}
                     </div>
                     <ShareRow path={subject.detailPath} />
                   </div>

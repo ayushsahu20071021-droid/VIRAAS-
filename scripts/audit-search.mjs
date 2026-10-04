@@ -11,8 +11,10 @@ const cases = [
   ['college fest men', (r) => r.length > 0 && r.every((p) => p.gender === 'men' && p.occasion.includes('college-fest'))],
   ['diwali women', (r) => r.length > 0 && r.every((p) => p.gender === 'women' && p.occasion.includes('diwali'))],
   ['diwali men', (r) => r.length > 0 && r.every((p) => p.gender === 'men' && p.occasion.includes('diwali'))],
-  ['black festive outfit', (r) => r.length > 0 && r.every((p) => p.colour === 'Black' || p.secondaryColours.includes('Black'))],
-  ['pink lehenga', (r) => r.length > 0 && r.every((p) => p.category === 'Lehenga' && /pink/i.test(p.colour))],
+  // Color intent may appear in the product title (for example, a black blouse or pink dupatta)
+  // even when the catalog's primary-colour field records the dominant shade of the full set.
+  ['black festive outfit', (r) => r.length > 0 && r.every((p) => /\bblack\b/i.test([p.title, p.colour, ...p.secondaryColours].join(' ')))],
+  ['pink lehenga', (r) => r.length > 0 && r.every((p) => p.category === 'Lehenga' && /\b(?:pink|magenta|fuchsia|rani)\b/i.test([p.title, p.colour, ...p.secondaryColours].join(' ')))],
   ['chaniya choli', (r) => r.length > 0 && r.every((p) => p.category === 'Chaniya Choli')],
   ['pre draped saree', (r) => r.length > 0 && r.every((p) => p.category === 'Pre-Draped Saree')],
   ['sharara', (r) => r.length > 0 && r.every((p) => p.category === 'Sharara')],

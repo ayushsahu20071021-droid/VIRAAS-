@@ -94,6 +94,7 @@ app.get('/api/try-on/status', (_req, res) =>
     currency: payments.CURRENCY,
     paymentProvider: payments.paymentConfig.provider,
     paymentConfigured: payments.paymentConfig.configured,
+    generationAvailable: !tryOnConfigured, // live generation stays closed until persistent account credits exist
   }),
 );
 
@@ -149,21 +150,18 @@ function resolveSubject(body) {
     const c = coupleById.get(coupleId);
     if (!c) return { error: 404, message: 'Unknown look.' };
     if (side !== 'her' && side !== 'him') return { error: 400, message: 'Choose whose outfit to try on.' };
-    // Use the exact per-person garment reference. There is no individual per-person image for
-    // couples, so we pass the exact gendered outfit description (never the combined image).
-    const person = side === 'her' ? c.her : c.him;
-    return {
-      outfitId: `${coupleId}:${side}`,
-      gender: side === 'her' ? 'women' : 'men',
-      garmentImageUrl: null,
-      garmentDescription: person?.desc || '',
-    };
+    const ids = side === 'her' ? c.herProductIds : c.hisProductIds;
+    const product = ids.map((id) => byId.get(id)).find((item) => item?.tryOnEnabled && item.status === 'live' && item.imageUrl);
+    if (!product) return { error: 400, message: 'This side of the look does not have an individual live Try-On image yet.' };
+    // Never send the combined couple image or a text-only substitute as a garment reference.
+    return { outfitId: product.id, gender: product.gender, garmentImageUrl: product.imageUrl, garmentDescription: product.title };
   }
   if (productId) {
     const product = byId.get(productId);
     if (!product) return { error: 404, message: 'Unknown product.' };
-    if (!product.tryOnEnabled) return { error: 400, message: 'This product is not eligible for Try-On.' };
-    return { outfitId: productId, gender: 'unknown', garmentImageUrl: product.imageUrl || null, garmentDescription: product.title };
+    if (!product.tryOnEnabled || !product.imageUrl || product.status !== 'live')
+      return { error: 400, message: 'This product does not have a live Try-On image yet.' };
+    return { outfitId: productId, gender: 'unknown', garmentImageUrl: product.imageUrl, garmentDescription: product.title };
   }
   return { error: 400, message: 'No product or look selected.' };
 }
@@ -181,6 +179,13 @@ app.post('/api/try-on', async (req, res) => {
   if (typeof photo !== 'string' || !/^data:image\/(jpeg|png|webp);base64,/.test(photo))
     return res.status(400).json({ ok: false, message: 'Please upload a JPG, PNG or WebP photo.' });
   if (photo.length > 11 * 1024 * 1024) return res.status(413).json({ ok: false, message: 'Photo too large.' });
+
+  // Fail closed for every live provider call until persistent user identity, the two-credit ledger,
+  // and verified ₹20 checkout are connected. Do this BEFORE consuming any paid authorization.
+  // The demo adapter remains available as a clearly labelled layout preview and makes no provider call.
+  if (tryOnConfigured) {
+    return res.status(503).json({ ok: false, message: 'AI Try-On is temporarily unavailable.' });
+  }
 
   // PAYMENT GATE. When payment is required, a real generation needs a verified, paid, ONE-TIME
   // authorization. A client-supplied "paymentSuccess" flag is IGNORED — we only accept a valid

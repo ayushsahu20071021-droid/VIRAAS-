@@ -16,7 +16,7 @@ function valuesOf(p: Product, k: FacetKey): string[] {
     case 'category': return [catSlug(p.category)];
     case 'occasion': return p.occasion;
     case 'colour': return [p.colour];
-    case 'budget': return BUDGETS.filter((b) => p.price >= b.min && p.price <= b.max).map((b) => b.slug);
+    case 'budget': return p.priceType === 'verified' ? BUDGETS.filter((b) => p.price >= b.min && p.price <= b.max).map((b) => b.slug) : [];
     case 'style': return p.styleTags;
     case 'silhouette': return [p.silhouette];
     case 'fabric': return [p.fabric];
@@ -68,9 +68,13 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
     }
     const sort = sp.get('sort');
     const sorted = [...list];
-    if (sort === 'price-asc') sorted.sort((a, b) => a.price - b.price);
-    else if (sort === 'price-desc') sorted.sort((a, b) => b.price - a.price);
-    else sorted.sort((a, b) => Number(!!b.imageUrl) - Number(!!a.imageUrl) || b.coupleIds.length - a.coupleIds.length);
+    if (sort === 'price-asc' || sort === 'price-desc') {
+      const direction = sort === 'price-asc' ? 1 : -1;
+      const priced = sorted.filter((p) => p.priceType === 'verified').sort((a, b) => direction * (a.price - b.price));
+      const unpriced = sorted.filter((p) => p.priceType !== 'verified');
+      return [...priced, ...unpriced];
+    }
+    sorted.sort((a, b) => Number(!!b.imageUrl) - Number(!!a.imageUrl) || b.coupleIds.length - a.coupleIds.length);
     return sorted;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [base, sp, facetKeys]);
@@ -95,8 +99,8 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
         {mode === 'accessories' && <div className="kicker">Complete the look</div>}
         <h1>{title}</h1>
         {mode === 'accessories'
-          ? <p className="muted">{results.length} accessories to finish your Garba / Navratri look — jhumkas, chokers, kamarbandhs, mojaris, juttis, potlis, dupattas and more. Prices are approximate marketplace prices. Always confirm on the merchant's site.</p>
-          : <p className="muted">{results.length} styles · Prices are approximate marketplace prices. Always confirm on the merchant's site.</p>}
+          ? <p className="muted">{results.length} accessories to finish your Garba / Navratri look — jhumkas, chokers, kamarbandhs, mojaris, juttis, potlis, dupattas and more. Seller links and prices appear only when an exact product listing is verified.</p>
+          : <p className="muted">{results.length} styles · Seller links and prices appear only when an exact product listing is verified.</p>}
       </div>
       <div className="listing-body">
         <aside className="filters" aria-label="Filters">

@@ -1,75 +1,67 @@
-# VIRAAS — Final Report (honest status)
+# VIRAAS — Productization and Verification Report
 
-**Status: INCOMPLETE.** The platform, catalog and every technical gate pass. The image generation queue is still open, so this build must not be declared complete. Diwali 01–20 are now generated, but remain pending human visual QA.
+**Status: INCOMPLETE — not production-ready.** This pass continued the existing VIRAAS app and preserved its catalog records. It tightened product actions and payment fail-closed behavior, then ran the available build, audits, tests, route checks, and browser checks. The spreadsheet, durable identity/credit storage, verified checkout, and AI-chat provider required for the requested end state are not available in this workspace.
 
-| Item | Value |
+## Existing site and catalog preserved
+
+| Area | Current verified state |
+|---|---:|
+| Product catalog | 827 records: 491 women, 336 men |
+| Curated Men looks | 210 |
+| Curated Women looks | 236 |
+| Couple Edit | 100 looks across 5 worlds (20 each) |
+| Trending | 767 records: 210 Men + 236 Women + 321 independent |
+| Accessories | 60 |
+| Featured Try-On looks | 12 curated look references |
+
+No catalog JSON was regenerated. The SHA-256 checksums of `catalog.json`, `couples.json`, and their client copies were identical before and after `npm run build`; those data files are unchanged in the working tree. The 767 Trending source records and the existing page/catalog design were retained.
+
+## Safe product actions now enforced
+
+- Product Try-On is eligible only when that exact product has its own live image. The catalog currently has **0** eligible product records; 721 `tryOnEnabled` flags have no live product image. Couple-side Try-On only resolves to that side’s individual live product image—never a combined couple image or text-only substitute.
+- The 12 featured Try-On entries are curated Men/Women look references, not 12 verified merchant SKUs. The demo flow remains visibly labelled as a preview; it does not produce an AI image.
+- Product-level merchant CTAs require an explicitly typed HTTPS listing on the expected merchant host. Marketplace-search URLs are not presented as product pages. All 827 current merchant URLs are search URLs; exact product listings: **0**.
+- Affiliate Shop CTAs require an exact Wishlink share URL. Current affiliate URLs: **0**.
+- Verified-price gates are in place. Verified prices: **0**; all 827 catalog prices are estimates and are not presented as verified prices. Budget filters and unsupported price CTAs remain hidden.
+- Couple “Product links” render only for sides with an eligible exact affiliate URL.
+
+The spreadsheet audit found **no workbook file**. This pass did not import or change Garba LOOK groups/order, College Fest mappings, seller URLs, or source references. Existing repository records and mappings were preserved, but none are claimed as verified against the missing workbook; existing couple-to-product records remain untouched.
+
+## Identity, payments, Try-On, and chat
+
+- A production-persistent VIRAAS ID and shared identity store are **not implemented**. The existing Connect/social store is an in-memory reference implementation; it is not durable across server restarts or Vercel instances.
+- The requested exactly-two-free-credit ledger and production payment checkout are **not implemented**. Razorpay/Cashfree adapters remain stubs; the mock provider is test-only and collects no money.
+- When a live Try-On provider is configured, the API now returns `503` before consuming payment authorization while identity, credit accounting, and verified checkout are absent. The mock test explicitly confirms that a blocked authorization remains unconsumed. Demo mode is only a labelled layout preview.
+- Existing `/connect` and `/chat` routes are human-to-human private chat, not VIRAAS AI fashion discovery. No AI chat model or durable chat-history provider is connected, so no AI assistant or persistent chat-history claim is made.
+
+## Verification results
+
+| Check | Result |
 |---|---|
-| Product count | **861** (min 653 ✅, target ~823+ ✅) |
-| Women | 525 |
-| Men | 336 |
-| Couple looks | 100 |
-| Worlds | 5 (Garba, College Fest, Diwali, Festive Party, Traditional), 20 couple looks each |
-| Images in queue | 961 (100 couple + 861 product) |
-| Real images (QA_PASS) | **0** — every couple image has been regenerated from the supplied references and is awaiting human visual verification |
-| Generated, awaiting visual verification | **40**: Garba 01–20 (rebuilt from GARBA-REF 01–20) + College Fest 01–20 |
-| Pending images | **921**: 60 couples (Diwali, Festive Party, Traditional) + 861 product mannequin visuals |
-| Failed QA | 0 |
-| Duplicates | 0 (sha256 + perceptual dHash) |
-| Affiliate audit | PASS: only MYNTRA/AJIO/FLIPKART/SHOPSY/MEESHO/NYKAA; forbidden marketplace absent; affiliateUrl empty on all 861 products; no tracking params |
-| Search audit | PASS: 20/20 intent queries; "men" never matches women |
-| Render audit | PASS: 49 routes in headless Chromium; no JS errors, broken images, empty filters or NaN prices |
-| Render smoke | PASS: all routes return 200; `/api/try-on` enforces 18+; demo response is labelled |
-| Typecheck | PASS |
-| Build | PASS |
-| Final audit | **INCOMPLETE**: technical gates pass; image completion gate open (18/100 couples verified, 0/861 products) |
-| Branch | `arena/01a0cee5-viraas` (session-fixed; could not use `feature/viraas-final-reference-fashion`) |
-| Commit SHA | see `git log -1` on the branch (first milestone: `ee22ba1`) |
-| PR | https://github.com/ayushsahu20071021-droid/VIRAAS-/pull/2 (open, not merged) |
+| `npm run build` / TypeScript | **PASS** — production Vite build completed. Vite warns that the main JavaScript bundle is about 2.83 MB, above its 2 MB advisory threshold. |
+| Node syntax checks (`server/`, `scripts/`) | **PASS** |
+| `audit-product-actions` | **PASS** — 827 products checked; no unsafe/invalid actions; no spreadsheet found. |
+| `audit-affiliate` | **PASS** — allowed merchant hosts only; no affiliate URLs or invented tracking parameters. |
+| Trending validation | **PASS** — 210 Men + 236 Women + 321 independent = 767; no ID overlap, heuristic mapping, or generated replacement images. |
+| Search audit | **PASS** — 20 intent checks, including gender-token behavior. Color checks recognize searchable title details as well as primary-color fields. |
+| HTTP image audit | **PASS** — 546 current Men/Women/Couple look-image references served as images over 30 KB. This confirms delivery, not visual QA for Couple images. |
+| Render smoke | **PASS** — 55 route/API/age-gate/demo checks. |
+| Headless browser audit | **PASS** — 55 checks across the site routes, including navigation, the five home worlds, and all 100 Couple cards. |
+| Payment/Try-On mock harness | **PASS** — 31 checks; no real payment or provider generation. Includes the live-provider fail-closed-before-consumption case. |
+| Runware adapter no-spend test | **PASS** — 8 checks; no real customer image or paid generation. |
+| Catalog consistency audit | **FAIL** — 60 couple garment ↔ linked-product category/colour mismatches. No mappings were “fixed” without the workbook source of truth. |
+| Duplicate-image audit | **FAIL** — 872 perceptual near-duplicate pairs (dHash ≤4) among 776 files; URL-reuse and exact-SHA checks pass (0 each). Image files were not replaced or deleted. |
+| Image completion gate | **OPEN** — 0/100 Couple images and 0/827 product visuals are recorded `QA_PASS`; 927 remain pending, with 0 `QA_FAIL`. |
+| `npm run final-audit` | **INCOMPLETE** — action, affiliate, search, image-serving, render, browser, and typecheck gates pass; catalog consistency, perceptual-duplicate, and image-completion gates remain open. |
 
-## References
-All 10 attachments were visible in the conversation, but none were saved to disk (`/home/user/uploads` did not exist). I studied them from the conversation and recorded what I saw in `data-src/references.mjs` (REF-C1..C3, REF-S1/S2, REF-M1..M3, REF-W1..W2). No third-party image is stored or redistributed.
+The machine-readable summary is `reports/final-audit.json`; individual audit output is under `reports/`.
 
-## Couple visual QA (inspected by eye against each reference)
-Garba 01–20 all read as real young adults (about 18–25). None are mannequins, and none use bride/groom styling. Each one reproduces its reference's outfit, pose and framing:
-01 fitting-room mirror selfie (REF-C1) · 02 true overhead black brocade (REF-C2) · 03 ivory mirror-work lehenga on diya steps (REF-C3) · 04 red backless-choli face-cup · 05 pink bandhani hand-hold crop · 06 red/ivory shoulder-line crop · 07 patchwork walk into the canopy · 08 black patola dandiya · 09 dupatta adjust · 10 red flare twirl · 11 cheek-to-cheek selfie (royal blue + red bandhani) · 12 mat-side laughs (mustard/olive) · 13 stage-glow embrace (black sequin kurta) · 14 steel-lift mirror selfie (emerald gamthi) · 15 black-on-black bench whisper · 16 two-hand spin (wine lehenga) · 17 entrance-arch side hug (navy bandhani) · 18 ivory twirl with partner watching · 19 walking hand-hold (maroon mirror) · 20 forehead touch with dandiya (hot pink). Minor deviations noted honestly in the QA file: 14 (hands on shoulders instead of chin-on-head), 16 (one hand-pair visible). The per-image notes are in `data-src/image-qa.json`.
+## Still required before production release
 
-## Honest limitations
-- The per-turn image limit (10) was reached. The queue in `public/image-queue-ordered.json` resumes at **Festive Party**, then Traditional, then Traditional, then the 861 product images, then college-fest-02…20, diwali, festive-party, traditional, and then products (priorities 6–11).
-- Prices are research-guided **estimates** for each style (`priceType: "estimate"`), not live listings. `merchantUrl` is a marketplace **search** URL, not a product listing. `mrp` and `discount` are null because they are not fabricated.
-- Couples in College Fest, Diwali, Festive Party and Traditional are specified by outfit and pose from the sheet panels. Those sheet panels are low-resolution, so their detail is less exact than the three individual screenshots.
-- The headless browser can't reach Google Fonts, so audit screenshots use a fallback serif font.
-
-## Vision limitation (important, read this)
-
-Image files could not be viewed in the session that generated Garba 14/16 (re-takes)
-and College Fest 01–08: every attempt to open an image returned
-"An image was provided here, but you do not have vision capabilities."
-
-Consequence: those 10 images were generated reference-first from the recorded
-descriptions of the supplied screenshots, verified only for file integrity
-(non-placeholder dimensions, real byte sizes, unique sha256 hashes, aspect ratio
-against the spec) and are recorded in `data-src/image-qa.json` as `GENERATED` /
-`REGENERATE` — **not** `QA_PASS`. They are committed so the work is not lost, and the
-site shows them in its labelled pending state until a human compares each one
-against its reference panel and flips it to QA_PASS.
-
-Nothing in this report claims visual confirmation that has not happened.
-
-## Age lock and styling rule
-
-Every couple image from College Fest 01–20 onward is generated with the age locked to
-**exactly 18 years old** (Indian college students), with hard negatives against
-politician/"neta"-style kurta-pyjama, bandhgala, Nehru jackets, sherwanis, groom styling
-and corporate/formal suits. This is baked into the shared prompt in
-`scripts/build-catalog.mjs`, so it applies to every future queue item as well.
-
-## Garba rebuild (GARBA-REF 01–20)
-
-The user supplied a new set of 20 Garba references and asked for a full rebuild because the
-earlier Garba outfits were judged unsuitable for the site. All 20 Garba looks were rewritten
-with `referenceNumber`, `outfitDescription`, `poseDescription`, `framingDescription`,
-`environmentDescription` and `qaStatus`, then regenerated with the age locked to exactly 18.
-
-Because the new files replaced previously QA_PASS images that the agent cannot see, those
-records were reset from QA_PASS to GENERATED rather than keeping a stale pass on files that
-no longer exist. The QA_PASS count therefore reads 0 until a human verifies the images.
+1. Supply the actual workbook attachment or a directly accessible workbook URL. Then map only its curated products, exact links, Garba LOOK groups/order, and source references; do not infer missing cells.
+2. Add a durable identity/authentication and transactional credit ledger shared by Try-On and AI chat, with exactly two first-use credits per ID.
+3. Configure and verify a real checkout provider and implement its signed server-side verification before enabling ₹20 Try-On charges.
+4. Connect a real AI fashion-discovery model and persist chat history under the same durable VIRAAS ID; until then, `/chat` remains the existing human-to-human feature.
+5. Resolve the 60 source-backed couple mapping mismatches and review the flagged perceptual image pairs without altering records by guesswork.
+6. Complete human image QA for pending assets, then rerun `npm run final-audit`.
+7. Use the existing Vercel project for a production release only after the required workbook data, production integrations, and release gates are resolved. No production deployment or merge was performed in this pass.

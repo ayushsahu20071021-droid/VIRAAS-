@@ -237,6 +237,47 @@ async function main() {
   }
   B.child.kill('SIGKILL');
 
+  // =====================================================================================
+  // PART D — configured live provider stays blocked BEFORE the paid authorization is consumed
+  // =====================================================================================
+  const D = startServer({
+    port: 8793,
+    mode: 'runware-flux',
+    extraEnv: {
+      RUNWARE_API_KEY: 'test-only-key-never-sent',
+      RUNWARE_ZDR: 'true',
+      // If the route accidentally reaches the provider, this local closed port fails immediately.
+      RUNWARE_API_URL: 'http://127.0.0.1:1/v1',
+    },
+  });
+  const upD = await waitForHealth(8793);
+  check('D0 configured Runware server is up', upD);
+  if (upD) {
+    const liveStatus = await j(await fetch('http://127.0.0.1:8793/api/try-on/status'));
+    check('D1 configured live provider reports generation unavailable', liveStatus.body?.configured === true && liveStatus.body?.generationAvailable === false);
+
+    const created = await j(await fetch('http://127.0.0.1:8793/api/payment/create', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ womenLookId: 'women-look-001' }),
+    }));
+    const paymentId = created.body?.paymentId;
+    const evt = { event: 'payment.captured', paymentId, eventId: 'wh-d1' };
+    const raw = JSON.stringify(evt);
+    await fetch('http://127.0.0.1:8793/api/payment/webhook', {
+      method: 'POST', headers: { 'Content-Type': 'application/json', 'x-mock-signature': mockSign(raw) }, body: raw,
+    });
+    const before = await j(await fetch(`http://127.0.0.1:8793/api/payment/status?paymentId=${paymentId}`));
+    const authToken = before.body?.authToken;
+    const blocked = await j(await fetch('http://127.0.0.1:8793/api/try-on', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ womenLookId: 'women-look-001', photo: TEST_PHOTO, ageConfirmed: true, authToken }),
+    }));
+    check('D2 configured live generation is blocked (503) before provider call', blocked.status === 503 && blocked.body?.ok === false && !blocked.body?.resultImage);
+
+    const after = await j(await fetch(`http://127.0.0.1:8793/api/payment/status?paymentId=${paymentId}`));
+    check('D3 blocked generation leaves paid authorization unconsumed', after.body?.status === 'AUTHORIZED' && after.body?.authToken === authToken && after.body?.consumed === false);
+  }
+  D.child.kill('SIGKILL');
+
   // ---- summary ----------------------------------------------------------------------------------
   console.log('\nVIRAAS payment-gated Try-On — mock/local tests\n');
   console.log(results.join('\n'));

@@ -1,30 +1,30 @@
 {
   "name": "check-catalog",
-  "pass": true,
+  "pass": false,
   "checks": [
     {
       "ok": true,
-      "msg": "product count 861 (min 653)",
+      "msg": "product count 827 (min 653)",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "product count 861 meets target ~823+",
+      "msg": "product count 827 meets target ~823+",
       "level": "warn"
     },
     {
       "ok": true,
-      "msg": "unique ids 861/861",
+      "msg": "unique ids 827/827",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "unique titles 861/861",
+      "msg": "unique titles 827/827",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "unique gender|category|colour|detail signatures 861/861 (no meaningless duplicates)",
+      "msg": "unique gender|category|colour|detail signatures 827/827 (no meaningless duplicates)",
       "level": "error"
     },
     {
@@ -59,7 +59,7 @@
     },
     {
       "ok": true,
-      "msg": "women 525, men 336",
+      "msg": "women 491, men 336",
       "level": "error"
     },
     {
@@ -93,8 +93,8 @@
       "level": "error"
     },
     {
-      "ok": true,
-      "msg": "couple garment ↔ linked product category+colour agree (0 mismatches)",
+      "ok": false,
+      "msg": "couple garment ↔ linked product category+colour agree (60 mismatches)",
       "level": "error"
     }
   ]

@@ -4,77 +4,77 @@
   "checks": [
     {
       "ok": true,
-      "msg": "/ — real imgs 11, pending 36",
+      "msg": "/ — real imgs 35, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women — real imgs 0, pending 48",
+      "msg": "/women — real imgs 236, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/men — real imgs 0, pending 48",
+      "msg": "/men — real imgs 210, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/occasions — real imgs 1, pending 4",
+      "msg": "/occasions — real imgs 5, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/occasions/garba — real imgs 7, pending 16",
+      "msg": "/occasions/garba — real imgs 15, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/occasions/college-fest — real imgs 0, pending 23",
+      "msg": "/occasions/college-fest — real imgs 23, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/occasions/diwali — real imgs 0, pending 23",
+      "msg": "/occasions/diwali — real imgs 23, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/occasions/festive-party — real imgs 0, pending 23",
+      "msg": "/occasions/festive-party — real imgs 23, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/occasions/traditional — real imgs 0, pending 23",
+      "msg": "/occasions/traditional — real imgs 23, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/couple-edit — real imgs 10, pending 90",
+      "msg": "/couple-edit — real imgs 100, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/couple-edit?world=garba — real imgs 10, pending 10",
+      "msg": "/couple-edit?world=garba — real imgs 20, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/couple-edit/garba-01 — real imgs 4, pending 6",
+      "msg": "/couple-edit/garba-01 — real imgs 4, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/couple-edit/traditional-20 — real imgs 0, pending 9",
+      "msg": "/couple-edit/traditional-20 — real imgs 4, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/trending — real imgs 0, pending 48",
+      "msg": "/trending — real imgs 40, pending 8",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/trending?budget=under-999 — real imgs 0, pending 48",
+      "msg": "/trending?budget=under-999 — real imgs 40, pending 8",
       "level": "error"
     },
     {
@@ -99,17 +99,17 @@
     },
     {
       "ok": true,
-      "msg": "/try-on — real imgs 0, pending 12",
+      "msg": "/try-on — real imgs 12, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/try-on?product=w-lehenga-rani-pink-gota-border-dupatta — real imgs 0, pending 1",
+      "msg": "/try-on?product=w-lehenga-ivory-mirror-work-blouse — real imgs 12, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/product/w-lehenga-rani-pink-gota-border-dupatta — real imgs 1, pending 7",
+      "msg": "/product/w-lehenga-ivory-mirror-work-blouse — real imgs 3, pending 7",
       "level": "error"
     },
     {
@@ -164,112 +164,102 @@
     },
     {
       "ok": true,
-      "msg": "/women/lehenga — real imgs 0, pending 48",
+      "msg": "/women/lehenga — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/jewellery — real imgs 0, pending 30",
+      "msg": "/women/jewellery — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/footwear — real imgs 0, pending 18",
+      "msg": "/women/footwear — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/men/festive-kurta-set — real imgs 0, pending 40",
+      "msg": "/men/modern-kurta — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/men/traditional-layer — real imgs 0, pending 32",
+      "msg": "/men/footwear — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/men/footwear — real imgs 0, pending 12",
+      "msg": "/women/pre-draped-saree — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/men/modern-kurta — real imgs 0, pending 48",
+      "msg": "/women/chaniya-choli — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/chaniya-choli — real imgs 0, pending 48",
+      "msg": "/men/printed-ethnic-shirt — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/men/ethnic-shirt — real imgs 0, pending 32",
+      "msg": "/women/kurta-sets — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/men/printed-ethnic-shirt — real imgs 0, pending 48",
+      "msg": "/men/ethnic-shirt — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/sharara — real imgs 0, pending 42",
+      "msg": "/men/festive-jacket — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/saree — real imgs 0, pending 48",
+      "msg": "/women/anarkali — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/anarkali — real imgs 0, pending 45",
+      "msg": "/men/festive-separates — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/pre-draped-saree — real imgs 0, pending 34",
+      "msg": "/women/saree — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/gharara — real imgs 0, pending 30",
+      "msg": "/women/sharara — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/kurta-sets — real imgs 0, pending 42",
+      "msg": "/men/embroidered-ethnic-shirt — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/men/festive-jacket — real imgs 0, pending 26",
+      "msg": "/men/festive-kurta-set — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/men/embroidered-ethnic-shirt — real imgs 0, pending 30",
+      "msg": "/women/gharara — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/bags — real imgs 0, pending 18",
+      "msg": "/men/traditional-layer — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/women/beauty — real imgs 0, pending 16",
-      "level": "error"
-    },
-    {
-      "ok": true,
-      "msg": "/men/festive-separates — real imgs 0, pending 14",
-      "level": "error"
-    },
-    {
-      "ok": true,
-      "msg": "main nav: Women · Men · Occasions · Couple Edit · Trending · Accessories · Journal",
+      "msg": "main nav: Women · Men · Occasions · Couple Edit · Trending · Accessories · Connect · Journal",
       "level": "error"
     },
     {

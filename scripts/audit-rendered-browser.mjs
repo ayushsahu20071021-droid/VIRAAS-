@@ -20,7 +20,7 @@ for (const r of ROUTES) {
 }
 await page.goto(BASE + '/', { waitUntil: 'networkidle' });
 const nav = await page.$$eval('nav.nav > .nav-item > a', (a) => a.map((x) => x.textContent.trim()));
-checks.push([JSON.stringify(nav) === JSON.stringify(['Women', 'Men', 'Occasions', 'Couple Edit', 'Trending', 'Accessories', 'Journal']), `main nav: ${nav.join(' · ')}`]);
+checks.push([JSON.stringify(nav) === JSON.stringify(['Women', 'Men', 'Occasions', 'Couple Edit', 'Trending', 'Accessories', 'Connect', 'Journal']), `main nav: ${nav.join(' · ')}`]);
 const worlds = await page.$$eval('.worlds .world-label strong', (a) => a.map((x) => x.textContent));
 checks.push([worlds.length === 5, `homepage shows exactly 5 worlds: ${worlds.join(', ')}`]);
 const heroText = await page.textContent('.hero');

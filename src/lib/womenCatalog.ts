@@ -7,26 +7,74 @@ import garba035051v2 from '../data/women-garba-taxonomy-035-051-v2.json';
 import garba052068 from '../data/women-garba-taxonomy-052-068.json';
 import garba052068v2 from '../data/women-garba-taxonomy-052-068-v2.json';
 import garbaProducts025068 from '../data/women-garba-products-025-068.json';
+import type { LookColors, LookPatternOrEmbroidery } from './menCatalog';
 
-const garbaVisualTaxonomy = [
-  ...garba001017,
-  ...garba018034,
-  ...garba025034,
-  ...garba035051,
-  ...garba035051v2,
-  ...garba052068,
-  ...garba052068v2,
+/** Stable runtime shape for the approved Women look catalog and its explicit source overlays. */
+export interface WomenLook {
+  id: string;
+  referenceId: string;
+  occasion: string;
+  outfitDescription: string;
+  garmentType: string;
+  colors: LookColors;
+  patternOrEmbroidery: LookPatternOrEmbroidery;
+  layering: string | null;
+  bottomwear: string | null;
+  footwear: string | null;
+  accessories: string | null;
+  pose: string | null;
+  framing: string | null;
+  environment: string | null;
+  lighting: string | null;
+  sourceProductId?: string | null;
+  occasionLabel?: string;
+  category?: string;
+  subCategory?: string;
+  style?: string;
+  description?: string;
+  primaryColor?: string;
+  secondaryColors?: string[];
+  pattern?: string;
+  work?: string;
+  silhouette?: string;
+  sleeves?: string;
+  dupatta?: string;
+  vibe?: string;
+  fabric?: string;
+  referenceImage?: string;
+  productMatchStatus?: string;
+  matchType?: string;
+  retailer?: string | null;
+  price?: string | null;
+  productUrl?: string | null;
+  imageUrl?: string | null;
+  note?: string;
+  [key: string]: unknown;
+}
+
+type LookOverlay = Partial<WomenLook> & { id: string };
+
+const visualTaxonomy = [
+  ...(garba001017 as unknown as LookOverlay[]),
+  ...(garba018034 as unknown as LookOverlay[]),
+  ...(garba025034 as unknown as LookOverlay[]),
+  ...(garba035051 as unknown as LookOverlay[]),
+  ...(garba035051v2 as unknown as LookOverlay[]),
+  ...(garba052068 as unknown as LookOverlay[]),
+  ...(garba052068v2 as unknown as LookOverlay[]),
 ];
-const garbaById = new Map(garbaVisualTaxonomy.map((look) => [look.id, look]));
-const garbaProductsById = new Map(garbaProducts025068.map((look) => [look.id, look]));
+const garbaById = new Map<string, LookOverlay>(visualTaxonomy.map((look) => [look.id, look]));
+const garbaProductsById = new Map<string, LookOverlay>(
+  (garbaProducts025068 as unknown as LookOverlay[]).map((look) => [look.id, look]),
+);
 
-export type WomenLook = typeof raw[number] & Partial<typeof garbaVisualTaxonomy[number]> & Partial<typeof garbaProducts025068[number]>;
-export const WOMEN_LOOKS = raw.map((look) => ({
+const rawWomenLooks = raw as unknown as WomenLook[];
+export const WOMEN_LOOKS: WomenLook[] = rawWomenLooks.map((look) => ({
   ...look,
   ...(garbaById.get(look.id) ?? {}),
   ...(garbaProductsById.get(look.id) ?? {}),
-})) as WomenLook[];
-export const womenLookById = new Map(WOMEN_LOOKS.map((look) => [look.id, look]));
+}));
+export const womenLookById = new Map<string, WomenLook>(WOMEN_LOOKS.map((look) => [look.id, look]));
 export const womenOccasions = [
   { slug: 'garba', label: 'Garba / Navratri', range: '001–068' },
   { slug: 'college-fest', label: 'College Fest', range: '069–110' },

@@ -1,9 +1,10 @@
 {
   "results": {
-    "check-catalog": "PASS",
+    "check-catalog": "FAIL",
     "validate-images": "PASS (completion gate open)",
     "audit-affiliate": "PASS",
-    "audit-duplicates": "PASS",
+    "audit-product-actions": "PASS",
+    "audit-duplicates": "FAIL",
     "audit-search": "PASS",
     "audit-http-images": "PASS",
     "render-smoke": "PASS",
@@ -11,13 +12,13 @@
     "typecheck": "PASS"
   },
   "images": {
-    "couplePass": 10,
+    "couplePass": 0,
     "coupleTotal": 100,
     "productPass": 0,
-    "productTotal": 861,
+    "productTotal": 827,
     "qaFail": 0,
-    "pending": 951
+    "pending": 927
   },
-  "technicalGatesPass": true,
+  "technicalGatesPass": false,
   "status": "INCOMPLETE — image generation queue still open"
 }
