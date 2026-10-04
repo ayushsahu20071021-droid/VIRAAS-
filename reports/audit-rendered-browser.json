@@ -4,12 +4,42 @@
   "checks": [
     {
       "ok": true,
-      "msg": "/ — real imgs 35, pending 0",
+      "msg": "/ — real imgs 39, pending 0",
       "level": "error"
     },
     {
       "ok": true,
       "msg": "/women — real imgs 236, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/garba — real imgs 68, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/college-fest — real imgs 42, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women/diwali — real imgs 42, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women-look/women-look-001 — real imgs 1, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women-look/women-look-014 — real imgs 1, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women-look/women-look-075 — real imgs 1, pending 0",
       "level": "error"
     },
     {
@@ -24,7 +54,7 @@
     },
     {
       "ok": true,
-      "msg": "/occasions/garba — real imgs 15, pending 0",
+      "msg": "/occasions/garba — real imgs 23, pending 0",
       "level": "error"
     },
     {
@@ -275,6 +305,56 @@
     {
       "ok": true,
       "msg": "couple edit renders 100 looks",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Women Garba listing retains all 68 numbered looks",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Women College Fest listing retains all 42 numbered looks",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Women Diwali listing remains available with 42 existing looks",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women-look/women-look-001 renders 3 exact component Shop links",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women-look/women-look-001 retains whole-look Try-On",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women-look/women-look-014 renders 3 exact component Shop links",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women-look/women-look-014 retains whole-look Try-On",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women-look/women-look-075 renders 3 exact component Shop links",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/women-look/women-look-075 retains whole-look Try-On",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Accessories exposes the mapped waist-chain Shop link without unsupported item Try-On",
       "level": "error"
     }
   ]

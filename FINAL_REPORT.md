@@ -1,67 +1,62 @@
-# VIRAAS — Productization and Verification Report
+# VIRAAS — Integration & Release Verification
 
-**Status: INCOMPLETE — not production-ready.** This pass continued the existing VIRAAS app and preserved its catalog records. It tightened product actions and payment fail-closed behavior, then ran the available build, audits, tests, route checks, and browser checks. The spreadsheet, durable identity/credit storage, verified checkout, and AI-chat provider required for the requested end state are not available in this workspace.
+**Status: PARTIAL — workbook shopping actions are integrated; the site is not production-ready for live Try-On, durable accounts/credits, payments, or AI styling chat.** This pass continued the existing app, preserved its pages, catalog, look images, Couple Edit and visual design, and added exact source-workbook actions to the existing Women look detail pages and Accessories view. Missing providers and durable storage remain fail-closed; no simulated AI, payment, account persistence, or generated Try-On result was introduced.
 
-## Existing site and catalog preserved
+## Source workbook inspected and mapped
 
-| Area | Current verified state |
-|---|---:|
-| Product catalog | 827 records: 491 women, 336 men |
-| Curated Men looks | 210 |
-| Curated Women looks | 236 |
-| Couple Edit | 100 looks across 5 worlds (20 each) |
-| Trending | 767 records: 210 Men + 236 Women + 321 independent |
-| Accessories | 60 |
-| Featured Try-On looks | 12 curated look references |
+The user-provided OneDrive workbook was retrieved through its `download=1` share route and inspected through the end of `Book1.xlsx`, worksheet `Sheet1`. The worksheet contains three sections; there is no separate Accessories section.
 
-No catalog JSON was regenerated. The SHA-256 checksums of `catalog.json`, `couples.json`, and their client copies were identical before and after `npm run build`; those data files are unchanged in the working tree. The 767 Trending source records and the existing page/catalog design were retained.
+| Source section | Numbered looks retained | Exact Shop links | Source state |
+|---|---:|---:|---|
+| `womes garba/navratri` | 68 | 79 | 4 marked unavailable; Look 11 link withheld under the existing restricted-marketplace rule; all other listed links kept exactly |
+| `College Fest` | 42 | 11 | 3 marked unavailable; 32 numbered rows are blank |
+| `Diwali outfits` | 3 | 0 | All three numbered rows are blank |
+| **Total** | **113** | **90** | 110 Garba/Navratri and College Fest looks retained in their original number order |
 
-## Safe product actions now enforced
+- 83 component rows have a workbook title; 7 have a URL but no title, so the UI uses a generic “Product name not listed” label rather than inventing one.
+- Shop URLs are preserved as provided: 85 exact Wishlink share links and 5 exact retailer product URLs. No query/tracking parameters or replacement URLs were added.
+- Workbook rows remain separate from the 827-product catalog. Components render in workbook order, with one Shop action per mapped component. Each corresponding full look retains its existing Try-On action when its approved look image is live.
+- The existing restricted-marketplace constraint takes precedence for one source row; it is not linked and no substitute is guessed.
+- `src/data/workbook-mappings.json` is the source-data artifact; `src/lib/workbook.ts` is its resolver. `npm run audit-workbook-mapping` checks section names/order, numbering, exact URL shape/hosts, mapped counts, accessory handling and live whole-look references.
 
-- Product Try-On is eligible only when that exact product has its own live image. The catalog currently has **0** eligible product records; 721 `tryOnEnabled` flags have no live product image. Couple-side Try-On only resolves to that side’s individual live product image—never a combined couple image or text-only substitute.
-- The 12 featured Try-On entries are curated Men/Women look references, not 12 verified merchant SKUs. The demo flow remains visibly labelled as a preview; it does not produce an AI image.
-- Product-level merchant CTAs require an explicitly typed HTTPS listing on the expected merchant host. Marketplace-search URLs are not presented as product pages. All 827 current merchant URLs are search URLs; exact product listings: **0**.
-- Affiliate Shop CTAs require an exact Wishlink share URL. Current affiliate URLs: **0**.
-- Verified-price gates are in place. Verified prices: **0**; all 827 catalog prices are estimates and are not presented as verified prices. Budget filters and unsupported price CTAs remain hidden.
-- Couple “Product links” render only for sides with an eligible exact affiliate URL.
+## Accessories and product actions
 
-The spreadsheet audit found **no workbook file**. This pass did not import or change Garba LOOK groups/order, College Fest mappings, seller URLs, or source references. Existing repository records and mappings were preserved, but none are claimed as verified against the missing workbook; existing couple-to-product records remain untouched.
+- The existing Accessories catalog remains 60 catalog products. The Accessories page now also displays the College Fest Look 7 waist-chain component as one separately scoped exact Shop link (61 displayed entries total); it has no item-specific image, so it receives no accessory-level Try-On action. No standalone Accessories section was present in the workbook.
+- The base 827-product catalog is unchanged. Current audit: **0** exact product listings, **0** affiliate URLs on catalog records, **0** verified prices, and **0** product records eligible for product Try-On; 721 `tryOnEnabled` flags have no product image. Accordingly, no new catalog Shop or item Try-On action is fabricated.
+- Product detail pages now place a supported Try-On action adjacent to the supported Shop action when both exist. The current catalog has no record that qualifies for both; the workbook products are not misrepresented as catalog PDP records.
 
-## Identity, payments, Try-On, and chat
+## Try-On, identity, payments, and chat — production blockers remain
 
-- A production-persistent VIRAAS ID and shared identity store are **not implemented**. The existing Connect/social store is an in-memory reference implementation; it is not durable across server restarts or Vercel instances.
-- The requested exactly-two-free-credit ledger and production payment checkout are **not implemented**. Razorpay/Cashfree adapters remain stubs; the mock provider is test-only and collects no money.
-- When a live Try-On provider is configured, the API now returns `503` before consuming payment authorization while identity, credit accounting, and verified checkout are absent. The mock test explicitly confirms that a blocked authorization remains unconsumed. Demo mode is only a labelled layout preview.
-- Existing `/connect` and `/chat` routes are human-to-human private chat, not VIRAAS AI fashion discovery. No AI chat model or durable chat-history provider is connected, so no AI assistant or persistent chat-history claim is made.
+- The existing personal-photo 18+ gate still runs server-side and was verified locally (403 without explicit confirmation). Existing request/idempotency protection and payment authorization safeguards remain in place.
+- Runware remains server-side and unconfigured here. `npm start` reports `TRYON_MODE=demo`, configured=false; the live-provider path deliberately returns unavailable rather than sending a customer photo without the required account, credit and payment ledger. The demo is explicitly labelled and is not an AI result.
+- No durable database, identity provider, or persistent account store is configured in this workspace. VIRAAS Connect remains an in-memory reference implementation. Therefore persistent VIRAAS ID/history, exactly two first-use credits, cross-session saved/account state, and a shared ledger are **not implemented or claimed**.
+- Payment remains mock by default; Razorpay and Cashfree are documented stubs. No real payment can be collected or server-verified here, and no ₹20 paid state is enabled.
+- `/chat` remains the existing human-to-human Connect chat. No AI model provider or persistent chat store is configured, so it has not been relabelled as an AI fashion assistant and no recommendations are fabricated.
+- The pre-existing Vercel preview is behind Vercel Deployment Protection and redirects unauthenticated route checks to the Vercel login. A live, public production route check cannot be claimed from this environment.
 
-## Verification results
+## Verification
 
 | Check | Result |
 |---|---|
-| `npm run build` / TypeScript | **PASS** — production Vite build completed. Vite warns that the main JavaScript bundle is about 2.83 MB, above its 2 MB advisory threshold. |
-| Node syntax checks (`server/`, `scripts/`) | **PASS** |
-| `audit-product-actions` | **PASS** — 827 products checked; no unsafe/invalid actions; no spreadsheet found. |
-| `audit-affiliate` | **PASS** — allowed merchant hosts only; no affiliate URLs or invented tracking parameters. |
-| Trending validation | **PASS** — 210 Men + 236 Women + 321 independent = 767; no ID overlap, heuristic mapping, or generated replacement images. |
-| Search audit | **PASS** — 20 intent checks, including gender-token behavior. Color checks recognize searchable title details as well as primary-color fields. |
-| HTTP image audit | **PASS** — 546 current Men/Women/Couple look-image references served as images over 30 KB. This confirms delivery, not visual QA for Couple images. |
-| Render smoke | **PASS** — 55 route/API/age-gate/demo checks. |
-| Headless browser audit | **PASS** — 55 checks across the site routes, including navigation, the five home worlds, and all 100 Couple cards. |
-| Payment/Try-On mock harness | **PASS** — 31 checks; no real payment or provider generation. Includes the live-provider fail-closed-before-consumption case. |
-| Runware adapter no-spend test | **PASS** — 8 checks; no real customer image or paid generation. |
-| Catalog consistency audit | **FAIL** — 60 couple garment ↔ linked-product category/colour mismatches. No mappings were “fixed” without the workbook source of truth. |
-| Duplicate-image audit | **FAIL** — 872 perceptual near-duplicate pairs (dHash ≤4) among 776 files; URL-reuse and exact-SHA checks pass (0 each). Image files were not replaced or deleted. |
-| Image completion gate | **OPEN** — 0/100 Couple images and 0/827 product visuals are recorded `QA_PASS`; 927 remain pending, with 0 `QA_FAIL`. |
-| `npm run final-audit` | **INCOMPLETE** — action, affiliate, search, image-serving, render, browser, and typecheck gates pass; catalog consistency, perceptual-duplicate, and image-completion gates remain open. |
+| `npm run typecheck` | **PASS** |
+| `npm run build` | **PASS** — production build completed; the main JS bundle is about 2.85 MB, above Vite’s advisory threshold |
+| `npm run audit-workbook-mapping` | **PASS** — 113 numbered source rows reviewed; 90 exact Shop links; 110 live whole-look references; one mapped accessory |
+| `npm run audit-product-actions` | **PASS** — 827 catalog records; source-workbook mappings audited separately |
+| `npm run audit-affiliate` | **PASS** — existing merchant policy and base-catalog action checks pass |
+| `npm run render-smoke` | **PASS** — SPA routes, demo response and 18+ API gate |
+| `npm run audit-rendered-browser` | **PASS** — main routes, Women Garba/College Fest/Diwali listings, exact component links, whole-look Try-On actions, and mapped Accessories Shop action |
+| `npm run test-payment-tryon` | **PASS** — 31 local mock/fail-closed checks; no real money was moved |
+| `npm run test-runware-adapter` | **PASS** — 8 no-spend checks; no live generation was made |
+| `npm run final-audit` | **INCOMPLETE** — workbook, action, affiliate, search, image-serving, render, browser and typecheck gates pass; catalog consistency has 60 pre-existing Couple-to-product category/colour mismatches; perceptual duplicate audit has 872 flagged pairs; image QA is 0/100 Couple and 0/827 product assets, 927 pending |
 
-The machine-readable summary is `reports/final-audit.json`; individual audit output is under `reports/`.
+Machine-readable results: `reports/final-audit.json`, `reports/audit-workbook-mapping.json`, `reports/audit-product-actions.json`, and `reports/ACCESSORIES_CLEANUP_REPORT.md`.
 
-## Still required before production release
+## Remaining release requirements
 
-1. Supply the actual workbook attachment or a directly accessible workbook URL. Then map only its curated products, exact links, Garba LOOK groups/order, and source references; do not infer missing cells.
-2. Add a durable identity/authentication and transactional credit ledger shared by Try-On and AI chat, with exactly two first-use credits per ID.
-3. Configure and verify a real checkout provider and implement its signed server-side verification before enabling ₹20 Try-On charges.
-4. Connect a real AI fashion-discovery model and persist chat history under the same durable VIRAAS ID; until then, `/chat` remains the existing human-to-human feature.
-5. Resolve the 60 source-backed couple mapping mismatches and review the flagged perceptual image pairs without altering records by guesswork.
-6. Complete human image QA for pending assets, then rerun `npm run final-audit`.
-7. Use the existing Vercel project for a production release only after the required workbook data, production integrations, and release gates are resolved. No production deployment or merge was performed in this pass.
+1. Configure a production-grade persistent data store and authenticated VIRAAS account/session service; then migrate Try-On credits, saved/account state, and stylist history to the same VIRAAS ID.
+2. Configure Runware credentials and verify the organization’s Zero-Data-Retention setting before enabling customer-photo generation.
+3. Complete a real payment-provider integration and signed verification before enabling ₹20 paid Try-Ons.
+4. Configure a real server-side AI styling provider and persistent chat history; ground returned item actions only in the validated catalog/workbook mapping.
+5. Resolve the 60 source-backed Couple/product mismatches and review 872 perceptual near-duplicate image pairs without guessing or replacing approved assets.
+6. Complete human image QA for the 927 pending images.
+7. Deploy through the existing Vercel project and verify the deployed routes after the project’s Deployment Protection allows access. No secret values were added to Git.

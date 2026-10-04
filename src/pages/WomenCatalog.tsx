@@ -1,18 +1,163 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { WOMEN_LOOKS, womenLookById, womenOccasionLabel, womenOccasions, type WomenLook } from '../lib/womenCatalog';
+import { womenLookById, womenOccasionLabel, womenOccasions, type WomenLook } from '../lib/womenCatalog';
 import { ImageFrame } from '../components/ui';
 import { womenLookDetail, DETAIL_FIELDS } from '../lib/lookDetails';
 import womenPreviews from '../data/women-previews.client.json';
 import womenLookAffiliate from '../data/women-look-affiliate.json';
+import { workbookLookForWomenId, workbookShopUrl } from '../lib/workbook';
+
 type WomenPreview = { qaStatus: string; approval: string; live: boolean; referenceId: string; src: string };
 const previewStatus = womenPreviews as Record<string, WomenPreview | undefined>;
-const previewSrc = (id: string) => { const s = previewStatus[id]; return s?.live && s.src ? s.src : undefined; };
+const previewSrc = (id: string) => {
+  const status = previewStatus[id];
+  return status?.live && status.src ? status.src : undefined;
+};
+export const WOMEN_LIVE_COUNT = Object.values(previewStatus).filter((status) => status?.live).length;
 const lookAff = womenLookAffiliate as Record<string, { affiliateUrl: string; affiliateSource: string } | undefined>;
-const shopUrl = (id: string) => { const a = lookAff[id]; return a?.affiliateSource === 'wishlink' && /^https:\/\/(?:www\.)?wishlink\.com\/share\/[^/?#]+(?:[?#].*)?$/.test(a.affiliateUrl) ? a.affiliateUrl : ''; };
-export const WOMEN_LIVE_COUNT = Object.values(previewStatus).filter((s) => s?.live).length;
-function Card({ look }: { look: WomenLook }) { return <article className="men-look-card women-look-card" data-women-look-id={look.id}>
-  <Link to={`/women-look/${look.id}`} className="men-look-image"><ImageFrame src={previewSrc(look.id)} alt={`Women look ${look.referenceId} — ${look.garmentType}`} label={`Look ${look.id.replace('women-look-', '')}`} detail={`Reference ${look.referenceId}`} /></Link>
-  <div className="men-look-body"><div className="kicker">{womenOccasionLabel(look.occasion)}</div><Link to={`/women-look/${look.id}`} className="men-look-title">Look {look.id.replace('women-look-', '')}</Link><p>{look.outfitDescription.split('. Picked')[0]}.</p><div className="men-look-meta"><span>{look.garmentType}</span><span>{look.colors.primary}</span></div><div className="men-look-actions">{previewSrc(look.id) && <Link className="btn btn-accent sm" to={`/try-on?womenLook=${look.id}`}>Try it on</Link>}<Link to={`/women-look/${look.id}`} className="link-arrow">View outfit details →</Link></div></div>
-</article>; }
-export default function WomenCatalog() { const { category }=useParams(); const [params,setParams]=useSearchParams(); const q=params.get('q')?.trim().toLowerCase()??''; const occasion=category||params.get('occasion')||''; const list=WOMEN_LOOKS.filter(x=>(!occasion||x.occasion===occasion)&&(!q||`${x.id} ${x.referenceId} ${x.outfitDescription} ${x.garmentType} ${x.colors.primary} ${x.patternOrEmbroidery?.embroidery}`.toLowerCase().includes(q))); return <div className="page men-catalog women-catalog"><div className="page-head"><div className="crumbs"><Link to="/">Home</Link> / <Link to="/women">Women</Link>{occasion&&<> / {womenOccasionLabel(occasion)}</>}</div><div className="kicker">The Women edit</div><h1>{occasion?womenOccasionLabel(occasion):'Women'}</h1><p className="muted">236 festive looks — lehengas, sarees, anarkalis and more, styled for Garba, Diwali and every celebration.</p></div><div className="men-catalog-toolbar"><div className="men-occasion-tabs"><Link className={!occasion?'active':''} to="/women">All · 236</Link>{womenOccasions.map(o=><Link key={o.slug} className={occasion===o.slug?'active':''} to={`/women/${o.slug}`}>{o.label} <span>{o.range}</span></Link>)}</div><input value={q} onChange={e=>{const n=new URLSearchParams(params),v=e.target.value;if(v)n.set('q',v);else n.delete('q');setParams(n,{replace:true})}} placeholder="Search look ID, reference or outfit detail" aria-label="Search Women looks" /></div><div className="men-catalog-summary"><strong>{list.length}</strong> of 236 looks</div>{list.length?<div className="men-look-grid">{list.map(x=><Card key={x.id} look={x}/>)}</div>:<div className="empty"><h3>No Women looks match</h3><Link className="btn btn-dark" to="/women">Clear filters</Link></div>}</div>; }
-export function WomenLookDetail(){const {id}=useParams();const x=id?womenLookById.get(id):undefined;if(!x)return <div className="page"><div className="empty"><h3>Women look not found</h3><Link className="btn btn-dark" to="/women">Back to Women</Link></div></div>;return <div className="page men-detail"><div className="crumbs"><Link to="/">Home</Link> / <Link to="/women">Women</Link> / {x.id}</div><div className="men-detail-grid"><ImageFrame src={previewSrc(x.id)} alt={`Women look ${x.referenceId} — ${x.garmentType}`} label={`Look ${x.id.replace('women-look-','')}`} detail={`Reference ${x.referenceId}`} ratio="3 / 4" fit="contain"/><div><div className="kicker">{womenOccasionLabel(x.occasion)} · {x.referenceId}</div><h1>Look {x.id.replace('women-look-','')}</h1><p className="men-detail-lead">{x.outfitDescription}</p>{(()=>{const d=womenLookDetail(x.id);return <dl className="specs">{DETAIL_FIELDS.map((f)=><div key={f.key}><dt>{f.label}</dt><dd>{d?.[f.key]??'Not clearly visible in reference'}</dd></div>)}</dl>;})()}{shopUrl(x.id) && <div className="look-shop"><div className="kicker">Optional product link</div><a className="btn btn-shop" href={shopUrl(x.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop this look</a></div>}<div className="row">{previewSrc(x.id) && <Link className="btn btn-accent" to={`/try-on?womenLook=${x.id}`}>Try it on</Link>}<Link className="btn btn-dark" to={`/women/${x.occasion}`}>Browse {womenOccasionLabel(x.occasion)}</Link></div></div></div></div>;}
+const shopUrl = (id: string) => {
+  const affiliate = lookAff[id];
+  return affiliate?.affiliateSource === 'wishlink' && /^https:\/\/(?:www\.)?wishlink\.com\/share\/[^/?#]+(?:[?#].*)?$/.test(affiliate.affiliateUrl)
+    ? affiliate.affiliateUrl
+    : undefined;
+};
+
+function Card({ look }: { look: WomenLook }) {
+  const workbook = workbookLookForWomenId(look.id);
+  const mappedCount = workbook?.look.components.filter((component) => workbookShopUrl(component)).length ?? 0;
+  const path = `/women-look/${look.id}`;
+  return (
+    <article className="men-look-card women-look-card" data-women-look-id={look.id} data-workbook-component-count={mappedCount}>
+      <Link to={path} className="men-look-image">
+        <ImageFrame src={previewSrc(look.id)} alt={`Women look ${look.referenceId} — ${look.garmentType}`} label={`Look ${look.id.replace('women-look-', '')}`} detail={`Reference ${look.referenceId}`} />
+      </Link>
+      <div className="men-look-body">
+        <div className="kicker">{womenOccasionLabel(look.occasion)}</div>
+        <Link to={path} className="men-look-title">Look {look.id.replace('women-look-', '')}</Link>
+        <p>{look.outfitDescription.split('. Picked')[0]}.</p>
+        <div className="men-look-meta"><span>{look.garmentType}</span><span>{look.colors.primary}</span></div>
+        {mappedCount > 0 && <p className="muted small workbook-count">{mappedCount} exact Shop {mappedCount === 1 ? 'link' : 'links'} in the look</p>}
+        <div className="men-look-actions">
+          {previewSrc(look.id) && <Link className="btn btn-accent sm" to={`/try-on?womenLook=${look.id}`}>Try it on</Link>}
+          <Link to={path} className="link-arrow">View outfit details →</Link>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+export default function WomenCatalog() {
+  const { category } = useParams();
+  const [params, setParams] = useSearchParams();
+  const query = params.get('q')?.trim().toLowerCase() ?? '';
+  const occasion = category || params.get('occasion') || '';
+  const list = womenLookById.size
+    ? [...womenLookById.values()].filter((look) =>
+      (!occasion || look.occasion === occasion) &&
+      (!query || `${look.id} ${look.referenceId} ${look.outfitDescription} ${look.garmentType} ${look.colors.primary} ${look.patternOrEmbroidery?.embroidery}`.toLowerCase().includes(query)),
+    )
+    : [];
+
+  return (
+    <div className="page men-catalog women-catalog">
+      <div className="page-head">
+        <div className="crumbs"><Link to="/">Home</Link> / <Link to="/women">Women</Link>{occasion && <> / {womenOccasionLabel(occasion)}</>}</div>
+        <div className="kicker">The Women edit</div>
+        <h1>{occasion ? womenOccasionLabel(occasion) : 'Women'}</h1>
+        <p className="muted">236 festive looks — lehengas, sarees, anarkalis and more, styled for Garba, Diwali and every celebration.</p>
+      </div>
+      <div className="men-catalog-toolbar">
+        <div className="men-occasion-tabs">
+          <Link className={!occasion ? 'active' : ''} to="/women">All · 236</Link>
+          {womenOccasions.map((entry) => (
+            <Link key={entry.slug} className={occasion === entry.slug ? 'active' : ''} to={`/women/${entry.slug}`}>
+              {entry.label} <span>{entry.range}</span>
+            </Link>
+          ))}
+        </div>
+        <input
+          value={params.get('q') ?? ''}
+          onChange={(event) => {
+            const next = new URLSearchParams(params);
+            const value = event.target.value;
+            if (value) next.set('q', value); else next.delete('q');
+            setParams(next, { replace: true });
+          }}
+          placeholder="Search look ID, reference or outfit detail"
+          aria-label="Search Women looks"
+        />
+      </div>
+      <div className="men-catalog-summary"><strong>{list.length}</strong> of 236 looks</div>
+      {list.length ? (
+        <div className="men-look-grid">{list.map((look) => <Card key={look.id} look={look} />)}</div>
+      ) : (
+        <div className="empty"><h3>No Women looks match</h3><Link className="btn btn-dark" to="/women">Clear filters</Link></div>
+      )}
+    </div>
+  );
+}
+
+export function WomenLookDetail() {
+  const { id } = useParams();
+  const look = id ? womenLookById.get(id) : undefined;
+  if (!look) {
+    return <div className="page"><div className="empty"><h3>Women look not found</h3><Link className="btn btn-dark" to="/women">Back to Women</Link></div></div>;
+  }
+
+  const workbook = workbookLookForWomenId(look.id);
+  const items = workbook?.look.components ?? [];
+
+  return (
+    <div className="page men-detail" data-women-look-id={look.id}>
+      <div className="crumbs"><Link to="/">Home</Link> / <Link to="/women">Women</Link> / {look.id}</div>
+      <div className="men-detail-grid">
+        <ImageFrame src={previewSrc(look.id)} alt={`Women look ${look.referenceId} — ${look.garmentType}`} label={`Look ${look.id.replace('women-look-', '')}`} detail={`Reference ${look.referenceId}`} ratio="3 / 4" fit="contain" />
+        <div>
+          <div className="kicker">{womenOccasionLabel(look.occasion)} · {look.referenceId}</div>
+          <h1>Look {look.id.replace('women-look-', '')}</h1>
+          <p className="men-detail-lead">{look.outfitDescription}</p>
+          <dl className="specs">
+            {DETAIL_FIELDS.map((field) => (
+              <div key={field.key}><dt>{field.label}</dt><dd>{womenLookDetail(look.id)?.[field.key] ?? 'Not clearly visible in reference'}</dd></div>
+            ))}
+          </dl>
+          <div className="row">
+            {previewSrc(look.id) && <Link className="btn btn-accent" to={`/try-on?womenLook=${look.id}`}>Try it on</Link>}
+            {shopUrl(look.id) && <a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop this look</a>}
+            <Link className="btn btn-dark" to={`/women/${look.occasion}`}>Browse {womenOccasionLabel(look.occasion)}</Link>
+          </div>
+        </div>
+      </div>
+
+      {workbook && (
+        <section className="section workbook-components" data-workbook-section={workbook.section.id} data-workbook-look={workbook.look.number}>
+          <div className="kicker">{workbook.section.label} · Look {workbook.look.number}</div>
+          <h2>Shop the pieces in this look</h2>
+          {items.length > 0 ? (
+            <div className="workbook-item-list">
+              {items.map((component, index) => {
+                const url = workbookShopUrl(component);
+                const itemName = component.sourceTitle || 'Product name not listed';
+                return (
+                  <article className="workbook-item" key={`${look.id}-${index}`} data-workbook-item={index + 1}>
+                    <div className="workbook-item-copy">
+                      <p>{itemName}</p>
+                    </div>
+                    {url ? (
+                      <a className="btn btn-shop sm" href={url} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Shop ${itemName}`}>
+                        Shop
+                      </a>
+                    ) : (
+                      <span className="muted small">Shop link unavailable</span>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          ) : (
+            <p className="muted">No product links are listed for this look.</p>
+          )}
+        </section>
+      )}
+    </div>
+  );
+}

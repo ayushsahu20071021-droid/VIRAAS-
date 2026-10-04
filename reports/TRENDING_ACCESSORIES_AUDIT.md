@@ -1,6 +1,8 @@
 # VIRAAS — Trending + Accessories Production Audit
 
-_Audit-only pass. No image generation started. Approved Men/Women/Couple assets and all Couple data untouched._
+_Historical audit-only snapshot. No image generation started. Approved Men/Women/Couple assets and all Couple data untouched._
+
+> **Superseded for current Accessories counts:** this report predates the source cleanup that removed Bags and Beauty. The current base catalog has 60 Accessories products; the latest catalog-level status is in `ACCESSORIES_CLEANUP_REPORT.md`. The current page also displays one separately mapped College Fest waist-chain Shop link from `src/data/workbook-mappings.json` (no item-specific Try-On image).
 
 ## Architecture (ground truth)
 

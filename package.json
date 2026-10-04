@@ -14,6 +14,7 @@
     "validate-images": "node scripts/validate-images.mjs",
     "audit-affiliate": "node scripts/audit-affiliate.mjs",
     "audit-product-actions": "node scripts/audit-product-actions.mjs",
+    "audit-workbook-mapping": "node scripts/audit-workbook-mapping.mjs",
     "audit-duplicates": "node scripts/audit-duplicates.mjs",
     "audit-http-images": "node scripts/audit-http-images.mjs",
     "render-smoke": "node scripts/render-smoke.mjs",

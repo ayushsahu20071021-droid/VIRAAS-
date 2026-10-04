@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { PRODUCTS, WORLDS, BUDGETS, catSlug, worldName, type Product } from '../lib/data';
 import { ProductCard, Empty } from '../components/ui';
+import { workbookAccessoryComponents, workbookShopUrl } from '../lib/workbook';
 // NOTE: the Trending feed has its own component (src/pages/Trending.tsx) so its Men/Women cards render
 // the EXACT authoritative look records. This Listing component handles gender + accessories views only.
 
@@ -9,6 +10,7 @@ type Mode = 'gender' | 'trending' | 'accessories';
 type FacetKey = 'gender' | 'category' | 'occasion' | 'colour' | 'budget' | 'style' | 'silhouette' | 'fabric' | 'detail';
 const LABEL: Record<FacetKey, string> = { gender: 'Gender', category: 'Category', occasion: 'Occasion', colour: 'Colour', budget: 'Budget', style: 'Style', silhouette: 'Silhouette', fabric: 'Fabric', detail: 'Details' };
 const PAGE = 48;
+const workbookAccessories = workbookAccessoryComponents();
 
 function valuesOf(p: Product, k: FacetKey): string[] {
   switch (k) {
@@ -99,7 +101,7 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
         {mode === 'accessories' && <div className="kicker">Complete the look</div>}
         <h1>{title}</h1>
         {mode === 'accessories'
-          ? <p className="muted">{results.length} accessories to finish your Garba / Navratri look — jhumkas, chokers, kamarbandhs, mojaris, juttis, potlis, dupattas and more. Seller links and prices appear only when an exact product listing is verified.</p>
+          ? <p className="muted">{results.length} accessories to finish your Garba / Navratri look — jhumkas, chokers, kamarbandhs, mojaris, juttis, potlis and more. Shop actions appear only for exact mapped links; prices and availability are not inferred.</p>
           : <p className="muted">{results.length} styles · Seller links and prices appear only when an exact product listing is verified.</p>}
       </div>
       <div className="listing-body">
@@ -138,6 +140,30 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
           )}
         </div>
       </div>
+      {mode === 'accessories' && workbookAccessories.length > 0 && (
+        <section className="section mapped-accessories" aria-labelledby="mapped-accessories-title">
+          <div className="kicker">College Fest edit</div>
+          <h2 id="mapped-accessories-title">Mapped accessory</h2>
+          <p className="muted">One accessory has an exact Shop link. The linked item does not have its own Try-On image.</p>
+          <div className="mapped-accessory-grid">
+            {workbookAccessories.map(({ section, look, component, index }) => {
+              const url = workbookShopUrl(component);
+              const label = component.sourceTitle || 'Product name not listed';
+              const absoluteLook = look.number + section.womenLookOffset;
+              return (
+                <article className="mapped-accessory-card" key={`${section.id}-${look.number}-${index}`} data-accessory-source={`${section.id}:${look.number}`}>
+                  <div className="kicker">{section.label} · Look {look.number}</div>
+                  <h3>{label}</h3>
+                  <div className="mapped-accessory-actions">
+                    {url && <a className="btn btn-shop sm" href={url} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Shop ${label}`}>Shop</a>}
+                    <Link className="link-arrow" to={`/women-look/women-look-${String(absoluteLook).padStart(3, '0')}`}>View full look →</Link>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
     </div>
   );
 }

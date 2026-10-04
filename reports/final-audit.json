@@ -4,6 +4,7 @@
     "validate-images": "PASS (completion gate open)",
     "audit-affiliate": "PASS",
     "audit-product-actions": "PASS",
+    "audit-workbook-mapping": "PASS",
     "audit-duplicates": "FAIL",
     "audit-search": "PASS",
     "audit-http-images": "PASS",

@@ -14,6 +14,36 @@
     },
     {
       "ok": true,
+      "msg": "GET /women/garba → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/college-fest → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/diwali → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women-look/women-look-001 → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women-look/women-look-014 → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women-look/women-look-075 → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
       "msg": "GET /men → 200",
       "level": "error"
     },

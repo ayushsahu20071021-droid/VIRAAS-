@@ -27,5 +27,30 @@ const heroText = await page.textContent('.hero');
 checks.push([/THE FESTIVE EDIT ’26/.test(heroText) && /Shop Women/i.test(heroText) && /Shop Men/i.test(heroText) && /Try an outfit on you/i.test(heroText), 'hero copy + 3 CTAs']);
 await page.goto(BASE + '/couple-edit', { waitUntil: 'networkidle' });
 checks.push([(await page.$$('.ccard')).length === 100, `couple edit renders ${(await page.$$('.ccard')).length} looks`]);
+await page.goto(BASE + '/women/garba', { waitUntil: 'networkidle' });
+checks.push([(await page.$$('[data-women-look-id]')).length === 68, 'Women Garba listing retains all 68 numbered looks']);
+await page.goto(BASE + '/women/college-fest', { waitUntil: 'networkidle' });
+checks.push([(await page.$$('[data-women-look-id]')).length === 42, 'Women College Fest listing retains all 42 numbered looks']);
+await page.goto(BASE + '/women/diwali', { waitUntil: 'networkidle' });
+checks.push([(await page.$$('[data-women-look-id]')).length === 42, 'Women Diwali listing remains available with 42 existing looks']);
+
+const workbookLookCases = [
+  { path: '/women-look/women-look-001', expected: ['https://www.wishlink.com/share/644x25', 'https://www.wishlink.com/share/nxuxu4', 'https://www.wishlink.com/share/6jfykw'] },
+  { path: '/women-look/women-look-014', expected: ['https://www.wishlink.com/share/64wdgc', 'https://www.wishlink.com/share/nujaju', 'https://www.wishlink.com/share/6248cj'] },
+  { path: '/women-look/women-look-075', expected: ['https://www.wishlink.com/share/64her7', 'https://www.wishlink.com/share/nuvefv', 'https://www.wishlink.com/share/62pbq5'] },
+];
+for (const test of workbookLookCases) {
+  await page.goto(BASE + test.path, { waitUntil: 'networkidle' });
+  const shops = await page.$$eval('.workbook-item a.btn-shop', (els) => els.map((el) => el.href));
+  const wholeLookTryOn = await page.$eval(`a[href="/try-on?womenLook=${test.path.split('/').pop()}"]`, (el) => Boolean(el)).catch(() => false);
+  checks.push([JSON.stringify(shops) === JSON.stringify(test.expected), `${test.path} renders ${shops.length} exact component Shop links`]);
+  checks.push([wholeLookTryOn, `${test.path} retains whole-look Try-On`]);
+}
+await page.goto(BASE + '/accessories', { waitUntil: 'networkidle' });
+const accessory = await page.$eval('[data-accessory-source="college-fest:7"]', (el) => ({
+  shop: el.querySelector('a.btn-shop')?.getAttribute('href'),
+  itemTryOn: Boolean(el.querySelector('a[href*="try-on"]')),
+})).catch(() => null);
+checks.push([accessory?.shop === 'https://www.wishlink.com/share/nuvefv' && accessory.itemTryOn === false, 'Accessories exposes the mapped waist-chain Shop link without unsupported item Try-On']);
 await b.close();
 report('audit-rendered-browser', checks);

@@ -366,3 +366,27 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
 /* Shop-the-look CTA block on Men/Women look detail pages */
 .look-shop { margin: 22px 0 10px; padding: 18px 0 4px; border-top: 1px solid var(--line); }
 .look-shop .kicker { margin-bottom: 10px; }
+.pdp-primary-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.pdp-primary-actions > .btn { flex: 1 1 145px; min-width: 0; }
+
+/* Exact workbook mappings: separate Shop links per component, with Try-On kept at look level. */
+.workbook-count { min-height: 0 !important; margin: 0 0 12px !important; }
+.workbook-components { margin-top: 34px; }
+.workbook-components > h2 { margin-bottom: 18px; }
+.workbook-item-list { display: grid; gap: 9px; max-width: 900px; }
+.workbook-item { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 13px 15px; background: #fff; border: 1px solid var(--line); border-radius: 14px; }
+.workbook-item-copy { display: flex; align-items: flex-start; gap: 12px; min-width: 0; }
+.workbook-item-copy p { margin: 0; color: var(--ink-2); font-size: .86rem; line-height: 1.45; overflow-wrap: anywhere; }
+.workbook-item-index { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 25px; height: 25px; border-radius: 50%; background: var(--paper); color: var(--muted); font-size: .72rem; font-weight: 700; }
+.workbook-item > .btn, .workbook-item > .muted { flex: 0 0 auto; }
+.mapped-accessories { padding-top: 28px; }
+.mapped-accessories > h2 { margin-bottom: 6px; }
+.mapped-accessories > p { margin-top: 0; max-width: 60ch; }
+.mapped-accessory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px; margin-top: 18px; }
+.mapped-accessory-card { padding: 18px; background: #fff; border: 1px solid var(--line); border-radius: var(--r); }
+.mapped-accessory-card h3 { margin: 8px 0 16px; overflow-wrap: anywhere; }
+.mapped-accessory-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+@media (max-width: 540px) {
+  .workbook-item { align-items: flex-start; gap: 12px; }
+  .workbook-item > .btn { align-self: center; }
+}

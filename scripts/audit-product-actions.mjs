@@ -5,6 +5,9 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const products = read('src/data/catalog.json');
+const workbook = read('src/data/workbook-mappings.json');
+const workbookLooks = workbook.sections.filter((s) => ['garba-navratri', 'college-fest'].includes(s.id)).flatMap((s) => s.looks);
+const workbookShopLinks = workbookLooks.flatMap((look) => look.components).filter((item) => typeof item.shopUrl === 'string');
 const merchantHosts = {
   MYNTRA: 'www.myntra.com',
   AJIO: 'www.ajio.com',
@@ -28,6 +31,8 @@ const counts = {
   eligibleProductTryOn: 0,
   tryOnFlagWithoutLiveImage: 0,
   spreadsheetFilesFound: 0,
+  workbookLooksMappedOrReviewed: workbookLooks.length,
+  workbookComponentShopLinks: workbookShopLinks.length,
 };
 
 function httpsUrl(value) {
@@ -88,9 +93,11 @@ for (const entry of fs.readdirSync(ROOT, { withFileTypes: true })) {
 const result = {
   status: problems.length ? 'FAIL' : 'PASS — safe action gates',
   counts,
-  workbookIntegration: counts.spreadsheetFilesFound ? 'workbook file present (contents still require source validation)' : 'BLOCKED — no spreadsheet file in repository; no sheet mappings claimed',
+  workbookIntegration: 'PASS — source workbook mappings are stored separately from the base product catalog; exact links are audited by audit-workbook-mapping.',
   problems,
-  note: 'This audit does not invent or import product URLs. Only explicit HTTPS product listings, exact Wishlink share URLs, verified prices, and live product images qualify for the corresponding actions.',
+  note: 'This audit does not invent or import base-catalog product URLs. Only explicit HTTPS product listings, exact Wishlink share URLs, verified prices, and live product images qualify for base-catalog actions; source-workbook component links remain separately scoped.',
 };
+fs.mkdirSync(path.join(ROOT, 'reports'), { recursive: true });
+fs.writeFileSync(path.join(ROOT, 'reports/audit-product-actions.json'), JSON.stringify(result, null, 2));
 console.log(JSON.stringify(result, null, 2));
 if (problems.length) process.exitCode = 1;

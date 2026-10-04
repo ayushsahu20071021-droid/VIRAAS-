@@ -52,6 +52,12 @@ All 78 non-Beauty accessories previously carried a synthetic **all-5-occasion** 
 Garba/Navratri look catalogs, their occasion was corrected to **`["garba"]`** (the Garba/Navratri edit) in both
 `data-src/taxonomy.mjs` and the committed catalog files. No occasion was invented.
 
+## 2b. Source-workbook accessory link (added)
+
+The Accessories page now shows the 60 existing catalog records plus one separately scoped, workbook-mapped College Fest waist-chain component (Look 7). Its Shop action uses the exact source Wishlink URL. It has no dedicated item image, so no accessory-level Try-On action is shown. This does not add a product to the 827-record catalog or infer price/availability. The inspected workbook sheet has no standalone Accessories section; the mapped waist chain is an explicitly named item inside College Fest Look 7. Exact source rows and link are stored in `src/data/workbook-mappings.json` and checked by `npm run audit-workbook-mapping`.
+
+**Current Accessories page: 61 displayed entries** (60 catalog products + 1 separately mapped source component). The base-catalog support/image counts below remain 60.
+
 ## 3. Bags decision — RESOLVED (removed)
 
 Bags were confirmed unsupported (0 Men / 0 Women approved-look references) and have now been **removed at source**

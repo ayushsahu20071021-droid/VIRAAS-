@@ -73,6 +73,9 @@ export const WOMEN_LOOKS: WomenLook[] = rawWomenLooks.map((look) => ({
   ...look,
   ...(garbaById.get(look.id) ?? {}),
   ...(garbaProductsById.get(look.id) ?? {}),
+  // The base catalog owns normalized occasion slugs (for routes/filters); overlays may contain
+  // display labels such as "Garba / Navratri", which must never replace those stable route keys.
+  occasion: look.occasion,
 }));
 export const womenLookById = new Map<string, WomenLook>(WOMEN_LOOKS.map((look) => [look.id, look]));
 export const womenOccasions = [

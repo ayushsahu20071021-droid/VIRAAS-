@@ -62,8 +62,10 @@ export default function ProductPage() {
             <div><dt>Silhouette</dt><dd>{p.silhouette}</dd></div>
           </dl>
           <div className="pdp-ctas">
-            {tryOnHref && <Link to={tryOnHref} className="btn btn-accent block">Try this outfit on you</Link>}
-            <ProductActionButton p={p} block />
+            <div className="pdp-primary-actions" aria-label="Product actions">
+              {tryOnHref && <Link to={tryOnHref} className="btn btn-accent">Try it on</Link>}
+              <ProductActionButton p={p} />
+            </div>
             <SaveButton kind="product" id={p.id} image={p.imageUrl} />
           </div>
           <ShareRow path={`/product/${p.id}`} />
