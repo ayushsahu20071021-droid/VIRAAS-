@@ -32,7 +32,7 @@ The user-provided OneDrive workbook was retrieved through its `download=1` share
 - No durable database, identity provider, or persistent account store is configured in this workspace. VIRAAS Connect remains an in-memory reference implementation. Therefore persistent VIRAAS ID/history, exactly two first-use credits, cross-session saved/account state, and a shared ledger are **not implemented or claimed**.
 - Payment remains mock by default; Razorpay and Cashfree are documented stubs. No real payment can be collected or server-verified here, and no ₹20 paid state is enabled.
 - `/chat` remains the existing human-to-human Connect chat. No AI model provider or persistent chat store is configured, so it has not been relabelled as an AI fashion assistant and no recommendations are fabricated.
-- The pre-existing Vercel preview is behind Vercel Deployment Protection and redirects unauthenticated route checks to the Vercel login. A live, public production route check cannot be claimed from this environment.
+- GitHub’s Vercel deployment check reported completion for the current branch at `https://viraas-qmwda6oo3-ayushsahu20071021-3349s-projects.vercel.app` (deployment environment reported as Production). Direct checks of `/`, `/api/health`, and `/women/garba` redirect to Vercel login under Deployment Protection, so the deployed page content and runtime routes could not be verified.
 
 ## Verification
 
@@ -59,4 +59,4 @@ Machine-readable results: `reports/final-audit.json`, `reports/audit-workbook-ma
 4. Configure a real server-side AI styling provider and persistent chat history; ground returned item actions only in the validated catalog/workbook mapping.
 5. Resolve the 60 source-backed Couple/product mismatches and review 872 perceptual near-duplicate image pairs without guessing or replacing approved assets.
 6. Complete human image QA for the 927 pending images.
-7. Deploy through the existing Vercel project and verify the deployed routes after the project’s Deployment Protection allows access. No secret values were added to Git.
+7. Re-run live browser and API checks against the completed Vercel deployment through an owner-authorized path past Deployment Protection. No secret values were added to Git.
