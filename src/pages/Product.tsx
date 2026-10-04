@@ -5,6 +5,7 @@ import { ImageFrame, SaveButton, ProductActionButton, ShareRow, ProductCard, Emp
 import { exactMerchantProductUrl, hasVerifiedPrice, productOutboundAction, tryOnHrefForProduct } from '../lib/productActions';
 import { womenLookForProduct, womenLookImage } from '../lib/looks';
 import { womenOccasionLabel } from '../lib/womenCatalog';
+import { useTryOnAvailable } from '../lib/tryOnStatus';
 
 function completeTheLook(p: Product): Product[] {
   // Prefer the actual couple look this product appears in
@@ -32,13 +33,14 @@ function whyPicked(p: Product): string[] {
 
 export default function ProductPage() {
   const { id } = useParams();
+  const tryOnAvailable = useTryOnAvailable();
   const p = id ? byId.get(id) : undefined;
   if (!p) return <div className="page"><Empty title="Product not found"><Link to="/" className="btn btn-dark">Back home</Link></Empty></div>;
   const ctl = completeTheLook(p);
   const similar = PRODUCTS.filter((x) => x.id !== p.id && x.gender === p.gender && x.category === p.category && (x.colour === p.colour || x.embroidery === p.embroidery)).slice(0, 4);
   const inCouples = COUPLES.filter((c) => p.coupleIds.includes(c.id)).slice(0, 3);
   const featuredLook = womenLookForProduct(p.id);
-  const tryOnHref = tryOnHrefForProduct(p);
+  const tryOnHref = tryOnAvailable ? tryOnHrefForProduct(p) : undefined;
   const exactMerchantUrl = exactMerchantProductUrl(p);
   const hasPrice = hasVerifiedPrice(p);
   const hasOutbound = Boolean(productOutboundAction(p));

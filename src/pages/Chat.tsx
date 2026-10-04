@@ -6,10 +6,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { social, timeAgo, type ChatMessage, type ConversationSummary, type Profile } from '../lib/social';
-import { useMe, Avatar, ReportDialog } from '../components/social';
+import { useMe, Avatar, ReportDialog, ConnectUnavailable } from '../components/social';
 
 export default function ChatList() {
-  const { me, loading } = useMe();
+  const { me, loading, available } = useMe();
   const [items, setItems] = useState<ConversationSummary[]>([]);
   const [ready, setReady] = useState(false);
   useEffect(() => {
@@ -21,6 +21,7 @@ export default function ChatList() {
     return () => { alive = false; clearInterval(iv); };
   }, [me]);
   if (loading) return <div className="container vc-page"><p className="muted">Loading…</p></div>;
+  if (!available) return <ConnectUnavailable title="VIRAAS Connect chats" />;
   if (!me) return <div className="container vc-page"><p className="muted">Please <Link to="/connect">sign in to VIRAAS Connect</Link> to see your chats.</p></div>;
   return (
     <div className="container vc-page">
@@ -55,7 +56,7 @@ export default function ChatList() {
 
 export function Conversation() {
   const { conversationId = '' } = useParams();
-  const { me, loading } = useMe();
+  const { me, loading, available } = useMe();
   const [other, setOther] = useState<Profile | null>(null);
   const [msgs, setMsgs] = useState<ChatMessage[]>([]);
   const [text, setText] = useState('');
@@ -98,6 +99,7 @@ export function Conversation() {
   };
 
   if (loading) return <div className="container vc-page"><p className="muted">Loading…</p></div>;
+  if (!available) return <ConnectUnavailable title="VIRAAS Connect chats" />;
   if (!me) return <div className="container vc-page"><p className="muted">Please <Link to="/connect">sign in</Link> to chat.</p></div>;
   if (err && !other) return (
     <div className="container vc-page">

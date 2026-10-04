@@ -5,6 +5,7 @@ import { womenLookDetail, DETAIL_FIELDS } from '../lib/lookDetails';
 import womenPreviews from '../data/women-previews.client.json';
 import womenLookAffiliate from '../data/women-look-affiliate.json';
 import { workbookLookForWomenId, workbookShopUrl } from '../lib/workbook';
+import { useTryOnAvailable } from '../lib/tryOnStatus';
 
 type WomenPreview = { qaStatus: string; approval: string; live: boolean; referenceId: string; src: string };
 const previewStatus = womenPreviews as Record<string, WomenPreview | undefined>;
@@ -21,7 +22,7 @@ const shopUrl = (id: string) => {
     : undefined;
 };
 
-function Card({ look }: { look: WomenLook }) {
+function Card({ look, tryOnAvailable }: { look: WomenLook; tryOnAvailable: boolean }) {
   const workbook = workbookLookForWomenId(look.id);
   const mappedCount = workbook?.look.components.filter((component) => workbookShopUrl(component)).length ?? 0;
   const path = `/women-look/${look.id}`;
@@ -37,7 +38,7 @@ function Card({ look }: { look: WomenLook }) {
         <div className="men-look-meta"><span>{look.garmentType}</span><span>{look.colors.primary}</span></div>
         {mappedCount > 0 && <p className="muted small workbook-count">{mappedCount} exact Shop {mappedCount === 1 ? 'link' : 'links'} in the look</p>}
         <div className="men-look-actions">
-          {previewSrc(look.id) && <Link className="btn btn-accent sm" to={`/try-on?womenLook=${look.id}`}>Try it on</Link>}
+          {tryOnAvailable && previewSrc(look.id) && <Link className="btn btn-accent sm" to={`/try-on?womenLook=${look.id}`}>Try it on</Link>}
           <Link to={path} className="link-arrow">View outfit details →</Link>
         </div>
       </div>
@@ -46,6 +47,7 @@ function Card({ look }: { look: WomenLook }) {
 }
 
 export default function WomenCatalog() {
+  const tryOnAvailable = useTryOnAvailable();
   const { category } = useParams();
   const [params, setParams] = useSearchParams();
   const query = params.get('q')?.trim().toLowerCase() ?? '';
@@ -88,7 +90,7 @@ export default function WomenCatalog() {
       </div>
       <div className="men-catalog-summary"><strong>{list.length}</strong> of 236 looks</div>
       {list.length ? (
-        <div className="men-look-grid">{list.map((look) => <Card key={look.id} look={look} />)}</div>
+        <div className="men-look-grid">{list.map((look) => <Card key={look.id} look={look} tryOnAvailable={tryOnAvailable} />)}</div>
       ) : (
         <div className="empty"><h3>No Women looks match</h3><Link className="btn btn-dark" to="/women">Clear filters</Link></div>
       )}
@@ -97,6 +99,7 @@ export default function WomenCatalog() {
 }
 
 export function WomenLookDetail() {
+  const tryOnAvailable = useTryOnAvailable();
   const { id } = useParams();
   const look = id ? womenLookById.get(id) : undefined;
   if (!look) {
@@ -121,7 +124,7 @@ export function WomenLookDetail() {
             ))}
           </dl>
           <div className="row">
-            {previewSrc(look.id) && <Link className="btn btn-accent" to={`/try-on?womenLook=${look.id}`}>Try it on</Link>}
+            {tryOnAvailable && previewSrc(look.id) && <Link className="btn btn-accent" to={`/try-on?womenLook=${look.id}`}>Try it on</Link>}
             {shopUrl(look.id) && <a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop this look</a>}
             <Link className="btn btn-dark" to={`/women/${look.occasion}`}>Browse {womenOccasionLabel(look.occasion)}</Link>
           </div>

@@ -139,6 +139,26 @@
     },
     {
       "ok": true,
+      "msg": "GET /connect → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /connect/u/test-viraas-id → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /chat → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /chat/test-conversation → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
       "msg": "GET /product/w-lehenga-ivory-mirror-work-blouse → 200",
       "level": "error"
     },
@@ -289,7 +309,17 @@
     },
     {
       "ok": true,
-      "msg": "try-on mode: demo (TRYON_MODE=demo)",
+      "msg": "try-on mode defaults to Runware FLUX VTO (runware-flux)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "generation, credits and top-ups remain unavailable without durable safeguards",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "missing Runware key is reported exactly",
       "level": "error"
     },
     {
@@ -299,12 +329,12 @@
     },
     {
       "ok": true,
-      "msg": "try-on demo response clearly labelled DEMO",
+      "msg": "try-on refuses without Runware; no preview/simulated image",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "no secrets in try-on response",
+      "msg": "no credential fields in try-on response",
       "level": "error"
     }
   ]

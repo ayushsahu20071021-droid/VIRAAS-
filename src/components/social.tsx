@@ -8,11 +8,33 @@ import { social, avatarColor, initials, type Profile, type Relation } from '../l
 export function useMe() {
   const [me, setMe] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
+  const [available, setAvailable] = useState(false);
   const refresh = useCallback(async () => {
-    try { const r = await social.me(); setMe(r.me); } catch { setMe(null); } finally { setLoading(false); }
+    try {
+      const status = await social.status();
+      setAvailable(status.available);
+      if (!status.available) { setMe(null); return; }
+      const r = await social.me();
+      setMe(r.me);
+    } catch {
+      setAvailable(false);
+      setMe(null);
+    } finally { setLoading(false); }
   }, []);
   useEffect(() => { refresh(); }, [refresh]);
-  return { me, loading, setMe, refresh };
+  return { me, loading, available, setMe, refresh };
+}
+
+export function ConnectUnavailable({ title = 'VIRAAS Connect' }: { title?: string }) {
+  return (
+    <div className="container vc-page">
+      <div className="vc-onboard">
+        <h1>{title}</h1>
+        <p className="lead">Account creation, discovery and private chat are temporarily unavailable until secure sign-in and persistent account storage are ready.</p>
+        <Link className="btn btn-dark" to="/women">Continue browsing</Link>
+      </div>
+    </div>
+  );
 }
 
 export function Avatar({ profile, size = 44 }: { profile: Pick<Profile, 'displayName' | 'avatarSeed'>; size?: number }) {

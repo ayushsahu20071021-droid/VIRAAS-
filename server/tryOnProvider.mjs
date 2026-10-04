@@ -5,8 +5,8 @@
 // server-side env ONLY and are never sent to the browser.
 //
 // Modes (TRYON_MODE):
-//   demo         (default) — NO AI provider is called. Returns a clearly-labelled non-production
-//                            response. The user photo is never written to disk or stored.
+//   demo                   — NO AI provider is called. Always refuses; never reports a successful
+//                            Try-On or accepts a photo as a generated result.
 //   flux                   — FLUX VTO via Black Forest Labs API. See ./providers/fluxVto.mjs.
 //   runware-flux           — FLUX VTO via Runware (hosted, no-training, ZDR). See ./providers/runwareFluxVto.mjs.
 //   custom / live          — Generic REST adapter for any other provider you host/verify yourself,
@@ -15,10 +15,10 @@
 // Privacy: no provider path here persists the user photo, writes it to disk, puts it in a public
 // path, or logs the raw image / base64 payload.
 
-import { fluxVtoProvider, fluxConfigured } from './providers/fluxVto.mjs';
-import { runwareFluxVtoProvider, runwareConfigured } from './providers/runwareFluxVto.mjs';
+import { fluxVtoProvider } from './providers/fluxVto.mjs';
+import { runwareFluxVtoProvider, runwareConfigured, runwareRequirements } from './providers/runwareFluxVto.mjs';
 
-const MODE = (process.env.TRYON_MODE || 'demo').toLowerCase();
+const MODE = (process.env.TRYON_MODE || 'runware-flux').toLowerCase();
 const API_URL = process.env.TRYON_API_URL || '';
 const API_KEY = process.env.TRYON_API_KEY || '';
 const PROVIDER_NAME = process.env.TRYON_PROVIDER || '';
@@ -31,14 +31,15 @@ const demoProvider = {
     return false;
   },
   async generateTryOn({ outfitId }) {
-    // Demo mode: no AI call, no storage, no fake progress, no fabricated result image.
+    // Demo mode must never masquerade as a successful Try-On or accept a user's photo.
     return {
-      ok: true,
+      ok: false,
       mode: 'demo',
+      configured: false,
       outfitId,
       resultImage: null,
-      message:
-        'DEMO MODE — no AI Try-On provider is connected. This is a layout preview only, not an AI-generated image. Your photo was sent only to the VIRAAS server for this preview and was not written to disk or stored.',
+      code: 'RUNWARE_API_KEY_REQUIRED',
+      message: 'RUNWARE_API_KEY required. No image was generated.',
     };
   },
 };
@@ -82,11 +83,9 @@ function pick() {
 
 export const tryOnProvider = pick();
 export const tryOnMode = tryOnProvider.name;
-export const tryOnConfigured =
-  MODE === 'runware-flux'
-    ? runwareConfigured
-    : MODE === 'flux'
-      ? fluxConfigured
-      : MODE === 'custom' || MODE === 'live'
-        ? Boolean(API_URL) && Boolean(API_KEY)
-        : false;
+// This product's Try-On must use the existing Runware adapter, not a silent provider fallback.
+export const tryOnRequirements = [
+  ...(MODE !== 'runware-flux' ? [`TRYON_MODE=runware-flux required (current mode: ${MODE})`] : []),
+  ...runwareRequirements(),
+];
+export const tryOnConfigured = MODE === 'runware-flux' && runwareConfigured;

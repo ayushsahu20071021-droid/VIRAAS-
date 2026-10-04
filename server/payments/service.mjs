@@ -22,9 +22,13 @@ import * as store from './store.mjs';
 
 export const PRICE_INR = Number(process.env.TRYON_PRICE_INR || 20);
 export const CURRENCY = (process.env.TRYON_CURRENCY || 'INR').toUpperCase();
-// Whether a real Try-On requires a verified, paid, one-time authorization. Default OFF so the
-// existing demo/preview flow keeps working and this task collects ZERO money and makes ZERO calls.
+// Whether a real Try-On requires a verified, paid, one-time authorization. This configuration flag
+// cannot enable generation while persistent identity/credits and payment verification are unavailable.
 export const paymentRequired = (process.env.TRYON_PAYMENT_REQUIRED || 'false').toLowerCase() === 'true';
+// The current payment store is process-memory only, so it must never back a production payment flow.
+export const paymentStorePersistent = false;
+// The mock gateway is permitted only in an explicitly opted-in, non-production test process.
+export const mockPaymentTestsAllowed = process.env.NODE_ENV !== 'production' && process.env.ALLOW_MOCK_PAYMENTS === 'true';
 
 export const paymentConfig = {
   provider: paymentProviderName,

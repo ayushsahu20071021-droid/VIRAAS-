@@ -5,6 +5,7 @@ import { featuredMenLooks, featuredWomenLooks, menLookImage, womenLookImage, sho
 import { menOccasionLabel } from '../lib/menCatalog';
 import { womenOccasionLabel } from '../lib/womenCatalog';
 import { ARTICLES } from '../lib/journal';
+import { useTryOnAvailable } from '../lib/tryOnStatus';
 
 // Couples carry their approved image via the GENERATED status resolver, not a raw imageUrl.
 const withImg = COUPLES.filter((c) => coupleImageSrc(c));
@@ -12,6 +13,7 @@ const heroImg = (id: string) => { const c = COUPLES.find((x) => x.id === id); re
 const worldImage = (slug: string) => { const c = withImg.find((x) => x.world === slug); return c ? coupleImageSrc(c) : undefined; };
 
 export default function Home() {
+  const tryOnAvailable = useTryOnAvailable();
   // Homepage now features the APPROVED look images (real, QA-passed) — never imageless product placeholders.
   const her = featuredWomenLooks(undefined, 8);
   const him = featuredMenLooks(undefined, 8);
@@ -30,11 +32,11 @@ export default function Home() {
         <div className="hero-copy">
           <div className="kicker light">THE FESTIVE EDIT ’26</div>
           <h1>Tradition,<br /><em>reimagined</em> for now.</h1>
-          <p>Discover the look. See it on you. Shop the real outfit.</p>
+          <p>{tryOnAvailable ? 'Discover the look. See it on you. Shop the real outfit.' : 'Discover curated festive looks. Shop the real outfit from the seller.'}</p>
           <div className="hero-ctas">
             <Link to="/women" className="btn btn-light">Shop Women</Link>
             <Link to="/men" className="btn btn-outline-light">Shop Men</Link>
-            <Link to="/try-on" className="btn btn-accent">Try an outfit on you</Link>
+            {tryOnAvailable && <Link to="/try-on" className="btn btn-accent">Try an outfit on you</Link>}
           </div>
         </div>
         <div className="hero-collage">
@@ -82,10 +84,12 @@ export default function Home() {
         <div>
           <div className="kicker">See it on you</div>
           <h2>Try the outfit before you shop it.</h2>
-          <p>Pick a look, upload a photo and preview it on you. Uploading a personal photo requires you to be 18+. If you're 16–17, you can still browse, save, share and shop.</p>
-          <Link to="/try-on" className="btn btn-dark">Try an outfit on you</Link>
+          <p>{tryOnAvailable
+            ? <>Pick a look, upload a photo and preview it on you. Uploading a personal photo requires you to be 18+. If you're 16–17, you can still browse, save, share and shop.</>
+            : <>AI Try-On is temporarily unavailable. No personal photo will be uploaded until the required generation and credit services are ready.</>}</p>
+          <Link to="/try-on" className="btn btn-dark">{tryOnAvailable ? 'Try an outfit on you' : 'Try-On status'}</Link>
         </div>
-        <ol className="steps"><li>Choose a look</li><li>Confirm you're 18+</li><li>Upload a photo</li><li>Preview → Generate</li><li>Save, share or shop</li></ol>
+        {tryOnAvailable && <ol className="steps"><li>Choose a look</li><li>Confirm you're 18+</li><li>Upload a photo</li><li>Preview → Generate</li><li>Save, share or shop</li></ol>}
       </section>
 
       {/* 6 TRENDING */}

@@ -32,7 +32,7 @@ function run(env) {
 // S1 — no key
 const s1 = run({ RUNWARE_API_KEY: '' });
 ok('S1 no key -> configured=false', s1.configured === false);
-ok('S1 no key -> refuses (ok:false, missing-key message)', s1.out?.ok === false && /API key/i.test(s1.out?.message || ''));
+ok('S1 no key -> refuses with exact configuration requirement', s1.out?.ok === false && s1.out?.code === 'RUNWARE_API_KEY_REQUIRED' && s1.out?.message === 'RUNWARE_API_KEY required. Try-On was not started.');
 ok('S1 no key -> no network (instant)', typeof s1.elapsedMs === 'number' && s1.elapsedMs < 50);
 
 // S2 — key but ZDR unset (hard privacy gate)

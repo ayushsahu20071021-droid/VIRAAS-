@@ -4,6 +4,16 @@
   "checks": [
     {
       "ok": true,
+      "msg": "Try-On readiness endpoint is available to the rendered app",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Connect reports unavailable until persistent accounts and sign-in are configured",
+      "level": "error"
+    },
+    {
+      "ok": true,
       "msg": "/ — real imgs 39, pending 0",
       "level": "error"
     },
@@ -129,12 +139,32 @@
     },
     {
       "ok": true,
-      "msg": "/try-on — real imgs 12, pending 0",
+      "msg": "/try-on — real imgs 0, pending 0",
       "level": "error"
     },
     {
       "ok": true,
-      "msg": "/try-on?product=w-lehenga-ivory-mirror-work-blouse — real imgs 12, pending 0",
+      "msg": "/try-on?product=w-lehenga-ivory-mirror-work-blouse — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/connect — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/connect/u/test-viraas-id — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/chat — real imgs 0, pending 0",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/chat/test-conversation — real imgs 0, pending 0",
       "level": "error"
     },
     {
@@ -299,7 +329,7 @@
     },
     {
       "ok": true,
-      "msg": "hero copy + 3 CTAs",
+      "msg": "hero preserves supported CTAs (Try-On available: false)",
       "level": "error"
     },
     {
@@ -329,7 +359,7 @@
     },
     {
       "ok": true,
-      "msg": "/women-look/women-look-001 retains whole-look Try-On",
+      "msg": "/women-look/women-look-001 shows whole-look Try-On only when the server reports generation ready",
       "level": "error"
     },
     {
@@ -339,7 +369,7 @@
     },
     {
       "ok": true,
-      "msg": "/women-look/women-look-014 retains whole-look Try-On",
+      "msg": "/women-look/women-look-014 shows whole-look Try-On only when the server reports generation ready",
       "level": "error"
     },
     {
@@ -349,12 +379,52 @@
     },
     {
       "ok": true,
-      "msg": "/women-look/women-look-075 retains whole-look Try-On",
+      "msg": "/women-look/women-look-075 shows whole-look Try-On only when the server reports generation ready",
       "level": "error"
     },
     {
       "ok": true,
       "msg": "Accessories exposes the mapped waist-chain Shop link without unsupported item Try-On",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Connect clearly refuses account creation while unavailable",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "unavailable Connect presents no account-creation form",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Chat is unavailable rather than suggesting messages can be sent",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "unavailable Chat presents no message composer",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "selected look retains its explicit 18+ consent gate",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "unavailable Try-On disables progression before photo upload",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "unavailable Try-On names its exact Runware requirement",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "no successful-looking result is rendered without a real image",
       "level": "error"
     }
   ]

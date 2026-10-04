@@ -10,15 +10,10 @@ import { tryOnHrefForProduct } from '../lib/productActions';
 import { useSaved } from '../lib/saved';
 import { SHARE_TEXT } from '../lib/saved';
 import { DEFAULT_EDIT, isEdited, processPhoto, downloadDataUrl, shareImage, type PhotoEdit } from '../lib/photo';
+import { useTryOnStatus, useTryOnAvailable } from '../lib/tryOnStatus';
 
 type Step = 'pick' | 'age' | 'under18' | 'privacy' | 'upload' | 'preview' | 'payment' | 'generating' | 'result' | 'error';
-interface TryOnResponse { ok: boolean; mode: string; resultImage?: string | null; message?: string }
-interface TryOnStatus {
-  mode: string; configured: boolean; provider: string | null;
-  // Payment gating (browser-safe). Absent/false => no payment required (current default behaviour).
-  paymentRequired?: boolean; priceInr?: number; currency?: string; paymentConfigured?: boolean; paymentProvider?: string;
-  generationAvailable?: boolean;
-}
+interface TryOnResponse { ok: boolean; mode: string; resultImage?: string; message?: string; code?: string }
 
 const AGE_KEY = 'viraas:age-confirmed';
 const previewStatus = womenPreviews as Record<string, { live: boolean; src: string } | undefined>;
@@ -169,7 +164,8 @@ export default function TryOn() {
   const [processed, setProcessed] = useState<string | null>(null);   // edited version (what we send)
   const [consent, setConsent] = useState(false);
   const [result, setResult] = useState<TryOnResponse | null>(null);
-  const [status, setStatus] = useState<TryOnStatus>({ mode: 'demo', configured: false, provider: null });
+  const status = useTryOnStatus();
+  const tryOnAvailable = useTryOnAvailable();
   const [saved, setSavedFlag] = useState(false);
   const [payNote, setPayNote] = useState<string>('');
   const fileRef = useRef<HTMLInputElement>(null);
@@ -177,10 +173,6 @@ export default function TryOn() {
   const paymentLock = useRef(false);
   const pollTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const { toggle, isSaved } = useSaved();
-
-  useEffect(() => {
-    fetch('/api/try-on/status').then((r) => r.json()).then(setStatus).catch(() => setStatus({ mode: 'demo', configured: false, provider: null }));
-  }, []);
 
   // Clear payment polling when the component unmounts.
   useEffect(() => () => {
@@ -216,7 +208,7 @@ export default function TryOn() {
   // payment itself: it creates a payment, then waits for the SERVER to report an authorization that
   // only the gateway webhook can produce. A real gateway's checkout widget would open here using the
   // returned `checkout` descriptor.
-  const paymentReady = Boolean(status.paymentConfigured && status.paymentProvider !== 'mock');
+  const paymentReady = Boolean(status.topUpAvailable && status.paymentConfigured && status.paymentProvider !== 'mock');
 
   const startPayment = async () => {
     if (!subject || !processed || !consent || paymentLock.current || !paymentReady) return;
@@ -259,7 +251,7 @@ export default function TryOn() {
   };
 
   const generate = async (authToken?: string) => {
-    if (!subject || !processed || !consent || generateLock.current) return;
+    if (!tryOnAvailable || !subject || !processed || !consent || generateLock.current) return;
     generateLock.current = true;
     if (pollTimer.current) clearInterval(pollTimer.current);
     setStep('generating');
@@ -270,7 +262,9 @@ export default function TryOn() {
         body: JSON.stringify({ ...subject.apiBody, photo: processed, ageConfirmed: true, ...(authToken ? { authToken } : {}) }),
       });
       const data = (await res.json()) as TryOnResponse;
-      if (!res.ok || !data.ok) throw new Error(data.message || 'Try-on failed');
+      if (!res.ok || !data.ok || typeof data.resultImage !== 'string' || !/^data:image\/(jpeg|png|webp);base64,/.test(data.resultImage)) {
+        throw new Error(data.message || 'The server did not return a generated image.');
+      }
       setResult(data); setStep('result');
     } catch (e) {
       setResult({ ok: false, mode: status.mode, message: String((e as Error).message) }); setStep('error');
@@ -279,8 +273,11 @@ export default function TryOn() {
     }
   };
 
-  // Route the "Generate" click: pay first when the server requires it, otherwise generate directly.
-  const onGenerateClick = () => { if (status.paymentRequired) startPayment(); else generate(); };
+  // Runware is only reached from this explicit click, and only when server readiness allows it.
+  const onGenerateClick = () => {
+    if (!tryOnAvailable) return;
+    if (status.paymentRequired) startPayment(); else generate();
+  };
 
   const tryAnother = () => {
     if (pollTimer.current) clearInterval(pollTimer.current);
@@ -292,38 +289,41 @@ export default function TryOn() {
     if (r === 'unsupported') { downloadDataUrl(img, 'viraas-try-on.jpg'); alert('Sharing isn’t supported here, so your result was downloaded instead.'); }
   };
 
-  const notProduction = !status.configured; // no real provider connected yet
-  const generationBlocked = status.configured && status.generationAvailable === false;
+  const generationBlocked = !tryOnAvailable;
+  const readinessRequirements = status.requirements.length ? status.requirements : ['Try-On is not available yet.'];
 
   return (
     <div className="page tryon">
       <div className="page-head">
         <div className="kicker">AI Try-On</div>
         <h1>See it on you</h1>
-        {notProduction && (
-          <div className="demo-banner" role="note">
-            <strong>Virtual Try-On is currently being configured.</strong> The full flow below works, but AI image
-            generation needs a connected provider, so results show a labelled layout preview — not an AI image. Your
-            photo is sent only to the VIRAAS server for the preview and is not stored. See{' '}
-            <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link>.
-          </div>
-        )}
         {generationBlocked && (
-          <div className="demo-banner" role="status">
-            <strong>Live Try-On is temporarily unavailable.</strong> Usage limits or verified checkout are not active yet. No generation or charge will be made.
+          <div className="demo-banner" role="status" data-tryon-readiness="unavailable">
+            <strong>Try-On is unavailable. No image has been generated.</strong>
+            <ul>{readinessRequirements.map((requirement) => <li key={requirement}>{requirement}</li>)}</ul>
+            <p className="muted small">No personal photo will be uploaded or sent to a provider until the required services and credit safeguards are ready. See{' '}
+              <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link>.
+            </p>
           </div>
         )}
       </div>
 
-      {step === 'pick' && (<>
-        <p>Try-On starts from an outfit. Pick a featured look below to begin — or open any look from the <Link to="/men">Men</Link>, <Link to="/women">Women</Link> or <Link to="/couple-edit">Couple</Link> edits and tap “Try this look”.</p>
-        <section className="tryon-featured">
-          <div className="kicker">Featured Try-On looks · Men</div>
-          <div className="men-look-grid">{FEATURED.men.map((f) => <FeaturedCard key={f.id} f={f} />)}</div>
-          <div className="kicker tryon-featured-sub">Featured Try-On looks · Women</div>
-          <div className="men-look-grid">{FEATURED.women.map((f) => <FeaturedCard key={f.id} f={f} />)}</div>
-        </section>
-      </>)}
+      {step === 'pick' && (
+        <>
+          <p>{generationBlocked
+            ? <>You can continue browsing the <Link to="/men">Men</Link>, <Link to="/women">Women</Link> and <Link to="/couple-edit">Couple</Link> edits. Try-On will appear here when the required services are ready.</>
+            : <>Choose a featured look below, or open any look from the <Link to="/men">Men</Link>, <Link to="/women">Women</Link> or <Link to="/couple-edit">Couple</Link> edits.</>}
+          </p>
+          {tryOnAvailable && (
+            <section className="tryon-featured">
+              <div className="kicker">Featured Try-On looks · Men</div>
+              <div className="men-look-grid">{FEATURED.men.map((f) => <FeaturedCard key={f.id} f={f} />)}</div>
+              <div className="kicker tryon-featured-sub">Featured Try-On looks · Women</div>
+              <div className="men-look-grid">{FEATURED.women.map((f) => <FeaturedCard key={f.id} f={f} />)}</div>
+            </section>
+          )}
+        </>
+      )}
 
       {subject && step !== 'pick' && (
         <div className="tryon-grid">
@@ -372,7 +372,8 @@ export default function TryOn() {
                   <li>Good, even lighting</li>
                   <li>Plain background if possible</li>
                 </ul>
-                <div className="row"><button className="btn btn-dark" onClick={() => setStep('upload')}>Got it</button></div>
+                <div className="row"><button className="btn btn-dark" disabled={!tryOnAvailable} onClick={() => setStep('upload')}>{tryOnAvailable ? 'Got it' : 'Try-On unavailable'}</button></div>
+                {generationBlocked && <p className="muted small">{readinessRequirements[0]}</p>}
                 <p className="muted small">Read the <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link> notice.</p>
               </div>
             )}
@@ -444,36 +445,18 @@ export default function TryOn() {
               </div>
             )}
 
-            {/* 6 — Result */}
-            {step === 'result' && result && (
+            {/* 6 — Result. A result screen is reachable only when the server returned a real image. */}
+            {step === 'result' && result?.resultImage && (
               <div className="gate">
-                <h2>Your try-on {!result.resultImage && <span className="demo-tag">PREVIEW</span>}</h2>
-                {result.resultImage ? (
-                  <>
-                    <img src={result.resultImage} alt="Your AI try-on result" className="user-photo" />
-                    <p className="muted small">Private to you. This image isn’t added to the catalog or shared anywhere unless you choose to.</p>
-                    <div className="row">
-                      <button className="btn btn-ghost" onClick={() => saveResult(result.resultImage)}>{saved ? 'Saved ✓' : 'Save'}</button>
-                      <button className="btn btn-ghost" onClick={() => downloadDataUrl(result.resultImage!, 'viraas-try-on.jpg')}>Download</button>
-                      <button className="btn btn-ghost" onClick={() => doShareImage(result.resultImage!)}>Share</button>
-                      <button className="btn btn-dark" onClick={tryAnother}>Try another</button>
-                    </div>
-                  </>
-                ) : (
-                  <div className="demo-compare">
-                    <figure><img src={processed ?? photo ?? subject.imageUrl} alt="Your photo" /><figcaption>Your photo</figcaption></figure>
-                    <figure><ImageFrame src={subject.imageUrl} alt={subject.title} label={subject.category} fit="contain" /><figcaption>The outfit</figcaption></figure>
-                    <p className="muted small">{result.message}</p>
-                    <div className="row">
-                      {subject.kind === 'product' && subject.product
-                        ? <button className="btn btn-ghost" onClick={() => toggle('product', subject.id, subject.imageUrl)}>{isSaved('product', subject.id) ? 'Saved ✓' : 'Save look'}</button>
-                        : <Link className="btn btn-ghost" to={subject.detailPath}>View look</Link>}
-                      <button className="btn btn-dark" onClick={tryAnother}>Try another</button>
-                      {subject.kind === 'product' && subject.product && <ProductActionButton p={subject.product} />}
-                    </div>
-                    <ShareRow path={subject.detailPath} />
-                  </div>
-                )}
+                <h2>Your try-on</h2>
+                <img src={result.resultImage} alt="Your AI try-on result" className="user-photo" />
+                <p className="muted small">Private to you. This image isn’t added to the catalog or shared anywhere unless you choose to.</p>
+                <div className="row">
+                  <button className="btn btn-ghost" onClick={() => saveResult(result.resultImage)}>{saved ? 'Saved ✓' : 'Save'}</button>
+                  <button className="btn btn-ghost" onClick={() => downloadDataUrl(result.resultImage!, 'viraas-try-on.jpg')}>Download</button>
+                  <button className="btn btn-ghost" onClick={() => doShareImage(result.resultImage!)}>Share</button>
+                  <button className="btn btn-dark" onClick={tryAnother}>Try another</button>
+                </div>
               </div>
             )}
 

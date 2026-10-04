@@ -10,6 +10,14 @@
 export type Relation =
   | 'self' | 'none' | 'request_sent' | 'request_received' | 'connected' | 'blocked' | 'unavailable';
 
+export interface ConnectStatus {
+  ok: true;
+  available: boolean;
+  persistent: boolean;
+  mode: 'local-demo' | 'unavailable';
+  requirements: string[];
+}
+
 export interface Profile {
   viraasId: string;
   displayName: string;
@@ -52,6 +60,7 @@ async function req<T>(path: string, init?: RequestInit): Promise<T> {
 const post = (p: string, body?: unknown) => req(p, { method: 'POST', body: body ? JSON.stringify(body) : undefined });
 
 export const social = {
+  status: () => req<ConnectStatus>('/status'),
   me: () => req<{ ok: true; me: Profile | null }>('/me'),
   createId: (p: { viraasId: string; displayName?: string; bio?: string; city?: string; instagramHandle?: string; is18Plus: boolean; visibility?: 'public' | 'connections' }) =>
     post('/session', p) as Promise<{ ok: true; me: Profile }>,

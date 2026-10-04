@@ -45,6 +45,27 @@ function send(res, result, okStatus = 200) {
 }
 
 const router = express.Router();
+// The existing Map store is intentionally available only as an explicitly enabled local test/demo.
+// It is never exposed as a production account/chat service because state disappears on restarts and
+// is not shared between Vercel function instances.
+const localDemoEnabled = process.env.NODE_ENV !== 'production' && process.env.VIRAAS_CONNECT_DEMO === 'true';
+router.get('/status', (_req, res) => res.json({
+  ok: true,
+  available: localDemoEnabled,
+  persistent: false,
+  mode: localDemoEnabled ? 'local-demo' : 'unavailable',
+  requirements: localDemoEnabled ? [] : [
+    'A shared persistent database adapter and a verified account/session provider are required before VIRAAS Connect can accept accounts or messages.',
+  ],
+}));
+router.use((req, res, next) => {
+  if (localDemoEnabled) return next();
+  return res.status(503).json({
+    ok: false,
+    code: 'VIRAAS_CONNECT_NOT_CONFIGURED',
+    message: 'VIRAAS Connect requires persistent account storage and a verified sign-in provider. No account or message was saved.',
+  });
+});
 
 // ---- Session / profile -------------------------------------------------------------------------
 // Create a VIRAAS ID (onboarding). Requires an explicit 18+ acknowledgement (enforced in the store).

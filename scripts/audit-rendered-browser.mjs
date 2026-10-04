@@ -4,6 +4,13 @@ import { report } from './lib/common.mjs';
 import { ROUTES } from './routes.mjs';
 const b = await launch(); const page = await b.newPage({ viewport: { width: 1366, height: 900 } });
 const checks = []; let errors = [];
+const readinessResponse = await fetch(`${BASE}/api/try-on/status`).catch(() => null);
+const readiness = readinessResponse?.ok ? await readinessResponse.json() : null;
+const tryOnAvailable = readiness?.generationAvailable === true;
+checks.push([Boolean(readiness), 'Try-On readiness endpoint is available to the rendered app']);
+const socialResponse = await fetch(`${BASE}/api/social/status`).catch(() => null);
+const socialStatus = socialResponse?.ok ? await socialResponse.json() : null;
+checks.push([socialStatus?.available === false && socialStatus?.persistent === false, 'Connect reports unavailable until persistent accounts and sign-in are configured']);
 page.on('pageerror', (e) => errors.push(String(e))); page.on('console', (m) => { if (m.type() === 'error' && !/fonts\.g|ERR_|Failed to load resource/.test(m.text())) errors.push(m.text()); });
 for (const r of ROUTES) {
   errors = [];
@@ -24,7 +31,8 @@ checks.push([JSON.stringify(nav) === JSON.stringify(['Women', 'Men', 'Occasions'
 const worlds = await page.$$eval('.worlds .world-label strong', (a) => a.map((x) => x.textContent));
 checks.push([worlds.length === 5, `homepage shows exactly 5 worlds: ${worlds.join(', ')}`]);
 const heroText = await page.textContent('.hero');
-checks.push([/THE FESTIVE EDIT ’26/.test(heroText) && /Shop Women/i.test(heroText) && /Shop Men/i.test(heroText) && /Try an outfit on you/i.test(heroText), 'hero copy + 3 CTAs']);
+const heroHasTryOn = /Try an outfit on you/i.test(heroText);
+checks.push([/THE FESTIVE EDIT ’26/.test(heroText) && /Shop Women/i.test(heroText) && /Shop Men/i.test(heroText) && heroHasTryOn === tryOnAvailable, `hero preserves supported CTAs (Try-On available: ${tryOnAvailable})`]);
 await page.goto(BASE + '/couple-edit', { waitUntil: 'networkidle' });
 checks.push([(await page.$$('.ccard')).length === 100, `couple edit renders ${(await page.$$('.ccard')).length} looks`]);
 await page.goto(BASE + '/women/garba', { waitUntil: 'networkidle' });
@@ -44,7 +52,7 @@ for (const test of workbookLookCases) {
   const shops = await page.$$eval('.workbook-item a.btn-shop', (els) => els.map((el) => el.href));
   const wholeLookTryOn = await page.$eval(`a[href="/try-on?womenLook=${test.path.split('/').pop()}"]`, (el) => Boolean(el)).catch(() => false);
   checks.push([JSON.stringify(shops) === JSON.stringify(test.expected), `${test.path} renders ${shops.length} exact component Shop links`]);
-  checks.push([wholeLookTryOn, `${test.path} retains whole-look Try-On`]);
+  checks.push([wholeLookTryOn === tryOnAvailable, `${test.path} shows whole-look Try-On only when the server reports generation ready`]);
 }
 await page.goto(BASE + '/accessories', { waitUntil: 'networkidle' });
 const accessory = await page.$eval('[data-accessory-source="college-fest:7"]', (el) => ({
@@ -52,5 +60,26 @@ const accessory = await page.$eval('[data-accessory-source="college-fest:7"]', (
   itemTryOn: Boolean(el.querySelector('a[href*="try-on"]')),
 })).catch(() => null);
 checks.push([accessory?.shop === 'https://www.wishlink.com/share/nuvefv' && accessory.itemTryOn === false, 'Accessories exposes the mapped waist-chain Shop link without unsupported item Try-On']);
+
+await page.goto(BASE + '/connect', { waitUntil: 'networkidle' });
+const connectText = await page.locator('main').innerText();
+checks.push([/temporarily unavailable until secure sign-in and persistent account storage are ready/i.test(connectText), 'Connect clearly refuses account creation while unavailable']);
+checks.push([await page.locator('main form').count() === 0, 'unavailable Connect presents no account-creation form']);
+await page.goto(BASE + '/chat', { waitUntil: 'networkidle' });
+const chatText = await page.locator('main').innerText();
+checks.push([/temporarily unavailable until secure sign-in and persistent account storage are ready/i.test(chatText), 'Chat is unavailable rather than suggesting messages can be sent']);
+checks.push([await page.locator('main form').count() === 0, 'unavailable Chat presents no message composer']);
+
+await page.goto(BASE + '/try-on?womenLook=women-look-001', { waitUntil: 'networkidle' });
+const ageButton = page.getByRole('button', { name: 'I’m 18 or older' });
+const ageGateVisible = await ageButton.isVisible().catch(() => false);
+if (ageGateVisible) await ageButton.click();
+const unavailableButton = page.getByRole('button', { name: 'Try-On unavailable' });
+const photoInputs = await page.locator('input[type="file"]').count();
+const readinessCopy = await page.locator('[data-tryon-readiness="unavailable"]').innerText().catch(() => '');
+checks.push([ageGateVisible, 'selected look retains its explicit 18+ consent gate']);
+checks.push([!tryOnAvailable ? (await unavailableButton.isDisabled().catch(() => false)) && photoInputs === 0 : true, 'unavailable Try-On disables progression before photo upload']);
+checks.push([tryOnAvailable || /RUNWARE_API_KEY required/.test(readinessCopy), 'unavailable Try-On names its exact Runware requirement']);
+checks.push([await page.getByRole('heading', { name: 'Your try-on' }).count() === 0, 'no successful-looking result is rendered without a real image']);
 await b.close();
 report('audit-rendered-browser', checks);

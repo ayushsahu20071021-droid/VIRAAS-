@@ -29,6 +29,12 @@ const OUTPUT_TTL = Number(process.env.RUNWARE_OUTPUT_TTL || 120);
 
 // Real generation is only "configured" when a key exists AND ZDR has been acknowledged.
 export const runwareConfigured = Boolean(API_KEY) && ZDR_ACK;
+export function runwareRequirements() {
+  const missing = [];
+  if (!API_KEY) missing.push('RUNWARE_API_KEY required');
+  if (!ZDR_ACK) missing.push('RUNWARE_ZDR=true required after organization-level Zero-Data-Retention is enabled and verified');
+  return missing;
+}
 
 const isHttpUrl = (s) => typeof s === 'string' && /^https?:\/\//i.test(s);
 const isDataUri = (s) => typeof s === 'string' && s.startsWith('data:');
@@ -89,7 +95,7 @@ export const runwareFluxVtoProvider = {
     return runwareConfigured;
   },
   async generateTryOn({ outfitId, gender, photo, garmentImageUrl, garmentImages, garmentDescription }) {
-    if (!API_KEY) return { ok: false, mode: 'runware-flux', configured: false, outfitId, message: 'Runware FLUX VTO is not configured on the server (missing API key).' };
+    if (!API_KEY) return { ok: false, mode: 'runware-flux', configured: false, outfitId, code: 'RUNWARE_API_KEY_REQUIRED', message: 'RUNWARE_API_KEY required. Try-On was not started.' };
     // Hard privacy gate — never send a personal photo unless ZDR is explicitly acknowledged.
     if (!ZDR_ACK)
       return {

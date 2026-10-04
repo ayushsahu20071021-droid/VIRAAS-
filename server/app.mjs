@@ -6,13 +6,13 @@
 //   - api/index.mjs      -> re-exports it as a single Vercel Serverless Function (no app.listen()).
 //
 // An Express app instance is itself a (req, res) handler, so the exact same routes run both ways
-// with NO duplicated backend logic. Nothing about the AI Try-On behaviour, the Runware adapter, the
-// ZDR gate, privacy handling, metadata-only logging, or payment gating changes here.
+// with NO duplicated backend logic. Server-side readiness, privacy, social and payment gates live
+// here so both targets enforce the same fail-closed policy.
 import express from 'express';
 import path from 'node:path';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-import { tryOnProvider, tryOnMode, tryOnConfigured } from './tryOnProvider.mjs';
+import { tryOnProvider, tryOnMode, tryOnConfigured, tryOnRequirements } from './tryOnProvider.mjs';
 import * as payments from './payments/service.mjs';
 import socialRouter from './social/routes.mjs';
 
@@ -35,6 +35,9 @@ const PUBLIC_DIR = path.join(ROOT, 'public');
 const DIST_DIR = path.join(ROOT, 'dist');
 const PUBLIC_BASE_URL = (process.env.PUBLIC_BASE_URL || '').replace(/\/$/, '');
 const MIME = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
+// No durable user/credit store is implemented or configured in this checkout. Keep Runware closed
+// even if a key is later added until server-authoritative credits can be consumed atomically.
+const TRYON_CREDIT_LEDGER_READY = false;
 
 // Turn a VIRAAS reference (e.g. "/images/women-previews/women-look-001.png") into something a
 // provider can consume: prefer an inline base64 data-URL read from disk (no public hosting needed);
@@ -65,6 +68,9 @@ app.disable('x-powered-by');
 // It is registered BEFORE express.json() so the JSON parser never touches it. No customer photo or
 // secret is logged here; only a signed, server-verified fact is trusted.
 app.post('/api/payment/webhook', express.raw({ type: '*/*', limit: '1mb' }), (req, res) => {
+  if ((!payments.paymentConfig.configured || !payments.paymentStorePersistent) && !payments.mockPaymentTestsAllowed) {
+    return res.status(503).json({ ok: false, code: 'PAYMENT_NOT_CONFIGURED', message: 'A real payment gateway and persistent verification store are required.' });
+  }
   const rawBody = Buffer.isBuffer(req.body) ? req.body.toString('utf8') : '';
   const result = payments.handleWebhook({ rawBody, headers: req.headers });
   // Always answer 200 to a validly-signed event (even a duplicate) so the gateway stops retrying;
@@ -94,7 +100,15 @@ app.get('/api/try-on/status', (_req, res) =>
     currency: payments.CURRENCY,
     paymentProvider: payments.paymentConfig.provider,
     paymentConfigured: payments.paymentConfig.configured,
-    generationAvailable: !tryOnConfigured, // live generation stays closed until persistent account credits exist
+    // Never imply generation or credits are available just because a provider is missing/unconfigured.
+    generationAvailable: false,
+    creditLedgerAvailable: false,
+    topUpAvailable: false,
+    requirements: [
+      ...tryOnRequirements,
+      'Persistent VIRAAS accounts and a server-authoritative Try-On credit ledger are required before generation.',
+      'A real payment gateway and persistent payment verification store are required before ₹20 top-ups.',
+    ],
   }),
 );
 
@@ -103,6 +117,9 @@ app.get('/api/try-on/status', (_req, res) =>
 // client-supplied "paid"/"paymentSuccess" flag — payment can only become VERIFIED via the signed
 // webhook (or a server-side gateway poll).
 app.post('/api/payment/create', async (req, res) => {
+  if ((!payments.paymentConfig.configured || !payments.paymentStorePersistent) && !payments.mockPaymentTestsAllowed) {
+    return res.status(503).json({ ok: false, code: 'PAYMENT_NOT_CONFIGURED', message: 'A real payment gateway and persistent VIRAAS account/payment store are required. No payment was created.' });
+  }
   const { productId, womenLookId, menLookId, coupleId, side } = req.body || {};
   const subject = resolveSubject({ productId, womenLookId, menLookId, coupleId, side });
   const outfitId = subject.error ? undefined : subject.outfitId;
@@ -114,6 +131,9 @@ app.post('/api/payment/create', async (req, res) => {
 // getPaymentStatus: read-only. Reveals the one-time authToken only once the payment is AUTHORIZED,
 // and only to a caller holding the unguessable paymentId capability.
 app.get('/api/payment/status', (req, res) => {
+  if ((!payments.paymentConfig.configured || !payments.paymentStorePersistent) && !payments.mockPaymentTestsAllowed) {
+    return res.status(503).json({ ok: false, code: 'PAYMENT_NOT_CONFIGURED', message: 'A real payment gateway and persistent verification store are required.' });
+  }
   const out = payments.getPaymentStatus({ paymentId: String(req.query.paymentId || '') });
   if (!out.ok) return res.status(404).json({ ok: false, message: 'Unknown payment.' });
   res.json(out);
@@ -122,6 +142,9 @@ app.get('/api/payment/status', (req, res) => {
 // verifyPayment: optional server-side poll fallback (used when a gateway supports polling instead of
 // webhooks). Still a SERVER-SIDE check — a client cannot self-verify.
 app.post('/api/payment/verify', async (req, res) => {
+  if ((!payments.paymentConfig.configured || !payments.paymentStorePersistent) && !payments.mockPaymentTestsAllowed) {
+    return res.status(503).json({ ok: false, code: 'PAYMENT_NOT_CONFIGURED', message: 'A real payment gateway and persistent verification store are required.' });
+  }
   const out = await payments.verifyPayment({ paymentId: String((req.body || {}).paymentId || '') });
   res.status(out.ok ? 200 : 402).json(out);
 });
@@ -167,11 +190,26 @@ function resolveSubject(body) {
 }
 
 app.post('/api/try-on', async (req, res) => {
-  const reqId = crypto.randomUUID().slice(0, 8);
-  const started = Date.now();
-  const { photo, ageConfirmed } = req.body || {};
+  const { ageConfirmed } = req.body || {};
+  // The 18+ photo gate is server-authoritative, including when Try-On is not configured.
   if (ageConfirmed !== true) return res.status(403).json({ ok: false, message: 'AI Try-On with a personal photo requires age 18+.' });
 
+  // Fail before accepting/processing a photo if Runware is not configured. In particular, never
+  // return a demo/layout result as a successful Try-On and never attempt a provider request here.
+  if (tryOnMode !== 'runware-flux' || !tryOnConfigured) {
+    const keyMissing = tryOnRequirements.includes('RUNWARE_API_KEY required');
+    const message = keyMissing
+      ? 'RUNWARE_API_KEY required. Try-On was not started.'
+      : `${tryOnRequirements[0] || 'Runware is not ready.'}. Try-On was not started.`;
+    return res.status(503).json({ ok: false, code: keyMissing ? 'RUNWARE_API_KEY_REQUIRED' : 'RUNWARE_NOT_READY', mode: tryOnMode, message, requirements: tryOnRequirements });
+  }
+  if (!TRYON_CREDIT_LEDGER_READY) {
+    return res.status(503).json({ ok: false, code: 'PERSISTENT_CREDIT_LEDGER_REQUIRED', mode: tryOnMode, message: 'Persistent VIRAAS identity and server-authoritative Try-On credits are required before Runware can be called.' });
+  }
+
+  const reqId = crypto.randomUUID().slice(0, 8);
+  const started = Date.now();
+  const { photo } = req.body || {};
   const subject = resolveSubject(req.body);
   if (subject.error) return res.status(subject.error).json({ ok: false, message: subject.message });
 
@@ -179,13 +217,6 @@ app.post('/api/try-on', async (req, res) => {
   if (typeof photo !== 'string' || !/^data:image\/(jpeg|png|webp);base64,/.test(photo))
     return res.status(400).json({ ok: false, message: 'Please upload a JPG, PNG or WebP photo.' });
   if (photo.length > 11 * 1024 * 1024) return res.status(413).json({ ok: false, message: 'Photo too large.' });
-
-  // Fail closed for every live provider call until persistent user identity, the two-credit ledger,
-  // and verified ₹20 checkout are connected. Do this BEFORE consuming any paid authorization.
-  // The demo adapter remains available as a clearly labelled layout preview and makes no provider call.
-  if (tryOnConfigured) {
-    return res.status(503).json({ ok: false, message: 'AI Try-On is temporarily unavailable.' });
-  }
 
   // PAYMENT GATE. When payment is required, a real generation needs a verified, paid, ONE-TIME
   // authorization. A client-supplied "paymentSuccess" flag is IGNORED — we only accept a valid

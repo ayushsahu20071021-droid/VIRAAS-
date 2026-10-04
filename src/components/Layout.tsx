@@ -2,6 +2,7 @@ import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-do
 import { useEffect, useState } from 'react';
 import { categoriesFor, WORLDS, budgetsWithResults, PRODUCTS } from '../lib/data';
 import { useSaved } from '../lib/saved';
+import { useTryOnAvailable } from '../lib/tryOnStatus';
 
 const WOMEN_MENU = ['Chaniya Choli', 'Lehenga', 'Sharara', 'Gharara', 'Saree', 'Pre-Draped Saree', 'Anarkali', 'Kurta Sets', 'Jewellery', 'Bags', 'Footwear'];
 const MEN_MENU = ['Modern Kurta', 'Festive Kurta Set', 'Ethnic Shirt', 'Printed Ethnic Shirt', 'Embroidered Ethnic Shirt', 'Festive Jacket', 'Traditional Layer', 'Festive Separates'];
@@ -30,6 +31,7 @@ export default function Layout() {
   const loc = useLocation();
   const nav = useNavigate();
   const { items } = useSaved();
+  const tryOnAvailable = useTryOnAvailable();
   useEffect(() => { setOpen(null); setMobile(false); setSearchOpen(false); window.scrollTo(0, 0); }, [loc.pathname, loc.search]);
 
   const item = (to: string, label: string, mega?: 'women' | 'men') => (
@@ -65,7 +67,7 @@ export default function Layout() {
               <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 21s-7.5-4.6-9.5-9.2C1.1 8.4 3.3 5 6.8 5c2 0 3.5 1.1 5.2 3 1.7-1.9 3.2-3 5.2-3 3.5 0 5.7 3.4 4.3 6.8C19.5 16.4 12 21 12 21z" fill="none" stroke="currentColor" strokeWidth="1.6" /></svg>
               <span className="hide-sm">Saved Looks</span>{items.length > 0 && <span className="count">{items.length}</span>}
             </Link>
-            <Link to="/try-on" className="btn btn-accent sm">Try On</Link>
+            {tryOnAvailable && <Link to="/try-on" className="btn btn-accent sm">Try On</Link>}
           </div>
         </div>
         {searchOpen && (

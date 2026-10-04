@@ -16,6 +16,7 @@ import { exactWishlinkShareUrl } from '../lib/productActions';
 import trendingFinal from '../data/trending-final.client.json';
 import menLookAffiliate from '../data/men-look-affiliate.json';
 import womenLookAffiliate from '../data/women-look-affiliate.json';
+import { useTryOnAvailable } from '../lib/tryOnStatus';
 
 type SourceType = 'men-approved' | 'women-approved' | 'trending-independent';
 interface TItem {
@@ -70,6 +71,7 @@ const displayVal = (k: FacetKey, v: string): string =>
   k === 'gender' ? (v === 'women' ? 'Women' : 'Men') : k === 'occasion' ? worldName(v) : v;
 
 function Card({ it }: { it: TItem }) {
+  const tryOnAvailable = useTryOnAvailable();
   return (
     <article className="pcard" data-product-id={it.sourceProductId} data-source-type={it.sourceType}>
       <Link to={it.detailHref} className="pcard-img">
@@ -82,7 +84,7 @@ function Card({ it }: { it: TItem }) {
         <p className="pcard-desc">{it.desc}</p>
         <div className="tags"><span className="tag">{it.category}</span><span className="tag">{it.colour}</span></div>
         <div className="pcard-actions">
-          {it.tryOnHref
+          {tryOnAvailable && it.tryOnHref
             ? <Link className="btn btn-accent sm" to={it.tryOnHref}>Try it on</Link>
             : <Link className="btn btn-ghost sm" to={it.detailHref}>{it.sourceType === 'trending-independent' ? 'View style' : 'View look'}</Link>}
           {it.affiliateUrl && <a className="btn btn-shop sm" href={it.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>}

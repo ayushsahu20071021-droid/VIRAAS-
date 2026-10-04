@@ -4,6 +4,7 @@ import { formatINR, sumPrices } from '../lib/format';
 import { CoupleCard, ImageFrame, SaveButton, ShareRow, Empty } from '../components/ui';
 import { coupleAffiliate } from '../lib/coupleAffiliate';
 import { hasVerifiedPrice, tryOnHrefForProduct } from '../lib/productActions';
+import { useTryOnAvailable } from '../lib/tryOnStatus';
 
 export function CoupleEdit() {
   const [sp, setSp] = useSearchParams();
@@ -27,6 +28,7 @@ export function CoupleEdit() {
 }
 
 export function CoupleDetail() {
+  const tryOnAvailable = useTryOnAvailable();
   const { id } = useParams();
   const c = id ? coupleById.get(id) : undefined;
   if (!c) return <div className="page"><Empty title="Look not found"><Link to="/couple-edit" className="btn btn-dark">All couple looks</Link></Empty></div>;
@@ -38,8 +40,8 @@ export function CoupleDetail() {
     : null;
   const aff = coupleAffiliate(c.id);
   // A side-specific Try-On is offered only when that exact product has its own live image.
-  const herTryOnProduct = her.find((p) => Boolean(tryOnHrefForProduct(p)));
-  const himTryOnProduct = his.find((p) => Boolean(tryOnHrefForProduct(p)));
+  const herTryOnProduct = tryOnAvailable ? her.find((p) => Boolean(tryOnHrefForProduct(p))) : undefined;
+  const himTryOnProduct = tryOnAvailable ? his.find((p) => Boolean(tryOnHrefForProduct(p))) : undefined;
   const herTryOnHref = herTryOnProduct ? tryOnHrefForProduct(herTryOnProduct) : undefined;
   const himTryOnHref = himTryOnProduct ? tryOnHrefForProduct(himTryOnProduct) : undefined;
   const more = COUPLES.filter((x) => x.world === c.world && x.id !== c.id).slice(0, 3);

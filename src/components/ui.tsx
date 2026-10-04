@@ -4,6 +4,7 @@ import { type Product, type Couple, byId, worldName, coupleImageSrc } from '../l
 import { formatINR, sumPrices } from '../lib/format';
 import { exactMerchantProductUrl, hasVerifiedPrice, productOutboundAction, tryOnHrefForProduct } from '../lib/productActions';
 import { useSaved, webShare, copyLink, whatsappUrl } from '../lib/saved';
+import { useTryOnAvailable } from '../lib/tryOnStatus';
 
 /** Real image if QA-passed, otherwise a clearly labelled pending state (never a fake photo). */
 export function ImageFrame({ src, alt, label, ratio = '3 / 4', eager = false, detail, fit = 'cover' }: { src?: string; alt: string; label?: string; ratio?: string; eager?: boolean; detail?: string; fit?: 'cover' | 'contain' }) {
@@ -56,7 +57,8 @@ export function ProductActionButton({ p, block, small }: { p: Product; block?: b
 }
 
 export function ProductCard({ p }: { p: Product }) {
-  const tryOn = tryOnHrefForProduct(p);
+  const tryOnAvailable = useTryOnAvailable();
+  const tryOn = tryOnAvailable ? tryOnHrefForProduct(p) : undefined;
   const outbound = productOutboundAction(p);
   const exactMerchantUrl = exactMerchantProductUrl(p);
   const verifiedPrice = hasVerifiedPrice(p);
@@ -122,6 +124,7 @@ export function CoupleCard({ c, large }: { c: Couple; large?: boolean }) {
 
 /** Card for an APPROVED look (Men/Women): always shows the real approved image. */
 export function LookCard({ to, image, alt, kicker, title, meta, tryOnTo }: { to: string; image?: string; alt: string; kicker: string; title: string; meta?: string[]; tryOnTo?: string }) {
+  const tryOnAvailable = useTryOnAvailable();
   return (
     <article className="men-look-card">
       <Link to={to} className="men-look-image"><ImageFrame src={image} alt={alt} label={title} /></Link>
@@ -130,7 +133,7 @@ export function LookCard({ to, image, alt, kicker, title, meta, tryOnTo }: { to:
         <Link to={to} className="men-look-title">{title}</Link>
         {meta && meta.length > 0 && <div className="men-look-meta">{meta.filter(Boolean).map((m) => <span key={m}>{m}</span>)}</div>}
         <div className="men-look-actions">
-          {tryOnTo && <Link className="btn btn-accent sm" to={tryOnTo}>Try it on</Link>}
+          {tryOnAvailable && tryOnTo && <Link className="btn btn-accent sm" to={tryOnTo}>Try it on</Link>}
           <Link to={to} className="link-arrow">View details →</Link>
         </div>
       </div>

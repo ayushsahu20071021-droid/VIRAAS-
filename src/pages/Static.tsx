@@ -60,7 +60,7 @@ export const Privacy = () => (
   <Prose title="Privacy Policy">
     <p>VIRAAS doesn't need an account. Saved Looks stay in your browser's localStorage and never reach our servers.</p>
     <p>When you tap Shop, you leave VIRAAS, and the retailer's privacy policy applies from then on. Affiliate partners may set cookies on the retailer's site.</p>
-    <p>AI Try-On photos are treated as private data — not stored on disk, added to the catalog, or shared with trackers. Details are in the <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link> notice.</p>
+    <p>AI Try-On is currently unavailable, and no personal photo is sent for generation. If the service is enabled later, this notice will describe the provider and its data handling before photo upload is available. See <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link>.</p>
     <p>We don't sell personal data.</p>
   </Prose>
 );
@@ -83,9 +83,9 @@ export const TryOnPrivacy = () => (
   <Prose title="AI Try-On Privacy">
     <p>AI Try-On with a personal photo is only for users aged 18 and above. It works the same way for Men, Women and Couple looks.</p>
     <h2>What happens to your photo</h2>
-    <p>Your photo is treated as private data. If you crop it or hide your face before generating, the edited version — not your original — is what leaves your device. It is sent over the network to our <code>/api/try-on</code> endpoint, held only in memory to create your try-on, and is <strong>not written to disk, not saved to any catalog, and not published to any public URL</strong>. We do not send your photo to any analytics or tracking service.</p>
+    <p>Try-On generation is currently disabled. You can browse looks, but the app will not accept or send a personal photo for generation. If Try-On is enabled later, this notice will be updated with the provider, transmission details and verified retention terms before photo upload is made available.</p>
     <h2>Provider status</h2>
-    <p>Virtual Try-On is currently being configured, so no external AI provider is connected. In this state the app returns a labelled layout preview rather than an AI-generated image, and no photo is stored. Before any live AI provider is turned on, its retention, deletion, training-use and data-processing terms must be verified, and we will name that provider here.</p>
+    <p>VIRAAS is configured to use Runware FLUX VTO, but live generation is not available until the server credentials, organization-level Zero Data Retention, persistent VIRAAS identity and credit ledger, and payment safeguards are ready. When the API key is absent, the Try-On status page reports <code>RUNWARE_API_KEY required</code>. No preview image is substituted for an AI result.</p>
     <h2>Your result</h2>
     <p>A generated result is private to you. It is never added to the catalog or made public automatically. If you Save it, it is stored only in your browser (localStorage) on your device. Download and Share are actions you choose — sharing uses your device’s own share sheet and does not create a public link.</p>
     <h2>Please note</h2>

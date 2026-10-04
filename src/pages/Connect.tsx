@@ -4,7 +4,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { social, timeAgo, type Profile, type IncomingRequest, type OutgoingRequest, type ConnectionItem, type Relation } from '../lib/social';
-import { useMe, Avatar, ConnectButton, ProfileCard, ReportDialog } from '../components/social';
+import { useMe, Avatar, ConnectButton, ProfileCard, ReportDialog, ConnectUnavailable } from '../components/social';
 
 function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
   const [viraasId, setViraasId] = useState('');
@@ -145,9 +145,10 @@ function Connections() {
 }
 
 export default function Connect() {
-  const { me, loading, setMe } = useMe();
+  const { me, loading, available, setMe } = useMe();
   const [tab, setTab] = useState<'discover' | 'requests' | 'connections'>('discover');
   if (loading) return <div className="container vc-page"><p className="muted">Loading VIRAAS Connect…</p></div>;
+  if (!available) return <ConnectUnavailable />;
   if (!me) return <div className="container vc-page"><Onboarding onDone={setMe} /></div>;
   return (
     <div className="container vc-page">
@@ -181,7 +182,7 @@ export default function Connect() {
 // Block and Report. Never shows DOB, email, or private conversations.
 export function ConnectProfile() {
   const { viraasId = '' } = useParams();
-  const { me, loading } = useMe();
+  const { me, loading, available } = useMe();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [err, setErr] = useState('');
   const [reporting, setReporting] = useState(false);
@@ -189,6 +190,7 @@ export function ConnectProfile() {
   const load = () => social.profile(viraasId).then((r) => setProfile(r.profile)).catch((e) => setErr((e as Error).message));
   useEffect(() => { if (me) load(); /* eslint-disable-next-line */ }, [viraasId, me]);
   if (loading) return <div className="container vc-page"><p className="muted">Loading…</p></div>;
+  if (!available) return <ConnectUnavailable />;
   if (!me) return <div className="container vc-page"><p className="muted">Please <Link to="/connect">sign in to VIRAAS Connect</Link> to view profiles.</p></div>;
   if (err) return <div className="container vc-page"><p className="vc-err">{err}</p><Link to="/connect" className="btn sm">Back</Link></div>;
   if (!profile) return <div className="container vc-page"><p className="muted">Loading…</p></div>;
