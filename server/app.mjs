@@ -7,6 +7,8 @@ import crypto from 'node:crypto';
 import { tryOnProvider, tryOnMode, tryOnConfigured, tryOnRequirements } from './tryOnProvider.mjs';
 import * as payments from './payments/service.mjs';
 import { resolvePublicAssetBase } from './publicAssets.mjs';
+import { initializeAnonymousTryOnCookie, resolveAnonymousTryOnIdentity } from './anonymousTryOnIdentity.mjs';
+import * as anonymousTryOnCredits from './anonymousTryOnCredits.mjs';
 import { resolveCoupleSide } from '../shared/coupleTryOn.mjs';
 import { databaseStatus } from './db/pool.mjs';
 import { getAuthIdentity } from './auth/provider.mjs';
@@ -14,7 +16,6 @@ import * as social from './social/repository.mjs';
 import {
   NO_TRYON_CREDITS_MESSAGE,
   consumeTryOnCredit,
-  getTryOnCreditBalance,
   grantSignupCredits,
   releaseTryOnCredit,
   reserveTryOnCredit,
@@ -37,6 +38,7 @@ const PUBLIC_BASE_URL = publicAssets.base;
 const MIME = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
 const MAX_PHOTO_BYTES = 2_750_000;
 const MAX_PHOTO_BASE64_CHARS = Math.ceil(MAX_PHOTO_BYTES / 3) * 4 + 8;
+const TRYON_TOP_UP_ENABLED = false; // ₹20 top-ups remain postponed; existing PayU verification stays available.
 
 // Inline only trusted catalog references where present on disk. On Vercel, resolve them to the
 // deployment's configured public origin; never derive an asset origin from an untrusted Host header.
@@ -101,13 +103,81 @@ async function adultAccount(req, res) {
   }
 }
 
-// Browser-safe capabilities only. Account balances are returned by the authenticated credits route.
+// Try-On uses the authenticated user's existing ledger only when they have a completed adult
+// VIRAAS profile. Everyone else uses a separate anonymous cookie identity; Connect/auth routes
+// continue to use their original authenticated-only middleware.
+async function tryOnPrincipal(req, res, { allowNewAnonymousCookie = false } = {}) {
+  const db = await databaseStatus();
+  if (!db.ready) {
+    res.status(503).json({ ok: false, code: 'DATABASE_NOT_READY', message: 'Persistent Try-On credits are temporarily unavailable until PostgreSQL is configured and fully migrated.' });
+    return null;
+  }
+
+  let identity = null;
+  try { identity = await getAuthIdentity(req, res, { optional: true }); }
+  catch { /* an expired or unavailable optional login falls back to the anonymous Try-On session */ }
+  if (identity) {
+    let user;
+    try { user = await social.getUserByAuthSubject(identity.subject); }
+    catch {
+      res.status(503).json({ ok: false, code: 'TRYON_CREDIT_LEDGER_UNAVAILABLE', message: 'Persistent Try-On credits are temporarily unavailable.' });
+      return null;
+    }
+    if (user?.profile_complete) {
+      const age = Number(user.age);
+      if (!Number.isFinite(age) || age < 18) {
+        res.status(403).json({ ok: false, code: 'ADULTS_ONLY', message: 'AI Try-On is available only to adults 18+.' });
+        return null;
+      }
+      try {
+        const balance = await grantSignupCredits(user.user_id);
+        return { kind: 'account', userId: user.user_id, balance };
+      } catch {
+        res.status(503).json({ ok: false, code: 'TRYON_CREDIT_LEDGER_UNAVAILABLE', message: 'Persistent Try-On credits are temporarily unavailable.' });
+        return null;
+      }
+    }
+  }
+
+  try {
+    const anonymous = await resolveAnonymousTryOnIdentity(req, res, { allowNewCookie: allowNewAnonymousCookie });
+    if (!anonymous.ok) {
+      const code = anonymous.reason === 'session_expired' ? 'ANONYMOUS_TRYON_SESSION_EXPIRED' : 'ANONYMOUS_TRYON_SESSION_REQUIRED';
+      res.status(428).json({ ok: false, code, message: 'Your anonymous Try-On session is missing or expired. Refresh the page to continue.' });
+      return null;
+    }
+    return { kind: 'anonymous', anonymousId: anonymous.anonymousId, balance: anonymous.balance };
+  } catch {
+    res.status(503).json({ ok: false, code: 'TRYON_CREDIT_LEDGER_UNAVAILABLE', message: 'Persistent anonymous Try-On credits are temporarily unavailable.' });
+    return null;
+  }
+}
+
+async function reservePrincipalCredit(principal, requestKey, outfitId) {
+  return principal.kind === 'anonymous'
+    ? anonymousTryOnCredits.reserveAnonymousTryOnCredit({ anonymousId: principal.anonymousId, requestKey, outfitId })
+    : reserveTryOnCredit({ userId: principal.userId, requestKey, outfitId });
+}
+
+async function consumePrincipalCredit(principal, generationId) {
+  return principal.kind === 'anonymous'
+    ? anonymousTryOnCredits.consumeAnonymousTryOnCredit({ anonymousId: principal.anonymousId, generationId })
+    : consumeTryOnCredit({ userId: principal.userId, generationId });
+}
+
+async function releasePrincipalCredit(principal, generationId, failureCode) {
+  return principal.kind === 'anonymous'
+    ? anonymousTryOnCredits.releaseAnonymousTryOnCredit({ anonymousId: principal.anonymousId, generationId, failureCode })
+    : releaseTryOnCredit({ userId: principal.userId, generationId, failureCode });
+}
+
+// Browser-safe capabilities only. Server-ledger balances are returned by the Try-On credits route.
 app.get('/api/try-on/status', async (_req, res) => {
   res.set('Cache-Control', 'no-store');
   const db = await databaseStatus();
   const assetRequirements = publicAssets.requirement ? [publicAssets.requirement] : [];
   const tryOnReady = tryOnMode === 'runware-flux' && tryOnConfigured && db.ready && assetRequirements.length === 0;
-  const topUpReady = payments.paymentProviderConfigured && tryOnReady;
+  const topUpReady = TRYON_TOP_UP_ENABLED && payments.paymentProviderConfigured && tryOnReady;
   res.json({
     mode: tryOnMode,
     configured: tryOnConfigured,
@@ -130,16 +200,10 @@ app.get('/api/try-on/status', async (_req, res) => {
 });
 
 app.get('/api/try-on/credits', sameOrigin, async (req, res) => {
-  const account = await adultAccount(req, res);
-  if (!account) return;
-  try {
-    // Backfill already-onboarded accounts exactly once, without granting credits per session.
-    const balance = await grantSignupCredits(account.user.user_id);
-    res.set('Cache-Control', 'no-store');
-    res.json({ ok: true, balance, signupCredits: 2, noCreditsMessage: NO_TRYON_CREDITS_MESSAGE });
-  } catch {
-    res.status(503).json({ ok: false, message: 'Persistent Try-On credits are temporarily unavailable.' });
-  }
+  res.set('Cache-Control', 'no-store');
+  const principal = await tryOnPrincipal(req, res, { allowNewAnonymousCookie: true });
+  if (!principal) return;
+  res.json({ ok: true, balance: principal.balance, initialCredits: 2, noCreditsMessage: NO_TRYON_CREDITS_MESSAGE });
 });
 
 function resolveSubject(body) {
@@ -251,35 +315,10 @@ app.post('/api/payment/payu/callback', express.urlencoded({ extended: false, lim
 app.post('/api/payment/create', sameOrigin, async (req, res) => {
   const account = await adultAccount(req, res);
   if (!account) return;
-  if (tryOnMode !== 'runware-flux' || !tryOnConfigured || publicAssets.requirement) {
-    return res.status(503).json({ ok: false, code: 'TRYON_NOT_READY', message: 'AI Try-On is not available yet. No payment was created.' });
-  }
-  try { await grantSignupCredits(account.user.user_id); }
-  catch { return res.status(503).json({ ok: false, message: 'Persistent Try-On credits are temporarily unavailable. No payment was created.' }); }
-  const subject = resolveSubject(req.body || {});
-  if (subject.error) return res.status(subject.error).json({ ok: false, message: subject.message });
-  const requestKey = req.get('Idempotency-Key') || req.body?.requestKey;
-  const result = await payments.createCreditPayment({
-    userId: account.user.user_id,
-    requestKey,
-    phone: req.body?.phone,
-    profile: account.user,
-    email: account.identity.email,
-    returnPath: subject.returnPath,
-    publicOrigin: PUBLIC_BASE_URL || (process.env.NODE_ENV === 'production' ? '' : `${req.protocol}://${req.get('host')}`),
-  });
-  if (!result.ok) {
-    const status = result.reason === 'not_configured' || result.reason === 'public_origin_unavailable' ? 503
-      : result.reason === 'invalid_phone' || result.reason === 'invalid_request' || result.reason === 'invalid_return_path' ? 400 : 409;
-    return res.status(status).json({ ok: false, code: result.reason, message: result.reason === 'not_configured'
-      ? 'PayU checkout is not configured. No payment was created.'
-      : result.reason === 'invalid_phone' ? 'Enter a valid Indian mobile number for PayU checkout.'
-        : result.reason === 'public_origin_unavailable' ? 'Secure payment return URLs are not configured.'
-          : result.reason === 'profile_required' ? 'A verified adult account with a name and email is required for checkout.'
-            : 'Payment could not be started for this request. No charge was made.' });
-  }
   res.set('Cache-Control', 'no-store');
-  res.json({ ok: true, paymentId: result.paymentId, txnid: result.txnid, status: result.status, checkout: result.checkout });
+  if (!TRYON_TOP_UP_ENABLED) {
+    return res.status(503).json({ ok: false, code: 'PAYMENT_TOP_UP_POSTPONED', message: '₹20 Try-On credit top-ups are postponed. No payment was created.' });
+  }
 });
 
 app.get('/api/payment/status', sameOrigin, async (req, res) => {
@@ -322,8 +361,6 @@ app.post('/api/try-on', sameOrigin, async (req, res) => {
   res.set('Cache-Control', 'no-store');
   const { ageConfirmed, consent, photo } = req.body || {};
   if (ageConfirmed !== true || consent !== true) return res.status(403).json({ ok: false, message: 'AI Try-On requires age 18+ and explicit photo consent.' });
-  const account = await adultAccount(req, res);
-  if (!account) return;
   if (tryOnMode !== 'runware-flux' || !tryOnConfigured) {
     const missingKey = tryOnRequirements.includes('RUNWARE_API_KEY required');
     const message = missingKey ? 'RUNWARE_API_KEY required. Try-On was not started.' : `${tryOnRequirements[0] || 'Runware FLUX VTO is not ready.'}. No Try-On was started.`;
@@ -337,17 +374,17 @@ app.post('/api/try-on', sameOrigin, async (req, res) => {
   if (!validRequestKey(requestKey)) return res.status(400).json({ ok: false, message: 'A valid generation request key is required.' });
   const garment = loadGarment(subject.garmentImageUrl);
   if (!garment) return res.status(503).json({ ok: false, message: 'This exact VIRAAS garment reference is not available to the Try-On service.' });
-  try { await grantSignupCredits(account.user.user_id); }
-  catch { return res.status(503).json({ ok: false, message: 'Persistent Try-On credits are temporarily unavailable. No generation was started.' }); }
+  const principal = await tryOnPrincipal(req, res, { allowNewAnonymousCookie: false });
+  if (!principal) return;
 
   let reservation;
   try {
-    reservation = await reserveTryOnCredit({ userId: account.user.user_id, requestKey, outfitId: subject.outfitId });
+    reservation = await reservePrincipalCredit(principal, requestKey, subject.outfitId);
   } catch {
-    return res.status(503).json({ ok: false, message: 'Persistent Try-On credits are temporarily unavailable. No generation was started.' });
+    return res.status(503).json({ ok: false, code: 'TRYON_CREDIT_LEDGER_UNAVAILABLE', message: 'Persistent Try-On credits are temporarily unavailable. No generation was started.' });
   }
   if (!reservation.ok) {
-    if (reservation.reason === 'no_credits') return res.status(402).json({ ok: false, code: 'NO_TRYON_CREDITS', message: NO_TRYON_CREDITS_MESSAGE, balance: 0 });
+    if (reservation.reason === 'no_credits') return res.status(402).json({ ok: false, code: 'NO_TRYON_CREDITS', message: reservation.message || NO_TRYON_CREDITS_MESSAGE, balance: 0 });
     return res.status(409).json({ ok: false, code: 'DUPLICATE_GENERATION_REQUEST', message: 'This generation request has already been used. Please start a new Try-On attempt.', balance: reservation.balance });
   }
 
@@ -365,7 +402,7 @@ app.post('/api/try-on', sameOrigin, async (req, res) => {
       garmentDescription: subject.garmentDescription,
     });
     if (!result?.ok || !validGeneratedImage(result.resultImage)) {
-      const released = await releaseTryOnCredit({ userId: account.user.user_id, generationId: reservation.generationId, failureCode: 'provider_failure' });
+      const released = await releasePrincipalCredit(principal, reservation.generationId, 'provider_failure');
       settled = Boolean(released.ok);
       console.log(`[try-on ${requestId}] failed elapsed=${Date.now() - startedAt}ms credit_released=${settled}`);
       return res.status(502).json({
@@ -375,14 +412,14 @@ app.post('/api/try-on', sameOrigin, async (req, res) => {
         ...(released.ok ? { balance: released.balance } : {}),
       });
     }
-    const consumed = await consumeTryOnCredit({ userId: account.user.user_id, generationId: reservation.generationId });
+    const consumed = await consumePrincipalCredit(principal, reservation.generationId);
     if (!consumed.ok) throw new Error('Credit reservation could not be finalized.');
     settled = true;
     console.log(`[try-on ${requestId}] success elapsed=${Date.now() - startedAt}ms`);
     return res.json({ ...result, creditsRemaining: consumed.balance });
   } catch {
     if (!settled) {
-      try { await releaseTryOnCredit({ userId: account.user.user_id, generationId: reservation.generationId, failureCode: 'provider_exception' }); }
+      try { await releasePrincipalCredit(principal, reservation.generationId, 'provider_exception'); }
       catch { /* leave the already-deducted reservation fail-closed if the database is unavailable */ }
     }
     console.log(`[try-on ${requestId}] error elapsed=${Date.now() - startedAt}ms`);
@@ -392,7 +429,10 @@ app.post('/api/try-on', sameOrigin, async (req, res) => {
 
 const dist = path.join(ROOT, 'dist');
 app.use(express.static(dist, { maxAge: '1h', index: false }));
-app.get(/^(?!\/api\/).*/, (_req, res) => res.sendFile(path.join(dist, 'index.html')));
+app.get(/^(?!\/api\/).*/, (req, res) => {
+  initializeAnonymousTryOnCookie(req, res);
+  res.sendFile(path.join(dist, 'index.html'));
+});
 
 export default app;
 export { app };

@@ -17,6 +17,7 @@ const db = await import('../server/db/pool.mjs');
 db.setPoolForTests(pool);
 const { migrateTestDatabase } = await import('./test-db.mjs');
 await migrateTestDatabase({ pool, memoryDb });
+const tryOnCredits = await import('../server/tryOnCredits.mjs');
 
 const originalFetch = globalThis.fetch;
 globalThis.fetch = async (input, init = {}) => {
@@ -86,11 +87,14 @@ try {
   assert.equal(signedProfile.response.status, 201, JSON.stringify(signedProfile.data));
   const signedId = signedProfile.data.me.viraasId;
   assert.ok(signedProfile.data.me.createdAt && signedProfile.data.me.updatedAt);
+  const signedCreditAccount = await pool.query("SELECT user_id FROM viraas_users WHERE auth_subject='supabase-connect-user-1'");
+  assert.equal(await tryOnCredits.getTryOnCreditBalance(signedCreditAccount.rows[0].user_id), 2, 'new authenticated signup receives its separate +2 Try-On credits when onboarding completes');
   const stableProfile = await request('/api/social/session', {
     method: 'POST', cookie,
     body: { adultConfirmed: true, dateOfBirth: birthDate(1992, 2, 12), displayName: 'Changed Name', gender: 'other', state: 'Maharashtra', city: 'Mumbai', locality: 'Bandra' },
   });
   assert.equal(stableProfile.data.me.viraasId, signedId, 'VIRAAS ID is stable across repeated onboarding/login reads');
+  assert.equal(await tryOnCredits.getTryOnCreditBalance(signedCreditAccount.rows[0].user_id), 2, 'repeated onboarding/login never grants the signup credits again');
   const signedMe = await request('/api/social/me', { cookie });
   assert.equal(signedMe.data.me.viraasId, signedId, 'VIRAAS ID is read from the persistent account after a new request');
 

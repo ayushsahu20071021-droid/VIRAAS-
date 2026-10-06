@@ -53,7 +53,11 @@ export function AuthPanel({ onSuccess }: { onSuccess: () => void | Promise<void>
   return (
     <div className="vc-onboard">
       <h1>VIRAAS Connect</h1>
-      <p className="lead">Sign in with email to create your VIRAAS account. Adults can create a discoverable Connect profile and chat privately after a request is accepted.</p>
+      <p className="lead">Sign up or log in with email to create your VIRAAS account. Adults can create a discoverable Connect profile and chat privately after a request is accepted.</p>
+      <div className="vc-tabs" role="tablist" aria-label="Account actions">
+        <button type="button" role="tab" aria-selected={mode === 'signup'} className={`vc-tab ${mode === 'signup' ? 'active' : ''}`} onClick={() => { setMode('signup'); setErr(''); setNotice(''); }}>Sign Up</button>
+        <button type="button" role="tab" aria-selected={mode === 'login'} className={`vc-tab ${mode === 'login' ? 'active' : ''}`} onClick={() => { setMode('login'); setErr(''); setNotice(''); }}>Log In</button>
+      </div>
       <form className="vc-form" onSubmit={submit}>
         <h2>{mode === 'signup' ? 'Create your VIRAAS account' : 'Welcome back'}</h2>
         <label className="vc-label">Email address
@@ -66,10 +70,7 @@ export function AuthPanel({ onSuccess }: { onSuccess: () => void | Promise<void>
         {err && <p className="vc-err" role="alert">{err}</p>}
         {notice && <p className="vc-notice" role="status">{notice}</p>}
         <div className="vc-btnrow">
-          <button className="btn btn-accent" type="submit" disabled={busy}>{busy ? 'Please wait…' : mode === 'signup' ? 'Create account' : 'Sign in'}</button>
-          <button className="btn sm" type="button" onClick={() => { setMode(mode === 'signup' ? 'login' : 'signup'); setErr(''); setNotice(''); }}>
-            {mode === 'signup' ? 'I already have an account' : 'Create an account'}
-          </button>
+          <button className="btn btn-accent" type="submit" disabled={busy}>{busy ? 'Please wait…' : mode === 'signup' ? 'Sign Up' : 'Log In'}</button>
         </div>
         <p className="muted vc-fineprint">VIRAAS Connect profiles are for adults 18 and older. No public profile is created until you complete adult onboarding.</p>
       </form>

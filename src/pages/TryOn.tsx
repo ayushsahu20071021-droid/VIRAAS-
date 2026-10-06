@@ -13,7 +13,7 @@ import { DEFAULT_EDIT, isEdited, processPhoto, downloadDataUrl, shareImage, type
 import { useTryOnStatus, useTryOnAvailable } from '../lib/tryOnStatus';
 import { resolveCoupleSide } from '../../shared/coupleTryOn.mjs';
 
-type Step = 'pick' | 'unavailable' | 'age' | 'under18' | 'privacy' | 'upload' | 'preview' | 'payment' | 'generating' | 'result' | 'error';
+type Step = 'pick' | 'unavailable' | 'age' | 'under18' | 'privacy' | 'upload' | 'preview' | 'generating' | 'result' | 'error';
 interface TryOnResponse { ok: boolean; mode: string; resultImage?: string; message?: string; code?: string }
 
 const AGE_KEY = 'viraas:age-confirmed';
@@ -172,19 +172,14 @@ export default function TryOn() {
   const status = useTryOnStatus();
   const tryOnAvailable = useTryOnAvailable();
   const [saved, setSavedFlag] = useState(false);
-  const [payNote, setPayNote] = useState<string>('');
   const [creditBalance, setCreditBalance] = useState<number | null>(null);
   const [creditsLoading, setCreditsLoading] = useState(false);
   const [creditsError, setCreditsError] = useState('');
-  const [payuPhone, setPayuPhone] = useState('');
   const fileRef = useRef<HTMLInputElement>(null);
   const generateLock = useRef(false);
-  const paymentLock = useRef(false);
   const { toggle, isSaved } = useSaved();
 
   const key = `${sp.get('product') || ''}|${sp.get('womenLook') || ''}|${sp.get('menLook') || ''}|${sp.get('couple') || ''}|${sp.get('side') || ''}`;
-  const returnedPayment = sp.get('payment');
-  const returnedTxnId = sp.get('txnid');
 
   const refreshCredits = async () => {
     setCreditsLoading(true);
@@ -193,7 +188,7 @@ export default function TryOn() {
       const data = await response.json().catch(() => ({}));
       if (!response.ok || data?.ok !== true || !Number.isInteger(data.balance)) {
         setCreditBalance(null);
-        setCreditsError(String(data?.message || 'Sign in and complete an adult VIRAAS profile to use Try-On credits.'));
+        setCreditsError(String(data?.message || 'Persistent Try-On credits are unavailable right now.'));
         return null;
       }
       setCreditBalance(data.balance);
@@ -209,62 +204,10 @@ export default function TryOn() {
   useEffect(() => {
     if (!subject) { setStep(subjectError ? 'unavailable' : 'pick'); setCreditBalance(null); return; }
     setStep(sessionStorage.getItem(AGE_KEY) === '1' ? 'privacy' : 'age');
-    setPhoto(null); setProcessed(null); setEdit(DEFAULT_EDIT); setConsent(false); setResult(null); setSavedFlag(false); setPayNote('');
+    setPhoto(null); setProcessed(null); setEdit(DEFAULT_EDIT); setConsent(false); setResult(null); setSavedFlag(false);
     setCreditBalance(null);
     void refreshCredits();
   }, [key]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // After a PayU POST callback, read the authenticated order status from PostgreSQL. A return query
-  // string alone never changes the balance; only a server-verified payment status can do that.
-  useEffect(() => {
-    if (!subject || !returnedPayment || !returnedTxnId) return;
-    let active = true;
-    const checkPayment = async () => {
-      setStep('payment');
-      let resolved = false;
-      for (let attempt = 0; attempt < 8 && active; attempt++) {
-        if (attempt > 0) await new Promise((resolve) => setTimeout(resolve, 1800));
-        try {
-          if (attempt > 0) {
-            await fetch('/api/payment/verify', {
-              method: 'POST', credentials: 'include', headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ txnid: returnedTxnId }),
-            });
-          }
-          const response = await fetch(`/api/payment/status?txnid=${encodeURIComponent(returnedTxnId)}`, { credentials: 'include', cache: 'no-store' });
-          const data = await response.json().catch(() => ({}));
-          if (!response.ok || data?.ok !== true) break;
-          if (data.status === 'succeeded' && Number.isInteger(data.balance)) {
-            if (!active) return;
-            setCreditBalance(data.balance);
-            setCreditsError('');
-            setPayNote('PayU confirmed your ₹20 payment. One Try-On credit has been added to your account.');
-            setStep('privacy');
-            resolved = true;
-            break;
-          }
-          if (data.status === 'failed') {
-            if (!active) return;
-            setCreditBalance(0);
-            setPayNote('PayU did not complete this payment. No credit was added. You may try checkout again.');
-            setStep('privacy');
-            resolved = true;
-            break;
-          }
-        } catch { /* continue with a bounded server-side verification retry */ }
-      }
-      if (active) {
-        setSp((current) => { const next = new URLSearchParams(current); next.delete('payment'); next.delete('txnid'); return next; }, { replace: true });
-        if (!resolved) {
-          setPayNote('Payment is still awaiting PayU verification. No credit is available until VIRAAS confirms it.');
-          setStep('privacy');
-          void refreshCredits();
-        }
-      }
-    };
-    void checkPayment();
-    return () => { active = false; };
-  }, [returnedPayment, returnedTxnId, key]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Recompute the edited (sent) version whenever the photo or the privacy edit changes.
   useEffect(() => {
@@ -291,44 +234,6 @@ export default function TryOn() {
     r.readAsDataURL(f);
   };
 
-  const paymentReady = Boolean(tryOnAvailable && status.topUpAvailable && status.paymentConfigured && status.paymentProvider === 'payu');
-
-  // PayU receives only fixed order data and a billing phone number—never a user's photo.
-  const startPayment = async () => {
-    if (!subject || paymentLock.current || !paymentReady) return;
-    paymentLock.current = true;
-    setPayNote('');
-    try {
-      const res = await fetch('/api/payment/create', {
-        method: 'POST', credentials: 'include',
-        headers: { 'Content-Type': 'application/json', [IDEMPOTENCY_HEADER]: newAttemptKey() },
-        body: JSON.stringify({ ...subject.apiBody, phone: payuPhone }),
-      });
-      const data = await res.json().catch(() => ({}));
-      const endpoint = String(data?.checkout?.endpoint || '');
-      if (!res.ok || !data.ok || !data.checkout?.fields || !['https://secure.payu.in/_payment', 'https://test.payu.in/_payment'].includes(endpoint)) {
-        throw new Error(data?.message || 'PayU checkout could not be started. No payment was taken.');
-      }
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = endpoint;
-      form.acceptCharset = 'UTF-8';
-      form.style.display = 'none';
-      for (const [name, value] of Object.entries(data.checkout.fields as Record<string, unknown>)) {
-        if (typeof value !== 'string' || !/^[a-zA-Z0-9_]+$/.test(name)) continue;
-        const input = document.createElement('input');
-        input.type = 'hidden'; input.name = name; input.value = value; form.appendChild(input);
-      }
-      document.body.appendChild(form);
-      setStep('payment');
-      form.submit();
-    } catch (error) {
-      setPayNote(String((error as Error).message || 'PayU checkout could not be started.'));
-    } finally {
-      paymentLock.current = false;
-    }
-  };
-
   const generate = async () => {
     if (!tryOnAvailable || !subject || !processed || !consent || creditBalance === null || creditBalance < 1 || generateLock.current) return;
     generateLock.current = true;
@@ -341,7 +246,7 @@ export default function TryOn() {
       });
       const data = (await res.json()) as TryOnResponse & { creditsRemaining?: number; balance?: number };
       if (!res.ok || !data.ok || typeof data.resultImage !== 'string' || !/^data:image\/(jpeg|png|webp);base64,/.test(data.resultImage)) {
-        if (data.code === 'NO_TRYON_CREDITS') { setCreditBalance(0); setPayNote('No Try-On credits remaining.'); }
+        if (data.code === 'NO_TRYON_CREDITS') setCreditBalance(0);
         throw new Error(data.message || 'The server did not return a generated image.');
       }
       if (Number.isInteger(data.creditsRemaining)) setCreditBalance(data.creditsRemaining!);
@@ -356,12 +261,12 @@ export default function TryOn() {
   };
 
   const onGenerateClick = () => {
-    if (!tryOnAvailable || creditBalance === null) return;
-    if (creditBalance < 1) setStep('payment'); else void generate();
+    if (!tryOnAvailable || creditBalance === null || creditBalance < 1) return;
+    void generate();
   };
 
   const tryAnother = () => {
-    setPhoto(null); setProcessed(null); setEdit(DEFAULT_EDIT); setConsent(false); setResult(null); setSavedFlag(false); setPayNote(''); setSp({});
+    setPhoto(null); setProcessed(null); setEdit(DEFAULT_EDIT); setConsent(false); setResult(null); setSavedFlag(false); setSp({});
   };
   const saveResult = (img?: string | null) => { toggle('tryon', subject!.id, img ?? subject!.imageUrl); setSavedFlag(true); };
   const doShareImage = async (img: string) => {
@@ -467,10 +372,8 @@ export default function TryOn() {
                 {creditsLoading && <p className="muted small" role="status">Checking your secure Try-On credit balance…</p>}
                 {creditBalance !== null && <p className="credit-balance" aria-live="polite">{creditBalance} Try-On credit{creditBalance === 1 ? '' : 's'} available</p>}
                 {creditBalance === 0 && <p className="muted"><strong>No Try-On credits remaining.</strong></p>}
-                {creditsError && <p className="vc-err" role="alert">{creditsError} <Link to="/connect">Sign in or complete your adult VIRAAS profile</Link>.</p>}
-                {payNote && <p className="muted small" role="status">{payNote}</p>}
-                {creditBalance === 0 && <div className="row"><button className="btn btn-accent" disabled={!paymentReady} onClick={() => setStep('payment')}>{paymentReady ? `Buy 1 Try-On credit · ₹${status.priceInr ?? 20}` : 'Secure top-up unavailable'}</button></div>}
-                <div className="row"><button className="btn btn-dark" disabled={!tryOnAvailable || creditsLoading || creditBalance === null || creditBalance < 1} onClick={() => setStep('upload')}>{!tryOnAvailable ? 'Try-On unavailable' : creditBalance === null ? 'Sign in required' : creditBalance < 1 ? 'Add a credit to continue' : 'Got it'}</button></div>
+                {creditsError && <p className="vc-err" role="alert">{creditsError}</p>}
+                <div className="row"><button className="btn btn-dark" disabled={!tryOnAvailable || creditsLoading || creditBalance === null || creditBalance < 1} onClick={() => setStep('upload')}>{!tryOnAvailable ? 'Try-On unavailable' : creditBalance === null ? (creditsLoading ? 'Checking credits…' : 'Credits unavailable') : creditBalance < 1 ? 'No Try-On credits remaining.' : 'Got it'}</button></div>
                 {generationBlocked && <p className="muted small">{readinessRequirements[0]}</p>}
                 <p className="muted small">Read the <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link> notice.</p>
               </div>
@@ -512,34 +415,13 @@ export default function TryOn() {
                   <input type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} />
                   <span>I’m 18+ and I understand my photo is sent to the VIRAAS server to generate my try-on for this look. It isn’t added to the catalog or made public. See the <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link> notice.</span>
                 </label>
-                <p className="credit-balance" aria-live="polite">{creditBalance === null ? (creditsLoading ? 'Checking credits…' : 'Sign in required') : creditBalance === 0 ? 'No Try-On credits remaining.' : `${creditBalance} Try-On credit${creditBalance === 1 ? '' : 's'} available`}</p>
-                {creditsError && <p className="vc-err" role="alert">{creditsError} <Link to="/connect">Sign in or complete your adult VIRAAS profile</Link>.</p>}
+                <p className="credit-balance" aria-live="polite">{creditBalance === null ? (creditsLoading ? 'Checking credits…' : 'Credit balance unavailable') : creditBalance === 0 ? 'No Try-On credits remaining.' : `${creditBalance} Try-On credit${creditBalance === 1 ? '' : 's'} available`}</p>
+                {creditsError && <p className="vc-err" role="alert">{creditsError}</p>}
                 <div className="row">
-                  <button className="btn btn-accent" disabled={!consent || !processed || generationBlocked || creditsLoading || creditBalance === null || (creditBalance === 0 && !paymentReady)} onClick={onGenerateClick}>
-                    {generationBlocked ? 'Try-On unavailable' : creditBalance === 0 ? (paymentReady ? `Buy 1 credit · ₹${status.priceInr ?? 20}` : 'Try-On checkout unavailable') : creditBalance === null ? 'Sign in required' : 'Use 1 credit · Generate'}
+                  <button className="btn btn-accent" disabled={!consent || !processed || generationBlocked || creditsLoading || creditBalance === null || creditBalance === 0} onClick={onGenerateClick}>
+                    {generationBlocked ? 'Try-On unavailable' : creditBalance === 0 ? 'No Try-On credits remaining.' : creditBalance === null ? (creditsLoading ? 'Checking credits…' : 'Credits unavailable') : 'Use 1 credit · Generate'}
                   </button>
                 </div>
-                {creditBalance === 0 && paymentReady && <p className="muted small">The ₹20 PayU purchase adds exactly 1 Try-On credit. The payment provider does not receive your photo.</p>}
-                {creditBalance === 0 && !paymentReady && <p className="muted small">A secure PayU top-up is unavailable. No payment has been taken.</p>}
-              </div>
-            )}
-
-            {/* PayU top-up: a verified ₹20 payment adds exactly one persistent credit. */}
-            {step === 'payment' && (
-              <div className="gate">
-                <h2>Add 1 Try-On credit</h2>
-                <p>Pay ₹{status.priceInr ?? 20} once through secure PayU checkout. A verified payment adds exactly one credit to your VIRAAS account; no photo is sent to PayU.</p>
-                <label className="vc-label">Indian mobile number for PayU
-                  <input type="tel" value={payuPhone} onChange={(event) => setPayuPhone(event.target.value)} placeholder="9876543210" autoComplete="tel" inputMode="tel" maxLength={16} />
-                  <small className="muted">Used for checkout only. VIRAAS does not store this number.</small>
-                </label>
-                {!paymentReady && <p className="muted small">Secure PayU checkout is unavailable. No payment has been taken.</p>}
-                {payNote && <p className="muted small" role="status">{payNote}</p>}
-                <div className="row">
-                  <button className="btn btn-accent" disabled={!paymentReady || !payuPhone.trim() || paymentLock.current} onClick={() => void startPayment()}>Continue to secure PayU checkout · ₹{status.priceInr ?? 20}</button>
-                  <button className="btn btn-ghost" onClick={() => setStep(photo ? 'preview' : 'privacy')}>Back</button>
-                </div>
-                <p className="muted small">VIRAAS adds credits only after verifying PayU’s signed callback and server-side payment status.</p>
               </div>
             )}
 
@@ -574,7 +456,6 @@ export default function TryOn() {
                 <p>{result?.message || 'Something went wrong.'}</p>
                 {creditBalance === 0 && <p className="muted"><strong>No Try-On credits remaining.</strong></p>}
                 <div className="row">
-                  {creditBalance === 0 && paymentReady && <button className="btn btn-accent" onClick={() => setStep('payment')}>Buy 1 credit · ₹{status.priceInr ?? 20}</button>}
                   <button className="btn btn-dark" onClick={() => photo ? setStep('preview') : setStep('privacy')}>Try again</button>
                   <button className="btn btn-ghost" onClick={tryAnother}>Change outfit</button>
                 </div>
