@@ -43,8 +43,19 @@ export interface ConversationSummary {
 }
 export interface ChatMessage { id: string; text: string; senderId: 'me' | 'other'; mine: boolean; createdAt: string; read: boolean }
 
+const SOCIAL_API_TIMEOUT_MS = 12_000;
+async function apiFetch(url: string, init?: RequestInit): Promise<Response> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), SOCIAL_API_TIMEOUT_MS);
+  try {
+    return await fetch(url, { ...init, signal: controller.signal });
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 async function req<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(`/api/social${path}`, {
+  const res = await apiFetch(`/api/social${path}`, {
     credentials: 'include',
     headers: init?.body ? { 'Content-Type': 'application/json', ...(init.headers || {}) } : init?.headers,
     ...init,
@@ -56,7 +67,7 @@ async function req<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 async function authReq<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(`/api/auth${path}`, {
+  const res = await apiFetch(`/api/auth${path}`, {
     credentials: 'include',
     headers: init?.body ? { 'Content-Type': 'application/json', ...(init.headers || {}) } : init?.headers,
     ...init,

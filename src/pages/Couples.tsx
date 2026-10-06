@@ -3,8 +3,8 @@ import { COUPLES, WORLDS, coupleById, byId, worldName, coupleImageSrc, type Prod
 import { formatINR, sumPrices } from '../lib/format';
 import { CoupleCard, ImageFrame, SaveButton, ShareRow, Empty } from '../components/ui';
 import { coupleAffiliate } from '../lib/coupleAffiliate';
-import { hasVerifiedPrice, tryOnHrefForProduct } from '../lib/productActions';
-import { useTryOnAvailable } from '../lib/tryOnStatus';
+import { hasVerifiedPrice } from '../lib/productActions';
+import { resolveCoupleSide } from '../../shared/coupleTryOn.mjs';
 
 export function CoupleEdit() {
   const [sp, setSp] = useSearchParams();
@@ -28,7 +28,6 @@ export function CoupleEdit() {
 }
 
 export function CoupleDetail() {
-  const tryOnAvailable = useTryOnAvailable();
   const { id } = useParams();
   const c = id ? coupleById.get(id) : undefined;
   if (!c) return <div className="page"><Empty title="Look not found"><Link to="/couple-edit" className="btn btn-dark">All couple looks</Link></Empty></div>;
@@ -39,11 +38,12 @@ export function CoupleDetail() {
     ? sumPrices(linkedProducts.map((p) => p.price))
     : null;
   const aff = coupleAffiliate(c.id);
-  // A side-specific Try-On is offered only when that exact product has its own live image.
-  const herTryOnProduct = tryOnAvailable ? her.find((p) => Boolean(tryOnHrefForProduct(p))) : undefined;
-  const himTryOnProduct = tryOnAvailable ? his.find((p) => Boolean(tryOnHrefForProduct(p))) : undefined;
-  const herTryOnHref = herTryOnProduct ? tryOnHrefForProduct(herTryOnProduct) : undefined;
-  const himTryOnHref = himTryOnProduct ? tryOnHrefForProduct(himTryOnProduct) : undefined;
+  // These buttons always route to the existing Try-On page. The shared resolver independently
+  // marks a side unavailable unless its exact direct VIRAAS image is provable.
+  const herReference = resolveCoupleSide(c, 'her', byId);
+  const himReference = resolveCoupleSide(c, 'him', byId);
+  const herTryOnHref = `/try-on?couple=${encodeURIComponent(c.id)}&side=her`;
+  const himTryOnHref = `/try-on?couple=${encodeURIComponent(c.id)}&side=him`;
   const more = COUPLES.filter((x) => x.world === c.world && x.id !== c.id).slice(0, 3);
   return (
     <div className="page couple-detail">
@@ -61,19 +61,22 @@ export function CoupleDetail() {
           </dl>
           {total !== null && <div className="pdp-price">Full look ≈ {formatINR(total)} <span className="muted small">(approx., {her.length + his.length} pieces)</span></div>}
           <div className="pdp-ctas">
-            {(herTryOnHref || himTryOnHref) && <a href="#try-on" className="btn btn-accent block">Try the look on</a>}
+            <a href="#try-on" className="btn btn-accent block">Try this Couple look on</a>
             <SaveButton kind="couple" id={c.id} image={coupleImageSrc(c)} />
           </div>
           <div className="couple-tryon" id="try-on">
-            <div className="kicker">Try on</div>
-            {(herTryOnHref || himTryOnHref) ? <>
-              <p className="couple-tryon-q">Whose outfit do you want to try?</p>
-              <div className="row">
-                {herTryOnHref && <Link className="btn btn-accent" to={herTryOnHref}>For her</Link>}
-                {himTryOnHref && <Link className="btn btn-dark" to={himTryOnHref}>For him</Link>}
-              </div>
-              <p className="muted small">Each Try-On uses that side’s own live product image.</p>
-            </> : <p className="muted small">Try-On is not available for this look yet. You can still save and share it.</p>}
+            <div className="kicker">Try on each side</div>
+            <p className="couple-tryon-q">Choose whose outfit you want to try on.</p>
+            <div className="row">
+              {herReference.ok
+                ? <Link className="btn btn-accent" to={herTryOnHref}>Try On Her</Link>
+                : <button className="btn btn-accent" type="button" disabled aria-describedby="couple-her-reference">Try On Her unavailable</button>}
+              {himReference.ok
+                ? <Link className="btn btn-dark" to={himTryOnHref}>Try On Him</Link>
+                : <button className="btn btn-dark" type="button" disabled aria-describedby="couple-him-reference">Try On Him unavailable</button>}
+            </div>
+            {!herReference.ok && <p id="couple-her-reference" className="muted small" data-couple-side-unavailable="her">Her: exact side-specific garment image unavailable. Combined Couple photos and other looks are never substituted.</p>}
+            {!himReference.ok && <p id="couple-him-reference" className="muted small" data-couple-side-unavailable="him">Him: exact side-specific garment image unavailable. Combined Couple photos and other looks are never substituted.</p>}
           </div>
           <ShareRow path={`/couple-edit/${c.id}`} />
         </div>

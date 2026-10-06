@@ -1,62 +1,57 @@
-// VIRAAS Express application (routes + middleware) — WITHOUT a network listener.
-//
-// This is the single source of truth for the server. It is imported by:
-//   - server/index.mjs  -> starts a long-running HTTP listener for local dev / preview / any
-//                          traditional Node host (`npm start`).
-//   - api/index.mjs      -> re-exports it as a single Vercel Serverless Function (no app.listen()).
-//
-// An Express app instance is itself a (req, res) handler, so the exact same routes run both ways
-// with NO duplicated backend logic. Server-side readiness, privacy, social and payment gates live
-// here so both targets enforce the same fail-closed policy.
+// VIRAAS Express application shared by the local server and the Vercel function entrypoint.
+// All user identity, payment verification and Try-On credit decisions are server-authoritative.
 import express from 'express';
 import path from 'node:path';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 import { tryOnProvider, tryOnMode, tryOnConfigured, tryOnRequirements } from './tryOnProvider.mjs';
 import * as payments from './payments/service.mjs';
+import { resolvePublicAssetBase } from './publicAssets.mjs';
+import { resolveCoupleSide } from '../shared/coupleTryOn.mjs';
+import { databaseStatus } from './db/pool.mjs';
+import { getAuthIdentity } from './auth/provider.mjs';
+import * as social from './social/repository.mjs';
+import {
+  NO_TRYON_CREDITS_MESSAGE,
+  consumeTryOnCredit,
+  getTryOnCreditBalance,
+  grantSignupCredits,
+  releaseTryOnCredit,
+  reserveTryOnCredit,
+} from './tryOnCredits.mjs';
 import authRouter from './auth/routes.mjs';
 import socialRouter from './social/routes.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const readJson = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
-
 const catalog = readJson('src/data/catalog.json');
-const byId = new Map(catalog.map((p) => [p.id, p]));
-// LIVE (QA-approved) Women preview images — source of truth generated from data-src/image-qa.json.
+const byId = new Map(catalog.map((product) => [product.id, product]));
 const womenPreviews = readJson('src/data/women-previews.client.json');
-// Men look final images (QA-approved) — the exact garment reference for a Men Try-On.
 const menImages = readJson('src/data/men-final-images.json');
-// Couple looks — used to resolve the EXACT per-person (her / him) outfit reference. The
-// combined couple image is intentionally NOT used as a Try-On clothing reference.
 const couples = readJson('src/data/couples.json');
-const coupleById = new Map(couples.map((c) => [c.id, c]));
-
-// Where the built/static assets live, so we can inline a garment reference as base64.
-const PUBLIC_DIR = path.join(ROOT, 'public');
-const DIST_DIR = path.join(ROOT, 'dist');
-const PUBLIC_BASE_URL = (process.env.PUBLIC_BASE_URL || '').replace(/\/$/, '');
+const coupleById = new Map(couples.map((couple) => [couple.id, couple]));
+const PUBLIC_DIR = path.resolve(ROOT, 'public');
+const DIST_DIR = path.resolve(ROOT, 'dist');
+const publicAssets = resolvePublicAssetBase();
+const PUBLIC_BASE_URL = publicAssets.base;
 const MIME = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
-// No durable user/credit store is implemented or configured in this checkout. Keep Runware closed
-// even if a key is later added until server-authoritative credits can be consumed atomically.
-const TRYON_CREDIT_LEDGER_READY = false;
+const MAX_PHOTO_BYTES = 2_750_000;
+const MAX_PHOTO_BASE64_CHARS = Math.ceil(MAX_PHOTO_BYTES / 3) * 4 + 8;
 
-// Turn a VIRAAS reference (e.g. "/images/women-previews/women-look-001.png") into something a
-// provider can consume: prefer an inline base64 data-URL read from disk (no public hosting needed);
-// fall back to an absolute public URL when PUBLIC_BASE_URL is set. The garment is a VIRAAS catalog
-// image (not user data); the USER PHOTO is always sent as base64 and never hosted.
-//
-// On a serverless host (e.g. Vercel) the large public/ image tree is served by the CDN and is NOT
-// present on the function's filesystem, so set PUBLIC_BASE_URL to the deployment origin; this branch
-// then returns the public catalog-image URL (a VIRAAS asset, never user data) for the provider.
+// Inline only trusted catalog references where present on disk. On Vercel, resolve them to the
+// deployment's configured public origin; never derive an asset origin from an untrusted Host header.
 function loadGarment(src) {
-  if (!src) return null;
-  if (/^https?:\/\//i.test(src) || src.startsWith('data:')) return src;
+  if (typeof src !== 'string' || !src) return null;
+  if (/^https:\/\//i.test(src) || src.startsWith('data:image/')) return src;
+  if (/^http:\/\//i.test(src) && process.env.NODE_ENV !== 'production') return src;
   const rel = src.replace(/^\//, '').split('?')[0];
   for (const base of [PUBLIC_DIR, DIST_DIR]) {
-    const abs = path.join(base, rel);
-    if (abs.startsWith(base) && fs.existsSync(abs)) {
+    const abs = path.resolve(base, rel);
+    if (abs.startsWith(`${base}${path.sep}`) && fs.existsSync(abs)) {
       const ext = path.extname(abs).toLowerCase();
-      return `data:${MIME[ext] || 'application/octet-stream'};base64,${fs.readFileSync(abs).toString('base64')}`;
+      const type = MIME[ext];
+      if (!type) return null;
+      return `data:${type};base64,${fs.readFileSync(abs).toString('base64')}`;
     }
   }
   return PUBLIC_BASE_URL ? `${PUBLIC_BASE_URL}${src.startsWith('/') ? '' : '/'}${src}` : null;
@@ -64,209 +59,337 @@ function loadGarment(src) {
 
 const app = express();
 app.disable('x-powered-by');
-
-// Payment gateway webhook MUST be parsed as a raw body so its signature can be verified byte-for-byte.
-// It is registered BEFORE express.json() so the JSON parser never touches it. No customer photo or
-// secret is logged here; only a signed, server-verified fact is trusted.
-app.post('/api/payment/webhook', express.raw({ type: '*/*', limit: '1mb' }), (req, res) => {
-  if ((!payments.paymentConfig.configured || !payments.paymentStorePersistent) && !payments.mockPaymentTestsAllowed) {
-    return res.status(503).json({ ok: false, code: 'PAYMENT_NOT_CONFIGURED', message: 'A real payment gateway and persistent verification store are required.' });
-  }
-  const rawBody = Buffer.isBuffer(req.body) ? req.body.toString('utf8') : '';
-  const result = payments.handleWebhook({ rawBody, headers: req.headers });
-  // Always answer 200 to a validly-signed event (even a duplicate) so the gateway stops retrying;
-  // reject anything whose signature we could not verify.
-  if (!result.ok) return res.status(400).json({ ok: false });
-  res.json({ ok: true, status: result.status, duplicate: Boolean(result.duplicate) });
-});
-
-app.use(express.json({ limit: '12mb' }));
-
+app.use(express.json({ limit: '4mb', strict: true }));
 app.get('/api/health', (_req, res) => res.json({ ok: true }));
 app.use('/api/auth', authRouter);
-
-// VIRAAS Connect is persistent and human-to-human; private chat is separate from any AI feature.
 app.use('/api/social', socialRouter);
-// Status the browser is allowed to know: the mode and whether real generation is configured.
-// The provider NAME is only exposed once real generation is actually configured.
-app.get('/api/try-on/status', (_req, res) =>
+
+function sameOrigin(req, res, next) {
+  const origin = req.get('origin');
+  const fetchSite = req.get('sec-fetch-site');
+  if (fetchSite === 'cross-site') return res.status(403).json({ ok: false, message: 'Cross-site request rejected.' });
+  if (origin) {
+    let originUrl;
+    try { originUrl = new URL(origin); } catch { return res.status(403).json({ ok: false, message: 'Request origin was not accepted.' }); }
+    const expectedHost = String(req.get('x-forwarded-host') || req.get('host') || '').split(',')[0].trim().toLowerCase();
+    if (!expectedHost || originUrl.host.toLowerCase() !== expectedHost) return res.status(403).json({ ok: false, message: 'Request origin was not accepted.' });
+  }
+  next();
+}
+
+async function adultAccount(req, res) {
+  try {
+    const db = await databaseStatus();
+    if (!db.ready) {
+      res.status(503).json({ ok: false, code: 'DATABASE_NOT_READY', message: 'Persistent VIRAAS accounts and Try-On credits are unavailable until PostgreSQL is configured and fully migrated.' });
+      return null;
+    }
+    const identity = await getAuthIdentity(req, res);
+    const user = await social.getUserByAuthSubject(identity.subject);
+    if (!user?.profile_complete) {
+      res.status(409).json({ ok: false, code: 'PROFILE_REQUIRED', message: 'Complete your adult VIRAAS account profile before using AI Try-On or purchasing credits.', accountPath: '/connect' });
+      return null;
+    }
+    if (Number(user.age) < 18) {
+      res.status(403).json({ ok: false, code: 'ADULTS_ONLY', message: 'AI Try-On and credit purchases are available only to adults 18+.' });
+      return null;
+    }
+    return { identity, user };
+  } catch (error) {
+    res.status(Number(error?.status) || 503).json({ ok: false, message: error?.message || 'A verified VIRAAS account is required.' });
+    return null;
+  }
+}
+
+// Browser-safe capabilities only. Account balances are returned by the authenticated credits route.
+app.get('/api/try-on/status', async (_req, res) => {
+  res.set('Cache-Control', 'no-store');
+  const db = await databaseStatus();
+  const assetRequirements = publicAssets.requirement ? [publicAssets.requirement] : [];
+  const tryOnReady = tryOnMode === 'runware-flux' && tryOnConfigured && db.ready && assetRequirements.length === 0;
+  const topUpReady = payments.paymentProviderConfigured && tryOnReady;
   res.json({
     mode: tryOnMode,
     configured: tryOnConfigured,
     provider: tryOnConfigured ? tryOnProvider.provider : null,
-    // Payment gating (browser-safe fields only — never the gateway secret).
-    paymentRequired: payments.paymentRequired,
-    priceInr: payments.PRICE_INR,
-    currency: payments.CURRENCY,
-    paymentProvider: payments.paymentConfig.provider,
-    paymentConfigured: payments.paymentConfig.configured,
-    // Never imply generation or credits are available just because a provider is missing/unconfigured.
-    generationAvailable: false,
-    creditLedgerAvailable: false,
-    topUpAvailable: false,
+    paymentRequired: false,
+    priceInr: payments.CREDIT_PRICE_INR,
+    currency: 'INR',
+    paymentConfigured: payments.paymentProviderConfigured,
+    paymentProvider: payments.paymentProviderName,
+    generationAvailable: tryOnReady,
+    creditLedgerAvailable: db.ready,
+    topUpAvailable: topUpReady,
     requirements: [
       ...tryOnRequirements,
-      'Persistent VIRAAS accounts and a server-authoritative Try-On credit ledger are required before generation.',
-      'A real payment gateway and persistent payment verification store are required before ₹20 top-ups.',
+      ...assetRequirements,
+      ...(!db.ready ? db.missing : []),
+      ...(!payments.paymentProviderConfigured ? payments.paymentRequirements() : []),
     ],
-  }),
-);
-
-// --- Payment routes ------------------------------------------------------------------------------
-// createPayment: begin a payment for one Try-On. Returns only browser-safe fields. NEVER trusts any
-// client-supplied "paid"/"paymentSuccess" flag — payment can only become VERIFIED via the signed
-// webhook (or a server-side gateway poll).
-app.post('/api/payment/create', async (req, res) => {
-  if ((!payments.paymentConfig.configured || !payments.paymentStorePersistent) && !payments.mockPaymentTestsAllowed) {
-    return res.status(503).json({ ok: false, code: 'PAYMENT_NOT_CONFIGURED', message: 'A real payment gateway and persistent VIRAAS account/payment store are required. No payment was created.' });
-  }
-  const { productId, womenLookId, menLookId, coupleId, side } = req.body || {};
-  const subject = resolveSubject({ productId, womenLookId, menLookId, coupleId, side });
-  const outfitId = subject.error ? undefined : subject.outfitId;
-  const out = await payments.createPayment({ outfitId });
-  if (!out.ok) return res.status(503).json({ ok: false, message: 'Payment could not be started right now.' });
-  res.json(out);
+  });
 });
 
-// getPaymentStatus: read-only. Reveals the one-time authToken only once the payment is AUTHORIZED,
-// and only to a caller holding the unguessable paymentId capability.
-app.get('/api/payment/status', (req, res) => {
-  if ((!payments.paymentConfig.configured || !payments.paymentStorePersistent) && !payments.mockPaymentTestsAllowed) {
-    return res.status(503).json({ ok: false, code: 'PAYMENT_NOT_CONFIGURED', message: 'A real payment gateway and persistent verification store are required.' });
+app.get('/api/try-on/credits', sameOrigin, async (req, res) => {
+  const account = await adultAccount(req, res);
+  if (!account) return;
+  try {
+    // Backfill already-onboarded accounts exactly once, without granting credits per session.
+    const balance = await grantSignupCredits(account.user.user_id);
+    res.set('Cache-Control', 'no-store');
+    res.json({ ok: true, balance, signupCredits: 2, noCreditsMessage: NO_TRYON_CREDITS_MESSAGE });
+  } catch {
+    res.status(503).json({ ok: false, message: 'Persistent Try-On credits are temporarily unavailable.' });
   }
-  const out = payments.getPaymentStatus({ paymentId: String(req.query.paymentId || '') });
-  if (!out.ok) return res.status(404).json({ ok: false, message: 'Unknown payment.' });
-  res.json(out);
 });
 
-// verifyPayment: optional server-side poll fallback (used when a gateway supports polling instead of
-// webhooks). Still a SERVER-SIDE check — a client cannot self-verify.
-app.post('/api/payment/verify', async (req, res) => {
-  if ((!payments.paymentConfig.configured || !payments.paymentStorePersistent) && !payments.mockPaymentTestsAllowed) {
-    return res.status(503).json({ ok: false, code: 'PAYMENT_NOT_CONFIGURED', message: 'A real payment gateway and persistent verification store are required.' });
-  }
-  const out = await payments.verifyPayment({ paymentId: String((req.body || {}).paymentId || '') });
-  res.status(out.ok ? 200 : 402).json(out);
-});
-
-// Resolve the Try-On subject into the EXACT VIRAAS reference for the selected outfit.
-// Mapping rules (no cross-mapping, ever):
-//   Men look    -> that exact Men reference image        (gender: men)
-//   Women look  -> that exact QA-approved Women reference (gender: women)
-//   Couple/her  -> that couple's exact WOMAN'S outfit     (gender: women) — never the man's, never the combined image
-//   Couple/him  -> that couple's exact MAN'S outfit       (gender: men)   — never the woman's, never the combined image
-//   Product     -> that product's own reference           (gender: unknown)
 function resolveSubject(body) {
   const { productId, womenLookId, menLookId, coupleId, side } = body || {};
   if (menLookId) {
     const src = menImages[menLookId];
-    if (!src) return { error: 404, message: 'Unknown look.' };
-    return { outfitId: menLookId, gender: 'men', garmentImageUrl: src };
+    if (!src) return { error: 404, message: 'Unknown Men look.' };
+    return { outfitId: menLookId, gender: 'men', garmentImageUrl: src, returnPath: `/try-on?menLook=${encodeURIComponent(menLookId)}` };
   }
   if (womenLookId) {
-    const w = womenPreviews[womenLookId];
-    if (!w) return { error: 404, message: 'Unknown look.' };
-    if (!w.live || !w.src) return { error: 400, message: 'This look is not available for Try-On yet.' };
-    return { outfitId: womenLookId, gender: 'women', garmentImageUrl: w.src };
+    const look = womenPreviews[womenLookId];
+    if (!look) return { error: 404, message: 'Unknown Women look.' };
+    if (!look.live || !look.src) return { error: 400, message: 'This Women look is not available for Try-On yet.' };
+    return { outfitId: womenLookId, gender: 'women', garmentImageUrl: look.src, returnPath: `/try-on?womenLook=${encodeURIComponent(womenLookId)}` };
   }
   if (coupleId) {
-    const c = coupleById.get(coupleId);
-    if (!c) return { error: 404, message: 'Unknown look.' };
-    if (side !== 'her' && side !== 'him') return { error: 400, message: 'Choose whose outfit to try on.' };
-    const ids = side === 'her' ? c.herProductIds : c.hisProductIds;
-    const product = ids.map((id) => byId.get(id)).find((item) => item?.tryOnEnabled && item.status === 'live' && item.imageUrl);
-    if (!product) return { error: 400, message: 'This side of the look does not have an individual live Try-On image yet.' };
-    // Never send the combined couple image or a text-only substitute as a garment reference.
-    return { outfitId: product.id, gender: product.gender, garmentImageUrl: product.imageUrl, garmentDescription: product.title };
+    const couple = coupleById.get(coupleId);
+    if (!couple) return { error: 404, message: 'Unknown Couple look.' };
+    const resolved = resolveCoupleSide(couple, side, byId);
+    if (!resolved.ok) return { error: 400, message: resolved.message };
+    return {
+      outfitId: resolved.outfitId,
+      gender: resolved.gender,
+      garmentImageUrl: resolved.garmentImageUrl,
+      garmentDescription: resolved.garmentDescription,
+      returnPath: `/try-on?couple=${encodeURIComponent(coupleId)}&side=${resolved.side}`,
+    };
   }
   if (productId) {
     const product = byId.get(productId);
     if (!product) return { error: 404, message: 'Unknown product.' };
-    if (!product.tryOnEnabled || !product.imageUrl || product.status !== 'live')
-      return { error: 400, message: 'This product does not have a live Try-On image yet.' };
-    return { outfitId: productId, gender: 'unknown', garmentImageUrl: product.imageUrl, garmentDescription: product.title };
+    if (!product.tryOnEnabled || !product.imageUrl || product.status !== 'live') return { error: 400, message: 'This product does not have its own live Try-On image.' };
+    return { outfitId: productId, gender: 'unknown', garmentImageUrl: product.imageUrl, garmentDescription: product.title, returnPath: `/try-on?product=${encodeURIComponent(productId)}` };
   }
   return { error: 400, message: 'No product or look selected.' };
 }
 
-app.post('/api/try-on', async (req, res) => {
-  const { ageConfirmed } = req.body || {};
-  // The 18+ photo gate is server-authoritative, including when Try-On is not configured.
-  if (ageConfirmed !== true) return res.status(403).json({ ok: false, message: 'AI Try-On with a personal photo requires age 18+.' });
+function validPhoto(dataUrl) {
+  if (typeof dataUrl !== 'string' || dataUrl.length > MAX_PHOTO_BASE64_CHARS) return null;
+  const match = /^data:image\/jpeg;base64,([A-Za-z0-9+/]+={0,2})$/.exec(dataUrl);
+  if (!match) return null;
+  const encoded = match[1];
+  if (encoded.length % 4 !== 0) return null;
+  const bytes = Buffer.from(encoded, 'base64');
+  if (!bytes.length || bytes.length > MAX_PHOTO_BYTES || bytes.toString('base64') !== encoded) return null;
+  // Browser-side re-encoding is required; verify the bytes really are JPEG before Runware receives them.
+  if (bytes.length < 4 || bytes[0] !== 0xff || bytes[1] !== 0xd8 || bytes.at(-2) !== 0xff || bytes.at(-1) !== 0xd9) return null;
+  return dataUrl;
+}
 
-  // Fail before accepting/processing a photo if Runware is not configured. In particular, never
-  // return a demo/layout result as a successful Try-On and never attempt a provider request here.
-  if (tryOnMode !== 'runware-flux' || !tryOnConfigured) {
-    const keyMissing = tryOnRequirements.includes('RUNWARE_API_KEY required');
-    const message = keyMissing
-      ? 'RUNWARE_API_KEY required. Try-On was not started.'
-      : `${tryOnRequirements[0] || 'Runware is not ready.'}. Try-On was not started.`;
-    return res.status(503).json({ ok: false, code: keyMissing ? 'RUNWARE_API_KEY_REQUIRED' : 'RUNWARE_NOT_READY', mode: tryOnMode, message, requirements: tryOnRequirements });
-  }
-  if (!TRYON_CREDIT_LEDGER_READY) {
-    return res.status(503).json({ ok: false, code: 'PERSISTENT_CREDIT_LEDGER_REQUIRED', mode: tryOnMode, message: 'Persistent VIRAAS identity and server-authoritative Try-On credits are required before Runware can be called.' });
-  }
+function validGeneratedImage(dataUrl) {
+  return typeof dataUrl === 'string'
+    && /^data:image[/](?:jpeg|png|webp);base64,[A-Za-z0-9+/]+={0,2}$/i.test(dataUrl);
+}
 
-  const reqId = crypto.randomUUID().slice(0, 8);
-  const started = Date.now();
-  const { photo } = req.body || {};
-  const subject = resolveSubject(req.body);
-  if (subject.error) return res.status(subject.error).json({ ok: false, message: subject.message });
+function validRequestKey(value) {
+  return typeof value === 'string' && /^[A-Za-z0-9][A-Za-z0-9._:-]{7,127}$/.test(value);
+}
 
-  // Validate the uploaded photo. NOTE: the raw image / base64 is NEVER logged.
-  if (typeof photo !== 'string' || !/^data:image\/(jpeg|png|webp);base64,/.test(photo))
-    return res.status(400).json({ ok: false, message: 'Please upload a JPG, PNG or WebP photo.' });
-  if (photo.length > 11 * 1024 * 1024) return res.status(413).json({ ok: false, message: 'Photo too large.' });
+function paymentReturnPath(payment, state) {
+  const separator = payment.return_path.includes('?') ? '&' : '?';
+  return `${payment.return_path}${separator}payment=${state}&txnid=${encodeURIComponent(payment.txnid)}`;
+}
 
-  // PAYMENT GATE. When payment is required, a real generation needs a verified, paid, ONE-TIME
-  // authorization. A client-supplied "paymentSuccess" flag is IGNORED — we only accept a valid
-  // authToken that maps to a server-side AUTHORIZED record, and we atomically claim it BEFORE
-  // calling the provider so a duplicate request can never trigger a second generation.
-  let claimed = null;
-  if (payments.paymentRequired) {
-    const authToken = typeof (req.body || {}).authToken === 'string' ? req.body.authToken : '';
-    const claim = payments.claimForGeneration({ authToken });
-    if (!claim.ok) {
-      const msg =
-        claim.reason === 'invalid_token'
-          ? 'Payment is required for AI Try-On. Please complete payment to continue.'
-          : claim.reason === 'already_consumed' || claim.reason === 'failed'
-            ? 'This Try-On authorization has already been used.'
-            : 'Payment has not been verified yet. Please complete payment to continue.';
-      return res.status(402).json({ ok: false, message: msg });
-    }
-    claimed = claim; // holds generationId; on genuine failure we mark it recoverable (not lost).
-    console.log(`[try-on ${reqId}] authorized generation=${claimed.generationId}`);
-  }
-
+// PayU Hosted Checkout POSTs its signed response here. The redirect is only UX: credit is granted
+// after both the reverse hash and PayU's authenticated verify_payment response are checked server-side.
+app.post('/api/payment/payu/callback', express.urlencoded({ extended: false, limit: '32kb' }), async (req, res) => {
+  const payload = req.body || {};
+  const txnid = typeof payload.txnid === 'string' ? payload.txnid : '';
+  let payment = null;
   try {
-    // Resolve the garment to an inline base64 data-URL (or public URL). Never a user photo.
-    const garment = loadGarment(subject.garmentImageUrl);
-    // Safe, image-free metadata log only (id, outfit, gender, size in KB) — never the image.
-    console.log(`[try-on ${reqId}] outfit=${subject.outfitId} gender=${subject.gender} bytes=${Math.round(photo.length / 1024)}KB garment=${garment ? (garment.startsWith('data:') ? 'inline' : 'url') : 'none'} mode=${tryOnMode}`);
-    const out = await tryOnProvider.generateTryOn({
-      outfitId: subject.outfitId,
-      gender: subject.gender,
-      photo,
-      garmentImageUrl: garment,
-      garmentDescription: subject.garmentDescription,
-    });
-    console.log(`[try-on ${reqId}] done ok=${out.ok} mode=${out.mode} ${Date.now() - started}ms`);
-    // A genuine post-payment failure must NOT be faked or lost: mark the claimed authorization
-    // FAILED + recoverable (retains paymentId for a later refund/credit) instead of returning a
-    // fake image. We never silently drop the customer's paid authorization.
-    if (!out.ok && claimed) payments.failGeneration({ generationId: claimed.generationId, reason: out.message || 'provider_error' });
-    res.status(out.ok ? 200 : 502).json(out);
+    if (!payments.payuProvider.verifyCallbackHash(payload)) return res.status(400).send('Payment response could not be verified.');
+    payment = await payments.getPayUPaymentForCallback(txnid);
+    if (!payment) return res.status(404).send('Payment record not found.');
+    if (payments.amountPaise(payload.amount) !== Number(payment.amount_paise)
+      || payload.productinfo !== payment.productinfo
+      || payload.firstname !== payment.firstname
+      || String(payload.email || '').toLowerCase() !== String(payment.email || '').toLowerCase()) {
+      return res.status(400).send('Payment details did not match the VIRAAS order.');
+    }
+    const verified = await payments.payuProvider.verifyPayment(txnid);
+    if (!verified.verified || verified.txnid !== txnid) {
+      res.set('Cache-Control', 'no-store');
+      return res.redirect(303, paymentReturnPath(payment, 'pending'));
+    }
+    let state = 'pending';
+    if (verified.captured && verified.amountPaise === Number(payment.amount_paise)
+      && verified.productinfo === payment.productinfo && verified.firstname === payment.firstname
+      && verified.email.toLowerCase() === payment.email.toLowerCase() && verified.payuPaymentId) {
+      const applied = await payments.markPayUSuccess(verified);
+      if (applied.ok) state = 'success';
+      else return res.status(409).send('Payment is verified but could not be applied. Contact VIRAAS support with your order reference.');
+    } else if (verified.failed) {
+      await payments.markPayUFailed({ txnid, failureCode: payload.status === 'failure' ? 'payment_failed' : 'payment_cancelled' });
+      state = 'failed';
+    }
+    res.set('Cache-Control', 'no-store');
+    return res.redirect(303, paymentReturnPath(payment, state));
   } catch {
-    if (claimed) payments.failGeneration({ generationId: claimed.generationId, reason: 'exception' });
-    console.log(`[try-on ${reqId}] error ${Date.now() - started}ms`);
-    res.status(500).json({ ok: false, message: 'Try-on failed.' });
+    // Do not log callback contents, PII, gateway responses, image bytes, or secret material.
+    if (payment) {
+      res.set('Cache-Control', 'no-store');
+      return res.redirect(303, paymentReturnPath(payment, 'pending'));
+    }
+    return res.status(503).send('Payment verification is temporarily unavailable. No credit was granted.');
   }
 });
 
-// Static SPA serving + client-side-routing fallback. On a serverless host these paths are normally
-// served by the CDN from the build output, but keeping them here means a single Node process still
-// serves the whole site in local dev / preview / any traditional host — with no behaviour change.
+app.post('/api/payment/create', sameOrigin, async (req, res) => {
+  const account = await adultAccount(req, res);
+  if (!account) return;
+  if (tryOnMode !== 'runware-flux' || !tryOnConfigured || publicAssets.requirement) {
+    return res.status(503).json({ ok: false, code: 'TRYON_NOT_READY', message: 'AI Try-On is not available yet. No payment was created.' });
+  }
+  try { await grantSignupCredits(account.user.user_id); }
+  catch { return res.status(503).json({ ok: false, message: 'Persistent Try-On credits are temporarily unavailable. No payment was created.' }); }
+  const subject = resolveSubject(req.body || {});
+  if (subject.error) return res.status(subject.error).json({ ok: false, message: subject.message });
+  const requestKey = req.get('Idempotency-Key') || req.body?.requestKey;
+  const result = await payments.createCreditPayment({
+    userId: account.user.user_id,
+    requestKey,
+    phone: req.body?.phone,
+    profile: account.user,
+    email: account.identity.email,
+    returnPath: subject.returnPath,
+    publicOrigin: PUBLIC_BASE_URL || (process.env.NODE_ENV === 'production' ? '' : `${req.protocol}://${req.get('host')}`),
+  });
+  if (!result.ok) {
+    const status = result.reason === 'not_configured' || result.reason === 'public_origin_unavailable' ? 503
+      : result.reason === 'invalid_phone' || result.reason === 'invalid_request' || result.reason === 'invalid_return_path' ? 400 : 409;
+    return res.status(status).json({ ok: false, code: result.reason, message: result.reason === 'not_configured'
+      ? 'PayU checkout is not configured. No payment was created.'
+      : result.reason === 'invalid_phone' ? 'Enter a valid Indian mobile number for PayU checkout.'
+        : result.reason === 'public_origin_unavailable' ? 'Secure payment return URLs are not configured.'
+          : result.reason === 'profile_required' ? 'A verified adult account with a name and email is required for checkout.'
+            : 'Payment could not be started for this request. No charge was made.' });
+  }
+  res.set('Cache-Control', 'no-store');
+  res.json({ ok: true, paymentId: result.paymentId, txnid: result.txnid, status: result.status, checkout: result.checkout });
+});
+
+app.get('/api/payment/status', sameOrigin, async (req, res) => {
+  const account = await adultAccount(req, res);
+  if (!account) return;
+  const status = await payments.getPaymentStatusForUser({ txnid: String(req.query.txnid || ''), userId: account.user.user_id });
+  if (!status) return res.status(404).json({ ok: false, message: 'Unknown payment.' });
+  res.set('Cache-Control', 'no-store');
+  res.json({ ok: true, ...status });
+});
+
+// Browser-requested verification is still a server-side PayU verify_payment call; it can never
+// manufacture a successful status or credit using client-supplied payment fields.
+app.post('/api/payment/verify', sameOrigin, async (req, res) => {
+  const account = await adultAccount(req, res);
+  if (!account) return;
+  const txnid = String(req.body?.txnid || '');
+  const payment = await payments.getPayUPaymentForCallback(txnid);
+  if (!payment || payment.user_id !== account.user.user_id) return res.status(404).json({ ok: false, message: 'Unknown payment.' });
+  if (!payments.paymentProviderConfigured) return res.status(503).json({ ok: false, message: 'PayU verification is not configured.' });
+  try {
+    const verified = await payments.payuProvider.verifyPayment(txnid);
+    if (verified.verified && verified.captured && verified.amountPaise === Number(payment.amount_paise)
+      && verified.productinfo === payment.productinfo && verified.firstname === payment.firstname
+      && verified.email.toLowerCase() === payment.email.toLowerCase() && verified.payuPaymentId) {
+      const result = await payments.markPayUSuccess(verified);
+      if (!result.ok) return res.status(409).json({ ok: false, message: 'The verified payment could not be applied.' });
+    } else if (verified.verified && verified.failed) {
+      await payments.markPayUFailed({ txnid });
+    }
+    const status = await payments.getPaymentStatusForUser({ txnid, userId: account.user.user_id });
+    res.set('Cache-Control', 'no-store');
+    res.json({ ok: true, ...status });
+  } catch {
+    res.status(503).json({ ok: false, message: 'PayU could not confirm this payment yet. No credit was granted.' });
+  }
+});
+
+app.post('/api/try-on', sameOrigin, async (req, res) => {
+  res.set('Cache-Control', 'no-store');
+  const { ageConfirmed, consent, photo } = req.body || {};
+  if (ageConfirmed !== true || consent !== true) return res.status(403).json({ ok: false, message: 'AI Try-On requires age 18+ and explicit photo consent.' });
+  const account = await adultAccount(req, res);
+  if (!account) return;
+  if (tryOnMode !== 'runware-flux' || !tryOnConfigured) {
+    const missingKey = tryOnRequirements.includes('RUNWARE_API_KEY required');
+    const message = missingKey ? 'RUNWARE_API_KEY required. Try-On was not started.' : `${tryOnRequirements[0] || 'Runware FLUX VTO is not ready.'}. No Try-On was started.`;
+    return res.status(503).json({ ok: false, code: missingKey ? 'RUNWARE_API_KEY_REQUIRED' : 'RUNWARE_NOT_READY', mode: tryOnMode, message });
+  }
+  const subject = resolveSubject(req.body || {});
+  if (subject.error) return res.status(subject.error).json({ ok: false, message: subject.message });
+  const safePhoto = validPhoto(photo);
+  if (!safePhoto) return res.status(400).json({ ok: false, message: 'Choose a supported photo that can be safely processed under 2.75 MB.' });
+  const requestKey = req.get('Idempotency-Key');
+  if (!validRequestKey(requestKey)) return res.status(400).json({ ok: false, message: 'A valid generation request key is required.' });
+  const garment = loadGarment(subject.garmentImageUrl);
+  if (!garment) return res.status(503).json({ ok: false, message: 'This exact VIRAAS garment reference is not available to the Try-On service.' });
+  try { await grantSignupCredits(account.user.user_id); }
+  catch { return res.status(503).json({ ok: false, message: 'Persistent Try-On credits are temporarily unavailable. No generation was started.' }); }
+
+  let reservation;
+  try {
+    reservation = await reserveTryOnCredit({ userId: account.user.user_id, requestKey, outfitId: subject.outfitId });
+  } catch {
+    return res.status(503).json({ ok: false, message: 'Persistent Try-On credits are temporarily unavailable. No generation was started.' });
+  }
+  if (!reservation.ok) {
+    if (reservation.reason === 'no_credits') return res.status(402).json({ ok: false, code: 'NO_TRYON_CREDITS', message: NO_TRYON_CREDITS_MESSAGE, balance: 0 });
+    return res.status(409).json({ ok: false, code: 'DUPLICATE_GENERATION_REQUEST', message: 'This generation request has already been used. Please start a new Try-On attempt.', balance: reservation.balance });
+  }
+
+  const requestId = crypto.randomUUID().slice(0, 8);
+  const startedAt = Date.now();
+  let settled = false;
+  try {
+    // Do not log or persist the uploaded image. It exists in this request/provider call only.
+    console.log(`[try-on ${requestId}] reserved outfit=${subject.outfitId} bytes=${Buffer.byteLength(safePhoto)} mode=${tryOnMode}`);
+    const result = await tryOnProvider.generateTryOn({
+      outfitId: subject.outfitId,
+      gender: subject.gender,
+      photo: safePhoto,
+      garmentImageUrl: garment,
+      garmentDescription: subject.garmentDescription,
+    });
+    if (!result?.ok || !validGeneratedImage(result.resultImage)) {
+      const released = await releaseTryOnCredit({ userId: account.user.user_id, generationId: reservation.generationId, failureCode: 'provider_failure' });
+      settled = Boolean(released.ok);
+      console.log(`[try-on ${requestId}] failed elapsed=${Date.now() - startedAt}ms credit_released=${settled}`);
+      return res.status(502).json({
+        ok: false,
+        ...(result?.mode ? { mode: result.mode } : {}),
+        message: result?.message || 'Runware returned no valid generated image. The reserved credit has been returned.',
+        ...(released.ok ? { balance: released.balance } : {}),
+      });
+    }
+    const consumed = await consumeTryOnCredit({ userId: account.user.user_id, generationId: reservation.generationId });
+    if (!consumed.ok) throw new Error('Credit reservation could not be finalized.');
+    settled = true;
+    console.log(`[try-on ${requestId}] success elapsed=${Date.now() - startedAt}ms`);
+    return res.json({ ...result, creditsRemaining: consumed.balance });
+  } catch {
+    if (!settled) {
+      try { await releaseTryOnCredit({ userId: account.user.user_id, generationId: reservation.generationId, failureCode: 'provider_exception' }); }
+      catch { /* leave the already-deducted reservation fail-closed if the database is unavailable */ }
+    }
+    console.log(`[try-on ${requestId}] error elapsed=${Date.now() - startedAt}ms`);
+    return res.status(502).json({ ok: false, message: 'Try-On failed. If the provider did not complete, the reserved credit has been returned.' });
+  }
+});
+
 const dist = path.join(ROOT, 'dist');
 app.use(express.static(dist, { maxAge: '1h', index: false }));
 app.get(/^(?!\/api\/).*/, (_req, res) => res.sendFile(path.join(dist, 'index.html')));

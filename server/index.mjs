@@ -12,6 +12,6 @@ app.listen(port, '0.0.0.0', () =>
   console.log(
     `VIRAAS server on :${port} (try-on mode: ${tryOnMode}, configured: ${tryOnConfigured}` +
       `${tryOnRequirements.length ? `; requires: ${tryOnRequirements.join('; ')}` : ''}; ` +
-      `payment: provider=${payments.paymentConfig.provider} required=${payments.paymentRequired} configured=${payments.paymentConfig.configured})`,
+      `payment: provider=${payments.paymentProviderName} priceInr=${payments.CREDIT_PRICE_INR} configured=${payments.paymentProviderConfigured})`,
   ),
 );

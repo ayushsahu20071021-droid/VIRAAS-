@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Listing from './pages/Listing';
@@ -34,7 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Route path="men-look/:id" element={<MenLookDetail />} />
             <Route path=":gender/:category" element={<Listing mode="gender" />} />
             <Route path="trending" element={<Trending />} />
-            <Route path="accessories" element={<Listing mode="accessories" />} />
+            <Route path="accessories" element={<Navigate to="/women" replace />} />
             <Route path="product/:id" element={<ProductPage />} />
             <Route path="occasions" element={<Occasions />} />
             <Route path="occasions/:world" element={<World />} />

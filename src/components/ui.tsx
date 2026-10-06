@@ -27,7 +27,7 @@ export function ImageFrame({ src, alt, label, ratio = '3 / 4', eager = false, de
   );
 }
 
-export function SaveButton({ kind, id, image, compact }: { kind: 'product' | 'couple'; id: string; image?: string; compact?: boolean }) {
+export function SaveButton({ kind, id, image, compact }: { kind: 'product' | 'couple' | 'look'; id: string; image?: string; compact?: boolean }) {
   const { isSaved, toggle } = useSaved();
   const on = isSaved(kind, id);
   return (

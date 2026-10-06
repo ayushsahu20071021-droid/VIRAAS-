@@ -13,8 +13,8 @@ const testLookId = Object.entries(previews).find(([, preview]) => preview.live &
 const photo = 'data:image/png;base64,' + Buffer.from('x'.repeat(100)).toString('base64');
 const noAge = await fetch(BASE + '/api/try-on', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ womenLookId: testLookId, photo }) });
 checks.push([noAge.status === 403, `try-on without 18+ confirmation rejected (${noAge.status})`]);
-const refused = await fetch(BASE + '/api/try-on', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ womenLookId: testLookId, photo, ageConfirmed: true }) });
+const refused = await fetch(BASE + '/api/try-on', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ womenLookId: testLookId, photo, ageConfirmed: true, consent: true }) });
 const body = await refused.json();
-checks.push([refused.status === 503 && body.ok === false && body.code === 'RUNWARE_API_KEY_REQUIRED' && !body.resultImage, 'try-on refuses without Runware; no preview/simulated image']);
+checks.push([refused.status === 503 && body.ok === false && ['DATABASE_NOT_READY', 'RUNWARE_API_KEY_REQUIRED', 'RUNWARE_NOT_READY'].includes(body.code) && !body.resultImage, 'try-on refuses without durable services/Runware; no preview or simulated image']);
 checks.push([!Object.keys(body).some((key) => /api.?key|token|secret/i.test(key)), 'no credential fields in try-on response']);
 report('render-smoke', checks);

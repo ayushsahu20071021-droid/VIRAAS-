@@ -23,6 +23,7 @@
     "final-audit": "node scripts/final-audit.mjs",
     "ingest-images": "node scripts/ingest-images.mjs",
     "test-payment-tryon": "node scripts/test-payment-tryon.mjs",
+    "test-couple-tryon": "node scripts/test-couple-tryon.mjs",
     "test-runware-adapter": "node scripts/test-runware-adapter.mjs",
     "db:migrate": "node server/db/migrate.mjs",
     "test-connect": "node scripts/test-connect.mjs"

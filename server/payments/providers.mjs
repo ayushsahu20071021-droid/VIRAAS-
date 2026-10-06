@@ -1,137 +1,117 @@
-// VIRAAS payment GATEWAY adapters — provider-agnostic.
-//
-// The rest of the app never imports a specific gateway. It talks to the abstract shape below, so
-// Razorpay OR Cashfree (or any other gateway) can be plugged in later by only editing this file.
-// No gateway is hard-coded into the flow and NO real credentials are required for this task.
-//
-// A gateway adapter implements:
-//   name
-//   configured                      -> boolean: are real credentials present?
-//   async createOrder({ paymentId, amountInr, currency, outfitId })
-//        -> { gatewayOrderId, checkout }   // `checkout` is browser-safe (public key/order id only)
-//   verifyWebhook({ rawBody, headers })
-//        -> { verified, paymentId?, gatewayOrderId?, eventId?, reason? }  // SERVER-SIDE signature check
-//   async verifyPayment({ gatewayOrderId })
-//        -> { verified, reason? }          // optional server-side poll (fallback to webhook)
-//
-// SECURITY: a gateway adapter is the ONLY thing allowed to assert `verified: true`, and only after a
-// cryptographic signature / server-side check. A raw client claim like { paymentSuccess: true } is
-// never accepted anywhere.
-
+// Real PayU India Hosted Checkout adapter. Merchant salt is server-only; the browser receives only
+// PayU's required public merchant key, payment fields, and request hash. No mock provider exists.
 import crypto from 'node:crypto';
 
-const PROVIDER = (process.env.PAYMENT_PROVIDER || 'mock').toLowerCase();
+const KEY = process.env.PAYU_MERCHANT_KEY || '';
+const SALT = process.env.PAYU_MERCHANT_SALT || '';
+const ENVIRONMENT = (process.env.PAYU_ENV || 'production').toLowerCase();
+const TEST_MODE = ENVIRONMENT === 'test';
+const CHECKOUT_URL = TEST_MODE ? 'https://test.payu.in/_payment' : 'https://secure.payu.in/_payment';
+const VERIFY_URL = TEST_MODE
+  ? 'https://test.payu.in/merchant/postservice.php?form=2'
+  : 'https://info.payu.in/merchant/postservice.php?form=2';
 
-// ---------------------------------------------------------------------------
-// MOCK gateway — for local/mock tests ONLY. It performs NO network calls and moves NO real money.
-// It signs its "webhook" with HMAC-SHA256 over a shared secret so we can exercise the exact
-// server-side signature-verification path a real gateway uses. Enabled only when
-// PAYMENT_PROVIDER=mock (the default while no real gateway is chosen).
-// ---------------------------------------------------------------------------
-const MOCK_SECRET = process.env.MOCK_PAYMENT_SECRET || 'mock-webhook-secret-dev-only';
-
-function mockSign(payloadString) {
-  return crypto.createHmac('sha256', MOCK_SECRET).update(payloadString).digest('hex');
+const sha512 = (value) => crypto.createHash('sha512').update(value, 'utf8').digest('hex');
+function amountPaise(value) {
+  if (typeof value !== 'string' && typeof value !== 'number') return null;
+  const text = String(value).trim();
+  if (!/^\d{1,8}(?:\.\d{1,2})?$/.test(text)) return null;
+  const [whole, fraction = ''] = text.split('.');
+  return Number(whole) * 100 + Number((fraction + '00').slice(0, 2));
 }
 
-const mockProvider = {
-  name: 'mock',
-  // The mock is a *test harness*, never a real gateway. It never reports itself as a configured
-  // production payment provider, so real payment collection is never implied.
-  get configured() {
-    return false;
-  },
-  async createOrder({ paymentId, amountInr, currency }) {
-    // No network, no money. Returns a synthetic order id + browser-safe checkout descriptor.
-    const gatewayOrderId = `mock_order_${crypto.randomUUID()}`;
-    return {
-      gatewayOrderId,
-      checkout: { provider: 'mock', gatewayOrderId, amountInr, currency, note: 'MOCK — no real payment is collected.' },
+export function payuRequirements() {
+  const missing = [];
+  if (!KEY) missing.push('PAYU_MERCHANT_KEY');
+  if (!SALT) missing.push('PAYU_MERCHANT_SALT');
+  if (!['production', 'test'].includes(ENVIRONMENT)) missing.push('PAYU_ENV must be production or test');
+  return missing;
+}
+
+export const payuProvider = {
+  name: 'payu',
+  get configured() { return payuRequirements().length === 0; },
+  checkoutUrl: CHECKOUT_URL,
+  /** Create signed hosted-checkout fields from server-verified account/payment data. */
+  createCheckout({ txnid, amount = '20.00', productinfo, firstname, email, phone, surl, furl }) {
+    if (!this.configured) throw new Error('PayU credentials are not configured.');
+    const payload = {
+      key: KEY,
+      txnid,
+      amount,
+      productinfo,
+      firstname,
+      email,
+      phone,
+      surl,
+      furl,
+      udf1: '', udf2: '', udf3: '', udf4: '', udf5: '',
     };
+    const hashInput = [
+      payload.key, payload.txnid, payload.amount, payload.productinfo, payload.firstname, payload.email,
+      payload.udf1, payload.udf2, payload.udf3, payload.udf4, payload.udf5, '', '', '', '', '', SALT,
+    ].join('|');
+    return { endpoint: CHECKOUT_URL, fields: { ...payload, hash: sha512(hashInput) } };
   },
-  // Verify a mock webhook exactly like a real one: recompute the HMAC over the raw body and compare.
-  verifyWebhook({ rawBody, headers }) {
-    const signature = headers?.['x-mock-signature'] || headers?.['X-Mock-Signature'];
-    if (!signature) return { verified: false, reason: 'missing_signature' };
-    const raw = typeof rawBody === 'string' ? rawBody : JSON.stringify(rawBody);
-    const expected = mockSign(raw);
-    // Constant-time comparison to avoid signature timing oracles.
-    const a = Buffer.from(signature);
-    const b = Buffer.from(expected);
-    if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) return { verified: false, reason: 'bad_signature' };
-    let evt;
+  /** Verify the reverse hash PayU posts to both success and failure URLs. */
+  verifyCallbackHash(payload) {
+    if (!this.configured || !payload || typeof payload.hash !== 'string' || payload.key !== KEY) return false;
+    const reverseInput = [
+      SALT, payload.status || '', '', '', '', '', '',
+      payload.udf5 || '', payload.udf4 || '', payload.udf3 || '', payload.udf2 || '', payload.udf1 || '',
+      payload.email || '', payload.firstname || '', payload.productinfo || '', payload.amount || '', payload.txnid || '', payload.key || '',
+    ].join('|');
+    let expected = sha512(reverseInput);
+    // PayU includes additional_charges as the leading field in the reverse hash when present.
+    if (payload.additional_charges) expected = sha512(`${payload.additional_charges}|${reverseInput}`);
+    const received = payload.hash.toLowerCase();
+    const a = Buffer.from(received, 'hex');
+    const b = Buffer.from(expected, 'hex');
+    return a.length === b.length && a.length === 64 && crypto.timingSafeEqual(a, b);
+  },
+  /** Confirm the hosted-checkout callback using PayU's server-to-server verify_payment API. */
+  async verifyPayment(txnid) {
+    if (!this.configured) throw new Error('PayU credentials are not configured.');
+    const command = 'verify_payment';
+    const signature = sha512([KEY, command, txnid, SALT].join('|'));
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 12_000);
     try {
-      evt = typeof rawBody === 'string' ? JSON.parse(rawBody) : rawBody;
-    } catch {
-      return { verified: false, reason: 'bad_payload' };
+      const body = new URLSearchParams({ form: '2', key: KEY, command, var1: txnid, hash: signature });
+      const response = await fetch(VERIFY_URL, {
+        method: 'POST',
+        headers: { Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new Error(`PayU verification returned HTTP ${response.status}.`);
+      const data = await response.json();
+      const detail = data?.transaction_details?.[txnid];
+      if (!detail || Number(data?.status) !== 1) return { verified: false, reason: 'transaction_not_found' };
+      const status = String(detail.status || '').toLowerCase();
+      const unmapped = String(detail.unmappedstatus || '').toLowerCase();
+      const captured = status === 'success' && (!unmapped || unmapped === 'captured');
+      const failed = ['failure', 'failed', 'bounced', 'dropped', 'usercancelled'].includes(status) || ['bounced', 'dropped', 'failed'].includes(unmapped);
+      return {
+        verified: true,
+        captured,
+        failed,
+        txnid: String(detail.txnid || txnid),
+        payuPaymentId: String(detail.mihpayid || ''),
+        amountPaise: amountPaise(detail.amount),
+        productinfo: String(detail.productinfo || ''),
+        firstname: String(detail.firstname || ''),
+        email: String(detail.email || ''),
+        status,
+        unmappedStatus: unmapped,
+      };
+    } catch (error) {
+      if ((error).name === 'AbortError') throw new Error('PayU payment verification timed out.');
+      throw error;
+    } finally {
+      clearTimeout(timer);
     }
-    if (evt?.event !== 'payment.captured' && evt?.status !== 'paid') return { verified: false, reason: 'not_a_success_event' };
-    return { verified: true, paymentId: evt.paymentId, gatewayOrderId: evt.gatewayOrderId, eventId: evt.eventId || null };
-  },
-  async verifyPayment() {
-    // The mock has no server to poll; verification happens via the signed webhook path above.
-    return { verified: false, reason: 'mock_uses_webhook' };
-  },
-  // Test-only helper so the harness can produce a correctly-signed webhook.
-  _signForTest(payloadObject) {
-    const raw = JSON.stringify(payloadObject);
-    return { rawBody: raw, headers: { 'x-mock-signature': mockSign(raw) } };
   },
 };
 
-// ---------------------------------------------------------------------------
-// RAZORPAY adapter — STUB. Wiring points are documented; NO credentials, NO SDK, NO network calls
-// are added by this task (Razorpay onboarding is unresolved). When ready, implement createOrder via
-// the Orders API and verifyWebhook via X-Razorpay-Signature (HMAC-SHA256 of the raw body with the
-// webhook secret). Until keys exist it reports NOT configured and never asserts a verified payment.
-// ---------------------------------------------------------------------------
-const razorpayProvider = {
-  name: 'razorpay',
-  get configured() {
-    // Credentials alone do not make this stub a working gateway. Keep the UI/server fail-closed
-    // until order creation, signature verification and capture polling are implemented and tested.
-    return false;
-  },
-  async createOrder() {
-    throw new Error('Razorpay is not configured yet (set RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET / RAZORPAY_WEBHOOK_SECRET and implement Orders API).');
-  },
-  verifyWebhook() {
-    // Must verify X-Razorpay-Signature = HMAC_SHA256(rawBody, RAZORPAY_WEBHOOK_SECRET) before trusting.
-    return { verified: false, reason: 'razorpay_not_configured' };
-  },
-  async verifyPayment() {
-    return { verified: false, reason: 'razorpay_not_configured' };
-  },
-};
-
-// ---------------------------------------------------------------------------
-// CASHFREE adapter — STUB. Same shape. When ready, implement createOrder via the Orders API and
-// verifyWebhook via the x-webhook-signature header (per Cashfree's documented scheme). Currently
-// under onboarding, so no credentials, SDK, or network calls are added.
-// ---------------------------------------------------------------------------
-const cashfreeProvider = {
-  name: 'cashfree',
-  get configured() {
-    // Credentials alone do not make this stub a working gateway. Keep the UI/server fail-closed
-    // until order creation, signature verification and capture polling are implemented and tested.
-    return false;
-  },
-  async createOrder() {
-    throw new Error('Cashfree is not configured yet (set CASHFREE_APP_ID / CASHFREE_SECRET_KEY and implement Orders API).');
-  },
-  verifyWebhook() {
-    // Must verify Cashfree's x-webhook-signature over the raw body before trusting.
-    return { verified: false, reason: 'cashfree_not_configured' };
-  },
-  async verifyPayment() {
-    return { verified: false, reason: 'cashfree_not_configured' };
-  },
-};
-
-const REGISTRY = { mock: mockProvider, razorpay: razorpayProvider, cashfree: cashfreeProvider };
-
-export const paymentProvider = REGISTRY[PROVIDER] || mockProvider;
-export const paymentProviderName = paymentProvider.name;
-// Whether a REAL (money-moving) gateway is connected. The mock is never "configured".
-export const paymentProviderConfigured = paymentProvider.configured;
-export { mockProvider }; // exported so the test harness can sign a mock webhook
+export { amountPaise };

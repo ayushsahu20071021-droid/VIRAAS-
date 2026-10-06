@@ -15,8 +15,8 @@ const { Pool } = memoryDb.adapters.createPg();
 const pool = new Pool();
 const db = await import('../server/db/pool.mjs');
 db.setPoolForTests(pool);
-const { migrate } = await import('../server/db/migrate.mjs');
-await migrate({ through: '001_core' });
+const { migrateTestDatabase } = await import('./test-db.mjs');
+await migrateTestDatabase({ pool, memoryDb });
 
 const originalFetch = globalThis.fetch;
 globalThis.fetch = async (input, init = {}) => {

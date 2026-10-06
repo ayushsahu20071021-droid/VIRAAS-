@@ -25,11 +25,24 @@ From the repository root, with `DATABASE_URL` configured:
 npm run db:migrate
 ```
 
-This applies the ordered SQL migrations in `server/db/migrations/`. Run it once for the intended database before deploying. Applying the migration command again is safe. Vercel build and API requests do not run database migrations automatically.
+This applies the ordered SQL migrations in `server/db/migrations/`, including `003_tryon_credits_payu.sql` for persistent credit balances, generation reservations, a ledger, and PayU orders. Run it once for the intended database before deploying. Applying the migration command again is safe. Vercel build and API requests do not run database migrations automatically.
 
 The user row stores a database UUID (`user_id`), a unique stable public VIRAAS ID, display name, calculated age, gender, state, city, locality, bio, profile-photo URL, visibility, and created/updated timestamps. The exact date of birth is validated by the server and discarded. Location fields do not include an exact address or GPS coordinates.
 
 Requests, connection status, conversation metadata, messages, read state, blocks, and reports are stored in PostgreSQL. Private chat is authorized by participant identity and a currently accepted connection on every request.
+
+## Try-On credits, Runware and PayU
+
+The same database stores exactly two one-time signup credits per completed adult profile, atomic Try-On reservations and ledger entries, and PayU orders. For persistent free credits and real Try-On, first configure the database/auth/session values above, apply the migrations, and set the Runware variables from `server/.env.example`:
+
+- `TRYON_MODE=runware-flux`, `RUNWARE_API_KEY`, `RUNWARE_FLUX_MODEL=bfl:flux@vto`, and `RUNWARE_ZDR=true` only after Runware has enabled and the owner has verified organization-level Zero-Data Retention.
+
+PayU is optional for launch and does not gate free credits or real Runware generation. Until the existing merchant's production checkout callback is configured, the ₹20 top-up remains unavailable and the app must not create or imply a payment. Before enabling live purchases, set:
+
+- `PAYU_ENV=production`, `PAYU_MERCHANT_KEY`, and `PAYU_MERCHANT_SALT` for the existing merchant's PayU Hosted Checkout.
+- `PUBLIC_BASE_URL=https://viraas-in.vercel.app` if Vercel's production URL environment value is not available. PayU must be able to POST its signed success/failure response to `/api/payment/payu/callback`.
+
+The price is fixed server-side at ₹20 for exactly one additional credit. The app grants that credit only after checking PayU's reverse response hash and reconciling `verify_payment` server-to-server. No browser flag or redirect query parameter is proof of payment. If PostgreSQL, Runware, or verified ZDR is unavailable, free credits or generation fail closed; missing PayU credentials only disable top-ups.
 
 ## Validation without real services
 

@@ -178,6 +178,7 @@ a:hover .frame img { transform: scale(1.03); }
 .tryon-product { display: grid; gap: 10px; align-content: start; } .tryon-product .frame { border-radius: 16px; }
 .gate { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 32px; }
 .gate .row { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+.credit-balance { display: inline-flex; align-items: center; margin: 8px 0; padding: 6px 10px; border-radius: 999px; background: #faf7f2; color: var(--ink); font-size: .88rem; font-weight: 700; }
 .user-photo { max-height: 460px; border-radius: 14px; margin: 12px 0; object-fit: contain; }
 .demo-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .demo-compare figure { margin: 0; } .demo-compare img { border-radius: 12px; max-height: 420px; object-fit: cover; width: 100%; }

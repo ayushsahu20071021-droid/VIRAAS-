@@ -91,28 +91,24 @@ automatically), **production generation ships disabled**; the app stays in the h
 
 ## Data flow (when enabled)
 
-```
-Browser (user photo, edited/cropped if chosen)
-  → base64 over HTTPS → VIRAAS server /api/try-on   (age-gated, validated, size-limited)
-     → garment = VIRAAS reference image, inlined as base64 from disk (VIRAAS's own catalog image)
-     → server/providers/fluxVto.mjs:
-         POST {prompt, person(base64), garment(base64)} to BFL vto-v1 with x-key   (server-side key)
-         poll polling_url until Ready
-         fetch the 10-min signed result URL SERVER-SIDE, re-encode to base64
-  → result returned inline to the browser (browser never sees the provider URL)
+```text
+Browser: select photo → local crop/face-hide controls → canvas re-encodes bounded JPEG and strips source metadata
+  → explicit 18+ and photo consent → HTTPS POST /api/try-on with the edited photo
+     → server authenticates the adult VIRAAS account and validates the reference/photo
+     → PostgreSQL atomically reserves one credit before calling Runware
+     → Runware FLUX VTO under verified organization-level ZDR, outputType=dataURI
+     → PostgreSQL consumes the reservation on success or releases it on provider failure
+  → private result returned inline; the browser only saves/downloads/shares after the user's action
 ```
 
-- User photo: **never** written to disk, **never** hosted at a public URL, **never** logged (logs are
-  metadata only: outfit id, gender, byte size, inline/url, mode).
-- Result: private by default; Save = device localStorage only; Download/Share = explicit user action.
-- No temp files are written, so there is nothing to clean up server-side.
+- The original photo is not uploaded if browser-side processing fails. The server rejects raw or oversize photos, never writes photo bytes to disk, and never logs them. Runware output is inline; no provider result URL is exposed to the browser.
+- PayU receives fixed order/billing fields only, never a Try-On photo. The selected image exists only in request/provider memory and is not stored in PostgreSQL.
+- The result is private by default. Saving a generated result is a separate user action; downloaded/shared copies are controlled by the user.
+- Credits are persistent: two exactly-once free credits for a completed adult account; each successful Try-On costs one credit; a real verified ₹20 PayU purchase adds exactly one credit.
 
-## Couple Try-On limitation (honest)
-Couple looks have no individual per-person reference **image** (only a combined couple image, which we
-must not use, plus a per-person text description). Image-based VTON needs a garment image, so couple
-For-Her / For-Him **AI generation is not possible** until per-person reference images are added. The
-routing and mapping are correct and preserved; in `flux` mode couples return an honest error, and in
-`demo` mode they still show the labelled layout preview.
+## Couple reference resolution
+
+Couple-side Try-On uses only a direct, explicit `herProductIds` or `hisProductIds` relationship from the selected Couple record. The referenced product must be live, enabled for Try-On, have the expected gender, be a garment (not an accessory), and point to a VIRAAS image path outside the combined Couple-image directory. If that exact side cannot be proven, only that side is unavailable. The combined Couple image, text description, random catalog item, inferred mapping, and invented URL are never substituted.
 
 ## Owner setup to go live (recommended: Runware)
 1. Create a Runware account and request **Zero Data Retention** for your organization
@@ -133,81 +129,39 @@ a Zero-Data-Retention BFL endpoint — the standard BFL API trains on inputs by 
 
 ---
 
-## Payment-gated Try-On architecture (customer pays VIRAAS → Runware)
+## Persistent credit and PayU architecture
 
-**Business model.** The customer pays **VIRAAS** for an AI Try-On. Runware is VIRAAS's AI provider
-and its usage is billed to the **VIRAAS Runware account** by actual usage. The customer **never** pays
-Runware directly, and there is **no** customer↔Runware payment anywhere in the flow.
+**Business model.** Customers pay VIRAAS, not Runware. Runware usage is billed to the VIRAAS provider account. The Try-On credit balance and payment order are persisted in PostgreSQL.
 
-### Flow (server-verified, one paid generation)
+### Flow
 
+```text
+Completed adult VIRAAS account → exactly two signup credits (one-time ledger grant)
+  → photo/reference validation → atomic PostgreSQL credit reservation
+  → real Runware FLUX VTO call
+       success → consume the reservation and return the inline image
+       failure → release the reservation; return no generated/demo image
+
+No credits → server creates a fixed ₹20 PayU order and signed Hosted Checkout fields
+  → browser POSTs to PayU (no photo included)
+  → PayU POSTs signed success/failure response to /api/payment/payu/callback
+  → VIRAAS validates PayU's reverse hash AND calls verify_payment server-to-server
+  → one atomic PostgreSQL transaction marks the order captured, adds exactly one credit,
+    and writes an idempotent ledger entry
 ```
-Customer → VIRAAS website → AI Try-On (pick look, 18+ gate, upload/edit photo, consent)
-  → POST /api/payment/create            (server creates PENDING payment + gateway order)
-  → customer completes payment at the gateway's checkout
-  → gateway → POST /api/payment/webhook (server-to-server, SIGNED)
-       server verifies the signature → marks payment VERIFIED → mints ONE authorization (AUTHORIZED)
-  → browser polls GET /api/payment/status?paymentId=…  → receives the one-time authToken
-  → POST /api/try-on { …, authToken }
-       server ATOMICALLY claims the authorization (AUTHORIZED → CONSUMED) BEFORE calling the provider
-       → Runware FLUX VTO → private dataURI result returned inline
-```
 
-### Trust boundary (security)
-- A frontend claim such as `{ paymentSuccess: true }` is **never trusted**. The server ignores any
-  client-supplied "paid" flag. A payment becomes `VERIFIED` **only** via a cryptographically-verified
-  gateway webhook (HMAC signature) or a server-side gateway poll (`/api/payment/verify`).
-- The one-time `authToken` is a high-entropy secret minted server-side and revealed only to the caller
-  holding the unguessable `paymentId` capability, only once the payment is `AUTHORIZED`.
+### Trust boundary and idempotency
 
-### One-time authorization state machine (`server/payments/store.mjs`)
-`PENDING → VERIFIED → AUTHORIZED → CONSUMED`, with `FAILED` (recoverable) on a genuine post-payment
-generation failure.
-- **Duplicate webhook** → `authorize()` is idempotent → **no** second authorization (same token).
-- **Duplicate generation request** → `claimForGeneration()` is an atomic compare-and-swap
-  (`AUTHORIZED → CONSUMED`) → exactly one caller wins → **no** double Runware generation.
-- **Genuine Runware failure after payment** → state becomes `FAILED` + `recoverable` (retains
-  `paymentId`/`generationId`) — the paid authorization is **not lost** and **not faked**, so a refund
-  or credit can be reconciled later. It is **not** auto-reverted to `AUTHORIZED` (that would allow a
-  second billed Runware call against one payment). Refund/credit APIs are intentionally **not**
-  implemented until a real gateway is selected.
+- `PAYU_MERCHANT_SALT`, Runware key, database URL and Supabase credentials are server-side only. PayU receives the required public merchant key and a SHA-512 request hash; it never receives a Try-On photo.
+- A callback, redirect, client flag, or query string never grants credits. VIRAAS checks the reverse PayU hash, exact transaction/order/amount/customer fields, then reconciles the transaction through PayU's `verify_payment` API before applying a credit.
+- `₹20.00` and `INR` are fixed in server code and constrained in PostgreSQL. A verified PayU capture ID, order ID, user/request key, and ledger idempotency key prevent replay or duplicate grants.
+- A generation request requires a persistent authenticated adult account, explicit consent, a valid exact VIRAAS reference, a bounded browser-processed JPEG and a unique `Idempotency-Key`. The database row lock reserves one credit before Runware is called. A client cannot grant, consume, or release credits.
+- If PostgreSQL, Runware ZDR, Runware credentials, or PayU credentials are not ready, the feature fails closed. There is no mock checkout, demo result, or client-trusted payment-success path.
 
-### Provider-agnostic payment gateway (`server/payments/providers.mjs`)
-Neither Razorpay nor Cashfree is hard-coded into the flow. A gateway adapter implements
-`createOrder()`, `verifyWebhook()` (signature check), and `verifyPayment()` (optional poll). Adapters:
-- **`mock`** (default) — test-only, HMAC-signed webhook, **moves no money, makes no network calls**,
-  and never reports itself as a configured production gateway.
-- **`razorpay`** / **`cashfree`** — documented **stubs**; report *not configured* until their
-  credentials are set. Wire the Orders API + signature verification when onboarding completes.
+### Server configuration
 
-### Configuration (server-side only; see `server/.env.example`)
-| Env var | Meaning | Default |
-|---|---|---|
-| `TRYON_PAYMENT_REQUIRED` | Gate real Try-On behind a verified payment | `false` (demo/preview works, no money) |
-| `TRYON_PRICE_INR` | Customer-facing price (config only — **no** margin math) | `20` |
-| `TRYON_CURRENCY` | Currency code | `INR` |
-| `PAYMENT_PROVIDER` | `mock` \| `razorpay` \| `cashfree` | `mock` |
-| `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET` / `RAZORPAY_WEBHOOK_SECRET` | Razorpay creds (later) | unset |
-| `CASHFREE_APP_ID` / `CASHFREE_SECRET_KEY` | Cashfree creds (later) | unset |
+See `server/.env.example` and `docs/connect-production-setup.md`. Required production systems are the existing PostgreSQL/Supabase database plus migrations `001_core`, `002_incomplete_accounts`, and `003_tryon_credits_payu`; Supabase Email/Password Auth and `VIRAAS_SESSION_SECRET`; Runware FLUX VTO with verified organization-level ZDR; and the merchant's PayU Hosted Checkout key/salt. Set `PUBLIC_BASE_URL=https://viraas-in.vercel.app` if Vercel's project production URL is not provided automatically. Migrations are run manually via `npm run db:migrate`; the deploy build never runs migrations.
 
-Pricing is decoupled from the Runware integration: change `TRYON_PRICE_INR` at any time without
-touching the provider adapters.
+### Tests and live status
 
-### Privacy (unchanged, preserved)
-No raw/base64 customer image is logged; the photo is never persisted, never public, never in Git, and
-never sent to the payment provider. No gateway secret or provider key is exposed to the browser
-(verified against `dist/`). The result is private by default; sharing is an explicit user action.
-
-### What is NOT live yet (blockers to real customer-payment → Runware)
-1. A real payment gateway must be selected and its credentials + verified webhook signature wired
-   (Razorpay onboarding is problematic; Cashfree onboarding in progress).
-2. `TRYON_PAYMENT_REQUIRED=true` must be set once a gateway is live.
-3. Runware must be activated separately (`TRYON_MODE=runware-flux`, `RUNWARE_API_KEY`,
-   `RUNWARE_ZDR=true` with org-level ZDR confirmed, funded credits) — still **OFF** by default.
-
-### Tests
-`npm run test-payment-tryon` — mock/local only (no real API calls, no money): store state machine,
-payment-pending blocks Try-On, fake `paymentSuccess` blocked, unverified blocks Runware, one
-authorization per verified payment, single-use consumption, duplicate-webhook idempotency,
-duplicate-generation guard, failure→recoverable state, no-key/ZDR-false → no live call, no image
-bytes in logs, no secrets in frontend. `npm run typecheck` and `npm run build` also pass.
+`npm run test-payment-tryon` uses `pg-mem` plus a test-only PayU HTTP stub to exercise the signed callback, server-side verification, exact price/credit grant, generation reserve/consume/release, and replay protection without contacting PayU or Runware and without moving money. `npm run test-connect`, `npm run test-runware-adapter`, `npm run typecheck`, and `npm run build` cover the other local integration boundaries. A test stub is not production evidence: use genuine merchant/provider credentials and verify the actual production browser before claiming live transactions or generation.

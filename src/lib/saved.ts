@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 
 const KEY = 'viraas:saved:v1';
-export type SavedItem = { kind: 'product' | 'couple' | 'tryon'; id: string; savedAt: number; image?: string };
+export type SavedItem = { kind: 'product' | 'couple' | 'tryon' | 'look'; id: string; savedAt: number; image?: string };
 
 function read(): SavedItem[] {
   try { const v = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; }

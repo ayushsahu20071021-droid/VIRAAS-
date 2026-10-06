@@ -1,115 +1,106 @@
-// VIRAAS payment SERVICE — the provider-agnostic business layer that the HTTP routes call.
-//
-// It composes the abstract gateway adapter (./providers.mjs) with the authorization store
-// (./store.mjs) and exposes the five conceptual operations the architecture requires:
-//
-//   createPayment()    create a PENDING payment + gateway order (no money moves in this task)
-//   verifyPayment()    SERVER-SIDE verification via a gateway poll (fallback to the webhook)
-//   handleWebhook()    verify a signed gateway webhook, then mark VERIFIED + mint ONE authorization
-//   getPaymentStatus() read-only status for the paying client (reveals the token only when AUTHORIZED)
-//   authorizeTryOn()   idempotently mint the single one-time Try-On authorization for a verified payment
-//
-// Plus claimForGeneration()/failGeneration() used by the Try-On route to consume the single
-// authorization atomically and to preserve a recoverable state on genuine failure.
-//
-// BUSINESS MODEL: the customer pays VIRAAS. Runware is VIRAAS's AI provider and is billed to the
-// VIRAAS Runware account by usage. There is NO customer<->Runware payment anywhere in this flow.
-//
-// Pricing is configuration only (TRYON_PRICE_INR). No margin/profit math is computed here.
+// Durable PayU credit-purchase business layer. Credits are created only from a server-verified
+// PayU capture and the payment row, credit balance, and ledger entry commit atomically.
+import crypto from 'node:crypto';
+import { query, withTransaction } from '../db/pool.mjs';
+import { applyVerifiedPayUPurchase, getTryOnCreditBalance } from '../tryOnCredits.mjs';
+import { amountPaise, payuProvider, payuRequirements } from './providers.mjs';
 
-import { paymentProvider, paymentProviderName, paymentProviderConfigured } from './providers.mjs';
-import * as store from './store.mjs';
+export const CREDIT_PRICE_PAISE = 2000;
+export const CREDIT_PRICE_INR = 20;
+export const CREDIT_PRODUCT_INFO = 'VIRAAS Try-On Credit';
+export const paymentProviderName = 'payu';
+export const paymentProviderConfigured = payuProvider.configured;
+export const paymentStorePersistent = true;
+export const paymentRequirements = payuRequirements;
 
-export const PRICE_INR = Number(process.env.TRYON_PRICE_INR || 20);
-export const CURRENCY = (process.env.TRYON_CURRENCY || 'INR').toUpperCase();
-// Whether a real Try-On requires a verified, paid, one-time authorization. This configuration flag
-// cannot enable generation while persistent identity/credits and payment verification are unavailable.
-export const paymentRequired = (process.env.TRYON_PAYMENT_REQUIRED || 'false').toLowerCase() === 'true';
-// The current payment store is process-memory only, so it must never back a production payment flow.
-export const paymentStorePersistent = false;
-// The mock gateway is permitted only in an explicitly opted-in, non-production test process.
-export const mockPaymentTestsAllowed = process.env.NODE_ENV !== 'production' && process.env.ALLOW_MOCK_PAYMENTS === 'true';
-
-export const paymentConfig = {
-  provider: paymentProviderName,
-  configured: paymentProviderConfigured, // true only when a REAL gateway has credentials
-  paymentRequired,
-  priceInr: PRICE_INR,
-  currency: CURRENCY,
-};
-
-// 1) createPayment — begin a payment. Creates a PENDING record and a gateway order. Returns only
-//    browser-safe fields (paymentId capability + checkout descriptor). Never trusts client status.
-export async function createPayment({ outfitId } = {}) {
-  const rec = store.createRecord({ amountInr: PRICE_INR, currency: CURRENCY, outfitId, provider: paymentProviderName });
-  let checkout = null;
-  let gatewayOrderId = null;
-  try {
-    const order = await paymentProvider.createOrder({ paymentId: rec.paymentId, amountInr: PRICE_INR, currency: CURRENCY, outfitId });
-    gatewayOrderId = order.gatewayOrderId;
-    checkout = order.checkout;
-    rec.gatewayOrderId = gatewayOrderId;
-  } catch (e) {
-    return { ok: false, reason: 'gateway_unavailable', message: e?.message || 'Payment gateway is not available.' };
-  }
-  return { ok: true, paymentId: rec.paymentId, amountInr: PRICE_INR, currency: CURRENCY, status: rec.status, provider: paymentProviderName, checkout };
+function paymentRef() {
+  return `VIR${Date.now().toString(36)}${crypto.randomBytes(6).toString('hex')}`.slice(0, 25);
 }
 
-// 2) verifyPayment — optional SERVER-SIDE poll of the gateway. On a verified result, mark VERIFIED
-//    and mint the single authorization (idempotent). This never accepts a client-asserted success.
-export async function verifyPayment({ paymentId }) {
-  const rec = store.getRecord(paymentId);
-  if (!rec) return { ok: false, reason: 'unknown_payment' };
-  const res = await paymentProvider.verifyPayment({ gatewayOrderId: rec.gatewayOrderId });
-  if (!res.verified) return { ok: false, reason: res.reason || 'not_verified', status: rec.status };
-  store.markVerified(paymentId);
-  store.authorize(paymentId);
-  return { ok: true, status: store.getRecord(paymentId).status };
+export function normalizeIndianPhone(value) {
+  const digits = String(value || '').replace(/[^0-9]/g, '').replace(/^91(?=\d{10}$)/, '');
+  return /^[6-9]\d{9}$/.test(digits) ? digits : '';
 }
 
-// 3) handleWebhook — the gateway's server-to-server callback. Verify the signature via the adapter,
-//    then (and only then) mark VERIFIED and authorize. Idempotent: a duplicate/redelivered webhook
-//    does NOT create a second authorization.
-export function handleWebhook({ rawBody, headers }) {
-  const check = paymentProvider.verifyWebhook({ rawBody, headers });
-  if (!check.verified) return { ok: false, reason: check.reason || 'invalid_signature' };
-  const paymentId = check.paymentId;
-  const rec = store.getRecord(paymentId);
-  if (!rec) return { ok: false, reason: 'unknown_payment' };
-  const verified = store.markVerified(paymentId, { eventId: check.eventId });
-  const auth = store.authorize(paymentId);
-  return { ok: true, status: store.getRecord(paymentId).status, duplicate: Boolean(verified.duplicate || auth.duplicate) };
+function validRequestKey(value) {
+  return typeof value === 'string' && /^[A-Za-z0-9][A-Za-z0-9._:-]{7,127}$/.test(value);
 }
 
-// 4) getPaymentStatus — read-only. Reveals the one-time authToken only when AUTHORIZED and only to a
-//    caller presenting the (unguessable) paymentId capability.
-export function getPaymentStatus({ paymentId }) {
-  const v = store.view(paymentId, { includeToken: true });
-  if (!v) return { ok: false, reason: 'unknown_payment' };
-  return { ok: true, ...v };
+function formFor(payment, phone, publicOrigin) {
+  const callback = `${publicOrigin}/api/payment/payu/callback`;
+  return payuProvider.createCheckout({
+    txnid: payment.txnid,
+    amount: '20.00',
+    productinfo: payment.productinfo,
+    firstname: payment.firstname,
+    email: payment.email,
+    phone,
+    surl: callback,
+    furl: callback,
+  });
 }
 
-// 5) authorizeTryOn — idempotently ensure a verified payment has exactly one authorization. Safe to
-//    call multiple times; returns the same authorization. Requires the payment to be VERIFIED first.
-export function authorizeTryOn({ paymentId }) {
-  const rec = store.getRecord(paymentId);
-  if (!rec) return { ok: false, reason: 'unknown_payment' };
-  const res = store.authorize(paymentId);
-  if (!res.ok) return { ok: false, reason: res.reason };
-  return { ok: true, status: res.record.status };
+export async function createCreditPayment({ userId, requestKey, phone, profile, email, returnPath, publicOrigin }) {
+  if (!userId || !validRequestKey(requestKey)) return { ok: false, reason: 'invalid_request' };
+  if (!payuProvider.configured) return { ok: false, reason: 'not_configured', requirements: payuRequirements() };
+  const normalizedPhone = normalizeIndianPhone(phone);
+  if (!normalizedPhone) return { ok: false, reason: 'invalid_phone' };
+  if (!publicOrigin || !/^https:\/\//i.test(publicOrigin) && process.env.NODE_ENV === 'production') return { ok: false, reason: 'public_origin_unavailable' };
+  if (typeof returnPath !== 'string' || !returnPath.startsWith('/try-on?') || returnPath.length > 500) return { ok: false, reason: 'invalid_return_path' };
+  const firstname = String(profile?.display_name || '').trim().slice(0, 60);
+  const normalizedEmail = String(email || '').trim().toLowerCase().slice(0, 254);
+  if (!firstname || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalizedEmail)) return { ok: false, reason: 'profile_required' };
+
+  const payment = await withTransaction(async (client) => {
+    const txnid = paymentRef();
+    const result = await client.query(
+      `INSERT INTO payu_credit_payments
+        (payment_id,user_id,request_key,txnid,amount_paise,currency,productinfo,firstname,email,return_path,status)
+       VALUES ($1,$2,$3,$4,2000,'INR',$5,$6,$7,$8,'pending')
+       ON CONFLICT (user_id,request_key) DO NOTHING RETURNING *`,
+      [crypto.randomUUID(), userId, requestKey, txnid, CREDIT_PRODUCT_INFO, firstname, normalizedEmail, returnPath],
+    );
+    if (result.rowCount) return result.rows[0];
+    const existing = await client.query('SELECT * FROM payu_credit_payments WHERE user_id=$1 AND request_key=$2 FOR UPDATE', [userId, requestKey]);
+    if (!existing.rowCount) throw new Error('Payment idempotency record could not be read.');
+    return existing.rows[0];
+  });
+
+  if (payment.status === 'succeeded') return { ok: false, reason: 'already_paid', balance: await getTryOnCreditBalance(userId) };
+  if (payment.status !== 'pending') return { ok: false, reason: 'payment_closed' };
+  // Do not allow a reused client idempotency key to mutate the identity or amount on an existing order.
+  if (payment.firstname !== firstname || payment.email.toLowerCase() !== normalizedEmail || payment.return_path !== returnPath) return { ok: false, reason: 'idempotency_mismatch' };
+  return { ok: true, paymentId: payment.payment_id, txnid: payment.txnid, status: payment.status, checkout: formFor(payment, normalizedPhone, publicOrigin) };
 }
 
-// --- Generation-time helpers used by the /api/try-on route -----------------------------------
-
-// Atomically claim the single authorization. ok:true for exactly one caller; ok:false thereafter.
-export function claimForGeneration({ authToken }) {
-  return store.claimForGeneration(authToken);
+export async function getPayUPaymentForCallback(txnid) {
+  const result = await query('SELECT payment_id,user_id,txnid,status,amount_paise,productinfo,firstname,email,return_path FROM payu_credit_payments WHERE txnid=$1 LIMIT 1', [txnid]);
+  return result.rows[0] || null;
 }
 
-// Record a genuine post-payment generation failure WITHOUT faking success and WITHOUT losing the
-// paid authorization (state -> FAILED + recoverable, retaining paymentId for refund/credit later).
-export function failGeneration({ generationId, reason }) {
-  return store.markFailed(generationId, reason);
+export async function getPaymentStatusForUser({ txnid, userId }) {
+  const result = await query('SELECT txnid,status,amount_paise,created_at,updated_at FROM payu_credit_payments WHERE txnid=$1 AND user_id=$2 LIMIT 1', [txnid, userId]);
+  if (!result.rowCount) return null;
+  const row = result.rows[0];
+  const balance = row.status === 'succeeded' ? await getTryOnCreditBalance(userId) : undefined;
+  return { txnid: row.txnid, status: row.status, amountInr: Number(row.amount_paise) / 100, ...(balance === undefined ? {} : { balance }) };
 }
 
-export { store };
+export async function markPayUFailed({ txnid, failureCode = 'payment_failed' }) {
+  const safeCode = ['payment_failed', 'payment_cancelled'].includes(failureCode) ? failureCode : 'payment_failed';
+  return withTransaction(async (client) => {
+    const result = await client.query('SELECT status FROM payu_credit_payments WHERE txnid=$1 FOR UPDATE', [txnid]);
+    if (!result.rowCount) return { ok: false, reason: 'unknown_payment' };
+    if (result.rows[0].status === 'failed') return { ok: true, duplicate: true };
+    if (result.rows[0].status === 'succeeded') return { ok: false, reason: 'already_paid' };
+    await client.query("UPDATE payu_credit_payments SET status='failed',failure_code=$2,callback_verified_at=now(),updated_at=now() WHERE txnid=$1 AND status='pending'", [txnid, safeCode]);
+    return { ok: true, duplicate: false };
+  });
+}
+
+export async function markPayUSuccess(details) {
+  if (!details?.txnid || !details?.payuPaymentId || details.amountPaise !== CREDIT_PRICE_PAISE) return { ok: false, reason: 'payment_mismatch' };
+  return applyVerifiedPayUPurchase(details);
+}
+
+export { amountPaise, payuProvider, validRequestKey };

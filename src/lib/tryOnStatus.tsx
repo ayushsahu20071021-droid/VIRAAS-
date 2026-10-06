@@ -23,7 +23,7 @@ const DEFAULT_STATUS: TryOnStatus = {
   priceInr: 20,
   currency: 'INR',
   paymentConfigured: false,
-  paymentProvider: 'mock',
+  paymentProvider: 'payu',
   generationAvailable: false,
   creditLedgerAvailable: false,
   topUpAvailable: false,

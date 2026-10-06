@@ -63,15 +63,13 @@ export function workbookLookForWomenId(id: string): { section: WorkbookSection; 
   const match = /^women-look-(\d{3})$/.exec(id);
   if (!match) return undefined;
   const absolute = Number(match[1]);
-  const section = absolute >= 1 && absolute <= 68
-    ? sectionsById.get('garba-navratri')
-    : absolute >= 69 && absolute <= 110
-      ? sectionsById.get('college-fest')
-      : undefined;
-  if (!section) return undefined;
-  const lookNumber = absolute - section.womenLookOffset;
-  const look = section.looks.find((entry) => entry.number === lookNumber);
-  return look ? { section, look } : undefined;
+  for (const section of WORKBOOK_SECTIONS) {
+    const lookNumber = absolute - section.womenLookOffset;
+    if (lookNumber < section.firstLook || lookNumber > section.lastLook) continue;
+    const look = section.looks.find((entry) => entry.number === lookNumber);
+    if (look) return { section, look };
+  }
+  return undefined;
 }
 
 export function workbookShopUrl(component: WorkbookComponent): string | undefined {

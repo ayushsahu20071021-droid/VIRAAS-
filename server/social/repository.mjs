@@ -1,5 +1,6 @@
 import crypto from 'node:crypto';
 import { query, withTransaction } from '../db/pool.mjs';
+import { grantSignupCreditsInTransaction } from '../tryOnCredits.mjs';
 
 export class SocialError extends Error {
   constructor(message, status = 400) {
@@ -182,6 +183,8 @@ export async function createProfile(authSubject, input) {
       if (current?.profile_complete) return publicProfile(current, 'self', null, true);
       throw new SocialError('Could not finish VIRAAS Connect onboarding. Try again.', 503);
     }
+    try { await grantSignupCreditsInTransaction(client, result.rows[0].user_id); }
+    catch { throw new SocialError('Could not initialize your persistent Try-On credits. Please try again.', 503); }
     return publicProfile(result.rows[0], 'self', null, true);
   });
 }

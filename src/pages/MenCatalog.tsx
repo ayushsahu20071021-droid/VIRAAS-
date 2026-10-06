@@ -1,6 +1,6 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { MEN_LOOKS, menLookById, menOccasionLabel, menOccasions, type MenLook } from '../lib/menCatalog';
-import { ImageFrame } from '../components/ui';
+import { ImageFrame, SaveButton } from '../components/ui';
 import { menLookDetail, DETAIL_FIELDS } from '../lib/lookDetails';
 import menFinalImages from '../data/men-final-images.json';
 import menLookAffiliate from '../data/men-look-affiliate.json';
@@ -53,7 +53,6 @@ export default function MenCatalog() {
 }
 
 export function MenLookDetail() {
-  const tryOnAvailable = useTryOnAvailable();
   const { id } = useParams();
   const look = id ? menLookById.get(id) : undefined;
   if (!look) return <div className="page"><div className="empty"><h3>Men look not found</h3><Link className="btn btn-dark" to="/men">Back to Men</Link></div></div>;
@@ -62,8 +61,12 @@ export function MenLookDetail() {
     <div className="crumbs"><Link to="/">Home</Link> / <Link to="/men">Men</Link> / {look.id}</div>
     <div className="men-detail-grid"><ImageFrame src={src} alt={`Men look ${look.referenceId} — ${look.garmentType}`} label={`Look ${look.id.replace('men-look-', '')}`} detail={`Reference ${look.referenceId}`} ratio="3 / 4" fit="contain" />
       <div><div className="kicker">{menOccasionLabel(look.occasion)} · {look.referenceId}</div><h1>Look {look.id.replace('men-look-', '')}</h1><p className="men-detail-lead">{look.outfitDescription.split('. Picked')[0]}.</p>{(() => { const d = menLookDetail(look.id); return <dl className="specs">{DETAIL_FIELDS.map((f) => <div key={f.key}><dt>{f.label}</dt><dd>{d?.[f.key] ?? 'Not clearly visible in reference'}</dd></div>)}</dl>; })()}
-        {shopUrl(look.id) && <div className="look-shop"><div className="kicker">Optional product link</div><a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop this look</a></div>}
-        <div className="row">{tryOnAvailable && src && <Link className="btn btn-accent" to={`/try-on?menLook=${look.id}`}>Try it on</Link>}<Link className="btn btn-dark" to={`/men/${look.occasion}`}>Browse {menOccasionLabel(look.occasion)}</Link></div>
+        <div className="row" aria-label="Men look actions">
+          <SaveButton kind="look" id={look.id} image={src} />
+          {src && <Link className="btn btn-accent" to={`/try-on?menLook=${look.id}`}>Try On</Link>}
+          {shopUrl(look.id) && <a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>}
+          <Link className="btn btn-dark" to={`/men/${look.occasion}`}>Browse {menOccasionLabel(look.occasion)}</Link>
+        </div>
       </div>
     </div>
   </div>;

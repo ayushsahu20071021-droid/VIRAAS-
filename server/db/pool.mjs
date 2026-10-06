@@ -55,7 +55,9 @@ export async function withTransaction(work) {
 
 const REQUIRED_TABLES = [
   'viraas_users', 'connect_pairs', 'conversations', 'messages', 'blocks', 'reports', 'schema_migrations',
+  'tryon_credit_accounts', 'tryon_generations', 'tryon_credit_ledger', 'payu_credit_payments',
 ];
+const REQUIRED_MIGRATIONS = ['001_core', '002_incomplete_accounts', '003_tryon_credits_payu'];
 
 export async function databaseStatus() {
   if (!isDatabaseConfigured()) {
@@ -65,6 +67,11 @@ export async function databaseStatus() {
     const result = await query("SELECT table_name FROM information_schema.tables WHERE table_schema='public' AND table_type='BASE TABLE'");
     const present = new Set(result.rows.map((row) => row.table_name));
     const missing = REQUIRED_TABLES.filter((name) => !present.has(name));
+    if (present.has('schema_migrations')) {
+      const versions = await query('SELECT version FROM schema_migrations');
+      const applied = new Set(versions.rows.map((row) => row.version));
+      for (const version of REQUIRED_MIGRATIONS) if (!applied.has(version)) missing.push(`migration:${version}`);
+    }
     return { configured: true, ready: missing.length === 0, missing };
   } catch {
     return { configured: true, ready: false, missing: ['database_connection_or_permissions'] };

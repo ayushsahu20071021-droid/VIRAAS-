@@ -1,9 +1,8 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { womenLookById, womenOccasionLabel, womenOccasions, type WomenLook } from '../lib/womenCatalog';
-import { ImageFrame } from '../components/ui';
+import { ImageFrame, SaveButton } from '../components/ui';
 import { womenLookDetail, DETAIL_FIELDS } from '../lib/lookDetails';
 import womenPreviews from '../data/women-previews.client.json';
-import womenLookAffiliate from '../data/women-look-affiliate.json';
 import { workbookLookForWomenId, workbookShopUrl } from '../lib/workbook';
 import { useTryOnAvailable } from '../lib/tryOnStatus';
 
@@ -14,13 +13,6 @@ const previewSrc = (id: string) => {
   return status?.live && status.src ? status.src : undefined;
 };
 export const WOMEN_LIVE_COUNT = Object.values(previewStatus).filter((status) => status?.live).length;
-const lookAff = womenLookAffiliate as Record<string, { affiliateUrl: string; affiliateSource: string } | undefined>;
-const shopUrl = (id: string) => {
-  const affiliate = lookAff[id];
-  return affiliate?.affiliateSource === 'wishlink' && /^https:\/\/(?:www\.)?wishlink\.com\/share\/[^/?#]+(?:[?#].*)?$/.test(affiliate.affiliateUrl)
-    ? affiliate.affiliateUrl
-    : undefined;
-};
 
 function Card({ look, tryOnAvailable }: { look: WomenLook; tryOnAvailable: boolean }) {
   const workbook = workbookLookForWomenId(look.id);
@@ -99,7 +91,6 @@ export default function WomenCatalog() {
 }
 
 export function WomenLookDetail() {
-  const tryOnAvailable = useTryOnAvailable();
   const { id } = useParams();
   const look = id ? womenLookById.get(id) : undefined;
   if (!look) {
@@ -108,6 +99,8 @@ export function WomenLookDetail() {
 
   const workbook = workbookLookForWomenId(look.id);
   const items = workbook?.look.components ?? [];
+  const firstVerifiedShopUrl = items.map((component) => workbookShopUrl(component)).find((url): url is string => Boolean(url));
+  const image = previewSrc(look.id);
 
   return (
     <div className="page men-detail" data-women-look-id={look.id}>
@@ -123,9 +116,10 @@ export function WomenLookDetail() {
               <div key={field.key}><dt>{field.label}</dt><dd>{womenLookDetail(look.id)?.[field.key] ?? 'Not clearly visible in reference'}</dd></div>
             ))}
           </dl>
-          <div className="row">
-            {tryOnAvailable && previewSrc(look.id) && <Link className="btn btn-accent" to={`/try-on?womenLook=${look.id}`}>Try it on</Link>}
-            {shopUrl(look.id) && <a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop this look</a>}
+          <div className="row" aria-label="Women look actions">
+            <SaveButton kind="look" id={look.id} image={image} />
+            {image && <Link className="btn btn-accent" to={`/try-on?womenLook=${look.id}`}>Try On</Link>}
+            {firstVerifiedShopUrl && <a className="btn btn-shop" href={firstVerifiedShopUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>}
             <Link className="btn btn-dark" to={`/women/${look.occasion}`}>Browse {womenOccasionLabel(look.occasion)}</Link>
           </div>
         </div>
