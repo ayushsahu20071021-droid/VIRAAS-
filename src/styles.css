@@ -28,7 +28,10 @@ h3 { font-size: 1.35rem; }
 .nav { display: flex; gap: 22px; flex: 1; font-size: .88rem; font-weight: 500; }
 .nav-item { position: relative; padding: 8px 0; }
 .nav a.active { color: var(--accent); }
-.mega { position: absolute; top: 100%; left: -20px; background: #fff; border: 1px solid var(--line); border-radius: var(--r); box-shadow: 0 20px 50px rgba(20,10,5,.12); padding: 22px 26px; display: grid; grid-template-columns: repeat(3, minmax(170px, 1fr)); gap: 26px; min-width: 620px; }
+.mega { position: absolute; top: 100%; left: -20px; background: #fff; border: 1px solid var(--line); border-radius: var(--r); box-shadow: 0 20px 50px rgba(20,10,5,.12); padding: 22px 26px; display: grid; grid-template-columns: minmax(340px, 1.7fr) minmax(150px, 1fr); gap: 26px; min-width: 560px; }
+/* Categories come from the live look metadata, so they are laid out two-up to keep the panel short. */
+.mega > div:first-child { display: grid; grid-template-columns: repeat(2, minmax(150px, 1fr)); column-gap: 24px; align-content: start; }
+.mega > div:first-child h4 { grid-column: 1 / -1; }
 .mega h4 { font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
 .mega a { display: block; padding: 5px 0; font-size: .9rem; }
 .mega a:hover { color: var(--accent); }
@@ -233,10 +236,14 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
 
 /* Men reference-driven catalog preview */
 .men-catalog-toolbar { display: flex; gap: 18px; align-items: center; justify-content: space-between; margin: 18px 0 12px; flex-wrap: wrap; }
-.men-occasion-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
-.men-occasion-tabs a { border: 1px solid var(--line); background: #fff; border-radius: 99px; padding: 9px 13px; font-size: .78rem; }
-.men-occasion-tabs a.active, .men-occasion-tabs a:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
-.men-occasion-tabs span { opacity: .65; font-size: .7rem; }
+.men-occasion-tabs, .men-category-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.men-occasion-tabs a, .men-category-tabs a { border: 1px solid var(--line); background: #fff; border-radius: 99px; padding: 9px 13px; font-size: .78rem; }
+.men-occasion-tabs a.active, .men-category-tabs a.active, .men-occasion-tabs a:hover, .men-category-tabs a:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+.men-occasion-tabs span, .men-category-tabs span { opacity: .65; font-size: .7rem; }
+/* Garment categories are derived from the look metadata, so the row only ever lists real ones. */
+.men-category-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 0 0 4px; }
+.men-filter-label { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.men-category-tabs a { padding: 7px 12px; font-size: .76rem; }
 .men-catalog-toolbar input { min-width: min(100%, 320px); padding: 11px 15px; border: 1px solid var(--line); border-radius: 99px; background: #fff; }
 .men-catalog-summary { color: var(--muted); font-size: .82rem; margin: 16px 0 20px; }
 .tryon-featured .kicker { margin-bottom: 12px; }

@@ -214,6 +214,126 @@
     },
     {
       "ok": true,
+      "msg": "GET /men?occasion=college-fest → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men?occasion=diwali → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men?occasion=festive-party → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men?occasion=garba → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men?occasion=traditional → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women?occasion=college-fest → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women?occasion=diwali → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women?occasion=festive-party → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women?occasion=garba → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women?occasion=traditional → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/ethnic-jacket-layered-set → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/ethnic-shirt → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/kurta → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/kurta-pajama-set → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /men/waistcoat-layered-set → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/anarkali → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/chaniya-choli → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/crop-top-and-skirt → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/indo-western → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/kurta-set → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/lehenga → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/midi-dress → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/palazzo-suit → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /women/sharara-set → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
       "msg": "GET /women/lehenga → 200",
       "level": "error"
     },
@@ -329,7 +449,7 @@
     },
     {
       "ok": true,
-      "msg": "try-on refuses without Runware; no preview/simulated image",
+      "msg": "try-on refuses without durable services/Runware; no preview or simulated image",
       "level": "error"
     },
     {
