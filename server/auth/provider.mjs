@@ -167,7 +167,7 @@ async function verifyAccessToken(accessToken) {
 export async function getAuthIdentity(req, res, { optional = false } = {}) {
   // Explicit test-only identity injection; unreachable unless the Node process itself is in test mode.
   if (process.env.NODE_ENV === 'test' && req.headers?.['x-test-auth-subject']) {
-    return { subject: String(req.headers['x-test-auth-subject']), email: 'test@example.invalid', testIdentity: true };
+    return { subject: String(req.headers['x-test-auth-subject']), email: 'test@example.invalid', accessToken: 'test-access-token', testIdentity: true };
   }
 
   if (!authProviderStatus().configured) {
@@ -203,7 +203,9 @@ export async function getAuthIdentity(req, res, { optional = false } = {}) {
   // The session cookie is authenticated with AES-GCM and can only be minted from a Supabase-issued
   // session or refresh response. This lets serverless requests validate the identity without a
   // network round-trip on every chat poll; access-token expiry and refresh still remain enforced.
-  return { subject: session.subject, email: session.email || null };
+  // accessToken stays server-side (used by the authenticated profile-photo storage upload); it is
+  // never serialized into any client-facing response.
+  return { subject: session.subject, email: session.email || null, accessToken: session.accessToken };
 }
 
 export async function startSession(req, res, session) {
