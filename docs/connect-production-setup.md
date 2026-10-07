@@ -31,6 +31,12 @@ The user row stores a database UUID (`user_id`), a unique stable public VIRAAS I
 
 Requests, connection status, conversation metadata, messages, read state, blocks, and reports are stored in PostgreSQL. Private chat is authorized by participant identity and a currently accepted connection on every request.
 
+## Connect profile photos
+
+Connect onboarding uploads the optional profile photo through the authenticated server endpoint `POST /api/social/profile/photo`. The browser sends only the image bytes; the server validates the MIME type (JPEG, PNG, WebP — verified against the actual image bytes), enforces a 5 MB maximum, generates a server-controlled storage path, and performs the upload to the existing Supabase Storage project using the signed-in user's own access token. No service-role key or storage secret is ever sent to the browser, and raw image bytes are never stored in PostgreSQL — only the resulting public storage URL is saved on the Connect profile. Profile saves reject arbitrary external image URLs; only URLs produced by this endpoint for the same account are accepted.
+
+Apply `006_connect_profile_photos.sql` with the other migrations (`npm run db:migrate`). It creates the public `connect-profile-photos` bucket (5 MB per-file limit, JPEG/PNG/WebP only) and row-level-security policies that confine every object to its owner's folder. Until the migration is applied, photo upload fails closed with a clear error while the rest of Connect keeps working.
+
 ## Try-On credits, Runware and PayU
 
 The same database stores exactly two one-time signup credits per completed adult profile, atomic Try-On reservations and ledger entries, and PayU orders. For persistent free credits and real Try-On, first configure the database/auth/session values above, apply the migrations, and set the Runware variables from `server/.env.example`:

@@ -1,5 +1,6 @@
 import crypto from 'node:crypto';
 import { query, withTransaction } from '../db/pool.mjs';
+import { isOwnProfilePhotoUrl } from './profilePhoto.mjs';
 
 export class SocialError extends Error {
   constructor(message, status = 400) {
@@ -65,7 +66,7 @@ function ageFromBirthDate(value) {
   return age;
 }
 
-function validateProfileInput(input, { partial = false } = {}) {
+function validateProfileInput(input, { partial = false, authSubject = '' } = {}) {
   const result = {};
   const has = (key) => Object.prototype.hasOwnProperty.call(input || {}, key);
   if (!partial && input?.adultConfirmed !== true) throw new SocialError('Confirm that you are 18 or older to create a VIRAAS Connect profile.');
@@ -84,10 +85,8 @@ function validateProfileInput(input, { partial = false } = {}) {
   if (has('profilePhoto')) {
     const raw = typeof input.profilePhoto === 'string' ? input.profilePhoto.trim() : '';
     if (raw && raw.length > 1000) throw new SocialError('Profile photo URL is too long.');
-    if (raw) {
-      let url;
-      try { url = new URL(raw); } catch { throw new SocialError('Profile photo must be a valid HTTPS URL.'); }
-      if (url.protocol !== 'https:') throw new SocialError('Profile photo must be a valid HTTPS URL.');
+    if (raw && !isOwnProfilePhotoUrl(authSubject, raw)) {
+      throw new SocialError('Profile photo must be uploaded with the VIRAAS photo upload. External photo URLs are not accepted.');
     }
     result.profilePhoto = raw || null;
   }
@@ -162,7 +161,7 @@ export async function getProfileByAuthSubject(authSubject) {
 
 export async function createProfile(authSubject, input) {
   if (!authSubject || typeof authSubject !== 'string' || authSubject.length > 200) throw new SocialError('A verified sign-in session is required.', 401);
-  const fields = validateProfileInput(input || {});
+  const fields = validateProfileInput(input || {}, { authSubject });
   return withTransaction(async (client) => {
     let account = await getUserByAuthSubject(authSubject, client);
     if (account?.profile_complete) return publicProfile(account, 'self', null, true);
@@ -187,7 +186,7 @@ export async function createProfile(authSubject, input) {
 }
 
 export async function updateProfile(authSubject, input) {
-  const fields = validateProfileInput(input || {}, { partial: true });
+  const fields = validateProfileInput(input || {}, { partial: true, authSubject });
   const allowed = ['displayName', 'age', 'gender', 'state', 'city', 'locality', 'bio', 'profilePhoto', 'visibility'];
   const keys = allowed.filter((key) => Object.prototype.hasOwnProperty.call(fields, key));
   if (!keys.length) throw new SocialError('No editable profile fields were provided.');

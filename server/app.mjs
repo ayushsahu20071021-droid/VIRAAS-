@@ -60,6 +60,9 @@ function loadGarment(src) {
 
 const app = express();
 app.disable('x-powered-by');
+// The authenticated Connect profile-photo upload accepts a bounded base64 JSON payload (the
+// endpoint enforces a 5 MB decoded-image cap), so it gets a dedicated body limit first.
+app.use('/api/social/profile/photo', express.json({ limit: '8mb', strict: true }));
 app.use(express.json({ limit: '4mb', strict: true }));
 app.get('/api/health', (_req, res) => res.json({ ok: true }));
 app.use('/api/auth', authRouter);

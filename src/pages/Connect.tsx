@@ -1,10 +1,12 @@
 // VIRAAS Connect hub — create a VIRAAS ID, discover people, manage connection requests & connections.
 // This is the human social layer (NOT an AI assistant). Private chat lives in Chat.tsx and only opens
 // after a mutual connection.
-import { useEffect, useState, type FormEvent } from 'react';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { auth, social, timeAgo, type Profile, type IncomingRequest, type OutgoingRequest, type ConnectionItem, type Relation } from '../lib/social';
 import { useMe, AuthPanel, Avatar, ConnectButton, ProfileCard, ReportDialog, ConnectUnavailable } from '../components/social';
+import { ProfilePhotoUpload } from '../components/ProfilePhotoUpload';
+import { prepareProfilePhoto } from '../lib/profilePhoto';
 
 function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
   const [dateOfBirth, setDateOfBirth] = useState('');
@@ -15,17 +17,38 @@ function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
   const [state, setState] = useState('');
   const [city, setCity] = useState('');
   const [locality, setLocality] = useState('');
-  const [profilePhoto, setProfilePhoto] = useState('');
+  const [photoFile, setPhotoFile] = useState<File | null>(null);
+  const [photoPreview, setPhotoPreview] = useState('');
+  const previewRef = useRef('');
   const [visibility, setVisibility] = useState<'public' | 'connections' | 'hidden'>('public');
   const [err, setErr] = useState('');
   const [busy, setBusy] = useState(false);
   const adultBoundary = new Date();
   adultBoundary.setFullYear(adultBoundary.getFullYear() - 18);
   const maxBirthDate = `${adultBoundary.getFullYear()}-${String(adultBoundary.getMonth() + 1).padStart(2, '0')}-${String(adultBoundary.getDate()).padStart(2, '0')}`;
+  const selectPhoto = (file: File) => {
+    if (previewRef.current) URL.revokeObjectURL(previewRef.current);
+    previewRef.current = URL.createObjectURL(file);
+    setPhotoPreview(previewRef.current);
+    setPhotoFile(file);
+  };
+  const removePhoto = () => {
+    if (previewRef.current) URL.revokeObjectURL(previewRef.current);
+    previewRef.current = '';
+    setPhotoPreview('');
+    setPhotoFile(null);
+  };
+  useEffect(() => () => { if (previewRef.current) URL.revokeObjectURL(previewRef.current); }, []);
   const submit = async (event: FormEvent) => {
     event.preventDefault();
     setErr(''); setBusy(true);
     try {
+      let profilePhoto = '';
+      if (photoFile) {
+        const image = await prepareProfilePhoto(photoFile);
+        const uploaded = await social.uploadProfilePhoto(image);
+        profilePhoto = uploaded.url;
+      }
       const r = await social.createId({ dateOfBirth, adultConfirmed, displayName, gender, bio, state, city, locality, profilePhoto, visibility });
       onDone(r.me);
     } catch (e) { setErr((e as Error).message); } finally { setBusy(false); }
@@ -68,9 +91,7 @@ function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
         <label className="vc-label">State<span className="req">*</span>
           <input required maxLength={80} value={state} onChange={(e) => setState(e.target.value)} placeholder="Madhya Pradesh" autoComplete="address-level1" />
         </label>
-        <label className="vc-label">Profile photo URL (optional)
-          <input type="url" value={profilePhoto} onChange={(e) => setProfilePhoto(e.target.value)} placeholder="https://…" inputMode="url" />
-        </label>
+        <ProfilePhotoUpload preview={photoPreview} disabled={busy} onSelect={selectPhoto} onRemove={removePhoto} />
         <label className="vc-label">Profile visibility
           <select value={visibility} onChange={(e) => setVisibility(e.target.value as 'public' | 'connections' | 'hidden')}>
             <option value="public">Public — discoverable by eligible adults</option>

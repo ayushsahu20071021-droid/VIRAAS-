@@ -4,6 +4,7 @@ import express from 'express';
 import { authProviderStatus, getAuthIdentity } from '../auth/provider.mjs';
 import { databaseStatus } from '../db/pool.mjs';
 import * as repo from './repository.mjs';
+import { uploadProfilePhoto } from './profilePhoto.mjs';
 import { publicRequirements } from '../readiness/messages.mjs';
 
 const router = express.Router();
@@ -69,6 +70,15 @@ router.get('/status', route(async (_req, res) => {
 
 router.get('/report/categories', (_req, res) => res.json({ ok: true, categories: repo.reportCategories() }));
 router.use(requireReady);
+
+// Authenticated profile-photo upload. The server validates MIME type and size, generates a
+// server-controlled storage path, performs the Supabase Storage upload with the signed-in
+// user's own token, and returns only the resulting public URL. No storage secret reaches the browser.
+router.post('/profile/photo', route(async (req, res) => {
+  const identity = await getAuthIdentity(req, res);
+  const photo = await uploadProfilePhoto(identity, req.body || {});
+  res.status(201).json({ ok: true, ...photo });
+}));
 
 // The email/password account exists at the auth provider first. This creates the VIRAAS profile,
 // generates one stable globally unique public ID, and grants the two signup credits exactly once.

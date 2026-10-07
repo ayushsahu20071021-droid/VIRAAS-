@@ -44,9 +44,10 @@ export interface ConversationSummary {
 export interface ChatMessage { id: string; text: string; senderId: 'me' | 'other'; mine: boolean; createdAt: string; read: boolean }
 
 const SOCIAL_API_TIMEOUT_MS = 12_000;
-async function apiFetch(url: string, init?: RequestInit): Promise<Response> {
+const SOCIAL_UPLOAD_TIMEOUT_MS = 30_000;
+async function apiFetch(url: string, init?: RequestInit, timeoutMs = SOCIAL_API_TIMEOUT_MS): Promise<Response> {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), SOCIAL_API_TIMEOUT_MS);
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
   try {
     return await fetch(url, { ...init, signal: controller.signal });
   } finally {
@@ -54,12 +55,12 @@ async function apiFetch(url: string, init?: RequestInit): Promise<Response> {
   }
 }
 
-async function req<T>(path: string, init?: RequestInit): Promise<T> {
+async function req<T>(path: string, init?: RequestInit, timeoutMs?: number): Promise<T> {
   const res = await apiFetch(`/api/social${path}`, {
     credentials: 'include',
     headers: init?.body ? { 'Content-Type': 'application/json', ...(init.headers || {}) } : init?.headers,
     ...init,
-  });
+  }, timeoutMs);
   let data: any = null;
   try { data = await res.json(); } catch { /* non-JSON */ }
   if (!res.ok || (data && data.ok === false)) throw new Error((data && data.message) || `Request failed (${res.status}).`);
@@ -93,6 +94,8 @@ export const social = {
   me: () => req<{ ok: true; authenticated: boolean; email?: string | null; me: Profile | null }>('/me'),
   createId: (p: { dateOfBirth: string; adultConfirmed: boolean; displayName: string; bio?: string; gender: Profile['gender']; state: string; city: string; locality: string; profilePhoto?: string; visibility?: Profile['visibility'] }) =>
     post('/session', p) as Promise<{ ok: true; me: Profile }>,
+  uploadProfilePhoto: (image: string) =>
+    req<{ ok: true; url: string; path: string }>('/profile/photo', { method: 'POST', body: JSON.stringify({ image }) }, SOCIAL_UPLOAD_TIMEOUT_MS),
   updateMe: (p: Partial<Pick<Profile, 'displayName' | 'bio' | 'state' | 'city' | 'locality' | 'profilePhoto' | 'visibility'>>) =>
     req<{ ok: true; me: Profile }>('/me', { method: 'PATCH', body: JSON.stringify(p) }),
 
