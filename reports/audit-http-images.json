@@ -1,0 +1,16 @@
+{
+  "name": "audit-http-images",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "546 image URLs referenced by live/preview catalogs",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "all served 200 image/* and ≥30 KB (0 bad) ",
+      "level": "error"
+    }
+  ]
+}

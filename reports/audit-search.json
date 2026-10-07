@@ -1,0 +1,106 @@
+{
+  "name": "audit-search",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "“garba women” → 228 results (top: Ivory Mirror-Work Blouse Georgette Lehenga)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“garba men” → 310 results (top: Ivory Embroidered Festive Cotton Modern Kurta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“navratri women” → 228 results (top: Ivory Mirror-Work Blouse Georgette Lehenga)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“navratri men” → 310 results (top: Ivory Embroidered Festive Cotton Modern Kurta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“college fest women” → 358 results (top: Ivory Red Bandhani Dupatta Drape Georgette Pre-Draped Saree)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“college fest men” → 252 results (top: Ivory Embroidered Festive Cotton Modern Kurta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“diwali women” → 348 results (top: Ivory Mirror-Work Blouse Georgette Lehenga)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“diwali men” → 324 results (top: Ivory Embroidered Festive Cotton Modern Kurta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“black festive outfit” → 86 results (top: Black Gold Motif With White Blouse Silk Blend Lehenga)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“pink lehenga” → 7 results (top: Rani Pink White Bandeau Blouse With Gold-Bordered Dupatta Silk Lehenga)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“chaniya choli” → 95 results (top: Multicolour Mirror-Work Skirt With Black Crop Blouse Cotton Chaniya Choli)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“pre draped saree” → 34 results (top: Ivory Red Bandhani Dupatta Drape Georgette Pre-Draped Saree)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“sharara” → 42 results (top: Wine Sequin Georgette Sharara Set)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“gharara” → 30 results (top: Black Gold-Embroidered Gharara Set)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“ethnic shirt” → 117 results (top: Navy Blue And White Print With White Stole Cotton Printed Ethnic Shirt)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“modern kurta” → 95 results (top: Ivory Embroidered Festive Cotton Modern Kurta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“men” → 336 results (top: Ivory Embroidered Festive Cotton Modern Kurta)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“women” → 491 results (top: Ivory Mirror-Work Blouse Georgette Lehenga)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“couple garba” → 20 garba couple looks",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "gender token bug absent: “men” never matches women",
+      "level": "error"
+    }
+  ]
+}

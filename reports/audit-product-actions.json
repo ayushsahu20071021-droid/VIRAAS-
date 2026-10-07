@@ -1,0 +1,22 @@
+{
+  "status": "PASS — safe action gates",
+  "counts": {
+    "products": 827,
+    "duplicateProductIds": 0,
+    "validHttpsMerchantUrlStrings": 827,
+    "exactProductListings": 0,
+    "marketplaceSearchUrlsNotEligibleAsProduct": 827,
+    "wishlinkAffiliateUrls": 0,
+    "rejectedAffiliateUrls": 0,
+    "verifiedPrices": 0,
+    "estimatedPricesNotPublished": 827,
+    "eligibleProductTryOn": 0,
+    "tryOnFlagWithoutLiveImage": 721,
+    "spreadsheetFilesFound": 0,
+    "workbookLooksMappedOrReviewed": 110,
+    "workbookComponentShopLinks": 90
+  },
+  "workbookIntegration": "PASS — source workbook mappings are stored separately from the base product catalog; exact links are audited by audit-workbook-mapping.",
+  "problems": [],
+  "note": "This audit does not invent or import base-catalog product URLs. Only explicit HTTPS product listings, exact Wishlink share URLs, verified prices, and live product images qualify for base-catalog actions; source-workbook component links remain separately scoped."
+}

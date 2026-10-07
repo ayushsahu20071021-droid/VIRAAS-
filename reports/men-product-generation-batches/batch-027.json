@@ -1,0 +1,295 @@
+{
+  "batchNumber": 27,
+  "startIndex": 261,
+  "endIndex": 270,
+  "count": 10,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-printed-ethnic-shirt-indigo-paisley",
+      "title": "Indigo Paisley Statement Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Indigo",
+      "secondaryColours": [],
+      "pattern": "Paisley Print",
+      "embroidery": "paisley",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1399,
+      "merchant": "NYKAA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's indigo paisley statement shirt with paisley, indigo, rayon fabric appearance, paisley details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-indigo-paisley.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-indigo-small-motif",
+      "title": "Indigo Small-Motif Printed Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Indigo",
+      "secondaryColours": [],
+      "pattern": "Motif Print",
+      "embroidery": "small motif",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1499,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's indigo small-motif printed shirt with small motif, indigo, rayon fabric appearance, small motif details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-indigo-small-motif.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-maroon-bandhani-print",
+      "title": "Maroon Bandhani-Print Festive Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Bandhani Print",
+      "embroidery": "bandhani print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1899,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon bandhani-print festive shirt with bandhani print, maroon, rayon fabric appearance, bandhani print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-maroon-bandhani-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-maroon-botanical-print",
+      "title": "Maroon Botanical Printed Festive Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Botanical Print",
+      "embroidery": "botanical print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 499,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon botanical printed festive shirt with botanical print, maroon, rayon fabric appearance, botanical print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-maroon-botanical-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-maroon-floral-print",
+      "title": "Maroon Floral Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Floral Print",
+      "embroidery": "floral print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1399,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon floral printed ethnic shirt with floral print, maroon, rayon fabric appearance, floral print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-maroon-floral-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-maroon-paisley-print",
+      "title": "Maroon Paisley Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Paisley Print",
+      "embroidery": "paisley print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 499,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon paisley printed ethnic shirt with paisley print, maroon, rayon fabric appearance, paisley print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-maroon-paisley-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-maroon-small-motif",
+      "title": "Maroon Small-Motif Printed Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Motif Print",
+      "embroidery": "small motif",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1299,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's maroon small-motif printed shirt with small motif, maroon, rayon fabric appearance, small motif details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-maroon-small-motif.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-maroon-traditional-festive-print",
+      "title": "Maroon Traditional Festive Print Cotton Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Printed",
+      "embroidery": "traditional festive print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1099,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's rich red maroon printed ethnic shirt kurta with traditional festive texture, maroon, cotton fabric appearance, traditional festive print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference GARBA-REF-10, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-maroon-traditional-festive-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-maroon-traditional-print-with-white-stole",
+      "title": "Maroon Traditional Print With White Stole Cotton Printed Ethnic Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Maroon",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Printed",
+      "embroidery": "traditional print with white stole",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1299,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's red maroon printed shirt with a dense traditional print, black loose wide trousers and a long white scarf draped around his neck, maroon, cotton fabric appearance, traditional print with white stole details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference LOOK-15, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-maroon-traditional-print-with-white-stole.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-printed-ethnic-shirt-mustard-bandhani-print",
+      "title": "Mustard Bandhani-Print Festive Shirt",
+      "category": "Printed Ethnic Shirt",
+      "subcategory": "Printed Shirt",
+      "colour": "Mustard",
+      "secondaryColours": [
+        "Red"
+      ],
+      "pattern": "Bandhani Print",
+      "embroidery": "bandhani print",
+      "silhouette": "Relaxed Printed Shirt",
+      "occasion": [
+        "garba",
+        "college-fest",
+        "diwali",
+        "festive-party"
+      ],
+      "price": 1699,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's mustard bandhani-print festive shirt with bandhani print, mustard, rayon fabric appearance, bandhani print details, relaxed printed shirt silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-printed-ethnic-shirt-mustard-bandhani-print.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

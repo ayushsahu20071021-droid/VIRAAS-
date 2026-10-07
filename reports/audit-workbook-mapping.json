@@ -1,0 +1,31 @@
+{
+  "status": "PASS — exact source mapping",
+  "source": {
+    "workbook": "Book1.xlsx",
+    "worksheet": "Sheet1",
+    "sectionLabels": [
+      "womes garba/navratri",
+      "College Fest",
+      "Diwali outfits"
+    ]
+  },
+  "counts": {
+    "sections": 3,
+    "lookRows": 113,
+    "mappedShopLinks": 90,
+    "titledComponents": 83,
+    "unnamedLinks": 7,
+    "restrictedRows": 1,
+    "unavailableLooks": 7,
+    "blankLooks": 35,
+    "accessoryLinks": 1,
+    "liveTryOnLooks": 110
+  },
+  "accessories": {
+    "workbookSectionPresent": false,
+    "mappedStandaloneAccessories": 1,
+    "tryOnShownOnAccessoryItem": false,
+    "note": "No standalone Accessories section is present in Sheet1; the exact College Fest waist-chain item is mapped on the site Accessories page and has no item-specific Try-On image."
+  },
+  "problems": []
+}

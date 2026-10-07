@@ -1,0 +1,185 @@
+{
+  "batchNumber": 34,
+  "startIndex": 331,
+  "endIndex": 336,
+  "count": 6,
+  "imageGenerationStarted": false,
+  "products": [
+    {
+      "id": "m-traditional-layer-red-phulkari-embroidery",
+      "title": "Red Phulkari Embroidered Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Red",
+      "secondaryColours": [
+        "Gold",
+        "Green"
+      ],
+      "pattern": "Phulkari",
+      "embroidery": "phulkari embroidery",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1599,
+      "merchant": "MEESHO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's red phulkari embroidered dupatta with phulkari embroidery, red, cotton fabric appearance, phulkari embroidery details, draped layer silhouette, styled according to VIRAAS visual reference REF-C1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-red-phulkari-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-red-solid",
+      "title": "Red Solid Cotton Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Red",
+      "secondaryColours": [
+        "Gold",
+        "Green"
+      ],
+      "pattern": "Solid",
+      "embroidery": "solid",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1799,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's red solid cotton dupatta with solid, red, cotton fabric appearance, solid details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-red-solid.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-wine-gold-paisley",
+      "title": "Wine Gold Paisley Embroidered Shawl",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Embroidered",
+      "embroidery": "gold paisley",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1999,
+      "merchant": "AJIO",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine gold paisley embroidered shawl with gold paisley, wine, cotton fabric appearance, gold paisley details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-wine-gold-paisley.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-wine-paisley-block-print",
+      "title": "Wine Paisley Block-Print Stole",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Block Print",
+      "embroidery": "paisley block print",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 599,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine paisley block-print stole with paisley block print, wine, cotton fabric appearance, paisley block print details, draped layer silhouette, styled according to VIRAAS visual reference REF-C2, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-wine-paisley-block-print.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-wine-phulkari-embroidery",
+      "title": "Wine Phulkari Embroidered Dupatta",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Phulkari",
+      "embroidery": "phulkari embroidery",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1699,
+      "merchant": "MYNTRA",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine phulkari embroidered dupatta with phulkari embroidery, wine, cotton fabric appearance, phulkari embroidery details, draped layer silhouette, styled according to VIRAAS visual reference REF-C1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-wine-phulkari-embroidery.webp",
+      "dimensions": null,
+      "sha256": null
+    },
+    {
+      "id": "m-traditional-layer-wine-sequin-scatter",
+      "title": "Wine Sequin-Scatter Stole",
+      "category": "Traditional Layer",
+      "subcategory": "Stole / Dupatta / Shawl",
+      "colour": "Wine",
+      "secondaryColours": [
+        "Gold"
+      ],
+      "pattern": "Sequinned",
+      "embroidery": "sequin scatter",
+      "silhouette": "Draped Layer",
+      "occasion": [
+        "garba",
+        "diwali",
+        "festive-party",
+        "traditional"
+      ],
+      "price": 1399,
+      "merchant": "SHOPSY",
+      "imagePrompt": "Luxury Indian fashion editorial product presentation, full-body faceless premium fashion mannequin wearing men's wine sequin-scatter stole with sequin scatter, wine, georgette fabric appearance, sequin scatter details, draped layer silhouette, styled according to VIRAAS visual reference REF-M1, realistic textile texture, natural garment drape, detailed stitching, sophisticated proportions, premium Indian fashion aesthetic, elegant contemporary environment, refined editorial lighting, complete outfit visible, original VIRAAS composition, no text, no logos, no watermark. Negative: text, logos, watermark, extra limbs, deformed hands, bad anatomy, floating garments, cropped outfit, cropped footwear, duplicate accessories, random jewellery, plastic appearance, cheap catalogue presentation, AI artifacts.",
+      "imageStatus": "image-pending",
+      "queueStatus": "PENDING",
+      "generationState": "NOT_STARTED",
+      "qaState": "PENDING",
+      "assetPath": "public/images/products/m-traditional-layer-wine-sequin-scatter.webp",
+      "dimensions": null,
+      "sha256": null
+    }
+  ]
+}

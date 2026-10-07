@@ -1,0 +1,651 @@
+{
+  "manifest": "VIRAAS Men Product Image Generation Batches",
+  "totalProducts": 336,
+  "batchSize": 10,
+  "batchCount": 34,
+  "imageGenerationStarted": false,
+  "batches": [
+    {
+      "batchNumber": 1,
+      "file": "batch-001.json",
+      "startIndex": 1,
+      "endIndex": 10,
+      "count": 10,
+      "ids": [
+        "m-embroidered-ethnic-shirt-beige-sequin-dots",
+        "m-embroidered-ethnic-shirt-beige-rust-hem-embroidery",
+        "m-embroidered-ethnic-shirt-beige-heart-motif-embroidery",
+        "m-embroidered-ethnic-shirt-black-sequin-dots",
+        "m-embroidered-ethnic-shirt-black-tonal-floral",
+        "m-embroidered-ethnic-shirt-black-tonal",
+        "m-embroidered-ethnic-shirt-cream-rust-hem-embroidery",
+        "m-embroidered-ethnic-shirt-cream-tonal-floral",
+        "m-embroidered-ethnic-shirt-cream-heart-motif-embroidery",
+        "m-embroidered-ethnic-shirt-cream-tonal"
+      ]
+    },
+    {
+      "batchNumber": 2,
+      "file": "batch-002.json",
+      "startIndex": 11,
+      "endIndex": 20,
+      "count": 10,
+      "ids": [
+        "m-embroidered-ethnic-shirt-ivory-sequin-dots",
+        "m-embroidered-ethnic-shirt-ivory-rust-hem-embroidery",
+        "m-embroidered-ethnic-shirt-ivory-tonal-floral",
+        "m-embroidered-ethnic-shirt-ivory-heart-motif-embroidery",
+        "m-embroidered-ethnic-shirt-ivory-tonal",
+        "m-embroidered-ethnic-shirt-maroon-rust-hem-embroidery",
+        "m-embroidered-ethnic-shirt-maroon-tonal-floral",
+        "m-embroidered-ethnic-shirt-maroon-heart-motif-embroidery",
+        "m-embroidered-ethnic-shirt-maroon-tonal",
+        "m-embroidered-ethnic-shirt-navy-sequin-dots"
+      ]
+    },
+    {
+      "batchNumber": 3,
+      "file": "batch-003.json",
+      "startIndex": 21,
+      "endIndex": 30,
+      "count": 10,
+      "ids": [
+        "m-embroidered-ethnic-shirt-navy-rust-hem-embroidery",
+        "m-embroidered-ethnic-shirt-navy-tonal-floral",
+        "m-embroidered-ethnic-shirt-navy-tonal",
+        "m-embroidered-ethnic-shirt-olive-sequin-dots",
+        "m-embroidered-ethnic-shirt-olive-rust-hem-embroidery",
+        "m-embroidered-ethnic-shirt-olive-heart-motif-embroidery",
+        "m-embroidered-ethnic-shirt-olive-tonal",
+        "m-embroidered-ethnic-shirt-white-sequin-dots",
+        "m-embroidered-ethnic-shirt-white-tonal-floral",
+        "m-embroidered-ethnic-shirt-white-tonal"
+      ]
+    },
+    {
+      "batchNumber": 4,
+      "file": "batch-004.json",
+      "startIndex": 31,
+      "endIndex": 40,
+      "count": 10,
+      "ids": [
+        "m-ethnic-shirt-beige-solid-mandarin",
+        "m-ethnic-shirt-beige-tonal-embroidery",
+        "m-ethnic-shirt-beige-small-embroidered-motifs",
+        "m-ethnic-shirt-black-tonal-embroidery",
+        "m-ethnic-shirt-black-small-embroidered-motifs",
+        "m-ethnic-shirt-black-solid-full-sleeve",
+        "m-ethnic-shirt-cream-tonal-embroidery",
+        "m-ethnic-shirt-cream-small-embroidered-motifs",
+        "m-ethnic-shirt-cream-solid",
+        "m-ethnic-shirt-ivory-solid-mandarin"
+      ]
+    },
+    {
+      "batchNumber": 5,
+      "file": "batch-005.json",
+      "startIndex": 41,
+      "endIndex": 50,
+      "count": 10,
+      "ids": [
+        "m-ethnic-shirt-ivory-tonal-embroidery",
+        "m-ethnic-shirt-ivory-solid",
+        "m-ethnic-shirt-maroon-solid-mandarin",
+        "m-ethnic-shirt-maroon-small-embroidered-motifs",
+        "m-ethnic-shirt-maroon-solid",
+        "m-ethnic-shirt-navy-tonal-embroidery",
+        "m-ethnic-shirt-navy-solid",
+        "m-ethnic-shirt-olive-solid-mandarin",
+        "m-ethnic-shirt-olive-tonal-embroidery",
+        "m-ethnic-shirt-olive-small-embroidered-motifs"
+      ]
+    },
+    {
+      "batchNumber": 6,
+      "file": "batch-006.json",
+      "startIndex": 51,
+      "endIndex": 60,
+      "count": 10,
+      "ids": [
+        "m-ethnic-shirt-olive-solid-full-sleeve",
+        "m-ethnic-shirt-pink-solid-mandarin",
+        "m-ethnic-shirt-pink-solid",
+        "m-ethnic-shirt-pink-solid-pastel",
+        "m-ethnic-shirt-sage-green-tonal-embroidery",
+        "m-ethnic-shirt-sage-green-small-embroidered-motifs",
+        "m-ethnic-shirt-sage-green-solid",
+        "m-ethnic-shirt-teal-solid-mandarin",
+        "m-ethnic-shirt-teal-small-embroidered-motifs",
+        "m-ethnic-shirt-white-solid-mandarin"
+      ]
+    },
+    {
+      "batchNumber": 7,
+      "file": "batch-007.json",
+      "startIndex": 61,
+      "endIndex": 70,
+      "count": 10,
+      "ids": [
+        "m-ethnic-shirt-white-tonal-embroidery",
+        "m-ethnic-shirt-white-solid",
+        "m-festive-jacket-beige-solid-nehru",
+        "m-festive-jacket-beige-subtle-embroidery",
+        "m-festive-jacket-beige-solid",
+        "m-festive-jacket-black-burgundy-floral-pattern",
+        "m-festive-jacket-black-solid-nehru",
+        "m-festive-jacket-black-subtle-embroidery",
+        "m-festive-jacket-black-solid",
+        "m-festive-jacket-cream-brocade"
+      ]
+    },
+    {
+      "batchNumber": 8,
+      "file": "batch-008.json",
+      "startIndex": 71,
+      "endIndex": 80,
+      "count": 10,
+      "ids": [
+        "m-festive-jacket-cream-solid-nehru",
+        "m-festive-jacket-cream-solid",
+        "m-festive-jacket-ivory-brocade",
+        "m-festive-jacket-ivory-solid-nehru",
+        "m-festive-jacket-ivory-subtle-embroidery",
+        "m-festive-jacket-ivory-solid",
+        "m-festive-jacket-maroon-brocade",
+        "m-festive-jacket-maroon-solid-nehru",
+        "m-festive-jacket-maroon-solid",
+        "m-festive-jacket-navy-solid-nehru"
+      ]
+    },
+    {
+      "batchNumber": 9,
+      "file": "batch-009.json",
+      "startIndex": 81,
+      "endIndex": 90,
+      "count": 10,
+      "ids": [
+        "m-festive-jacket-navy-subtle-embroidery",
+        "m-festive-jacket-navy-solid",
+        "m-festive-jacket-olive-brocade",
+        "m-festive-jacket-olive-subtle-embroidery",
+        "m-festive-jacket-red-brocade",
+        "m-festive-jacket-red-subtle-embroidery",
+        "m-festive-jacket-wine-brocade",
+        "m-festive-jacket-wine-subtle-embroidery",
+        "m-festive-kurta-set-beige-solid",
+        "m-festive-kurta-set-beige-embroidered-kurta-with-white-pyjama"
+      ]
+    },
+    {
+      "batchNumber": 10,
+      "file": "batch-010.json",
+      "startIndex": 91,
+      "endIndex": 100,
+      "count": 10,
+      "ids": [
+        "m-festive-kurta-set-beige-3d-floral-embroidery",
+        "m-festive-kurta-set-beige-self-stripe",
+        "m-festive-kurta-set-beige-tonal-embroidery",
+        "m-festive-kurta-set-black-solid",
+        "m-festive-kurta-set-black-embroidered-kurta-with-white-pyjama",
+        "m-festive-kurta-set-black-3d-floral-embroidery",
+        "m-festive-kurta-set-black-self-stripe",
+        "m-festive-kurta-set-cream-solid",
+        "m-festive-kurta-set-cream-embroidered-kurta-with-white-pyjama",
+        "m-festive-kurta-set-cream-3d-floral-embroidery"
+      ]
+    },
+    {
+      "batchNumber": 11,
+      "file": "batch-011.json",
+      "startIndex": 101,
+      "endIndex": 110,
+      "count": 10,
+      "ids": [
+        "m-festive-kurta-set-cream-self-stripe",
+        "m-festive-kurta-set-cream-tonal-embroidery",
+        "m-festive-kurta-set-ivory-solid",
+        "m-festive-kurta-set-ivory-3d-floral-embroidery",
+        "m-festive-kurta-set-ivory-self-stripe",
+        "m-festive-kurta-set-maroon-solid",
+        "m-festive-kurta-set-maroon-embroidered-kurta-with-white-pyjama",
+        "m-festive-kurta-set-maroon-3d-floral-embroidery",
+        "m-festive-kurta-set-maroon-tonal-embroidery",
+        "m-festive-kurta-set-navy-solid"
+      ]
+    },
+    {
+      "batchNumber": 12,
+      "file": "batch-012.json",
+      "startIndex": 111,
+      "endIndex": 120,
+      "count": 10,
+      "ids": [
+        "m-festive-kurta-set-navy-embroidered-kurta-with-white-pyjama",
+        "m-festive-kurta-set-navy-3d-floral-embroidery",
+        "m-festive-kurta-set-navy-tonal-embroidery",
+        "m-festive-kurta-set-olive-embroidered-kurta-with-white-pyjama",
+        "m-festive-kurta-set-olive-self-stripe",
+        "m-festive-kurta-set-olive-tonal-embroidery",
+        "m-festive-kurta-set-purple-solid",
+        "m-festive-kurta-set-purple-embroidered-kurta-with-white-pyjama",
+        "m-festive-kurta-set-purple-self-stripe",
+        "m-festive-kurta-set-purple-tonal-embroidery"
+      ]
+    },
+    {
+      "batchNumber": 13,
+      "file": "batch-013.json",
+      "startIndex": 121,
+      "endIndex": 130,
+      "count": 10,
+      "ids": [
+        "m-festive-kurta-set-white-solid",
+        "m-festive-kurta-set-white-3d-floral-embroidery",
+        "m-festive-kurta-set-white-self-stripe",
+        "m-festive-kurta-set-white-tonal-embroidery",
+        "m-festive-kurta-set-wine-embroidered-kurta-with-white-pyjama",
+        "m-festive-kurta-set-wine-3d-floral-embroidery",
+        "m-festive-kurta-set-wine-self-stripe",
+        "m-festive-kurta-set-wine-tonal-embroidery",
+        "m-festive-separates-beige-straight-pyjama",
+        "m-festive-separates-black-linen-trouser"
+      ]
+    },
+    {
+      "batchNumber": 14,
+      "file": "batch-014.json",
+      "startIndex": 131,
+      "endIndex": 140,
+      "count": 10,
+      "ids": [
+        "m-festive-separates-black-flared-pleated-trouser",
+        "m-festive-separates-cream-flared-pleated-trouser",
+        "m-festive-separates-cream-straight-pyjama",
+        "m-festive-separates-ivory-linen-trouser",
+        "m-festive-separates-ivory-flared-pleated-trouser",
+        "m-festive-separates-navy-linen-trouser",
+        "m-festive-separates-navy-straight-pyjama",
+        "m-festive-separates-olive-flared-pleated-trouser",
+        "m-festive-separates-olive-straight-pyjama",
+        "m-festive-separates-white-linen-trouser"
+      ]
+    },
+    {
+      "batchNumber": 15,
+      "file": "batch-015.json",
+      "startIndex": 141,
+      "endIndex": 150,
+      "count": 10,
+      "ids": [
+        "m-festive-separates-white-long-sleeve-top-with-dark-jeans",
+        "m-festive-separates-white-flared-pleated-trouser",
+        "m-footwear-black-embroidered-mojaris",
+        "m-footwear-black-loafers",
+        "m-footwear-black-kolhapuri-sandals",
+        "m-footwear-brown-loafers",
+        "m-footwear-brown-kolhapuri-sandals",
+        "m-footwear-gold-embroidered-mojaris",
+        "m-footwear-gold-loafers",
+        "m-footwear-gold-kolhapuri-sandals"
+      ]
+    },
+    {
+      "batchNumber": 16,
+      "file": "batch-016.json",
+      "startIndex": 151,
+      "endIndex": 160,
+      "count": 10,
+      "ids": [
+        "m-footwear-ivory-embroidered-mojaris",
+        "m-footwear-ivory-loafers",
+        "m-footwear-tan-embroidered-mojaris",
+        "m-footwear-tan-kolhapuri-sandals",
+        "m-modern-kurta-beige-solid",
+        "m-modern-kurta-beige-mirror-sequin",
+        "m-modern-kurta-beige-sequin-stripe",
+        "m-modern-kurta-beige-embroidered-placket",
+        "m-modern-kurta-black-charcoal-with-white-trousers",
+        "m-modern-kurta-black-chikankari"
+      ]
+    },
+    {
+      "batchNumber": 17,
+      "file": "batch-017.json",
+      "startIndex": 161,
+      "endIndex": 170,
+      "count": 10,
+      "ids": [
+        "m-modern-kurta-black-contemporary-with-white-trousers",
+        "m-modern-kurta-black-embroidered-yoke",
+        "m-modern-kurta-black-gold-motifs",
+        "m-modern-kurta-black-solid",
+        "m-modern-kurta-black-mirror-sequin",
+        "m-modern-kurta-black-mirror-work",
+        "m-modern-kurta-black-textured-with-ivory-trousers",
+        "m-modern-kurta-black-with-ivory-lower",
+        "m-modern-kurta-black-with-ivory-patterned-stole",
+        "m-modern-kurta-brown-block-print"
+      ]
+    },
+    {
+      "batchNumber": 18,
+      "file": "batch-018.json",
+      "startIndex": 171,
+      "endIndex": 180,
+      "count": 10,
+      "ids": [
+        "m-modern-kurta-brown-copper-thread-placket-embroidery",
+        "m-modern-kurta-brown-mirror-work",
+        "m-modern-kurta-cream-chikankari",
+        "m-modern-kurta-cream-embroidered",
+        "m-modern-kurta-cream-embroidered-yoke",
+        "m-modern-kurta-cream-solid",
+        "m-modern-kurta-cream-pintuck",
+        "m-modern-kurta-cream-plain",
+        "m-modern-kurta-cream-embroidered-placket",
+        "m-modern-kurta-cream-textured"
+      ]
+    },
+    {
+      "batchNumber": 19,
+      "file": "batch-019.json",
+      "startIndex": 181,
+      "endIndex": 190,
+      "count": 10,
+      "ids": [
+        "m-modern-kurta-green-block-print",
+        "m-modern-kurta-green-copper-thread-placket-embroidery",
+        "m-modern-kurta-green-solid",
+        "m-modern-kurta-green-mirror-sequin",
+        "m-modern-kurta-green-mirror-work",
+        "m-modern-kurta-green-sequin-stripe",
+        "m-modern-kurta-indigo-block-print",
+        "m-modern-kurta-indigo-copper-thread-placket-embroidery",
+        "m-modern-kurta-indigo-mirror-sequin",
+        "m-modern-kurta-indigo-sequin-stripe"
+      ]
+    },
+    {
+      "batchNumber": 20,
+      "file": "batch-020.json",
+      "startIndex": 191,
+      "endIndex": 200,
+      "count": 10,
+      "ids": [
+        "m-modern-kurta-ivory-all-over-embroidery",
+        "m-modern-kurta-ivory-chikankari",
+        "m-modern-kurta-ivory-embroidered-festive",
+        "m-modern-kurta-ivory-embroidered-yoke",
+        "m-modern-kurta-ivory-solid",
+        "m-modern-kurta-ivory-pintuck",
+        "m-modern-kurta-ivory-with-multicolour-gujarati-stole",
+        "m-modern-kurta-maroon-chikankari",
+        "m-modern-kurta-maroon-solid",
+        "m-modern-kurta-maroon-mirror-sequin"
+      ]
+    },
+    {
+      "batchNumber": 21,
+      "file": "batch-021.json",
+      "startIndex": 201,
+      "endIndex": 210,
+      "count": 10,
+      "ids": [
+        "m-modern-kurta-maroon-pintuck",
+        "m-modern-kurta-maroon-embroidered-placket",
+        "m-modern-kurta-mint-copper-thread-placket-embroidery",
+        "m-modern-kurta-mint-solid",
+        "m-modern-kurta-mint-mirror-sequin",
+        "m-modern-kurta-mint-sequin-stripe",
+        "m-modern-kurta-mint-embroidered-placket",
+        "m-modern-kurta-mustard-solid",
+        "m-modern-kurta-mustard-mirror-sequin",
+        "m-modern-kurta-mustard-sequin-stripe"
+      ]
+    },
+    {
+      "batchNumber": 22,
+      "file": "batch-022.json",
+      "startIndex": 211,
+      "endIndex": 220,
+      "count": 10,
+      "ids": [
+        "m-modern-kurta-mustard-embroidered-placket",
+        "m-modern-kurta-navy-chikankari",
+        "m-modern-kurta-navy-solid",
+        "m-modern-kurta-navy-pintuck",
+        "m-modern-kurta-navy-embroidered-placket",
+        "m-modern-kurta-olive-chikankari",
+        "m-modern-kurta-olive-solid",
+        "m-modern-kurta-olive-pintuck",
+        "m-modern-kurta-olive-embroidered-placket",
+        "m-modern-kurta-peach-block-print"
+      ]
+    },
+    {
+      "batchNumber": 23,
+      "file": "batch-023.json",
+      "startIndex": 221,
+      "endIndex": 230,
+      "count": 10,
+      "ids": [
+        "m-modern-kurta-peach-coral-with-cream-ethnic-layer",
+        "m-modern-kurta-peach-embroidered-yoke",
+        "m-modern-kurta-peach-copper-thread-placket-embroidery",
+        "m-modern-kurta-peach-mirror-work",
+        "m-modern-kurta-powder-blue-embroidered",
+        "m-modern-kurta-powder-blue-embroidered-yoke",
+        "m-modern-kurta-powder-blue-light-blue-patterned",
+        "m-modern-kurta-powder-blue-mirror-work",
+        "m-modern-kurta-purple-block-print",
+        "m-modern-kurta-purple-embroidered-with-white-stole"
+      ]
+    },
+    {
+      "batchNumber": 24,
+      "file": "batch-024.json",
+      "startIndex": 231,
+      "endIndex": 240,
+      "count": 10,
+      "ids": [
+        "m-modern-kurta-purple-copper-thread-placket-embroidery",
+        "m-modern-kurta-purple-light-lavender-with-white-stole",
+        "m-modern-kurta-purple-solid",
+        "m-modern-kurta-purple-mirror-work",
+        "m-modern-kurta-purple-with-white-stole",
+        "m-modern-kurta-white-chikankari",
+        "m-modern-kurta-white-embroidered",
+        "m-modern-kurta-white-embroidered-with-charcoal-lower",
+        "m-modern-kurta-white-embroidered-yoke",
+        "m-modern-kurta-white-light-embroidery"
+      ]
+    },
+    {
+      "batchNumber": 25,
+      "file": "batch-025.json",
+      "startIndex": 241,
+      "endIndex": 250,
+      "count": 10,
+      "ids": [
+        "m-modern-kurta-white-solid",
+        "m-modern-kurta-white-minimal-embroidery",
+        "m-modern-kurta-white-pintuck",
+        "m-modern-kurta-white-with-hot-pink-embroidered-stole",
+        "m-modern-kurta-wine-block-print",
+        "m-modern-kurta-wine-copper-thread-placket-embroidery",
+        "m-modern-kurta-wine-mirror-sequin",
+        "m-modern-kurta-wine-sequin-stripe",
+        "m-modern-kurta-wine-with-cream-stole",
+        "m-printed-ethnic-shirt-black-bandhani-print"
+      ]
+    },
+    {
+      "batchNumber": 26,
+      "file": "batch-026.json",
+      "startIndex": 251,
+      "endIndex": 260,
+      "count": 10,
+      "ids": [
+        "m-printed-ethnic-shirt-black-block-print",
+        "m-printed-ethnic-shirt-black-botanical-print",
+        "m-printed-ethnic-shirt-black-charcoal-print-with-ivory-stole",
+        "m-printed-ethnic-shirt-black-floral-print",
+        "m-printed-ethnic-shirt-black-indigo-block-print",
+        "m-printed-ethnic-shirt-black-paisley-print",
+        "m-printed-ethnic-shirt-black-paisley",
+        "m-printed-ethnic-shirt-black-printed-embroidery-detail",
+        "m-printed-ethnic-shirt-indigo-block-print",
+        "m-printed-ethnic-shirt-indigo-paisley-print"
+      ]
+    },
+    {
+      "batchNumber": 27,
+      "file": "batch-027.json",
+      "startIndex": 261,
+      "endIndex": 270,
+      "count": 10,
+      "ids": [
+        "m-printed-ethnic-shirt-indigo-paisley",
+        "m-printed-ethnic-shirt-indigo-small-motif",
+        "m-printed-ethnic-shirt-maroon-bandhani-print",
+        "m-printed-ethnic-shirt-maroon-botanical-print",
+        "m-printed-ethnic-shirt-maroon-floral-print",
+        "m-printed-ethnic-shirt-maroon-paisley-print",
+        "m-printed-ethnic-shirt-maroon-small-motif",
+        "m-printed-ethnic-shirt-maroon-traditional-festive-print",
+        "m-printed-ethnic-shirt-maroon-traditional-print-with-white-stole",
+        "m-printed-ethnic-shirt-mustard-bandhani-print"
+      ]
+    },
+    {
+      "batchNumber": 28,
+      "file": "batch-028.json",
+      "startIndex": 271,
+      "endIndex": 280,
+      "count": 10,
+      "ids": [
+        "m-printed-ethnic-shirt-mustard-block-print",
+        "m-printed-ethnic-shirt-mustard-botanical-print",
+        "m-printed-ethnic-shirt-mustard-paisley-print",
+        "m-printed-ethnic-shirt-mustard-small-motif",
+        "m-printed-ethnic-shirt-navy-block-print",
+        "m-printed-ethnic-shirt-navy-blue-and-white-print-with-white-stole",
+        "m-printed-ethnic-shirt-navy-floral-print",
+        "m-printed-ethnic-shirt-navy-indigo-block-print",
+        "m-printed-ethnic-shirt-navy-paisley",
+        "m-printed-ethnic-shirt-navy-printed-with-stole"
+      ]
+    },
+    {
+      "batchNumber": 29,
+      "file": "batch-029.json",
+      "startIndex": 281,
+      "endIndex": 290,
+      "count": 10,
+      "ids": [
+        "m-printed-ethnic-shirt-navy-small-motif",
+        "m-printed-ethnic-shirt-olive-bandhani-print",
+        "m-printed-ethnic-shirt-olive-block-print",
+        "m-printed-ethnic-shirt-olive-floral-print",
+        "m-printed-ethnic-shirt-olive-indigo-block-print",
+        "m-printed-ethnic-shirt-olive-paisley",
+        "m-printed-ethnic-shirt-rust-block-print",
+        "m-printed-ethnic-shirt-rust-indigo-block-print",
+        "m-printed-ethnic-shirt-rust-paisley",
+        "m-printed-ethnic-shirt-rust-small-motif"
+      ]
+    },
+    {
+      "batchNumber": 30,
+      "file": "batch-030.json",
+      "startIndex": 291,
+      "endIndex": 300,
+      "count": 10,
+      "ids": [
+        "m-printed-ethnic-shirt-teal-bandhani-print",
+        "m-printed-ethnic-shirt-teal-botanical-print",
+        "m-printed-ethnic-shirt-teal-floral-print",
+        "m-printed-ethnic-shirt-teal-indigo-block-print",
+        "m-printed-ethnic-shirt-teal-paisley",
+        "m-printed-ethnic-shirt-white-bandhani-print",
+        "m-printed-ethnic-shirt-white-botanical-print",
+        "m-printed-ethnic-shirt-white-floral-print",
+        "m-printed-ethnic-shirt-white-indigo-block-print",
+        "m-printed-ethnic-shirt-white-paisley-print"
+      ]
+    },
+    {
+      "batchNumber": 31,
+      "file": "batch-031.json",
+      "startIndex": 301,
+      "endIndex": 310,
+      "count": 10,
+      "ids": [
+        "m-printed-ethnic-shirt-wine-block-print",
+        "m-printed-ethnic-shirt-wine-botanical-print",
+        "m-printed-ethnic-shirt-wine-paisley-print",
+        "m-printed-ethnic-shirt-wine-small-motif",
+        "m-traditional-layer-black-paisley-block-print",
+        "m-traditional-layer-black-phulkari-embroidery",
+        "m-traditional-layer-black-sequin-scatter",
+        "m-traditional-layer-black-solid",
+        "m-traditional-layer-ivory-bandhani-print",
+        "m-traditional-layer-ivory-phulkari-embroidery"
+      ]
+    },
+    {
+      "batchNumber": 32,
+      "file": "batch-032.json",
+      "startIndex": 311,
+      "endIndex": 320,
+      "count": 10,
+      "ids": [
+        "m-traditional-layer-ivory-sequin-scatter",
+        "m-traditional-layer-ivory-solid",
+        "m-traditional-layer-maroon-bandhani-print",
+        "m-traditional-layer-maroon-gold-paisley",
+        "m-traditional-layer-maroon-paisley-block-print",
+        "m-traditional-layer-mustard-bandhani-print",
+        "m-traditional-layer-mustard-gold-paisley",
+        "m-traditional-layer-mustard-paisley-block-print",
+        "m-traditional-layer-mustard-solid",
+        "m-traditional-layer-navy-bandhani-print"
+      ]
+    },
+    {
+      "batchNumber": 33,
+      "file": "batch-033.json",
+      "startIndex": 321,
+      "endIndex": 330,
+      "count": 10,
+      "ids": [
+        "m-traditional-layer-navy-phulkari-embroidery",
+        "m-traditional-layer-navy-sequin-scatter",
+        "m-traditional-layer-navy-solid",
+        "m-traditional-layer-pink-gold-paisley",
+        "m-traditional-layer-pink-paisley-block-print",
+        "m-traditional-layer-pink-phulkari-embroidery",
+        "m-traditional-layer-pink-sequin-scatter",
+        "m-traditional-layer-red-bandhani-print",
+        "m-traditional-layer-red-gold-paisley",
+        "m-traditional-layer-red-paisley-block-print"
+      ]
+    },
+    {
+      "batchNumber": 34,
+      "file": "batch-034.json",
+      "startIndex": 331,
+      "endIndex": 336,
+      "count": 6,
+      "ids": [
+        "m-traditional-layer-red-phulkari-embroidery",
+        "m-traditional-layer-red-solid",
+        "m-traditional-layer-wine-gold-paisley",
+        "m-traditional-layer-wine-paisley-block-print",
+        "m-traditional-layer-wine-phulkari-embroidery",
+        "m-traditional-layer-wine-sequin-scatter"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "viraas",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build-data": "node scripts/build-catalog.mjs",
+    "build-women-previews": "node scripts/build-women-previews.mjs",
+    "build": "npm run typecheck && vite build",
+    "start": "node server/index.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "check-catalog": "node scripts/check-catalog.mjs",
+    "validate-images": "node scripts/validate-images.mjs",
+    "audit-affiliate": "node scripts/audit-affiliate.mjs",
+    "audit-product-actions": "node scripts/audit-product-actions.mjs",
+    "audit-workbook-mapping": "node scripts/audit-workbook-mapping.mjs",
+    "audit-duplicates": "node scripts/audit-duplicates.mjs",
+    "audit-http-images": "node scripts/audit-http-images.mjs",
+    "render-smoke": "node scripts/render-smoke.mjs",
+    "audit-rendered-browser": "node scripts/audit-rendered-browser.mjs",
+    "audit-search": "node scripts/audit-search.mjs",
+    "final-audit": "node scripts/final-audit.mjs",
+    "ingest-images": "node scripts/ingest-images.mjs",
+    "test-payment-tryon": "node scripts/test-payment-tryon.mjs",
+    "test-connect": "node scripts/test-connect.mjs",
+    "test-connect-ui": "tsx scripts/test-connect-ui.mjs",
+    "test-couple-tryon": "node scripts/test-couple-tryon.mjs",
+    "test-runware-adapter": "node scripts/test-runware-adapter.mjs",
+    "db:migrate": "node server/db/migrate.mjs"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@sparticuz/chromium": "^153.0.0",
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "playwright": "^1.63.0",
+    "sharp": "^0.35.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "pg-mem": "^3.0.14"
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "workbook": "Book1.xlsx",
+  "worksheet": "Sheet1",
+  "sourceSectionLabels": ["womes garba/navratri", "College Fest", "Diwali outfits"],
+  "accessoriesSectionPresent": false,
+  "sections": [
+    {
+      "id": "garba-navratri",
+      "label": "womes garba/navratri",
+      "firstLook": 1,
+      "lastLook": 68,
+      "womenLookOffset": 0,
+      "looks": [
+        { "number": 1, "status": "mapped", "components": [
+          { "sourceTitle": "1. TIVANTE TIVANTE Casual Sleeveless Solid Women Black Top", "shopUrl": "https://www.wishlink.com/share/644x25" },
+          { "sourceTitle": "2. Navratri & Festival Special Black 12 Kali Flared Lehenga Skirt | South Indian Traditional Half Saree Skirt", "shopUrl": "https://www.wishlink.com/share/nxuxu4" },
+          { "sourceTitle": "3. Trendy jaipuri cotton mirror work dupatta Rajasthani Kutch work embroidery dupatta", "shopUrl": "https://www.wishlink.com/share/6jfykw" }
+        ]},
+        { "number": 2, "status": "mapped", "components": [
+          { "sourceTitle": "1. JAGRATI Round Neck Women Blouse", "shopUrl": "https://www.wishlink.com/share/6rdjzn" },
+          { "sourceTitle": "2. Navratri Special Lehnga For Girls", "shopUrl": "https://www.wishlink.com/share/nkb2ra" }
+        ]},
+        { "number": 3, "status": "mapped", "components": [
+          { "sourceTitle": "1. Visorix Visorix Party Sleeveless Embroidered Women White Top", "shopUrl": "https://www.wishlink.com/share/nxeb23" },
+          { "sourceTitle": "2. Digital Printed Attractive Party Wear & Sider Wear Lehenga choli", "shopUrl": "https://www.wishlink.com/share/6jx34c" }
+        ]},
+        { "number": 4, "status": "mapped", "components": [
+          { "sourceTitle": "1. AJRAKH FABRICS", "shopUrl": "https://www.wishlink.com/share/nxga7s" },
+          { "sourceTitle": "2. FANCY NEW DESIGNER LEHENGA CHOLI FOR WOMEN FREE SIZE", "shopUrl": "https://www.wishlink.com/share/6j58h3" },
+          { "sourceTitle": "3. PATOLA DUPATTA", "shopUrl": "https://www.wishlink.com/share/nfq5jt" }
+        ]},
+        { "number": 5, "status": "mapped", "components": [
+          { "sourceTitle": "1. BATHANI TEXTILE BATHANI TEXTILE Embroidered Semi Stitched Lehenga & Crop Top (White)", "shopUrl": "https://www.wishlink.com/share/nt2scn" }
+        ]},
+        { "number": 6, "status": "mapped", "components": [
+          { "sourceTitle": "1. Cation Slim Fit Round-Neck Crop Top (Black)", "shopUrl": "https://www.wishlink.com/share/nfxt6b" },
+          { "sourceTitle": "2. Jyeshta Women Crepe Abstract Maxi Flared Skirt", "shopUrl": "https://www.wishlink.com/share/6r3pj7" }
+        ]},
+        { "number": 7, "status": "mapped", "components": [
+          { "sourceTitle": "1. TANUKA Women Floral Print Flared Lehenga Choli Set (Black)", "shopUrl": "https://www.wishlink.com/share/6r69xb" }
+        ]},
+        { "number": 8, "status": "mapped", "components": [
+          { "sourceTitle": null, "shopUrl": "https://ethenika.com/products/muslin-digital-print-with-mirror-work-navratri-special-designer-chaniya-choli" }
+        ]},
+        { "number": 9, "status": "mapped", "components": [
+          { "sourceTitle": null, "shopUrl": "https://bhumikacreation.com/products/navratri-special-outfit-1" }
+        ]},
+        { "number": 10, "status": "mapped", "components": [
+          { "sourceTitle": null, "shopUrl": "https://samyatisaree.com/product/designer-lehenga-choli-2/" }
+        ]},
+        { "number": 11, "status": "restricted", "components": [
+          { "sourceTitle": null, "shopUrl": null, "reason": "Source link withheld under the site's existing merchant-exclusion requirement." }
+        ]},
+        { "number": 12, "status": "unavailable", "components": [] },
+        { "number": 13, "status": "mapped", "components": [
+          { "sourceTitle": "1. Traquila Traquila Casual Cap Sleeves Solid Women Black Top", "shopUrl": "https://www.wishlink.com/share/nu4akd" },
+          { "sourceTitle": "2. OURA ENTERPRISE Flared, Loose Fit Women Maroon Trousers", "shopUrl": "https://www.wishlink.com/share/62883f" },
+          { "sourceTitle": "3. archana fashion club archana fashion club Pure Cotton Embroidered Multicolor Women Dupatta", "shopUrl": "https://www.wishlink.com/share/nqe5yx" }
+        ]},
+        { "number": 14, "status": "mapped", "components": [
+          { "sourceTitle": "1. SOHOT Women Slim Fit Blouse Crop Top (Black)", "shopUrl": "https://www.wishlink.com/share/64wdgc" },
+          { "sourceTitle": "2. Omstar Fashion Omstar Fashion Women Self Design Flared Black Skirt", "shopUrl": "https://www.wishlink.com/share/nujaju" },
+          { "sourceTitle": "3. KANHA TEXTILES KANHA TEXTILES Art Silk Embroidered Multicolor Women Dupatta", "shopUrl": "https://www.wishlink.com/share/6248cj" }
+        ]},
+        { "number": 15, "status": "unavailable", "components": [] },
+        { "number": 16, "status": "mapped", "components": [
+          { "sourceTitle": null, "shopUrl": "https://www.wishlink.com/share/nedrcm" }
+        ]},
+        { "number": 17, "status": "mapped", "components": [
+          { "sourceTitle": "1. Sandykart Sandykart Embroidered Semi Stitched Lehenga Choli (White)", "shopUrl": "https://www.wishlink.com/share/nu9yyx" },
+          { "sourceTitle": "2. Chinon duppata with heavy fancylace II party duppatta || fancy duppata || womens duppata II lehriya print duppata II wedding duppata by VAMIKA", "shopUrl": "https://www.wishlink.com/share/62zqw6" }
+        ]},
+        { "number": 18, "status": "mapped", "components": [
+          { "sourceTitle": "1. Meghayu Meghayu Embroidered, Embellished Semi Stitched Lehenga & Crop Top (White)", "shopUrl": "https://www.wishlink.com/share/687h82" },
+          { "sourceTitle": "2. Sai Fashions Sai Fashions Cotton Blend Embroidered Red, Multicolor Women Dupatta", "shopUrl": "https://www.wishlink.com/share/nt2r3c" }
+        ]},
+        { "number": 19, "status": "mapped", "components": [
+          { "sourceTitle": "1. ENIFASHION ENIFASHION Casual Sleeveless Solid Women Black Top", "shopUrl": "https://www.wishlink.com/share/6camrf" },
+          { "sourceTitle": "2. SHIVANSHI CREATION (SC)", "shopUrl": "https://www.wishlink.com/share/6nc4ax" },
+          { "sourceTitle": "3. KALINI Ethnic Motifs Woven Design Dupatta with Zari", "shopUrl": "https://www.wishlink.com/share/6brtt6" }
+        ]},
+        { "number": 20, "status": "unavailable", "components": [] },
+        { "number": 21, "status": "mapped", "components": [
+          { "sourceTitle": "1. InWeave Floral Print Halter Neck Tropical Crop Top", "shopUrl": "https://www.wishlink.com/share/62nudf" },
+          { "sourceTitle": "2. StyleCast x Revolte A-Line Maxi Skirts", "shopUrl": "https://www.wishlink.com/share/nq56cx" }
+        ]},
+        { "number": 22, "status": "mapped", "components": [
+          { "sourceTitle": null, "shopUrl": "https://villagerstrend.com/product/designer-lehenga-navratri-chanya-choli-collaction" }
+        ]},
+        { "number": 23, "status": "unavailable", "components": [] },
+        { "number": 24, "status": "mapped", "components": [
+          { "sourceTitle": null, "shopUrl": "https://thebeautyqueen.in/products/black-georgette-navratri-kutchi-embroidery-mirror-work-lehenga" }
+        ]},
+        { "number": 25, "status": "mapped", "components": [
+          { "sourceTitle": "Gujarati Chaniya Choli Navratri Special Women Black & Maroon Printed Lehenga Choli Set Stylish Designer Ethnic Wear for Garba & Dandiya Semi-Stitched Pair", "shopUrl": "https://www.wishlink.com/share/nxy7ey" }
+        ]},
+        { "number": 26, "status": "mapped", "components": [
+          { "sourceTitle": "AURELIA Women Lehenga Choli Set with Dupatta (Red)", "shopUrl": "https://www.wishlink.com/share/6r23w2" }
+        ]},
+        { "number": 27, "status": "mapped", "components": [
+          { "sourceTitle": "3. Purvaja Printed Flared Lehenga Choli Set & Dupatta (Multi)", "shopUrl": "https://www.wishlink.com/share/nutf2x" }
+        ]},
+        { "number": 28, "status": "mapped", "components": [
+          { "sourceTitle": "4. Shubh-Viyan Textiles Shubh-Viyan Textiles Solid, Bandhani, Leheriya, Digital Print Semi Stitched Lehenga Choli (Multicolor, Pink, Light Blue)", "shopUrl": "https://www.wishlink.com/share/62k546" }
+        ]},
+        { "number": 29, "status": "mapped", "components": [
+          { "sourceTitle": "5. KALINI Printed Sequinned Ready to Wear Lehenga & Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/6mbasf" }
+        ]},
+        { "number": 30, "status": "mapped", "components": [
+          { "sourceTitle": "6. Women Multicolor Bandhani Print Traditional Ghagra Choli with Dupatta | Mirror Work Navratri Lehenga Choli Set for Women | Garba, Dandiya, Wedding, Festive & Party Wear", "shopUrl": "https://www.wishlink.com/share/68g8a4" }
+        ]},
+        { "number": 31, "status": "mapped", "components": [
+          { "sourceTitle": "7. TANUKA Women Embellished Flared Lehenga Choli Set (Maroon)", "shopUrl": "https://www.wishlink.com/share/nxsemt" }
+        ]},
+        { "number": 32, "status": "mapped", "components": [
+          { "sourceTitle": "8. PEDR TRENDS Embroidered Semi-Stitched Lehenga & Unstitched Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/6jeb6n" }
+        ]},
+        { "number": 33, "status": "mapped", "components": [
+          { "sourceTitle": "9. Patola printed navratri chaniya choli", "shopUrl": "https://www.wishlink.com/share/nq4553" }
+        ]},
+        { "number": 34, "status": "mapped", "components": [
+          { "sourceTitle": "10. Fabpixel Women Embellished Flared Lehenga Choli Set (Black)", "shopUrl": "https://www.wishlink.com/share/6v8j7c" }
+        ]},
+        { "number": 35, "status": "mapped", "components": [
+          { "sourceTitle": "11. Shubh-Viyan Textiles Shubh-Viyan Textiles Bandhani, Printed Semi Stitched Lehenga & Crop Top (Multicolor)", "shopUrl": "https://www.wishlink.com/share/nkf2vu" }
+        ]},
+        { "number": 36, "status": "mapped", "components": [
+          { "sourceTitle": "12. Nyrika Women Embroidered Flared Lehenga Choli Set with Dupatta (Green)", "shopUrl": "https://www.wishlink.com/share/64mabj" }
+        ]},
+        { "number": 37, "status": "mapped", "components": [
+          { "sourceTitle": "13. KALINI Embroidered Thread Work Semi-Stitched Lehenga & Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/6nw3tq" }
+        ]},
+        { "number": 38, "status": "mapped", "components": [
+          { "sourceTitle": "14. Navarati Special Pure Rayon Gamathi Style Lahenga Choli, No Dupatta", "shopUrl": "https://www.wishlink.com/share/6m36u8" }
+        ]},
+        { "number": 39, "status": "mapped", "components": [
+          { "sourceTitle": "15. MADHURAM TEXTILES Women Embellished Lehenga Choli Set (off white)", "shopUrl": "https://www.wishlink.com/share/ne7fb3" }
+        ]},
+        { "number": 40, "status": "mapped", "components": [
+          { "sourceTitle": "16. SALWAR STUDIO Pack of 3 Embellished Ready to Wear Lehenga & Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/6bhy56" }
+        ]},
+        { "number": 41, "status": "mapped", "components": [
+          { "sourceTitle": "17. Shubh-Viyan Textiles Shubh-Viyan Textiles Bandhani, Printed, Digital Print Semi Stitched Lehenga Choli (Multicolor)", "shopUrl": "https://www.wishlink.com/share/n32akn" }
+        ]},
+        { "number": 42, "status": "mapped", "components": [
+          { "sourceTitle": "18. Satin Silk Printed Flaired Lehenga Choli for Women With Matching Blouse and Dupatta", "shopUrl": "https://www.wishlink.com/share/nt4b9r" }
+        ]},
+        { "number": 43, "status": "mapped", "components": [
+          { "sourceTitle": "19. Nyrika Women Printed Lehenga Choli Set with Dupatta (Wine)", "shopUrl": "https://www.wishlink.com/share/nkvbdy" }
+        ]},
+        { "number": 44, "status": "mapped", "components": [
+          { "sourceTitle": "20. KALINI Embroidered Art Silk Semi-Stitched Lehenga & Unstitched Blouse & Dupatta", "shopUrl": "https://www.wishlink.com/share/6jf3sr" }
+        ]},
+        { "number": 45, "status": "mapped", "components": [
+          { "sourceTitle": "21. Premium Multicolor Roman Silk Navratri Lehenga Choli with Heavy Kutchi Embroidery Blouse | Garba & Festive Wear no duppta", "shopUrl": "https://www.wishlink.com/share/nqg22j" }
+        ]},
+        { "number": 46, "status": "mapped", "components": [
+          { "sourceTitle": "22. SVARAA Women Decorative/Art Deco Lehenga Choli Set with Dupatta (Mustard)", "shopUrl": "https://www.wishlink.com/share/6v9acp" }
+        ]},
+        { "number": 47, "status": "mapped", "components": [
+          { "sourceTitle": "23. Gk Trendz Embroidered Thread Work Ready to Wear Lehenga & Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/nte2wf" }
+        ]},
+        { "number": 48, "status": "mapped", "components": [
+          { "sourceTitle": "24. Shubh-Viyan Textiles Shubh-Viyan Textiles Bandhani, Floral Print, Printed, Geometric Print, Leheriya, Digital Print Semi Stitched Lehenga Choli (Multicolor)", "shopUrl": "https://www.wishlink.com/share/66xa54" }
+        ]},
+        { "number": 49, "status": "mapped", "components": [
+          { "sourceTitle": "25. Women Georgette Embroidery Lehenga Choli With Dupatta", "shopUrl": "https://www.wishlink.com/share/nfvfm6" }
+        ]},
+        { "number": 50, "status": "mapped", "components": [
+          { "sourceTitle": "26. Nyrika Women Embroidered Flared Lehenga Choli Set with Dupatta (Purple)", "shopUrl": "https://www.wishlink.com/share/6rp5nb" }
+        ]},
+        { "number": 51, "status": "mapped", "components": [
+          { "sourceTitle": "27. Kaizen TEXO FAB Multicolour Semistitched Croptop Choli With Unstitched Blouse", "shopUrl": "https://www.wishlink.com/share/nkm5em" }
+        ]},
+        { "number": 52, "status": "mapped", "components": [
+          { "sourceTitle": "28. Shubh-Viyan Textiles Shubh-Viyan Textiles Bandhani, Floral Print, Printed, Chevron/Zig Zag, Digital Print Semi Stitched Lehenga Choli (Multicolor)", "shopUrl": "https://www.wishlink.com/share/6cjjtv" }
+        ]},
+        { "number": 53, "status": "mapped", "components": [
+          { "sourceTitle": "29. TUHIRAAJ Women’s Traditional Navratri Garba Printed Lehenga Choli Set", "shopUrl": "https://www.wishlink.com/share/6mzbv2" }
+        ]},
+        { "number": 54, "status": "mapped", "components": [
+          { "sourceTitle": "30. Fabpixel Women Embellished & Embroidery Lehenga Choli Set with Dupatta (Beige)", "shopUrl": "https://www.wishlink.com/share/68h38y" }
+        ]},
+        { "number": 55, "status": "mapped", "components": [
+          { "sourceTitle": "31. UDBHAV EXPORT Embroidered Thread Work Semi-Stitched Lehenga & Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/6rzz7m" }
+        ]},
+        { "number": 56, "status": "mapped", "components": [
+          { "sourceTitle": "32. Satin Silk Printed Flaired Lehenga Choli for Women With Matching Blouse and Dupatta", "shopUrl": "https://www.wishlink.com/share/nk47vd" }
+        ]},
+        { "number": 57, "status": "mapped", "components": [
+          { "sourceTitle": "33. RENVAANI FASHION Women Woven Flared Lehenga & Choli Set with Dupatta (Gold)", "shopUrl": "https://www.wishlink.com/share/6c8c8f" }
+        ]},
+        { "number": 58, "status": "mapped", "components": [
+          { "sourceTitle": "34. BAESD Embroidered Thread Work Semi-Stitched Lehenga & Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/6meptx" }
+        ]},
+        { "number": 59, "status": "mapped", "components": [
+          { "sourceTitle": "35. Women's Pure Rayon Gota Patti work Semi-Stitched Lehenga Choli Set Lehenga with Pure Rayon Unstitched Blouse ( 5 METER FLARE - NO DUPATTA) Designer Garba Chaniya Choli for Navratri Festival Party Wear", "shopUrl": "https://www.wishlink.com/share/68xfu6" }
+        ]},
+        { "number": 60, "status": "mapped", "components": [
+          { "sourceTitle": "37. Jihu Culture Women Embroidered Kalidar Lehenga Choli Set (Green)", "shopUrl": "https://www.wishlink.com/share/66wc9p" }
+        ]},
+        { "number": 61, "status": "mapped", "components": [
+          { "sourceTitle": "38. KALINI Embroidered Sequinned Semi-Stitched Lehenga & Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/n33pqr" }
+        ]},
+        { "number": 62, "status": "mapped", "components": [
+          { "sourceTitle": "39. Multicolour Printed Rayon Navratri Lehenga Choli | Festive Ethnic Wear for Women | Stylish Traditional Outfit for Garba and Dandiya Nights", "shopUrl": "https://www.wishlink.com/share/64qqm9" }
+        ]},
+        { "number": 63, "status": "mapped", "components": [
+          { "sourceTitle": "40. PURVAJA Navy Blue & Pink Semi-Stitched Lehenga & Unstitched Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/nuhqac" }
+        ]},
+        { "number": 64, "status": "mapped", "components": [
+          { "sourceTitle": "41. Shubh-Viyan Textiles Shubh-Viyan Textiles Bandhani, Floral Print, Printed, Geometric Print, Leheriya, Digital Print Semi Stitched Lehenga Choli (Multicolor)", "shopUrl": "https://www.wishlink.com/share/62azeg" }
+        ]},
+        { "number": 65, "status": "mapped", "components": [
+          { "sourceTitle": "42. Nyrika Women Embroidered Flared Lehenga Choli Set with Dupatta (Pink)", "shopUrl": "https://www.wishlink.com/share/6mctr8" }
+        ]},
+        { "number": 66, "status": "mapped", "components": [
+          { "sourceTitle": "43. ghagra choli new semi stitched navratri lehenga choli for women wedding party . latest festive trendy styles lehenga 2026 for women Under 3000", "shopUrl": "https://www.wishlink.com/share/68vpvz" }
+        ]},
+        { "number": 67, "status": "mapped", "components": [
+          { "sourceTitle": "44. KALINI Embroidered Thread Work Semi-Stitched Lehenga & Blouse With Dupatta", "shopUrl": "https://www.wishlink.com/share/nx9t72" }
+        ]},
+        { "number": 68, "status": "mapped", "components": [
+          { "sourceTitle": "45. Shubh-Viyan Textiles Shubh-Viyan Textiles Bandhani, Printed, Digital Print Semi Stitched Lehenga Choli (Multicolor)", "shopUrl": "https://www.wishlink.com/share/6j888k" }
+        ]}
+      ]
+    },
+    {
+      "id": "college-fest",
+      "label": "College Fest",
+      "firstLook": 1,
+      "lastLook": 42,
+      "womenLookOffset": 68,
+      "looks": [
+        { "number": 1, "status": "unavailable", "components": [] },
+        { "number": 2, "status": "mapped", "components": [
+          { "sourceTitle": "1. Inddus Women Purple Floral Embroidered Top & Skirt", "shopUrl": "https://www.wishlink.com/share/nef7v5" }
+        ]},
+        { "number": 3, "status": "mapped", "components": [
+          { "sourceTitle": "2. Georgette Embroidered Stiched Kurta set for women's|Sharara set for women |Gharara set|Trending Sharara set|Sharara suit|New design|Green sharara|Blue Sharara", "shopUrl": "https://www.wishlink.com/share/66nc8t" }
+        ]},
+        { "number": 4, "status": "mapped", "components": [
+          { "sourceTitle": "3. MADHURAM Women Floral Embroidered Regular Top & Palazzos With Dupatta", "shopUrl": "https://www.wishlink.com/share/n39pts" }
+        ]},
+        { "number": 5, "status": "mapped", "components": [
+          { "sourceTitle": "1. Trending Black Kurti , Casual Ethnic Wear Y,20", "shopUrl": "https://www.wishlink.com/share/6nqtd9" },
+          { "sourceTitle": "2. De Moza Women Viscose Pleated Palazzo Pants with Functional Pockets", "shopUrl": "https://www.wishlink.com/share/n3wmcp" }
+        ]},
+        { "number": 6, "status": "unavailable", "components": [] },
+        { "number": 7, "status": "mapped", "components": [
+          { "sourceTitle": "1. LADYGLOW Women Ribbed Slim Fit Crop Tank Top (Black)", "shopUrl": "https://www.wishlink.com/share/64her7" },
+          { "sourceTitle": "2. Waist Chain for Women for Saree Gold Metal Concho Waist Belt Stylish Boho Western Hip Belt Fashion Adjustable Cowgirl Jewellery Chain Belts for Dresses, Jeans, Skirts, Beachs Outfits (Gold Chain)", "shopUrl": "https://www.wishlink.com/share/nuvefv", "accessory": true },
+          { "sourceTitle": "3. LERIYA FASHION Women Tiered Flared Maxi Skirt", "shopUrl": "https://www.wishlink.com/share/62pbq5" }
+        ]},
+        { "number": 8, "status": "unavailable", "components": [] },
+        { "number": 9, "status": "mapped", "components": [
+          { "sourceTitle": "1. WOMENSTER Women Ribbed Slim Fit Crop Top (Maroon)", "shopUrl": "https://www.wishlink.com/share/nkegmj" },
+          { "sourceTitle": "2. Suo Women Maxi Flared Skirt", "shopUrl": "https://www.wishlink.com/share/6cumnp" }
+        ]},
+        { "number": 10, "status": "mapped", "components": [
+          { "sourceTitle": null, "shopUrl": "https://www.wishlink.com/share/nkk37b" }
+        ]},
+        { "number": 11, "status": "empty", "components": [] },
+        { "number": 12, "status": "empty", "components": [] },
+        { "number": 13, "status": "empty", "components": [] },
+        { "number": 14, "status": "empty", "components": [] },
+        { "number": 15, "status": "empty", "components": [] },
+        { "number": 16, "status": "empty", "components": [] },
+        { "number": 17, "status": "empty", "components": [] },
+        { "number": 18, "status": "empty", "components": [] },
+        { "number": 19, "status": "empty", "components": [] },
+        { "number": 20, "status": "empty", "components": [] },
+        { "number": 21, "status": "empty", "components": [] },
+        { "number": 22, "status": "empty", "components": [] },
+        { "number": 23, "status": "empty", "components": [] },
+        { "number": 24, "status": "empty", "components": [] },
+        { "number": 25, "status": "empty", "components": [] },
+        { "number": 26, "status": "empty", "components": [] },
+        { "number": 27, "status": "empty", "components": [] },
+        { "number": 28, "status": "empty", "components": [] },
+        { "number": 29, "status": "empty", "components": [] },
+        { "number": 30, "status": "empty", "components": [] },
+        { "number": 31, "status": "empty", "components": [] },
+        { "number": 32, "status": "empty", "components": [] },
+        { "number": 33, "status": "empty", "components": [] },
+        { "number": 34, "status": "empty", "components": [] },
+        { "number": 35, "status": "empty", "components": [] },
+        { "number": 36, "status": "empty", "components": [] },
+        { "number": 37, "status": "empty", "components": [] },
+        { "number": 38, "status": "empty", "components": [] },
+        { "number": 39, "status": "empty", "components": [] },
+        { "number": 40, "status": "empty", "components": [] },
+        { "number": 41, "status": "empty", "components": [] },
+        { "number": 42, "status": "empty", "components": [] }
+      ]
+    },
+    {
+      "id": "diwali-outfits",
+      "label": "Diwali outfits",
+      "firstLook": 1,
+      "lastLook": 3,
+      "womenLookOffset": 110,
+      "looks": [
+        { "number": 1, "status": "empty", "components": [] },
+        { "number": 2, "status": "empty", "components": [] },
+        { "number": 3, "status": "empty", "components": [] }
+      ]
+    }
+  ]
+}

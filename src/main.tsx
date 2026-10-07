@@ -1,0 +1,65 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import Listing from './pages/Listing';
+import Trending from './pages/Trending';
+import ProductPage from './pages/Product';
+import { CoupleEdit, CoupleDetail } from './pages/Couples';
+import { Occasions, World } from './pages/Occasions';
+import Search from './pages/Search';
+import MenCatalog, { MenLookDetail } from './pages/MenCatalog';
+import WomenCatalog, { WomenLookDetail } from './pages/WomenCatalog';
+import Saved from './pages/Saved';
+import TryOn from './pages/TryOn';
+import Connect, { ConnectProfile } from './pages/Connect';
+import ChatList, { Conversation } from './pages/Chat';
+import { Journal, Article, About, Contact, FAQ, Privacy, Terms, AffiliateDisclosure, TryOnPrivacy, NotFound } from './pages/Static';
+import { TryOnStatusProvider } from './lib/tryOnStatus';
+import './styles.css';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <TryOnStatusProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="women" element={<WomenCatalog />} />
+            <Route path="women/:category" element={<WomenCatalog />} />
+            <Route path="women-look/:id" element={<WomenLookDetail />} />
+            <Route path="men" element={<MenCatalog />} />
+            <Route path="men/:category" element={<MenCatalog />} />
+            <Route path="men-look/:id" element={<MenLookDetail />} />
+            <Route path=":gender/:category" element={<Listing mode="gender" />} />
+            <Route path="trending" element={<Trending />} />
+            <Route path="accessories" element={<Navigate to="/women" replace />} />
+            <Route path="product/:id" element={<ProductPage />} />
+            <Route path="occasions" element={<Occasions />} />
+            <Route path="occasions/:world" element={<World />} />
+            <Route path="couple-edit" element={<CoupleEdit />} />
+            <Route path="couple-edit/:id" element={<CoupleDetail />} />
+            <Route path="search" element={<Search />} />
+            <Route path="saved" element={<Saved />} />
+            <Route path="try-on" element={<TryOn />} />
+            <Route path="connect" element={<Connect />} />
+            <Route path="connect/u/:viraasId" element={<ConnectProfile />} />
+            <Route path="chat" element={<ChatList />} />
+            <Route path="chat/:conversationId" element={<Conversation />} />
+            <Route path="journal" element={<Journal />} />
+            <Route path="journal/:slug" element={<Article />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="faq" element={<FAQ />} />
+            <Route path="privacy" element={<Privacy />} />
+            <Route path="terms" element={<Terms />} />
+            <Route path="affiliate-disclosure" element={<AffiliateDisclosure />} />
+            <Route path="ai-try-on-privacy" element={<TryOnPrivacy />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </TryOnStatusProvider>
+  </React.StrictMode>,
+);
