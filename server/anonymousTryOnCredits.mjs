@@ -1,10 +1,13 @@
 // Anonymous Try-On credits are deliberately isolated from viraas_users and its authenticated ledger.
 // Only a one-way hash of the random HttpOnly cookie token is stored; photo bytes are never persisted.
+// Every Try-On costs exactly ₹20 INR via PayU; there are NO free credits. A successful PayU
+// callback grants exactly +1 credit; if Runware fails the reserved credit is released so the
+// anonymous user can retry without paying again.
 import crypto from 'node:crypto';
 import { query, withTransaction } from './db/pool.mjs';
 
-export const ANONYMOUS_SIGNUP_TRYON_CREDITS = 2;
-export const NO_TRYON_CREDITS_MESSAGE = 'No Try-On credits remaining.';
+export const ANONYMOUS_SIGNUP_TRYON_CREDITS = 0; // No free Try-On credits. Every Try-On costs ₹20.
+export const NO_TRYON_CREDITS_MESSAGE = 'No Try-On credits remaining. Pay ₹20 to start your Try-On.';
 const uuid = () => crypto.randomUUID();
 const balanceOf = (value) => Math.max(0, Number(value) || 0);
 const TOKEN_HASH_RE = /^[a-f0-9]{64}$/;
@@ -17,7 +20,8 @@ export class AnonymousTryOnCreditError extends Error {
   }
 }
 
-/** Resolve one opaque cookie token to a principal, granting its initial two credits exactly once. */
+/** Resolve one opaque cookie token to a principal. Balances start at zero; credit is added only
+ *  after a server-verified ₹20 PayU payment. No free credits are ever granted. */
 export async function ensureAnonymousTryOnAccount(tokenHash) {
   if (typeof tokenHash !== 'string' || !TOKEN_HASH_RE.test(tokenHash)) throw new AnonymousTryOnCreditError('Anonymous Try-On identity is invalid.');
   return withTransaction(async (client) => {
@@ -42,7 +46,6 @@ export async function ensureAnonymousTryOnAccount(tokenHash) {
       if (inserted.rowCount) {
         anonymousId = inserted.rows[0].anonymous_id;
       } else {
-        // Another request with the same cookie created the principal while this transaction waited.
         identity = await client.query(
           'SELECT anonymous_id,expires_at FROM tryon_anonymous_identities WHERE token_hash=$1 FOR UPDATE',
           [tokenHash],
@@ -60,25 +63,10 @@ export async function ensureAnonymousTryOnAccount(tokenHash) {
     );
     const account = await client.query('SELECT balance FROM tryon_anonymous_credit_accounts WHERE anonymous_id=$1 FOR UPDATE', [anonymousId]);
     if (!account.rowCount) throw new AnonymousTryOnCreditError();
-    const grantKey = `anonymous-initial:${anonymousId}`;
-    const priorGrant = await client.query(
-      "SELECT 1 FROM tryon_anonymous_credit_ledger WHERE anonymous_id=$1 AND event_type='initial_grant' LIMIT 1",
-      [anonymousId],
-    );
-    let balance = balanceOf(account.rows[0].balance);
-    if (!priorGrant.rowCount) {
-      const updated = await client.query(
-        'UPDATE tryon_anonymous_credit_accounts SET balance = balance + 2,updated_at=now() WHERE anonymous_id=$1 RETURNING balance',
-        [anonymousId],
-      );
-      balance = balanceOf(updated.rows[0].balance);
-      await client.query(
-        `INSERT INTO tryon_anonymous_credit_ledger
-          (entry_id,anonymous_id,generation_id,event_type,delta,balance_after,idempotency_key)
-         VALUES ($1,$2,NULL,'initial_grant',2,$3,$4)`,
-        [uuid(), anonymousId, balance, grantKey],
-      );
-    }
+    // No initial_grant: new anonymous identities start with 0 credits.
+    // Any pre-existing initial_grant ledger entry from migration 004 is left intact for historical
+    // records but is never created for new anonymous identities going forward.
+    const balance = balanceOf(account.rows[0].balance);
     return { ok: true, anonymousId, balance };
   });
 }
@@ -191,6 +179,43 @@ export async function releaseAnonymousTryOnCredit({ anonymousId, generationId, f
       [uuid(), anonymousId, generationId, balance, `anonymous-release:${generationId}`],
     );
     return { ok: true, duplicate: false, balance };
+  });
+}
+
+/** Apply one verified ₹20 PayU capture to an anonymous identity and grant exactly one credit
+ *  in the same database transaction. Replays are idempotent (never double-grant). */
+export async function applyVerifiedAnonymousPayUPurchase({ txnid, payuPaymentId, amountPaise, productinfo, firstname, email }) {
+  if (!txnid || !payuPaymentId || Number(amountPaise) !== 2000) throw new AnonymousTryOnCreditError('Verified PayU payment details are invalid.');
+  return withTransaction(async (client) => {
+    const paymentResult = await client.query('SELECT * FROM anonymous_payu_payments WHERE txnid=$1 FOR UPDATE', [txnid]);
+    if (!paymentResult.rowCount) return { ok: false, reason: 'unknown_payment' };
+    const payment = paymentResult.rows[0];
+    if (payment.status === 'succeeded') return { ok: true, duplicate: true, balance: await readBalance(client, payment.anonymous_id) };
+    if (payment.status !== 'pending' || Number(payment.amount_paise) !== 2000 || Number(amountPaise) !== Number(payment.amount_paise)
+      || payment.productinfo !== productinfo || payment.firstname !== firstname || payment.email.toLowerCase() !== String(email).toLowerCase()) {
+      return { ok: false, reason: 'payment_mismatch' };
+    }
+
+    await client.query('INSERT INTO tryon_anonymous_credit_accounts (anonymous_id,balance) VALUES ($1,0) ON CONFLICT (anonymous_id) DO NOTHING', [payment.anonymous_id]);
+    const account = await client.query('SELECT balance FROM tryon_anonymous_credit_accounts WHERE anonymous_id=$1 FOR UPDATE', [payment.anonymous_id]);
+    if (!account.rowCount) throw new AnonymousTryOnCreditError();
+    const existingCapture = await client.query('SELECT anonymous_id FROM anonymous_payu_payments WHERE payu_payment_id=$1 AND txnid<>$2', [payuPaymentId, txnid]);
+    if (existingCapture.rowCount) return { ok: false, reason: 'payment_replayed' };
+
+    const updatedPayment = await client.query(
+      `UPDATE anonymous_payu_payments SET status='succeeded',payu_payment_id=$2,callback_verified_at=now(),updated_at=now()
+       WHERE txnid=$1 AND status='pending' RETURNING payment_id`,
+      [txnid, payuPaymentId],
+    );
+    if (!updatedPayment.rowCount) return { ok: false, reason: 'payment_already_processed' };
+    const updatedAccount = await client.query('UPDATE tryon_anonymous_credit_accounts SET balance = balance + 1,updated_at=now() WHERE anonymous_id=$1 RETURNING balance', [payment.anonymous_id]);
+    const balance = balanceOf(updatedAccount.rows[0].balance);
+    await client.query(
+      `INSERT INTO tryon_anonymous_credit_ledger (entry_id,anonymous_id,generation_id,event_type,delta,balance_after,idempotency_key)
+       VALUES ($1,$2,NULL,'payu_purchase',1,$3,$4)`,
+      [uuid(), payment.anonymous_id, balance, `anonymous-payu:${payuPaymentId}`],
+    );
+    return { ok: true, duplicate: false, balance, anonymousId: payment.anonymous_id };
   });
 }
 

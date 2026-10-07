@@ -1,5 +1,15 @@
 // VIRAAS Express application shared by the local server and the Vercel function entrypoint.
 // All user identity, payment verification and Try-On credit decisions are server-authoritative.
+//
+// FINAL TRY-ON BUSINESS MODEL:
+//   - Try-On is completely anonymous. No signup/login required.
+//   - Every Try-On costs exactly ₹20 INR via PayU hosted checkout.
+//   - The old free 2-credit model is REMOVED.
+//   - Payment verification is server-side only; the browser cannot grant credit.
+//   - A secure HttpOnly anonymous identity cookie links payment to browser session.
+//   - If Runware fails, the reserved credit is RELEASED so the user can retry without re-paying.
+//   - Photo bytes are NEVER stored in the payment database.
+//   - CONNECT remains authentication-required; private chat is never anonymous.
 import express from 'express';
 import path from 'node:path';
 import fs from 'node:fs';
@@ -13,13 +23,6 @@ import { resolveCoupleSide } from '../shared/coupleTryOn.mjs';
 import { databaseStatus } from './db/pool.mjs';
 import { getAuthIdentity } from './auth/provider.mjs';
 import * as social from './social/repository.mjs';
-import {
-  NO_TRYON_CREDITS_MESSAGE,
-  consumeTryOnCredit,
-  grantSignupCredits,
-  releaseTryOnCredit,
-  reserveTryOnCredit,
-} from './tryOnCredits.mjs';
 import authRouter from './auth/routes.mjs';
 import socialRouter from './social/routes.mjs';
 
@@ -38,10 +41,8 @@ const PUBLIC_BASE_URL = publicAssets.base;
 const MIME = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
 const MAX_PHOTO_BYTES = 2_750_000;
 const MAX_PHOTO_BASE64_CHARS = Math.ceil(MAX_PHOTO_BYTES / 3) * 4 + 8;
-const TRYON_TOP_UP_ENABLED = false; // ₹20 top-ups remain postponed; existing PayU verification stays available.
+const TRYON_TOP_UP_ENABLED = true; // ₹20 anonymous PayU checkout is live.
 
-// Inline only trusted catalog references where present on disk. On Vercel, resolve them to the
-// deployment's configured public origin; never derive an asset origin from an untrusted Host header.
 function loadGarment(src) {
   if (typeof src !== 'string' || !src) return null;
   if (/^https:\/\//i.test(src) || src.startsWith('data:image/')) return src;
@@ -79,66 +80,14 @@ function sameOrigin(req, res, next) {
   next();
 }
 
-async function adultAccount(req, res) {
-  try {
-    const db = await databaseStatus();
-    if (!db.ready) {
-      res.status(503).json({ ok: false, code: 'DATABASE_NOT_READY', message: 'Persistent VIRAAS accounts and Try-On credits are unavailable until PostgreSQL is configured and fully migrated.' });
-      return null;
-    }
-    const identity = await getAuthIdentity(req, res);
-    const user = await social.getUserByAuthSubject(identity.subject);
-    if (!user?.profile_complete) {
-      res.status(409).json({ ok: false, code: 'PROFILE_REQUIRED', message: 'Complete your adult VIRAAS account profile before using AI Try-On or purchasing credits.', accountPath: '/connect' });
-      return null;
-    }
-    if (Number(user.age) < 18) {
-      res.status(403).json({ ok: false, code: 'ADULTS_ONLY', message: 'AI Try-On and credit purchases are available only to adults 18+.' });
-      return null;
-    }
-    return { identity, user };
-  } catch (error) {
-    res.status(Number(error?.status) || 503).json({ ok: false, message: error?.message || 'A verified VIRAAS account is required.' });
-    return null;
-  }
-}
-
-// Try-On uses the authenticated user's existing ledger only when they have a completed adult
-// VIRAAS profile. Everyone else uses a separate anonymous cookie identity; Connect/auth routes
-// continue to use their original authenticated-only middleware.
-async function tryOnPrincipal(req, res, { allowNewAnonymousCookie = false } = {}) {
+// Try-On ALWAYS uses the anonymous HttpOnly cookie identity — never the authenticated account.
+// Signup/login is never required for Try-On; Connect routes keep their own authentication middleware.
+async function tryOnAnonymousPrincipal(req, res, { allowNewAnonymousCookie = false } = {}) {
   const db = await databaseStatus();
   if (!db.ready) {
     res.status(503).json({ ok: false, code: 'DATABASE_NOT_READY', message: 'Persistent Try-On credits are temporarily unavailable until PostgreSQL is configured and fully migrated.' });
     return null;
   }
-
-  let identity = null;
-  try { identity = await getAuthIdentity(req, res, { optional: true }); }
-  catch { /* an expired or unavailable optional login falls back to the anonymous Try-On session */ }
-  if (identity) {
-    let user;
-    try { user = await social.getUserByAuthSubject(identity.subject); }
-    catch {
-      res.status(503).json({ ok: false, code: 'TRYON_CREDIT_LEDGER_UNAVAILABLE', message: 'Persistent Try-On credits are temporarily unavailable.' });
-      return null;
-    }
-    if (user?.profile_complete) {
-      const age = Number(user.age);
-      if (!Number.isFinite(age) || age < 18) {
-        res.status(403).json({ ok: false, code: 'ADULTS_ONLY', message: 'AI Try-On is available only to adults 18+.' });
-        return null;
-      }
-      try {
-        const balance = await grantSignupCredits(user.user_id);
-        return { kind: 'account', userId: user.user_id, balance };
-      } catch {
-        res.status(503).json({ ok: false, code: 'TRYON_CREDIT_LEDGER_UNAVAILABLE', message: 'Persistent Try-On credits are temporarily unavailable.' });
-        return null;
-      }
-    }
-  }
-
   try {
     const anonymous = await resolveAnonymousTryOnIdentity(req, res, { allowNewCookie: allowNewAnonymousCookie });
     if (!anonymous.ok) {
@@ -153,24 +102,6 @@ async function tryOnPrincipal(req, res, { allowNewAnonymousCookie = false } = {}
   }
 }
 
-async function reservePrincipalCredit(principal, requestKey, outfitId) {
-  return principal.kind === 'anonymous'
-    ? anonymousTryOnCredits.reserveAnonymousTryOnCredit({ anonymousId: principal.anonymousId, requestKey, outfitId })
-    : reserveTryOnCredit({ userId: principal.userId, requestKey, outfitId });
-}
-
-async function consumePrincipalCredit(principal, generationId) {
-  return principal.kind === 'anonymous'
-    ? anonymousTryOnCredits.consumeAnonymousTryOnCredit({ anonymousId: principal.anonymousId, generationId })
-    : consumeTryOnCredit({ userId: principal.userId, generationId });
-}
-
-async function releasePrincipalCredit(principal, generationId, failureCode) {
-  return principal.kind === 'anonymous'
-    ? anonymousTryOnCredits.releaseAnonymousTryOnCredit({ anonymousId: principal.anonymousId, generationId, failureCode })
-    : releaseTryOnCredit({ userId: principal.userId, generationId, failureCode });
-}
-
 // Browser-safe capabilities only. Server-ledger balances are returned by the Try-On credits route.
 app.get('/api/try-on/status', async (_req, res) => {
   res.set('Cache-Control', 'no-store');
@@ -182,7 +113,7 @@ app.get('/api/try-on/status', async (_req, res) => {
     mode: tryOnMode,
     configured: tryOnConfigured,
     provider: tryOnConfigured ? tryOnProvider.provider : null,
-    paymentRequired: false,
+    paymentRequired: true,
     priceInr: payments.CREDIT_PRICE_INR,
     currency: 'INR',
     paymentConfigured: payments.paymentProviderConfigured,
@@ -201,9 +132,9 @@ app.get('/api/try-on/status', async (_req, res) => {
 
 app.get('/api/try-on/credits', sameOrigin, async (req, res) => {
   res.set('Cache-Control', 'no-store');
-  const principal = await tryOnPrincipal(req, res, { allowNewAnonymousCookie: true });
+  const principal = await tryOnAnonymousPrincipal(req, res, { allowNewAnonymousCookie: true });
   if (!principal) return;
-  res.json({ ok: true, balance: principal.balance, initialCredits: 2, noCreditsMessage: NO_TRYON_CREDITS_MESSAGE });
+  res.json({ ok: true, balance: principal.balance, priceInr: payments.CREDIT_PRICE_INR, noCreditsMessage: anonymousTryOnCredits.NO_TRYON_CREDITS_MESSAGE });
 });
 
 function resolveSubject(body) {
@@ -249,7 +180,6 @@ function validPhoto(dataUrl) {
   if (encoded.length % 4 !== 0) return null;
   const bytes = Buffer.from(encoded, 'base64');
   if (!bytes.length || bytes.length > MAX_PHOTO_BYTES || bytes.toString('base64') !== encoded) return null;
-  // Browser-side re-encoding is required; verify the bytes really are JPEG before Runware receives them.
   if (bytes.length < 4 || bytes[0] !== 0xff || bytes[1] !== 0xd8 || bytes.at(-2) !== 0xff || bytes.at(-1) !== 0xd9) return null;
   return dataUrl;
 }
@@ -268,8 +198,16 @@ function paymentReturnPath(payment, state) {
   return `${payment.return_path}${separator}payment=${state}&txnid=${encodeURIComponent(payment.txnid)}`;
 }
 
+function publicOriginFromRequest(req) {
+  const forwardedProto = String(req.headers['x-forwarded-proto'] || '').split(',')[0].trim() || (req.secure ? 'https' : 'http');
+  const host = String(req.headers['x-forwarded-host'] || req.headers.host || '').split(',')[0].trim();
+  if (!host) return null;
+  return `${forwardedProto}://${host}`;
+}
+
 // PayU Hosted Checkout POSTs its signed response here. The redirect is only UX: credit is granted
 // after both the reverse hash and PayU's authenticated verify_payment response are checked server-side.
+// This single callback handles BOTH authenticated (legacy) and anonymous payments.
 app.post('/api/payment/payu/callback', express.urlencoded({ extended: false, limit: '32kb' }), async (req, res) => {
   const payload = req.body || {};
   const txnid = typeof payload.txnid === 'string' ? payload.txnid : '';
@@ -303,7 +241,6 @@ app.post('/api/payment/payu/callback', express.urlencoded({ extended: false, lim
     res.set('Cache-Control', 'no-store');
     return res.redirect(303, paymentReturnPath(payment, state));
   } catch {
-    // Do not log callback contents, PII, gateway responses, image bytes, or secret material.
     if (payment) {
       res.set('Cache-Control', 'no-store');
       return res.redirect(303, paymentReturnPath(payment, 'pending'));
@@ -312,51 +249,72 @@ app.post('/api/payment/payu/callback', express.urlencoded({ extended: false, lim
   }
 });
 
+// Create an anonymous ₹20 PayU payment (no signup/login required).
 app.post('/api/payment/create', sameOrigin, async (req, res) => {
-  const account = await adultAccount(req, res);
-  if (!account) return;
   res.set('Cache-Control', 'no-store');
-  if (!TRYON_TOP_UP_ENABLED) {
-    return res.status(503).json({ ok: false, code: 'PAYMENT_TOP_UP_POSTPONED', message: '₹20 Try-On credit top-ups are postponed. No payment was created.' });
+  const principal = await tryOnAnonymousPrincipal(req, res, { allowNewAnonymousCookie: true });
+  if (!principal) return;
+  if (!TRYON_TOP_UP_ENABLED || !payments.paymentProviderConfigured) {
+    return res.status(503).json({ ok: false, code: 'PAYMENT_UNAVAILABLE', message: 'PayU payment is temporarily unavailable.' });
   }
+  const subject = resolveSubject(req.body || {});
+  if (subject.error) return res.status(subject.error).json({ ok: false, message: subject.message });
+  const requestKey = req.get('Idempotency-Key');
+  if (!validRequestKey(requestKey)) return res.status(400).json({ ok: false, message: 'A valid payment idempotency key is required.' });
+  const publicOrigin = publicOriginFromRequest(req);
+  if (!publicOrigin) return res.status(500).json({ ok: false, message: 'Could not determine public origin for PayU callback.' });
+  const phone = String(req.body?.phone || '').trim();
+  const result = await payments.createAnonymousCreditPayment({
+    anonymousId: principal.anonymousId,
+    requestKey,
+    phone,
+    returnPath: subject.returnPath,
+    publicOrigin,
+  });
+  if (!result.ok) {
+    if (result.reason === 'already_paid') return res.json({ ok: true, alreadyPaid: true, balance: result.balance, txnid: result.txnid });
+    return res.status(400).json({ ok: false, code: result.reason, message: `Could not start payment: ${result.reason}` });
+  }
+  res.json({ ok: true, paymentId: result.paymentId, txnid: result.txnid, checkout: result.checkout, priceInr: payments.CREDIT_PRICE_INR });
 });
 
+// Browser polls the server after PayU redirect; status is verified against PayU server-side and
+// is ONLY returned when the payment is linked to the current anonymous cookie identity.
 app.get('/api/payment/status', sameOrigin, async (req, res) => {
-  const account = await adultAccount(req, res);
-  if (!account) return;
-  const status = await payments.getPaymentStatusForUser({ txnid: String(req.query.txnid || ''), userId: account.user.user_id });
-  if (!status) return res.status(404).json({ ok: false, message: 'Unknown payment.' });
   res.set('Cache-Control', 'no-store');
-  res.json({ ok: true, ...status });
-});
+  const principal = await tryOnAnonymousPrincipal(req, res, { allowNewAnonymousCookie: false });
+  if (!principal) return;
+  const txnid = String(req.query.txnid || '');
+  if (!txnid) return res.status(400).json({ ok: false, message: 'txnid is required.' });
 
-// Browser-requested verification is still a server-side PayU verify_payment call; it can never
-// manufacture a successful status or credit using client-supplied payment fields.
-app.post('/api/payment/verify', sameOrigin, async (req, res) => {
-  const account = await adultAccount(req, res);
-  if (!account) return;
-  const txnid = String(req.body?.txnid || '');
-  const payment = await payments.getPayUPaymentForCallback(txnid);
-  if (!payment || payment.user_id !== account.user.user_id) return res.status(404).json({ ok: false, message: 'Unknown payment.' });
-  if (!payments.paymentProviderConfigured) return res.status(503).json({ ok: false, message: 'PayU verification is not configured.' });
-  try {
-    const verified = await payments.payuProvider.verifyPayment(txnid);
-    if (verified.verified && verified.captured && verified.amountPaise === Number(payment.amount_paise)
-      && verified.productinfo === payment.productinfo && verified.firstname === payment.firstname
-      && verified.email.toLowerCase() === payment.email.toLowerCase() && verified.payuPaymentId) {
-      const result = await payments.markPayUSuccess(verified);
-      if (!result.ok) return res.status(409).json({ ok: false, message: 'The verified payment could not be applied.' });
-    } else if (verified.verified && verified.failed) {
-      await payments.markPayUFailed({ txnid });
-    }
-    const status = await payments.getPaymentStatusForUser({ txnid, userId: account.user.user_id });
-    res.set('Cache-Control', 'no-store');
-    res.json({ ok: true, ...status });
-  } catch {
-    res.status(503).json({ ok: false, message: 'PayU could not confirm this payment yet. No credit was granted.' });
+  // First check local DB for the anonymous payment linked to this cookie
+  const localStatus = await payments.getAnonymousPaymentStatus({ txnid, anonymousId: principal.anonymousId });
+  if (!localStatus) {
+    // Not ours — never reveal details for a payment belonging to another anonymous identity
+    return res.status(404).json({ ok: false, message: 'Unknown payment.' });
   }
+
+  // If still pending, do a server-side verify_payment call with PayU
+  if (localStatus.status === 'pending' && payments.paymentProviderConfigured) {
+    try {
+      const verified = await payments.payuProvider.verifyPayment(txnid);
+      if (verified.verified && verified.captured && verified.amountPaise === payments.CREDIT_PRICE_PAISE
+        && verified.payuPaymentId) {
+        await payments.markPayUSuccess(verified);
+      } else if (verified.verified && verified.failed) {
+        await payments.markPayUFailed({ txnid });
+      }
+    } catch {
+      // leave status as pending
+    }
+    const refreshed = await payments.getAnonymousPaymentStatus({ txnid, anonymousId: principal.anonymousId });
+    return res.json({ ok: true, ...refreshed });
+  }
+  res.json({ ok: true, ...localStatus });
 });
 
+// Run the actual Try-On generation after credit is available (reserved server-side).
+// No authentication required; uses anonymous identity cookie only.
 app.post('/api/try-on', sameOrigin, async (req, res) => {
   res.set('Cache-Control', 'no-store');
   const { ageConfirmed, consent, photo } = req.body || {};
@@ -374,17 +332,17 @@ app.post('/api/try-on', sameOrigin, async (req, res) => {
   if (!validRequestKey(requestKey)) return res.status(400).json({ ok: false, message: 'A valid generation request key is required.' });
   const garment = loadGarment(subject.garmentImageUrl);
   if (!garment) return res.status(503).json({ ok: false, message: 'This exact VIRAAS garment reference is not available to the Try-On service.' });
-  const principal = await tryOnPrincipal(req, res, { allowNewAnonymousCookie: false });
+  const principal = await tryOnAnonymousPrincipal(req, res, { allowNewAnonymousCookie: false });
   if (!principal) return;
 
   let reservation;
   try {
-    reservation = await reservePrincipalCredit(principal, requestKey, subject.outfitId);
+    reservation = await anonymousTryOnCredits.reserveAnonymousTryOnCredit({ anonymousId: principal.anonymousId, requestKey, outfitId: subject.outfitId });
   } catch {
     return res.status(503).json({ ok: false, code: 'TRYON_CREDIT_LEDGER_UNAVAILABLE', message: 'Persistent Try-On credits are temporarily unavailable. No generation was started.' });
   }
   if (!reservation.ok) {
-    if (reservation.reason === 'no_credits') return res.status(402).json({ ok: false, code: 'NO_TRYON_CREDITS', message: reservation.message || NO_TRYON_CREDITS_MESSAGE, balance: 0 });
+    if (reservation.reason === 'no_credits') return res.status(402).json({ ok: false, code: 'NO_TRYON_CREDITS', message: reservation.message || anonymousTryOnCredits.NO_TRYON_CREDITS_MESSAGE, balance: 0, priceInr: payments.CREDIT_PRICE_INR });
     return res.status(409).json({ ok: false, code: 'DUPLICATE_GENERATION_REQUEST', message: 'This generation request has already been used. Please start a new Try-On attempt.', balance: reservation.balance });
   }
 
@@ -392,7 +350,6 @@ app.post('/api/try-on', sameOrigin, async (req, res) => {
   const startedAt = Date.now();
   let settled = false;
   try {
-    // Do not log or persist the uploaded image. It exists in this request/provider call only.
     console.log(`[try-on ${requestId}] reserved outfit=${subject.outfitId} bytes=${Buffer.byteLength(safePhoto)} mode=${tryOnMode}`);
     const result = await tryOnProvider.generateTryOn({
       outfitId: subject.outfitId,
@@ -402,28 +359,28 @@ app.post('/api/try-on', sameOrigin, async (req, res) => {
       garmentDescription: subject.garmentDescription,
     });
     if (!result?.ok || !validGeneratedImage(result.resultImage)) {
-      const released = await releasePrincipalCredit(principal, reservation.generationId, 'provider_failure');
+      const released = await anonymousTryOnCredits.releaseAnonymousTryOnCredit({ anonymousId: principal.anonymousId, generationId: reservation.generationId, failureCode: 'provider_failure' });
       settled = Boolean(released.ok);
       console.log(`[try-on ${requestId}] failed elapsed=${Date.now() - startedAt}ms credit_released=${settled}`);
       return res.status(502).json({
         ok: false,
         ...(result?.mode ? { mode: result.mode } : {}),
-        message: result?.message || 'Runware returned no valid generated image. The reserved credit has been returned.',
-        ...(released.ok ? { balance: released.balance } : {}),
+        message: result?.message || 'Runware returned no valid generated image. The reserved credit has been returned — you can retry without paying again.',
+        ...(released.ok ? { balance: released.balance, creditReleased: true } : {}),
       });
     }
-    const consumed = await consumePrincipalCredit(principal, reservation.generationId);
+    const consumed = await anonymousTryOnCredits.consumeAnonymousTryOnCredit({ anonymousId: principal.anonymousId, generationId: reservation.generationId });
     if (!consumed.ok) throw new Error('Credit reservation could not be finalized.');
     settled = true;
     console.log(`[try-on ${requestId}] success elapsed=${Date.now() - startedAt}ms`);
     return res.json({ ...result, creditsRemaining: consumed.balance });
   } catch {
     if (!settled) {
-      try { await releasePrincipalCredit(principal, reservation.generationId, 'provider_exception'); }
-      catch { /* leave the already-deducted reservation fail-closed if the database is unavailable */ }
+      try { await anonymousTryOnCredits.releaseAnonymousTryOnCredit({ anonymousId: principal.anonymousId, generationId: reservation.generationId, failureCode: 'provider_exception' }); }
+      catch { /* fail-closed */ }
     }
     console.log(`[try-on ${requestId}] error elapsed=${Date.now() - startedAt}ms`);
-    return res.status(502).json({ ok: false, message: 'Try-On failed. If the provider did not complete, the reserved credit has been returned.' });
+    return res.status(502).json({ ok: false, message: 'Try-On failed. If the provider did not complete, the reserved credit has been returned — you can retry without paying again.' });
   }
 });
 
