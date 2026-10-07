@@ -21,8 +21,6 @@ import { initializeAnonymousTryOnCookie, resolveAnonymousTryOnIdentity } from '.
 import * as anonymousTryOnCredits from './anonymousTryOnCredits.mjs';
 import { resolveCoupleSide } from '../shared/coupleTryOn.mjs';
 import { databaseStatus } from './db/pool.mjs';
-import { getAuthIdentity } from './auth/provider.mjs';
-import * as social from './social/repository.mjs';
 import authRouter from './auth/routes.mjs';
 import socialRouter from './social/routes.mjs';
 
