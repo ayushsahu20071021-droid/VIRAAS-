@@ -1,5 +1,14 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { womenLookById, womenOccasionLabel, womenOccasions, type WomenLook } from '../lib/womenCatalog';
+import {
+  WOMEN_LOOK_TOTAL,
+  resolveWomenCatalogFilter,
+  womenGarmentCategories,
+  womenLookById,
+  womenOccasionLabel,
+  womenOccasions,
+  type WomenLook,
+} from '../lib/womenCatalog';
+import { categoriesWithinOccasion, categoryHref, garmentKeyOf } from '../lib/catalogCategories';
 import { ImageFrame, SaveButton } from '../components/ui';
 import { womenLookDetail, DETAIL_FIELDS } from '../lib/lookDetails';
 import womenPreviews from '../data/women-previews.client.json';
@@ -38,30 +47,40 @@ function Card({ look, tryOnAvailable }: { look: WomenLook; tryOnAvailable: boole
   );
 }
 
+const CATALOG_BASE = '/women';
+
 export default function WomenCatalog() {
   const tryOnAvailable = useTryOnAvailable();
   const { category } = useParams();
   const [params, setParams] = useSearchParams();
   const query = params.get('q')?.trim().toLowerCase() ?? '';
-  const occasion = category || params.get('occasion') || '';
-  const list = womenLookById.size
-    ? [...womenLookById.values()].filter((look) =>
+  // `/women/:category` accepts an occasion slug (garba, college-fest, …) or a garment-category
+  // slug derived from the looks themselves. Anything else stays unresolved on purpose.
+  const filter = resolveWomenCatalogFilter(category, { occasion: params.get('occasion'), category: params.get('category') });
+  const { occasion, garmentType, unresolved, requested } = filter;
+  const allLooks = womenLookById.size ? [...womenLookById.values()] : [];
+  const list = !unresolved
+    ? allLooks.filter((look) =>
       (!occasion || look.occasion === occasion) &&
+      (!garmentType || garmentKeyOf(look) === garmentType) &&
       (!query || `${look.id} ${look.referenceId} ${look.outfitDescription} ${look.garmentType} ${look.colors.primary} ${look.patternOrEmbroidery?.embroidery}`.toLowerCase().includes(query)),
     )
     : [];
+  // Category chips are recounted for the active occasion, so the page never offers an empty pair.
+  const visibleCategories = categoriesWithinOccasion(allLooks, womenGarmentCategories, occasion);
+  const heading = [occasion ? womenOccasionLabel(occasion) : '', garmentType].filter(Boolean).join(' · ');
 
   return (
     <div className="page men-catalog women-catalog">
       <div className="page-head">
-        <div className="crumbs"><Link to="/">Home</Link> / <Link to="/women">Women</Link>{occasion && <> / {womenOccasionLabel(occasion)}</>}</div>
+        <div className="crumbs"><Link to="/">Home</Link> / <Link to="/women">Women</Link>{heading && <> / {heading}</>}</div>
         <div className="kicker">The Women edit</div>
-        <h1>{occasion ? womenOccasionLabel(occasion) : 'Women'}</h1>
-        <p className="muted">236 festive looks — lehengas, sarees, anarkalis and more, styled for Garba, Diwali and every celebration.</p>
+        <h1>{heading || 'Women'}</h1>
+        <p className="muted">{WOMEN_LOOK_TOTAL} festive looks — lehengas, sarees, anarkalis and more, styled for Garba, Diwali and every celebration.</p>
       </div>
       <div className="men-catalog-toolbar">
         <div className="men-occasion-tabs">
-          <Link className={!occasion ? 'active' : ''} to="/women">All · 236</Link>
+          <Link className={!occasion && !garmentType && !unresolved ? 'active' : ''} to="/women">All · {WOMEN_LOOK_TOTAL}</Link>
           {womenOccasions.map((entry) => (
             <Link key={entry.slug} className={occasion === entry.slug ? 'active' : ''} to={`/women/${entry.slug}`}>
               {entry.label} <span>{entry.range}</span>
@@ -80,11 +99,26 @@ export default function WomenCatalog() {
           aria-label="Search Women looks"
         />
       </div>
-      <div className="men-catalog-summary"><strong>{list.length}</strong> of 236 looks</div>
+      <div className="men-category-row">
+        <span className="men-filter-label">Categories</span>
+        <div className="men-category-tabs">
+          {garmentType && <Link to={occasion ? `${CATALOG_BASE}/${occasion}` : CATALOG_BASE}>All categories</Link>}
+          {visibleCategories.map((entry) => (
+            <Link key={entry.slug} className={garmentType === entry.label ? 'active' : ''} to={categoryHref(CATALOG_BASE, entry.slug, params, occasion)}>
+              {entry.label} <span>{entry.count}</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+      <div className="men-catalog-summary"><strong>{list.length}</strong> of {WOMEN_LOOK_TOTAL} looks</div>
       {list.length ? (
         <div className="men-look-grid">{list.map((look) => <Card key={look.id} look={look} tryOnAvailable={tryOnAvailable} />)}</div>
       ) : (
-        <div className="empty"><h3>No Women looks match</h3><Link className="btn btn-dark" to="/women">Clear filters</Link></div>
+        <div className="empty">
+          <h3>No Women looks match</h3>
+          {unresolved && requested && <p className="muted small">“{requested}” has no Women looks yet, so nothing is invented for it. Browse the categories above instead.</p>}
+          <Link className="btn btn-dark" to="/women">Clear filters</Link>
+        </div>
       )}
     </div>
   );

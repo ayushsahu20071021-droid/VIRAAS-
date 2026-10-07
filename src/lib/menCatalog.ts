@@ -1,4 +1,10 @@
 import raw from '../data/men-look-catalog.client.json';
+import {
+  createCatalogFilterResolver,
+  garmentCategoriesFor,
+  type CatalogFilterResolver,
+  type GarmentCategory,
+} from './catalogCategories';
 
 export interface LookColors {
   primary: string;
@@ -41,3 +47,13 @@ export const menOccasions = [
   { slug: 'traditional', label: 'Traditional', range: '169–210' },
 ] as const;
 export const menOccasionLabel = (slug: string) => menOccasions.find((o) => o.slug === slug)?.label ?? slug;
+
+/**
+ * Men category navigation, derived from the `garmentType` recorded on the 210 approved looks.
+ * Only garment types that actually carry looks are listed, so every category link resolves.
+ */
+export const menGarmentCategories: GarmentCategory[] = garmentCategoriesFor(MEN_LOOKS);
+/** Maps `/men/:category` (plus `?occasion=` / `?category=`) onto occasion and garment filters. */
+export const resolveMenCatalogFilter: CatalogFilterResolver = createCatalogFilterResolver(menOccasions, menGarmentCategories);
+/** Total Men looks, kept in one place so the catalog chrome never hardcodes a count. */
+export const MEN_LOOK_TOTAL = MEN_LOOKS.length;

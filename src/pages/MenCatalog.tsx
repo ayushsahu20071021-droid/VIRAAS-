@@ -1,5 +1,15 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { MEN_LOOKS, menLookById, menOccasionLabel, menOccasions, type MenLook } from '../lib/menCatalog';
+import {
+  MEN_LOOK_TOTAL,
+  MEN_LOOKS,
+  menGarmentCategories,
+  menLookById,
+  menOccasionLabel,
+  menOccasions,
+  resolveMenCatalogFilter,
+  type MenLook,
+} from '../lib/menCatalog';
+import { categoriesWithinOccasion, categoryHref, garmentKeyOf } from '../lib/catalogCategories';
 import { ImageFrame, SaveButton } from '../components/ui';
 import { menLookDetail, DETAIL_FIELDS } from '../lib/lookDetails';
 import menFinalImages from '../data/men-final-images.json';
@@ -29,26 +39,41 @@ function LookCard({ look, tryOnAvailable }: { look: MenLook; tryOnAvailable: boo
   </article>;
 }
 
+const CATALOG_BASE = '/men';
+
 export default function MenCatalog() {
   const tryOnAvailable = useTryOnAvailable();
   const { category } = useParams();
   const [params, setParams] = useSearchParams();
   const q = params.get('q')?.trim().toLowerCase() ?? '';
-  const occasion = category || params.get('occasion') || '';
-  const filtered = MEN_LOOKS.filter((look) => (!occasion || look.occasion === occasion) && (!q || `${look.id} ${look.referenceId} ${look.outfitDescription} ${look.garmentType} ${look.colors.primary}`.toLowerCase().includes(q)));
+  // `/men/:category` accepts an occasion slug (garba, college-fest, …) or a garment-category
+  // slug derived from the looks themselves. Anything else stays unresolved on purpose.
+  const filter = resolveMenCatalogFilter(category, { occasion: params.get('occasion'), category: params.get('category') });
+  const { occasion, garmentType, unresolved, requested } = filter;
+  const filtered = unresolved ? [] : MEN_LOOKS.filter((look) => (!occasion || look.occasion === occasion) && (!garmentType || garmentKeyOf(look) === garmentType) && (!q || `${look.id} ${look.referenceId} ${look.outfitDescription} ${look.garmentType} ${look.colors.primary}`.toLowerCase().includes(q)));
+  const heading = [occasion ? menOccasionLabel(occasion) : '', garmentType].filter(Boolean).join(' · ');
+  // Category chips are recounted for the active occasion, so the page never offers an empty pair.
+  const visibleCategories = categoriesWithinOccasion(MEN_LOOKS, menGarmentCategories, occasion);
   return <div className="page men-catalog">
     <div className="page-head">
-      <div className="crumbs"><Link to="/">Home</Link> / <Link to="/men">Men</Link>{occasion && <> / {menOccasionLabel(occasion)}</>}</div>
+      <div className="crumbs"><Link to="/">Home</Link> / <Link to="/men">Men</Link>{heading && <> / {heading}</>}</div>
       <div className="kicker">The Men edit</div>
-      <h1>{occasion ? menOccasionLabel(occasion) : 'Men'}</h1>
-      <p className="muted">210 festive looks — kurtas, ethnic shirts, jackets and separates, styled for Garba, Diwali and every celebration.</p>
+      <h1>{heading || 'Men'}</h1>
+      <p className="muted">{MEN_LOOK_TOTAL} festive looks — kurtas, ethnic shirts, jackets and separates, styled for Garba, Diwali and every celebration.</p>
     </div>
     <div className="men-catalog-toolbar">
-      <div className="men-occasion-tabs"><Link className={!occasion ? 'active' : ''} to="/men">All · 210</Link>{menOccasions.map((o) => <Link key={o.slug} className={occasion === o.slug ? 'active' : ''} to={`/men/${o.slug}`}>{o.label} <span>{o.range}</span></Link>)}</div>
+      <div className="men-occasion-tabs"><Link className={!occasion && !garmentType && !unresolved ? 'active' : ''} to="/men">All · {MEN_LOOK_TOTAL}</Link>{menOccasions.map((o) => <Link key={o.slug} className={occasion === o.slug ? 'active' : ''} to={`/men/${o.slug}`}>{o.label} <span>{o.range}</span></Link>)}</div>
       <input value={q} onChange={(e) => { const v = e.target.value; const next = new URLSearchParams(params); if (v) next.set('q', v); else next.delete('q'); setParams(next, { replace: true }); }} placeholder="Search look ID, reference or outfit detail" aria-label="Search Men looks" />
     </div>
-    <div className="men-catalog-summary"><strong>{filtered.length}</strong> of 210 looks</div>
-    {filtered.length ? <div className="men-look-grid">{filtered.map((look) => <LookCard key={look.id} look={look} tryOnAvailable={tryOnAvailable} />)}</div> : <div className="empty"><h3>No Men looks match</h3><Link className="btn btn-dark" to="/men">Clear filters</Link></div>}
+    <div className="men-category-row">
+      <span className="men-filter-label">Categories</span>
+      <div className="men-category-tabs">
+        {garmentType && <Link to={occasion ? `${CATALOG_BASE}/${occasion}` : CATALOG_BASE}>All categories</Link>}
+        {visibleCategories.map((entry) => <Link key={entry.slug} className={garmentType === entry.label ? 'active' : ''} to={categoryHref(CATALOG_BASE, entry.slug, params, occasion)}>{entry.label} <span>{entry.count}</span></Link>)}
+      </div>
+    </div>
+    <div className="men-catalog-summary"><strong>{filtered.length}</strong> of {MEN_LOOK_TOTAL} looks</div>
+    {filtered.length ? <div className="men-look-grid">{filtered.map((look) => <LookCard key={look.id} look={look} tryOnAvailable={tryOnAvailable} />)}</div> : <div className="empty"><h3>No Men looks match</h3>{unresolved && requested && <p className="muted small">“{requested}” has no Men looks yet, so nothing is invented for it. Browse the categories above instead.</p>}<Link className="btn btn-dark" to="/men">Clear filters</Link></div>}
   </div>;
 }
 

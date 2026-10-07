@@ -7,6 +7,12 @@ import garba035051v2 from '../data/women-garba-taxonomy-035-051-v2.json';
 import garba052068 from '../data/women-garba-taxonomy-052-068.json';
 import garba052068v2 from '../data/women-garba-taxonomy-052-068-v2.json';
 import garbaProducts025068 from '../data/women-garba-products-025-068.json';
+import {
+  createCatalogFilterResolver,
+  garmentCategoriesFor,
+  type CatalogFilterResolver,
+  type GarmentCategory,
+} from './catalogCategories';
 import type { LookColors, LookPatternOrEmbroidery } from './menCatalog';
 
 /** Stable runtime shape for the approved Women look catalog and its explicit source overlays. */
@@ -86,3 +92,13 @@ export const womenOccasions = [
   { slug: 'traditional', label: 'Traditional', range: '195–236' },
 ] as const;
 export const womenOccasionLabel = (slug: string) => womenOccasions.find((o) => o.slug === slug)?.label ?? slug;
+
+/**
+ * Women category navigation, derived from the `garmentType` recorded on the 236 approved looks.
+ * Only garment types that actually carry looks are listed, so every category link resolves.
+ */
+export const womenGarmentCategories: GarmentCategory[] = garmentCategoriesFor(WOMEN_LOOKS);
+/** Maps `/women/:category` (plus `?occasion=` / `?category=`) onto occasion and garment filters. */
+export const resolveWomenCatalogFilter: CatalogFilterResolver = createCatalogFilterResolver(womenOccasions, womenGarmentCategories);
+/** Total Women looks, kept in one place so the catalog chrome never hardcodes a count. */
+export const WOMEN_LOOK_TOTAL = WOMEN_LOOKS.length;

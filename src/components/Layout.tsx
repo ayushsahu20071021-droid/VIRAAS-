@@ -1,24 +1,19 @@
 import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { categoriesFor, WORLDS, budgetsWithResults, PRODUCTS } from '../lib/data';
+import { WORLDS } from '../lib/data';
+import { menGarmentCategories } from '../lib/menCatalog';
+import { womenGarmentCategories } from '../lib/womenCatalog';
 import { useSaved } from '../lib/saved';
 import { useTryOnAvailable } from '../lib/tryOnStatus';
 
-const WOMEN_MENU = ['Chaniya Choli', 'Lehenga', 'Sharara', 'Gharara', 'Saree', 'Pre-Draped Saree', 'Anarkali', 'Kurta Sets', 'Jewellery', 'Bags', 'Footwear'];
-const MEN_MENU = ['Modern Kurta', 'Festive Kurta Set', 'Ethnic Shirt', 'Printed Ethnic Shirt', 'Embroidered Ethnic Shirt', 'Festive Jacket', 'Traditional Layer', 'Festive Separates'];
-const PLURAL: Record<string, string> = { Saree: 'Sarees', 'Pre-Draped Saree': 'Pre-Draped Sarees', 'Modern Kurta': 'Modern Kurtas', 'Festive Kurta Set': 'Festive Kurta Sets', 'Ethnic Shirt': 'Ethnic Shirts', 'Printed Ethnic Shirt': 'Printed Ethnic Shirts', 'Embroidered Ethnic Shirt': 'Embroidered Shirts', 'Festive Jacket': 'Festive Jackets', 'Traditional Layer': 'Traditional Layers' };
-
+// Women/Men category navigation is derived from the approved look metadata itself (garmentType),
+// so a menu entry can only ever be shown when the catalog actually has looks behind it.
 function Mega({ gender }: { gender: 'women' | 'men' }) {
-  const cats = categoriesFor(gender);
-  const order = gender === 'women' ? WOMEN_MENU : MEN_MENU;
-  const visible = order.map((n) => cats.find((c) => c.name === n)).filter((c): c is NonNullable<typeof c> => !!c && c.count > 0);
-  const budgets = budgetsWithResults(PRODUCTS.filter((p) => p.gender === gender));
+  const categories = gender === 'women' ? womenGarmentCategories : menGarmentCategories;
   return (
     <div className="mega" role="menu">
-      <div><h4>Categories</h4>{visible.map((c) => <Link key={c.slug} to={`/${gender}/${c.slug}`}>{PLURAL[c.name] ?? c.name}</Link>)}
-        {gender === 'men' && <Link to="/search?q=garba%20men">Garba / Navratri</Link>}</div>
+      <div><h4>Categories</h4>{categories.map((c) => <Link key={c.slug} to={`/${gender}/${c.slug}`}>{c.label}</Link>)}</div>
       <div><h4>Occasions</h4>{WORLDS.map((w) => <Link key={w.slug} to={`/${gender}?occasion=${w.slug}`}>{w.name}</Link>)}</div>
-      <div><h4>Budgets</h4>{budgets.map((b) => <Link key={b.slug} to={`/${gender}?budget=${b.slug}`}>{b.label}</Link>)}</div>
     </div>
   );
 }
