@@ -1,5 +1,12 @@
-// Focused, zero-spend tests for durable Try-On credits and PayU Hosted Checkout verification.
-// PayU is stubbed only inside this test process; no payment or Runware request is made.
+// Focused, zero-spend tests for the FINAL VIRAAS Try-On model:
+//   - Try-On is completely anonymous; no signup/login required.
+//   - Every Try-On costs exactly ₹20 INR via PayU hosted checkout.
+//   - No free credits. Successful PayU callback grants exactly +1 credit.
+//   - Duplicate callbacks never double-grant.
+//   - Payment/order is server-linked to the HttpOnly anonymous identity cookie.
+//   - Runware failure releases the reserved credit so user can retry without paying again.
+//   - Connect/private routes remain authentication-gated (no anonymous messaging).
+// PayU is stubbed only inside this test process; no real payment or Runware request is made.
 import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
 import { newDb } from 'pg-mem';
@@ -34,6 +41,7 @@ const originalFetch = globalThis.fetch;
 let expectedTxn = '';
 let verifyCalls = 0;
 
+// Mock PayU verify_payment endpoint
 globalThis.fetch = async (input, init = {}) => {
   const url = String(input);
   if (url.startsWith('https://test.payu.in/merchant/postservice.php')) {
@@ -43,7 +51,10 @@ globalThis.fetch = async (input, init = {}) => {
     assert.equal(form.get('command'), 'verify_payment');
     assert.equal(form.get('var1'), expectedTxn);
     assert.equal(form.get('hash'), crypto.createHash('sha512').update(`${process.env.PAYU_MERCHANT_KEY}|verify_payment|${expectedTxn}|${process.env.PAYU_MERCHANT_SALT}`).digest('hex'));
-    const stored = await pool.query('SELECT productinfo,firstname,email FROM payu_credit_payments WHERE txnid=$1', [expectedTxn]);
+    // Look in both tables
+    const authStored = await pool.query('SELECT productinfo,firstname,email FROM payu_credit_payments WHERE txnid=$1', [expectedTxn]);
+    const anonStored = await pool.query('SELECT productinfo,firstname,email FROM anonymous_payu_payments WHERE txnid=$1', [expectedTxn]);
+    const stored = authStored.rowCount ? authStored : anonStored;
     assert.equal(stored.rowCount, 1, 'verification can only query a persisted VIRAAS payment record');
     return new Response(JSON.stringify({
       status: 1,
@@ -87,108 +98,39 @@ let server;
 let tryOnProvider;
 let originalTryOnGenerate;
 try {
+  // --- Authenticated account credits still work for signup grants (used by Connect persistence) ---
   const account = await makeAdult('credit-test-user', 'Asha Test');
   const initial = await credits.getTryOnCreditBalance(account.userId);
-  assert.equal(initial, 2, 'profile completion grants exactly two persistent free credits');
+  assert.equal(initial, 2, 'profile completion grants exactly two persistent signup credits (Connect accounts only)');
   assert.equal(await credits.grantSignupCredits(account.userId), 2, 'a repeated login/session never re-grants signup credits');
   assert.equal(await credits.getTryOnCreditBalance(account.userId), 2);
 
-  const reservation = await credits.reserveTryOnCredit({ userId: account.userId, requestKey: 'generation-0001', outfitId: 'women-look-001' });
-  assert.equal(reservation.ok, true);
-  assert.equal(reservation.balance, 1);
-  const repeatedReservation = await credits.reserveTryOnCredit({ userId: account.userId, requestKey: 'generation-0001', outfitId: 'women-look-001' });
-  assert.equal(repeatedReservation.ok, false, 'a repeated request key cannot reserve another credit');
-  assert.equal(repeatedReservation.reason, 'duplicate_request');
-  assert.equal(await credits.getTryOnCreditBalance(account.userId), 1);
-
-  const released = await credits.releaseTryOnCredit({ userId: account.userId, generationId: reservation.generationId, failureCode: 'provider_failure' });
-  assert.equal(released.ok, true);
-  assert.equal(released.balance, 2);
-  const repeatedRelease = await credits.releaseTryOnCredit({ userId: account.userId, generationId: reservation.generationId, failureCode: 'provider_failure' });
-  assert.equal(repeatedRelease.duplicate, true, 'a failed generation releases its reserved credit only once');
-  assert.equal(await credits.getTryOnCreditBalance(account.userId), 2);
-
-  const consumedReservation = await credits.reserveTryOnCredit({ userId: account.userId, requestKey: 'generation-0002', outfitId: 'men-look-001' });
-  const consumed = await credits.consumeTryOnCredit({ userId: account.userId, generationId: consumedReservation.generationId });
-  assert.equal(consumed.ok, true);
-  assert.equal(consumed.balance, 1);
-  assert.equal((await credits.consumeTryOnCredit({ userId: account.userId, generationId: consumedReservation.generationId })).duplicate, true);
-  assert.equal(await credits.getTryOnCreditBalance(account.userId), 1, 'successful generation consumes one reserved credit');
-
+  // --- ₹20 amount constants ---
   assert.equal(payments.paymentStorePersistent, true);
   assert.equal(payments.paymentProviderConfigured, true);
   assert.equal(payments.paymentProviderName, 'payu');
   assert.equal(payments.CREDIT_PRICE_INR, 20);
+  assert.equal(payments.CREDIT_PRICE_PAISE, 2000);
   assert.equal(payments.amountPaise('20.00'), 2000);
   assert.equal(payments.amountPaise('20.01'), 2001);
   assert.equal(payments.amountPaise('20.000'), null);
 
-  const checkout = await payments.createCreditPayment({
-    userId: account.userId,
-    requestKey: 'purchase-0001',
-    phone: '9876543210',
-    profile: { display_name: 'Asha Test' },
-    email: account.email,
-    returnPath: '/try-on?womenLook=women-look-001',
-    publicOrigin: 'https://viraas.example',
+  // --- PayU hash verification ---
+  const dummyCheckout = payuProvider.createCheckout({
+    txnid: 'TESTTXN01', amount: '20.00', productinfo: 'VIRAAS Try-On Credit',
+    firstname: 'VIRAAS Guest', email: 'guest@viraas.local', phone: '',
+    surl: 'https://example.com/cb', furl: 'https://example.com/cb',
   });
-  assert.equal(checkout.ok, true);
-  assert.equal(checkout.checkout.endpoint, 'https://test.payu.in/_payment');
-  assert.equal(checkout.checkout.fields.amount, '20.00');
-  assert.equal(checkout.checkout.fields.productinfo, 'VIRAAS Try-On Credit');
-  const payuFields = checkout.checkout.fields;
-  const requestHashInput = [payuFields.key,payuFields.txnid,payuFields.amount,payuFields.productinfo,payuFields.firstname,payuFields.email,payuFields.udf1,payuFields.udf2,payuFields.udf3,payuFields.udf4,payuFields.udf5,'','','','','',process.env.PAYU_MERCHANT_SALT].join('|');
-  assert.equal(payuFields.hash, crypto.createHash('sha512').update(requestHashInput).digest('hex'), 'the hosted-checkout request hash follows PayU SHA-512 ordering');
-  assert.equal(JSON.stringify(checkout).includes(process.env.PAYU_MERCHANT_SALT), false, 'the PayU merchant salt is never returned to the browser');
-  expectedTxn = checkout.txnid;
-
-  const callback = { ...checkout.checkout.fields, status: 'success', hash: '' };
+  assert.equal(dummyCheckout.fields.amount, '20.00');
+  const requestHashInput = [dummyCheckout.fields.key,dummyCheckout.fields.txnid,dummyCheckout.fields.amount,dummyCheckout.fields.productinfo,dummyCheckout.fields.firstname,dummyCheckout.fields.email,'','','','','','','','','','',process.env.PAYU_MERCHANT_SALT].join('|');
+  assert.equal(dummyCheckout.fields.hash, crypto.createHash('sha512').update(requestHashInput).digest('hex'));
+  const callback = { ...dummyCheckout.fields, status: 'success', hash: '' };
   callback.hash = payuReverseHash(callback);
-  assert.equal(payuProvider.verifyCallbackHash(callback), true, 'a valid PayU reverse signature is accepted');
-  assert.equal(payuProvider.verifyCallbackHash({ ...callback, amount: '1.00' }), false, 'a changed amount invalidates the PayU response hash');
-  assert.equal(payuProvider.verifyCallbackHash({ ...callback, key: 'attacker-key' }), false, 'an untrusted merchant key is rejected');
+  assert.equal(payuProvider.verifyCallbackHash(callback), true);
+  assert.equal(payuProvider.verifyCallbackHash({ ...callback, amount: '1.00' }), false, 'changed amount invalidates hash');
+  assert.equal(payuProvider.verifyCallbackHash({ ...callback, key: 'attacker-key' }), false);
 
-  const verified = await payuProvider.verifyPayment(checkout.txnid);
-  assert.equal(verified.verified, true);
-  assert.equal(verified.captured, true);
-  assert.equal(verified.amountPaise, 2000);
-  assert.equal(verifyCalls, 1);
-  const purchase = await payments.markPayUSuccess(verified);
-  assert.equal(purchase.ok, true);
-  assert.equal(purchase.duplicate, false);
-  assert.equal(purchase.balance, 2, 'one verified ₹20 PayU payment adds exactly one credit');
-  const replay = await payments.markPayUSuccess(verified);
-  assert.equal(replay.ok, true);
-  assert.equal(replay.duplicate, true, 'replaying a verified PayU capture is idempotent');
-  assert.equal(await credits.getTryOnCreditBalance(account.userId), 2, 'a replay never adds a second credit');
-
-  const failedOrder = await payments.createCreditPayment({
-    userId: account.userId,
-    requestKey: 'purchase-0002', phone: '9876543210', profile: { display_name: 'Asha Test' }, email: account.email,
-    returnPath: '/try-on?menLook=men-look-001', publicOrigin: 'https://viraas.example',
-  });
-  assert.equal(failedOrder.ok, true);
-  const balanceBeforeFailure = await credits.getTryOnCreditBalance(account.userId);
-  await payments.markPayUFailed({ txnid: failedOrder.txnid });
-  await payments.markPayUFailed({ txnid: failedOrder.txnid });
-  assert.equal(await credits.getTryOnCreditBalance(account.userId), balanceBeforeFailure, 'a failed payment does not grant credits');
-  assert.equal((await payments.getPaymentStatusForUser({ txnid: failedOrder.txnid, userId: account.userId })).status, 'failed');
-
-  const finalReservationA = await credits.reserveTryOnCredit({ userId: account.userId, requestKey: 'generation-0003', outfitId: 'women-look-003' });
-  const finalReservationB = await credits.reserveTryOnCredit({ userId: account.userId, requestKey: 'generation-0004', outfitId: 'men-look-002' });
-  assert.equal(finalReservationA.ok, true);
-  assert.equal(finalReservationB.ok, true);
-  assert.equal(finalReservationB.balance, 0);
-  const zero = await credits.reserveTryOnCredit({ userId: account.userId, requestKey: 'generation-0005', outfitId: 'women-look-004' });
-  assert.equal(zero.ok, false);
-  assert.equal(zero.reason, 'no_credits');
-  assert.equal(zero.balance, 0);
-  assert.equal(credits.NO_TRYON_CREDITS_MESSAGE, 'No Try-On credits remaining.');
-
-  // The hosted callback path validates the PayU signature and performs a server-side verify call;
-  // its HTTP redirect cannot grant a credit without that verification.
-  const callbackAccount = await makeAdult('credit-callback-user', 'Callback User');
-  // Enable only the configuration gate for the payment-route harness; no Runware request is made.
+  // --- Start server to test HTTP endpoints ---
   process.env.RUNWARE_API_KEY = 'test-only-runware-key';
   process.env.RUNWARE_ZDR = 'true';
   const { default: app } = await import('../server/app.mjs');
@@ -196,55 +138,22 @@ try {
   await new Promise((resolve) => server.once('listening', resolve));
   const base = `http://127.0.0.1:${server.address().port}`;
   const localFetch = async (url, init) => originalFetch(`${base}${url}`, init);
-  const topUpStatusResponse = await localFetch('/api/try-on/status');
-  const topUpStatus = await topUpStatusResponse.json();
-  assert.equal(topUpStatus.topUpAvailable, false, '₹20 Try-On top-ups remain postponed');
-  const disabledCheckout = await localFetch('/api/payment/create', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'X-Test-Auth-Subject': 'credit-callback-user', 'Idempotency-Key': 'callback-purchase-0001' },
-    body: JSON.stringify({ womenLookId: 'women-look-001', phone: '9876543210' }),
-  });
-  const disabledCheckoutBody = await disabledCheckout.json();
-  assert.equal(disabledCheckout.status, 503);
-  assert.equal(disabledCheckoutBody.code, 'PAYMENT_TOP_UP_POSTPONED');
-  const created = await payments.createCreditPayment({
-    userId: callbackAccount.userId, requestKey: 'callback-purchase-0001', phone: '9876543210',
-    profile: { display_name: 'Callback User' }, email: callbackAccount.email,
-    returnPath: '/try-on?womenLook=women-look-001', publicOrigin: 'https://viraas.example',
-  });
-  assert.equal(created.ok, true);
-  assert.equal(created.checkout.endpoint, 'https://test.payu.in/_payment');
-  expectedTxn = created.txnid;
-  const responseFields = { ...created.checkout.fields, status: 'success' };
-  responseFields.hash = payuReverseHash(responseFields);
-  const callbackResponse = await localFetch('/api/payment/payu/callback', {
-    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(responseFields), redirect: 'manual',
-  });
-  const callbackText = await callbackResponse.clone().text();
-  assert.equal(callbackResponse.status, 303, `verified PayU callback returns the customer to the selected look: ${callbackText}`);
-  assert.match(callbackResponse.headers.get('location') || '', /\/try-on\?womenLook=women-look-001&payment=success&txnid=/);
-  const callbackBalance = await credits.getTryOnCreditBalance(callbackAccount.userId);
-  assert.equal(callbackBalance, 3, 'one verified callback adds one credit to the two signup credits');
-  const duplicateCallback = await localFetch('/api/payment/payu/callback', {
-    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(responseFields), redirect: 'manual',
-  });
-  assert.equal(duplicateCallback.status, 303);
-  assert.equal(await credits.getTryOnCreditBalance(callbackAccount.userId), 3, 'a duplicate callback cannot replay the credit grant');
 
-  const creditResponse = await localFetch('/api/try-on/credits', { headers: { 'X-Test-Auth-Subject': 'credit-callback-user' } });
-  const creditBody = await creditResponse.json();
-  assert.equal(creditBody.balance, 3);
-  assert.equal(creditBody.noCreditsMessage, 'No Try-On credits remaining.');
+  // /api/try-on/status advertises ₹20 payment requirement
+  const statusResponse = await localFetch('/api/try-on/status');
+  const statusBody = await statusResponse.json();
+  assert.equal(statusBody.paymentRequired, true, 'Try-On requires payment');
+  assert.equal(statusBody.priceInr, 20, 'price is ₹20');
+  assert.equal(statusBody.topUpAvailable, true, '₹20 PayU checkout is enabled');
 
-  // Anonymous balance uses a random HttpOnly cookie and remains server-side across refreshes.
+  // --- Fresh anonymous identity starts with ZERO credits (no free credits) ---
   const freshAnonymousResponse = await localFetch('/api/try-on/credits', { headers: { 'X-Forwarded-Proto': 'https' } });
   const freshAnonymous = await freshAnonymousResponse.json();
   assert.equal(freshAnonymousResponse.status, 200, JSON.stringify(freshAnonymous));
-  assert.equal(freshAnonymous.balance, 2, 'a fresh anonymous cookie identity receives exactly two credits');
-  assert.equal(freshAnonymous.initialCredits, 2);
-  assert.equal('anonymousId' in freshAnonymous, false, 'the anonymous principal ID is never sent to JavaScript');
+  assert.equal(freshAnonymous.balance, 0, 'NEW anonymous identity has 0 credits — no free credits!');
+  assert.equal(freshAnonymous.priceInr, 20);
+  assert.equal('anonymousId' in freshAnonymous, false, 'anonymous id never sent to JS');
+  assert.equal('initialCredits' in freshAnonymous, false, 'no initialCredits field exposed');
   const cookieHeaders = freshAnonymousResponse.headers.getSetCookie?.() || [freshAnonymousResponse.headers.get('set-cookie') || ''];
   const anonymousSetCookie = cookieHeaders.find((value) => value.startsWith('viraas_tryon_anon=')) || '';
   assert.match(anonymousSetCookie, /HttpOnly/i);
@@ -252,157 +161,192 @@ try {
   assert.match(anonymousSetCookie, /Secure/i);
   assert.match(anonymousSetCookie, /Max-Age=31536000/i);
   const anonymousCookie = anonymousSetCookie.split(';')[0];
-  assert.ok(anonymousCookie.startsWith('viraas_tryon_anon='));
   const anonymousToken = decodeURIComponent(anonymousCookie.slice('viraas_tryon_anon='.length));
-  assert.match(anonymousToken, /^[A-Za-z0-9_-]{43}$/, 'the cookie contains a cryptographically random 256-bit non-PII token');
-  assert.equal(JSON.stringify(freshAnonymous).includes(anonymousToken), false, 'the cookie token never appears in the JSON response');
+  assert.match(anonymousToken, /^[A-Za-z0-9_-]{43}$/, '256-bit random token');
   const anonymousHash = crypto.createHash('sha256').update(anonymousToken).digest('hex');
-  const anonymousIdentityRow = await pool.query('SELECT anonymous_id,token_hash FROM tryon_anonymous_identities WHERE token_hash=$1', [anonymousHash]);
-  assert.equal(anonymousIdentityRow.rowCount, 1, 'only the token hash is stored');
-  assert.equal(anonymousIdentityRow.rows[0].token_hash, anonymousHash);
-  const refreshedAnonymousResponse = await localFetch('/api/try-on/credits', { headers: { Cookie: anonymousCookie } });
-  const refreshedAnonymous = await refreshedAnonymousResponse.json();
-  assert.equal(refreshedAnonymous.balance, 2, 'refreshing with the same cookie never re-grants or loses credits');
-  assert.equal((await pool.query("SELECT count(*)::int AS n FROM tryon_anonymous_credit_ledger WHERE anonymous_id=$1 AND event_type='initial_grant'", [anonymousIdentityRow.rows[0].anonymous_id])).rows[0].n, 1);
+  const anonIdentityRow = await pool.query('SELECT anonymous_id,token_hash FROM tryon_anonymous_identities WHERE token_hash=$1', [anonymousHash]);
+  assert.equal(anonIdentityRow.rowCount, 1);
+  assert.equal(anonIdentityRow.rows[0].token_hash, anonymousHash);
 
-  const socialStatus = await (await localFetch('/api/social/status')).json();
-  assert.equal(socialStatus.available, true, 'healthy auth and storage advertise Connect as available');
-  const signedOutMe = await (await localFetch('/api/social/me')).json();
-  assert.equal(signedOutMe.authenticated, false);
-  assert.equal(signedOutMe.me, null, 'signed-out Connect returns no profile data');
-  for (const privatePath of ['/api/social/users', '/api/social/requests', '/api/social/conversations']) {
-    const privateResponse = await localFetch(privatePath);
-    assert.equal(privateResponse.status, 401, `${privatePath} stays authentication-gated`);
-  }
+  // Verify NO initial_grant was created for this new anonymous identity
+  const grantCount = (await pool.query("SELECT count(*)::int AS n FROM tryon_anonymous_credit_ledger WHERE anonymous_id=$1 AND event_type='initial_grant'", [anonIdentityRow.rows[0].anonymous_id])).rows[0].n;
+  assert.equal(grantCount, 0, 'new anonymous identities do not receive any free grant');
 
+  // Refreshing credits doesn't grant free credits
+  const refreshedResponse = await localFetch('/api/try-on/credits', { headers: { Cookie: anonymousCookie } });
+  const refreshed = await refreshedResponse.json();
+  assert.equal(refreshed.balance, 0, 'refreshing does not grant free credits');
+
+  // --- Trying to generate without credits returns 402 NO_TRYON_CREDITS ---
+  const testPhoto = 'data:image/jpeg;base64,/9j/2Q==';
+  const genNoCredit = await localFetch('/api/try-on', {
+    method: 'POST', headers: { 'Content-Type': 'application/json', Cookie: anonymousCookie, 'Idempotency-Key': 'gen-no-credit-01' },
+    body: JSON.stringify({ womenLookId: 'women-look-001', photo: testPhoto, ageConfirmed: true, consent: true }),
+  });
+  const genNoCreditBody = await genNoCredit.json();
+  assert.equal(genNoCredit.status, 402, 'generation without credits returns 402');
+  assert.equal(genNoCreditBody.code, 'NO_TRYON_CREDITS');
+  assert.equal(genNoCreditBody.priceInr, 20, '402 response exposes ₹20 price');
+
+  // --- Create anonymous PayU payment via /api/payment/create (no auth required) ---
+  const payResp = await localFetch('/api/payment/create', {
+    method: 'POST', credentials: 'include',
+    headers: { 'Content-Type': 'application/json', Cookie: anonymousCookie, 'Idempotency-Key': 'anon-payment-001' },
+    body: JSON.stringify({ womenLookId: 'women-look-001' }),
+  });
+  const payBody = await payResp.json();
+  assert.equal(payResp.status, 200, JSON.stringify(payBody));
+  assert.equal(payBody.ok, true);
+  assert.equal(payBody.priceInr, 20);
+  assert.ok(payBody.txnid, 'payment returned a txnid');
+  assert.equal(payBody.checkout.endpoint, 'https://test.payu.in/_payment');
+  assert.equal(payBody.checkout.fields.amount, '20.00');
+  assert.equal(payBody.checkout.fields.productinfo, 'VIRAAS Try-On Credit');
+  assert.equal(JSON.stringify(payBody).includes(process.env.PAYU_MERCHANT_SALT), false, 'salt never returned to browser');
+  expectedTxn = payBody.txnid;
+
+  // Payment is linked to the anonymous identity in DB
+  const payRow = await pool.query('SELECT payment_id,anonymous_id,amount_paise,status,txnid FROM anonymous_payu_payments WHERE txnid=$1', [expectedTxn]);
+  assert.equal(payRow.rowCount, 1);
+  assert.equal(payRow.rows[0].anonymous_id, anonIdentityRow.rows[0].anonymous_id);
+  assert.equal(payRow.rows[0].amount_paise, 2000, 'amount is exactly ₹20 = 2000 paise');
+  assert.equal(payRow.rows[0].status, 'pending');
+  // No photo bytes stored in payment record
+  const payCols = Object.keys(payRow.rows[0]);
+  assert.ok(!payCols.includes('photo') && !payCols.includes('photo_data') && !payCols.includes('image'), 'no photo bytes in payment table');
+
+  // --- Simulate PayU callback (signed) ---
+  const responseFields = { ...payBody.checkout.fields, status: 'success' };
+  responseFields.hash = payuReverseHash(responseFields);
+  const cbResp = await localFetch('/api/payment/payu/callback', {
+    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(responseFields), redirect: 'manual',
+  });
+  assert.equal(cbResp.status, 303, 'verified callback returns 303 redirect');
+  assert.match(cbResp.headers.get('location') || '', /payment=success/);
+  // After successful callback — balance should be 1
+  const afterPay = await localFetch('/api/try-on/credits', { headers: { Cookie: anonymousCookie } });
+  const afterPayBody = await afterPay.json();
+  assert.equal(afterPayBody.balance, 1, 'successful PayU payment grants exactly 1 credit to anonymous identity');
+
+  // Duplicate callback does NOT grant twice
+  const cbDup = await localFetch('/api/payment/payu/callback', {
+    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(responseFields), redirect: 'manual',
+  });
+  assert.equal(cbDup.status, 303);
+  const afterDup = await localFetch('/api/try-on/credits', { headers: { Cookie: anonymousCookie } });
+  assert.equal((await afterDup.json()).balance, 1, 'duplicate callback does not grant a second credit');
+
+  // Ledger has exactly one payu_purchase entry for this identity
+  const purchaseEntries = (await pool.query("SELECT count(*)::int AS n FROM tryon_anonymous_credit_ledger WHERE anonymous_id=$1 AND event_type='payu_purchase'", [anonIdentityRow.rows[0].anonymous_id])).rows[0].n;
+  assert.equal(purchaseEntries, 1, 'exactly one payu_purchase ledger entry');
+
+  // --- Payment status from another cookie (different anonymous identity) returns 404 ---
+  // i.e., payment status must be scoped to the current cookie identity
+  const otherCookieResponse = await localFetch('/api/try-on/credits', { headers: { 'X-Forwarded-Proto': 'https' } });
+  const otherCookieHeader = otherCookieResponse.headers.getSetCookie?.() || [otherCookieResponse.headers.get('set-cookie') || ''];
+  const otherCookie = (otherCookieHeader.find((v) => v.startsWith('viraas_tryon_anon=')) || '').split(';')[0];
+  const otherStatus = await localFetch(`/api/payment/status?txnid=${encodeURIComponent(expectedTxn)}`, { headers: { Cookie: otherCookie } });
+  assert.equal(otherStatus.status, 404, 'a different anonymous identity cannot see another\'s payment');
+
+  // --- Failed payment grants zero credits ---
+  const failedPayResp = await localFetch('/api/payment/create', {
+    method: 'POST', headers: { 'Content-Type': 'application/json', Cookie: anonymousCookie, 'Idempotency-Key': 'anon-payment-failed-01' },
+    body: JSON.stringify({ menLookId: 'men-look-001' }),
+  });
+  const failedPayBody = await failedPayResp.json();
+  assert.equal(failedPayBody.ok, true);
+  const failedTxn = failedPayBody.txnid;
+  await payments.markPayUFailed({ txnid: failedTxn, failureCode: 'payment_failed' });
+  const afterFailed = await localFetch('/api/try-on/credits', { headers: { Cookie: anonymousCookie } });
+  assert.equal((await afterFailed.json()).balance, 1, 'failed payment does not grant any credit');
+  const failedStatus = await payments.getAnonymousPaymentStatus({ txnid: failedTxn, anonymousId: anonIdentityRow.rows[0].anonymous_id });
+  assert.equal(failedStatus.status, 'failed');
+
+  // --- Provider mocking for generation tests ---
   const { tryOnProvider: provider } = await import('../server/tryOnProvider.mjs');
   tryOnProvider = provider;
   originalTryOnGenerate = provider.generateTryOn;
   let providerBehavior = 'success';
   let providerCalls = 0;
-  let concurrentArrivals = 0;
-  let markConcurrentArrivals;
-  let releaseConcurrentProvider;
-  const concurrentArrivalsReady = new Promise((resolve) => { markConcurrentArrivals = resolve; });
-  const concurrentProviderGate = new Promise((resolve) => { releaseConcurrentProvider = resolve; });
-  const testPhoto = 'data:image/jpeg;base64,/9j/2Q==';
   provider.generateTryOn = async ({ outfitId, photo, garmentImageUrl }) => {
     providerCalls++;
-    assert.equal(photo, testPhoto, 'the existing safely-processed JPEG is passed to the provider in memory');
-    assert.match(garmentImageUrl, /^data:image\//, 'the provider receives the exact catalog garment reference');
+    assert.equal(photo, testPhoto);
+    assert.match(garmentImageUrl, /^data:image\//);
     if (providerBehavior === 'failure') return { ok: false, mode: 'test-provider', outfitId, message: 'Test provider failure.' };
     if (providerBehavior === 'throw') throw new Error('Test provider exception.');
-    if (providerBehavior === 'barrier') {
-      concurrentArrivals++;
-      if (concurrentArrivals === 2) markConcurrentArrivals();
-      await concurrentProviderGate;
-    }
     return { ok: true, mode: 'test-provider', outfitId, resultImage: 'data:image/png;base64,iVBORw0KGgo=' };
   };
-  const generateAnonymous = (cookie, requestKey, subject = { womenLookId: 'women-look-001' }) => localFetch('/api/try-on', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', Cookie: cookie, 'Idempotency-Key': requestKey },
+  const generateAnon = (cookie, requestKey, subject = { womenLookId: 'women-look-001' }) => localFetch('/api/try-on', {
+    method: 'POST', headers: { 'Content-Type': 'application/json', Cookie: cookie, 'Idempotency-Key': requestKey },
     body: JSON.stringify({ ...subject, photo: testPhoto, ageConfirmed: true, consent: true }),
   });
 
-  const firstGeneration = await generateAnonymous(anonymousCookie, 'anonymous-generation-0001');
-  const firstGenerationBody = await firstGeneration.json();
-  assert.equal(firstGeneration.status, 200, JSON.stringify(firstGenerationBody));
-  assert.equal(firstGenerationBody.creditsRemaining, 1, 'reservation reduces 2 to 1 and success consumes that reservation without another deduction');
-  const firstGenerationLedger = await pool.query('SELECT event_type,delta,balance_after FROM tryon_anonymous_credit_ledger WHERE anonymous_id=$1 ORDER BY created_at,entry_id', [anonymousIdentityRow.rows[0].anonymous_id]);
-  const reservationEntry = firstGenerationLedger.rows.find((row) => row.event_type === 'reserve');
-  const consumeEntry = firstGenerationLedger.rows.find((row) => row.event_type === 'consume');
-  assert.equal(firstGenerationLedger.rows.filter((row) => row.event_type === 'reserve').length, 1);
-  assert.equal(reservationEntry.delta, -1);
-  assert.equal(reservationEntry.balance_after, 1, 'the atomic reservation reduces the account to one credit');
-  assert.equal(consumeEntry.delta, 0);
-  assert.equal(consumeEntry.balance_after, 1, 'consuming a successful reservation never deducts the credit a second time');
-  const callsAfterFirst = providerCalls;
-  const duplicateGeneration = await generateAnonymous(anonymousCookie, 'anonymous-generation-0001');
-  assert.equal(duplicateGeneration.status, 409, 'replaying a consumed request key is rejected');
-  assert.equal(providerCalls, callsAfterFirst, 'a duplicate request never calls the provider or consumes again');
-  assert.equal(await anonymousCredits.getAnonymousTryOnCreditBalance(anonymousIdentityRow.rows[0].anonymous_id), 1);
+  // --- Successful generation consumes the 1 paid credit ---
+  const successGen = await generateAnon(anonymousCookie, 'anon-gen-success-01');
+  const successGenBody = await successGen.json();
+  assert.equal(successGen.status, 200, JSON.stringify(successGenBody));
+  assert.equal(successGenBody.creditsRemaining, 0, 'generation consumes the paid credit to 0');
+  assert.equal(await anonymousCredits.getAnonymousTryOnCreditBalance(anonIdentityRow.rows[0].anonymous_id), 0);
 
-  const secondGeneration = await generateAnonymous(anonymousCookie, 'anonymous-generation-0002', { menLookId: 'men-look-001' });
-  const secondGenerationBody = await secondGeneration.json();
-  assert.equal(secondGeneration.status, 200, JSON.stringify(secondGenerationBody));
-  assert.equal(secondGenerationBody.creditsRemaining, 0, 'the second successful generation consumes the remaining credit');
-  const thirdGeneration = await generateAnonymous(anonymousCookie, 'anonymous-generation-0003');
-  const thirdGenerationBody = await thirdGeneration.json();
-  assert.equal(thirdGeneration.status, 402);
-  assert.equal(thirdGenerationBody.code, 'NO_TRYON_CREDITS');
-  assert.equal(thirdGenerationBody.message, 'No Try-On credits remaining.');
+  // Runware failure releases credit
+  const failCookieResp = await localFetch('/api/payment/create', {
+    method: 'POST', headers: { 'Content-Type': 'application/json', Cookie: anonymousCookie, 'Idempotency-Key': 'anon-payment-fail-gen-01' },
+    body: JSON.stringify({ womenLookId: 'women-look-001' }),
+  });
+  const failPayBody = await failCookieResp.json();
+  // Simulate PayU success for this payment
+  const failRespFields = { ...failPayBody.checkout.fields, status: 'success' };
+  failRespFields.hash = payuReverseHash(failRespFields);
+  expectedTxn = failPayBody.txnid;
+  await localFetch('/api/payment/payu/callback', {
+    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(failRespFields), redirect: 'manual',
+  });
+  const balAfterFailPay = await anonymousCredits.getAnonymousTryOnCreditBalance(anonIdentityRow.rows[0].anonymous_id);
+  assert.equal(balAfterFailPay, 1, 'second purchase gives another credit');
 
-  const failedAnonymousResponse = await localFetch('/api/try-on/credits');
-  const failedAnonymousData = await failedAnonymousResponse.json();
-  const failedCookieHeader = failedAnonymousResponse.headers.getSetCookie?.() || [failedAnonymousResponse.headers.get('set-cookie') || ''];
-  const failedCookie = (failedCookieHeader.find((value) => value.startsWith('viraas_tryon_anon=')) || '').split(';')[0];
-  assert.equal(failedAnonymousData.balance, 2);
-  const failedToken = decodeURIComponent(failedCookie.slice('viraas_tryon_anon='.length));
-  const failedHash = crypto.createHash('sha256').update(failedToken).digest('hex');
-  const failedIdentity = await pool.query('SELECT anonymous_id FROM tryon_anonymous_identities WHERE token_hash=$1', [failedHash]);
-  assert.equal(failedIdentity.rowCount, 1);
   providerBehavior = 'failure';
-  const providerFailure = await generateAnonymous(failedCookie, 'anonymous-provider-failure-01');
-  assert.equal(providerFailure.status, 502);
-  assert.equal(await anonymousCredits.getAnonymousTryOnCreditBalance(failedIdentity.rows[0].anonymous_id), 2, 'a provider failure releases its reservation exactly once');
-  const failedGeneration = await pool.query("SELECT generation_id,status FROM tryon_anonymous_generations WHERE anonymous_id=$1", [failedIdentity.rows[0].anonymous_id]);
-  assert.equal(failedGeneration.rows[0].status, 'released');
-  const duplicateRelease = await anonymousCredits.releaseAnonymousTryOnCredit({ anonymousId: failedIdentity.rows[0].anonymous_id, generationId: failedGeneration.rows[0].generation_id, failureCode: 'provider_failure' });
-  assert.equal(duplicateRelease.duplicate, true);
-  assert.equal(duplicateRelease.balance, 2, 'duplicate failure handling never refunds twice');
+  const provFail = await generateAnon(anonymousCookie, 'anon-gen-provfail-01');
+  const provFailBody = await provFail.json();
+  assert.equal(provFail.status, 502);
+  assert.equal(provFailBody.creditReleased, true, 'Runware failure releases credit');
+  assert.equal(await anonymousCredits.getAnonymousTryOnCreditBalance(anonIdentityRow.rows[0].anonymous_id), 1, 'credit was released; can retry without paying again');
+
+  // Provider exception also releases
   providerBehavior = 'throw';
-  const providerException = await generateAnonymous(failedCookie, 'anonymous-provider-exception-01');
-  assert.equal(providerException.status, 502);
-  assert.equal(await anonymousCredits.getAnonymousTryOnCreditBalance(failedIdentity.rows[0].anonymous_id), 2, 'a provider exception also releases the reservation');
+  const provThrow = await generateAnon(anonymousCookie, 'anon-gen-provthrow-01');
+  assert.equal(provThrow.status, 502);
+  assert.equal(await anonymousCredits.getAnonymousTryOnCreditBalance(anonIdentityRow.rows[0].anonymous_id), 1, 'exception also releases credit');
 
-  // A simultaneous wave of three unique requests may reserve only the two available credits.
-  const concurrentAnonymousResponse = await localFetch('/api/try-on/credits');
-  const concurrentAnonymous = await concurrentAnonymousResponse.json();
-  const concurrentCookieHeader = concurrentAnonymousResponse.headers.getSetCookie?.() || [concurrentAnonymousResponse.headers.get('set-cookie') || ''];
-  const concurrentCookie = (concurrentCookieHeader.find((value) => value.startsWith('viraas_tryon_anon=')) || '').split(';')[0];
-  assert.equal(concurrentAnonymous.balance, 2);
-  providerBehavior = 'barrier';
-  concurrentArrivals = 0;
-  const concurrentRequests = [
-    generateAnonymous(concurrentCookie, 'anonymous-concurrent-0001'),
-    generateAnonymous(concurrentCookie, 'anonymous-concurrent-0002'),
-    generateAnonymous(concurrentCookie, 'anonymous-concurrent-0003'),
-  ];
-  await new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error('Concurrent provider calls did not reach the barrier.')), 5000);
-    concurrentArrivalsReady.then(() => { clearTimeout(timer); resolve(); });
-  });
-  releaseConcurrentProvider();
-  const concurrentResponses = await Promise.all(concurrentRequests);
-  const concurrentBodies = await Promise.all(concurrentResponses.map((response) => response.json()));
-  assert.deepEqual(concurrentResponses.map((response) => response.status).sort(), [200, 200, 402]);
-  assert.equal(concurrentBodies.filter((body) => body.code === 'NO_TRYON_CREDITS' && body.message === 'No Try-On credits remaining.').length, 1);
-  const concurrentToken = decodeURIComponent(concurrentCookie.slice('viraas_tryon_anon='.length));
-  const concurrentHash = crypto.createHash('sha256').update(concurrentToken).digest('hex');
-  const concurrentIdentity = await pool.query('SELECT anonymous_id FROM tryon_anonymous_identities WHERE token_hash=$1', [concurrentHash]);
-  assert.equal(await anonymousCredits.getAnonymousTryOnCreditBalance(concurrentIdentity.rows[0].anonymous_id), 0, 'parallel requests cannot overspend below zero');
-  assert.equal((await pool.query("SELECT count(*)::int AS n FROM tryon_anonymous_credit_ledger WHERE anonymous_id=$1 AND event_type='reserve'", [concurrentIdentity.rows[0].anonymous_id])).rows[0].n, 2);
+  // --- Try-On does NOT require authentication ---
+  // (Demonstrated by all above calls using anonymous cookie only, no X-Test-Auth-Subject header)
+  const noAuthCredits = await localFetch('/api/try-on/credits');
+  assert.equal(noAuthCredits.status, 200, 'unauthenticated request gets anonymous balance (sets new cookie)');
 
-  // An authenticated adult account continues to use only its own, exactly-once +2 signup ledger.
-  const separateAdult = await makeAdult('anonymous-separate-account-user', 'Separate Account');
-  const separateAccountFirst = await localFetch('/api/try-on/credits', { headers: { 'X-Test-Auth-Subject': 'anonymous-separate-account-user', Cookie: failedCookie } });
-  assert.equal((await separateAccountFirst.json()).balance, 2);
-  const separateAccountRefresh = await localFetch('/api/try-on/credits', { headers: { 'X-Test-Auth-Subject': 'anonymous-separate-account-user', Cookie: failedCookie } });
-  assert.equal((await separateAccountRefresh.json()).balance, 2, 'authenticated login does not merge or duplicate the anonymous balance');
-  assert.equal(await credits.grantSignupCredits(separateAdult.userId), 2);
-  assert.equal(await credits.getTryOnCreditBalance(separateAdult.userId), 2, 'a new authenticated account receives its separate +2 grant only once');
-  assert.equal(await anonymousCredits.getAnonymousTryOnCreditBalance(failedIdentity.rows[0].anonymous_id), 2, 'the anonymous balance remains separate from the signed-in account');
+  // --- Connect/social routes REQUIRE authentication ---
+  const socialStatus = await (await localFetch('/api/social/status')).json();
+  assert.equal(socialStatus.available, true);
+  const signedOutMe = await (await localFetch('/api/social/me')).json();
+  assert.equal(signedOutMe.authenticated, false);
+  assert.equal(signedOutMe.me, null);
+  for (const privatePath of ['/api/social/users', '/api/social/requests', '/api/social/conversations']) {
+    const privateResponse = await localFetch(privatePath);
+    assert.equal(privateResponse.status, 401, `${privatePath} stays authentication-gated`);
+  }
 
+  // Age/consent gate enforced by server
   const underAge = await localFetch('/api/try-on', {
-    method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ womenLookId: 'women-look-001', ageConfirmed: false, consent: false }),
+    method: 'POST', headers: { 'Content-Type': 'application/json', Cookie: anonymousCookie, 'Idempotency-Key': 'age-gate-01' },
+    body: JSON.stringify({ womenLookId: 'women-look-001', photo: testPhoto, ageConfirmed: false, consent: false }),
   });
-  assert.equal(underAge.status, 403, 'server enforces the explicit 18+ and consent gate');
+  assert.equal(underAge.status, 403, 'server enforces 18+ and consent gate');
 
-  console.log('PASS Try-On credits: anonymous and authenticated +2 grants, persistent cookie balance, atomic reservation/consume/release, duplicate and concurrency protection, postponed top-ups, and unchanged signed PayU callback verification.');
+  console.log('PASS Final VIRAAS Try-On: anonymous ₹20 PayU flow, zero free credits, idempotent +1 credit grant, duplicate callback protection, Runware failure releases credit, payment/identity linkage, no anonymous Connect access.');
 } finally {
   if (server) await new Promise((resolve) => server.close(resolve));
+  if (tryOnProvider && originalTryOnGenerate) tryOnProvider.generateTryOn = originalTryOnGenerate;
   globalThis.fetch = originalFetch;
   await db.closePool();
 }

@@ -57,8 +57,9 @@ const REQUIRED_TABLES = [
   'viraas_users', 'connect_pairs', 'conversations', 'messages', 'blocks', 'reports', 'schema_migrations',
   'tryon_credit_accounts', 'tryon_generations', 'tryon_credit_ledger', 'payu_credit_payments',
   'tryon_anonymous_identities', 'tryon_anonymous_credit_accounts', 'tryon_anonymous_generations', 'tryon_anonymous_credit_ledger',
+  'anonymous_payu_payments',
 ];
-const REQUIRED_MIGRATIONS = ['001_core', '002_incomplete_accounts', '003_tryon_credits_payu', '004_anonymous_tryon_credits'];
+const REQUIRED_MIGRATIONS = ['001_core', '002_incomplete_accounts', '003_tryon_credits_payu', '004_anonymous_tryon_credits', '005_anonymous_tryon_payu'];
 
 export async function databaseStatus() {
   if (!isDatabaseConfigured()) {

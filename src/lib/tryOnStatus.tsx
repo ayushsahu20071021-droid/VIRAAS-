@@ -19,7 +19,7 @@ const DEFAULT_STATUS: TryOnStatus = {
   mode: 'runware-flux',
   configured: false,
   provider: null,
-  paymentRequired: false,
+  paymentRequired: true,
   priceInr: 20,
   currency: 'INR',
   paymentConfigured: false,
@@ -27,7 +27,7 @@ const DEFAULT_STATUS: TryOnStatus = {
   generationAvailable: false,
   creditLedgerAvailable: false,
   topUpAvailable: false,
-  requirements: ['RUNWARE_API_KEY required', 'Persistent VIRAAS account and credit storage required'],
+  requirements: ['RUNWARE_API_KEY required', 'PayU payment configuration and persistent credit storage required'],
 };
 
 const TryOnStatusContext = createContext<TryOnStatus>(DEFAULT_STATUS);
