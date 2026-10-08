@@ -74,7 +74,30 @@ export default function Layout() {
       <main><Outlet /></main>
       <a className="wa-float" href="https://wa.me/?text=Hi%20VIRAAS%2C%20I%20need%20help%20finding%20a%20festive%20look" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp styling support">WhatsApp</a>
       <footer className="footer">
-        <div className="footer-min">VIRAAS © 2026</div>
+        <div className="footer-inner">
+          <div>
+            <div className="logo light">VIRAAS</div>
+            <p className="tagline">Rooted in tradition. Designed for now.</p>
+            <p className="muted-light">Discovery &amp; curation only. Checkout happens on the retailer's site.</p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <Link to="/women">Women</Link>
+            <Link to="/men">Men</Link>
+            <Link to="/occasions">Occasions</Link>
+          </div>
+          <div>
+            <h4>VIRAAS</h4>
+            <Link to="/connect">Connect</Link>
+            <Link to="/journal">Journal</Link>
+            <Link to="/try-on">AI Try-On</Link>
+          </div>
+        </div>
+        <div className="footer-legal">
+          <p><strong>Legal Name: AYUSH SAHU</strong></p>
+          <p>VIRAAS is a fashion discovery and curation platform. Product prices and availability are provided from listed/verified retailer sources and may change on the retailer's website.</p>
+        </div>
+        <div className="footer-min">VIRAAS © 2026 · Owned &amp; operated by AYUSH SAHU</div>
       </footer>
     </div>
   );
