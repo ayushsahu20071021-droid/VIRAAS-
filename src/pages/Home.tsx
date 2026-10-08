@@ -31,6 +31,11 @@ export default function Home() {
       <section className="hero">
         <div className="hero-copy">
           <div className="kicker light">THE FESTIVE EDIT ’26</div>
+          <div className="hero-tryon-banner">
+            <span className="hero-tryon-dot" aria-hidden="true" />
+            <span><strong>AI TRY-ON</strong> · ₹20 / TRY-ON · NO SIGN-UP · 18+</span>
+            <Link to="/try-on">Try it →</Link>
+          </div>
           <h1>Tradition,<br /><em>reimagined</em> for now.</h1>
           <p>{tryOnAvailable ? 'Discover the look. See it on you. Shop the real outfit.' : 'Discover curated festive looks. Shop the real outfit from the seller.'}</p>
           <div className="hero-ctas">
@@ -43,6 +48,43 @@ export default function Home() {
           <div className="h1"><ImageFrame src={heroImg('garba-01')} alt="Rani pink lehenga and phulkari dupatta mirror selfie" eager /></div>
           <div className="h2"><ImageFrame src={heroImg('garba-10')} alt="Red flared chaniya twirl at garba night" eager /></div>
           <div className="h3"><ImageFrame src={heroImg('garba-03')} alt="Ivory mirror-work lehenga on diya-lit steps" eager /></div>
+        </div>
+      </section>
+
+      {/* PAYU VERIFICATION: visible product pricing from the existing verified product catalog. */}
+      <section className="section price-showcase" aria-label="Shop real products with prices">
+        <div className="price-showcase-head">
+          <div>
+            <div className="kicker">Shop the real piece</div>
+            <h2>Curated festive products, with transparent INR pricing.</h2>
+            <p className="muted">Prices shown are from VIRAAS's existing verified product catalog. Checkout happens on the retailer's website.</p>
+          </div>
+          <Link to="/women" className="link-arrow">Explore all looks →</Link>
+        </div>
+        <div className="price-showcase-grid">
+          {PRODUCTS
+            .filter((p) => p.priceType === 'verified' && Number.isFinite(p.price) && p.price > 0 && (p.affiliateUrl || p.merchantUrl))
+            .slice(0, 8)
+            .map((p) => {
+              const shopUrl = p.affiliateUrl || p.merchantUrl;
+              return (
+                <article className="price-product-card" key={p.id}>
+                  <div className="price-product-media">
+                    <ImageFrame src={p.imageUrl} alt={p.title} ratio="4 / 5" fit="contain" />
+                    <span className="price-verified">Price verified</span>
+                  </div>
+                  <div className="price-product-body">
+                    <span className="pcard-merchant">{p.merchant}</span>
+                    <h3>{p.title}</h3>
+                    <div className="price-product-row">
+                      <strong>₹{p.price.toLocaleString('en-IN')}</strong>
+                      {p.mrp && p.mrp > p.price && <span className="muted small">MRP ₹{p.mrp.toLocaleString('en-IN')}</span>}
+                    </div>
+                    <a className="btn btn-shop sm" href={shopUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop product</a>
+                  </div>
+                </article>
+              );
+            })}
         </div>
       </section>
 
