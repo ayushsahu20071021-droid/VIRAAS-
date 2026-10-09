@@ -155,7 +155,7 @@ export default function Listing({ mode, fixedGender }: { mode: Mode; fixedGender
                   <div className="kicker">{section.label} · Look {look.number}</div>
                   <h3>{label}</h3>
                   <div className="mapped-accessory-actions">
-                    {url && <a className="btn btn-shop sm" href={url} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`Shop ${label}`}>Shop</a>}
+                    {url && <a className="btn btn-shop sm" href={url} target="_blank" rel="noopener noreferrer nofollow sponsored" aria-label={`View retailer for ${label}`}>View retailer</a>}
                     <Link className="link-arrow" to={`/women-look/women-look-${String(absoluteLook).padStart(3, '0')}`}>View full look →</Link>
                   </div>
                 </article>
