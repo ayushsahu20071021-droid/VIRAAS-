@@ -448,3 +448,25 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
   .workbook-item { align-items: flex-start; gap: 12px; }
   .workbook-item > .btn { align-self: center; }
 }
+
+/* PayU review Shop page: prices are explicit and external retailer CTAs are never labelled as the VIRAAS Shop. */
+.shop-page { background: var(--paper); }
+.shop-grid { max-width: 1360px; margin: 0 auto; padding: 0 24px 70px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.shop-product-card { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 24px; display: flex; flex-direction: column; min-height: 290px; box-shadow: 0 14px 38px rgba(27,23,22,.06); }
+.shop-product-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.shop-retailer { font-size: .7rem; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.shop-verified { font-size: .62rem; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); border: 1px solid rgba(212,175,124,.65); border-radius: 999px; padding: 5px 8px; }
+.shop-product-number { margin-top: 28px; color: var(--gold); font-size: .62rem; letter-spacing: .18em; font-weight: 700; }
+.shop-product-card h2 { margin: 10px 0 14px; font-size: 1.35rem; line-height: 1.22; }
+.shop-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; }
+.shop-price-row strong { color: var(--accent); font-size: 1.45rem; }
+.shop-mrp { color: var(--muted); text-decoration: line-through; font-size: .85rem; }
+.shop-source { color: var(--muted); font-size: .78rem; line-height: 1.55; margin-bottom: 18px; }
+.shop-product-card .btn { margin-top: auto; width: 100%; }
+.shop-note { max-width: 1360px; margin: 0 auto 70px; padding: 42px 24px; border-top: 1px solid var(--line); }
+.shop-note h2 { max-width: 720px; margin: 7px 0; }
+.shop-note p { max-width: 850px; color: var(--muted); line-height: 1.7; }
+.price-card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.price-product-card .price-product-body { padding: 22px; }
+@media (max-width: 900px) { .shop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .shop-grid { grid-template-columns: 1fr; padding: 0 16px 50px; } .shop-product-card { min-height: 0; } }
