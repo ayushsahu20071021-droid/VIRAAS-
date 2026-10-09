@@ -89,7 +89,7 @@ export function MenLookDetail() {
         <div className="row" aria-label="Men look actions">
           <SaveButton kind="look" id={look.id} image={src} />
           {src && <Link className="btn btn-accent" to={`/try-on?menLook=${look.id}`}>Try On</Link>}
-          {shopUrl(look.id) && <a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>}
+          {shopUrl(look.id) && <a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">View retailer</a>}
           <Link className="btn btn-dark" to={`/men/${look.occasion}`}>Browse {menOccasionLabel(look.occasion)}</Link>
         </div>
       </div>
