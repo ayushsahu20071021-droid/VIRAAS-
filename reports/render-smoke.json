@@ -169,6 +169,16 @@
     },
     {
       "ok": true,
+      "msg": "GET /product/TREND-447 → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "GET /product/TREND-500 → 200",
+      "level": "error"
+    },
+    {
+      "ok": true,
       "msg": "GET /journal → 200",
       "level": "error"
     },

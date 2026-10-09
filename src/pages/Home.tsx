@@ -8,6 +8,7 @@ import { ARTICLES } from '../lib/journal';
 import { useTryOnAvailable } from '../lib/tryOnStatus';
 import { PAYU_VERIFIED_PRODUCTS } from '../data/payu-verified-products';
 import { formatINR } from '../lib/format';
+import { VIRAAS_WHATSAPP_DISPLAY, whatsappChatUrl } from '../lib/whatsapp';
 
 // Couples carry their approved image via the GENERATED status resolver, not a raw imageUrl.
 const withImg = COUPLES.filter((c) => coupleImageSrc(c));
@@ -176,10 +177,12 @@ export default function Home() {
         ))}</div>
       </section>
 
-      {/* 11 WHATSAPP */}
+      {/* 11 WHATSAPP — direct chat with the VIRAAS number, never the contact-picker screen. */}
       <section className="section wa-band">
         <div><h2>Stuck between two looks?</h2><p>Message us on WhatsApp for free styling help. We'll send links, never pressure.</p></div>
-        <a className="btn btn-light" href="https://wa.me/?text=Hi%20VIRAAS%2C%20help%20me%20pick%20a%20festive%20look" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+        <a className="btn btn-light" href={whatsappChatUrl('general')} target="_blank" rel="noopener noreferrer" data-whatsapp-topic="general">
+          Chat on WhatsApp · {VIRAAS_WHATSAPP_DISPLAY}
+        </a>
       </section>
     </div>
   );

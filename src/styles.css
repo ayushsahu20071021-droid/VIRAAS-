@@ -166,6 +166,10 @@ a:hover .frame img { transform: scale(1.03); }
 .article-card:hover { border-color: var(--ink); }
 .wa-band { display: flex; justify-content: space-between; align-items: center; gap: 20px; background: #0f3d2e; color: #fff; border-radius: 24px; padding: 36px 44px; margin: 20px auto 50px; max-width: 1312px; }
 .wa-band p { color: #cfe6dc; margin: 0; }
+/* Inline support bar used on /women, /men and the Couple Edit (direct chat, prefilled message). */
+.wa-band-inline { margin: 36px 0 0; padding: 28px 32px; border-radius: 20px; max-width: none; }
+.wa-band-inline h2 { margin: 0 0 6px; font-size: 1.3rem; }
+.wa-band-inline .btn { flex: 0 0 auto; }
 .wa-float { position: fixed; right: 18px; bottom: 18px; background: #1f7a4d; color: #fff; font-weight: 600; font-size: .8rem; padding: 12px 16px; border-radius: 99px; box-shadow: 0 10px 30px rgba(0,0,0,.2); z-index: 40; }
 
 /* Listing */
@@ -461,12 +465,22 @@ label.edit-row:first-child { flex-direction: row; align-items: center; }
 .shop-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; }
 .shop-price-row strong { color: var(--accent); font-size: 1.45rem; }
 .shop-mrp { color: var(--muted); text-decoration: line-through; font-size: .85rem; }
-.shop-source { color: var(--muted); font-size: .78rem; line-height: 1.55; margin-bottom: 18px; }
 .shop-product-card .btn { margin-top: auto; width: 100%; }
+
+/* Shop-page-only browse cards (Women / Men / Couple). Navigation, never priced products. */
+.shop-collections { max-width: 1360px; margin: 0 auto; padding: 0 24px 70px; }
+.shop-collections .section-head { border-top: 1px solid var(--line); padding-top: 42px; margin-bottom: 26px; }
+.shop-collection-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.shop-collection-card { background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 14px 38px rgba(27,23,22,.06); transition: .2s; }
+.shop-collection-card:hover { border-color: var(--ink); transform: translateY(-2px); }
+.shop-collection-body { padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 6px; }
+.shop-collection-body h3 { margin: 2px 0 0; font-size: 1.4rem; }
+.shop-collection-body p { margin: 0 0 10px; font-size: .84rem; line-height: 1.55; }
+.shop-collection-body .btn { align-self: flex-start; margin-top: auto; }
 .shop-note { max-width: 1360px; margin: 0 auto 70px; padding: 42px 24px; border-top: 1px solid var(--line); }
 .shop-note h2 { max-width: 720px; margin: 7px 0; }
 .shop-note p { max-width: 850px; color: var(--muted); line-height: 1.7; }
 .price-card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .price-product-card .price-product-body { padding: 22px; }
-@media (max-width: 900px) { .shop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 600px) { .shop-grid { grid-template-columns: 1fr; padding: 0 16px 50px; } .shop-product-card { min-height: 0; } }
+@media (max-width: 900px) { .shop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .shop-collection-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .shop-grid { grid-template-columns: 1fr; padding: 0 16px 50px; } .shop-product-card { min-height: 0; } .shop-collection-grid { grid-template-columns: 1fr; } }
