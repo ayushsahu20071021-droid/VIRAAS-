@@ -99,6 +99,11 @@
     },
     {
       "ok": true,
+      "msg": "All 3 browse-card images resolve to real project assets (/images/women-previews/women-look-001.png, /images/men-previews/men-look-001.png, /images/couples/couple-garba-001.png)",
+      "level": "error"
+    },
+    {
+      "ok": true,
       "msg": "Homepage does NOT render the 3 Shop browse cards",
       "level": "error"
     },

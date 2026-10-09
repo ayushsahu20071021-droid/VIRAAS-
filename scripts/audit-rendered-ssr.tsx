@@ -82,6 +82,12 @@ check(collectionBlock.includes('href="/couple-edit"'), 'Couple card links to the
 check(['Browse Women', 'Browse Men', 'Browse Couple'].every((c) => shop.includes(c)), 'Cards use the Browse Women / Browse Men / Browse Couple labels');
 check(shopRaw.indexOf('shop-collections') > shopRaw.indexOf('data-shop-product-id="kalini-sequinned-lehenga"'), 'The 3 browse cards render BELOW the six verified-price cards');
 check(collections.every((c) => collectionBlock.includes(`data-shop-collection="${c}"`) && /data-shop-collection="(women|men|couple)"[\s\S]*?class="frame/.test(collectionBlock)), 'Each browse card carries an image frame from an existing project asset');
+// Guard against shipping a broken card image: every <img> in the browse-card block must exist on disk.
+const cardImages = collections
+  .map((c) => ({ c, src: new RegExp(`data-shop-collection="${c}"[\\s\\S]*?<img src="([^"]+)"`).exec(collectionBlock)?.[1] }))
+  .filter((x): x is { c: string; src: string } => Boolean(x.src));
+const missingCardImages = cardImages.filter(({ src }) => !fs.existsSync(new URL(`../public${src.split('?')[0]}`, import.meta.url)));
+check(cardImages.length === 3 && missingCardImages.length === 0, `All 3 browse-card images resolve to real project assets${missingCardImages.length ? ` (missing: ${missingCardImages.map((m) => m.src).join(', ')})` : ` (${cardImages.map((i) => i.src.split('?')[0]).join(', ')})`}`);
 
 const homeRaw = page('/', <Home />);
 const home = text(homeRaw);
