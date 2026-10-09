@@ -49,6 +49,7 @@ export default function Layout() {
             {item('/occasions', 'Occasions')}
             {item('/couple-edit', 'Couple Edit')}
             {item('/trending', 'Trending')}
+            {item('/shop', 'Shop')}
             {item('/connect', 'Connect')}
             {item('/journal', 'Journal')}
           </nav>
@@ -85,6 +86,7 @@ export default function Layout() {
             <Link to="/women">Women</Link>
             <Link to="/men">Men</Link>
             <Link to="/occasions">Occasions</Link>
+            <Link to="/shop">Shop</Link>
           </div>
           <div>
             <h4>VIRAAS</h4>
