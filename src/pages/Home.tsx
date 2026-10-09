@@ -6,6 +6,9 @@ import { menOccasionLabel } from '../lib/menCatalog';
 import { womenOccasionLabel } from '../lib/womenCatalog';
 import { ARTICLES } from '../lib/journal';
 import { useTryOnAvailable } from '../lib/tryOnStatus';
+import { PAYU_VERIFIED_PRODUCTS } from '../data/payu-verified-products';
+import { formatINR } from '../lib/format';
+import { VIRAAS_WHATSAPP_DISPLAY, whatsappChatUrl } from '../lib/whatsapp';
 
 // Couples carry their approved image via the GENERATED status resolver, not a raw imageUrl.
 const withImg = COUPLES.filter((c) => coupleImageSrc(c));
@@ -51,40 +54,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PAYU VERIFICATION: visible product pricing from the existing verified product catalog. */}
-      <section className="section price-showcase" aria-label="Shop real products with prices">
+      {/* PAYU VERIFICATION: visible pricing from exact mapped retailer products. */}
+      <section className="section price-showcase" aria-label="VIRAAS products with verified INR pricing">
         <div className="price-showcase-head">
           <div>
             <div className="kicker">Shop the real piece</div>
             <h2>Curated festive products, with transparent INR pricing.</h2>
-            <p className="muted">Prices shown are from VIRAAS's existing verified product catalog. Checkout happens on the retailer's website.</p>
+            <p className="muted">Exact mapped products with current verified prices. Checkout happens on the listed retailer website.</p>
           </div>
-          <Link to="/women" className="link-arrow">Explore all looks →</Link>
+          <Link to="/shop" className="link-arrow">View Shop →</Link>
         </div>
         <div className="price-showcase-grid">
-          {PRODUCTS
-            .filter((p) => p.priceType === 'verified' && Number.isFinite(p.price) && p.price > 0 && (p.affiliateUrl || p.merchantUrl))
-            .slice(0, 8)
-            .map((p) => {
-              const shopUrl = p.affiliateUrl || p.merchantUrl;
-              return (
-                <article className="price-product-card" key={p.id}>
-                  <div className="price-product-media">
-                    <ImageFrame src={p.imageUrl} alt={p.title} ratio="4 / 5" fit="contain" />
-                    <span className="price-verified">Price verified</span>
-                  </div>
-                  <div className="price-product-body">
-                    <span className="pcard-merchant">{p.merchant}</span>
-                    <h3>{p.title}</h3>
-                    <div className="price-product-row">
-                      <strong>₹{p.price.toLocaleString('en-IN')}</strong>
-                      {p.mrp && p.mrp > p.price && <span className="muted small">MRP ₹{p.mrp.toLocaleString('en-IN')}</span>}
-                    </div>
-                    <a className="btn btn-shop sm" href={shopUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop product</a>
-                  </div>
-                </article>
-              );
-            })}
+          {PAYU_VERIFIED_PRODUCTS.slice(0, 6).map((p) => (
+            <article className="price-product-card" key={p.id}>
+              <div className="price-product-body">
+                <div className="price-card-top"><span className="pcard-merchant">{p.retailer}</span><span className="price-verified">Price verified</span></div>
+                <h3>{p.title}</h3>
+                <div className="price-product-row">
+                  <strong>{formatINR(p.price)}</strong>
+                  {p.mrp && p.mrp > p.price && <span className="muted small">MRP {formatINR(p.mrp)}</span>}
+                </div>
+                <a className="btn btn-shop sm" href={p.shopUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">View retailer</a>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -184,10 +177,12 @@ export default function Home() {
         ))}</div>
       </section>
 
-      {/* 11 WHATSAPP */}
+      {/* 11 WHATSAPP — direct chat with the VIRAAS number, never the contact-picker screen. */}
       <section className="section wa-band">
         <div><h2>Stuck between two looks?</h2><p>Message us on WhatsApp for free styling help. We'll send links, never pressure.</p></div>
-        <a className="btn btn-light" href="https://wa.me/?text=Hi%20VIRAAS%2C%20help%20me%20pick%20a%20festive%20look" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+        <a className="btn btn-light" href={whatsappChatUrl('general')} target="_blank" rel="noopener noreferrer" data-whatsapp-topic="general">
+          Chat on WhatsApp · {VIRAAS_WHATSAPP_DISPLAY}
+        </a>
       </section>
     </div>
   );

@@ -42,7 +42,7 @@ export function SaveButton({ kind, id, image, compact }: { kind: 'product' | 'co
 export function ProductActionButton({ p, block, small }: { p: Product; block?: boolean; small?: boolean }) {
   const action = productOutboundAction(p);
   if (!action) return null;
-  const shop = action.label === 'Shop';
+  const shop = action.label === 'Buy from retailer';
   return (
     <a
       className={`btn ${shop ? 'btn-shop' : 'btn-ghost'} ${small ? 'sm' : ''} ${block ? 'block' : ''}`}

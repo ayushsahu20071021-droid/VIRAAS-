@@ -1,0 +1,356 @@
+{
+  "name": "audit-rendered-ssr",
+  "pass": true,
+  "checks": [
+    {
+      "ok": true,
+      "msg": "Shop renders exactly 6 verified-price product cards (6)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "All 6 known product ids present",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "All 6 product titles preserved",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "All 6 verified prices preserved",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "All 5 MRP values preserved",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "All retailer names preserved",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Price badges intact (6/6)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "All 6 exact retailer URLs preserved",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "All 6 “View retailer” buttons preserved (6)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Shop keeps the AI Try-On payment disclosure",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Repeated “Exact VIRAAS workbook link…” line removed from Shop cards",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Repeated “Price and availability can change…” line removed from Shop cards",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Shop renders the 3 browse cards (women/men/couple): 1/1/1",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Women card links to /women",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Men card links to /men",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Couple card links to the existing Couple Edit route /couple-edit",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Cards use the Browse Women / Browse Men / Browse Couple labels",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "The 3 browse cards render BELOW the six verified-price cards",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Each browse card carries an image frame from an existing project asset",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "All 3 browse-card images resolve to real project assets (/images/women-previews/women-look-001.png, /images/men-previews/men-look-001.png, /images/couples/couple-garba-001.png)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Homepage does NOT render the 3 Shop browse cards",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Homepage still renders its 6 verified-price cards (6)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“Discovery & curation only…” removed from the footer",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "“Legal Name: AYUSH SAHU” line removed",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Repeated footer explainer paragraph removed",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Footer keeps required policy links",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Footer keeps the copyright/operator line",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "WhatsApp support CTAs found on the audited pages (16)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Every support WhatsApp CTA is a direct chat to +91 96444 24865",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "No support CTA opens the contact-picker / share screen",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Look-sharing widgets audited separately (1 on 1 pages)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Every look-sharing WhatsApp action still opens the contact picker (functionality intact)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Floating WhatsApp on shop (/shop) uses the “general” message (got: general)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Floating WhatsApp on home (/) uses the “general” message (got: general)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Floating WhatsApp on women (/women) uses the “women” message (got: women)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Floating WhatsApp on men (/men) uses the “men” message (got: men)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Floating WhatsApp on couple (/couple-edit) uses the “couple” message (got: couple)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Inline women help CTA renders on /women and is a direct chat",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Inline men help CTA renders on /men and is a direct chat",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Inline couple help CTA renders on /couple-edit and is a direct chat",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Contact page WhatsApp links all target 919644424865 (919644424865, 919644424865, 919644424865, 919644424865)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Contact page WhatsApp links carry a prefilled message",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Women CTA message is women-specific: “Hi VIRAAS, I need help choosing a women’s festive outfit — lehenga, chaniya choli or saree.”",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Men CTA message is men-specific: “Hi VIRAAS, I need help choosing a men’s festive outfit — kurta set, ethnic shirt or festive separates.”",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Couple CTA message is couple-specific: “Hi VIRAAS, I need help styling a couple festive look for the same occasion.”",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Look-sharing WhatsApp action preserved (opens contact picker with the look link): https://wa.me/?text=Found%20my%20festive%20look%20on%20VIRAAS%20%E2%9C…",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Look-sharing action was NOT redirected at the VIRAAS business number",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Trending header shows the 500 target (rendered: “500 styles ·”)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Trending no longer displays 767",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "No editorial image URL is emitted while the assets are missing (no broken <img>)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Trending feed renders 500 cards (500)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Men catalog looks in the feed unchanged at 210 (210)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Women catalog looks in the feed unchanged at 236 (236)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Editorial looks in the feed = 54 (54)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Every editorial look renders the labelled pending frame (54 pending frames)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Only the 446 approved looks render a real <img> (446)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-447 renders the editorial look page",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-447 ships no <img> while its image is pending",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-447 states honestly that the image is not supplied yet",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-447 claims no retailer link",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-447 is labelled as a VIRAAS editorial look",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-500 renders the editorial look page",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-500 ships no <img> while its image is pending",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-500 states honestly that the image is not supplied yet",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-500 claims no retailer link",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "/product/TREND-500 is labelled as a VIRAAS editorial look",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Main navigation unchanged (Women · Men · Occasions · Couple Edit · Trending · Shop · Connect · Journal)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Existing catalog product page still resolves (w-lehenga-ivory-mirror-work-blouse)",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Existing catalog product page keeps its spec sheet and actions",
+      "level": "error"
+    },
+    {
+      "ok": true,
+      "msg": "Workbook component Shop links on /women-look/women-look-001 unchanged (3 links)",
+      "level": "error"
+    }
+  ]
+}

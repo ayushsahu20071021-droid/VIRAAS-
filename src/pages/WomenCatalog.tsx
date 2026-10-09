@@ -14,6 +14,7 @@ import { womenLookDetail, DETAIL_FIELDS } from '../lib/lookDetails';
 import womenPreviews from '../data/women-previews.client.json';
 import { workbookLookForWomenId, workbookShopUrl } from '../lib/workbook';
 import { useTryOnAvailable } from '../lib/tryOnStatus';
+import WhatsAppHelp from '../components/WhatsAppHelp';
 
 type WomenPreview = { qaStatus: string; approval: string; live: boolean; referenceId: string; src: string };
 const previewStatus = womenPreviews as Record<string, WomenPreview | undefined>;
@@ -120,6 +121,7 @@ export default function WomenCatalog() {
           <Link className="btn btn-dark" to="/women">Clear filters</Link>
         </div>
       )}
+      <WhatsAppHelp topic="women" />
     </div>
   );
 }

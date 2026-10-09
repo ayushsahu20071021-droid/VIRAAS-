@@ -11,7 +11,7 @@ const MERCHANT_HOSTS: Record<string, string> = {
 
 export interface ProductOutboundAction {
   href: string;
-  label: 'Shop' | 'View product';
+  label: 'Buy from retailer' | 'View product';
 }
 
 function httpsUrl(value: string): URL | undefined {
@@ -64,7 +64,7 @@ export function hasVerifiedPrice(product: Product): boolean {
 export function productOutboundAction(product: Product): ProductOutboundAction | undefined {
   const affiliate = exactWishlinkShareUrl(product.affiliateUrl);
   if (affiliate && product.affiliateSource.toLowerCase() === 'wishlink') {
-    return { href: affiliate, label: 'Shop' };
+    return { href: affiliate, label: 'Buy from retailer' };
   }
 
   const merchant = typeof product.merchantUrl === 'string' ? httpsUrl(product.merchantUrl) : undefined;

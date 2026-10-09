@@ -1,10 +1,11 @@
-// Unified Trending feed — 767 styles = 210 Men-approved + 236 Women-approved + 321 independent.
+// Unified Trending feed — 500 styles = 210 Men-approved + 236 Women-approved + 54 VIRAAS editorial.
 //
 // AUTHORITATIVE SOURCE RULE: each Men/Women entry IS the exact existing look record shown on /men and
 // /women (same image, title, description, attributes, occasion, Try-On). Nothing is reconstructed,
-// heuristically matched, or image-swapped — image AND content come from ONE source record. The 321
-// independents come from their own trending-final records and may show an honest "Coming soon" frame.
-// One mixed grid, deterministic interleave, no visible Men/Women/Independent grouping.
+// heuristically matched, or image-swapped — image AND content come from ONE source record. The 54
+// editorial looks are their own trending-only records (TREND-447 … TREND-500); their images are not
+// supplied yet, so they render an honest "Coming soon" frame and never a broken image URL.
+// One mixed grid, deterministic interleave, no visible Men/Women/Editorial grouping.
 import { useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { MEN_LOOKS, menOccasionLabel } from '../lib/menCatalog';
@@ -13,12 +14,12 @@ import { menLookImage, womenLookImage, shortDesc } from '../lib/looks';
 import { worldName } from '../lib/data';
 import { ImageFrame, Empty } from '../components/ui';
 import { exactWishlinkShareUrl } from '../lib/productActions';
-import trendingFinal from '../data/trending-final.client.json';
+import { TRENDING_EDITORIAL_LOOKS, TRENDING_EDITORIAL_PENDING_IMAGE, TRENDING_EDITORIAL_TOTAL, trendingEditorialImage } from '../lib/trendingEditorial';
 import menLookAffiliate from '../data/men-look-affiliate.json';
 import womenLookAffiliate from '../data/women-look-affiliate.json';
 import { useTryOnAvailable } from '../lib/tryOnStatus';
 
-type SourceType = 'men-approved' | 'women-approved' | 'trending-independent';
+type SourceType = 'men-approved' | 'women-approved' | 'trending-editorial';
 interface TItem {
   key: string; sourceType: SourceType; sourceProductId: string;
   gender: 'men' | 'women'; category: string; occasion: string[]; colour: string;
@@ -28,12 +29,11 @@ interface TItem {
 
 const menAff = menLookAffiliate as Record<string, { affiliateUrl: string; affiliateSource?: string } | undefined>;
 const womenAff = womenLookAffiliate as Record<string, { affiliateUrl: string; affiliateSource?: string } | undefined>;
-type IndieProduct = { id: string; gender: 'men' | 'women'; category: string; occasion: string[]; colour: string; title: string; description: string; price: number; priceType?: string; merchant: string; affiliateUrl?: string; affiliateSource?: string; tryOnEnabled?: boolean; imageUrl?: string; status?: string };
 
 // Deterministic FNV-1a hash → a stable, mixed, never-reshuffled curated order.
 const stableKey = (id: string): number => { let h = 2166136261; for (let i = 0; i < id.length; i++) { h ^= id.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
 
-// Build the 767 items ONCE from the authoritative sources.
+// Build the 500 items ONCE from the authoritative sources.
 const ITEMS: TItem[] = [
   ...MEN_LOOKS.map((l): TItem => ({
     key: l.id, sourceType: 'men-approved', sourceProductId: l.id,
@@ -49,16 +49,21 @@ const ITEMS: TItem[] = [
     detailHref: `/women-look/${l.id}`, tryOnHref: womenLookImage(l.id) ? `/try-on?womenLook=${l.id}` : undefined,
     affiliateUrl: womenAff[l.id]?.affiliateSource === 'wishlink' ? exactWishlinkShareUrl(womenAff[l.id]?.affiliateUrl || '') || '' : '', price: null, occasionLabel: womenOccasionLabel(l.occasion),
   })),
-  ...(trendingFinal as IndieProduct[]).map((p): TItem => ({
-    key: p.id, sourceType: 'trending-independent', sourceProductId: p.id,
-    gender: p.gender, category: p.category, occasion: p.occasion, colour: p.colour,
-    image: undefined, title: p.title, desc: shortDesc(p.description),
-    detailHref: `/product/${p.id}`, tryOnHref: p.tryOnEnabled && p.status === 'live' && p.imageUrl ? `/try-on?product=${p.id}` : undefined,
-    affiliateUrl: p.affiliateSource === 'wishlink' ? exactWishlinkShareUrl(p.affiliateUrl || '') || '' : '',
-    price: p.priceType === 'verified' ? p.price : null,
-    occasionLabel: p.occasion[0] ? worldName(p.occasion[0]) : '',
+  // 54 trending-only editorial looks. Image stays undefined until the asset is actually uploaded,
+  // so the card shows the labelled pending frame instead of a broken URL. No price, retailer or
+  // affiliate link is claimed for them.
+  ...TRENDING_EDITORIAL_LOOKS.map((l): TItem => ({
+    key: l.id, sourceType: 'trending-editorial', sourceProductId: l.id,
+    gender: l.gender, category: l.category, occasion: l.occasion, colour: l.colour,
+    image: trendingEditorialImage(l.id), title: l.title, desc: shortDesc(l.description),
+    detailHref: `/product/${l.id}`, tryOnHref: undefined,
+    affiliateUrl: '', price: null,
+    occasionLabel: l.occasionLabel || (l.occasion[0] ? worldName(l.occasion[0]) : ''),
   })),
 ];
+
+// The visible total is derived from the records, never hardcoded, so the copy cannot drift.
+const TRENDING_TOTAL = MEN_LOOKS.length + WOMEN_LOOKS.length + TRENDING_EDITORIAL_TOTAL;
 
 const fmtINR = (n: number) => `₹${n.toLocaleString('en-IN')}`;
 const HAS_VERIFIED_PRICE = ITEMS.some((item) => item.price !== null);
@@ -86,7 +91,7 @@ function Card({ it }: { it: TItem }) {
         <div className="pcard-actions">
           {tryOnAvailable && it.tryOnHref
             ? <Link className="btn btn-accent sm" to={it.tryOnHref}>Try it on</Link>
-            : <Link className="btn btn-ghost sm" to={it.detailHref}>{it.sourceType === 'trending-independent' ? 'View style' : 'View look'}</Link>}
+            : <Link className="btn btn-ghost sm" to={it.detailHref}>{it.sourceType === 'trending-editorial' ? 'View style' : 'View look'}</Link>}
           {it.affiliateUrl && <a className="btn btn-shop sm" href={it.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>}
         </div>
       </div>
@@ -124,7 +129,11 @@ export default function Trending() {
       <div className="page-head">
         <div className="crumbs"><Link to="/">Home</Link> / Trending</div>
         <h1>Trending</h1>
-        <p className="muted">767 styles · the VIRAAS Men &amp; Women edits, mixed with our independent trending picks.</p>
+        <p className="muted">
+          {TRENDING_TOTAL} styles · the VIRAAS Men &amp; Women edits, mixed with our editorial trending picks
+          {TRENDING_EDITORIAL_PENDING_IMAGE > 0 && ` · ${TRENDING_EDITORIAL_PENDING_IMAGE} editorial looks are still image-pending`}
+          .
+        </p>
       </div>
       <div className="listing-body">
         <aside className="filters" aria-label="Filters">
