@@ -74,7 +74,7 @@ export default function Home() {
                   <strong>{formatINR(p.price)}</strong>
                   {p.mrp && p.mrp > p.price && <span className="muted small">MRP {formatINR(p.mrp)}</span>}
                 </div>
-                <a className="btn btn-shop sm" href={p.shopUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">View retailer</a>
+                <p className="muted small">Retailer checkout is not available directly from this page.</p>
               </div>
             </article>
           ))}
