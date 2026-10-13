@@ -71,9 +71,7 @@ export default function Shop() {
               <strong>{formatINR(product.price)}</strong>
               {product.mrp && product.mrp > product.price && <span className="shop-mrp">MRP {formatINR(product.mrp)}</span>}
             </div>
-            <a className="btn btn-shop" href={product.shopUrl} target="_blank" rel="noopener noreferrer nofollow sponsored">
-              View retailer
-            </a>
+            <p className="muted small shop-retailer-note">Retailer checkout is not available directly from this Shop page. Review the product details and pricing above.</p>
           </article>
         ))}
       </section>
