@@ -5,6 +5,7 @@ import { menGarmentCategories } from '../lib/menCatalog';
 import { womenGarmentCategories } from '../lib/womenCatalog';
 import { useSaved } from '../lib/saved';
 import { useTryOnAvailable } from '../lib/tryOnStatus';
+import { VIRAAS_WHATSAPP_DISPLAY, whatsappChatUrl, whatsAppTopicForPath } from '../lib/whatsapp';
 
 // Women/Men category navigation is derived from the approved look metadata itself (garmentType),
 // so a menu entry can only ever be shown when the catalog actually has looks behind it.
@@ -27,6 +28,9 @@ export default function Layout() {
   const nav = useNavigate();
   const { items } = useSaved();
   const tryOnAvailable = useTryOnAvailable();
+  // The site-wide floating WhatsApp CTA is a direct chat to the VIRAAS number; the prefilled
+  // message follows the section the visitor is currently browsing.
+  const floatingTopic = whatsAppTopicForPath(loc.pathname);
   useEffect(() => { setOpen(null); setMobile(false); setSearchOpen(false); window.scrollTo(0, 0); }, [loc.pathname, loc.search]);
 
   const item = (to: string, label: string, mega?: 'women' | 'men') => (
@@ -38,7 +42,7 @@ export default function Layout() {
 
   return (
     <div className="app">
-      <div className="announce">Rooted in tradition. Designed for now. · Discovery &amp; curation only. Checkout happens on the retailer's site.</div>
+      <div className="announce">Rooted in tradition. Designed for now.</div>
       <header className="header">
         <div className="header-inner">
           <button className="burger" aria-label="Menu" onClick={() => setMobile((m) => !m)}>☰</button>
@@ -49,6 +53,7 @@ export default function Layout() {
             {item('/occasions', 'Occasions')}
             {item('/couple-edit', 'Couple Edit')}
             {item('/trending', 'Trending')}
+            {item('/shop', 'Shop')}
             {item('/connect', 'Connect')}
             {item('/journal', 'Journal')}
           </nav>
@@ -72,30 +77,45 @@ export default function Layout() {
         )}
       </header>
       <main><Outlet /></main>
-      <a className="wa-float" href="https://wa.me/?text=Hi%20VIRAAS%2C%20I%20need%20help%20finding%20a%20festive%20look" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp styling support">WhatsApp</a>
+      <a
+        className="wa-float"
+        href={whatsappChatUrl(floatingTopic)}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`WhatsApp styling support on ${VIRAAS_WHATSAPP_DISPLAY}`}
+        data-whatsapp-topic={floatingTopic}
+      >WhatsApp</a>
       <footer className="footer">
         <div className="footer-inner">
           <div>
             <div className="logo light">VIRAAS</div>
             <p className="tagline">Rooted in tradition. Designed for now.</p>
-            <p className="muted-light">Discovery &amp; curation only. Checkout happens on the retailer's site.</p>
           </div>
           <div>
             <h4>Explore</h4>
             <Link to="/women">Women</Link>
             <Link to="/men">Men</Link>
             <Link to="/occasions">Occasions</Link>
+            <Link to="/couple-edit">Couple Edit</Link>
+            <Link to="/trending">Trending</Link>
+            <Link to="/shop">Shop</Link>
           </div>
           <div>
             <h4>VIRAAS</h4>
             <Link to="/connect">Connect</Link>
             <Link to="/journal">Journal</Link>
             <Link to="/try-on">AI Try-On</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
           </div>
-        </div>
-        <div className="footer-legal">
-          <p><strong>Legal Name: AYUSH SAHU</strong></p>
-          <p>VIRAAS is a fashion discovery and curation platform. Product prices and availability are provided from listed/verified retailer sources and may change on the retailer's website.</p>
+          <div>
+            <h4>Policies</h4>
+            <Link to="/affiliate-disclosure">Affiliate Disclosure</Link>
+            <Link to="/privacy">Privacy</Link>
+            <Link to="/terms">Terms of Use</Link>
+            <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link>
+            <Link to="/faq">FAQ</Link>
+          </div>
         </div>
         <div className="footer-min">VIRAAS © 2026 · Owned &amp; operated by AYUSH SAHU</div>
       </footer>

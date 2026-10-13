@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { ARTICLES } from '../lib/journal';
 import { Empty } from '../components/ui';
+import { VIRAAS_WHATSAPP_DISPLAY, whatsappChatUrl } from '../lib/whatsapp';
 
 export function Journal() {
   return (
@@ -41,9 +42,10 @@ export const About = () => (
 );
 export const Contact = () => (
   <Prose title="Contact">
-    <p>For styling help, message us on <a href="https://wa.me/?text=Hi%20VIRAAS" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+    <p>For styling help, message us on <a href={whatsappChatUrl('general')} target="_blank" rel="noopener noreferrer" data-whatsapp-topic="general">WhatsApp ({VIRAAS_WHATSAPP_DISPLAY})</a>.</p>
     <p>For orders, deliveries, returns and refunds, contact the retailer you bought from. VIRAAS does not process orders.</p>
     <p>Partnerships and press: use the WhatsApp link above, and we'll share an email address.</p>
+    <p>Start with a topic: <a href={whatsappChatUrl('women')} target="_blank" rel="noopener noreferrer" data-whatsapp-topic="women">Women's outfits</a> · <a href={whatsappChatUrl('men')} target="_blank" rel="noopener noreferrer" data-whatsapp-topic="men">Men's outfits</a> · <a href={whatsappChatUrl('couple')} target="_blank" rel="noopener noreferrer" data-whatsapp-topic="couple">Couple outfits</a></p>
   </Prose>
 );
 export const FAQ = () => (

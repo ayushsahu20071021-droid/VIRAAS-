@@ -15,6 +15,7 @@ import { menLookDetail, DETAIL_FIELDS } from '../lib/lookDetails';
 import menFinalImages from '../data/men-final-images.json';
 import menLookAffiliate from '../data/men-look-affiliate.json';
 import { useTryOnAvailable } from '../lib/tryOnStatus';
+import WhatsAppHelp from '../components/WhatsAppHelp';
 
 const finalImages = menFinalImages as Record<string, string>;
 const lookAff = menLookAffiliate as Record<string, { affiliateUrl: string; affiliateSource: string } | undefined>;
@@ -74,6 +75,7 @@ export default function MenCatalog() {
     </div>
     <div className="men-catalog-summary"><strong>{filtered.length}</strong> of {MEN_LOOK_TOTAL} looks</div>
     {filtered.length ? <div className="men-look-grid">{filtered.map((look) => <LookCard key={look.id} look={look} tryOnAvailable={tryOnAvailable} />)}</div> : <div className="empty"><h3>No Men looks match</h3>{unresolved && requested && <p className="muted small">“{requested}” has no Men looks yet, so nothing is invented for it. Browse the categories above instead.</p>}<Link className="btn btn-dark" to="/men">Clear filters</Link></div>}
+    <WhatsAppHelp topic="men" />
   </div>;
 }
 
@@ -89,7 +91,7 @@ export function MenLookDetail() {
         <div className="row" aria-label="Men look actions">
           <SaveButton kind="look" id={look.id} image={src} />
           {src && <Link className="btn btn-accent" to={`/try-on?menLook=${look.id}`}>Try On</Link>}
-          {shopUrl(look.id) && <a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">Shop</a>}
+          {shopUrl(look.id) && <a className="btn btn-shop" href={shopUrl(look.id)} target="_blank" rel="noopener noreferrer nofollow sponsored">View retailer</a>}
           <Link className="btn btn-dark" to={`/men/${look.occasion}`}>Browse {menOccasionLabel(look.occasion)}</Link>
         </div>
       </div>

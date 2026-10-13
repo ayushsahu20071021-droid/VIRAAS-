@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Listing from './pages/Listing';
 import Trending from './pages/Trending';
+import Shop from './pages/Shop';
 import ProductPage from './pages/Product';
 import { CoupleEdit, CoupleDetail } from './pages/Couples';
 import { Occasions, World } from './pages/Occasions';
@@ -34,6 +35,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Route path="men-look/:id" element={<MenLookDetail />} />
             <Route path=":gender/:category" element={<Listing mode="gender" />} />
             <Route path="trending" element={<Trending />} />
+            <Route path="shop" element={<Shop />} />
             <Route path="accessories" element={<Navigate to="/women" replace />} />
             <Route path="product/:id" element={<ProductPage />} />
             <Route path="occasions" element={<Occasions />} />

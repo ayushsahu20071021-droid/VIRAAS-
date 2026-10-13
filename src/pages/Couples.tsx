@@ -5,6 +5,7 @@ import { CoupleCard, ImageFrame, SaveButton, ShareRow, Empty } from '../componen
 import { coupleAffiliate } from '../lib/coupleAffiliate';
 import { hasVerifiedPrice } from '../lib/productActions';
 import { resolveCoupleSide } from '../../shared/coupleTryOn.mjs';
+import WhatsAppHelp from '../components/WhatsAppHelp';
 
 export function CoupleEdit() {
   const [sp, setSp] = useSearchParams();
@@ -23,6 +24,7 @@ export function CoupleEdit() {
         {WORLDS.map((w) => <button key={w.slug} className={`chip ${world === w.slug ? 'on' : ''}`} onClick={() => setSp({ world: w.slug })}>{w.name} · {COUPLES.filter((c) => c.world === w.slug).length}</button>)}
       </div>
       <div className="grid3 couples-grid">{list.map((c) => <CoupleCard key={c.id} c={c} />)}</div>
+      <WhatsAppHelp topic="couple" />
     </div>
   );
 }

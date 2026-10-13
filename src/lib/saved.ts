@@ -37,4 +37,8 @@ export async function webShare(url: string, text = SHARE_TEXT): Promise<'shared'
 export async function copyLink(url: string): Promise<boolean> {
   try { await navigator.clipboard.writeText(url); return true; } catch { return false; }
 }
+// LOOK-SHARING action (audited separately from the support CTAs): this intentionally keeps the
+// numberless `wa.me/?text=` form, because its whole purpose is to let the visitor pick which
+// contact receives the look. Pointing it at the VIRAAS business number would break sharing.
+// Support/help CTAs use `whatsappChatUrl` from `src/lib/whatsapp.ts` instead — direct chat only.
 export const whatsappUrl = (url: string, text = SHARE_TEXT) => `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`;

@@ -6,6 +6,44 @@ import { exactMerchantProductUrl, hasVerifiedPrice, productOutboundAction, tryOn
 import { womenLookForProduct, womenLookImage } from '../lib/looks';
 import { womenOccasionLabel } from '../lib/womenCatalog';
 import { useTryOnAvailable } from '../lib/tryOnStatus';
+import { trendingEditorialById, trendingEditorialImage, type TrendingEditorialLook } from '../lib/trendingEditorial';
+
+/**
+ * Detail view for a TRENDING-ONLY editorial look (TREND-447 … TREND-500). These records are not
+ * catalog products, so they get no retailer link, no price and no workbook mapping — and while the
+ * supplied photograph is still pending they show a labelled frame rather than a broken image.
+ */
+function EditorialStylePage({ look }: { look: TrendingEditorialLook }) {
+  const image = trendingEditorialImage(look.id);
+  const genderLabel = look.gender === 'women' ? 'Women' : 'Men';
+  return (
+    <div className="page product" data-trending-editorial-id={look.id}>
+      <div className="crumbs"><Link to="/">Home</Link> / <Link to="/trending">Trending</Link> / {look.id}</div>
+      <div className="pdp">
+        <div className="pdp-gallery">
+          <ImageFrame src={image} alt={look.title} label={look.category} detail={`${look.colour} · ${look.category}`} eager />
+        </div>
+        <div className="pdp-info">
+          <div className="kicker">{look.occasionLabel} · VIRAAS editorial</div>
+          <h1>{look.title}</h1>
+          <dl className="specs">
+            <div><dt>Occasion</dt><dd>{look.occasion.map((o) => <Link key={o} to={`/occasions/${o}`} className="tag">{worldName(o)}</Link>)}</dd></div>
+            <div><dt>Colour</dt><dd>{look.colour}</dd></div>
+            <div><dt>Edit</dt><dd>{genderLabel}</dd></div>
+            <div><dt>Style</dt><dd>{look.styleTags.join(' · ')}</dd></div>
+          </dl>
+          <p className="muted">{look.description}</p>
+          {!image && <p className="muted small" data-editorial-image-pending="1">The photograph for this editorial look has not been supplied yet, so no image is shown here.</p>}
+          <div className="row" aria-label="Editorial look actions">
+            <Link className="btn btn-dark" to={look.gender === 'women' ? '/women' : '/men'}>Browse {genderLabel}</Link>
+            <Link className="btn btn-ghost" to="/trending">Back to Trending</Link>
+          </div>
+          <ShareRow path={`/product/${look.id}`} />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function completeTheLook(p: Product): Product[] {
   // Prefer the actual couple look this product appears in
@@ -34,6 +72,10 @@ function whyPicked(p: Product): string[] {
 export default function ProductPage() {
   const { id } = useParams();
   const tryOnAvailable = useTryOnAvailable();
+  // Trending-only editorial records resolve on the same /product/:id route but are rendered
+  // separately: they are not catalog products and carry no retailer link or workbook mapping.
+  const editorial = id ? trendingEditorialById.get(id) : undefined;
+  if (editorial) return <EditorialStylePage look={editorial} />;
   const p = id ? byId.get(id) : undefined;
   if (!p) return <div className="page"><Empty title="Product not found"><Link to="/" className="btn btn-dark">Back home</Link></Empty></div>;
   const ctl = completeTheLook(p);
