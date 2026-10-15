@@ -52,7 +52,7 @@ export const FAQ = () => (
   <Prose title="FAQ">
     <h2>Do you sell these products?</h2><p>No. VIRAAS curates and links out. Checkout happens on the retailer's site.</p>
     <h2>Why is the price different on the retailer's site?</h2><p>Prices on VIRAAS are approximate prices for the style. Marketplace prices change often, so always check the retailer's price.</p>
-    <h2>How do I shop a look?</h2><p>Where a look's Shop button is active, it opens the retailer so you can buy that piece. Some looks don't have an active Shop link yet.</p>
+    <h2>How do I shop a look?</h2><p>VIRAAS is a discovery platform and does not accept product orders or payments. The Shop page currently has no retailer checkout buttons. If you choose to visit a retailer, its listing and policies govern the purchase.</p>
     <h2>Who can use AI Try-On?</h2><p>Photo upload is for users aged 18+. Users aged 16–17 can browse, save, share and shop.</p>
     <h2>Where are my Saved Looks stored?</h2><p>On your device only (browser localStorage).</p>
     <h2>Why do some images say “Coming soon”?</h2><p>We only publish original VIRAAS visuals that pass our quality check. A few are still on the way.</p>
@@ -70,7 +70,7 @@ export const Terms = () => (
   <Prose title="Terms of Use">
     <p>VIRAAS provides fashion discovery, curation and outbound links. We aren't a party to any purchase you make with a retailer.</p>
     <p>Product names, prices, colours and availability are indicative. The retailer's listing is authoritative.</p>
-    <p>AI Try-On results are illustrative and may not show exact fit, colour or drape.</p>
+    <p>AI Try-On is currently unavailable and no payment is currently accepted for it. If enabled in future, results will be illustrative and may not show exact fit, colour or drape.</p>
     <p>Original VIRAAS images may not be reused commercially without permission.</p>
   </Prose>
 );
