@@ -16,7 +16,7 @@ import Saved from './pages/Saved';
 import TryOn from './pages/TryOn';
 import Connect, { ConnectProfile } from './pages/Connect';
 import ChatList, { Conversation } from './pages/Chat';
-import { Journal, Article, About, Contact, FAQ, Privacy, Terms, AffiliateDisclosure, TryOnPrivacy, NotFound } from './pages/Static';
+import { Journal, Article, About, Contact, FAQ, Privacy, Terms, AffiliateDisclosure, TryOnPrivacy, RefundCancellation, ShippingDelivery, NotFound } from './pages/Static';
 import { TryOnStatusProvider } from './lib/tryOnStatus';
 import './styles.css';
 
@@ -55,7 +55,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Route path="contact" element={<Contact />} />
             <Route path="faq" element={<FAQ />} />
             <Route path="privacy" element={<Privacy />} />
-            <Route path="terms" element={<Terms />} />
+            <Route path="terms" element={<Terms />} />\n            <Route path="refund-cancellation" element={<RefundCancellation />} />\n            <Route path="shipping-delivery" element={<ShippingDelivery />} />
             <Route path="affiliate-disclosure" element={<AffiliateDisclosure />} />
             <Route path="ai-try-on-privacy" element={<TryOnPrivacy />} />
             <Route path="*" element={<NotFound />} />
