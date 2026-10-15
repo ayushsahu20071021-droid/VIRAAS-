@@ -112,7 +112,7 @@ export default function Layout() {
             <h4>Policies</h4>
             <Link to="/affiliate-disclosure">Affiliate Disclosure</Link>
             <Link to="/privacy">Privacy</Link>
-            <Link to="/terms">Terms of Use</Link>
+            <Link to="/terms">Terms of Use</Link>\n            <Link to="/refund-cancellation">Cancellation & Refunds</Link>\n            <Link to="/shipping-delivery">Shipping & Delivery</Link>
             <Link to="/ai-try-on-privacy">AI Try-On Privacy</Link>
             <Link to="/faq">FAQ</Link>
           </div>
