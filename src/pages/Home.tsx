@@ -34,11 +34,11 @@ export default function Home() {
       <section className="hero">
         <div className="hero-copy">
           <div className="kicker light">THE FESTIVE EDIT ’26</div>
-          <div className="hero-tryon-banner">
+          {tryOnAvailable && <div className="hero-tryon-banner">
             <span className="hero-tryon-dot" aria-hidden="true" />
             <span><strong>AI TRY-ON</strong> · ₹20 / TRY-ON · NO SIGN-UP · 18+</span>
             <Link to="/try-on">Try it →</Link>
-          </div>
+          </div>}
           <h1>Tradition,<br /><em>reimagined</em> for now.</h1>
           <p>{tryOnAvailable ? 'Discover the look. See it on you. Shop the real outfit.' : 'Discover curated festive looks. Shop the real outfit from the seller.'}</p>
           <div className="hero-ctas">
@@ -60,7 +60,7 @@ export default function Home() {
           <div>
             <div className="kicker">Shop the real piece</div>
             <h2>Curated festive products, with transparent INR pricing.</h2>
-            <p className="muted">Exact mapped products with current verified prices. Checkout happens on the listed retailer website.</p>
+            <p className="muted">Reference prices for selected fashion products. VIRAAS does not accept product orders or payments; retailer listings control final price and availability.</p>
           </div>
           <Link to="/shop" className="link-arrow">View Shop →</Link>
         </div>
@@ -68,7 +68,7 @@ export default function Home() {
           {PAYU_VERIFIED_PRODUCTS.slice(0, 6).map((p) => (
             <article className="price-product-card" key={p.id}>
               <div className="price-product-body">
-                <div className="price-card-top"><span className="pcard-merchant">{p.retailer}</span><span className="price-verified">Price verified</span></div>
+                <div className="price-card-top"><span className="pcard-merchant">{p.retailer}</span><span className="price-verified">Price reference</span></div>
                 <h3>{p.title}</h3>
                 <div className="price-product-row">
                   <strong>{formatINR(p.price)}</strong>

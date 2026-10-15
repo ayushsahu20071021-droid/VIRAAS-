@@ -55,7 +55,7 @@ export default function Shop() {
         <div className="crumbs"><a href="/">Home</a> / Shop</div>
         <div className="kicker">The VIRAAS Shop</div>
         <h1>Curated pieces with transparent INR pricing.</h1>
-        <p className="muted">These are exact mapped products from VIRAAS source links with current verified prices. Product checkout happens on the listed retailer website.</p>
+        <p className="muted">These are selected fashion-product references with indicative INR prices. VIRAAS does not accept product orders or payments. Retailer listings control final price, stock and checkout.</p>
       </div>
 
       <section className="shop-grid" aria-label="Priced VIRAAS products">
@@ -63,7 +63,7 @@ export default function Shop() {
           <article className="shop-product-card" key={product.id} data-shop-product-id={product.id}>
             <div className="shop-product-top">
               <span className="shop-retailer">{product.retailer}</span>
-              <span className="shop-verified">Price verified</span>
+              <span className="shop-verified">Price reference</span>
             </div>
             <div className="shop-product-number">VIRAAS CURATED PIECE</div>
             <h2>{product.title}</h2>
@@ -101,7 +101,7 @@ export default function Shop() {
       <section className="shop-note">
         <div className="kicker">Transparent shopping</div>
         <h2>VIRAAS is the discovery layer.</h2>
-        <p>VIRAAS does not process payment for these fashion products. The retailer handles product checkout, shipping, returns and final availability. The separate AI Try-On service is priced at 20 INR per try-on.</p>
+        <p>VIRAAS does not process payment for these fashion products. The retailer handles product checkout, shipping, returns and final availability. AI Try-On is currently unavailable, and VIRAAS is not currently accepting payments for it.</p>
       </section>
     </div>
   );

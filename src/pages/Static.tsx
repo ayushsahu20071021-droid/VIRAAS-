@@ -52,7 +52,7 @@ export const FAQ = () => (
   <Prose title="FAQ">
     <h2>Do you sell these products?</h2><p>No. VIRAAS curates and links out. Checkout happens on the retailer's site.</p>
     <h2>Why is the price different on the retailer's site?</h2><p>Prices on VIRAAS are approximate prices for the style. Marketplace prices change often, so always check the retailer's price.</p>
-    <h2>How do I shop a look?</h2><p>Where a look's Shop button is active, it opens the retailer so you can buy that piece. Some looks don't have an active Shop link yet.</p>
+    <h2>How do I shop a look?</h2><p>VIRAAS is a discovery platform and does not accept product orders or payments. The Shop page currently has no retailer checkout buttons. If you choose to visit a retailer, its listing and policies govern the purchase.</p>
     <h2>Who can use AI Try-On?</h2><p>Photo upload is for users aged 18+. Users aged 16–17 can browse, save, share and shop.</p>
     <h2>Where are my Saved Looks stored?</h2><p>On your device only (browser localStorage).</p>
     <h2>Why do some images say “Coming soon”?</h2><p>We only publish original VIRAAS visuals that pass our quality check. A few are still on the way.</p>
@@ -70,8 +70,29 @@ export const Terms = () => (
   <Prose title="Terms of Use">
     <p>VIRAAS provides fashion discovery, curation and outbound links. We aren't a party to any purchase you make with a retailer.</p>
     <p>Product names, prices, colours and availability are indicative. The retailer's listing is authoritative.</p>
-    <p>AI Try-On results are illustrative and may not show exact fit, colour or drape.</p>
+    <p>AI Try-On is currently unavailable and no payment is currently accepted for it. If enabled in future, results will be illustrative and may not show exact fit, colour or drape.</p>
     <p>Original VIRAAS images may not be reused commercially without permission.</p>
+  </Prose>
+);
+export const RefundCancellation = () => (
+  <Prose title="Cancellation & Refund Policy">
+    <p><strong>Operated by:</strong> AYUSH SAHU (VIRAAS). Contact: <a href="mailto:aayushsahu21102007@gmail.com">aayushsahu21102007@gmail.com</a> or <a href={whatsappChatUrl('general')} target="_blank" rel="noopener noreferrer">WhatsApp ({VIRAAS_WHATSAPP_DISPLAY})</a>.</p>
+    <h2>Fashion products</h2>
+    <p>VIRAAS is a fashion discovery and affiliate-curation platform. VIRAAS does not sell, stock, ship or collect payment for the fashion products displayed on this website. Any product purchase is completed directly with the external retailer, and that retailer's cancellation, return and refund policy applies. Please contact the retailer for an order placed on its website.</p>
+    <h2>VIRAAS digital services</h2>
+    <p>AI Try-On is currently unavailable and VIRAAS is not currently accepting payment for Try-On. Do not make a payment for this service until it is explicitly enabled on the website. If a payment is accidentally captured without a service being provided, contact us with the transaction ID and payment date.</p>
+    <p>Once paid AI Try-On is launched, a cancellation requested before generation starts will be eligible for a full refund. A completed generation is normally non-refundable, except for a failed service, duplicate charge, or payment captured without a usable result. Approved refunds will be sent to the original payment method; bank/payment-provider posting times may vary. We will review a complete request and communicate the outcome by email or WhatsApp.</p>
+    <h2>How to request help</h2>
+    <p>Email <a href="mailto:aayushsahu21102007@gmail.com">aayushsahu21102007@gmail.com</a> or message <a href={whatsappChatUrl('general')} target="_blank" rel="noopener noreferrer">WhatsApp ({VIRAAS_WHATSAPP_DISPLAY})</a>. Include your name, transaction ID (if any), date and reason. Never share your UPI PIN, OTP or full card details.</p>
+  </Prose>
+);
+export const ShippingDelivery = () => (
+  <Prose title="Shipping & Delivery Policy">
+    <p><strong>Operated by:</strong> AYUSH SAHU (VIRAAS). Contact: <a href="mailto:aayushsahu21102007@gmail.com">aayushsahu21102007@gmail.com</a> or <a href={whatsappChatUrl('general')} target="_blank" rel="noopener noreferrer">WhatsApp ({VIRAAS_WHATSAPP_DISPLAY})</a>.</p>
+    <h2>Fashion products</h2>
+    <p>VIRAAS does not own inventory, accept orders, pack or ship physical products. When you choose to shop, the retailer handles checkout, delivery, shipping fees, tracking, returns and delivery estimates. Please check the retailer's product page and policies before purchasing.</p>
+    <h2>VIRAAS digital services</h2>
+    <p>AI Try-On is currently unavailable and no paid digital service is currently being delivered. If the service is enabled in future, the website will explain the delivery process and expected turnaround before payment is accepted. No physical shipment is involved in AI Try-On.</p>
   </Prose>
 );
 export const AffiliateDisclosure = () => (
