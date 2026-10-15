@@ -55,7 +55,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Route path="contact" element={<Contact />} />
             <Route path="faq" element={<FAQ />} />
             <Route path="privacy" element={<Privacy />} />
-            <Route path="terms" element={<Terms />} />\n            <Route path="refund-cancellation" element={<RefundCancellation />} />\n            <Route path="shipping-delivery" element={<ShippingDelivery />} />
+            <Route path="terms" element={<Terms />} />
+            <Route path="refund-cancellation" element={<RefundCancellation />} />
+            <Route path="shipping-delivery" element={<ShippingDelivery />} />
             <Route path="affiliate-disclosure" element={<AffiliateDisclosure />} />
             <Route path="ai-try-on-privacy" element={<TryOnPrivacy />} />
             <Route path="*" element={<NotFound />} />
